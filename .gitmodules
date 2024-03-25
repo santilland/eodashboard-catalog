@@ -1,0 +1,3 @@
+[submodule "catalog_submodule"]
+	path = catalog_submodule
+	url = git@github.com:eurodatacube/eodash-catalog.git
