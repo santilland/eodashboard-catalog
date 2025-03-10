@@ -34,7 +34,7 @@ jobs:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: eodash_catalog --catalog trilateral --catalogspath catalog_submodule/catalogs --collectionspath catalog_submodule/collections --indicatorspath catalog_submodule/indicators
+        run: eodash_catalog --catalog trilateral  --collectionspath catalog_submodule/collections --indicatorspath catalog_submodule/indicators
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
