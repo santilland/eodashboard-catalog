@@ -1,0 +1,50 @@
+
+
+
+name: Preview catalog
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+jobs:
+  preview_changed_files:
+    runs-on: ubuntu-latest 
+    permissions:
+      contents: write
+      pages: write
+      pull-requests: write
+    name: Deploy changed-files
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+            submodules: 'true'
+      - name: Install dependencies
+        run: |
+          pip install -U pip
+          pip install eodash_catalog pyyaml
+      - name: changed-files
+        id: changed-files
+        uses: tj-actions/changed-files@v45
+        # To compare changes between the current commit and the last pushed remote commit set `since_last_remote_commit: true`. e.g
+        # with:
+        #   since_last_remote_commit: true 
+      - name: List all changed files
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: python .github/update_catalog.py
+      - name: Build
+        env:
+            SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
+            SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
+            SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
+        run: |
+          eodash_catalog --catalog trilateral --catalogspath catalogs
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build/
