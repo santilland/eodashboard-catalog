@@ -1,0 +1,89 @@
+{
+  "Name": "Lakes_WQ_TURB_water_turbidity",
+  "Title": "Lake water quality (turbidity)",
+  "Subtitle": "CLMS Lake Water Quality NRT 300m",
+  "EodashIdentifier": "Lakes_WQ_TURB",
+  "Description": "Lakes_WQ_TURB_water_turbidity/Lakes_WQ_TURB_water_turbidity.md",
+  "Themes": [
+    "water"
+  ],
+  "Tags": [
+    "Sentinel",
+    "CLMS",
+    "Water quality",
+    "Open data",
+    "Lakes"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-3"
+      ],
+      "Sensor": [
+        "OLCI"
+      ]
+    }
+  },
+  "Agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "License": [
+    {
+      "Url": "https://land.copernicus.eu/en/data-policy",
+      "Type": "text/html",
+      "Title": "Data policy"
+    }
+  ],
+  "Citation": {
+    "Citation": "European Commission Directorate-General Joint Research Centre. Lake Water Quality 2016-present (raster 300 m), global, 10-daily - version 1. \nhttps://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/clms_global_lwq_300m_v1_10daily-nrt\n"
+  },
+  "Image": "Lakes_WQ_TURB_water_turbidity/Lakes_WQ_TURB_water_turbidity.png",
+  "Legend": "Lakes_WQ_TURB_water_turbidity/Lakes_WQ_TURB_legend.png",
+  "References": [
+    {
+      "Name": "Contact",
+      "Url": "https://forum.sentinel-hub.com/c/euro-data-cube/25"
+    },
+    {
+      "Name": "Lake Water Quality 2016-present (raster 300 m), global, 10-daily \u2013 version 1",
+      "Url": "https://land.copernicus.eu/en/products/water-bodies/lake-water-quality-near-real-time-v1-0-300m"
+    },
+    {
+      "Name": "Lake Water Quality 300m",
+      "Url": "https://collections.eurodatacube.com/clms-lake-water-quality/"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "zarr",
+      "CollectionId": "ef59d045-a0cd-4ce0-a25d-5da91e70e965",
+      "LayerId": "LAKE_WATER_QUALITY_TURBIDITY_MEAN"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "Copernicus Land Monitoring Service",
+      "Url": "https://land.copernicus.eu/"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      10
+    ],
+    "range": [
+      "#383894",
+      "#52858c",
+      "#6fd584",
+      "#88d26f",
+      "#9b744e",
+      "#af1c2f"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Turbidity [NTU]"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "Name": "greenhouse_gases",
+  "Title": "Carbon Dioxide at city level from GOSAT",
+  "EodashIdentifier": "N2_greenhouse_gases",
+  "Subtitle": "CO2 emissions over large cities [ppmv]",
+  "Description": "N2_greenhouse_gases/N2_greenhouse_gases.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "GOSAT"
+      ],
+      "Sensor": [
+        "TANSO-FTS",
+        "TANSO-CAI"
+      ]
+    }
+  },
+  "Agency": [
+    "JAXA"
+  ],
+  "Image": "N2_greenhouse_gases/N2_greenhouse_gases.png",
+  "Legend": "N2_greenhouse_gases/N2_greenhouse_gases_legend.png",
+  "Resources": [
+    {
+      "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
+      "Name": "GeoDB",
+      "Database": "eodash",
+      "CollectionId": "N2_tri"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "JAXA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://data2.gosat.nies.go.jp/index_en.html"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      -12.5,
+      12.5
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "diff XCO2 [ppm]"
+  }
+}

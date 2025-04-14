@@ -1,0 +1,66 @@
+{
+  "Name": "Modis_SNPP_2023",
+  "Title": "Active Fires (MODIS)",
+  "EodashIdentifier": "Modis_SNPP_2023",
+  "Description": "Modis_SNPP_2023/Modis_SNPP_2023.md",
+  "Themes": [
+    "extreme-events"
+  ],
+  "Tags": [
+    "Fire",
+    "Open data"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Terra",
+        "Aqua"
+      ],
+      "Sensor": [
+        "MODIS"
+      ]
+    }
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Image": "Modis_SNPP_2023/Modis_SNPP_2023.png",
+  "References": [
+    {
+      "Name": "User's Guides",
+      "Url": "https://modis-fire.umd.edu/guides.html"
+    },
+    {
+      "Name": "Burned Area Products",
+      "Url": "https://modis-fire.umd.edu/ba.html"
+    },
+    {
+      "Name": "Data access",
+      "Url": "https://firms.modaps.eosdis.nasa.gov/download/"
+    }
+  ],
+  "Resources": [
+    {
+      "Name": "Collection-only",
+      "EndPoint": "Collection-only",
+      "OverwriteBBox": [
+        -180,
+        -85,
+        180,
+        85
+      ],
+      "Type": "OverwriteTimes",
+      "DateTimeInterval": {
+        "Start": "2023-01-01T00:00:00",
+        "End": "2023-12-31T00:00:00"
+      }
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://firms.modaps.eosdis.nasa.gov/"
+    }
+  ]
+}

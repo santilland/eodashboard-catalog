@@ -1,0 +1,100 @@
+{
+  "Name": "ADD_Meltmap",
+  "Title": "Antarctica Meltmap",
+  "EodashIdentifier": "ADD_Meltmap",
+  "Subtitle": "Antarctica Meltmap from 4D Antarctica",
+  "Description": "ADD_Meltmap/ADD_Meltmap.md",
+  "Themes": [
+    "cryosphere"
+  ],
+  "Tags": [
+    "Antarctica",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Scatterometer",
+    "C-SAR",
+    "Ice monitoring"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "MetOp"
+      ],
+      "Sensor": [
+        "ASCAT"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA",
+    "EUMETSAT"
+  ],
+  "Provider": [
+    {
+      "Name": "ESA",
+      "Url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "Name": "EUMETSAT",
+      "Url": "https://www.eumetsat.int/"
+    }
+  ],
+  "Citation": {
+    "Citation": "Citing the data:\nLindsley, R. D. and Long, D. G. (2010): Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3\n"
+  },
+  "References": [
+    {
+      "Name": "4D Antarctica Project Page",
+      "Url": "https://4d-antarctica.org/"
+    },
+    {
+      "Name": "ESA Open Science Data Catalogue: 4D-Antarctica",
+      "Url": "https://opensciencedata.esa.int/projects/4d-Antarctica/collection"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
+      "Name": "WMS",
+      "Type": "OverwriteTimes",
+      "LayerId": "VIS_ANTARTICA_MELTMAP",
+      "OverwriteBBox": [
+        -100,
+        -75,
+        -70,
+        -68
+      ],
+      "DateTimeInterval": {
+        "Start": "2007-01-02T00:00:00Z",
+        "End": "2021-12-28T00:00:00Z",
+        "Timedelta": {
+          "days": 7
+        }
+      }
+    }
+  ],
+  "Image": "ADD_Meltmap/thumbnail.png",
+  "Legend": "ADD_Meltmap/legend.png",
+  "Colorlegend": {
+    "domain": [
+      "no melt l.",
+      "surface melt l.",
+      "wet snow l.",
+      "new top frozen l."
+    ],
+    "range": [
+      "#AFABAB",
+      "#B4C7E7",
+      "#66A2D8",
+      "#FFF3CC"
+    ],
+    "scaleType": "categorical",
+    "title": "Ice melting status"
+  }
+}

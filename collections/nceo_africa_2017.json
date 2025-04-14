@@ -1,0 +1,82 @@
+{
+  "Name": "nceo_africa_2017",
+  "Title": "Aboveground Woody Biomass",
+  "EodashIdentifier": "NCEO",
+  "Subtitle": "NCEO Africa AGB map for 2017 at 100 m spatial resolution",
+  "Description": "nceo_africa_2017/nceo_africa_2017.md",
+  "Themes": [
+    "biomass"
+  ],
+  "Tags": [
+    "Africa",
+    "Wood",
+    "Open data",
+    "Multi-sensors",
+    "Carbon",
+    "Forest"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Other"
+      ]
+    }
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Legend": "nceo_africa_2017/NCEO_legend.png",
+  "Image": "nceo_africa_2017/nceo_africa_2017.png",
+  "References": [
+    {
+      "Name": "Above Ground Biomass",
+      "Url": "https://ceos.org/gst/biomass.html"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://openveda.cloud/api/stac/",
+      "Name": "VEDA",
+      "Type": "cog",
+      "CollectionId": "nceo_africa_2017",
+      "ColormapName": "gist_earth_r",
+      "Rescale": [
+        0.0,
+        400.0
+      ],
+      "Bidx": 1
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NCEO",
+      "Roles": "licensor, processor",
+      "Url": "https://www.nceo.ac.uk/data-tools/datasets/"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      400
+    ],
+    "range": [
+      "#fdfbfb",
+      "#e7cac0",
+      "#d1ae8c",
+      "#bfa764",
+      "#b5b65e",
+      "#94ae57",
+      "#72a551",
+      "#479a48",
+      "#3c8f60",
+      "#338478",
+      "#276b7d",
+      "#1a487a",
+      "#0d1d76",
+      "#000000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "mg/ha"
+  }
+}

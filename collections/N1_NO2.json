@@ -1,0 +1,98 @@
+{
+  "Name": "NO2_daily",
+  "Title": "Air Quality (tropospheric NO2 concetrations)",
+  "EodashIdentifier": "N1_NO2",
+  "Subtitle": "Daily Nitrogen Dioxide",
+  "Description": "N1_NO2/N1_NO2.md",
+  "Themes": [
+    "air"
+  ],
+  "Tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "Air pollution"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-5P"
+      ],
+      "Sensor": [
+        "TROPOMI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Image": "N1_NO2/N1_NO2.png",
+  "Legend": "N1_NO2/N1_NO2_legend.png",
+  "References": [
+    {
+      "Name": "Air pollution remains low as Europeans stay at home",
+      "Url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Air_pollution_remains_low_as_Europeans_stay_at_home"
+    },
+    {
+      "Name": "Coronavirus - nitrogen dioxide emissions drop over Italy",
+      "Url": "https://www.esa.int/ESA_Multimedia/Videos/2020/03/Coronavirus_nitrogen_dioxide_emissions_drop_over_Italy"
+    },
+    {
+      "Name": "Sentinel-5P Tropospheric Column NO2",
+      "Url": "https://maps.s5p-pal.com/no2-tropospheric/"
+    },
+    {
+      "Name": "TROPOMI NO2",
+      "Url": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-nitrogen-dioxide"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "Copernicus",
+      "Url": "https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel5P.html"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "972e67a7-2ca8-4bf6-964a-11fe772e3ac2",
+      "LayerId": "AWS_NO2-VISUALISATION"
+    }
+  ],
+  "Services": [
+    {
+      "Endpoint": "https://services.sentinel-hub.com/api/v1/statistics",
+      "Name": "Statistical API",
+      "Type": "byoc",
+      "CollectionId": "972e67a7-2ca8-4bf6-964a-11fe772e3ac2",
+      "Script": "N1_NO2/N1_NO2.js"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      180
+    ],
+    "range": [
+      "#fff5f0",
+      "#fee8de",
+      "#fed7c7",
+      "#fcc1a9",
+      "#fca88b",
+      "#fc8f6f",
+      "#fb7656",
+      "#f75c41",
+      "#f03f2e",
+      "#dc2824",
+      "#c5171c",
+      "#ae1117",
+      "#8d0912",
+      "#67000d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Tropospheric NO2 [\u00b5mol/m\u00b2]"
+  }
+}

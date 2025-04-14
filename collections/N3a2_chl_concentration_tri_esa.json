@@ -1,0 +1,174 @@
+{
+  "Name": "N3a2_chl_concentration_tri_esa",
+  "Title": "Chlorophyll-a concentration from Sentinel-3",
+  "EodashIdentifier": "N3a2_chl_esa",
+  "Subtitle": "Chlorophyll-a concentration maps",
+  "Description": "N3a2_chl_concentration_tri_esa/N3a2_chl_concentration_tri_esa.md",
+  "Themes": [
+    "oceans"
+  ],
+  "Tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CHL",
+    "CMEMS",
+    "Marine monitoring",
+    "Chlorophyll-a",
+    "Marine",
+    "CAMS"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-3"
+      ],
+      "Sensor": [
+        "OLCI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Provider": [
+    {
+      "Name": "Copernicus Marine Service",
+      "Url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "Name": "ESA",
+      "Url": "https://sentinel.esa.int/web/sentinel/"
+    }
+  ],
+  "License": "MIT",
+  "Locations": [
+    {
+      "Identifier": "NorthAdriatic",
+      "Name": "North Adriatic",
+      "Subtitle": "Chlorophyll-a concentration in North Adriatic",
+      "Point": [
+        13.02978,
+        45.19752
+      ],
+      "Bbox": [
+        11.6,
+        44,
+        15,
+        46
+      ]
+    },
+    {
+      "Identifier": "RhoneDelta",
+      "Name": "Rhone Delta",
+      "Subtitle": "Chlorophyll-a concentration in Rhone Delta",
+      "Point": [
+        4.94,
+        43.4
+      ],
+      "Bbox": [
+        4,
+        42.8,
+        6,
+        44
+      ]
+    },
+    {
+      "Identifier": "Barcelona",
+      "Name": "Barcelona",
+      "Subtitle": "Chlorophyll-a concentration in Barcelona",
+      "Point": [
+        1.769,
+        40.985
+      ],
+      "Bbox": [
+        0,
+        40,
+        3,
+        42
+      ]
+    },
+    {
+      "Identifier": "DanubeDelta",
+      "Name": "Danube Delta",
+      "Subtitle": "Chlorophyll-a concentration in Danube Delta",
+      "Point": [
+        29.9,
+        45.05
+      ],
+      "Bbox": [
+        28.5,
+        44,
+        31,
+        46
+      ]
+    },
+    {
+      "Identifier": "TagusDelta",
+      "Name": "Tagus Delta",
+      "Subtitle": "Chlorophyll-a concentration in Tagus Delta",
+      "Point": [
+        -9.32,
+        38.66
+      ],
+      "Bbox": [
+        -10.45,
+        37.5,
+        -8.75,
+        39.51
+      ]
+    },
+    {
+      "Identifier": "ElbeDelta",
+      "Name": "Elbe Delta",
+      "Subtitle": "Chlorophyll-a concentration in Elbe Delta",
+      "Point": [
+        8.408,
+        53.94
+      ],
+      "Bbox": [
+        6.99,
+        53.35,
+        9.25,
+        54.41
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "Group": "Sentinel Hub Resources",
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "7db8e19e-bf12-4203-bdd1-673455647354",
+      "LayerId": "AWS_N3_CUSTOM_TRILATERAL"
+    }
+  ],
+  "Services": [
+    {
+      "Endpoint": "https://services.sentinel-hub.com/api/v1/statistics",
+      "Name": "Statistical API",
+      "Type": "byoc",
+      "CollectionId": "7db8e19e-bf12-4203-bdd1-673455647354",
+      "Script": "N3a2_chl_concentration/script.js"
+    }
+  ],
+  "Image": "N3a2_chl_concentration_tri/thumbnail.png",
+  "Legend": "N3a2_chl_concentration_tri/legend.png",
+  "yAxis": "%",
+  "Colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#053264",
+      "#7fb9d7",
+      "#ffffff",
+      "#e68764",
+      "#731432"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Chl-a anomaly [%]"
+  }
+}

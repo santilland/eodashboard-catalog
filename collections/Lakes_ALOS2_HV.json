@@ -1,0 +1,86 @@
+{
+  "Name": "lakes_alos2_hv",
+  "Title": "Lakes (ALOS2-HV)",
+  "EodashIdentifier": "Lakes_ALOS2_HV",
+  "Description": "lakes_alos2_hv/lakes_alos2_hv.md",
+  "Themes": [
+    "water"
+  ],
+  "Tags": [
+    "Water quality",
+    "Open data",
+    "Water extent"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "ALOS-2"
+      ],
+      "Sensor": [
+        "PALSAR-2"
+      ]
+    }
+  },
+  "Agency": [
+    "JAXA"
+  ],
+  "Image": "Lakes_ALOS2_lakes_alos2_hv/thumbnail.png",
+  "References": [
+    {
+      "Name": "JAXA ALOS-2 PALSAR-2",
+      "Url": "https://www.eorc.jaxa.jp/ALOS-2/en/about/palsar2.htm"
+    },
+    {
+      "Name": "Use data",
+      "Url": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_data_e.htm"
+    }
+  ],
+  "Locations": [
+    {
+      "Identifier": "TonleSap_HV",
+      "Country": [
+        "KH"
+      ],
+      "Name": "Tonl\u00e9 Sap (ALOS2-HV)",
+      "Point": [
+        104.2,
+        12.7
+      ],
+      "Bbox": [
+        101.938,
+        11.945,
+        106.37,
+        14.0674
+      ],
+      "Times": [
+        "2016-11-23T00:00:00",
+        "2017-11-22T00:00:00",
+        "2020-11-04T00:00:00",
+        "2021-11-03T00:00:00",
+        "2022-02-09T00:00:00",
+        "2022-03-23T00:00:00",
+        "2022-04-20T00:00:00",
+        "2022-06-01T00:00:00",
+        "2022-07-13T00:00:00",
+        "2022-08-24T00:00:00",
+        "2022-09-21T00:00:00",
+        "2022-12-14T00:00:00"
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "7820f4b8-0270-438e-83da-18de27fc539c",
+      "LayerId": "JAXA_LAKES_ALOS2_HV"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "JAXA",
+      "Url": "https://global.jaxa.jp/"
+    }
+  ]
+}

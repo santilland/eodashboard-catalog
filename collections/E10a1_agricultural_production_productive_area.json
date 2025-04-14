@@ -1,0 +1,45 @@
+{
+  "Name": "agricultural_production_productive_area",
+  "Title": "Agricultural production - productive area",
+  "EodashIdentifier": "E10a1",
+  "Subtitle": "Agricultural production in Europe",
+  "Description": "E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.md",
+  "Themes": [
+    "agriculture"
+  ],
+  "Tags": [
+    "Copernicus",
+    "Open data"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-2"
+      ],
+      "Sensor": [
+        "MSI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Provider": [
+    {
+      "Name": "Universit\u00e9 catholique de Louvain",
+      "Url": "https://uclouvain.be/en/index.html"
+    },
+    {
+      "Name": "Copernicus",
+      "Url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
+      "Name": "GeoDB",
+      "Database": "eodash",
+      "CollectionId": "E10a1_tri"
+    }
+  ]
+}

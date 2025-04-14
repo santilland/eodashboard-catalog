@@ -1,0 +1,100 @@
+{
+  "Name": "4D_Greenland_Melt_Season_End",
+  "Title": "Greenland Melt Season End",
+  "EodashIdentifier": "4D_Greenland_Melt_Season_End",
+  "Subtitle": "Greenland Melt Season End from 4D Greenland",
+  "Description": "4D_Greenland_Melt_Season_End/4D_Greenland_Melt_Season_End.md",
+  "Themes": [
+    "cryosphere"
+  ],
+  "Tags": [
+    "Greenland",
+    "Arctic",
+    "4D Visualization",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Scatterometer",
+    "C-SAR",
+    "Ice monitoring"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "MetOp"
+      ],
+      "Sensor": [
+        "ASCAT"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA",
+    "EUMETSAT"
+  ],
+  "Provider": [
+    {
+      "Name": "ESA",
+      "Url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "Name": "EUMETSAT",
+      "Url": "https://www.eumetsat.int/"
+    }
+  ],
+  "Citation": {
+    "Citation": "Citing the data:\nLindsley, R. D. and Long, D. G. (2010): Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3\n"
+  },
+  "References": [
+    {
+      "Name": "4D Greenland Project Page",
+      "Url": "https://4dgreenland.eo4cryo.dk/"
+    },
+    {
+      "Name": "ESA Open Science Data Catalogue: 4D-Greenland",
+      "Url": "https://opensciencedata.esa.int/projects/4d-greenland/collection"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
+      "LayerId": "VIS_4D_GREENLAND_END",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "7bbcfb29-3260-466d-bdb6-da517019edd9"
+    }
+  ],
+  "Image": "4D_Greenland_Melt_Season_End/thumbnail.png",
+  "Legend": "4D_Greenland_Melt_Season_End/legend.png",
+  "Colorlegend": {
+    "domain": [
+      1,
+      365
+    ],
+    "range": [
+      "#306bff",
+      "#488eff",
+      "#5ca5ff",
+      "#6fb4ff",
+      "#82beff",
+      "#94c7ff",
+      "#a3d0ff",
+      "#b2d8ff",
+      "#c2deff",
+      "#cee5ff",
+      "#d8ecff",
+      "#e1f2ff",
+      "#e9f6ff",
+      "#f2fbff",
+      "#fbffff"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Ice melting end [day of year]"
+  }
+}

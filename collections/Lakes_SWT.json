@@ -1,0 +1,203 @@
+{
+  "Name": "Lakes_SWT_surface_water_temperature",
+  "Title": "Lakes surface water temperature",
+  "EodashIdentifier": "Lakes_SWT",
+  "Description": "Lakes_SWT_surface_water_temperature/Lakes_SWT_surface_water_temperature.md",
+  "Themes": [
+    "water"
+  ],
+  "Tags": [
+    "Climate Change Initiative",
+    "Water quality",
+    "Multi-sensors",
+    "Open data"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Other"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Image": "Lakes_SWT_surface_water_temperature/Lakes_SWT_surface_water_temperature.png",
+  "Legend": "Lakes_SWT_surface_water_temperature/SWT_legend.png",
+  "License": "CC-BY-4.0",
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "Carrea, L., Cr\u00e9taux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
+        "DOI": "10.1038/s41597-022-01889-z"
+      }
+    ]
+  },
+  "References": [
+    {
+      "Name": "Data Documentation",
+      "Url": "https://climate.esa.int/en/projects/lakes/key-documents-lakes/"
+    },
+    {
+      "Name": "CCI Lakes project website",
+      "Url": "https://climate.esa.int/en/projects/lakes/about/"
+    },
+    {
+      "Name": "Data Source",
+      "Url": "https://catalogue.ceda.ac.uk/uuid/a07deacaffb8453e93d57ee214676304"
+    },
+    {
+      "Name": "DeepESDL (Earth System Data Lab)",
+      "Url": "https://www.earthsystemdatalab.net/"
+    },
+    {
+      "Name": "Lexcube - visualise datasets in a 3D cube",
+      "Url": "https://viewer.earthsystemdatalab.net/"
+    },
+    {
+      "Name": "xcube viewer - visualise DeepESDL datacubes (zarr) on the web",
+      "Url": "https://viewer.earthsystemdatalab.net/"
+    },
+    {
+      "Name": "Euro Data Cube CCI Essential Climate Variables collection",
+      "Url": "https://collections.eurodatacube.com/climate-change-initiative/"
+    }
+  ],
+  "Locations": [
+    {
+      "Identifier": "Aral",
+      "Country": [
+        "UZ",
+        "KZ"
+      ],
+      "Name": "Aral",
+      "Point": [
+        58.581,
+        45.303
+      ],
+      "Bbox": [
+        57,
+        43.24,
+        62.29,
+        47.72
+      ]
+    },
+    {
+      "Identifier": "Biwa",
+      "Country": [
+        "JP"
+      ],
+      "Name": "Biwa",
+      "Point": [
+        136.095,
+        35.284
+      ],
+      "Bbox": [
+        135.133,
+        33.535,
+        138.1728,
+        35.7509
+      ]
+    },
+    {
+      "Identifier": "Tonle_sap",
+      "Country": [
+        "KH"
+      ],
+      "Name": "Tonl\u00e9 Sap",
+      "Point": [
+        104.2,
+        12.7
+      ],
+      "Bbox": [
+        101.938,
+        11.945,
+        106.37,
+        14.0674
+      ]
+    },
+    {
+      "Identifier": "Vanern",
+      "Country": [
+        "SW"
+      ],
+      "Name": "V\u00e4nern",
+      "Point": [
+        13.535,
+        59.07
+      ],
+      "Bbox": [
+        10.6994,
+        57.353,
+        15.9848,
+        59.83119
+      ]
+    },
+    {
+      "Identifier": "Balaton",
+      "Country": [
+        "HU"
+      ],
+      "Name": "Balaton",
+      "Point": [
+        17.77,
+        46.825
+      ],
+      "Bbox": [
+        17.08,
+        46.55,
+        18.24,
+        47.12
+      ]
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "9fdb8c27-9000-4912-b715-1465f840a1db",
+      "LayerId": "LAKES_SURFACE_WATER_TEMPERATURE"
+    }
+  ],
+  "Services": [
+    {
+      "Endpoint": "https://services.sentinel-hub.com/api/v1/statistics",
+      "Name": "Statistical API",
+      "Type": "byoc",
+      "CollectionId": "9fdb8c27-9000-4912-b715-1465f840a1db",
+      "Script": "Lakes_SWT_surface_water_temperature/Lakes_SWT_surface_water_temperature.js"
+    },
+    {
+      "Name": "EOxHub Notebook",
+      "Title": "Accessing CCI data with xcube",
+      "Url": "https://eurodatacube.com/notebooks/curated/EDC_Access_CCI_data.ipynb"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "ESA",
+      "Url": "https://www.esa.int/"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      270,
+      310
+    ],
+    "range": [
+      "#274f85",
+      "#568dba",
+      "#80aecf",
+      "#c5dbe9",
+      "#f6f6f6",
+      "#f3d3c0",
+      "#e3a48e",
+      "#b7534a",
+      "#812028"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Lake Surface Temperature [K]"
+  }
+}

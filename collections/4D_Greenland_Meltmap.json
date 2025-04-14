@@ -1,0 +1,102 @@
+{
+  "Name": "4D_Greenland_Meltmap",
+  "Title": "Greenland Meltmap",
+  "EodashIdentifier": "4D_Greenland_Meltmap",
+  "Subtitle": "Greenland Meltmap from 4D Greenland",
+  "Description": "4D_Greenland_Meltmap/4D_Greenland_Meltmap.md",
+  "Themes": [
+    "cryosphere"
+  ],
+  "Tags": [
+    "Greenland",
+    "Arctic",
+    "4D Visualization",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Scatterometer",
+    "C-SAR",
+    "Ice monitoring"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "MetOp"
+      ],
+      "Sensor": [
+        "ASCAT"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA",
+    "EUMETSAT"
+  ],
+  "Provider": [
+    {
+      "Name": "ESA",
+      "Url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "Name": "EUMETSAT",
+      "Url": "https://www.eumetsat.int/"
+    }
+  ],
+  "Citation": {
+    "Citation": "Citing the data:\nLindsley, R. D. and Long, D. G. (2010): Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3\n"
+  },
+  "References": [
+    {
+      "Name": "4D Greenland Project Page",
+      "Url": "https://4dgreenland.eo4cryo.dk/"
+    },
+    {
+      "Name": "ESA Open Science Data Catalogue: 4D-Greenland",
+      "Url": "https://opensciencedata.esa.int/projects/4d-greenland/collection"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
+      "Name": "WMS",
+      "Type": "OverwriteTimes",
+      "LayerId": "VIS_GREENLAND_MELTMAP",
+      "OverwriteBBox": [
+        -89.314518,
+        58.787273,
+        7.554587,
+        83.946756
+      ],
+      "DateTimeInterval": {
+        "Start": "2007-01-02T00:00:00Z",
+        "End": "2021-12-28T00:00:00Z",
+        "Timedelta": {
+          "days": 7
+        }
+      }
+    }
+  ],
+  "Image": "4D_Greenland_Meltmap/thumbnail.png",
+  "Legend": "4D_Greenland_Meltmap/legend.png",
+  "Colorlegend": {
+    "domain": [
+      "no melt l.",
+      "surface melt l.",
+      "wet snow l.",
+      "new top frozen l."
+    ],
+    "range": [
+      "#AFABAB",
+      "#B4C7E7",
+      "#66A2D8",
+      "#FFF3CC"
+    ],
+    "scaleType": "categorical",
+    "title": "Ice melting status"
+  }
+}

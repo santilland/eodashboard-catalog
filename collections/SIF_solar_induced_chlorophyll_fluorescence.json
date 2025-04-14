@@ -1,0 +1,93 @@
+{
+  "Name": "solar_induced_chlorophyll_fluorescence",
+  "Title": "Solar induced chlorophyll fluorescence",
+  "Subtitle": "SIF monthly average from Sentinel-5p TROPOMI [mW/m2/sr/nm]",
+  "EodashIdentifier": "SIF",
+  "Description": "SIF_solar_induced_chlorophyll_fluorescence/SIF_solar_induced_chlorophyll_fluorescence.md",
+  "Themes": [
+    "agriculture"
+  ],
+  "Tags": [
+    "photosynthesis"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-5p"
+      ],
+      "Sensor": [
+        "TROPOMI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "K\u00f6ehler, P., Frankenberg, C., Magney, T. S., Guanter, L., Joiner, J., & Landgraf, J. (2018). \nGlobal retrievals of solar-induced chlorophyll fluorescence with TROPOMI. First results and intersensor comparison to OCO-2. Geophysical Research Letters, 45, 10,456\u201310,463.\n",
+        "DOI": "10.1029/2018GL079031"
+      },
+      {
+        "Citation": "NOVELTIS, UPV, SRON, LSCE, ESA (2021). \nThe TROPOSIF global sun-induced fluorescence dataset from the TROPOMI mission.\n",
+        "DOI": "10.5270/esa-s5p_innovation-sif-20180501_20210320-v2.1-202104"
+      },
+      {
+        "Citation": "Guanter, L., Bacour, C., Schneider, A., Aben, I., van Kempen, T. A., Maignan, F., Retscher, C., K\u00f6hler, P., Frankenberg, C., Joiner, J., Zhang, Y. (2021). \nThe TROPOSIF global sun-induced fluorescence dataset from the Sentinel-5P TROPOMI mission, Earth Syst. Sci.\n",
+        "DOI": "10.5194/essd2021-199"
+      }
+    ]
+  },
+  "Legend": "SIF_solar_induced_chlorophyll_fluorescence/SIF_legend.png",
+  "Image": "SIF_solar_induced_chlorophyll_fluorescence/SIF_solar_induced_chlorophyll_fluorescence.png",
+  "References": [
+    {
+      "Name": "CALTECH data access",
+      "Url": "ftp://fluo.gps.caltech.edu/data/tropomi/"
+    },
+    {
+      "Name": "ESA \u2013 TROPOSIF data access",
+      "Url": "https://s5p-troposif.noveltis.fr/data-access/"
+    },
+    {
+      "Name": "ESA \u2013 TROPOSIF documentation",
+      "Url": "https://s5p-troposif.noveltis.fr/wp-content/uploads/2021/05/NOV-FE-0956-MU-019_v2.0.pdf"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "Name": "WMS",
+      "Type": "Time",
+      "LayerId": "SIF-TROPOMI-Cairo-Monthly"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "Copernicus",
+      "Roles": "licensor",
+      "Url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "Name": "ESA",
+      "Roles": "producer, processor",
+      "Url": "https://s5p-troposif.noveltis.fr/data-access/"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      3
+    ],
+    "range": [
+      "#F0F0E5",
+      "#D5E5C6",
+      "#A0C9AC",
+      "#8AA69A"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[mW/m\u00b2/sr/nm]"
+  }
+}

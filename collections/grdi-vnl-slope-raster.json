@@ -1,0 +1,87 @@
+{
+  "Name": "grdi-vnl-slope-raster",
+  "Title": "VIIRS Nighttime Lights (VNL) Slope Component",
+  "EodashIdentifier": "GRDI4",
+  "Subtitle": "Global Gridded Relative Deprivation Index - VIIRS VNL Slope",
+  "Description": "grdi-vnl-slope-raster/grdi-vnl-slope-raster.md",
+  "Themes": [
+    "economy"
+  ],
+  "Tags": [
+    "Human activities",
+    "Open data",
+    "Urban",
+    "Rural",
+    "poverty",
+    "wellbeing"
+  ],
+  "DataSource": {
+    "Other": [
+      "Multi-sensors"
+    ]
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Citation": {
+    "Citation": "Center for International Earth Science Information Network - CIESIN - Columbia University. 2022. Global Gridded Relative Deprivation Index (GRDI), v1. Palisades, NY. NASA Socioeconomic Data and Applications Center (SEDAC).\n",
+    "DOI": "10.7927/3xxe-ap97"
+  },
+  "Legend": "grdi-v1-built/cm_legend.png",
+  "Image": "grdi-vnl-slope-raster/grdi-vnl-slope-raster.png",
+  "References": [
+    {
+      "Name": "Data access",
+      "Url": "https://sedac.ciesin.columbia.edu/data/set/povmap-grdi-v1"
+    },
+    {
+      "Name": "Dataset Description and documentation",
+      "Url": "https://doi.org/10.7927/xwf1-k532"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://openveda.cloud/api/stac/",
+      "Name": "VEDA",
+      "Type": "cog",
+      "CollectionId": "grdi-vnl-slope-raster",
+      "ColormapName": "viridis",
+      "Rescale": [
+        0.0,
+        100.0
+      ],
+      "Bidx": 1
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Url": "https://www.nasa.gov/"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      100
+    ],
+    "range": [
+      "#440154",
+      "#481c6e",
+      "#453581",
+      "#3d4d8a",
+      "#34618d",
+      "#2b748e",
+      "#24878e",
+      "#1f998a",
+      "#25ac82",
+      "#40bd72",
+      "#67cc5c",
+      "#98d83e",
+      "#cde11d",
+      "#fde725"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "index"
+  }
+}

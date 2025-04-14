@@ -1,0 +1,98 @@
+{
+  "Name": "GHS-BUILT-S-R2023A",
+  "Title": "GHS-BUILT-S-R2023A",
+  "EodashIdentifier": "GHSBUILT",
+  "Subtitle": "GHS built-up surface dataset GHS-BUILT-S_GLOBE_R2023A",
+  "Description": "GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.md",
+  "Themes": [
+    "economy"
+  ],
+  "Tags": [
+    "Copernicus",
+    "Human settlement",
+    "Human activities",
+    "EMS",
+    "Open data"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-2"
+      ],
+      "Sensor": [
+        "MSI"
+      ]
+    }
+  },
+  "Agency": [
+    "European Commission"
+  ],
+  "Citation": {
+    "Citation": "Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from Sentinel2 composite and Landsat, multitemporal (1975-2030). European Commission, Joint Research Centre (JRC) [Dataset]\n",
+    "DOI": "10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
+    "Publication": [
+      {
+        "Citation": "European Commission, GHSL Data Package 2023, Publications Office of the European Union, Luxembourg, 2023",
+        "DOI": "10.2760/098587"
+      }
+    ]
+  },
+  "License": "CC-BY-4.0",
+  "Image": "GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.png",
+  "Legend": "GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A_legend.png",
+  "References": [
+    {
+      "Name": "GHSL - Global Human Settlement Layer",
+      "Url": "https://human-settlement.emergency.copernicus.eu/download.php?ds=bu"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "0c7aa265-50f9-4947-9980-2ee5ae204803",
+      "LayerId": "GHS_BUILT_S"
+    }
+  ],
+  "Services": [
+    {
+      "Endpoint": "https://services.sentinel-hub.com/api/v1/statistics",
+      "Name": "Statistical API",
+      "Type": "byoc",
+      "CollectionId": "0c7aa265-50f9-4947-9980-2ee5ae204803",
+      "Script": "GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.js"
+    },
+    {
+      "Name": "EOxHub Notebook",
+      "Title": "Evaluation of Fire Impact on Populated Areas on a European Site",
+      "Url": "https://bids2023-nbviewer.hub.eox.at/localfile/bids2023/notebooks/Fire_impact_analysis.ipynb"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "Copernicus Emergency Management service",
+      "Url": "https://emergency.copernicus.eu/emsdata.html"
+    },
+    {
+      "Name": "Joint Research Centre",
+      "Url": "https://data.jrc.ec.europa.eu/dataset/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea#dataaccess"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      10000
+    ],
+    "range": [
+      "#000000",
+      "#7c08a9",
+      "#cb4778",
+      "#f69a43",
+      "#fbfa90"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "0 - 10 000 m\u00b2 of built-up surface areas"
+  }
+}

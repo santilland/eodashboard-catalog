@@ -1,0 +1,95 @@
+{
+  "Name": "ESDC_kndvi",
+  "Title": "Kernel NDVI (daily)",
+  "Subtitle": "BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg",
+  "EodashIdentifier": "ESDC_kndvi",
+  "Description": "ESDC_kndvi/ESDC_kndvi.md",
+  "Themes": [
+    "biomass"
+  ],
+  "Tags": [
+    "CO2",
+    "Atmosphere",
+    "Photosynthesis",
+    "Open data",
+    "Vegetation Index",
+    "Carbon"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Other"
+      ]
+    }
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "Gustau Camps-Valls et al., A unified vegetation index for quantifying the terrestrial biosphere.Sci. Adv.7,eabc7447(2021).\n",
+        "DOI": "10.1126/sciadv.abc7447"
+      }
+    ]
+  },
+  "Legend": "ESDC_kndvi/ESDC_kndvi_legend.png",
+  "Image": "ESDC_kndvi/ESDC_kndvi.png",
+  "References": [
+    {
+      "Name": "Data served from the Earth System Data Lab xcube server",
+      "Url": "https://viewer.earthsystemdatalab.net/"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://api.earthsystemdatalab.net/api",
+      "Type": "zarr",
+      "Name": "xcube",
+      "StacEndpoint": "/ogc",
+      "DatacubeId": "esdc",
+      "Variable": "kndvi",
+      "ColormapName": "RdYlGn",
+      "Rescale": [
+        0,
+        1
+      ],
+      "Query": {
+        "Start": "2014-01-01T00:00:00Z",
+        "End": "2021-12-31T00:00:00Z"
+      }
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#a50026",
+      "#cb2527",
+      "#e75136",
+      "#f7814c",
+      "#fdb264",
+      "#fed885",
+      "#fff3ab",
+      "#f0f9ab",
+      "#d1ec86",
+      "#aadb6d",
+      "#7ac665",
+      "#43ac5a",
+      "#148d4a",
+      "#006837"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "KNDVI"
+  }
+}
