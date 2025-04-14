@@ -114,7 +114,9 @@ collections:
   - ESDL_Hydrology_SM
   - ESDL_Hydrology_Precipitation
   - MCD_S14Amazonas_detections
-  - EPA_Methane
+  - EPA_Field_burning_Monthly
+  - EPA_Forest_fire_Methane_Daily
+  - EPA_Forest_fire_Methane_Yearly
   - HLS_NDVI
   - LIS_Global_DA_Evap
   - NTLU_JAXA_Nighttimelevel_Urban
