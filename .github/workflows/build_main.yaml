@@ -22,13 +22,22 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: 'true'
+        uses: actions/checkout@v4
       - name: Install dependencies
         run: |
           pip install -U pip
+          pip install json2yaml
           pip install eodash_catalog
+      - name: Convert JSON to YAML
+        run: |
+          mkdir -p yaml_collections
+          for file in collections/*.json; do
+            json2yaml "$file" > "yaml_collections/$(basename "$file" .json).yaml"
+          done
+          mkdir -p yaml_indicators
+          for file in indicators/*.json; do
+            json2yaml "$file" > "yaml_indicators/$(basename "$file" .json).yaml"
+          done
       - name: Build
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
