@@ -1,0 +1,217 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "xco2_16day_diff._2015-04-02",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.3125,
+          -90.25
+        ],
+        [
+          179.6875,
+          -90.25
+        ],
+        [
+          179.6875,
+          90.25
+        ],
+        [
+          -180.3125,
+          90.25
+        ],
+        [
+          -180.3125,
+          -90.25
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.3125,
+    -90.25,
+    179.6875,
+    90.25
+  ],
+  "properties": {
+    "datetime": "2015-04-02T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/co2-diff/items/xco2_16day_diff._2015-04-02/map?assets=cog_default&rescale=-1.5e-06%2C1.5e-06&colormap_name=coolwarm",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from OCO-2 (daily difference)"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/co2-diff/xco2_16day_diff._2015-04-02.tif&resampling_method=nearest&bidx=1&colormap_name=rdbu_r&rescale=-1e-06,1e-06",
+      "type": "image/png",
+      "title": "N2_CO2_diff"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from OCO-2 (daily difference)"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/co2-diff/xco2_16day_diff._2015-04-02.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -180.3125,
+        -90.25,
+        179.6875,
+        90.25
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        361,
+        576
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 999999986991104.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 1.2002300688133678e-06,
+            "min": -1.4032023045729147e-06,
+            "count": 11,
+            "buckets": [
+              11,
+              61,
+              436,
+              7228,
+              54249,
+              117796,
+              25028,
+              2984,
+              140,
+              3
+            ]
+          },
+          "statistics": {
+            "mean": -1.4269855366448322e-08,
+            "stddev": 1.8548059918203772e-07,
+            "maximum": 1.2002300688133678e-06,
+            "minimum": -1.4032023045729147e-06,
+            "valid_percent": 100.0
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.3125,
+              -90.25
+            ],
+            [
+              179.6875,
+              -90.25
+            ],
+            [
+              179.6875,
+              90.25
+            ],
+            [
+              -180.3125,
+              90.25
+            ],
+            [
+              -180.3125,
+              -90.25
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.625,
+        0.0,
+        -180.3125,
+        0.0,
+        -0.5,
+        90.25,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/co2-diff/items/xco2_16day_diff._2015-04-02/preview.png?assets=cog_default&rescale=-1.5e-06%2C1.5e-06&colormap_name=coolwarm",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "co2-diff"
+}

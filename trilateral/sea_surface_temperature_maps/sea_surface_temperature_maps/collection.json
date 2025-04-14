@@ -1,0 +1,225 @@
+{
+  "type": "Collection",
+  "id": "sea_surface_temperature_maps",
+  "stac_version": "1.1.0",
+  "description": "## Water Quality Regional Maps\n\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./NorthAdriaticSST/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in North Adriatic",
+      "id": "NorthAdriaticSST",
+      "latlng": "45.19752,13.02978",
+      "name": "Sea surface temperature in North Adriatic"
+    },
+    {
+      "rel": "child",
+      "href": "./RhoneDeltaSST/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Rhone Delta",
+      "id": "RhoneDeltaSST",
+      "latlng": "43.4,4.94",
+      "name": "Sea surface temperature in Rhone Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./BarcelonaSST/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Barcelona",
+      "id": "BarcelonaSST",
+      "latlng": "40.985,1.769",
+      "name": "Sea surface temperature in Barcelona"
+    },
+    {
+      "rel": "child",
+      "href": "./DanubeDeltaSST/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Danube Delta",
+      "id": "DanubeDeltaSST",
+      "latlng": "45.05,29.9",
+      "name": "Sea surface temperature in Danube Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./TagusDelta/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Tagus Delta",
+      "id": "TagusDelta",
+      "latlng": "38.66,-9.32",
+      "name": "Sea surface temperature in Tagus Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./ElbeDelta/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Elbe Delta",
+      "id": "ElbeDelta",
+      "latlng": "53.94,8.408",
+      "name": "Sea surface temperature in Elbe Delta"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_surface_temperature_maps",
+      "wms:layers": [
+        "AWS_VIS_SST_MAPS"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+      "type": "text/html",
+      "title": "Licence to Use Copernicus Products"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-92780d01-126f-4827-80f8-4e561dd8e228"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature maps"
+    }
+  ],
+  "subtitle": "Sea surface temperature description",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "Surface temperature",
+    "CMEMS",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "N3a2_SST",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -70,
+      70
+    ],
+    "range": [
+      "#0000ff",
+      "#0096c8",
+      "#009a5a",
+      "#fab478",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea Surface Temperature Anomaly [%]"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Sea surface temperature maps",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -10.504186630249023,
+          37.997182846069336,
+          30.604209899902344,
+          54.40508270263672
+        ],
+        [
+          11.995806217193604,
+          44.495954513549805,
+          13.82429552078247,
+          45.80441474914551
+        ],
+        [
+          4.195806264877319,
+          42.99946069717407,
+          5.504192113876343,
+          43.49429893493652
+        ],
+        [
+          0.4958158806278117,
+          40.49169459203297,
+          2.504193179278194,
+          41.50425148010254
+        ],
+        [
+          28.995811462402344,
+          44.39800262451172,
+          30.604209899902344,
+          45.60430145263672
+        ],
+        [
+          -10.504186630249023,
+          37.997182846069336,
+          -8.74580192565918,
+          39.50436973571777
+        ],
+        [
+          6.99497710624242,
+          53.39045816360543,
+          9.205050359577893,
+          54.40508270263672
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "CNR ISMAR",
+      "url": "https://www.ismar.cnr.it/istituto/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_SST_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

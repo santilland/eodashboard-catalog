@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "agricultural_production_productive_area",
+  "stac_version": "1.1.0",
+  "description": "## Agricultural production - Greenhouse removal activity\n\nThis indicator compares the total observed active fields in the cultivated areas in the 2020 season to the same months in 2019. It aims to show the impact of the lack of seasonal workers during the Covid-19 pandemic.\nThe indicator is based on optical data at suitable resolution to observe the respective greenhouse removal activity on the fields. It is provided for two types of harvests: white asparagus in Germany and red fruits in Spain. Both of these are labour intensive activities relying on seasonal workers.  \n\n- For the white asparagus harvest activity, the indicator is produced for the German federal state of Brandenburg (29.500 sqkm), based on Copernicus Sentinel-2 data.\n\n- For the red berries harvesting activity, the indicator is produced for the province of Huelva in Spain, that is responsible for 97.5% of the national red berries production. The indicator is based on optical data from the Pl\u00e9iades constellation.\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./agricultural_production_productive_area/2020/Brandenburg.json",
+      "type": "application/geo+json",
+      "id": "DE11",
+      "latlng": "52.13141,13.09063",
+      "country": "DE",
+      "city": "Brandenburg"
+    },
+    {
+      "rel": "item",
+      "href": "./agricultural_production_productive_area/2019/Huelva Lagunas de las Madres.json",
+      "type": "application/geo+json",
+      "id": "ES8",
+      "latlng": "37.18316,-6.84888",
+      "country": "ES",
+      "city": "Huelva (Lagunas de las Madres)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - productive area"
+    }
+  ],
+  "subtitle": "Agricultural production in Europe",
+  "yAxis": "Total area [ha]",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Copernicus",
+    "Open data"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "E10a1",
+  "sensor": [
+    "MSI"
+  ],
+  "satellite": [
+    "Sentinel-2"
+  ],
+  "geoDBID": "E10a1_tri",
+  "endpointtype": "GeoDB",
+  "title": "Agricultural production - productive area",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -6.85888,
+          37.17316,
+          13.10063,
+          52.14141
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-12-27T11:21:32Z",
+          "2020-07-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Universit\u00e9 catholique de Louvain",
+      "url": "https://uclouvain.be/en/index.html"
+    },
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Brandenburg",
+      "Huelva (Lagunas de las Madres)"
+    ],
+    "countries": [
+      "DE",
+      "ES"
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "4c968062-2260-4120-b508-4728d668d48a",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          6.99497710624242,
+          53.39045816360543
+        ],
+        [
+          9.205050359577893,
+          53.39045816360543
+        ],
+        [
+          9.205050359577893,
+          54.40508270263672
+        ],
+        [
+          6.99497710624242,
+          54.40508270263672
+        ],
+        [
+          6.99497710624242,
+          53.39045816360543
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    6.99497710624242,
+    53.39045816360543,
+    9.205050359577893,
+    54.40508270263672
+  ],
+  "properties": {
+    "datetime": "2024-05-11T00:00:00Z",
+    "proj:bbox": [
+      6.99497710624242,
+      53.39045816360543,
+      9.205050359577893,
+      54.40508270263672
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            6.99497710624242,
+            53.39045816360543
+          ],
+          [
+            9.205050359577893,
+            53.39045816360543
+          ],
+          [
+            9.205050359577893,
+            54.40508270263672
+          ],
+          [
+            6.99497710624242,
+            54.40508270263672
+          ],
+          [
+            6.99497710624242,
+            53.39045816360543
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_surface_temperature_maps",
+      "wms:layers": [
+        "AWS_VIS_SST_MAPS"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2024-05-11T00:00:00Z/2024-05-11T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature maps"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Elbe Delta"
+    }
+  ],
+  "assets": {},
+  "collection": "sea_surface_temperature_maps"
+}

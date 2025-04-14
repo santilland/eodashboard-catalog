@@ -1,0 +1,159 @@
+{
+  "type": "Collection",
+  "id": "ADD_West_Antarctica_S1",
+  "stac_version": "1.1.0",
+  "description": "# Sentinel-1 observations of Antarctica\n\nThe Sentinel-1 Antarctica dataset provides comprehensive radar imagery of the Antarctic continent through the Copernicus Earth observation program. This dataset is particularly valuable for monitoring ice sheet dynamics, glacier movements, and environmental changes in Antarctica. The data is collected using Synthetic Aperture Radar (SAR) technology, which enables continuous observation regardless of weather conditions or seasonal darkness.\n\nThe Sentinel-1\u2019s radar can operate in four modes: Interferometric Wide Swath (IW), Extra Wide Swath (EW), Wave (WV) and Stripmap (SM). The EW mode is aimed primarily for use over sea-ice, polar zones and certain maritime areas, in particular for ice, oil spill monitoring and security services. Like IW, EW mode can also be used for interferometry since it shares the same characteristics for burst synchronisation, baseline and Doppler stability.\n\n## Dataset Description\n- Sensor: C-band Synthetic Aperture Radar (operating at 5.405 GHz)\n- Mode: Extra Wide (EW) swath mode with TOPSAR technique\n- Resolution: 20 m by 40 m spatial resolution\n- Swath Width: 400 km\n- Temporal coverageL continuous observations since 2014\n- Data features: all-weather, day-and-night imaging capability, ideal for ice monitoring and maritime surveillance.\n\n- The Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\n- This map uses the baselayer Antarctic hillshade and bathymetry south of 60\u00b0S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n\n\n\n[Sentinel-1](https://docs.sentinel-hub.com/api/latest/data/sentinel-1-grd/) dataset is [provided by the Euro Data Cube](https://eurodatacube.com/documentation/analysis-ready-data), via the on-the-fly data cube access service powered by [Sentinel Hub](https://www.sentinel-hub.com/). The Sentinel-1 mission is the European Radar Observatory for the [Copernicus](https://www.copernicus.eu/en) joint initiative of the European Commission (EC) and the European Space Agency (ESA) \n\n\n### Read More on the ESA website\n\n[Sentinel-1 Homepage on ESA Website](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1)\n\n\n\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ADD_West_Antarctica_S1/collection.json",
+      "type": "application/json",
+      "title": "West Antarctica (Sentinel-1)",
+      "endpointtype": "WMS_OverwriteTimes",
+      "subtitle": "West Antarctica Sentinel-1 Subset",
+      "code": "ADD_West_Antarctica_S1",
+      "id": "ADD_West_Antarctica_S1",
+      "themes": [
+        "cryosphere"
+      ],
+      "tags": [
+        "Copernicus",
+        "Open data",
+        "SAR",
+        "Antarctica",
+        "Polar regions",
+        "Climate change",
+        "Cryosphere",
+        "C-SAR",
+        "Open science",
+        "Cryosphere",
+        "Ice monitoring"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "ADD_West_Antarctica_S1",
+      "sensor": [
+        "C-SAR"
+      ],
+      "satellite": [
+        "Sentinel-1"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P. (2019): The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674.\n",
+      "doi": "10.5285/836f016a-33be-6ddc-e053-6c86abc0788e"
+    }
+  ],
+  "subtitle": "West Antarctica Sentinel-1 Subset",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Copernicus",
+    "Open data",
+    "SAR",
+    "Antarctica",
+    "Polar regions",
+    "Climate change",
+    "Cryosphere",
+    "C-SAR",
+    "Open science",
+    "Cryosphere",
+    "Ice monitoring"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "ADD_West_Antarctica_S1",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "title": "West Antarctica (Sentinel-1)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -103,
+          -75,
+          -102,
+          -74
+        ],
+        [
+          -103,
+          -75,
+          -102,
+          -74
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-05-18T00:00:00Z",
+          "2022-01-13T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "roles": "producer, processor",
+      "url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "name": "Carbon Brief",
+      "url": "https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/"
+    },
+    {
+      "name": "Euro Data Cube",
+      "url": "https://eurodatacube.com/documentation/analysis-ready-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ADD_West_Antarctica_S1"
+    ],
+    "themes": [
+      "cryosphere"
+    ],
+    "satellite": [
+      "Sentinel-1"
+    ],
+    "sensor": [
+      "C-SAR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

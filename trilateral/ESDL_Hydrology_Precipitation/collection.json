@@ -1,0 +1,207 @@
+{
+  "type": "Collection",
+  "id": "ESDL_Hydrology_Precipitation",
+  "stac_version": "1.1.0",
+  "description": "# Daily precipitation product\nDaily precipitation (P) data at 1 km spatial resolution - Data are obtained by downscaling CPC and GPM-LR data to 1 km spatial resolution using CHELSA climatology and merging them through a triple collocation technique on CPC GPM and ERA5\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ESDL_Hydrology_Precipitation/collection.json",
+      "type": "application/json",
+      "title": "Daily precipitation product",
+      "endpointtype": "xcube_zarr",
+      "code": "ESDL_Hydrology_Precipitation",
+      "id": "ESDL_Hydrology_Precipitation",
+      "themes": [
+        "agriculture",
+        "water"
+      ],
+      "yAxis": "mm/day",
+      "tags": [
+        "Open data",
+        "precipitation",
+        "CPC",
+        "GPM",
+        "CHELSA Climatology"
+      ],
+      "agency": [
+        "EURAC"
+      ],
+      "subcode": "ESDL_Hydrology_Precipitation",
+      "otherSources": [
+        "GPM",
+        "CPC",
+        "model",
+        "ERA5"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_Precipitation/image.png",
+  "yAxis": "mm/day",
+  "themes": [
+    "agriculture",
+    "water"
+  ],
+  "tags": [
+    "Open data",
+    "precipitation",
+    "CPC",
+    "GPM",
+    "CHELSA Climatology"
+  ],
+  "agency": [
+    "EURAC"
+  ],
+  "subcode": "ESDL_Hydrology_Precipitation",
+  "otherSources": [
+    "GPM",
+    "CPC",
+    "model",
+    "ERA5"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      50
+    ],
+    "range": [
+      "#440154",
+      "#481c6e",
+      "#453581",
+      "#3d4d8a",
+      "#34618d",
+      "#2b748e",
+      "#24878e",
+      "#1f998a",
+      "#25ac82",
+      "#40bd72",
+      "#67cc5c",
+      "#98d83e",
+      "#cde11d",
+      "#fde725"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[mm/day]"
+  },
+  "title": "Daily precipitation product",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -5.70080002975464,
+          28.339799316406264,
+          37.76919997024536,
+          48.17579931640626
+        ],
+        [
+          -5.70080002975464,
+          28.339799316406264,
+          37.76919997024536,
+          48.17579931640626
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01T00:00:00Z",
+          "2021-12-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NOAA",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://psl.noaa.gov/data/gridded/data.cpc.globalprecip.html"
+    },
+    {
+      "name": "NASA",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://gpm.nasa.gov/taxonomy/term/1415"
+    },
+    {
+      "name": "ECMWF",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://www.ecmwf.int/"
+    },
+    {
+      "name": "WLS",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://www.wsl.ch/en/index.html"
+    },
+    {
+      "name": "CNR IRPI",
+      "roles": [
+        "processor"
+      ],
+      "url": "http://hydrology.irpi.cnr.it/"
+    },
+    {
+      "name": "EURAC",
+      "roles": [
+        "host"
+      ],
+      "url": "http://www.eurac.edu/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ESDL_Hydrology_Precipitation"
+    ],
+    "themes": [
+      "water",
+      "agriculture"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_Precipitation/image.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_Precipitation/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_Precipitation/image.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://stac.eurac.edu:8080/collections/rainfall_all_domain",
+      "type": "text/html",
+      "title": "Daily precipitation product",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

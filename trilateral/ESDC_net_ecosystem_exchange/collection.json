@@ -1,0 +1,180 @@
+{
+  "type": "Collection",
+  "id": "ESDC_net_ecosystem_exchange",
+  "stac_version": "1.1.0",
+  "description": "# Net Ecosystem Exchange\n\nNet carbon exchange between the ecosystem and the atmosphere\n\n\n### Additional information\n\n- The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ESDC_net_ecosystem_exchange/collection.json",
+      "type": "application/json",
+      "title": "Land Net Ecosystem Exchange",
+      "endpointtype": "xcube_zarr",
+      "subtitle": "Net carbon exchange between the ecosystem and the atmosphere",
+      "code": "ESDC_net_ecosystem_exchange",
+      "id": "ESDC_net_ecosystem_exchange",
+      "themes": [
+        "biomass"
+      ],
+      "yAxis": "g C m^-2 d^-1",
+      "tags": [
+        "CO2",
+        "Atmosphere",
+        "Photosynthesis",
+        "Open data",
+        "Carbon"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "ESDC_net_ecosystem_exchange",
+      "sensor": [
+        "MODIS"
+      ],
+      "satellite": [
+        "Terra"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., R\u00e1duly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291\u20134313.\n",
+      "doi": "10.5194/bg-13-4291-2016, 2016"
+    }
+  ],
+  "subtitle": "Net carbon exchange between the ecosystem and the atmosphere",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "CO2",
+    "Atmosphere",
+    "Photosynthesis",
+    "Open data",
+    "Carbon"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "ESDC_net_ecosystem_exchange",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Terra"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -7,
+      2
+    ],
+    "range": [
+      "#0000ff",
+      "#2727ff",
+      "#4e4eff",
+      "#7676ff",
+      "#9d9dff",
+      "#c4c4ff",
+      "#ebebff",
+      "#ffebeb",
+      "#ffc4c4",
+      "#ff9d9d",
+      "#ff7676",
+      "#ff4e4e",
+      "#ff2727",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[gC/m\u00b2/day]"
+  },
+  "title": "Land Net Ecosystem Exchange",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-05T00:00:00Z",
+          "2018-12-15T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ESDC_net_ecosystem_exchange"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "Terra"
+    ],
+    "sensor": [
+      "MODIS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://viewer.earthsystemdatalab.net/",
+      "type": "text/html",
+      "title": "Data served from the Earth System Data Lab xcube server",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "type": "Collection",
+  "id": "4D_Greenland_Melt_Duration",
+  "stac_version": "1.1.0",
+  "description": "# Greenland Melt Season Duration 2007 - 2021 \n### VALUE ADDED PROTOTYPE PRODUCT\n\nAuthor: Enveo IT, F\u00fcrstenweg 176, 6020 Innsbruck, Austria\n\n\nThis dataset illustrates the Melt Season Duration. It refers to the first time that there are three consecutive days of melt in a year, thereby indicating the beginning of the snowmelt season. The product was generated based on melt maps (indicating presence of liquid water) from 2007 until 2021 derived from the ASCAT Enhanced Resolution\u00a0Scatterometer Image Reconstruction (SIR) product [1]. The meltmaps (such as the one for 2021 depicted below) are also available on this Dashboard.\n\n\n**Explore the Greenland melt maps 2007-2021 on EO Dashboard:**\n\n* [Greenland Meltmaps](https://eodashboard.org/explore?indicator=4D_Greenland_Meltmap)\n\nAll products are provided in GeoTiff format at a grid spacing of 5 km x 5 km in the projection WGS 84 / NSIDC Sea Ice Polar Stereographic North (EPSG:3413).\u00a0\n\n------------------------------------------------\n[1] The SIR product is processed by the Microwave Earth Remote Sensing Laboratory (MERS) at Brigham Young University (BYU) and based on the full resolution (SZF)\u00a0ASCAT C-Band Scatterometer data. It provides an enhanced resolution of 4.45 km by combining multiple pass, irregularly spaced data into higher-resolution gridded images. The SIR product used combines all data acquired within a single 24-hr period (msfa). \n\n### Reference: \nLindsley, R. D. and Long, D. G. 2010. Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3.\n\n### Data Access:\nESA Open Science Data Catalogue https://opensciencedata.esa.int/projects/4d-greenland/collection \n\n### 4D Greenland Project Page\n\nhttps://4dgreenland.eo4cryo.dk/\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./4D_Greenland_Melt_Duration/collection.json",
+      "type": "application/json",
+      "title": "Greenland Melt Duration",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "Greenland Melt Duration from 4D Greenland",
+      "code": "4D_Greenland_Melt_Duration",
+      "id": "4D_Greenland_Melt_Duration",
+      "themes": [
+        "cryosphere"
+      ],
+      "tags": [
+        "Greenland",
+        "Arctic",
+        "Climate change",
+        "Polar regions",
+        "Open data",
+        "Open Science",
+        "Cryosphere",
+        "Glaciers",
+        "Ice cap",
+        "Melt",
+        "Scatterometer",
+        "C-SAR",
+        "Ice monitoring"
+      ],
+      "agency": [
+        "ESA",
+        "EUMETSAT"
+      ],
+      "subcode": "4D_Greenland_Melt_Duration",
+      "sensor": [
+        "ASCAT"
+      ],
+      "satellite": [
+        "MetOp"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:citation": "Citing the data:\nLindsley, R. D. and Long, D. G. (2010): Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3\n",
+  "subtitle": "Greenland Melt Duration from 4D Greenland",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Melt_Duration/thumbnail.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Greenland",
+    "Arctic",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Scatterometer",
+    "C-SAR",
+    "Ice monitoring"
+  ],
+  "agency": [
+    "ESA",
+    "EUMETSAT"
+  ],
+  "subcode": "4D_Greenland_Melt_Duration",
+  "sensor": [
+    "ASCAT"
+  ],
+  "satellite": [
+    "MetOp"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      3,
+      210
+    ],
+    "range": [
+      "#306bff",
+      "#488eff",
+      "#5ca5ff",
+      "#6fb4ff",
+      "#82beff",
+      "#94c7ff",
+      "#a3d0ff",
+      "#b2d8ff",
+      "#c2deff",
+      "#cee5ff",
+      "#d8ecff",
+      "#e1f2ff",
+      "#e9f6ff",
+      "#f2fbff",
+      "#fbffff"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Ice melting [days]"
+  },
+  "title": "Greenland Melt Duration",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -89.3145177846944,
+          58.787272841702126,
+          7.554586574322073,
+          83.94675630823953
+        ],
+        [
+          -89.3145177846944,
+          58.787272841702126,
+          7.554586574322073,
+          83.94675630823953
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2007-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "name": "EUMETSAT",
+      "url": "https://www.eumetsat.int/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "4D_Greenland_Melt_Duration"
+    ],
+    "themes": [
+      "cryosphere"
+    ],
+    "satellite": [
+      "MetOp"
+    ],
+    "sensor": [
+      "ASCAT"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Melt_Duration/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Melt_Duration/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Melt_Duration/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://4dgreenland.eo4cryo.dk/",
+      "type": "text/html",
+      "title": "4D Greenland Project Page",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://opensciencedata.esa.int/projects/4d-greenland/collection",
+      "type": "text/html",
+      "title": "ESA Open Science Data Catalogue: 4D-Greenland",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

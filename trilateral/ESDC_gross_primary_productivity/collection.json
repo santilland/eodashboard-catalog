@@ -1,0 +1,186 @@
+{
+  "type": "Collection",
+  "id": "ESDC_gross_primary_productivity",
+  "stac_version": "1.1.0",
+  "description": "# Gross Primary Productivity\n\nGross Primary Productivity of Carbon denotes the total amount of carbon fixed in the process of photosynthesis by plants in an ecosystem, such as a stand of trees.\nGPP is measured on photosynthetic tissues, principally leaves. \n\n\n### Additional information\n\n- The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/)\n- [Tramontana, Gianluca, et al. \"Predicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms.\" (2016).](https://doi.org/10.5194/bg-13-4291-2016)\n- [What is the Global Carbon Budget](https://www.esa.int/ESA_Multimedia/Images/2021/11/Global_carbon_budget)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ESDC_gross_primary_productivity/collection.json",
+      "type": "application/json",
+      "title": "Land Gross Primary Productivity",
+      "endpointtype": "xcube_zarr",
+      "subtitle": "Global land GPP",
+      "code": "ESDC_gross_primary_productivity",
+      "id": "ESDC_gross_primary_productivity",
+      "themes": [
+        "biomass"
+      ],
+      "yAxis": "g C m^-2 d^-1",
+      "tags": [
+        "CO2",
+        "Photosynthesis",
+        "Open data",
+        "Carbon"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "ESDC_gross_primary_productivity",
+      "sensor": [
+        "MODIS"
+      ],
+      "satellite": [
+        "Terra"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., R\u00e1duly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291\u20134313.\n",
+      "doi": "10.5194/bg-13-4291-2016"
+    }
+  ],
+  "subtitle": "Global land GPP",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "CO2",
+    "Photosynthesis",
+    "Open data",
+    "Carbon"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "ESDC_gross_primary_productivity",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Terra"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      15
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[gC/m\u00b2/day]"
+  },
+  "title": "Land Gross Primary Productivity",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-05T00:00:00Z",
+          "2018-12-15T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ESDC_gross_primary_productivity"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "Terra"
+    ],
+    "sensor": [
+      "MODIS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://viewer.earthsystemdatalab.net/",
+      "type": "text/html",
+      "title": "Data served from the Earth System Data Lab xcube server",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://www.esa.int/ESA_Multimedia/Images/2021/11/Global_carbon_budget",
+      "type": "text/html",
+      "title": "What is the Global Carbon Budget",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "1acce123-6f4d-4eb7-b9b6-327b4c18b2d0",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          179.99999999999983,
+          -90.0
+        ],
+        [
+          179.99999999999983,
+          89.99999999999991
+        ],
+        [
+          -180.0,
+          89.99999999999991
+        ],
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          179.99999999999983,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    179.99999999999983,
+    89.99999999999991
+  ],
+  "properties": {
+    "datetime": "2020-05-01T01:00:00Z",
+    "proj:bbox": [
+      -180.0,
+      -90.0,
+      179.99999999999983,
+      89.99999999999991
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            179.99999999999983,
+            -90.0
+          ],
+          [
+            179.99999999999983,
+            89.99999999999991
+          ],
+          [
+            -180.0,
+            89.99999999999991
+          ],
+          [
+            -180.0,
+            -90.0
+          ],
+          [
+            179.99999999999983,
+            -90.0
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Population density"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "population_density",
+      "wms:layers": [
+        "AWS_POPULATION_DENSITY"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2020-05-01T01:00:00Z/2020-05-02T00:59:59Z"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Population density"
+    }
+  ],
+  "assets": {},
+  "collection": "byoc-b468089b-2627-4787-b984-89c10434f6c6"
+}

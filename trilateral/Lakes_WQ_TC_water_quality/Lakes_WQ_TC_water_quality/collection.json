@@ -1,0 +1,776 @@
+{
+  "type": "Collection",
+  "id": "Lakes_WQ_TC_water_quality",
+  "stac_version": "1.1.0",
+  "description": "# Lake Water Quality  - True Colour 300m\r\n\r\n## Dataset Description: \r\nThe Lake Water Quality NRT 300m product provides optical observations of global inland water bodies (nominally 4200) that are either \r\n medium and large sized lakes according to Global Lakes and Wetlands Database or most strategic for monitoring.\r\n The product consists of three water quality parameters: (1) turbidity, which is a key indicator of water clarity, quantifying the\r\n haziness of the water and acting as an indicator of underwater light availability.(2) trophic state index, an indicator of productivity of a lake in terms of \r\n phytoplankton and is used for monitoring eutrophication status of a water body and (3) lake water-leaving reflectances which can be used to\r\n produce true-color images or for further development of the algorithms. The input is Sentinel-3 OLCI L1b data. The products are provided as 10-day averages of \r\n the parameters except for lake water-leaving reflectances which corresponds to the the most representative spectrum of the period of observation.\r\n The dataset available in EDC is static and currently not updated.\r\n\r\n## Dataset Features: \r\n\r\n- Resolution: 300m\r\n- Geographical Coverage: (180\u00b0W, 180\u00b0E, 90\u00b0N, 90\u00b0S)\r\n- Temporal Availability: \"['2018-01-01', '2020-12-21']\"\r\n- Temporal Resolution: 10 day averages\r\n- New product every 1st, 11th and 21st day of each month\r\n- Contact: https://forum.sentinel-hub.com/c/euro-data-cube/25\r\n- Provider: \"[Copernicus Land Monitoring Service](https://land.copernicus.eu/)\"\r\n- Managed By: \"[Brockmann Consult](https://www.brockmann-consult.de/)\"\r\n- License: [License](https://land.copernicus.eu/terms-of-usee)\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108257.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108256.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108255.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108254.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108253.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108252.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108251.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108250.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108249.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108248.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108247.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108246.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108245.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108244.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108243.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108242.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108241.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108240.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108239.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108238.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108237.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108236.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108235.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108234.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108233.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108232.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108231.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108230.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108229.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108228.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108227.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108226.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108225.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108224.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108223.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2020/108222.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108221.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108220.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108219.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108218.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108217.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108216.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108215.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108214.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108213.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108212.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108211.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108210.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108209.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108208.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108207.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108206.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108205.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108204.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108203.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108202.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108201.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108200.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108199.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108198.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108197.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108196.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108195.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108194.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108193.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108192.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108191.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108190.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108189.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108188.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108187.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2019/108186.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108185.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108184.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108183.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108182.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108181.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108180.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108179.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108178.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108177.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108176.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108175.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108174.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108173.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108172.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108171.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108170.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108169.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108168.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108167.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108166.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108165.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108164.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108163.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108162.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108161.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108160.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108159.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108158.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108157.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108156.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108155.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108154.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108153.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108152.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108151.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-ef59d045-a0cd-4ce0-a25d-5da91e70e965/2018/108150.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-01T00:00:00Z"
+    },
+    {
+      "rel": "license",
+      "href": "https://land.copernicus.eu/en/data-policy",
+      "type": "text/html",
+      "title": "Data policy"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Lakes_WQ_TC_water_quality",
+      "wms:layers": [
+        "LAKE_WATE_QUALITY_TRUECOLOR"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "https://land.copernicus.eu/en/data-policy",
+      "type": "text/html",
+      "title": "Data policy"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lake water quality (true color)"
+    }
+  ],
+  "sci:citation": "European Commission Directorate-General Joint Research Centre. Lake Water Quality 2016-present (raster 300 m), global, 10-daily - version 1. \nhttps://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/clms_global_lwq_300m_v1_10daily-nrt\n",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_WQ_TC_water_quality/Lakes_WQ_TC_water_quality.png",
+  "themes": [
+    "water"
+  ],
+  "tags": [
+    "Sentinel",
+    "CLMS",
+    "Water quality",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "subcode": "Lakes_WQ_TC",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "endpointtype": "Sentinel Hub_zarr",
+  "title": "Lake water quality (true color)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.00000000000003,
+          -90.0,
+          180.00000000000003,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-01T00:00:00Z",
+          "2020-12-21T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Land Monitoring Service",
+      "url": "https://land.copernicus.eu/"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_WQ_TC_water_quality/Lakes_WQ_TC_water_quality.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://forum.sentinel-hub.com/c/euro-data-cube/25",
+      "type": "text/html",
+      "title": "Contact",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://land.copernicus.eu/en/products/water-bodies/lake-water-quality-near-real-time-v1-0-300m",
+      "type": "text/html",
+      "title": "Lake Water Quality 2016-present (raster 300 m), global, 10-daily \u2013 version 1",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://collections.eurodatacube.com/clms-lake-water-quality/",
+      "type": "text/html",
+      "title": "Lake Water Quality 300m",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

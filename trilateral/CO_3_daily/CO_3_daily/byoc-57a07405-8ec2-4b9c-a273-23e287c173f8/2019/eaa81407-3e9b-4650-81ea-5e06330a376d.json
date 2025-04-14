@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "eaa81407-3e9b-4650-81ea-5e06330a376d",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "datetime": "2019-06-22T00:00:00Z",
+    "proj:bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            -180.0,
+            -90.0
+          ],
+          [
+            180.0,
+            -90.0
+          ],
+          [
+            180.0,
+            90.0
+          ],
+          [
+            -180.0,
+            90.0
+          ],
+          [
+            -180.0,
+            -90.0
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Monoxide observed by Sentinel-5p TROPOMI"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "CO_3_daily",
+      "wms:layers": [
+        "AWS_VIS_CO_3DAILY_DATA"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2019-06-22T00:00:00Z/2019-06-22T23:59:59Z"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Monoxide observed by Sentinel-5p TROPOMI"
+    }
+  ],
+  "assets": {},
+  "collection": "byoc-57a07405-8ec2-4b9c-a273-23e287c173f8"
+}

@@ -1,0 +1,213 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "LIS_Evap_201205270000.d01.cog",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9500000157243,
+          -59.98224871364589
+        ],
+        [
+          179.9973980503783,
+          -59.98224871364589
+        ],
+        [
+          179.9973980503783,
+          89.9999999874719
+        ],
+        [
+          -179.9500000157243,
+          89.9999999874719
+        ],
+        [
+          -179.9500000157243,
+          -59.98224871364589
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -179.9500000157243,
+    -59.98224871364589,
+    179.9973980503783,
+    89.9999999874719
+  ],
+  "properties": {
+    "datetime": "2012-05-27T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/lis-global-da-evap/items/LIS_Evap_201205270000.d01.cog/map?bidx=1&assets=cog_default&rescale=0%2C0.0001&resampling=bilinear&colormap_name=viridis",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Evapotranspiration LIS"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/lis-global-da-evap/LIS_Evap_201205270000.d01.cog.tif&resampling_method=nearest&bidx=1&colormap_name=viridis&rescale=0,0.0001",
+      "type": "image/png",
+      "title": "LIS_Global_DA_Evap"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Evapotranspiration LIS"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/lis-global-da-evap/LIS_Evap_201205270000.d01.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -179.9500000157243,
+        -59.98224871364589,
+        179.9973980503783,
+        89.9999999874719
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+      "proj:shape": [
+        1500,
+        3600
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 0.00010707114415708929,
+            "min": -3.9963313611224294e-05,
+            "count": 11,
+            "buckets": [
+              3,
+              13,
+              41353,
+              33554,
+              31045,
+              15600,
+              4522,
+              672,
+              45,
+              14
+            ]
+          },
+          "statistics": {
+            "mean": 1.684606335537843e-05,
+            "stddev": 1.579688501070177e-05,
+            "maximum": 0.00010707114415708929,
+            "minimum": -3.9963313611224294e-05,
+            "valid_percent": 29.004363656323186
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -179.9500000157243,
+              -59.98224871364589
+            ],
+            [
+              179.9973980503783,
+              -59.98224871364589
+            ],
+            [
+              179.9973980503783,
+              89.9999999874719
+            ],
+            [
+              -179.9500000157243,
+              89.9999999874719
+            ],
+            [
+              -179.9500000157243,
+              -59.98224871364589
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "lat"
+            },
+            {
+              "name": "Longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.09998538835169517,
+        0.0,
+        -179.9500000157243,
+        0.0,
+        -0.09998816580074518,
+        89.9999999874719,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/lis-global-da-evap/items/LIS_Evap_201205270000.d01.cog/preview.png?bidx=1&assets=cog_default&rescale=0%2C0.0001&resampling=bilinear&colormap_name=viridis",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "lis-global-da-evap"
+}

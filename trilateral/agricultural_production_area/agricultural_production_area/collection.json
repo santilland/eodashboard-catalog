@@ -1,0 +1,90 @@
+{
+  "type": "Collection",
+  "id": "agricultural_production_area",
+  "stac_version": "1.1.0",
+  "description": "## Agricultural production - active area percentage\n\n\nThis indicator compares the percentage of active areas from the total areas cultivated with white asparagus in the German federal state of Brandenburg (29.500 sqkm) in the 2020 season to the same months in 2019. The indicator is based on Copernicus Sentinel-2 data and shows the impact of the lack of seasonal workers during the Covid-19 pandemic for the white asparagus harvesting, which is a highly labour-intensive activity relying on seasonal workers.  \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./agricultural_production_area/2020/Brandenburg Region.json",
+      "type": "application/geo+json",
+      "id": "DE11",
+      "latlng": "52.131413,13.090632",
+      "country": "DE",
+      "city": "Brandenburg Region"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - area"
+    }
+  ],
+  "subtitle": "Agricultural production in Europe",
+  "yAxis": "Cumulative Proportion of total areas under active management",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Copernicus",
+    "Open data"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "E10a2",
+  "sensor": [
+    "MSI"
+  ],
+  "satellite": [
+    "Sentinel-2"
+  ],
+  "geoDBID": "E10a2_tri",
+  "endpointtype": "GeoDB",
+  "title": "Agricultural production - area",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          13.080632,
+          52.121413000000004,
+          13.100632,
+          52.141413
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-03-14T10:10:19Z",
+          "2020-06-27T10:10:31Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Universit\u00e9 catholique de Louvain",
+      "url": "https://uclouvain.be/en/index.html"
+    },
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Brandenburg Region"
+    ],
+    "countries": [
+      "DE"
+    ]
+  }
+}

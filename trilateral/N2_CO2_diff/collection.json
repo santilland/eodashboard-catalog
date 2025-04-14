@@ -1,0 +1,187 @@
+{
+  "type": "Collection",
+  "id": "N2_CO2_diff",
+  "stac_version": "1.1.0",
+  "description": "## Atmospheric Carbon Dioxide Difference from 2015-2019 baseline (from OCO-2)\n\nThese maps show The difference in carbon dioxide (CO2) levels compared to the 2015-2019 baseline. Redder colors indicate increases in CO2. Bluer colors indicate lower levels of CO2. \n\nCarbon dioxide (CO2) is a greenhouse gas primarily emitted from the combustion of fossil fuels such as petroleum, coal, and natural gas. Scientists widely agree that the build-up of excess carbon dioxide and other greenhouse gases within Earth\u2019s atmosphere has contributed to the rapid change in global climate.\n\nUnlike satellite-derived NO2 measurements, which are captured continuously on a daily basis, the coverage of CO2 measurements from OCO-2 and GOSAT is not as dense. Because of this, measurements from OCO-2 and GOSAT collected over weeks to months must be combined to yield high-resolution global maps of CO2. In addition, in order to account for long-range transport of CO2 by the wind, the data must further be assimilated into atmospheric transport models like those used to predict the weather.\n\nThe NASA dashboard uses NASA\u2019s Global Earth Observing System Constituent Data Assimilation System (GEOS CoDAS) developed by GMAO to ingest the OCO-2 data and produce gap-filled maps.\n\nSource: [NASA Covid Dashboard](https://www.earthdata.nasa.gov/covid19/indicators/co2)\n\nRead more:\n- [Orbiting Carbon Observatory 2 (OCO-2)](https://ocov2.jpl.nasa.gov/)\n- [Orbiting Carbon Observatory 3 (OCO-3)](https://ocov3.jpl.nasa.gov/)\n- [Ozone Monitoring Instrument (OMI)](https://aura.gsfc.nasa.gov/omi.html)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N2_CO2_diff/collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from OCO-2 (daily difference)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "CO2 difference compared to 2015-2019 baseline [ppm]",
+      "code": "N2_diff",
+      "id": "N2_CO2_diff",
+      "themes": [
+        "atmosphere"
+      ],
+      "tags": [
+        "Air quality",
+        "CO2",
+        "Open data",
+        "GHG",
+        "Greenhouse gases"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N2_diff",
+      "sensor": [
+        "OCO-2"
+      ],
+      "satellite": [
+        "OCO-2"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Le Qu\u00e9r\u00e9, C., Jackson, R.B., Jones, M.W. et al. Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nat. Clim. Chang. 10, 647\u2013653 (2020).\n",
+      "doi": "10.1038/s41558-020-0797-x"
+    }
+  ],
+  "subtitle": "CO2 difference compared to 2015-2019 baseline [ppm]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N2_diff",
+  "sensor": [
+    "OCO-2"
+  ],
+  "satellite": [
+    "OCO-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      1
+    ],
+    "range": [
+      "#053061",
+      "#1b5a9b",
+      "#337eb8",
+      "#5ba2cb",
+      "#97c7df",
+      "#c7e0ed",
+      "#e8f0f4",
+      "#f9ece5",
+      "#fcd3bc",
+      "#f5a987",
+      "#df755d",
+      "#c53f3d",
+      "#a11228",
+      "#67001f"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "CO2 difference [ppm]"
+  },
+  "title": "Carbon Dioxide from OCO-2 (daily difference)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.3125,
+          -90.25,
+          179.6875,
+          90.25
+        ],
+        [
+          -180.3125,
+          -90.25,
+          179.6875,
+          90.25
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2022-02-13T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://ocov2.jpl.nasa.gov/science/oco-2-data-center/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N2_diff"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "OCO-2"
+    ],
+    "sensor": [
+      "OCO-2"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://science.nasa.gov/climate-change/scientific-consensus/",
+      "type": "text/html",
+      "title": "Scientific Consensus on global climate change",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://ocov2.jpl.nasa.gov/",
+      "type": "text/html",
+      "title": "Orbiting Carbon Observatory-2",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

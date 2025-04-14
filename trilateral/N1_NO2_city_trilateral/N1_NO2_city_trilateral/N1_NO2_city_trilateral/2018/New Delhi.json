@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "New Delhi",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.216721,
+        28.6448
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    77.206721,
+    28.6348,
+    77.22672100000001,
+    28.6548
+  ],
+  "properties": {
+    "start_datetime": "2018-05-07T00:00:00Z",
+    "end_datetime": "2025-02-03T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide at City level"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide at City level"
+    }
+  ],
+  "assets": {},
+  "collection": "N1_NO2_city_trilateral"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Hamburg",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        9.944467,
+        53.532123
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    9.934467,
+    53.522123,
+    9.954467,
+    53.542123
+  ],
+  "properties": {
+    "start_datetime": "2019-01-03T10:45:52Z",
+    "end_datetime": "2022-10-26T10:36:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Shipping Activity at Major Ports"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Shipping Activity at Major Ports"
+    }
+  ],
+  "assets": {},
+  "collection": "E13c_shipping_activity"
+}

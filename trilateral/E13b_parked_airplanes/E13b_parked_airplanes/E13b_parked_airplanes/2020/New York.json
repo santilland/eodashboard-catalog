@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "New York",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -73.788,
+        40.642
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -73.798,
+    40.632000000000005,
+    -73.77799999999999,
+    40.652
+  ],
+  "properties": {
+    "start_datetime": "2020-01-16T00:00:00Z",
+    "end_datetime": "2020-10-06T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "assets": {},
+  "collection": "E13b_parked_airplanes"
+}

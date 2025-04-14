@@ -1,0 +1,2012 @@
+{
+  "type": "Collection",
+  "id": "ElbeDelta",
+  "stac_version": "1.1.0",
+  "description": "Sea surface temperature in Elbe Delta",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2025/fc31098a-99f2-4c6e-a160-0ac1d6c21929.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/1499c455-2bdd-44bb-9a47-5cb655152ee7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/42c77b7d-79b7-496c-be0e-ad873984b5ed.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/980aaa63-c31d-467f-9988-c7bdeecf66ab.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/a2a63de6-63c6-462d-8dc8-8e36926777b1.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/0dd62f33-0547-4b80-933a-c45f0a076c3e.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/1d5e196e-0205-4466-a637-6658e79dd69b.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/2dcca040-04c5-43d4-8ebf-d41489beb566.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/409589ef-c62d-4f93-8193-c8db50b0be46.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/4b959a8a-96fd-4ebc-95c7-37c5c8b9d661.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/b8e3034a-42eb-4ec7-a4ce-782d9ae723b6.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/1a773695-f743-4595-b98f-8dcd4195d9a7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/3987f665-d10c-4e68-8033-24f01d4f54db.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/53530fb7-ad42-40d1-803f-668375a1ec78.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/63f47aae-30dd-4c20-bbc5-f5b091da090a.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/02f9b5e7-d975-49df-8158-9cef48f6e2d0.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/f603f957-5c81-485c-8e8d-54c8426d2657.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/9710fa53-52fd-4787-9d2c-ff5975e2c4e1.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/dc615345-15db-4c60-90de-ab51bd15295a.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/aa1f1932-97b2-48b3-ad2e-7feb70befc64.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/3f9cc9f0-fbbd-4af1-99cb-bbe15657dbfe.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/37428068-9191-4ee6-b8e7-3f79c02c8d5c.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/9513c095-992a-493a-8ed7-c142a8a6dbf3.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/4e02b380-5b05-43fb-bcee-89e0dfdf7a2d.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/8150ef9e-58b0-4a21-b7e7-81bf8529c749.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/9dff72d6-4957-41f7-b397-4251a8c05299.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/fff023f4-85a6-448e-bf80-cbc097f64659.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/32f7bd29-db5a-4e4e-a818-edf46e879dec.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/13f7a9d8-5a5f-436e-9bb9-dfae9db5f60e.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/e9079bc4-071f-45f9-8758-c9ce19c2c09d.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/289a84d5-cca4-4147-bf45-f6a4e52ded84.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/1d7f8bde-a160-4234-98b6-f60de96db1b7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/057cb3cf-20db-4146-8630-9831b0747c2c.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/e11fce9a-e358-43cc-be49-9f14f1da91c6.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/4c968062-2260-4120-b508-4728d668d48a.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/ca8ab11f-e909-4e8d-bc91-be0f93aeccf1.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/5d9205eb-04f7-4db7-9e35-8adb5f5fda23.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/4d54cd71-8c9f-49c8-9a5e-a8345dfcba1f.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/59628c2c-b787-4d8b-850b-31ff3016c71f.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/e4f67fce-3b36-4daf-855c-db4bb3ec94e0.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/f11a53f5-d769-428c-b56f-94e900b126f7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/babc3511-76ea-4bf2-aac3-a2ef56e74556.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/00ab922b-a80c-42f4-817a-76cd338731e7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/85c97303-0c7e-4228-aded-d7c632625ca8.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/3fe7b864-49cd-449f-ac98-8b4f776980d3.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/6d185d68-007a-425b-b2e3-711f468753aa.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/42f4b398-45f3-46fe-85d3-ea853f1cd955.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/c51bac0d-f8e3-4b2a-9e30-589b1b80fed0.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/aa32557e-d9c9-4526-a615-f245a6e7a6b2.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/cf105eb5-6bc0-4fc2-ac14-aeaf71e0f672.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/4bbbb802-6587-445a-8bb6-410ae23fa64e.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/1e401564-2f83-47ce-8bac-411bb2af7786.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2024/afb367b7-b7d3-47cc-ba8a-43b8699d49ec.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/afbca468-7f5e-4f00-9016-6ed53165bb6c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/b8ab850e-b417-4adb-b7b1-a93875bfd0d1.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/0b718e49-6924-4824-b935-a12746429f2c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/8f4505f6-910e-4ebc-841c-2c3b36280b7d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/82014e49-8a4f-4223-8175-5348950a66e3.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/2d365105-3e66-4951-8085-b7a228547210.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/f8ca6ad1-f92b-469d-b3ca-dd383b713f80.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/74dce928-0738-4e87-b972-c6d7c95cd7d4.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/46720356-9b3f-4c5d-a451-5dbd66792729.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/9773fff2-eaac-46e9-81dd-18a82a02a3ec.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/d0ba050e-ea13-4d55-8c36-92325c19d9a1.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/a3454441-4f3b-4b46-8f40-e3ecc5be9439.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/728195d0-410c-48e3-b0d7-602f05d045af.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/4da7ac16-372a-486f-8fd8-5a072b4977b7.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/4a77106c-6f99-45e6-862d-0bbc91c00aab.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/07dd65e3-3875-4d2f-94e4-63dd76f4ad2b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/0832974e-4260-41e1-a581-7ad7c0085b29.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/88183acf-f87c-43ef-9009-b5c2918bd1c9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/3f55e336-244e-4677-97e2-6d918618014f.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/fcbefa1a-b0fb-4006-8431-5698db3f4ff0.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/3fc50d17-99ee-4882-bac2-34f34e5bdf0e.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/28722b44-5543-4466-a721-03d07c5062fc.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/9ddd0a32-76d5-4357-aed0-758dcafa8a0d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/fe8d8106-c097-4547-9a63-39dd0dcddcb0.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/7eda2693-3193-4883-95d5-12422435caf2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/4b93d26a-77e8-4b03-aa78-9a337420f8ac.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/e2c236db-035a-420d-ad22-750496216235.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/feb51b8c-152c-4d7b-8c07-9d3946f31932.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/d36f33c3-fc1e-495f-8f2e-c4312aeb3eae.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/03c57beb-bc37-4365-8627-60383414a925.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/1644befa-2a6b-4fd5-82e2-6e8bc4f39971.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/807b63d4-2e83-4cfc-8e4b-81ceaceef6ec.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/8d3a5a3c-fdb8-46fb-ae01-5be95a18349d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/a4b4789a-ad29-4f3a-a8de-b62ba709e16b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/95fdec6f-7a7d-460a-a183-6a55cff93041.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/6137d107-a17b-4ca5-a4c0-b56afdfc8760.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/24ab363b-bac6-4b70-909b-add95efbb489.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/cf8dbf54-aea2-49df-ab94-6f5211f4305b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/fc6738e3-5307-4a91-9670-95170d0b74a9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/7acdf322-1a61-4312-91f5-c45d7b5b3a29.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/a790d7ff-9cbe-4a51-8c22-799937846dc7.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/e33ac931-8f0e-47ea-8cc4-19878fc4b01c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/7d68f977-7538-4772-ae8b-b1d235de3ee8.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/b4768de2-9077-43cb-af9e-bc2b921b941d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/ef349234-9d54-4b6d-a7c6-25555982ea11.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/882bc930-9c30-48b4-a485-ef355363248b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/8498c8d5-730d-49a4-a695-d6943d04a69d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/572069bf-f9d5-481b-960c-90c2b81554ec.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/a4ba4f93-3ea8-441e-8827-c4b618a53f85.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/58140397-d13e-43d6-a38e-f76fe92bfb23.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2023/2ad3f74e-832c-46fe-aca4-639454bd310a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/df38c129-5dc7-40c5-9064-c008f131f311.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/449f934a-d62f-4ff4-a0aa-6e76ffaf2e75.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/864fb1c1-122f-4c16-bdd6-22a2a8a51ac1.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/05a3c994-131e-49c2-95d2-0832e1451bfb.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/c5cec883-1fc6-4f9d-beef-684da6440b67.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/29b6f8cb-2629-4699-bfa6-f6f7cd1f1235.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/d17dad8e-29f7-41c9-b366-e95387b046cc.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/f81f1425-d6fd-42d1-9922-7422bdecd5b3.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/8dd1ad9c-a74d-4947-804e-871e6c2ec688.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/ad2526a5-5671-48a5-90cf-02ab150c78ff.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/46f7440b-ffd1-4f50-b448-bae4dd44f5f7.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/edcc299d-5468-4225-abab-2a7a012aaa0c.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/373b16d4-7cbe-4114-8a94-60efc9c53403.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/84a244fc-e0a5-40d1-be37-37733f4f7695.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/eb1e5460-b8bc-4615-a1b6-44734d851744.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/e3724bd9-5aa8-4ca4-b23c-138d9ce52a99.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/dc6a48ac-e508-4902-b977-8b6f2994229d.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/899953ac-010e-4241-a363-544e6bf0c547.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/5ff94ba1-de5c-46f5-a753-03ccd75236d8.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/dfd0567c-552e-4f71-a6c0-b91faff2c485.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/7673235b-e33f-4ec9-bf8c-dd02635ba892.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/f6068f10-e601-43c0-9f7d-e3c5c5861144.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/979f889a-0a7e-41a2-8985-57a035772e10.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/09d5b98c-cbe0-4808-8ddb-31415d3f5811.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/dbe9281e-be8d-4ff5-b7a6-598cea9ac55b.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/8b575c02-81dd-4b6a-b3ea-be81bbbf5d91.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/0c5d24d7-9ea9-4162-a899-549d82590f3a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/d79984ed-d39c-441a-a027-b3e968f77f86.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/b41ddee6-a5d6-4a82-a789-fcc0140b6e0d.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/9dd059bc-9ee2-4e64-9226-306d94715bad.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/e94ce5b0-760e-4bcf-8b98-ce965a2ab786.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/2886fc9b-834c-4cb3-bce8-58a5e88360fe.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/cca1c322-55c3-488a-b4c4-cad2607784f9.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/209ce1ff-1841-4741-bed3-2c489a479a4b.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/1f8af499-f58e-497b-bf15-9d0db7f9f0aa.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/70817a43-071f-4136-87c4-0b1ff2b8a2c3.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/da354b4a-1cef-4d10-b4aa-4eece32a5d05.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/b0b1dd63-5efe-45bf-85f9-3ffb663f3e6b.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/2f5342f4-478e-446b-bdd0-c77819af23a0.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/ea435208-bb52-481e-b6a6-15e1cece0db5.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/58805aab-7d3f-4346-aea6-a9dd0173858a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/2094c29d-9508-4857-91f2-31f739476db6.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/20b036c9-c7df-4ad1-9b83-b21b312e14b7.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/443041c6-8d0d-440a-8e22-3a06f988ff15.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/3b7038ce-8875-4f8b-988d-81d1d1aec0eb.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/129c6c6e-599a-4cfa-85e4-edd6b5812a48.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/c6802c9b-33bc-430c-8ce5-7e7fb8b8e73e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/f6875431-6597-414f-b6d9-54214a8bbb78.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/caf67af3-4ebb-481a-8645-ca154c0af2fc.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/0e8bcc49-d594-4dab-bce6-39b06a49c792.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/fbd51ea6-4302-4633-ac3f-25d12ade0f78.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/8eaca935-eae4-41e1-85e3-4a9181d4d09e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2022/cebee7af-de4a-49b4-8405-bac783e88b94.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/4e0b16ce-628e-4fc3-895d-7e65abbc29fc.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/e155604e-1cae-43ab-9424-5870d10a7604.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/e522f453-ae78-48cc-b4d9-44cc86bfdcd2.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/4c865bef-07ca-480e-8f0d-2f4fb96c2083.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/4e602a53-a9ab-4fce-adc1-e23154e42fa1.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/623481eb-cf61-4ad2-ba70-1152f58c5af7.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/6563e831-0206-498a-9702-468246bdcd84.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/a8496021-c2b1-4ad6-abc6-61a38120b410.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/c6391852-de21-437f-8ebd-c24d9b7ff727.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/e5ed7023-84ca-42d4-83fc-d9110c5efa0f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/65a1090b-2126-4e79-9678-ba471956d35e.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/5cc5fcb8-5d86-413c-83ad-68a214616fb2.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/8d51d649-99c4-4998-beaa-c794ca9cd89b.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/038d5c7e-45e7-4a8c-b055-5120be4b18e3.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/b4f88abe-2e6f-4d0d-885e-76d354758d76.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/62fc0bd5-23d2-4bf1-a8b8-68335cfd4ec7.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/5a2f3723-5885-4830-bcc8-ee77357e1963.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/b496aac0-0fc4-4415-a277-b9fe3cb680dd.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/451cde31-ddf9-4774-b8f2-52cffd90c915.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/d84d3bcf-d45a-4a38-a91b-276388c93864.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/70986bd3-612f-475e-8edb-521e6866afe8.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/930ddb3a-83f6-4171-beea-0ec11bd1f2d8.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/bd47d725-88f4-4bfa-b9e6-9a20971a1ca4.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/0662d591-2341-4b63-9412-b2a87749a210.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/9af0e51c-a7e3-44f8-a776-72972734c7eb.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/25c79f2c-bbf2-479d-b87d-eed783189a7a.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/3c55d6b8-d318-4a18-928a-7669a2f02152.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/59190995-694e-4c78-9832-de31d4863c94.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/880876c8-a415-4e6c-8259-6eb629511244.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/98e65c98-d4f2-4114-b596-8cd215031d01.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/2e3e1174-8c65-4313-b254-3813f119036b.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/bc878b9c-cf72-4a91-95b3-2657d84cc23e.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/61531896-516b-42f7-9002-bca3bb31b9bc.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/ad2783aa-6305-4664-bc8d-d22d7242161d.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/0d878e04-2cb6-4bd1-9381-c0137842a592.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/336861c7-9ccd-4d3f-a671-baaddcbc028b.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/45ccc506-2ffe-4606-9b0a-c8b89b91bd81.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/da650a95-b785-4510-876e-16c84f2332d2.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/085ec8a1-275b-47fd-aa14-11e2f5b0384c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/f1aeec94-063a-45dc-91e3-3281bf01c6f6.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/e9914e98-b87e-4303-b3c5-47fd6af0165c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/eceb28d3-f5d9-4166-8909-38e86f605aca.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/7d65d8fa-e707-4ec2-8c1a-5c2373d6720f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/d875bbe0-321b-4dc3-aa77-5b9c4b43b86e.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/b8328b90-5a19-4b1f-81b8-10a0b82c87f9.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/eb5f2f9a-c1e1-4f40-b00c-ab9a92bc625e.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/1cd3cc15-d71c-4841-8af7-19ce775473d7.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/bfab4055-469f-45aa-b8ae-e16d0b9618f6.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/b839af32-dbf6-47a4-b565-c0145d933498.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/9062b89b-7275-4453-9e5e-54cd14453e22.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/f868b9b2-292f-481e-aa1c-fe2c5d7de90c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2021/f5237b54-2b4e-4291-a587-908a0fb6747f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/20b03135-713e-40e6-ac5d-bf05fb2c40a0.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/5f53efb9-c1aa-4c1d-862b-b4e6d03fb759.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/e866ca9e-1684-4204-925a-b7c1c59c5f9c.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/29207e3b-1167-4f2a-82f0-554ac60b206b.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/c9e3cce2-fe20-4e97-be9c-4428306727cf.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/a84c59db-a880-4376-9cef-2655d4eaa232.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/152ee9fe-0b6e-4253-9436-894db38872a9.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/b19ce473-9cd2-44c6-9751-2214eeb4736d.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/ca79ec27-b77f-41f2-ba70-7172524f4b18.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/e5aab54f-b298-4ba4-afe4-2a14d9aef1e3.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/248d13a1-98ae-4379-9cd8-4155af4c7bbc.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/8ccb7bdb-ec43-48c5-935d-e9909adf5637.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/f9fcaa05-2f53-4d46-8d16-b64d74341deb.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/2b600fd1-e275-4eb1-8906-aba8c0649f6e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/97bb433e-b5fc-46b4-93f0-9f69fd1aac90.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/7042fa85-1fb0-4c0f-a323-e0d83f1bd1d9.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/01cca240-becf-4579-be78-7170f1323664.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/c72e8923-ed4f-4766-8987-1d3b3ca4af2a.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/ebf8c04b-0580-4b84-ab49-9f0b9477729a.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/cabb2eb7-2241-4c5b-96c8-90d3b3be3f62.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/d59e550d-4955-4adf-a2ac-9021d0f3f8ee.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/43f10cea-8917-43fc-8eea-35069a55c9d8.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/808bf6a4-10a0-4016-baff-893dfd1ff3c2.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/cd8b857f-54e0-48c7-93c1-ce30cd471dc2.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/678e66b7-9f26-4b4b-a661-5c6188a1380c.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/e7a1760d-a89f-4322-9c24-d85ae2c9a531.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/235498dd-fb69-4074-b7ed-5d3d012932a2.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/be309d75-df20-4c55-9784-cef973089955.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/a8a340ad-0556-4e9f-9b5c-1bf8711a66df.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/2db905ae-8c8d-4b5a-b4b2-93c17da4ca21.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/26177210-3876-4f20-81c8-98067cb73ba5.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/6c52eb71-1d75-49a4-af8b-1e0ba49956b2.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/246aa3a6-b194-4951-a775-c04a089ebcf5.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/c3a06a92-052b-437c-a9cc-ddc0ffd2c7ba.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/0ec9033b-51b9-4b99-bb4f-c8ba1d52fef0.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/9d8888ac-c343-497e-855c-508e0df4fb08.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/4d6c8028-697f-42b6-a392-a1abf2a2e042.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/00b1d474-2d14-4f4d-bf25-af8a899a0eda.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/19d1209a-1928-4518-9a4c-da5e05873e5a.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/71d53ff5-b11e-4ed7-8bbe-219cbe7bd4cc.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/f80c2bc8-9ab3-4cc3-8399-2c708d6a57bd.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/9658e330-b91c-4ede-8fca-9da2cd5ad722.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/13deb4d7-23df-4857-9d65-51073fc8ba14.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/b1c4e044-b16b-479d-862c-237967542090.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/055f5457-9ffb-410a-97f7-9bba5c6afaf8.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/302d2494-badc-48b4-baa6-755e5dd8b0d6.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/1ed3759c-baaf-44e9-9269-4037883c9a1d.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/f95318d6-ce0e-47a4-a6d3-6cbcbc3ed689.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/31237f23-846b-4e2d-8cec-a7aebf93f50c.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/a5b632ab-19b3-4547-a5e2-eed04deda9ab.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/a2f197e0-2a7b-4ad0-bd7d-02390fd30673.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2020/12607b81-ff6a-4889-a3a5-fd97bd14e29e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/0bfe4e0f-2a28-4c57-a1c7-5e2da78c450a.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/65b5f00f-810d-41a7-88c0-30dbc8014823.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/a17bf7e0-f511-4f1e-957a-c429b93241d1.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/a6bd84bf-02be-4500-a90f-f5f7e738d391.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/62bf1047-e058-47a2-98dd-555538cc5642.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/44e68f9f-42f1-4081-a165-dfc653de4877.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/d6a5e91e-53e4-4dbd-82f8-9bbde7a2d5ea.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/82f4787e-7208-4ee8-b4ce-f637fdc2c106.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/4664989c-8832-4a16-9a74-6276afad9012.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/19264401-1b24-4998-b7d8-f9bf2c551421.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/c2a9622d-02fa-4181-b479-977081e4dcd8.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/c9f7b112-5a8d-4820-9016-508a5751dc93.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/00ecf903-121f-41d3-a26b-71bbf675d451.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/ed5a440c-feb8-474e-b0a9-0717e6a95e0b.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/8b7d32b9-0f85-45e2-b1d3-a788aad27e74.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/449af4e9-3cd0-4cde-9617-503e07dafad2.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/9818db5b-72bf-416d-9c11-540e7d2c739a.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/d7467535-4cee-4548-9910-dc4920a5a9f6.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/815b0195-4071-4b17-935f-db60c0eb04cc.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/d7394b71-f6fa-4346-9859-8e07f6ac2faf.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/adb75cc5-ad15-4e39-bb14-bb8c6ab5686b.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/1ef6b334-0238-4842-995d-19113a0ead72.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/7d544114-55c7-439a-b107-61bf501d702c.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/461a2c19-84c1-43b7-9f7f-d497146f8b37.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/b15b9944-9192-4ddc-9e0d-28a57fa2762d.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/7f7817b4-18a2-45bc-9d1c-946f5d54801c.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/ddc0c104-d262-45f3-b6a7-7da665fa59c6.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/c079606f-06bc-4820-8009-5504a3d6c017.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/f5cab505-6f68-4f20-b43b-bd8ba9639562.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/dcd640db-3569-4dfc-93a8-dfd1576daf57.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/54a5b88d-ec10-4dcf-82fd-9aa0743d36e7.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/32a56f7e-3d62-4006-9890-b17b00f8bb47.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/d06a9997-e011-43b2-810c-58bb6405a618.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/7cd8677a-52b9-4e45-b359-0f86259d8066.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/35bd2498-16a4-4a52-a71c-07012425547c.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/e32f5587-ce76-4e54-b06b-d32a5c2ff403.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/0f029b60-4555-4b3e-8151-8eb6fb00d9f7.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/177a6d08-93f1-4ba6-9f71-373c16883116.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/a34e017f-c248-4cac-9d82-7096ffc17c7f.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/7f59fbd1-64d7-4048-8847-7838e492a4a9.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/d6864a83-1d97-4fd4-a80e-c858fe31d6de.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/192f65d2-a0e9-4931-af14-42b157b61bb8.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/53c0eba2-acab-44a9-89f6-3d3f0466b1f9.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/22304951-56ed-42de-9656-db96bf56383b.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/ca37f462-250c-4cb6-8d17-94c4dcda6fd8.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/aedacc60-9c2e-46d3-9248-882eb5e7fc51.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/9148f2e9-0bcd-472b-8762-77e8f1fee8c5.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/04798610-48ae-4065-ac7b-9e80289dd7b6.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/e1b0eec0-8124-451e-9c18-256eac2186f9.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/487b3761-f663-483c-9d7b-b814c20f87a5.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/03fa4015-a3d4-4daa-99c3-ceffab81305d.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./sea_surface_temperature_maps/2019/eda70055-4510-4e89-b625-0e0d3553c839.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-05T00:00:00Z"
+    },
+    {
+      "rel": "license",
+      "href": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+      "type": "text/html",
+      "title": "Licence to Use Copernicus Products"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-92780d01-126f-4827-80f8-4e561dd8e228"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_surface_temperature_maps",
+      "wms:layers": [
+        "AWS_VIS_SST_MAPS"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature maps"
+    }
+  ],
+  "subtitle": "Sea surface temperature description",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "Surface temperature",
+    "CMEMS",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "N3a2_SST",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -70,
+      70
+    ],
+    "range": [
+      "#0000ff",
+      "#0096c8",
+      "#009a5a",
+      "#fab478",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea Surface Temperature Anomaly [%]"
+  },
+  "title": "Sea surface temperature in Elbe Delta",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          6.99497710624242,
+          53.39045816360543,
+          9.205050359577893,
+          54.40508270263672
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "CNR ISMAR",
+      "url": "https://www.ismar.cnr.it/istituto/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_SST_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

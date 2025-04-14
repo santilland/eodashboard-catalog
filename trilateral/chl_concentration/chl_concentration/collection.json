@@ -1,0 +1,225 @@
+{
+  "type": "Collection",
+  "id": "chl_concentration",
+  "stac_version": "1.1.0",
+  "description": "## Water Quality Regional Maps: Chlorophyll-a (Chl-a) concentration\n\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\n#### Dataset algorithm development\n - Daily time series of Chl-a products are turned into weekly time series by averaging on a pixel-by-pixel basis. For each pixel the average and standard deviation is computed from a data cube of 3 pixels x 3 pixels x 7 days.\n - This averaging reduces the impact of possible noise, common at these small scales, and increases spatial coverage mined by lack of data mostly due to clouds.\n - Finally, we consider the difference between the \u201cpresent\u201d weekly observations and the weekly climatology at the scale of the pixel. This difference was judged against the climatology in order to obtain a relative, dimensionless value.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./NorthAdriatic/collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration in North Adriatic",
+      "id": "NorthAdriatic",
+      "latlng": "45.19752,13.02978",
+      "name": "Chlorophyll-a concentration in North Adriatic"
+    },
+    {
+      "rel": "child",
+      "href": "./RhoneDelta/collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration in Rhone Delta",
+      "id": "RhoneDelta",
+      "latlng": "43.4,4.94",
+      "name": "Chlorophyll-a concentration in Rhone Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./Barcelona/collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration in Barcelona",
+      "id": "Barcelona",
+      "latlng": "40.985,1.769",
+      "name": "Chlorophyll-a concentration in Barcelona"
+    },
+    {
+      "rel": "child",
+      "href": "./DanubeDelta/collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration in Danube Delta",
+      "id": "DanubeDelta",
+      "latlng": "45.05,29.9",
+      "name": "Chlorophyll-a concentration in Danube Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./TagusDelta/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Tagus Delta",
+      "id": "TagusDelta",
+      "latlng": "38.66,-9.32",
+      "name": "Sea surface temperature in Tagus Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./ElbeDelta/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Elbe Delta",
+      "id": "ElbeDelta",
+      "latlng": "53.94,8.408",
+      "name": "Sea surface temperature in Elbe Delta"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "chl_concentration",
+      "wms:layers": [
+        "AWS_N3_CUSTOM"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+      "type": "text/html",
+      "title": "Licence to Use Copernicus Products"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-7db8e19e-bf12-4203-bdd1-673455647354"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration maps"
+    }
+  ],
+  "subtitle": "Chlorophyll-a concentration description",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration.png",
+  "themes": [
+    "oceans"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CHL",
+    "CMEMS",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "N3a2",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#000000",
+      "#0000ff",
+      "#009a57",
+      "#fbd063",
+      "#d68231"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Chl-a anomaly [%]"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Chlorophyll-a concentration maps",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -10.502786636352539,
+          37.99824142456055,
+          30.602052688598633,
+          54.40245819091797
+        ],
+        [
+          11.99828290939331,
+          44.49984836578369,
+          13.82183313369751,
+          45.8014030456543
+        ],
+        [
+          4.198280334472656,
+          42.99985694885254,
+          5.501642227172852,
+          43.49162673950195
+        ],
+        [
+          0.49828179185742777,
+          40.49733319888819,
+          2.5017124860966735,
+          41.50076675415039
+        ],
+        [
+          28.998117446899414,
+          44.39944076538086,
+          30.602052688598633,
+          45.60050964355469
+        ],
+        [
+          -10.502786636352539,
+          37.99824142456055,
+          -8.74720573425293,
+          39.50302505493164
+        ],
+        [
+          6.997215270996094,
+          53.39995574951172,
+          9.202720642089844,
+          54.40245819091797
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "CNR ISMAR",
+      "url": "https://www.ismar.cnr.it/istituto/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

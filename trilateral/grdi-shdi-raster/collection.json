@@ -1,0 +1,168 @@
+{
+  "type": "Collection",
+  "id": "grdi-shdi-raster",
+  "stac_version": "1.1.0",
+  "description": "### Global Gridded Relative Deprivation Index (GRDI) Subnational Human Development Index (SHDI) Constituent raster\n\nThis dataset is one component of the Global Gridded Relative Deprivation Index (GRDI),\nVersion 1 (GRDIv1) data set which characterizes the relative levels of multidimensional\ndeprivation and poverty in each 30 arc-second (~1 km) pixel,\nwhere a value of 100 represents the highest level of deprivation and a value of 0 the lowest.\n\n\nGRDIv1 is built from sociodemographic and satellite data inputs that were spatially harmonized,\nindexed, and weighted into six main components to produce the final index raster.\n\n\nInputs were selected from the best-available data that either continuously vary across space or have at least administrative level 1 (provincial/state) resolution, and which have global spatial coverage. \nGRDIv1 has six input components, or dimensions, that are combined to determine the degree of relative deprivation:\n\n- **The child dependency ratio (CDR)** defined as the ratio between the population of children (ages 0 to 14) to the working-age population (age 15 to 64), where a higher ratio implies a higher dependency on the working population (UN DESA 2006). We interpret the CDR as a dimension where higher dependency ratios, generally associated with younger age structures, imply higher relative deprivation. \n- **Infant mortality rates (IMRs)** defined as the number of deaths in children under 1 year of age per 1,000 live births in the same year, are a common indicator of population health (Reidpath & Allotey, 2003; Schell et al., 2007). Higher IMRs imply higher deprivation.\n-  **The Subnational Human Development Index (SHDI)** attempts to assess human well-being through a combination of \u201cthree dimensions: education, health, and standard of living (Smits & Permanyer, 2019)\u201d. Lower SHDIs imply higher deprivation. \n-  Global rural populations are more likely to experience a higher degree of multidimensional poverty when compared to urban populations, other things being equal (Casta\u00f1eda et al., 2018; Laborde Debucquet & Martin, 2018; Lee & Kind, 2021; UN DESA, 2021; UNDP & OPHI, 2020). Therefore, we consider **the ratio of built-up area to non-built up area (BUILT)** as a dimension where low values imply higher deprivation. \n-  **Intensity of nighttime lights**, closely associated with anthropogenic activities, economic output, and infrastructure development (Elvidge et al., 2007; Ghosh et al., 2013; Lu et al., 2021; Small et al., 2013). We interpret the average intensity of nighttime lights for the year 2020 (VIIRS Night Lights (VNL) 2020) as a dimension where lower values imply higher deprivation. \n-  For the sixth component we calculated a **linear regression from annual VNL data between 2012 and 2020 (VNL slope) and considered the slope as a dimension where higher values (increasing brightness)** imply decreasing deprivation and lower values (decreasing brightness) imply increasing deprivation.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./grdi-shdi-raster/collection.json",
+      "type": "application/json",
+      "title": "Subnational Human Development Index (SHDI)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Global Grided Relative Deprivation Index - SHDI",
+      "code": "GRDI3",
+      "id": "grdi-shdi-raster",
+      "themes": [
+        "economy"
+      ],
+      "tags": [
+        "Human activities",
+        "Open data",
+        "Rural",
+        "Urban"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "GRDI3",
+      "otherSources": [
+        "Multi-sensors"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:doi": "10.7927/3xxe-ap97",
+  "sci:citation": "Center for International Earth Science Information Network - CIESIN - Columbia University. 2022. Global Gridded Relative Deprivation Index (GRDI), v1. Palisades, NY. NASA Socioeconomic Data and Applications Center (SEDAC).\n",
+  "subtitle": "Global Grided Relative Deprivation Index - SHDI",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-shdi-raster/grdi-shdi-raster.png",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Human activities",
+    "Open data",
+    "Rural",
+    "Urban"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "GRDI3",
+  "otherSources": [
+    "Multi-sensors"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      100
+    ],
+    "range": [
+      "#440154",
+      "#481c6e",
+      "#453581",
+      "#3d4d8a",
+      "#34618d",
+      "#2b748e",
+      "#24878e",
+      "#1f998a",
+      "#25ac82",
+      "#40bd72",
+      "#67cc5c",
+      "#98d83e",
+      "#cde11d",
+      "#fde725"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "index"
+  },
+  "title": "Subnational Human Development Index (SHDI)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.99999999990004,
+          -55.983333333466476,
+          179.81666666676645,
+          82.18333333320012
+        ],
+        [
+          -179.99999999990004,
+          -55.983333333466476,
+          179.81666666676645,
+          82.18333333320012
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-01T00:00:00Z",
+          "2018-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "GRDI3"
+    ],
+    "themes": [
+      "economy"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-shdi-raster/grdi-shdi-raster.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-v1-built/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-shdi-raster/grdi-shdi-raster.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://sedac.ciesin.columbia.edu/data/set/povmap-grdi-v1",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://doi.org/10.7927/xwf1-k532",
+      "type": "text/html",
+      "title": "Dataset Description and documentation",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

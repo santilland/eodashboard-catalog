@@ -1,0 +1,4844 @@
+{
+  "type": "Collection",
+  "id": "4D_Greenland_Meltmap",
+  "stac_version": "1.1.0",
+  "description": "# Greenland meltmaps 2007 - 2021 \n### PROTOTYPE PRODUCT\n\nAuthor: Enveo IT, F\u00fcrstenweg 176, 6020 Innsbruck, Austria\n\n\nThe data set contains Antarctic-wide daily melt maps (indicating presence of liquid water) from 2007 until 2021 derived from the ASCAT Enhanced Resolution\u00a0\nScatterometer Image Reconstruction (SIR) product [1]. The melting extent/stage maps have a fixed colour palette, where the coding is as follows:\u00a0\u00a0\n\n 0:   No melt/liquid water presence down to signal penetration limit (for C-Band in the order of several metres)\n \n 1:   Surface layer melt (increase in depth of wet snow layer\n \n 2:   Wet snow layer \u2013 saturated signal\n \n 3:   Increase of refrozen layer above wet snow\n \n 4:   Stationary condition\n \n 255: NoData Value\n    \n    \nBased on these melt maps, value added melt map products are generated, indicating the melt onset, the melt duration and the end of the melt season on a pixel-by-pixel basis. \n\n**Explore these additional value added products on EO Dashboard:**\n\n* [Melt onset](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Onset) - refers to the first time that there are three consecutive days of melt in a year, thereby indicating the beginning of the snowmelt season.\n* [End of melt season](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Season_End) - the melt ending is marked by three consecutive days of stable winter (reference) conditions after the last refreezing event of the year. \n* [Melt duration](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Duration) - refers to the duration from the melt onset to the end date of melt.\n\nAll products are provided in GeoTiff format at a grid spacing of 5 km x 5 km in the projection WGS 84 / NSIDC Sea Ice Polar Stereographic North (EPSG:3413).\u00a0\n\n------------------------------------------------\n[1] The SIR product is processed by the Microwave Earth Remote Sensing Laboratory (MERS) at Brigham Young University (BYU) and based on the full resolution (SZF)\u00a0ASCAT C-Band Scatterometer data. It provides an enhanced resolution of 5km by combining multiple pass, irregularly spaced data into higher-resolution gridded images. The SIR product used combines all data acquired within a single 24-hr period (msfa). \n\n### Reference: \nLindsley, R. D. and Long, D. G. 2010. Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3.\n\n### Data Access:\nESA Open Science Data Catalogue https://opensciencedata.esa.int/projects/4d-greenland/collection \n\n### 4D Greenland Project Page\nhttps://4dgreenland.eo4cryo.dk/\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-01-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-01-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-01-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-01-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-01-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-01-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-01-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-01-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-01-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-01-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-02-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-02-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-02-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-02-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-02-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-02-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-02-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-02-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-03-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-03-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-03-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-03-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-03-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-03-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-03-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-03-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-04-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-04-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-04-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-04-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-04-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-04-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-04-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-05-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-05-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-05-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-05-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-05-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-05-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-05-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-05-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-05-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-06-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-06-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-06-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-06-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-06-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-06-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-06-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-07-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-07-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-07-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-07-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-07-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-07-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-07-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-07-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-08-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-08-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-08-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-08-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-08-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-08-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-08-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-09-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-09-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-09-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-09-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-09-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-09-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-09-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-10-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-10-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-10-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-10-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-10-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-10-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-10-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-10-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-10-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-11-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-11-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-11-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-11-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-11-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-11-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-11-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-12-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-12-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-12-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-12-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-12-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2007/2007-12-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2007-12-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-01-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-01-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-01-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-01-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-01-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-01-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-01-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-01-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-02-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-02-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-02-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-02-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-02-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-02-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-02-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-02-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-03-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-03-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-03-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-03-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-03-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-03-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-03-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-04-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-04-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-04-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-04-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-04-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-04-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-04-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-04-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-04-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-05-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-05-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-05-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-05-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-05-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-05-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-05-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-05-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-06-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-06-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-06-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-06-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-06-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-06-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-06-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-06-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-07-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-07-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-07-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-07-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-07-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-07-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-07-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-07-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-08-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-08-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-08-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-08-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-08-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-08-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-08-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-08-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-09-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-09-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-09-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-09-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-09-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-09-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-09-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-09-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-09-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-10-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-10-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-10-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-10-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-10-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-10-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-10-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-11-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-11-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-11-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-11-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-11-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-11-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-11-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-12-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-12-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-12-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-12-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-12-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-12-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-12-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-12-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2008/2008-12-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2008-12-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-01-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-01-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-01-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-01-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-01-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-01-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-01-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-01-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-02-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-02-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-02-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-02-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-02-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-02-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-02-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-02-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-03-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-03-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-03-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-03-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-03-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-03-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-03-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-03-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-03-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-04-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-04-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-04-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-04-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-04-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-04-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-04-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-04-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-05-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-05-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-05-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-05-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-05-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-05-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-05-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-05-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-06-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-06-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-06-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-06-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-06-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-06-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-06-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-06-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-06-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-07-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-07-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-07-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-07-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-07-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-07-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-07-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-08-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-08-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-08-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-08-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-08-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-08-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-08-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-09-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-09-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-09-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-09-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-09-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-09-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-09-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-09-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-09-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-10-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-10-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-10-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-10-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-10-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-10-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-10-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-10-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-11-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-11-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-11-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-11-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-11-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-11-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-11-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-11-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-12-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-12-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-12-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-12-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-12-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-12-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-12-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2009/2009-12-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2009-12-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-01-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-01-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-01-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-01-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-01-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-01-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-01-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-01-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-02-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-02-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-02-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-02-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-02-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-02-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-02-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-03-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-03-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-03-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-03-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-03-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-03-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-03-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-03-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-03-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-04-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-04-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-04-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-04-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-04-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-04-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-04-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-05-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-05-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-05-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-05-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-05-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-05-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-05-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-06-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-06-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-06-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-06-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-06-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-07-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-07-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-07-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-07-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-08-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-08-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-08-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-08-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-08-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-09-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-09-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-09-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-09-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-09-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-09-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-09-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-10-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-10-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-10-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-10-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-10-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-10-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-10-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-10-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-11-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-11-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-11-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-11-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-11-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-11-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-11-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-11-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-12-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-12-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-12-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2010/2010-12-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2010-12-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-01-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-01-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-01-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-01-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-01-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-01-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-01-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-01-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-02-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-02-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-02-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-02-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-02-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-02-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-02-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-03-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-03-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-03-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-03-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-03-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-03-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-03-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-03-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-03-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-04-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-04-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-04-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-04-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-04-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-04-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-04-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-04-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-05-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-05-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-05-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-05-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-05-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-05-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-05-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-05-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-05-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-06-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-06-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-06-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-06-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-06-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-06-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-06-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-07-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-07-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-07-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-07-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-07-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-07-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-07-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-07-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-08-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-08-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-08-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-08-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-08-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-08-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-08-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-08-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-08-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-08-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-09-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-09-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-09-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-09-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-09-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-09-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-09-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-09-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-10-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-10-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-10-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-10-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-10-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-10-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-10-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-10-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-11-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-11-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-11-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-11-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-11-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-11-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-11-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-11-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-11-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-12-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-12-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-12-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-12-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-12-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-12-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2011/2011-12-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2011-12-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-01-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-01-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-01-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-01-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-01-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-02-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-02-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-02-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-02-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-02-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-02-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-02-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-03-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-03-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-03-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-03-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-03-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-03-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-03-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-03-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-04-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-04-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-04-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-04-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-04-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-04-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-04-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-05-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-05-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-05-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-05-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-05-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-05-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-05-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-05-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-05-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-06-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-06-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-06-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-06-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-06-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-06-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-06-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-07-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-07-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-07-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-07-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-07-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-07-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-07-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-07-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-08-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-08-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-08-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-08-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-08-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-08-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-08-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-09-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-09-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-09-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-09-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-09-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-09-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-09-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-10-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-10-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-10-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-10-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-10-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-10-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-10-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-10-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-10-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-11-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-11-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-11-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-11-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-11-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-11-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-11-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-12-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-12-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-12-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-12-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-12-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2012/2012-12-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2012-12-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-01-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-01-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-01-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-01-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-02-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-02-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-02-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-02-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-02-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-02-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-02-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-02-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-03-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-03-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-03-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-03-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-03-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-03-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-03-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-03-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-04-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-04-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-04-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-04-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-04-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-04-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-04-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-04-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-04-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-05-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-05-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-05-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-05-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-05-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-05-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-05-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-06-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-06-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-06-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-06-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-06-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-06-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-06-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-07-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-07-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-07-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-07-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-07-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-07-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-07-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-07-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-07-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-07-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-08-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-08-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-08-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-08-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-08-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-08-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-08-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-08-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-09-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-09-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-09-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-09-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-09-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-09-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-09-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-09-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-10-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-10-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-10-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-10-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-10-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-10-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-10-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-10-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-10-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-11-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-11-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-11-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-11-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-11-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-11-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-11-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-11-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-12-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-12-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-12-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-12-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-12-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-12-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-12-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-12-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2013/2013-12-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2013-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-01-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-01-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-01-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-01-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-01-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-01-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-01-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-02-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-02-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-02-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-02-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-02-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-02-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-02-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-03-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-03-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-03-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-03-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-03-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-03-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-03-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-04-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-04-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-04-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-04-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-04-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-04-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-04-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-04-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-04-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-05-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-05-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-05-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-05-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-05-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-05-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-05-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-05-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-06-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-06-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-06-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-06-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-06-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-06-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-06-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-06-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-07-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-07-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-07-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-07-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-07-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-07-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-07-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-07-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-08-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-08-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-08-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-08-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-08-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-08-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-08-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-08-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-09-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-09-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-09-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-09-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-09-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-09-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-09-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-09-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-09-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-10-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-10-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-10-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-10-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-10-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-10-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-10-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-11-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-11-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-11-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-11-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-11-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-11-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-11-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-12-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-12-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-12-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-12-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-12-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-12-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-12-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-12-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2014/2014-12-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2014-12-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-01-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-01-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-01-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-01-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-02-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-02-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-02-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-02-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-02-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-02-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-02-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-02-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-03-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-03-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-03-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-03-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-03-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-03-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-03-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-03-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-03-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-04-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-04-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-04-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-04-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-04-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-04-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-04-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-04-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-05-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-05-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-05-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-05-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-05-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-05-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-05-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-05-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-06-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-06-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-06-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-06-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-06-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-06-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-06-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-06-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-06-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-07-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-07-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-07-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-07-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-07-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-07-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-07-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-08-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-08-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-08-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-08-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-08-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-08-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-08-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-09-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-09-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-09-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-09-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-09-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-09-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-09-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-09-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-09-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-10-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-10-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-10-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-10-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-10-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-10-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-10-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-10-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-11-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-11-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-11-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-11-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-11-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-11-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-11-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-11-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-12-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-12-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-12-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-12-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-12-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-12-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-12-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2015/2015-12-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2015-12-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-01-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-01-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-01-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-01-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-02-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-02-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-02-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-02-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-02-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-02-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-02-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-03-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-03-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-03-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-03-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-03-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-03-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-03-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-03-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-03-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-04-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-04-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-04-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-04-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-04-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-04-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-04-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-04-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-05-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-05-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-05-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-05-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-05-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-05-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-05-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-05-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-05-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-06-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-06-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-06-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-06-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-06-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-06-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-06-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-07-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-07-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-07-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-07-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-07-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-07-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-07-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-07-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-08-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-08-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-08-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-08-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-08-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-08-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-08-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-08-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-08-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-08-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-09-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-09-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-09-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-09-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-09-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-09-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-09-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-09-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-10-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-10-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-10-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-10-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-10-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-10-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-10-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-10-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-11-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-11-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-11-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-11-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-11-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-12-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-12-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-12-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-12-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-12-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-12-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2016/2016-12-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2016-12-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-01-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-01-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-01-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-01-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-01-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-02-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-02-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-02-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-02-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-02-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-02-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-02-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-03-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-03-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-03-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-03-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-03-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-03-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-03-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-04-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-04-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-04-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-04-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-04-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-04-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-04-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-04-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-05-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-05-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-05-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-05-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-05-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-05-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-05-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-05-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-05-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-05-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-06-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-06-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-06-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-06-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-06-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-06-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-06-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-06-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-07-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-07-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-07-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-07-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-07-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-07-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-07-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-08-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-08-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-08-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-08-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-08-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-08-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-08-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-08-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-08-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-09-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-09-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-09-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-09-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-09-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-09-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-09-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-09-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-10-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-10-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-10-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-10-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-10-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-10-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-10-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-10-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-10-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-11-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-11-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-11-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-11-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-11-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-11-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-11-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-11-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-12-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-12-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-12-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-12-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-12-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-12-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2017/2017-12-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-12-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-01-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-01-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-01-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-01-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-01-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-02-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-02-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-02-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-02-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-03-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-03-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-03-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-03-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-04-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-04-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-04-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-04-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-05-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-05-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-05-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-05-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-05-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-06-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-06-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-06-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-06-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-07-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-07-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-07-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-07-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-07-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-08-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-08-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-08-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-08-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-09-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-09-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-09-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-09-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-10-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-10-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-10-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-10-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-10-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-11-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-11-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-11-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-11-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-12-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-12-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-12-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2018/2018-12-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-01-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-01-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-01-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-01-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-02-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-02-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-02-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-02-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-03-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-03-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-03-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-03-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-04-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-04-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-04-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-04-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-04-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-05-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-05-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-05-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-05-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-06-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-06-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-06-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-06-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-07-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-07-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-07-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-07-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-07-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-08-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-08-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-08-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-08-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-09-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-09-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-09-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-09-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-10-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-10-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-10-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-10-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-10-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-11-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-11-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-11-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-11-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-12-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-12-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-12-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-12-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2019/2019-12-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-01-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-01-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-01-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-01-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-02-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-02-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-02-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-02-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-03-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-03-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-03-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-03-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-03-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-04-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-04-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-04-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-04-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-05-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-05-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-05-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-05-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-06-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-06-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-06-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-06-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-06-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-07-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-07-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-07-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-07-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-08-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-08-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-08-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-08-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-09-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-09-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-09-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-09-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-09-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-10-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-10-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-10-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-10-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-11-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-11-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-11-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-11-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-12-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-12-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-12-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-12-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2020/2020-12-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-01-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-01-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-01-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-01-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-02-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-02-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-02-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-02-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-03-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-03-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-03-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-03-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-03-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-04-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-04-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-04-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-04-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-05-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-05-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-05-18T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-05-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-06-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-06-08T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-06-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-06-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-06-29T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-07-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-07-13T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-07-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-07-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-08-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-08-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-08-17T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-08-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-08-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-09-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-09-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-09-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-09-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-10-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-10-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-10-19T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-10-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-11-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-11-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-11-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-11-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-11-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-12-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-12-14T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-12-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./4D_Greenland_Meltmap/2021/2021-12-28T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-28T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/jpeg",
+      "title": "4D_Greenland_Meltmap",
+      "wms:layers": [
+        "VIS_GREENLAND_MELTMAP"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Greenland Meltmap"
+    }
+  ],
+  "sci:citation": "Citing the data:\nLindsley, R. D. and Long, D. G. (2010): Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3\n",
+  "subtitle": "Greenland Meltmap from 4D Greenland",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Greenland",
+    "Arctic",
+    "4D Visualization",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Scatterometer",
+    "C-SAR",
+    "Ice monitoring"
+  ],
+  "agency": [
+    "ESA",
+    "EUMETSAT"
+  ],
+  "subcode": "4D_Greenland_Meltmap",
+  "sensor": [
+    "ASCAT"
+  ],
+  "satellite": [
+    "MetOp"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "no melt l.",
+      "surface melt l.",
+      "wet snow l.",
+      "new top frozen l."
+    ],
+    "range": [
+      "#AFABAB",
+      "#B4C7E7",
+      "#66A2D8",
+      "#FFF3CC"
+    ],
+    "scaleType": "categorical",
+    "title": "Ice melting status"
+  },
+  "endpointtype": "WMS_OverwriteTimes",
+  "title": "Greenland Meltmap",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -89.314518,
+          58.787273,
+          7.554587,
+          83.946756
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2007-01-02T00:00:00Z",
+          "2021-12-28T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "name": "EUMETSAT",
+      "url": "https://www.eumetsat.int/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://4dgreenland.eo4cryo.dk/",
+      "type": "text/html",
+      "title": "4D Greenland Project Page",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://opensciencedata.esa.int/projects/4d-greenland/collection",
+      "type": "text/html",
+      "title": "ESA Open Science Data Catalogue: 4D-Greenland",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

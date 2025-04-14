@@ -1,0 +1,169 @@
+{
+  "type": "Collection",
+  "id": "sea_surface_temperature_maps",
+  "stac_version": "1.1.0",
+  "description": "## Water Quality Regional Maps\n\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_surface_temperature_maps/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature maps",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "Sea surface temperature description",
+      "code": "N3a2_SST",
+      "id": "sea_surface_temperature_maps",
+      "themes": [
+        "water"
+      ],
+      "locations": true,
+      "tags": [
+        "Water quality",
+        "Copernicus Services",
+        "Surface temperature",
+        "CMEMS",
+        "Open data"
+      ],
+      "agency": [
+        "European Commission",
+        "ECMWF"
+      ],
+      "subcode": "N3a2_SST",
+      "sensor": [
+        "OLCI"
+      ],
+      "satellite": [
+        "Sentinel-3"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+      "type": "text/html",
+      "title": "Licence to Use Copernicus Products"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Sea surface temperature description",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "Surface temperature",
+    "CMEMS",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "N3a2_SST",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -70,
+      70
+    ],
+    "range": [
+      "#0000ff",
+      "#0096c8",
+      "#009a5a",
+      "#fab478",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea Surface Temperature Anomaly [%]"
+  },
+  "title": "Sea surface temperature maps",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -10.504186630249023,
+          37.997182846069336,
+          30.604209899902344,
+          54.40508270263672
+        ],
+        [
+          -10.504186630249023,
+          37.997182846069336,
+          30.604209899902344,
+          54.40508270263672
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "CNR ISMAR",
+      "url": "https://www.ismar.cnr.it/istituto/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N3a2_SST"
+    ],
+    "themes": [
+      "water"
+    ],
+    "satellite": [
+      "Sentinel-3"
+    ],
+    "sensor": [
+      "OLCI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_SST_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

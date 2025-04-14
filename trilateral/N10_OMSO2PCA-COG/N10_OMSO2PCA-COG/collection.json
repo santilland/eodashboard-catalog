@@ -1,0 +1,269 @@
+{
+  "type": "Collection",
+  "id": "N10_OMSO2PCA-COG",
+  "stac_version": "1.1.0",
+  "description": "## Sulfur Dioxide (SO2) Total Column from OMI/Aura \n\nOMI/Aura Sulfur Dioxide (SO2) Total Column L3 1 day Best Pixel in 0.25 degree x 0.25 degree V3 (OMSO2e)\n\nVisit [https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary) to access this dataset and get more details.\n\n## Additional information\n\n- [SO2 Monitoring Home Page](https://so2.gsfc.nasa.gov/)\n\n- [Aura Project Home Page](https://aura.gsfc.nasa.gov/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2021/OMSO2PCA_LUT_SCD_2021.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2021.tif",
+      "datetime": "2021-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2020/OMSO2PCA_LUT_SCD_2020.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2020.tif",
+      "datetime": "2020-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2019/OMSO2PCA_LUT_SCD_2019.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2019.tif",
+      "datetime": "2019-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2018/OMSO2PCA_LUT_SCD_2018.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2018.tif",
+      "datetime": "2018-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2017/OMSO2PCA_LUT_SCD_2017.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2017.tif",
+      "datetime": "2017-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2016/OMSO2PCA_LUT_SCD_2016.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2016.tif",
+      "datetime": "2016-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2015/OMSO2PCA_LUT_SCD_2015.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2015.tif",
+      "datetime": "2015-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2014/OMSO2PCA_LUT_SCD_2014.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2014.tif",
+      "datetime": "2014-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2013/OMSO2PCA_LUT_SCD_2013.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2013.tif",
+      "datetime": "2013-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2012/OMSO2PCA_LUT_SCD_2012.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2012.tif",
+      "datetime": "2012-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2011/OMSO2PCA_LUT_SCD_2011.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2011.tif",
+      "datetime": "2011-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2010/OMSO2PCA_LUT_SCD_2010.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2010.tif",
+      "datetime": "2010-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2009/OMSO2PCA_LUT_SCD_2009.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2009.tif",
+      "datetime": "2009-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2008/OMSO2PCA_LUT_SCD_2008.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2008.tif",
+      "datetime": "2008-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2007/OMSO2PCA_LUT_SCD_2007.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2007.tif",
+      "datetime": "2007-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2006/OMSO2PCA_LUT_SCD_2006.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2006.tif",
+      "datetime": "2006-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./OMSO2PCA-COG/2005/OMSO2PCA_LUT_SCD_2005.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/OMSO2PCA-COG/OMSO2PCA_LUT_SCD_2005.tif",
+      "datetime": "2005-01-01T00:00:00Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=viridis&rescale=0.0,1.0",
+      "type": "image/png",
+      "title": "N10_OMSO2PCA-COG"
+    },
+    {
+      "rel": "example",
+      "href": "https://openveda.cloud/api/raster/cog/statistics",
+      "type": "application/json",
+      "title": "VEDA Statistics",
+      "example:language": "JSON"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sulfur Dioxide (OMI/Aura)"
+    }
+  ],
+  "subtitle": "SO2 Total Column L3 1-day",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_OMSO2PCA-COG.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "SO2",
+    "Open data",
+    "Sulfur Dioxide",
+    "Ozone Monitoring Instrument"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N10",
+  "sensor": [
+    "OMI"
+  ],
+  "satellite": [
+    "Aura"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#440154",
+      "#481c6e",
+      "#453581",
+      "#3d4d8a",
+      "#34618d",
+      "#2b748e",
+      "#24878e",
+      "#1f998a",
+      "#25ac82",
+      "#40bd72",
+      "#67cc5c",
+      "#98d83e",
+      "#cde11d",
+      "#fde725"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "SO2 Total Column [DU]"
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "Sulfur Dioxide (OMI/Aura)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2005-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://www.earthdata.nasa.gov/learn/articles/find-no2-data"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_OMSO2PCA-COG.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary",
+      "type": "text/html",
+      "title": "Dataset access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://so2.gsfc.nasa.gov/",
+      "type": "text/html",
+      "title": "SO2 Monitoring Home Page",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://aura.gsfc.nasa.gov/",
+      "type": "text/html",
+      "title": "Aura Project Home Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

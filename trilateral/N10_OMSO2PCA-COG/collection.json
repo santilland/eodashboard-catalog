@@ -1,0 +1,189 @@
+{
+  "type": "Collection",
+  "id": "N10_OMSO2PCA-COG",
+  "stac_version": "1.1.0",
+  "description": "## Sulfur Dioxide (SO2) Total Column from OMI/Aura \n\nOMI/Aura Sulfur Dioxide (SO2) Total Column L3 1 day Best Pixel in 0.25 degree x 0.25 degree V3 (OMSO2e)\n\nVisit [https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary) to access this dataset and get more details.\n\n## Additional information\n\n- [SO2 Monitoring Home Page](https://so2.gsfc.nasa.gov/)\n\n- [Aura Project Home Page](https://aura.gsfc.nasa.gov/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N10_OMSO2PCA-COG/collection.json",
+      "type": "application/json",
+      "title": "Sulfur Dioxide (OMI/Aura)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "SO2 Total Column L3 1-day",
+      "code": "N10",
+      "id": "N10_OMSO2PCA-COG",
+      "themes": [
+        "atmosphere"
+      ],
+      "tags": [
+        "Air quality",
+        "SO2",
+        "Open data",
+        "Sulfur Dioxide",
+        "Ozone Monitoring Instrument"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N10",
+      "sensor": [
+        "OMI"
+      ],
+      "satellite": [
+        "Aura"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "SO2 Total Column L3 1-day",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_OMSO2PCA-COG.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "SO2",
+    "Open data",
+    "Sulfur Dioxide",
+    "Ozone Monitoring Instrument"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N10",
+  "sensor": [
+    "OMI"
+  ],
+  "satellite": [
+    "Aura"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#440154",
+      "#481c6e",
+      "#453581",
+      "#3d4d8a",
+      "#34618d",
+      "#2b748e",
+      "#24878e",
+      "#1f998a",
+      "#25ac82",
+      "#40bd72",
+      "#67cc5c",
+      "#98d83e",
+      "#cde11d",
+      "#fde725"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "SO2 Total Column [DU]"
+  },
+  "title": "Sulfur Dioxide (OMI/Aura)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2005-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://www.earthdata.nasa.gov/learn/articles/find-no2-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N10"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Aura"
+    ],
+    "sensor": [
+      "OMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_OMSO2PCA-COG.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N10_OMSO2PCA-COG/N10_OMSO2PCA-COG.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary",
+      "type": "text/html",
+      "title": "Dataset access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://so2.gsfc.nasa.gov/",
+      "type": "text/html",
+      "title": "SO2 Monitoring Home Page",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://aura.gsfc.nasa.gov/",
+      "type": "text/html",
+      "title": "Aura Project Home Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

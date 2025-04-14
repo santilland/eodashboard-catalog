@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Los Angeles",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.41,
+        33.94
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -118.42,
+    33.93,
+    -118.39999999999999,
+    33.949999999999996
+  ],
+  "properties": {
+    "start_datetime": "2019-12-31T00:00:00Z",
+    "end_datetime": "2022-12-24T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Car containers"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Car containers"
+    }
+  ],
+  "assets": {},
+  "collection": "car_containers"
+}

@@ -1,0 +1,168 @@
+{
+  "type": "Collection",
+  "id": "N3a2_total_suspended_matter_tri_jaxa",
+  "stac_version": "1.1.0",
+  "description": "# Water Quality: Total suspended matter\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n\nThe Global Change Observation Mission - Climate (GCOM-C) satellite, developed by the Japan Aerospace Exploration Agency (JAXA), is equipped with the Second-generation Global Imager (SGLI). This instrument is designed for the observation of climate variables such as ocean color, land surfaces, and aerosols. One of its key applications is to map the concentration of Total Suspended Matter (TSM) in oceans, lakes, and coastal regions, providing critical insights into sediment transport, water quality, and ecosystem health.\n\nWhen interpreting TSM concentration maps produced by GCOM-C's SGLI, it's important to understand the color scale that represents different levels of suspended particles in the water. The scale typically ranges from blue to red, where:\n\n- Blue indicates low TSM concentration.\n- Red indicates high TSM concentration.\n\n## Dataset decription\n- Spectral Range: SGLI covers 19 spectral bands, including visible, near-infrared, and thermal infrared bands, optimized for monitoring various environmental parameters such as ocean color and land surface temperature.\n- TSM Detection: SGLI is particularly well-suited for detecting TSM, aiding in the assessment of sediment plumes, coastal erosion, and water turbidity.\n- Spatial Resolution: SGLI provides spatial resolutions of 250 m and 1 km, allowing for high-resolution observations of coastal and inland waters, making it a valuable tool for regional studies.\n- Wide Swath Coverage: With a swath width of 1150 km, GCOM-C achieves near-global coverage within approximately two days, making it suitable for frequent monitoring of dynamic water bodies.\n \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N3a2_total_suspended_matter_tri_jaxa/collection.json",
+      "type": "application/json",
+      "title": "Total suspended matter from GCOM-C",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "Total suspended matter maps",
+      "code": "N3a2_TSM_jaxa",
+      "id": "N3a2_total_suspended_matter_tri_jaxa",
+      "themes": [
+        "oceans"
+      ],
+      "yAxis": "%",
+      "locations": true,
+      "tags": [
+        "Water quality",
+        "Marine",
+        "GCOM-C",
+        "SGLI",
+        "Open data",
+        "Marine monitoring",
+        "Total suspended matter"
+      ],
+      "agency": [
+        "JAXA"
+      ],
+      "subcode": "N3a2_TSM_jaxa",
+      "sensor": [
+        "SGLI"
+      ],
+      "satellite": [
+        "GCOM-C"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Total suspended matter maps",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
+  "yAxis": "%",
+  "themes": [
+    "oceans"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Marine",
+    "GCOM-C",
+    "SGLI",
+    "Open data",
+    "Marine monitoring",
+    "Total suspended matter"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N3a2_TSM_jaxa",
+  "sensor": [
+    "SGLI"
+  ],
+  "satellite": [
+    "GCOM-C"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#053264",
+      "#7fb9d7",
+      "#ffffff",
+      "#e68764",
+      "#731432"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Total suspended matter anomaly [%]"
+  },
+  "title": "Total suspended matter from GCOM-C",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          12.0,
+          33.85,
+          140.25,
+          45.8
+        ],
+        [
+          12.0,
+          33.85,
+          140.25,
+          45.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-06T00:00:00Z",
+          "2025-02-22T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N3a2_TSM_jaxa"
+    ],
+    "themes": [
+      "oceans"
+    ],
+    "satellite": [
+      "GCOM-C"
+    ],
+    "sensor": [
+      "SGLI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

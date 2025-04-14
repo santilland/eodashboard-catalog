@@ -1,0 +1,280 @@
+{
+  "type": "Collection",
+  "id": "CV_Covid_19_cases_trilateral",
+  "stac_version": "1.1.0",
+  "description": "## Data on COVID-19 (coronavirus) \n\nThe source of this data is [Our World in Data](https://ourworldindata.org/coronavirus)\n\nThe full dataset is is updated daily and includes data on confirmed cases, deaths, hospitalizations, testing, and vaccinations as well as other variables of potential interest. Here, our interactive charts show visualise the variation of the total number of cases and the evolution of vaccinations. \n\nTry interacting with the charts to visualise each variable. \n\n**References:**\n\nThis data has been collected, aggregated, and documented by Cameron Appel, Diana Beltekian, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Edouard Mathieu, Esteban Ortiz-Ospina, Hannah Ritchie, Lucas Rod\u00e9s-Guirao, Max Roser.\n\nHasell, J., Mathieu, E., Beltekian, D. et al. A cross-country database of COVID-19 testing. Sci Data 7, 345 (2020). https://doi.org/10.1038/s41597-020-00688-8\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./CV_Covid_19_cases_trilateral/collection.json",
+      "type": "application/json",
+      "title": "Covid-19 Cases",
+      "endpointtype": "GeoDB",
+      "code": "CV",
+      "id": "CV_Covid_19_cases_trilateral",
+      "themes": [
+        "health"
+      ],
+      "cities": [
+        "/"
+      ],
+      "countries": [
+        "United Arab Emirates",
+        "Afghanistan",
+        "Albania",
+        "Armenia",
+        "Angola",
+        "Antarctica",
+        "Argentina",
+        "United States of America",
+        "Austria",
+        "Australia",
+        "Azerbaijan",
+        "Bosnia and Herzegovina",
+        "Bangladesh",
+        "Belgium",
+        "Burkina Faso",
+        "Bulgaria",
+        "Burundi",
+        "Benin",
+        "Brunei",
+        "Bolivia",
+        "Brazil",
+        "Bhutan",
+        "Botswana",
+        "Belarus",
+        "Belize",
+        "Canada",
+        "Central African Republic",
+        "Switzerland",
+        "Chile",
+        "Cameroon",
+        "China",
+        "Colombia",
+        "Costa Rica",
+        "Cuba",
+        "Cyprus",
+        "Czechia",
+        "Germany",
+        "Djibouti",
+        "Denmark",
+        "Dominican Republic",
+        "Algeria",
+        "Ecuador",
+        "Estonia",
+        "Egypt",
+        "Eritrea",
+        "Spain",
+        "Ethiopia",
+        "Finland",
+        "Fiji",
+        "France",
+        "Gabon",
+        "United Kingdom",
+        "Georgia",
+        "Ghana",
+        "Gambia",
+        "Guinea",
+        "Equatorial Guinea",
+        "Greece",
+        "Guatemala",
+        "Guyana",
+        "Honduras",
+        "Croatia",
+        "Haiti",
+        "Hungary",
+        "Indonesia",
+        "Ireland",
+        "Israel",
+        "India",
+        "Iraq",
+        "Iran",
+        "Iceland",
+        "Italy",
+        "Jamaica",
+        "Jordan",
+        "Japan",
+        "Kenya",
+        "Kyrgyzstan",
+        "Cambodia",
+        "Kuwait",
+        "Kazakhstan",
+        "Laos",
+        "Lebanon",
+        "Sri Lanka",
+        "Liberia",
+        "Lesotho",
+        "Lithuania",
+        "Luxembourg",
+        "Latvia",
+        "Libya",
+        "Morocco",
+        "Monaco",
+        "Moldova",
+        "Montenegro",
+        "Madagascar",
+        "North Macedonia",
+        "Mali",
+        "Mongolia",
+        "Mauritania",
+        "Malta",
+        "Malawi",
+        "Mexico",
+        "Malaysia",
+        "Mozambique",
+        "Namibia",
+        "Niger",
+        "Nigeria",
+        "Nicaragua",
+        "Netherlands",
+        "Norway",
+        "Nepal",
+        "New Zealand",
+        "Oman",
+        "Panama",
+        "Peru",
+        "Papua New Guinea",
+        "Philippines",
+        "Pakistan",
+        "Poland",
+        "Puerto Rico",
+        "Portugal",
+        "Paraguay",
+        "Qatar",
+        "Romania",
+        "Serbia",
+        "Russia",
+        "Rwanda",
+        "Saudi Arabia",
+        "Solomon Islands",
+        "Sudan",
+        "Sweden",
+        "Singapore",
+        "Slovenia",
+        "Slovakia",
+        "Sierra Leone",
+        "Senegal",
+        "Somalia",
+        "Suriname",
+        "South Sudan",
+        "El Salvador",
+        "Syria",
+        "Chad",
+        "Togo",
+        "Thailand",
+        "Tajikistan",
+        "Tunisia",
+        "Turkey",
+        "Trinidad and Tobago",
+        "Ukraine",
+        "Uganda",
+        "Uruguay",
+        "Uzbekistan",
+        "Venezuela",
+        "Vietnam",
+        "Vanuatu",
+        "Kosovo",
+        "Yemen",
+        "South Africa",
+        "Zambia",
+        "Zimbabwe"
+      ],
+      "yAxis": "/",
+      "tags": [
+        "Covid-19",
+        "Human activities",
+        "Open data"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "CV",
+      "insituSources": [
+        "Other"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_Global_COVID_data?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "method": "GET",
+      "id": "Global_COVID_data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:doi": "10.1038/s41597-020-00688-8",
+  "sci:citation": "Hasell, J., Mathieu, E., Beltekian, D. et al. A cross-country database of COVID-19 testing. Sci Data 7, 345 (2020).\n",
+  "themes": [
+    "health"
+  ],
+  "tags": [
+    "Covid-19",
+    "Human activities",
+    "Open data"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "CV",
+  "insituSources": [
+    "Other"
+  ],
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
+  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "title": "Covid-19 Cases",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -99.143,
+          -80.050179,
+          178.427,
+          64.16000000000001
+        ],
+        [
+          -99.143,
+          -80.050179,
+          178.427,
+          64.16000000000001
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-22T00:00:00Z",
+          "2023-03-09T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Our World in Data",
+      "url": "https://ourworldindata.org/covid-cases"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "CV"
+    ],
+    "themes": [
+      "health"
+    ],
+    "cities": [
+      "/"
+    ]
+  }
+}

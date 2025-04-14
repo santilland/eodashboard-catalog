@@ -1,0 +1,693 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
+  "id": "LE07_L2SR_001113_20110201_20200910_02_T2_SR",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -97.06641440602014,
+          -74.4552319808482
+        ],
+        [
+          -102.57281367554694,
+          -73.53771503744211
+        ],
+        [
+          -106.09497874871735,
+          -74.84624035904088
+        ],
+        [
+          -100.27848734842337,
+          -75.84414354657964
+        ],
+        [
+          -97.06641440602014,
+          -74.4552319808482
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -106.09497874871735,
+    -75.84414354657964,
+    -97.06641440602014,
+    -73.53771503744211
+  ],
+  "properties": {
+    "created": "2022-07-06T21:11:25.728000+00:00",
+    "updated": "2022-07-06T21:11:25.728000+00:00",
+    "datetime": "2011-02-01T14:45:13.937355Z",
+    "platform": "LANDSAT_7",
+    "proj:shape": [
+      8731,
+      8051
+    ],
+    "instruments": [
+      "ETM"
+    ],
+    "eo:cloud_cover": 12,
+    "proj:transform": [
+      30,
+      0,
+      -1760115,
+      0,
+      -30,
+      -203685
+    ],
+    "view:off_nadir": 0,
+    "landsat:wrs_row": "113",
+    "landsat:scene_id": "LE70011132011032EDC00",
+    "landsat:wrs_path": "001",
+    "landsat:wrs_type": "2",
+    "view:sun_azimuth": 68.78079458,
+    "landsat:correction": "L2SR",
+    "view:sun_elevation": 23.29654108,
+    "landsat:cloud_cover_land": 12,
+    "landsat:collection_number": "02",
+    "landsat:collection_category": "T2",
+    "proj:code": "EPSG:3031"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pine Island"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-antarctic-glaciers-pine-island/items/LE07_L2SR_001113_20110201_20200910_02_T2_SR/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "ADD_L2_Pine_Island"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pine Island"
+    }
+  ],
+  "assets": {
+    "red": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_B3.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Red Band (B3)",
+      "description": "Collection 2 Level-2 Red Band (B3) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B3",
+          "common_name": "red",
+          "center_wavelength": 0.65
+        }
+      ],
+      "file:checksum": "1340ba73124e959b63c401290607ac0d0eaf4421d4c816deaa32e95154db0845bae897fb23b71d3a1727359be68eb37e916ef8b24da2c2846dc5f7c3529643d3cd39",
+      "roles": [
+        "data"
+      ]
+    },
+    "blue": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_B1.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Blue Band (B1)",
+      "description": "Collection 2 Level-2 Blue Band (B1) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B1",
+          "common_name": "blue",
+          "center_wavelength": 0.48
+        }
+      ],
+      "file:checksum": "134058e711a61ddac2b721ef56ae24547ca879e35cf1eba40e2728a90462bf8025d236222e877600d0b1c58ebdc1c648b201f4969a219caa17656a22d000c5870855",
+      "roles": [
+        "data"
+      ]
+    },
+    "green": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_B2.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Green Band (B2)",
+      "description": "Collection 2 Level-2 Green Band (B2) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B2",
+          "common_name": "green",
+          "center_wavelength": 0.56
+        }
+      ],
+      "file:checksum": "13408d809991420f51f6d41de6b28ce748f08739d72fe49d3d984a8dc60aa9ca2f55f3d477389650c29c16b4507ff3a9304fffe01acb58c966f2741c4ae8ba448daa",
+      "roles": [
+        "data"
+      ]
+    },
+    "index": {
+      "href": "https://landsatlook.usgs.gov/stac-browser/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2"
+    },
+    "nir08": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_B4.TIF",
+      "title": "Near Infrared Band 0.8 (B4)",
+      "description": "Collection 2 Level-2 Near Infrared Band 0.8 (B4) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "B4"
+        }
+      ],
+      "file:checksum": "1340589a7b0276b3ac81a07b59a0f7d0891df3d9685d02b9bcf4f7f50381c03fa93d29352ba584d4fc2f9c971549e44c562b43c3a013a0ea78af603f1eeea6aa13c5"
+    },
+    "swir16": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_B5.TIF",
+      "title": "Short-wave Infrared Band 1.6 (B5)",
+      "eo:bands": [
+        {
+          "name": "B5"
+        }
+      ],
+      "file:checksum": "1340982b4687d569610903a0f53c91da827efa78b17f93865754a7f256c3d0c0a414a7b7e221a5f3dd5b3ffd870698f3cd626aa9b2353fc030a52128c288768ba22d"
+    },
+    "swir22": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_B7.TIF",
+      "file:checksum": "13407f476cadf5363c3c62a1047898c67c2f79ee4080cb358edebd7972b91d540d19874e557f6c12c8ac21280086e06c7cd04953b70e866518ecfa86aa435c17d976"
+    },
+    "ANG.txt": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_ANG.txt",
+      "file:checksum": "1340f6f1febf6e93a6739dbb51c5132c3b298ae3e8062fbf5bdb21a5304a7dd470c8e068995d05e44bcc3e22c9893c53951800d8324cccfbece701dbed00e37fa833"
+    },
+    "MTL.txt": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_MTL.txt",
+      "file:checksum": "1340967a7bf37fe09f3547c03238d86ff428d3adb95d3c85beda4269decbb4d660e88c3456cb4ea528787df6faaa8701b2baf5ae120a10382fcd51298c214f39c89f"
+    },
+    "MTL.xml": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_MTL.xml",
+      "description": "Collection 2 Level-1 Product Metadata File (xml)",
+      "file:checksum": "13405b310fe2ed9b2e9847b999677a387e6ee1cc84ab1a54b34f307a03f2115d1af36dc0133f68412545621d657d4101fc7b6b96d909aa3a7d4c91792844304a0367"
+    },
+    "MTL.json": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_MTL.json",
+      "file:checksum": "1340814ccf400857383ea0603119b4e43d0bb1d9037e30c461ede4ca295a08f8d51c1e1684be5a32915a052793ae79f17bfc62cdd67d9b732f41cbb3b4ccf2780a69"
+    },
+    "cloud_qa": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_CLOUD_QA.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Cloud Quality Analysis Band",
+      "description": "Collection 2 Level-2 Cloud Quality Opacity Band Surface Reflectance",
+      "file:checksum": "1340fe9ddb2c55511d5be5615e26f7f3593c1947e181d234d76b10fd1be8e5f3ec6a6382cf3d3bd73dde46e8ae03e16db1111637ff712f473ed84cbdd180dcf5a6aa",
+      "classification:bitfields": [
+        {
+          "name": "ddv",
+          "length": 1,
+          "offset": 0,
+          "classes": [
+            {
+              "name": "not_ddv",
+              "value": 0,
+              "description": "Pixel has no DDV"
+            },
+            {
+              "name": "ddv",
+              "value": 1,
+              "description": "Pixel has DDV"
+            }
+          ],
+          "description": "Dark Dense Vegetation"
+        },
+        {
+          "name": "cloud",
+          "length": 1,
+          "offset": 1,
+          "classes": [
+            {
+              "name": "not_cloud",
+              "value": 0,
+              "description": "Pixel has no Cloud"
+            },
+            {
+              "name": "cloud",
+              "value": 1,
+              "description": "Pixel has Cloud"
+            }
+          ],
+          "description": "Cloud"
+        },
+        {
+          "name": "cloud_shadow",
+          "length": 1,
+          "offset": 2,
+          "classes": [
+            {
+              "name": "not_shadow",
+              "value": 0,
+              "description": "Pixel doesn't have cloud shadow"
+            },
+            {
+              "name": "cloud",
+              "value": 1,
+              "description": "Pixel has cloud shadow"
+            }
+          ],
+          "description": "Cloud Shadow"
+        },
+        {
+          "name": "adjacent",
+          "length": 1,
+          "offset": 3,
+          "classes": [
+            {
+              "name": "not_adjacent",
+              "value": 0,
+              "description": "Pixel not adjacent to cloud"
+            },
+            {
+              "name": "adjacent",
+              "value": 1,
+              "description": "Pixel adjacent to cloud"
+            }
+          ],
+          "description": "Adjacent to Cloud"
+        },
+        {
+          "name": "snow",
+          "length": 1,
+          "offset": 4,
+          "classes": [
+            {
+              "name": "not_snow",
+              "value": 0,
+              "description": "Pixel is not snow"
+            },
+            {
+              "name": "snow",
+              "value": 1,
+              "description": "Pixel is snow"
+            }
+          ],
+          "description": "Snow"
+        },
+        {
+          "name": "water",
+          "length": 1,
+          "offset": 5,
+          "classes": [
+            {
+              "name": "not_water",
+              "value": 0,
+              "description": "Pixel is not water"
+            },
+            {
+              "name": "water",
+              "value": 1,
+              "description": "Pixel is water"
+            }
+          ],
+          "description": "Water"
+        },
+        {
+          "name": "unused",
+          "length": 1,
+          "offset": 6,
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused bit"
+            }
+          ],
+          "description": "Unused bit"
+        },
+        {
+          "name": "unused",
+          "length": 1,
+          "offset": 7,
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused bit"
+            }
+          ],
+          "description": "Unused bit"
+        }
+      ],
+      "roles": [
+        "metadata",
+        "cloud",
+        "cloud-shadow",
+        "snow-ice",
+        "water-mask"
+      ]
+    },
+    "qa_pixel": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_QA_PIXEL.TIF",
+      "file:checksum": "134054a9354e79a09ae95bf0129db432c3b487864158cd8e1f45bd36ad0996593e68fd6a745d6ab4536750952acc534e09006fdf4abaf0afdb16a0f51b731739b32f",
+      "classification:bitfields": [
+        {
+          "name": "fill",
+          "length": 1,
+          "offset": 0,
+          "classes": [
+            {
+              "name": "not_fill",
+              "value": 0,
+              "description": "L1 image band pixels are not fill"
+            },
+            {
+              "name": "fill",
+              "value": 1,
+              "description": "L1 image band pixels are fill"
+            }
+          ],
+          "description": "Corresponding pixels in L1 image bands are fill"
+        },
+        {
+          "name": "dilated",
+          "length": 1,
+          "offset": 1,
+          "classes": [
+            {
+              "name": "not_dilated",
+              "value": 0,
+              "description": "Cloud is not dilated or no cloud"
+            },
+            {
+              "name": "dilated",
+              "value": 1,
+              "description": "Cloud dilation"
+            }
+          ],
+          "description": "Dilated cloud"
+        },
+        {
+          "name": "unused",
+          "length": 1,
+          "offset": 2,
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused bit"
+            }
+          ],
+          "description": "Unused bit"
+        },
+        {
+          "name": "cloud",
+          "length": 1,
+          "offset": 3,
+          "classes": [
+            {
+              "name": "not_cloud",
+              "value": 0,
+              "description": "Cloud confidence is not high"
+            },
+            {
+              "name": "cloud",
+              "value": 1,
+              "description": "High confidence cloud"
+            }
+          ],
+          "description": "Cloud mask"
+        },
+        {
+          "name": "shadow",
+          "length": 1,
+          "offset": 4,
+          "classes": [
+            {
+              "name": "not_shadow",
+              "value": 0,
+              "description": "Cloud shadow confidence is not high"
+            },
+            {
+              "name": "shadow",
+              "value": 1,
+              "description": "High confidence cloud shadow"
+            }
+          ],
+          "description": "Cloud shadow mask"
+        },
+        {
+          "name": "snow",
+          "length": 1,
+          "offset": 5,
+          "classes": [
+            {
+              "name": "not_snow",
+              "value": 0,
+              "description": "Snow/Ice confidence is not high"
+            },
+            {
+              "name": "snow",
+              "value": 1,
+              "description": "High confidence snow cover"
+            }
+          ],
+          "description": "Snow/Ice mask"
+        },
+        {
+          "name": "clear",
+          "length": 1,
+          "offset": 6,
+          "classes": [
+            {
+              "name": "not_clear",
+              "value": 0,
+              "description": "Cloud or dilated cloud bits are set"
+            },
+            {
+              "name": "clear",
+              "value": 1,
+              "description": "Cloud and dilated cloud bits are not set"
+            }
+          ],
+          "description": "Cloud or dilated cloud bits set"
+        },
+        {
+          "name": "water",
+          "length": 1,
+          "offset": 7,
+          "classes": [
+            {
+              "name": "not_water",
+              "value": 0,
+              "description": "Land or cloud"
+            },
+            {
+              "name": "water",
+              "value": 1,
+              "description": "Water"
+            }
+          ],
+          "description": "Water mask"
+        },
+        {
+          "name": "cloud_confidence",
+          "length": 2,
+          "offset": 8,
+          "classes": [
+            {
+              "name": "not_set",
+              "value": 0,
+              "description": "No confidence level set"
+            },
+            {
+              "name": "low",
+              "value": 1,
+              "description": "Low confidence cloud"
+            },
+            {
+              "name": "medium",
+              "value": 2,
+              "description": "Medium confidence cloud"
+            },
+            {
+              "name": "high",
+              "value": 3,
+              "description": "High confidence cloud"
+            }
+          ],
+          "description": "Cloud confidence levels"
+        },
+        {
+          "name": "shadow_confidence",
+          "length": 2,
+          "offset": 10,
+          "classes": [
+            {
+              "name": "not_set",
+              "value": 0,
+              "description": "No confidence level set"
+            },
+            {
+              "name": "low",
+              "value": 1,
+              "description": "Low confidence cloud shadow"
+            },
+            {
+              "name": "reserved",
+              "value": 2,
+              "description": "Reserved - value not used"
+            },
+            {
+              "name": "high",
+              "value": 3,
+              "description": "High confidence cloud shadow"
+            }
+          ],
+          "description": "Cloud shadow confidence levels"
+        },
+        {
+          "name": "snow_confidence",
+          "length": 2,
+          "offset": 12,
+          "classes": [
+            {
+              "name": "not_set",
+              "value": 0,
+              "description": "No confidence level set"
+            },
+            {
+              "name": "low",
+              "value": 1,
+              "description": "Low confidence snow/ice"
+            },
+            {
+              "name": "reserved",
+              "value": 2,
+              "description": "Reserved - value not used"
+            },
+            {
+              "name": "high",
+              "value": 3,
+              "description": "High confidence snow/ice"
+            }
+          ],
+          "description": "Snow/Ice confidence levels"
+        },
+        {
+          "name": "unused",
+          "length": 1,
+          "offset": 14,
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused Bit"
+            }
+          ],
+          "description": "Unused Bit"
+        },
+        {
+          "name": "unused",
+          "length": 1,
+          "offset": 15,
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused Bit"
+            }
+          ],
+          "description": "Unused Bit"
+        }
+      ]
+    },
+    "qa_radsat": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_QA_RADSAT.TIF",
+      "file:checksum": "1340a2b800ef7ef02437ad79de1dc9992be209fb98711d443c6a33ea0ba530ce54e1fa1c5169748bf750d0a7cc983c4d536018313a04098f410d8cd6f5f5649d70a5",
+      "classification:bitfields": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {
+          "name": "unused",
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused bit"
+            }
+          ],
+          "description": "Unused bit"
+        },
+        {
+          "name": "dropped",
+          "classes": [
+            {
+              "name": "not_dropped",
+              "value": 0,
+              "description": "Pixel Present"
+            },
+            {
+              "name": "dropped",
+              "value": 1,
+              "description": "No data"
+            }
+          ],
+          "description": "Dropped Pixel"
+        },
+        {},
+        {
+          "name": "unused",
+          "classes": [
+            {
+              "name": "unused",
+              "value": 0,
+              "description": "Unused bit"
+            }
+          ],
+          "description": "Unused bit"
+        },
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "thumbnail": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_thumb_small.jpeg",
+      "type": "image/jpeg",
+      "title": "Thumbnail image",
+      "file:checksum": "13406a730e55ace5eede6ff602847db87e0203a01dfbadb90d93626b52b751aac503ef6c2c8b1d811910a2862de48d954af14789b14e967cb7c71dbd880273844b09",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "atmos_opacity": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_SR_ATMOS_OPACITY.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Atmospheric Opacity Band",
+      "description": "Collection 2 Level-2 Atmospheric Opacity Band Surface Reflectance",
+      "file:checksum": "1340f715f05b66645a2f8ff424ebebc49e2f7549e1825887fc76b88e60f02865d12ca278b30c80a795c7be7e3d05c136979b18231f44a8b499c208227d0b12281941",
+      "roles": [
+        "data"
+      ]
+    },
+    "reduced_resolution_browse": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2011/001/113/LE07_L2SR_001113_20110201_20200910_02_T2/LE07_L2SR_001113_20110201_20200910_02_T2_thumb_large.jpeg",
+      "file:checksum": "13403cb81ab042c6a6991954c80c01b997dccae0557ea86281e27b2437d47e6f92a5851dba2e7a9557a56709ceba48aefe7bc4350d0e8c1283b0482251aca55584eb"
+    }
+  },
+  "collection": "landsat-c2l2-sr-antarctic-glaciers-pine-island"
+}

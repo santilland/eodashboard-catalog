@@ -1,0 +1,178 @@
+{
+  "type": "Collection",
+  "id": "N12_sea_ice_concentration_antarctic",
+  "stac_version": "1.1.0",
+  "description": "## GCOM-W Sea Ice Concentration\n\nJAXA is releasing Sea ice data observed by JAXA's [Global Change Observation Mission \u2013 Water \u201cSHIZUKU\u201d (GCOM-W)](https://global.jaxa.jp/projects/sat/gcom_w/).\nArctic sea ice extent is used as an important indicator showing the effect of global warming. Taking advantage of the wide-area observation from satellites,\nJAXA is conducting observation of the sea ice in the entire Arctic Ocean. Every winter, drift ice arriving on the coast of the Sea of Okhotsk can be captured.\n\n\n## Additional information\n\n- [Read more](https://earth.jaxa.jp/en/data/products/sea-ice/index.html)\n- Access the [Global Change Observation Mission - Water (GCOM-W) Product Distribution Service](https://suzaku.eorc.jaxa.jp/GCOM_W/research/resdist.html)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N12_sea_ice_concentration_antarctic/collection.json",
+      "type": "application/json",
+      "title": "Sea ice concentration GCOM-W - Antarctic",
+      "endpointtype": "WMS_Time",
+      "code": "N12_sea_ice_concentration_antarctic",
+      "id": "N12_sea_ice_concentration_antarctic",
+      "themes": [
+        "cryosphere"
+      ],
+      "tags": [
+        "Antarctic",
+        "Sea ice",
+        "Open data",
+        "Southern ocean"
+      ],
+      "agency": [
+        "JAXA"
+      ],
+      "subcode": "N12_sea_ice_concentration_antarctic",
+      "sensor": [
+        "AMSR2"
+      ],
+      "satellite": [
+        "GCOM-W"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N12_sea_ice_concentration/Antarctic-N12.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Antarctic",
+    "Sea ice",
+    "Open data",
+    "Southern ocean"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N12_sea_ice_concentration_antarctic",
+  "sensor": [
+    "AMSR2"
+  ],
+  "satellite": [
+    "GCOM-W"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "NaN",
+      100
+    ],
+    "range": [
+      "#ffffff",
+      "#4040ff",
+      "#4646ff",
+      "#6262ff",
+      "#9999ff",
+      "#d1d1ff",
+      "#ffffff"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Percentage"
+  },
+  "title": "Sea ice concentration GCOM-W - Antarctic",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ],
+        [
+          -100,
+          -80,
+          -70,
+          -60
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2012-07-04T11:59:30Z",
+          "2025-02-27T11:59:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N12_sea_ice_concentration_antarctic"
+    ],
+    "themes": [
+      "cryosphere"
+    ],
+    "satellite": [
+      "GCOM-W"
+    ],
+    "sensor": [
+      "AMSR2"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N12_sea_ice_concentration/Antarctic-N12.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N12_sea_ice_concentration/N12_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N12_sea_ice_concentration/Antarctic-N12.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://suzaku.eorc.jaxa.jp/GCOM_W/research/resdist.html",
+      "type": "text/html",
+      "title": "Dataset access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://global.jaxa.jp/projects/sat/gcom_w/",
+      "type": "text/html",
+      "title": "About Global Change Observation Mission - Water",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://earth.jaxa.jp/en/data/products/sea-ice/index.html",
+      "type": "text/html",
+      "title": "Earth-graphy sea ice",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "type": "Collection",
+  "id": "net_primary_production",
+  "stac_version": "1.1.0",
+  "description": "## Ocean Net Primary Production (MODIS)\n\nThe diversity of life on Earth is astonishing, yet most of the ecosystems you and I are familiar with share a common dependence on a miraculous process called photosynthesis.\nPhotosynthesis uses the energy in sunlight to fix carbon dioxide (CO2) into organic material.\nAquatic and terrestrial photosynthetic plants use some of their newly formed carbon products immediately for energy and maintenance.\nThe remaining photosynthetic products are available for plant growth or consumption by the heterotrophic community.\nWe refer to this \"available\" carbon as net primary production, and it is equal to gross photosynthetic carbon fixation minus the carbon respired to support maintenance requirements of the whole plant.\n\n<center>\n<img src=\"https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/phytoplankton.jpg\" width=\"500\">\n</center>\n\nTotal net primary production on Earth exceeds 100 billion tons of carbon per year, and it plays a profound role in the global carbon cycle.\nMany people are surprised to learn, however, that roughly half of this productivity occurs in the oceans and is conducted by microscopic plants called phytoplankton.\nWhile estimates of ocean productivity have been made for decades, it wasn't until ocean-observing satellites were launched that we truly gained adequate global coverage\nin space and time of phytoplankton populations to make reasonable estimates of ocean net primary production.\n\n\n### Additional information\n\n- Read more about ocean productivity and access data and documentation [here](https://sites.science.oregonstate.edu/ocean.productivity/index.php)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202012.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202012.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-12-01T00:00:00Z",
+      "end_datetime": "2020-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202011.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202011.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-11-01T00:00:00Z",
+      "end_datetime": "2020-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202010.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202010.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-10-01T00:00:00Z",
+      "end_datetime": "2020-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202009.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202009.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-09-01T00:00:00Z",
+      "end_datetime": "2020-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202008.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202008.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-08-01T00:00:00Z",
+      "end_datetime": "2020-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202007.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202007.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-07-01T00:00:00Z",
+      "end_datetime": "2020-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202006.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202006.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-06-01T00:00:00Z",
+      "end_datetime": "2020-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202005.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202005.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-05-01T00:00:00Z",
+      "end_datetime": "2020-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202004.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202004.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-04-01T00:00:00Z",
+      "end_datetime": "2020-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202003.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202003.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-03-01T00:00:00Z",
+      "end_datetime": "2020-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202002.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202002.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-02-01T00:00:00Z",
+      "end_datetime": "2020-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./MO_NPP_npp_vgpm/2020/A_202001.L3m_MO_NPP_npp_vgpm_4km.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202001.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "start_datetime": "2020-01-01T00:00:00Z",
+      "end_datetime": "2020-01-31T00:00:00Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=jet&rescale=0.0,1500.0",
+      "type": "image/png",
+      "title": "net_primary_production"
+    },
+    {
+      "rel": "example",
+      "href": "https://openveda.cloud/api/raster/cog/statistics",
+      "type": "application/json",
+      "title": "VEDA Statistics",
+      "example:language": "JSON"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Ocean net primary production (MODIS)"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Behrenfeld, MJ, PG Falkowski - Limnology and Oceanography (1997a, Volume 42 1-20); Photosynthetic rates derived from satellite-based chlorophyll concentration\n",
+      "doi": "10.4319/lo.1997.42.1.0001"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png",
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "Model",
+    "Primary production",
+    "Open data",
+    "Photosynthesis",
+    "Organic material",
+    "Chlorophyll",
+    "Carbon",
+    "Water"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NPPN",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Aqua"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1500
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[mgC/m\u00b2/day]"
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "Ocean net primary production (MODIS)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0000050868518,
+          -90.00000508655744,
+          180.0000050868518,
+          89.9999974571629
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Ocean Productivity",
+      "roles": "processor",
+      "url": "http://orca.science.oregonstate.edu/npp_products.php"
+    },
+    {
+      "name": "NASA",
+      "roles": "licensor, producer",
+      "url": "https://www.earthdata.nasa.gov/esds/veda"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://sites.science.oregonstate.edu/ocean.productivity/index.php",
+      "type": "text/html",
+      "title": "Ocean productivity",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

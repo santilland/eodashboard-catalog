@@ -1,0 +1,179 @@
+{
+  "type": "Collection",
+  "id": "N1_NO2_diff_monthly",
+  "stac_version": "1.1.0",
+  "description": "## Nitrogen Dioxide Monthly Difference from 2015-2019 baseline\n\nCars, trucks, power plants, and other industrial facilities emit nitrogen dioxide (NO2) as a product of burning fossil fuels. Once in the air, nitrogen dioxide can aggravate respiratory conditions, especially in people with asthma, leading to an increase of symptoms and hospital admissions. Long-term exposure can lead to the development of asthma and potentially increase susceptibility to respiratory infections. Nitrogen dioxide can quickly transform into ground-level ozone, a major respiratory pollutant and one of the main ingredients of summertime smog. Source: [Earthdata.Nasa.gov](https://www.earthdata.nasa.gov/learn/articles/find-no2-data#Visualize%20No2%20Data)\n\n\nThese maps present AURA OMI average tropospheric NO2 compared to a 2015 to 2019 baseline. \n\nFor details about this product, data access and additional products please visit https://www.earthdata.nasa.gov/learn/articles/find-no2-data#Visualize%20No2%20Data \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N1_NO2_diff_monthly/collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide (Monthly Difference)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Mean NO2 column density compared to 2015-2019 baseline [10^15 mol/cm\u00b2]",
+      "code": "N1_NO2_diff_monthly",
+      "id": "N1_NO2_diff_monthly",
+      "themes": [
+        "atmosphere"
+      ],
+      "tags": [
+        "Air quality",
+        "NO2",
+        "Open data",
+        "Difference"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N1_NO2_diff_monthly",
+      "sensor": [
+        "OMI"
+      ],
+      "satellite": [
+        "Aura"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Mean NO2 column density compared to 2015-2019 baseline [10^15 mol/cm\u00b2]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_diff_monthly/N1_NO2_diff_monthly.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "Difference"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N1_NO2_diff_monthly",
+  "sensor": [
+    "OMI"
+  ],
+  "satellite": [
+    "Aura"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -3,
+      3
+    ],
+    "range": [
+      "#fff5f0",
+      "#fee8de",
+      "#fed7c7",
+      "#fcc1a9",
+      "#fca88b",
+      "#fc8f6f",
+      "#fb7656",
+      "#f75c41",
+      "#f03f2e",
+      "#dc2824",
+      "#c5171c",
+      "#ae1117",
+      "#8d0912",
+      "#67000d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NO2 difference [10^15 molecules/cm\u00b2]"
+  },
+  "title": "Nitrogen Dioxide (Monthly Difference)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2023-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://www.earthdata.nasa.gov/learn/articles/find-no2-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N1_NO2_diff_monthly"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Aura"
+    ],
+    "sensor": [
+      "OMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_diff_monthly/N1_NO2_diff_monthly.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_diff_monthly/N1_NO2_diff_monthly_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_diff_monthly/N1_NO2_diff_monthly.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://aura.gsfc.nasa.gov/index.html",
+      "type": "text/html",
+      "title": "Aura satellite",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://earthobservatory.nasa.gov/images/146741/nitrogen-dioxide-levels-rebound-in-china",
+      "type": "text/html",
+      "title": "Nitrogen Dioxide Levels Rebound in China",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

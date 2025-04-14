@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "San Francisco",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.378,
+        37.622
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -122.388,
+    37.612,
+    -122.368,
+    37.632
+  ],
+  "properties": {
+    "start_datetime": "2020-01-11T00:00:00Z",
+    "end_datetime": "2020-10-26T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "assets": {},
+  "collection": "E13b_parked_airplanes"
+}

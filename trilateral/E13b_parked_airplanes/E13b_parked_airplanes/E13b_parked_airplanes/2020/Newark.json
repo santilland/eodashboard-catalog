@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Newark",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -74.172,
+        40.689
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -74.182,
+    40.679,
+    -74.16199999999999,
+    40.699
+  ],
+  "properties": {
+    "start_datetime": "2020-01-20T00:00:00Z",
+    "end_datetime": "2020-10-15T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "assets": {},
+  "collection": "E13b_parked_airplanes"
+}

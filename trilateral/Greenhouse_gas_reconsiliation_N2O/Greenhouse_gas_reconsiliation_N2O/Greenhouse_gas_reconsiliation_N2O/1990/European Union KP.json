@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "European Union KP",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        4.3401,
+        50.8301
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    4.3301,
+    50.820100000000004,
+    4.350099999999999,
+    50.8401
+  ],
+  "properties": {
+    "start_datetime": "1990-01-01T00:00:00Z",
+    "end_datetime": "2020-01-01T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrous oxide from CCI RECCAP2"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrous oxide from CCI RECCAP2"
+    }
+  ],
+  "assets": {},
+  "collection": "Greenhouse_gas_reconsiliation_N2O"
+}

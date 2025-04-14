@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "EC",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -78.5,
+        -0.217
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -78.51,
+    -0.227,
+    -78.49,
+    -0.207
+  ],
+  "properties": {
+    "start_datetime": "2020-02-15T00:00:00Z",
+    "end_datetime": "2022-10-15T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "People Mobility Reports"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "People Mobility Reports"
+    }
+  ],
+  "assets": {},
+  "collection": "GG_Google_Mobility_Data_trilateral"
+}

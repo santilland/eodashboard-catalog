@@ -1,0 +1,463 @@
+{
+  "type": "Collection",
+  "id": "ADD_L2_Thwaites",
+  "stac_version": "1.1.0",
+  "description": "# Thwaites Glacier - Landsat Collection 2 Level-2 Surface Reflectance science products\n\nLandsat Collection 2 includes scene-based global Level-2 surface reflectance and surface temperature science products.\n\nProvider: Created in partnership of NASA and U.S. Geological Survey (USGS) ([Landsat Collection 2 Level-2 Science Products](https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products))\n\nLicence: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf\n\n### Surface reflectance\n\nSurface reflectance (unitless) measures the fraction of incoming solar radiation that is reflected from the Earth's surface to the Landsat sensor. The LEDAPS and LaSRC surface reflectance algorithms correct for the temporally, spatially and spectrally varying scattering and absorbing effects of atmospheric gases, aerosols, and water vapor, which is necessary to reliably characterize the Earth\u2019s land surface.\n\n### Data Access\n\nThis dataset consists of pre-selected cloud-free Landsat 7,8,9 surface reflectance scenes from 2000-2023 taken over the area of both glaciers.\n\nData access is provided by the [Development Seed](https://developmentseed.org/), via the on-the-fly XYZ tile service powered by [TiTiler](https://developmentseed.org/titiler/) referencing Cloud Optimized COGs.\n\n### Map baselayer and geometries\n\nThe Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\nThis map uses the baselayer Antarctic hillshade and bathymetry south of 60\u00b0S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2022/LC08_L2SR_005113_20221220_20221227_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20221220_20221227_02_T2_SR",
+      "datetime": "2022-12-20T15:16:58Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2022/LC08_L2SR_005113_20221204_20221212_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20221204_20221212_02_T2_SR",
+      "datetime": "2022-12-04T15:17:07Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2022/LC08_L2SR_005113_20220219_20220302_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20220219_20220302_02_T2_SR",
+      "datetime": "2022-02-19T15:16:35Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2022/LC08_L2SR_005113_20220203_20220212_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20220203_20220212_02_T2_SR",
+      "datetime": "2022-02-03T15:16:41Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2021/LC08_L2SR_005113_20211201_20211209_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20211201_20211209_02_T2_SR",
+      "datetime": "2021-12-01T15:16:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2021/LC08_L2SR_005113_20210131_20210302_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20210131_20210302_02_T2_SR",
+      "datetime": "2021-01-31T15:16:41Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2020/LC08_L2SR_005113_20201214_20210314_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20201214_20210314_02_T2_SR",
+      "datetime": "2020-12-14T15:16:54Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2020/LC08_L2SR_005113_20201112_20210317_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20201112_20210317_02_T2_SR",
+      "datetime": "2020-11-12T15:16:49Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2019/LC08_L2SR_005113_20191228_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20191228_20201016_02_T2_SR",
+      "datetime": "2019-12-28T15:16:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2019/LC08_L2SR_005113_20191110_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20191110_20201016_02_T2_SR",
+      "datetime": "2019-11-10T15:16:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2019/LC08_L2SR_005113_20191025_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20191025_20201016_02_T2_SR",
+      "datetime": "2019-10-25T15:16:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2019/LC08_L2SR_005113_20191009_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20191009_20201016_02_T2_SR",
+      "datetime": "2019-10-09T15:16:56Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2019/LC08_L2SR_005113_20190126_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20190126_20201016_02_T2_SR",
+      "datetime": "2019-01-26T15:16:20Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2019/LC08_L2SR_005113_20190110_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20190110_20201016_02_T2_SR",
+      "datetime": "2019-01-10T15:16:24Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2018/LC08_L2SR_005113_20181209_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20181209_20201016_02_T2_SR",
+      "datetime": "2018-12-09T15:16:26Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2018/LC08_L2SR_005113_20180224_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20180224_20201016_02_T2_SR",
+      "datetime": "2018-02-24T15:16:18Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2018/LC08_L2SR_005113_20180123_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20180123_20201016_02_T2_SR",
+      "datetime": "2018-01-23T15:16:31Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2016/LC08_L2SR_005113_20161219_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20161219_20201016_02_T2_SR",
+      "datetime": "2016-12-19T15:16:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2014/LC08_L2SR_005113_20141128_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20141128_20201016_02_T2_SR",
+      "datetime": "2014-11-28T15:16:45Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2014/LC08_L2SR_005113_20141112_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20141112_20201016_02_T2_SR",
+      "datetime": "2014-11-12T15:16:47Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2014/LC08_L2SR_005113_20141027_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20141027_20201016_02_T2_SR",
+      "datetime": "2014-10-27T15:16:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2014/LC08_L2SR_005113_20141011_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20141011_20201016_02_T2_SR",
+      "datetime": "2014-10-11T15:16:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2014/LC08_L2SR_005113_20140213_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20140213_20201016_02_T2_SR",
+      "datetime": "2014-02-13T15:17:24Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2014/LC08_L2SR_005113_20140112_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20140112_20201016_02_T2_SR",
+      "datetime": "2014-01-12T15:17:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2013/LC08_L2SR_005113_20131211_20201016_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SR_005113_20131211_20201016_02_T2_SR",
+      "datetime": "2013-12-11T15:18:08Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2013/LE07_L2SR_005113_20130218_20200908_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20130218_20200908_02_T2_SR",
+      "datetime": "2013-02-18T15:12:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2013/LE07_L2SR_005113_20130202_20200908_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20130202_20200908_02_T2_SR",
+      "datetime": "2013-02-02T15:12:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2012/LE07_L2SR_005113_20121114_20200908_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20121114_20200908_02_T2_SR",
+      "datetime": "2012-11-14T15:12:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2012/LE07_L2SR_005113_20120216_20200909_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20120216_20200909_02_T2_SR",
+      "datetime": "2012-02-16T15:10:41Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2012/LE07_L2SR_005113_20120131_20200909_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20120131_20200909_02_T2_SR",
+      "datetime": "2012-01-31T15:10:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2011/LE07_L2SR_005113_20111230_20200909_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20111230_20200909_02_T2_SR",
+      "datetime": "2011-12-30T15:10:33Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2011/LE07_L2SR_005113_20111112_20200909_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20111112_20200909_02_T2_SR",
+      "datetime": "2011-11-12T15:10:06Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2011/LE07_L2SR_005113_20110128_20200910_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20110128_20200910_02_T2_SR",
+      "datetime": "2011-01-28T15:09:56Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2011/LE07_L2SR_005113_20110112_20200910_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20110112_20200910_02_T2_SR",
+      "datetime": "2011-01-12T15:09:50Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2010/LE07_L2SR_005113_20101227_20200910_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20101227_20200910_02_T2_SR",
+      "datetime": "2010-12-27T15:09:41Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2010/LE07_L2SR_005113_20100210_20200911_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20100210_20200911_02_T2_SR",
+      "datetime": "2010-02-10T15:08:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2010/LE07_L2SR_005113_20100125_20200911_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20100125_20200911_02_T2_SR",
+      "datetime": "2010-01-25T15:08:13Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2010/LE07_L2SR_005113_20100109_20200911_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20100109_20200911_02_T2_SR",
+      "datetime": "2010-01-09T15:07:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2009/LE07_L2SR_005113_20091208_20200911_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20091208_20200911_02_T2_SR",
+      "datetime": "2009-12-08T15:07:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2008/LE07_L2SR_005113_20081205_20200912_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20081205_20200912_02_T2_SR",
+      "datetime": "2008-12-05T15:05:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2008/LE07_L2SR_005113_20080221_20200913_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20080221_20200913_02_T2_SR",
+      "datetime": "2008-02-21T15:06:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2008/LE07_L2SR_005113_20080104_20200913_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20080104_20200913_02_T2_SR",
+      "datetime": "2008-01-04T15:06:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2007/LE07_L2SR_005113_20070117_20200913_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20070117_20200913_02_T2_SR",
+      "datetime": "2007-01-17T15:06:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2006/LE07_L2SR_005113_20061216_20200913_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20061216_20200913_02_T2_SR",
+      "datetime": "2006-12-16T15:06:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2005/LE07_L2SR_005113_20050212_20200915_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20050212_20200915_02_T2_SR",
+      "datetime": "2005-02-12T15:06:08Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2004/LE07_L2SR_005113_20040226_20200915_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20040226_20200915_02_T2_SR",
+      "datetime": "2004-02-26T15:05:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2002/LE07_L2SR_005113_20021221_20200916_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20021221_20200916_02_T2_SR",
+      "datetime": "2002-12-21T15:04:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2001/LE07_L2SR_005113_20011202_20200917_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20011202_20200917_02_T2_SR",
+      "datetime": "2001-12-02T15:05:04Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/2001/LE07_L2SR_005113_20010116_20200917_02_T2_SR.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SR_005113_20010116_20200917_02_T2_SR",
+      "datetime": "2001-01-16T15:07:02Z"
+    },
+    {
+      "rel": "license",
+      "href": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf",
+      "type": "application/pdf",
+      "title": "Landsat Data Distribution Policy"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-antarctic-glaciers-thwaites/items/{item}/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "ADD_L2_Thwaites"
+    },
+    {
+      "rel": "license",
+      "href": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf",
+      "type": "application/pdf",
+      "title": "Landsat Data Distribution Policy"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Landsat L2 Cloud free Antarctica"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P. (2019): The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674.\n",
+      "doi": "10.5285/836f016a-33be-6ddc-e053-6c86abc0788e"
+    }
+  ],
+  "subtitle": "Thwaites Glacier Landsat L2 low-cloud scenes",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_L2_Thwaites/thumbnail.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Antarctica",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Landsat",
+    "OLI",
+    "Glacier",
+    "Ice monitoring"
+  ],
+  "agency": [
+    "NASA",
+    "USGS"
+  ],
+  "subcode": "ADD_L2_Thwaites",
+  "sensor": [
+    "OLI"
+  ],
+  "satellite": [
+    "Landsat-7",
+    "Landsat-8",
+    "Landsat-9"
+  ],
+  "endpointtype": "VEDA_tiles",
+  "title": "Thwaites Glacier",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -115,
+          -78,
+          -100,
+          -73
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2001-01-16T15:07:02.414757Z",
+          "2022-12-20T15:16:58.089011Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "NASA",
+      "description": "NASA's Visualization, Exploration, and Data Analysis (VEDA) project is an open-source science cyberinfrastructure for data processing, visualization, exploration, and geographic information systems (GIS) capabilities.",
+      "url": "https://www.earthdata.nasa.gov/esds/veda"
+    },
+    {
+      "name": "USGS",
+      "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_L2_Thwaites/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

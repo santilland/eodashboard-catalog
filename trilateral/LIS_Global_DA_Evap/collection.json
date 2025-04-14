@@ -1,0 +1,157 @@
+{
+  "type": "Collection",
+  "id": "LIS_Global_DA_Evap",
+  "stac_version": "1.1.0",
+  "description": "# Evapotranspiration - LIS 10km Global DA\n\n## Dataset Description: \nDataset represents Gridded total evapotranspiration (in kg m-2 s-1) from 10km global LIS with assimilation.\n\n- Resolution: 10km\n- GeographicalCoverage: Global\n- TemporalAvailability: \"['2002-08-02', '2021-12-01']\"\n- TemporalResolution: daily\n- Host: \"[VEDA](https://www.earthdata.nasa.gov/esds/veda)\"\n\n## Data Access\n\n- \"[VEDA Catalog](https://staging-stac.delta-backend.com/collections/lis-global-da-evap)\"\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./LIS_Global_DA_Evap/collection.json",
+      "type": "application/json",
+      "title": "Evapotranspiration LIS",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Total evapotranspiration gridded from 10km global LIS with assimilation",
+      "code": "LIS_Global_DA_Evap",
+      "id": "LIS_Global_DA_Evap",
+      "themes": [
+        "biomass"
+      ],
+      "tags": [
+        "Evapotranspiration",
+        "Water cycle",
+        "Climate change",
+        "Open data",
+        "Soil moisture",
+        "Drought",
+        "NASA",
+        "Water resources",
+        "Assimilation",
+        "VEDA"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "LIS_Global_DA_Evap"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Total evapotranspiration gridded from 10km global LIS with assimilation",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/LIS_Global_DA_Evap/thumbnail.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "Evapotranspiration",
+    "Water cycle",
+    "Climate change",
+    "Open data",
+    "Soil moisture",
+    "Drought",
+    "NASA",
+    "Water resources",
+    "Assimilation",
+    "VEDA"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "LIS_Global_DA_Evap",
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      100
+    ],
+    "range": [
+      "#440154",
+      "#481c6e",
+      "#453581",
+      "#3d4d8a",
+      "#34618d",
+      "#2b748e",
+      "#24878e",
+      "#1f998a",
+      "#25ac82",
+      "#40bd72",
+      "#67cc5c",
+      "#98d83e",
+      "#cde11d",
+      "#fde725"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "mg/m2/s"
+  },
+  "title": "Evapotranspiration LIS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.9500000157243,
+          -59.98224871364589,
+          179.9973980503783,
+          89.9999999874719
+        ],
+        [
+          -179.9500000157243,
+          -59.98224871364589,
+          179.9973980503783,
+          89.9999999874719
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2002-08-02T00:00:00Z",
+          "2021-12-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "VEDA",
+      "description": "NASA's Visualization, Exploration, and Data Analysis (VEDA) project is an open-source science cyberinfrastructure for data processing, visualization, exploration, and geographic information systems (GIS) capabilities.",
+      "url": "https://www.earthdata.nasa.gov/esds/veda"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "LIS_Global_DA_Evap"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/LIS_Global_DA_Evap/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/LIS_Global_DA_Evap/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/LIS_Global_DA_Evap/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

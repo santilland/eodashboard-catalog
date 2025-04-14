@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Glenn GCOMC",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.4,
+        39.586
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -122.41000000000001,
+    39.576,
+    -122.39,
+    39.596
+  ],
+  "properties": {
+    "start_datetime": "2018-03-06T10:30:00Z",
+    "end_datetime": "2021-06-26T10:30:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Rice planting"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Rice planting"
+    }
+  ],
+  "assets": {},
+  "collection": "rice_planting"
+}

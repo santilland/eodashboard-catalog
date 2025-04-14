@@ -1,0 +1,264 @@
+{
+  "type": "Collection",
+  "id": "NLK_lakes",
+  "stac_version": "1.1.0",
+  "description": "# Lakes\n\nSelected low-cloud-cover Landsat Collection-2 Level-2 Surface Reflectance scenes covering various lakes.\nProducts from multiple missions and instruments are combined in this single collection for the purpose of visualizing RGB images. Note that the full item records are not interchangeable across instruments for purposes other than visualization and that the assets available are not the same for each instrument.\n\n# Dataset description\nMetric: Provides Level-2 Surface Reflectance data, which is corrected for atmospheric conditions to offer realistic color representations. The data is primarily intended for RGB image visualizations of surface conditions.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./NLK_lake_aral/collection.json",
+      "type": "application/json",
+      "title": "Aral Lake Landsat-8 cloud free",
+      "endpointtype": "VEDA_tiles",
+      "code": "NLK_lake_aral",
+      "id": "NLK_lake_aral",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "Lake",
+        "Optical",
+        "Water",
+        "Open Data"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NLK_lake_aral",
+      "sensor": [
+        "OLI"
+      ],
+      "satellite": [
+        "Landsat-8"
+      ],
+      "latlng": "45.303,58.581",
+      "name": "Aral Lake"
+    },
+    {
+      "rel": "child",
+      "href": "./NLK_lake_biwa/collection.json",
+      "type": "application/json",
+      "title": "Biwa Lake cloud free",
+      "endpointtype": "VEDA_tiles",
+      "code": "NLK_lake_biwa",
+      "id": "NLK_lake_biwa",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "lake"
+      ],
+      "satellite": [
+        "Landsat-8"
+      ],
+      "sensor": [
+        "OLI"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NLK_lake_biwa",
+      "latlng": "35.284,136.095",
+      "name": "Biwa Lake"
+    },
+    {
+      "rel": "child",
+      "href": "./NLK_lake_tonle_sap/collection.json",
+      "type": "application/json",
+      "title": "Tonl\u00e9 Sap Lake cloud free",
+      "endpointtype": "VEDA_tiles",
+      "code": "NLK_lake_tonle_sap",
+      "id": "NLK_lake_tonle_sap",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "lake"
+      ],
+      "satellite": [
+        "Landsat-8"
+      ],
+      "sensor": [
+        "OLI"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NLK_lake_tonle_sap",
+      "latlng": "12.7,104.2",
+      "name": "Tonl\u00e9 Sap Lake"
+    },
+    {
+      "rel": "child",
+      "href": "./NLK_lake_vanern/collection.json",
+      "type": "application/json",
+      "title": "V\u00e4nern Lake cloud free",
+      "endpointtype": "VEDA_tiles",
+      "code": "NLK_lake_vanern",
+      "id": "NLK_lake_vanern",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "lake"
+      ],
+      "satellite": [
+        "Landsat-8"
+      ],
+      "sensor": [
+        "OLI"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NLK_lake_vanern",
+      "latlng": "59.07,13.535",
+      "name": "V\u00e4nern Lake"
+    },
+    {
+      "rel": "child",
+      "href": "./NLK_lake_balaton/collection.json",
+      "type": "application/json",
+      "title": "Balaton Lake cloud free",
+      "endpointtype": "VEDA_tiles",
+      "code": "NLK_lake_balaton",
+      "id": "NLK_lake_balaton",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "lake"
+      ],
+      "satellite": [
+        "Landsat-8"
+      ],
+      "sensor": [
+        "OLI"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NLK_lake_balaton",
+      "latlng": "46.825,17.77",
+      "name": "Balaton Lake"
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (Landsat-8)"
+    }
+  ],
+  "themes": [
+    "oceans"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Lakes",
+    "Lake",
+    "Landsat",
+    "OLI",
+    "Lake monitoring",
+    "Surface Reflectance",
+    "Hydrological changes",
+    "Ecosystems",
+    "Resources"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NLK",
+  "sensor": [
+    "OLI"
+  ],
+  "satellite": [
+    "Landsat-8"
+  ],
+  "title": "Lakes collection (Landsat-8)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          10.69941816,
+          11.94560442,
+          138.17282533,
+          59.83119443
+        ],
+        [
+          56.91258402,
+          43.48369514,
+          63.64131735,
+          47.11744485
+        ],
+        [
+          135.13362826,
+          33.53534479,
+          138.17282533,
+          35.75089521
+        ],
+        [
+          101.93844223,
+          11.94560442,
+          106.37030883,
+          14.06740558
+        ],
+        [
+          10.69941816,
+          57.35328549,
+          15.98482535,
+          59.83119443
+        ],
+        [
+          15.04798484,
+          46.34951509,
+          19.16156268,
+          48.51911491
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1984-04-18T09:40:30.064088Z",
+          "2023-06-20T06:40:19.342057Z"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "providers": [
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Biwa Lake",
+      "V\u00e4nern Lake",
+      "Tonl\u00e9 Sap Lake",
+      "Balaton Lake",
+      "Aral Lake"
+    ],
+    "countries": [
+      "HU",
+      "KZ",
+      "UZ",
+      "SW",
+      "JP",
+      "KH"
+    ]
+  }
+}

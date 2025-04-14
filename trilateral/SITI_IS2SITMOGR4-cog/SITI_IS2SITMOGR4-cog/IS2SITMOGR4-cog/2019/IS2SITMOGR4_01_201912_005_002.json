@@ -1,0 +1,291 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "IS2SITMOGR4_01_201912_005_002",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          31.269270721494188
+        ],
+        [
+          179.7061752664782,
+          31.269270721494188
+        ],
+        [
+          179.7061752664782,
+          85.18898561151076
+        ],
+        [
+          -180,
+          85.18898561151076
+        ],
+        [
+          -180,
+          31.269270721494188
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    31.269270721494188,
+    179.7061752664782,
+    85.18898561151076
+  ],
+  "properties": {
+    "end_datetime": "2019-12-31T00:00:00+00:00",
+    "start_datetime": "2019-12-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/IS2SITMOGR4-cog/items/IS2SITMOGR4_01_201912_005_002/map?assets=cog_default&rescale=0%2C16&colormap_name=plasma",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea Ice Thickness (ICESat-2)"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201912_005_002.tif&resampling_method=nearest&bidx=1&colormap_name=plasma&rescale=0.0,4.0",
+      "type": "image/png",
+      "title": "SITI_IS2SITMOGR4-cog"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea Ice Thickness (ICESat-2)"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201912_005_002.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -20037508.342789244,
+        3667768.6694263835,
+        20004799.923071127,
+        20217918.693883747
+      ],
+      "proj:epsg": 3857,
+      "proj:wkt2": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],EXTENSION[\"PROJ4\",\"+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs\"],AUTHORITY[\"EPSG\",\"3857\"]]",
+      "proj:shape": [
+        658,
+        1592
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 6.826000213623047,
+            "min": 0.0010000000474974513,
+            "count": 11,
+            "buckets": [
+              26576,
+              61808,
+              33095,
+              23471,
+              11975,
+              2442,
+              240,
+              127,
+              8,
+              29
+            ]
+          },
+          "statistics": {
+            "mean": 1.4516496462123916,
+            "stddev": 0.8347054094655618,
+            "maximum": 6.826000213623047,
+            "minimum": 0.0010000000474974513,
+            "valid_percent": 36.798671506485846
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -20037508.342789244,
+              3667768.6694263835
+            ],
+            [
+              20004799.923071127,
+              3667768.6694263835
+            ],
+            [
+              20004799.923071127,
+              20217918.693883747
+            ],
+            [
+              -20037508.342789244,
+              20217918.693883747
+            ],
+            [
+              -20037508.342789244,
+              3667768.6694263835
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 3857,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / Pseudo-Mercator",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "lat"
+              },
+              {
+                "name": "Longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 1024,
+              "authority": "EPSG"
+            },
+            "name": "Popular Visualisation Pseudo Mercator"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        25152.20368458566,
+        0.0,
+        -20037508.342789244,
+        0.0,
+        -25152.20368458566,
+        20217918.693883747,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/IS2SITMOGR4-cog/items/IS2SITMOGR4_01_201912_005_002/preview.png?assets=cog_default&rescale=0%2C16&colormap_name=plasma",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "IS2SITMOGR4-cog"
+}

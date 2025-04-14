@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "CastillaLa Mancha",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -3.125,
+        39.7431
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -3.135,
+    39.7331,
+    -3.115,
+    39.753099999999996
+  ],
+  "properties": {
+    "start_datetime": "2020-05-17T00:00:00Z",
+    "end_datetime": "2020-08-02T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Harvested parcels"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Harvested parcels"
+    }
+  ],
+  "assets": {},
+  "collection": "harvested_parcels_evolution"
+}

@@ -1,0 +1,283 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "ndvi_cog_2022-09-30_day",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -82.37631113903603,
+          26.31173859507485
+        ],
+        [
+          -81.9037040761012,
+          26.31173859507485
+        ],
+        [
+          -81.9037040761012,
+          27.035837664631245
+        ],
+        [
+          -82.37631113903603,
+          27.035837664631245
+        ],
+        [
+          -82.37631113903603,
+          26.31173859507485
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -82.37631113903603,
+    26.31173859507485,
+    -81.9037040761012,
+    27.035837664631245
+  ],
+  "properties": {
+    "datetime": "2022-09-30T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "NDVI from HLS"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/hls-ndvi/ndvi_cog_2022-09-30_day.tif&resampling_method=nearest&bidx=1&colormap_name=cfastie&rescale=-1,1",
+      "type": "image/png",
+      "title": "HLS_NDVI"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "NDVI from HLS"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/hls-ndvi/ndvi_cog_2022-09-30_day.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        363480.0,
+        2910930.0,
+        409800.0,
+        2990730.0
+      ],
+      "proj:epsg": 32617,
+      "proj:wkt2": "PROJCS[\"WGS 84 / UTM zone 17N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-81],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32617\"]]",
+      "proj:shape": [
+        2660,
+        1544
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 237.0,
+            "min": -117.66666412353516,
+            "count": 11,
+            "buckets": [
+              2,
+              7,
+              24,
+              609228,
+              13,
+              4,
+              1,
+              0,
+              0,
+              1
+            ]
+          },
+          "statistics": {
+            "mean": 0.10746052249228764,
+            "stddev": 0.5641011063469027,
+            "maximum": 237.0,
+            "minimum": -117.66666412353516,
+            "valid_percent": 100.0
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              363480.0,
+              2910930.0
+            ],
+            [
+              409800.0,
+              2910930.0
+            ],
+            [
+              409800.0,
+              2990730.0
+            ],
+            [
+              363480.0,
+              2990730.0
+            ],
+            [
+              363480.0,
+              2910930.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 32617,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / UTM zone 17N",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "UTM zone 17N",
+          "method": {
+            "id": {
+              "code": 9807,
+              "authority": "EPSG"
+            },
+            "name": "Transverse Mercator"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": -81
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 0.9996
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 500000
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        363480.0,
+        0.0,
+        -30.0,
+        2990730.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    }
+  },
+  "collection": "hls-ndvi"
+}

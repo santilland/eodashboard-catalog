@@ -1,0 +1,194 @@
+{
+  "type": "Collection",
+  "id": "NO2_daily",
+  "stac_version": "1.1.0",
+  "description": "## Air Quality (tropospheric NO2 concentrations)\nEarth observing satellites like the **TROPOMI** instrument on the [Copernicus Sentinel-5P](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) are being used to map air pollution worldwide. One of the variables that it can provide information is on **tropospheric nitrogen dioxide (NO2)** which is linked to pollutant sectors such as traffic and industrial activities. The nitrogen dioxide concentrations vary from day to day due to changes in the weather (such as wind speed, cloudiness, etc) and **conclusions cannot be drawn based on just one day of data alone**. By combining data for a specific period of time (e.g. averaging over 14 days) the meteorological variability partially averages out and impact of changes due to human activity become more clearly visible.\n\n#### Sentinel-5P/TROPOMI Nitrogen Dioxide concentration measurements over Europe\n\n![NO2 concentration measurements over Europe](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2020/04/nitrogen_dioxide_concentrations_over_europe/21956023-2-eng-GB/Nitrogen_dioxide_concentrations_over_Europe_pillars.jpg)\n\n## The impacts of COVID-19 pandemic on air quality\nThe coronavirus (COVID-19) has been spreading rapidly across the world and has been declared a global pandemic by the [World Health Organisation](https://www.who.int/). In order to curb the spread of the COVID-19 outbreak, countries across the world have been implementing various social distancing measures restricting people\u2019s movements by placing cities and even entire countries on lockdown. A **significant drop in nitrogen dioxide (NO2) concentrations** happened worldwide coinciding with the strict quarantine measures which cause less emissions due to reduced traffic and industrial activities.\n\nAveraged TROPOMI nitrogen dioxide concentrations from 13 March until 13 April 2020, compared to the March-April averaged concentrations from 2019 show reduced Nitrogen Dioxide concentrations in the European cities Madrid, Milan, Rome and Paris in the range of about 50% \u2013 coinciding with the strict quarantine measures implemented across Europe.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./NO2_daily/collection.json",
+      "type": "application/json",
+      "title": "Air Quality (tropospheric NO2 concetrations)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "Daily Nitrogen Dioxide",
+      "code": "N1_NO2",
+      "id": "NO2_daily",
+      "themes": [
+        "air"
+      ],
+      "tags": [
+        "Air quality",
+        "NO2",
+        "Open data",
+        "Air pollution"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "N1_NO2",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Daily Nitrogen Dioxide",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2/N1_NO2.png",
+  "themes": [
+    "air"
+  ],
+  "tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "Air pollution"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N1_NO2",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      180
+    ],
+    "range": [
+      "#fff5f0",
+      "#fee8de",
+      "#fed7c7",
+      "#fcc1a9",
+      "#fca88b",
+      "#fc8f6f",
+      "#fb7656",
+      "#f75c41",
+      "#f03f2e",
+      "#dc2824",
+      "#c5171c",
+      "#ae1117",
+      "#8d0912",
+      "#67000d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Tropospheric NO2 [\u00b5mol/m\u00b2]"
+  },
+  "title": "Air Quality (tropospheric NO2 concetrations)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-04-30T00:00:00Z",
+          "2025-02-10T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel5P.html"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N1_NO2"
+    ],
+    "themes": [
+      "air"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2/N1_NO2.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2/N1_NO2_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2/N1_NO2.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Air_pollution_remains_low_as_Europeans_stay_at_home",
+      "type": "text/html",
+      "title": "Air pollution remains low as Europeans stay at home",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://www.esa.int/ESA_Multimedia/Videos/2020/03/Coronavirus_nitrogen_dioxide_emissions_drop_over_Italy",
+      "type": "text/html",
+      "title": "Coronavirus - nitrogen dioxide emissions drop over Italy",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://maps.s5p-pal.com/no2-tropospheric/",
+      "type": "text/html",
+      "title": "Sentinel-5P Tropospheric Column NO2",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-nitrogen-dioxide",
+      "type": "text/html",
+      "title": "TROPOMI NO2",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

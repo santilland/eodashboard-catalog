@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "22399",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          -180.0,
+          16.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          180.0,
+          16.0
+        ],
+        [
+          -180.0,
+          16.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    16.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "datetime": "2016-04-01T00:00:00Z",
+    "proj:bbox": [
+      -180.0,
+      16.0,
+      180.0,
+      90.0
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            -180.0,
+            16.0
+          ],
+          [
+            -180.0,
+            90.0
+          ],
+          [
+            180.0,
+            90.0
+          ],
+          [
+            180.0,
+            16.0
+          ],
+          [
+            -180.0,
+            16.0
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea ice thickness (Cryosat-2)"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_ice_thickness_cryosat",
+      "wms:layers": [
+        "ESA-CCI-V2-CRYOSAT"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2016-04-01T00:00:00Z/2016-04-01T23:59:59Z"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea ice thickness (Cryosat-2)"
+    }
+  ],
+  "assets": {},
+  "collection": "zarr-b6915831-0a56-424b-bcb4-781deb062f31"
+}

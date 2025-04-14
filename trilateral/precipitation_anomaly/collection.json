@@ -1,0 +1,172 @@
+{
+  "type": "Collection",
+  "id": "precipitation_anomaly",
+  "stac_version": "1.1.0",
+  "description": "## Global Precipitation anomaly\r\n\r\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature,\r\nVegetation Index and anomaly, etc. Rainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas.\r\n\r\n\r\n### Additional information\r\n\r\n- Access Jaxa\u2019s Public-health Monitor and Analysis Platform: [https://www.jpmap-jaxa.jp/jpmap/en/user_guide/](https://www.jpmap-jaxa.jp/jpmap/en/user_guide/)\r\n- Access JAXA's GSMaP (Global Satellite Mapping of Precipitation): [https://sharaku.eorc.jaxa.jp/GSMaP/](https://sharaku.eorc.jaxa.jp/GSMaP/)\r\n- GSMaP Documentation: [https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf](https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf)\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./precipitation_anomaly/collection.json",
+      "type": "application/json",
+      "title": "Precipitation Anomaly from GSMap",
+      "endpointtype": "WMS_Time",
+      "subtitle": "Global Precipitation Anomaly",
+      "code": "PRC",
+      "id": "precipitation_anomaly",
+      "themes": [
+        "agriculture"
+      ],
+      "tags": [
+        "Precipitation",
+        "Rainfall",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "JAXA"
+      ],
+      "subcode": "PRC",
+      "satellite": [
+        "Other"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Global Precipitation Anomaly",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.png",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Rainfall",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "PRC",
+  "satellite": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "NaN",
+      200
+    ],
+    "range": [
+      "#ffffff",
+      "#3e3eff",
+      "#3737ff",
+      "#7777ff",
+      "#b6b6ff",
+      "#fafaff",
+      "#ffc6c6",
+      "#ff8484",
+      "#ff4545",
+      "#ff0606"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Precipitation anomaly"
+  },
+  "title": "Precipitation Anomaly from GSMap",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ],
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-16T11:59:30Z",
+          "2024-06-15T23:59:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "PRC"
+    ],
+    "themes": [
+      "agriculture"
+    ],
+    "satellite": [
+      "Other"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.jpmap-jaxa.jp/jpmap/en/user_guide/",
+      "type": "text/html",
+      "title": "Jaxa Public-health Monitor and Analysis Platform",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/",
+      "type": "text/html",
+      "title": "Jaxa Global Satellite Mapping of Precipitation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf",
+      "type": "text/html",
+      "title": "GSMaP Documentation",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

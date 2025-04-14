@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Paris",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.559786183921451,
+        49.006976345624935
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    2.549786183921451,
+    48.99697634562494,
+    2.5697861839214506,
+    49.01697634562493
+  ],
+  "properties": {
+    "start_datetime": "2019-02-03T11:07:25Z",
+    "end_datetime": "2022-11-24T11:07:24Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "assets": {},
+  "collection": "E13b_parked_airplanes"
+}

@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "car_containers",
+  "stac_version": "1.1.0",
+  "description": "# Finished goods production: vehicles inventory level\n\nThis indicator aims at tracking production and movement at factories and ports importing and exporting cars to monitor the increase and decrease of new car production\nby combining satellite data from:\n###\n- PALSAR-2, which uses L-band SAR mounted on [JAXA](https://global.jaxa.jp/)'s ALOS-2 \n- C-band SAR mounted on the [ESA](https://esa.int/)'s Sentinel-1\n- NASA-processed high-resolution optical remote sensing data from Planet\u2019s SkySat\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./car_containers/collection.json",
+      "type": "application/json",
+      "title": "Car containers",
+      "endpointtype": "GeoDB",
+      "subtitle": "Change in the number of new cars at automobile factory",
+      "code": "E9",
+      "id": "car_containers",
+      "themes": [
+        "economy"
+      ],
+      "cities": [
+        "Beijing",
+        "Nagoya",
+        "Singapore",
+        "Los Angeles",
+        "Palm Springs",
+        "Arcadia"
+      ],
+      "countries": [
+        "CN",
+        "JP",
+        "SG",
+        "US"
+      ],
+      "yAxis": "Car Density",
+      "tags": [
+        "Mobility",
+        "SAR",
+        "Multi-sensors",
+        "Production",
+        "Finished goods",
+        "Automotive",
+        "Motor vehicles"
+      ],
+      "agency": [
+        "JAXA",
+        "ESA"
+      ],
+      "subcode": "E9",
+      "sensor": [
+        "PALSAR-2",
+        "C-SAR"
+      ],
+      "satellite": [
+        "ALOS-2",
+        "Sentinel-1"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E9_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "method": "GET",
+      "id": "E9_tri"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Change in the number of new cars at automobile factory",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Mobility",
+    "SAR",
+    "Multi-sensors",
+    "Production",
+    "Finished goods",
+    "Automotive",
+    "Motor vehicles"
+  ],
+  "agency": [
+    "JAXA",
+    "ESA"
+  ],
+  "subcode": "E9",
+  "sensor": [
+    "PALSAR-2",
+    "C-SAR"
+  ],
+  "satellite": [
+    "ALOS-2",
+    "Sentinel-1"
+  ],
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
+  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "title": "Car containers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -118.42,
+          1.254856,
+          136.89,
+          40.089999999999996
+        ],
+        [
+          -118.42,
+          1.254856,
+          136.89,
+          40.089999999999996
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-11-27T00:00:00Z",
+          "2022-12-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    },
+    {
+      "name": "ESA",
+      "url": "https://www.esa.int/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "E9"
+    ],
+    "themes": [
+      "economy"
+    ],
+    "satellite": [
+      "ALOS-2",
+      "Sentinel-1"
+    ],
+    "sensor": [
+      "C-SAR",
+      "PALSAR-2"
+    ],
+    "cities": [
+      "Los Angeles",
+      "Arcadia",
+      "Palm Springs",
+      "Nagoya",
+      "Beijing",
+      "Singapore"
+    ],
+    "countries": [
+      "CN",
+      "US",
+      "JP",
+      "SG"
+    ]
+  }
+}

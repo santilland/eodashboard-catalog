@@ -1,0 +1,134 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2019-01-05T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          -54.0
+        ],
+        [
+          -180.0,
+          -18.0
+        ],
+        [
+          -180.0,
+          18.0
+        ],
+        [
+          -180.0,
+          54.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -108.0,
+          90.0
+        ],
+        [
+          -36.0,
+          90.0
+        ],
+        [
+          36.0,
+          90.0
+        ],
+        [
+          108.0,
+          90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          180.0,
+          54.0
+        ],
+        [
+          180.0,
+          18.0
+        ],
+        [
+          180.0,
+          -18.0
+        ],
+        [
+          180.0,
+          -54.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          108.0,
+          -90.0
+        ],
+        [
+          36.0,
+          -90.0
+        ],
+        [
+          -36.0,
+          -90.0
+        ],
+        [
+          -108.0,
+          -90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "datetime": "2019-01-05T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "xyz",
+      "href": "https://api.earthsystemdatalab.net/api/tiles/esdc/kndvi/{z}/{y}/{x}?crs=EPSG:3857&time=2019-01-05 00:00:00+00:00&vmin=0&vmax=1&cbar=RdYlGn",
+      "type": "image/png",
+      "title": "xcube tiles"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Kernel NDVI (daily)"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Kernel NDVI (daily)"
+    }
+  ],
+  "assets": {},
+  "collection": "ESDC_kndvi"
+}

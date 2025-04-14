@@ -1,0 +1,155 @@
+{
+  "type": "Collection",
+  "id": "ndvi",
+  "stac_version": "1.1.0",
+  "description": "## GCOM-C/SGLI L3 Normalized Difference Vegetation Index (NDVI)\n\nThis data is accessible on JAXA's G-Portal. G-Portal is a portal system allowing users to search, and download products acquired by [JAXA](https://global.jaxa.jp/) Earth observation satellites.\n\nAccess this data here: [https://gportal.jaxa.jp/](https://gportal.jaxa.jp/) \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ndvi/collection.json",
+      "type": "application/json",
+      "title": "Normalized Difference Vegetation Index",
+      "endpointtype": "WMS_Time",
+      "subtitle": "Normalized Difference Vegetation Index",
+      "code": "E10e",
+      "id": "ndvi",
+      "themes": [
+        "biomass"
+      ],
+      "tags": [
+        "NDVI",
+        "Open data"
+      ],
+      "agency": [
+        "JAXA"
+      ],
+      "subcode": "E10e",
+      "sensor": [
+        "SGLI"
+      ],
+      "satellite": [
+        "GCOM-C"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Normalized Difference Vegetation Index",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "NDVI",
+    "Open data"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "E10e",
+  "sensor": [
+    "SGLI"
+  ],
+  "satellite": [
+    "GCOM-C"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "0 (Water)",
+      "1 (Non-crop)",
+      "2 (Crop)"
+    ],
+    "range": [
+      "#000004",
+      "#a6317d",
+      "#fcfdbf"
+    ],
+    "scaleType": "categorical",
+    "title": "Land Cover Class"
+  },
+  "title": "Normalized Difference Vegetation Index",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ],
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-16T11:59:30Z",
+          "2024-06-15T23:59:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "E10e"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "GCOM-C"
+    ],
+    "sensor": [
+      "SGLI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://gportal.jaxa.jp/",
+      "type": "text/html",
+      "title": "G-Portal",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

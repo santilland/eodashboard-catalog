@@ -1,0 +1,1292 @@
+{
+  "type": "Collection",
+  "id": "NLK_lake_balaton",
+  "stac_version": "1.1.0",
+  "description": "Balaton lake Landsat-8",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2023/LE07_L2SP_189027_20230522_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20230522_02_T1",
+      "datetime": "2023-05-22T07:35:18Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2023/LE07_L2SP_189027_20230317_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20230317_02_T1",
+      "datetime": "2023-03-17T07:40:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2023/LC09_L2SP_189027_20230207_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC09_L2SP_189027_20230207_02_T1",
+      "datetime": "2023-02-07T09:39:56Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2022/LC08_L2SP_189027_20221213_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20221213_02_T1",
+      "datetime": "2022-12-13T09:39:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2022/LC08_L2SP_189027_20220620_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20220620_02_T1",
+      "datetime": "2022-06-20T09:39:38Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2022/LC08_L2SP_189027_20220519_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20220519_02_T1",
+      "datetime": "2022-05-19T09:39:22Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2022/LE07_L2SP_189027_20220324_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20220324_02_T1",
+      "datetime": "2022-03-24T08:18:43Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2021/LC08_L2SP_189027_20211124_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20211124_02_T1",
+      "datetime": "2021-11-24T09:39:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2021/LE07_L2SP_189027_20210913_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20210913_02_T1",
+      "datetime": "2021-09-13T08:37:02Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2021/LC08_L2SP_189027_20210905_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20210905_02_T1",
+      "datetime": "2021-09-05T09:39:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2021/LC08_L2SP_189027_20210617_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20210617_02_T1",
+      "datetime": "2021-06-17T09:39:16Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2021/LE07_L2SP_189027_20210609_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20210609_02_T1",
+      "datetime": "2021-06-09T08:45:17Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2021/LC08_L2SP_189027_20210225_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20210225_02_T1",
+      "datetime": "2021-02-25T09:39:26Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LC08_L2SP_189027_20201121_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20201121_02_T1",
+      "datetime": "2020-11-21T09:39:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LC08_L2SP_189027_20201004_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20201004_02_T1",
+      "datetime": "2020-10-04T09:39:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LE07_L2SP_189027_20200910_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20200910_02_T1",
+      "datetime": "2020-09-10T09:05:39Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LC08_L2SP_189027_20200902_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20200902_02_T1",
+      "datetime": "2020-09-02T09:39:35Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LE07_L2SP_189027_20200825_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20200825_02_T1",
+      "datetime": "2020-08-25T09:06:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LE07_L2SP_189027_20200809_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20200809_02_T1",
+      "datetime": "2020-08-09T09:07:43Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LC08_L2SP_189027_20200801_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20200801_02_T1",
+      "datetime": "2020-08-01T09:39:22Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LE07_L2SP_189027_20200403_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20200403_02_T1",
+      "datetime": "2020-04-03T09:15:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LE07_L2SP_189027_20200318_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20200318_02_T1",
+      "datetime": "2020-03-18T09:16:19Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LC08_L2SP_189027_20200310_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20200310_02_T1",
+      "datetime": "2020-03-10T09:39:19Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2020/LE07_L2SP_189027_20200215_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20200215_02_T1",
+      "datetime": "2020-02-15T09:18:02Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190916_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190916_02_T1",
+      "datetime": "2019-09-16T09:39:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190831_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190831_02_T1",
+      "datetime": "2019-08-31T09:39:37Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190815_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190815_02_T1",
+      "datetime": "2019-08-15T09:39:33Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190628_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190628_02_T1",
+      "datetime": "2019-06-28T09:39:19Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190612_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190612_02_T1",
+      "datetime": "2019-06-12T09:39:14Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190425_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190425_02_T1",
+      "datetime": "2019-04-25T09:38:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LE07_L2SP_189027_20190417_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20190417_02_T1",
+      "datetime": "2019-04-17T09:31:13Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LC08_L2SP_189027_20190324_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20190324_02_T1",
+      "datetime": "2019-03-24T09:38:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2019/LE07_L2SP_189027_20190228_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20190228_02_T1",
+      "datetime": "2019-02-28T09:32:51Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2018/LC08_L2SP_189027_20181116_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20181116_02_T1",
+      "datetime": "2018-11-16T09:39:21Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2018/LE07_L2SP_189027_20180921_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20180921_02_T1",
+      "datetime": "2018-09-21T09:37:12Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2018/LC08_L2SP_189027_20180828_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20180828_02_T1",
+      "datetime": "2018-08-28T09:38:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2018/LC08_L2SP_189027_20180812_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20180812_02_T1",
+      "datetime": "2018-08-12T09:38:50Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2018/LE07_L2SP_189027_20180804_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20180804_02_T1",
+      "datetime": "2018-08-04T09:38:12Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2018/LC08_L2SP_189027_20180422_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20180422_02_T1",
+      "datetime": "2018-04-22T09:38:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2017/LE07_L2SP_189027_20170817_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20170817_02_T1",
+      "datetime": "2017-08-17T09:42:02Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2017/LE07_L2SP_189027_20170801_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20170801_02_T1",
+      "datetime": "2017-08-01T09:42:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2017/LE07_L2SP_189027_20170529_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20170529_02_T1",
+      "datetime": "2017-05-29T09:41:58Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2017/LC08_L2SP_189027_20170403_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20170403_02_T1",
+      "datetime": "2017-04-03T09:38:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2016/LE07_L2SP_189027_20161001_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20161001_02_T1",
+      "datetime": "2016-10-01T09:42:10Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2016/LE07_L2SP_189027_20160915_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20160915_02_T1",
+      "datetime": "2016-09-15T09:42:08Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2016/LE07_L2SP_189027_20160814_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20160814_02_T1",
+      "datetime": "2016-08-14T09:42:02Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2016/LC08_L2SP_189027_20160416_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20160416_02_T1",
+      "datetime": "2016-04-16T09:39:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2016/LC08_L2SP_189027_20160331_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20160331_02_T1",
+      "datetime": "2016-03-31T09:39:04Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LE07_L2SP_189027_20151031_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20151031_02_T1",
+      "datetime": "2015-10-31T09:39:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LE07_L2SP_189027_20150828_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20150828_02_T1",
+      "datetime": "2015-08-28T09:39:16Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LE07_L2SP_189027_20150812_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20150812_02_T1",
+      "datetime": "2015-08-12T09:39:15Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LC08_L2SP_189027_20150719_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20150719_02_T1",
+      "datetime": "2015-07-19T09:38:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LE07_L2SP_189027_20150711_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20150711_02_T1",
+      "datetime": "2015-07-11T09:39:08Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LC08_L2SP_189027_20150703_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20150703_02_T1",
+      "datetime": "2015-07-03T09:38:50Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2015/LE07_L2SP_189027_20150321_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20150321_02_T1",
+      "datetime": "2015-03-21T09:38:26Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2014/LE07_L2SP_189027_20140809_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20140809_02_T1",
+      "datetime": "2014-08-09T09:37:04Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2014/LE07_L2SP_189027_20140606_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20140606_02_T1",
+      "datetime": "2014-06-06T09:36:50Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2014/LE07_L2SP_189027_20140521_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20140521_02_T1",
+      "datetime": "2014-05-21T09:36:47Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2014/LC08_L2SP_189027_20140427_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20140427_02_T1",
+      "datetime": "2014-04-27T09:39:14Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2013/LE07_L2SP_189027_20130907_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20130907_02_T1",
+      "datetime": "2013-09-07T09:34:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2013/LE07_L2SP_189027_20130806_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20130806_02_T1",
+      "datetime": "2013-08-06T09:34:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2013/LC08_L2SP_189027_20130729_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20130729_02_T1",
+      "datetime": "2013-07-29T09:41:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2013/LE07_L2SP_189027_20130721_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20130721_02_T1",
+      "datetime": "2013-07-21T09:34:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2013/LE07_L2SP_189027_20130619_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20130619_02_T1",
+      "datetime": "2013-06-19T09:35:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2013/LC08_L2SP_189027_20130424_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_189027_20130424_02_T1",
+      "datetime": "2013-04-24T09:41:11Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2012/LE07_L2SP_189027_20121006_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20121006_02_T1",
+      "datetime": "2012-10-06T09:35:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2012/LE07_L2SP_189027_20120819_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20120819_02_T1",
+      "datetime": "2012-08-19T09:34:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2012/LE07_L2SP_189027_20120702_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20120702_02_T1",
+      "datetime": "2012-07-02T09:34:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2012/LE07_L2SP_189027_20120616_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20120616_02_T1",
+      "datetime": "2012-06-16T09:33:51Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LE07_L2SP_189027_20111004_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20111004_02_T1",
+      "datetime": "2011-10-04T09:32:41Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LT05_L2SP_189027_20110926_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20110926_02_T1",
+      "datetime": "2011-09-26T09:27:43Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LE07_L2SP_189027_20110918_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20110918_02_T1",
+      "datetime": "2011-09-18T09:32:41Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LT05_L2SP_189027_20110910_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20110910_02_T1",
+      "datetime": "2011-09-10T09:28:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LT05_L2SP_189027_20110825_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20110825_02_T1",
+      "datetime": "2011-08-25T09:28:11Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LE07_L2SP_189027_20110817_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20110817_02_T1",
+      "datetime": "2011-08-17T09:32:49Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LT05_L2SP_189027_20110622_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20110622_02_T1",
+      "datetime": "2011-06-22T09:28:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2011/LT05_L2SP_189027_20110521_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20110521_02_T1",
+      "datetime": "2011-05-21T09:28:58Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2010/LT05_L2SP_189027_20100923_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20100923_02_T1",
+      "datetime": "2010-09-23T09:29:34Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2010/LT05_L2SP_189027_20100822_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20100822_02_T1",
+      "datetime": "2010-08-22T09:29:43Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2010/LE07_L2SP_189027_20100713_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20100713_02_T1",
+      "datetime": "2010-07-13T09:31:38Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2010/LE07_L2SP_189027_20100611_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20100611_02_T1",
+      "datetime": "2010-06-11T09:31:33Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2010/LE07_L2SP_189027_20100408_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20100408_02_T1",
+      "datetime": "2010-04-08T09:31:38Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2009/LE07_L2SP_189027_20090928_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20090928_02_T1",
+      "datetime": "2009-09-28T09:29:33Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2009/LT05_L2SP_189027_20090413_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20090413_02_T1",
+      "datetime": "2009-04-13T09:26:34Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2008/LE07_L2SP_189027_20080909_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20080909_02_T1",
+      "datetime": "2008-09-09T09:28:23Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2008/LT05_L2SP_189027_20080528_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20080528_02_T1",
+      "datetime": "2008-05-28T09:27:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2007/LT05_L2SP_189027_20071001_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20071001_02_T1",
+      "datetime": "2007-10-01T09:32:22Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2007/LE07_L2SP_189027_20070923_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20070923_02_T1",
+      "datetime": "2007-09-23T09:29:12Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2007/LE07_L2SP_189027_20070502_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20070502_02_T1",
+      "datetime": "2007-05-02T09:29:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2007/LE07_L2SP_189027_20070315_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20070315_02_T1",
+      "datetime": "2007-03-15T09:29:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LE07_L2SP_189027_20061107_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20061107_02_T1",
+      "datetime": "2006-11-07T09:29:15Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LE07_L2SP_189027_20061006_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20061006_02_T1",
+      "datetime": "2006-10-06T09:28:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LT05_L2SP_189027_20060928_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20060928_02_T1",
+      "datetime": "2006-09-28T09:33:22Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LT05_L2SP_189027_20060912_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20060912_02_T1",
+      "datetime": "2006-09-12T09:33:10Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LT05_L2SP_189027_20060726_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20060726_02_T1",
+      "datetime": "2006-07-26T09:32:37Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LE07_L2SP_189027_20060718_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20060718_02_T1",
+      "datetime": "2006-07-18T09:29:11Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LT05_L2SP_189027_20060710_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20060710_02_T1",
+      "datetime": "2006-07-10T09:32:24Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2006/LE07_L2SP_189027_20060616_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20060616_02_T1",
+      "datetime": "2006-06-16T09:29:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LE07_L2SP_189027_20051019_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20051019_02_T1",
+      "datetime": "2005-10-19T09:28:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LE07_L2SP_189027_20050901_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20050901_02_T1",
+      "datetime": "2005-09-01T09:28:37Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LE07_L2SP_189027_20050715_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20050715_02_T1",
+      "datetime": "2005-07-15T09:28:51Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LT05_L2SP_189027_20050621_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20050621_02_T1",
+      "datetime": "2005-06-21T09:27:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LE07_L2SP_189027_20050613_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20050613_02_T1",
+      "datetime": "2005-06-13T09:28:53Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LE07_L2SP_189027_20050528_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20050528_02_T1",
+      "datetime": "2005-05-28T09:29:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2005/LT05_L2SP_189027_20050402_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20050402_02_T2",
+      "datetime": "2005-04-02T09:26:31Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2004/LT05_L2SP_189027_20041125_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20041125_02_T1",
+      "datetime": "2004-11-25T09:24:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2004/LE07_L2SP_189027_20040914_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20040914_02_T1",
+      "datetime": "2004-09-14T09:28:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2004/LT05_L2SP_189027_20040906_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20040906_02_T1",
+      "datetime": "2004-09-06T09:23:02Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2004/LE07_L2SP_189027_20040829_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20040829_02_T1",
+      "datetime": "2004-08-29T09:28:10Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2003/LT05_L2SP_189027_20030920_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20030920_02_T1",
+      "datetime": "2003-09-20T09:17:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2003/LE07_L2SP_189027_20030811_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20030811_02_T1",
+      "datetime": "2003-08-11T09:27:49Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2003/LT05_L2SP_189027_20030803_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20030803_02_T1",
+      "datetime": "2003-08-03T09:16:11Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2003/LE07_L2SP_189027_20030523_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20030523_02_T1",
+      "datetime": "2003-05-23T09:28:06Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2002/LE07_L2SP_189027_20020909_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20020909_02_T1",
+      "datetime": "2002-09-09T09:27:22Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2002/LE07_L2SP_189027_20020824_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20020824_02_T1",
+      "datetime": "2002-08-24T09:27:28Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2002/LT05_L2SP_189027_20020104_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20020104_02_T1",
+      "datetime": "2002-01-04T09:18:28Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2001/LE07_L2SP_189027_20011211_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20011211_02_T2",
+      "datetime": "2001-12-11T09:28:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2001/LT05_L2SP_189027_20011117_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20011117_02_T1",
+      "datetime": "2001-11-17T09:18:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2001/LT05_L2SP_189027_20010813_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20010813_02_T1",
+      "datetime": "2001-08-13T09:19:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2001/LT05_L2SP_189027_20010728_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20010728_02_T1",
+      "datetime": "2001-07-28T09:19:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2001/LE07_L2SP_189027_20010517_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20010517_02_T1",
+      "datetime": "2001-05-17T09:29:17Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LE07_L2SP_189027_20001021_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20001021_02_T1",
+      "datetime": "2000-10-21T09:29:38Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LT05_L2SP_189027_20001013_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20001013_02_T2",
+      "datetime": "2000-10-13T09:17:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LT05_L2SP_189027_20000927_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20000927_02_T1",
+      "datetime": "2000-09-27T09:17:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LE07_L2SP_189027_20000818_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20000818_02_T1",
+      "datetime": "2000-08-18T09:30:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LE07_L2SP_189027_20000802_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20000802_02_T1",
+      "datetime": "2000-08-02T09:30:35Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LT05_L2SP_189027_20000623_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20000623_02_T1",
+      "datetime": "2000-06-23T09:15:58Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LE07_L2SP_189027_20000514_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_20000514_02_T1",
+      "datetime": "2000-05-14T09:31:32Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/2000/LT05_L2SP_189027_20000506_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_20000506_02_T1",
+      "datetime": "2000-05-06T09:15:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1999/LE07_L2SP_189027_19991222_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_19991222_02_T1",
+      "datetime": "1999-12-22T09:32:19Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1999/LE07_L2SP_189027_19991120_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_189027_19991120_02_T1",
+      "datetime": "1999-11-20T09:32:15Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1999/LT05_L2SP_189027_19990301_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19990301_02_T1",
+      "datetime": "1999-03-01T09:18:38Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1998/LT05_L2SP_189027_19980922_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19980922_02_T1",
+      "datetime": "1998-09-22T09:18:14Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1998/LT05_L2SP_189027_19980720_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19980720_02_T1",
+      "datetime": "1998-07-20T09:17:43Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1997/LT05_L2SP_189027_19970903_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19970903_02_T1",
+      "datetime": "1997-09-03T09:11:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1997/LT05_L2SP_189027_19970311_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19970311_02_T1",
+      "datetime": "1997-03-11T09:05:27Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1997/LT05_L2SP_189027_19970223_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19970223_02_T2",
+      "datetime": "1997-02-23T09:04:49Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1995/LT05_L2SP_189027_19950813_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19950813_02_T1",
+      "datetime": "1995-08-13T08:42:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1995/LT05_L2SP_189027_19950712_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19950712_02_T1",
+      "datetime": "1995-07-12T08:44:23Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1995/LT05_L2SP_189027_19950525_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19950525_02_T1",
+      "datetime": "1995-05-25T08:46:34Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1994/LT05_L2SP_189027_19940810_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19940810_02_T1",
+      "datetime": "1994-08-10T08:56:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1994/LT05_L2SP_189027_19940725_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19940725_02_T1",
+      "datetime": "1994-07-25T08:57:17Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1994/LT05_L2SP_189027_19940215_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19940215_02_T1",
+      "datetime": "1994-02-15T09:00:27Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1993/LT05_L2SP_189027_19930924_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19930924_02_T1",
+      "datetime": "1993-09-24T09:01:43Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1993/LT05_L2SP_189027_19930503_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19930503_02_T1",
+      "datetime": "1993-05-03T09:01:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1992/LT04_L2SP_189027_19920913_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT04_L2SP_189027_19920913_02_T1",
+      "datetime": "1992-09-13T08:49:11Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1992/LT05_L2SP_189027_19920905_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19920905_02_T1",
+      "datetime": "1992-09-05T09:01:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1992/LT04_L2SP_189027_19920828_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT04_L2SP_189027_19920828_02_T1",
+      "datetime": "1992-08-28T08:48:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1992/LT05_L2SP_189027_19920516_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19920516_02_T1",
+      "datetime": "1992-05-16T09:03:07Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1992/LT05_L2SP_189027_19920226_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19920226_02_T1",
+      "datetime": "1992-02-26T09:03:37Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1991/LT05_L2SP_189027_19911005_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19911005_02_T1",
+      "datetime": "1991-10-05T09:03:26Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1991/LT05_L2SP_189027_19910919_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19910919_02_T1",
+      "datetime": "1991-09-19T09:03:23Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1991/LT05_L2SP_189027_19910903_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19910903_02_T1",
+      "datetime": "1991-09-03T09:03:12Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1991/LT05_L2SP_189027_19910701_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19910701_02_T1",
+      "datetime": "1991-07-01T09:02:34Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1991/LT05_L2SP_189027_19910223_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19910223_02_T2",
+      "datetime": "1991-02-23T09:00:24Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1990/LT05_L2SP_189027_19900831_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19900831_02_T1",
+      "datetime": "1990-08-31T08:59:16Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1990/LT05_L2SP_189027_19900730_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19900730_02_T1",
+      "datetime": "1990-07-30T08:59:28Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1990/LT05_L2SP_189027_19900511_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19900511_02_T1",
+      "datetime": "1990-05-11T08:59:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1990/LT05_L2SP_189027_19900308_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19900308_02_T1",
+      "datetime": "1990-03-08T09:00:12Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1990/LT05_L2SP_189027_19900204_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19900204_02_T1",
+      "datetime": "1990-02-04T09:01:16Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1989/LT05_L2SP_189027_19890609_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19890609_02_T1",
+      "datetime": "1989-06-09T09:07:32Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1988/LT05_L2SP_189027_19880419_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19880419_02_T1",
+      "datetime": "1988-04-19T09:09:33Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1987/LT05_L2SP_189027_19870823_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19870823_02_T1",
+      "datetime": "1987-08-23T09:05:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19861124_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19861124_02_T2",
+      "datetime": "1986-11-24T08:57:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19861108_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19861108_02_T2",
+      "datetime": "1986-11-08T08:58:09Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19860804_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19860804_02_T1",
+      "datetime": "1986-08-04T09:01:28Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19860703_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19860703_02_T1",
+      "datetime": "1986-07-03T09:02:35Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19860617_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19860617_02_T1",
+      "datetime": "1986-06-17T09:03:06Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19860225_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19860225_02_T2",
+      "datetime": "1986-02-25T09:05:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1986/LT05_L2SP_189027_19860124_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19860124_02_T2",
+      "datetime": "1986-01-24T09:06:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1985/LT05_L2SP_189027_19850817_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19850817_02_T2",
+      "datetime": "1985-08-17T09:09:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1985/LT05_L2SP_189027_19850716_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19850716_02_T1",
+      "datetime": "1985-07-16T09:09:20Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1984/LT05_L2SP_189027_19841017_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19841017_02_T1",
+      "datetime": "1984-10-17T09:09:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/1984/LT05_L2SP_189027_19840915_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_189027_19840915_02_T1",
+      "datetime": "1984-09-15T09:09:32Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-lakes-lake-balaton/items/{item}/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "NLK_lake_balaton"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (Landsat-8)"
+    }
+  ],
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "lake"
+  ],
+  "satellite": [
+    "Landsat-8"
+  ],
+  "sensor": [
+    "OLI"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NLK_lake_balaton",
+  "endpointtype": "VEDA_tiles",
+  "title": "Balaton Lake",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          15.04798484,
+          46.34951509,
+          19.16156268,
+          48.51911491
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1984-09-15T09:09:32.098056Z",
+          "2023-05-22T07:35:18.700905Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lake_cloud_free/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

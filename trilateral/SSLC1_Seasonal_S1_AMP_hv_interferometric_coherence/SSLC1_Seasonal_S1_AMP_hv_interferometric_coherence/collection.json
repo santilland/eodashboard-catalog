@@ -1,0 +1,149 @@
+{
+  "type": "Collection",
+  "id": "SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence",
+  "stac_version": "1.1.0",
+  "description": "# Global Sentinel-1 Backscatter Signature (HV Band)\n\nThis dataset is the first-of-its-kind spatial representation of multi-seasonal, global SAR repeat-pass **backscatter signature**. \nThe dataset is derived from high-resolution multi-temporal repeat-pass interferometric processing of about 205,000 Sentinel-1 Single-Look-Complex (SLC) data acquired in Interferometric Wide-Swath mode (Sentinel-1 IW mode) from 1-Dec-2019 to 30-Nov-2020.\n\n\n\n## Dataset description\n- The dataset covers seasonal seasons which correspond to **northern hemisphere seasons**, namely winter (DJF), spring (MAM), summer (JJA), and fall (SON).\n- Metric: Mean seasonal backscatter amplitudes \u03b3\u2070 (AMP) for C-band **HV** polarized data\n- Local incidence and layover/shadow regions for all relative Sentinel-1A and Sentinel-1B orbits. \n\nThe dataset was developed by [Earth Big Data LLC](https://earthbigdata.com/) and [Gamma Remote Sensing AG](https://www.gamma-rs.ch/), under contract for [NASA\u2019s Jet Propulsion Laboratory](https://www.jpl.nasa.gov/).\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-b63afeed-f970-4c0e-9ecf-e216979f9642/2020/2d96aa0d-5170-4979-b00e-e9e3eb1d3308.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-b63afeed-f970-4c0e-9ecf-e216979f9642/2020/1122d502-5c53-413e-b4b1-e32de792ac8e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-b63afeed-f970-4c0e-9ecf-e216979f9642/2020/48005ea2-971d-4be4-8d7e-29b34117a4d8.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-b63afeed-f970-4c0e-9ecf-e216979f9642/2019/23ec25b0-d1f8-4808-b7fb-816a724584d3.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-21T00:00:00Z"
+    },
+    {
+      "rel": "license",
+      "href": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "type": "text/html"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence",
+      "wms:layers": [
+        "S1_AMP_HV"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "type": "text/html"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global seasonal Sentinel-1 backscatter"
+    }
+  ],
+  "sci:doi": "10.5067/8W33RRS6S2RV",
+  "sci:citation": "Kellndorfer, J. , O. Cartus, M. Lavalle,  C. Magnard, P. Milillo, S. Oveisgharan, B. Osmanoglu, P. Rosen, and U. Wegm\u00fcller. 2022. \nGlobal seasonal Sentinel-1 interferometric coherence and backscatter data set. \nFairbanks, Alaska USA. NASA Alaska Satellite Facility Synthetic Aperture Radar Distributed Active Archive Center.\n",
+  "sci:publications": [
+    {
+      "citation": "Kellndorfer, J. , O. Cartus, M. Lavalle,  C. Magnard, P. Milillo, S. Oveisgharan, B. Osmanoglu, P. Rosen, and U. Wegm\u00fcller. 2022. \nGlobal seasonal Sentinel-1 interferometric coherence and backscatter data set., Scientific Data.\n",
+      "doi": "10.1038/s41597-022-01189-6"
+    }
+  ],
+  "subtitle": "Mean seasonal backscatter amplitudes C-band SAR dataset - HV polarization",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "SAR",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA",
+    "NASA"
+  ],
+  "subcode": "SSLC1",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Global seasonal Sentinel-1 backscatter",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -141.0,
+          -25.0,
+          170.0,
+          82.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-12-21T00:00:00Z",
+          "2020-09-21T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "roles": "licensor",
+      "url": "https://www.copernicus.eu/en"
+    },
+    {
+      "name": "NASA",
+      "roles": "producer",
+      "url": "https://jpl.nasa.gov/?_ga=2.243049538.1322991491.1723040890-976169570.1722866809"
+    },
+    {
+      "name": "Earth Big Data",
+      "roles": "processor",
+      "url": "https://earthbigdata.com/"
+    },
+    {
+      "name": "Gamma Remote Sensing",
+      "roles": "processor",
+      "url": "https://www.gamma-rs.ch/"
+    }
+  ],
+  "assets": {
+    "reference_1": {
+      "href": "https://asf.alaska.edu/datasets/daac/global-seasonal-sentinel-1-interferometric-coherence-and-backscatter-dataset/",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

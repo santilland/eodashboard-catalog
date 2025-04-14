@@ -1,0 +1,272 @@
+{
+  "type": "Collection",
+  "id": "Lakes_S2L2A",
+  "stac_version": "1.1.0",
+  "description": "# Sentinel-2 Level 2A\r\n\r\n## Dataset Description\r\n \r\nSentinel-2 Level 2A (L2A) data are atmospherically corrected Surface Reflectances in cartographic geometry.\r\nThey are available from September 2016 over wider Europe region and globally since January 2017.\r\n\r\nThe [Copernicus SENTINEL-2 mission](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2) comprises a constellation of two polar-orbiting satellites\r\nplaced in the same sun-synchronous orbit, phased at 180\u00b0 to each other.\r\nThe constellation monitors variability in land surface conditions. \r\n\r\nIt has a wide swath width of 290 km. Its high revisit time of 10 days with 1 satellite and 5 days with 2 satellites (at the equator)\r\nunder cloud-free conditions results in 2-3 days revisit at mid-latitudes, which makes it suitable for  monitoring Earth's surface changes, including those of inland water bodies:\r\n\r\n- [Aral Lake](https://eodashboard.org/explore?poi=Aral-Lakes_S2L2A)\r\n- [Balaton Lake](https://eodashboard.org/explore?poi=Balaton-Lakes_S2L2A)\r\n- [Tonle Sap Lake](https://eodashboard.org/explore?poi=TonleSap-Lakes_S2L2A)\r\n- [Vanerm Lake](https://eodashboard.org/explore?poi=Vanern-Lakes_S2L2A)\r\n- [Colorado River and Lake Powel](https://eodashboard.org/explore?poi=Colorado-Lakes_S2L2A)\r\n- [Lake Biwa](https://eodashboard.org/all_lakes/explore?poi=Biwa-Lakes_S2L2A)\r\n- [Tulare Lake](https://eodashboard.org/explore?poi=Tulare-Lakes_S2L2A)\r\n\r\n## Additional Information:\r\n- [ESA Sentinel-2 Mission Guide](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)\r\n- [ESA Sentinel-2 Data Products](https://sentinel.esa.int/web/sentinel/missions/sentinel-2/data-products)\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Tulare/collection.json",
+      "type": "application/json",
+      "title": "Tulare",
+      "id": "Tulare",
+      "latlng": "35.9,-119.7",
+      "country": "US",
+      "city": "Tulare"
+    },
+    {
+      "rel": "child",
+      "href": "./Aral/collection.json",
+      "type": "application/json",
+      "title": "Aral",
+      "id": "Aral",
+      "latlng": "45.303,58.581",
+      "country": [
+        "UZ",
+        "KZ"
+      ],
+      "city": "Aral"
+    },
+    {
+      "rel": "child",
+      "href": "./Biwa/collection.json",
+      "type": "application/json",
+      "title": "Biwa",
+      "id": "Biwa",
+      "latlng": "35.284,136.095",
+      "country": [
+        "JP"
+      ],
+      "city": "Biwa"
+    },
+    {
+      "rel": "child",
+      "href": "./Colorado/collection.json",
+      "type": "application/json",
+      "title": "Colorado River and Lake Powel",
+      "id": "Colorado",
+      "latlng": "37.4,-110.7",
+      "country": [
+        "US"
+      ],
+      "city": "Colorado River and Lake Powel"
+    },
+    {
+      "rel": "child",
+      "href": "./Tonle_sap/collection.json",
+      "type": "application/json",
+      "title": "Tonl\u00e9 Sap",
+      "id": "Tonle_sap",
+      "latlng": "12.7,104.2",
+      "country": [
+        "KH"
+      ],
+      "city": "Tonl\u00e9 Sap"
+    },
+    {
+      "rel": "child",
+      "href": "./Vanern/collection.json",
+      "type": "application/json",
+      "title": "V\u00e4nern",
+      "id": "Vanern",
+      "latlng": "59.07,13.535",
+      "country": [
+        "SW"
+      ],
+      "city": "V\u00e4nern"
+    },
+    {
+      "rel": "child",
+      "href": "./Balaton/collection.json",
+      "type": "application/json",
+      "title": "Balaton",
+      "id": "Balaton",
+      "latlng": "46.825,17.77",
+      "country": [
+        "HU"
+      ],
+      "city": "Balaton"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Lakes_S2L2A",
+      "wms:layers": [
+        "SENTINEL-2-L2A-TRUE-COLOR"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (Sentinel 2)"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_S2L2A/thumbnail.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Sentinel",
+    "Open data",
+    "Water extent"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "subcode": "Lakes_S2L2A",
+  "sensor": [
+    "MSI"
+  ],
+  "satellite": [
+    "Sentinel-2"
+  ],
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "Lakes collection (Sentinel 2)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -120,
+          11.945,
+          138.1728,
+          59.83119
+        ],
+        [
+          -120,
+          35.72,
+          -119.4,
+          36.2
+        ],
+        [
+          57,
+          43.24,
+          62.29,
+          47.72
+        ],
+        [
+          135.133,
+          33.535,
+          138.1728,
+          35.7509
+        ],
+        [
+          -111.83,
+          36.8,
+          -110.32,
+          37.93
+        ],
+        [
+          101.938,
+          11.945,
+          106.37,
+          14.0674
+        ],
+        [
+          10.6994,
+          57.353,
+          15.9848,
+          59.83119
+        ],
+        [
+          17.08,
+          46.55,
+          18.24,
+          47.12
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-11-29T00:00:00Z",
+          "2023-06-08T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_S2L2A/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2",
+      "type": "text/html",
+      "title": "Copernicus Sentinel-2 mission",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://sentiwiki.copernicus.eu/web/s2-mission",
+      "type": "text/html",
+      "title": "ESA Sentinel-2 Mission Guide",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://sentinel.esa.int/web/sentinel/missions/sentinel-2/data-products",
+      "type": "text/html",
+      "title": "ESA Sentinel-2 Data Products",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "https://docs.sentinel-hub.com/api/latest/data/sentinel-2-l2a/",
+      "type": "text/html",
+      "title": "Sentinel-Hub API and data Documentation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_5": {
+      "href": "https://collections.eurodatacube.com/sentinel-2-l2a/",
+      "type": "text/html",
+      "title": "Sentinel-2 L2A Collection documentation on Euro Data Cube",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_6": {
+      "href": "https://eurodatacube.com/notebooks/curated/EDC_Sentinel_Hub-Data-access.ipynb",
+      "type": "text/html",
+      "title": "Jupyter Notebook - accessing data with xcube",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_7": {
+      "href": "https://custom-scripts.sentinel-hub.com/#sentinel-2",
+      "type": "text/html",
+      "title": "Collection of custom scripts on Sentinel-Hub",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

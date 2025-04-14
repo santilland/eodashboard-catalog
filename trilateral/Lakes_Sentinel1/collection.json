@@ -1,0 +1,132 @@
+{
+  "type": "Collection",
+  "id": "Lakes_Sentinel1",
+  "stac_version": "1.1.0",
+  "description": "## Sentinel 1 for Lake areas\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Lakes_Sentinel1/collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (Sentinel 1)",
+      "endpointtype": "Sentinel Hub WMS",
+      "code": "Lakes_Sentinel1",
+      "id": "Lakes_Sentinel1",
+      "themes": [
+        "water"
+      ],
+      "locations": true,
+      "tags": [
+        "Sentinel",
+        "Open data",
+        "Water quality",
+        "Water extent"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
+      ],
+      "subcode": "Lakes_Sentinel1",
+      "sensor": [
+        "C-SAR"
+      ],
+      "satellite": [
+        "Sentinel-1"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Sentinel",
+    "Open data",
+    "Water quality",
+    "Water extent"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "subcode": "Lakes_Sentinel1",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "title": "Lakes collection (Sentinel 1)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          101.938,
+          11.945,
+          106.37,
+          14.0674
+        ],
+        [
+          101.938,
+          11.945,
+          106.37,
+          14.0674
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-05-15T00:00:00Z",
+          "2022-10-17T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "Lakes_Sentinel1"
+    ],
+    "themes": [
+      "water"
+    ],
+    "satellite": [
+      "Sentinel-1"
+    ],
+    "sensor": [
+      "C-SAR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

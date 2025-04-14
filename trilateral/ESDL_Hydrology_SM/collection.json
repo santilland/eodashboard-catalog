@@ -1,0 +1,179 @@
+{
+  "type": "Collection",
+  "id": "ESDL_Hydrology_SM",
+  "stac_version": "1.1.0",
+  "description": "# Surface Soil Moisture Product\nA experimental dataset of soil-moisture retrievals at 1km effective spatial resolution for all 28 basins of the Mediterranean study-area. The data was processed via the RT1 radiative transfer model using Sentinel-1 (VV) backscatter data together with auxiliary CGLS Leaf Area Index timeseries.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ESDL_Hydrology_SM/collection.json",
+      "type": "application/json",
+      "title": "Surface Soil Moisture",
+      "endpointtype": "xcube_zarr",
+      "code": "ESDL_Hydrology_SM",
+      "id": "ESDL_Hydrology_SM",
+      "themes": [
+        "agriculture",
+        "water"
+      ],
+      "yAxis": "% Relative Saturation",
+      "tags": [
+        "Open data",
+        "surface soil moisture",
+        "radiative transfer"
+      ],
+      "agency": [
+        "EURAC"
+      ],
+      "subcode": "ESDL_Hydrology_SM",
+      "sensor": [
+        "C-SAR"
+      ],
+      "satellite": [
+        "Sentinel-1"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Raphael Quast, Wolfgang Wagner, Bernhard Bauer-Marschallinger, Mariette Vreugdenhil Soil moisture retrieval from Sentinel-1 using a first-order radiative transfer model\u2014A case-study over the Po-Valley, Remote Sensing of Environment Volume 295, 1 September 2023, 113651",
+      "doi": "https://doi.org/10.1016/j.rse.2023.113651"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_SM/image.png",
+  "themes": [
+    "agriculture",
+    "water"
+  ],
+  "tags": [
+    "Open data",
+    "surface soil moisture",
+    "radiative transfer"
+  ],
+  "agency": [
+    "EURAC"
+  ],
+  "subcode": "ESDL_Hydrology_SM",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#f0f921",
+      "#fad824",
+      "#feb82c",
+      "#fa9b3d",
+      "#f1814d",
+      "#e4695e",
+      "#d45270",
+      "#c23c81",
+      "#ac2694",
+      "#920fa3",
+      "#7701a8",
+      "#5801a4",
+      "#370499",
+      "#0d0887"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[% relative saturation]"
+  },
+  "title": "Surface Soil Moisture",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -5.70080002975464,
+          28.339799316406264,
+          37.76919997024536,
+          48.17579931640626
+        ],
+        [
+          -5.70080002975464,
+          28.339799316406264,
+          37.76919997024536,
+          48.17579931640626
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01T00:00:00Z",
+          "2022-06-29T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "TU Wien",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://www.tuwien.at/mg/geo/rs"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ESDL_Hydrology_SM"
+    ],
+    "themes": [
+      "water",
+      "agriculture"
+    ],
+    "satellite": [
+      "Sentinel-1"
+    ],
+    "sensor": [
+      "C-SAR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_SM/image.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_SM/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDL_Hydrology_SM/image.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://stac.eurac.edu:8080/collections/SM_RT",
+      "type": "text/html",
+      "title": "RT1 Surface Soil Moisture",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

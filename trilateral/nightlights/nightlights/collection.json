@@ -1,0 +1,519 @@
+{
+  "type": "Collection",
+  "id": "nightlights",
+  "stac_version": "1.1.0",
+  "description": "# Nightlights \nThe Nightlights dataset is collected by the Visible Infrared Radiometer Suite (VIIRS) Day/Night Band (DNB) aboard the Suomi-National Polar-Orbiting Partnership (Suomi-NPP) satellite, a joint mission of the National Oceanic and Atmospheric Administration (NOAA) and NASA. The Nightlights data is processed and made available through NASA's Black Marble product suite, which provides consistent, high-quality images of nighttime lights across the globe. These data are essential for analyzing human activity, urbanization patterns, energy consumption, and even socio-economic trends.\n\nThe High Definition Nightlights dataset is designed to eliminate interference from natural sources such as moonlight and cloud cover, ensuring a clear representation of human-made light sources. The dataset uses varying shades of color to represent different intensities of light; darker shades indicate areas with less artificial light (e.g., rural or undeveloped regions), while lighter shades of yellow signify regions with higher concentrations of light (e.g., cities and industrial zones).\n\n## Dataset Description\n- Coverage: Global, spanning urban and rural areas across all continents. The polar orbit of Suomi-NPP ensures comprehensive global coverage during nighttime.\n- Metric: Nighttime light intensity data represented in spatial grids with a resolution of 500 meters.\n- Temporal Coverage: Multi-year aggregation, with continuous data available from 2011 to the present. This allows for monitoring trends in nighttime light intensity over time.\n- Data Features: The dataset provides daily calibrated and corrected measurements, with ground validation to ensure science-ready accuracy. It excludes natural light sources such as moonlight, offering a precise depiction of artificial lighting patterns. The aggregation of multiple years allows for the analysis of long-term trends in urbanization, economic development, and population growth.\n\nUse Case:\nStudying urbanization and regional development by analyzing the growth of artificial light over time.\nMonitoring human activity patterns and socio-economic shifts, particularly in emerging economies.\nProviding valuable insights into disaster recovery efforts by tracking changes in nighttime light intensity in regions affected by power outages or natural disasters.\n\nThe dataset is often referenced in scientific and public health research. For example, Bunpei Tojo (2021) used Nightlights data in the study \"Application of Earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" presented at the 12th Federation of Science and Technology conference, to analyze the relationship between nighttime light intensity and public health factors. \nCitation: Bunpei Tojo, \"Application of earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" Transdisciplinary 12th Federation of Science and Technology conference 2021, https://doi.org/10.11487/oukan.2021.0_B-4-4.\n\nThe dataset is a product of [NOAA](https://www.noaa.gov/) and [NASA](https://www.jpl.nasa.gov/), and the data can be accessed through [NASA's Black Marble suite](https://blackmarble.gsfc.nasa.gov/).\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./IT01/collection.json",
+      "type": "application/json",
+      "title": "Venice",
+      "id": "IT01",
+      "latlng": "35.61,139.78",
+      "name": "Venice"
+    },
+    {
+      "rel": "child",
+      "href": "./JP01/collection.json",
+      "type": "application/json",
+      "title": "Tokyo",
+      "id": "JP01",
+      "latlng": "35.66,139.7",
+      "name": "Tokyo"
+    },
+    {
+      "rel": "child",
+      "href": "./SG01/collection.json",
+      "type": "application/json",
+      "title": "Singapore",
+      "id": "SG01",
+      "latlng": "1.35,103.83",
+      "name": "Singapore"
+    },
+    {
+      "rel": "child",
+      "href": "./IT02/collection.json",
+      "type": "application/json",
+      "title": "Rome",
+      "id": "IT02",
+      "latlng": "41.902782,12.496366",
+      "name": "Rome"
+    },
+    {
+      "rel": "child",
+      "href": "./FR01/collection.json",
+      "type": "application/json",
+      "title": "Paris",
+      "id": "FR01",
+      "latlng": "48.864716,2.349014",
+      "name": "Paris"
+    },
+    {
+      "rel": "child",
+      "href": "./JP02/collection.json",
+      "type": "application/json",
+      "title": "Osaka",
+      "id": "JP02",
+      "latlng": "34.67,135.48",
+      "name": "Osaka"
+    },
+    {
+      "rel": "child",
+      "href": "./IT02/collection.json",
+      "type": "application/json",
+      "title": "Milan",
+      "id": "IT02",
+      "latlng": "45.464664,9.18854",
+      "name": "Milan"
+    },
+    {
+      "rel": "child",
+      "href": "./FR02/collection.json",
+      "type": "application/json",
+      "title": "Marseille",
+      "id": "FR02",
+      "latlng": "43.51924541,5.493796614",
+      "name": "Marseille"
+    },
+    {
+      "rel": "child",
+      "href": "./ES01/collection.json",
+      "type": "application/json",
+      "title": "Madrid",
+      "id": "ES01",
+      "latlng": "40.416775,-3.70379",
+      "name": "Madrid"
+    },
+    {
+      "rel": "child",
+      "href": "./GB01/collection.json",
+      "type": "application/json",
+      "title": "London",
+      "id": "GB01",
+      "latlng": "51.489317,-0.08818",
+      "name": "London"
+    },
+    {
+      "rel": "child",
+      "href": "./PE01/collection.json",
+      "type": "application/json",
+      "title": "Lima",
+      "id": "PE01",
+      "latlng": "-12.07,-77.03",
+      "name": "Lima"
+    },
+    {
+      "rel": "child",
+      "href": "./JP03/collection.json",
+      "type": "application/json",
+      "title": "Kyoto",
+      "id": "JP03",
+      "latlng": "34.98,135.74",
+      "name": "Kyoto"
+    },
+    {
+      "rel": "child",
+      "href": "./JP04/collection.json",
+      "type": "application/json",
+      "title": "Hokkaido Sapporo",
+      "id": "JP04",
+      "latlng": "43.085,141.38",
+      "name": "Hokkaido Sapporo"
+    },
+    {
+      "rel": "child",
+      "href": "./DE01/collection.json",
+      "type": "application/json",
+      "title": "Hamburg",
+      "id": "DE01",
+      "latlng": "53.7114,9.2153",
+      "name": "Hamburg"
+    },
+    {
+      "rel": "child",
+      "href": "./BE01/collection.json",
+      "type": "application/json",
+      "title": "Ghent",
+      "id": "BE01",
+      "latlng": "51.05296611,3.731053615",
+      "name": "Ghent"
+    },
+    {
+      "rel": "child",
+      "href": "./IT03/collection.json",
+      "type": "application/json",
+      "title": "Genoa",
+      "id": "IT03",
+      "latlng": "44.4491565,8.880662",
+      "name": "Genoa"
+    },
+    {
+      "rel": "child",
+      "href": "./PL01/collection.json",
+      "type": "application/json",
+      "title": "Gdynia",
+      "id": "PL01",
+      "latlng": "54.503633,18.4635215",
+      "name": "Gdynia"
+    },
+    {
+      "rel": "child",
+      "href": "./JP05/collection.json",
+      "type": "application/json",
+      "title": "Fukuoka",
+      "id": "JP05",
+      "latlng": "33.59,130.4",
+      "name": "Fukuoka"
+    },
+    {
+      "rel": "child",
+      "href": "./FR03/collection.json",
+      "type": "application/json",
+      "title": "Dunkirk",
+      "id": "FR03",
+      "latlng": "51.00990863,2.35181992",
+      "name": "Dunkirk"
+    },
+    {
+      "rel": "child",
+      "href": "./BD01/collection.json",
+      "type": "application/json",
+      "title": "Dhaka",
+      "id": "BD01",
+      "latlng": "23.775,90.42",
+      "name": "Dhaka"
+    },
+    {
+      "rel": "child",
+      "href": "./LK01/collection.json",
+      "type": "application/json",
+      "title": "Colombo",
+      "id": "LK01",
+      "latlng": "6.88,79.92",
+      "name": "Colombo"
+    },
+    {
+      "rel": "child",
+      "href": "./CN01/collection.json",
+      "type": "application/json",
+      "title": "Beijing",
+      "id": "CN01",
+      "latlng": "39.885,116.375",
+      "name": "Beijing"
+    },
+    {
+      "rel": "child",
+      "href": "./ES02/collection.json",
+      "type": "application/json",
+      "title": "Barcelona",
+      "id": "ES02",
+      "latlng": "41.50191222,2.04320712",
+      "name": "Barcelona"
+    },
+    {
+      "rel": "child",
+      "href": "./NZ01/collection.json",
+      "type": "application/json",
+      "title": "Auckland",
+      "id": "NZ01",
+      "latlng": "-36.88,174.775",
+      "name": "Auckland"
+    },
+    {
+      "rel": "child",
+      "href": "./NL01/collection.json",
+      "type": "application/json",
+      "title": "Amsterdam",
+      "id": "NL01",
+      "latlng": "52.37,4.855",
+      "name": "Amsterdam"
+    },
+    {
+      "rel": "child",
+      "href": "./JP06/collection.json",
+      "type": "application/json",
+      "title": "Aichi Nagoya",
+      "id": "JP06",
+      "latlng": "35.135,136.91",
+      "name": "Aichi Nagoya"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=inferno&rescale=0,255",
+      "type": "image/png",
+      "title": "nightlights"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Nightlights from SUOMI-NPP"
+    }
+  ],
+  "subtitle": "30-meter Black Marble High Definition (HD) nighttime lights",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+  "themes": [
+    "economy"
+  ],
+  "locations": true,
+  "tags": [
+    "Human activities",
+    "Open data",
+    "SUOMI-NPP"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N5",
+  "sensor": [
+    "VIIRS"
+  ],
+  "satellite": [
+    "Suomi"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "Less light",
+      "More light"
+    ],
+    "range": [
+      "#000004",
+      "#fcffa4"
+    ],
+    "scaleType": "categorical",
+    "title": ""
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "Nightlights from SUOMI-NPP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -77.18,
+          -37.08,
+          174.96,
+          54.584515
+        ],
+        [
+          11.7631744,
+          45.06062636,
+          12.79039608,
+          45.79310055
+        ],
+        [
+          139.34275817871094,
+          35.049654646456474,
+          140.34809152322123,
+          35.93543243408203
+        ],
+        [
+          103.63,
+          1.23,
+          104.03,
+          1.47
+        ],
+        [
+          12.196366,
+          41.602782,
+          12.796366,
+          42.202782
+        ],
+        [
+          2.119014,
+          48.634716,
+          2.579014,
+          49.094716
+        ],
+        [
+          135.35,
+          34.57,
+          135.61,
+          34.77
+        ],
+        [
+          8.95854,
+          45.234664,
+          9.41854,
+          45.694664
+        ],
+        [
+          4.455588606,
+          42.9695695,
+          6.5320046220000005,
+          44.06892132
+        ],
+        [
+          -4.00379,
+          40.116775,
+          -3.40379,
+          40.716775
+        ],
+        [
+          -0.510375,
+          51.28676,
+          0.33401499999999995,
+          51.691874
+        ],
+        [
+          -77.18,
+          -12.28,
+          -76.88,
+          -11.86
+        ],
+        [
+          135.64,
+          34.88,
+          135.84,
+          35.08
+        ],
+        [
+          141.18,
+          42.94,
+          141.58,
+          43.23
+        ],
+        [
+          8.1053,
+          53.3951,
+          10.3253,
+          54.0277
+        ],
+        [
+          3.542912745,
+          50.93642727,
+          3.919194484,
+          51.28873062133789
+        ],
+        [
+          8.665744,
+          44.378471,
+          9.09558,
+          44.519842
+        ],
+        [
+          18.357982,
+          54.422751,
+          18.569061,
+          54.584515
+        ],
+        [
+          130.28,
+          33.46,
+          130.52,
+          33.72
+        ],
+        [
+          2.062055515,
+          50.88721313,
+          2.641584324,
+          51.13260412
+        ],
+        [
+          90.31,
+          23.64,
+          90.53,
+          23.91
+        ],
+        [
+          79.82,
+          6.74,
+          80.02,
+          7.02
+        ],
+        [
+          115.91229248046875,
+          39.627200509676186,
+          116.86084804657003,
+          40.32575607299805
+        ],
+        [
+          1.469171475,
+          41.15634032,
+          2.617242764,
+          41.84748412
+        ],
+        [
+          174.59,
+          -37.08,
+          174.96,
+          -36.68
+        ],
+        [
+          4.61,
+          52.2,
+          5.1,
+          52.54
+        ],
+        [
+          136.78,
+          35.02,
+          137.04,
+          35.25
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-01T00:00:00Z",
+          "2022-03-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://search.earthdata.nasa.gov/search?portal=idn&fi=VIIRS"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "black_marble": {
+      "href": "https://blackmarble.gsfc.nasa.gov/",
+      "type": "text/html",
+      "title": "NASA's Black Marble",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "suomi_npp": {
+      "href": "https://www.nasa.gov/mission_pages/NPP/main/index.html",
+      "type": "text/html",
+      "title": "Suomi National Polar-orbiting Partnership (Suomi NPP)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "covid_dashboard": {
+      "href": "https://www.earthdata.nasa.gov/covid19/indicators/bm",
+      "type": "text/html",
+      "title": "NASA Covid Dashboard",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

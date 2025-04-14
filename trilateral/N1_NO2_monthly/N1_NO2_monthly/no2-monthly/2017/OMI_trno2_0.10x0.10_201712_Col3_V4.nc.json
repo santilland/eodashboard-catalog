@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "OMI_trno2_0.10x0.10_201712_Col3_V4.nc",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "end_datetime": "2017-12-31T00:00:00+00:00",
+    "start_datetime": "2017-12-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/no2-monthly/items/OMI_trno2_0.10x0.10_201712_Col3_V4.nc/map?bidx=1&assets=cog_default&rescale=0%2C15000000000000000&resampling=bilinear&color_formula=gamma+r+1.05&colormap_name=rdbu_r",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide (Monthly)"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201712_Col3_V4.nc.tif&resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
+      "type": "image/png",
+      "title": "N1_NO2_monthly"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide (Monthly)"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201712_Col3_V4.nc.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        1800,
+        3600
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -1.2676506002282294e+30,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 38882819967025150,
+            "min": -2341281430765568.0,
+            "count": 11,
+            "buckets": [
+              415702,
+              14015,
+              1598,
+              562,
+              353,
+              271,
+              119,
+              38,
+              14,
+              2
+            ]
+          },
+          "statistics": {
+            "mean": 424544596433100.1,
+            "stddev": 1200493135714887.5,
+            "maximum": 38882819967025150,
+            "minimum": -2341281430765568.0,
+            "valid_percent": 82.52601623535156
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -90.0
+            ],
+            [
+              180.0,
+              -90.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -90.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.1,
+        0.0,
+        -180.0,
+        0.0,
+        -0.1,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/no2-monthly/items/OMI_trno2_0.10x0.10_201712_Col3_V4.nc/preview.png?bidx=1&assets=cog_default&rescale=0%2C15000000000000000&resampling=bilinear&color_formula=gamma+r+1.05&colormap_name=rdbu_r",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "no2-monthly"
+}

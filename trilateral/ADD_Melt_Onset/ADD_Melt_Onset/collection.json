@@ -1,0 +1,249 @@
+{
+  "type": "Collection",
+  "id": "ADD_Melt_Onset",
+  "stac_version": "1.1.0",
+  "description": "# Antarctica Melt Season Onset 2007 - 2021 \n### VALUE ADDED PROTOTYPE PRODUCT\n\nAuthor: Enveo IT, F\u00fcrstenweg 176, 6020 Innsbruck, Austria\n\nProcessing date: 2022-06-09\u00a0\n\nThis dataset illustrates the Melt Season End. It refers to the first time that there are three consecutive days of melt in a year, thereby indicating the beginning of the snowmelt season. The product was generated based on melt maps (indicating presence of liquid water) from 2007 until 2021 derived from the ASCAT Enhanced Resolution\u00a0Scatterometer Image Reconstruction (SIR) product [1]. The meltmaps (such as the one for 2021 depicted below) are also available on this Dashboard.\n\n    \n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_Meltmap/ASCAT_AA_meltmap_2021.gif)\n    \n*Figure 1. Antarctica Meltmap for 2021. Based on these melt maps, value added melt map products are generated, indicating the melt onset, the melt duration and the end of the melt season on a pixel-by-pixel basis.*\n\n**Explore the Antarctica melt maps 2007-2021 on EO Dashboard:**\n\n* [Antarctica Meltmaps](https://eodashboard.org/explore?indicator=ADD_Meltmap)\n    \n\nAll products are provided in GeoTiff format at a grid spacing of 4.45 km x 4.45 km in the projection WGS 84 / NSIDC Sea Ice Polar Stereographic South (EPSG:3976).\u00a0\n\n------------------------------------------------\n[1] The SIR product is processed by the Microwave Earth Remote Sensing Laboratory (MERS) at Brigham Young University (BYU) and based on the full resolution (SZF)\u00a0ASCAT C-Band Scatterometer data. It provides an enhanced resolution of 4.45 km by combining multiple pass, irregularly spaced data into higher-resolution gridded images. The SIR product used combines all data acquired within a single 24-hr period (msfa). \n\n### Reference: \nLindsley, R. D. and Long, D. G. 2010. Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3.\n\n### Data Access:\nESA Open Science Data Catalogue https://opensciencedata.esa.int/projects/4d-Antarctica/collection \n\n### 4D Antarctica Project Page\nhttps://4d-antarctica.org/ \n\n### Map baselayer and geometries\n\nThe Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\nThis map uses the baselayer Antarctic hillshade and bathymetry south of 60\u00b0S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2021/d386251c-1c38-4f28-8f2c-2ee0b300a89c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2020/057ac617-dc29-4c23-b24b-73e8a43f2972.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2019/7ba55505-a398-4550-bb24-e8fe4fdf913b.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2018/98d22b01-58f0-4c56-bd83-43ea0618573d.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2017/3991b532-52be-4f01-968b-e070f3270d18.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2016/4ad1e47e-2dea-450a-aa59-dc0e5c206a20.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2015/dddc9c2c-f5c7-4a3a-95db-d6809f937dd8.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2014/c75a566f-4a64-491a-9672-dff922cce641.json",
+      "type": "application/geo+json",
+      "datetime": "2014-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2013/579a709b-7239-43df-bd49-f07fe4fbe92a.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2012/b5342d0a-a48e-403c-9fcd-3bac02894ffe.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2011/b62fc192-5d3c-4cc6-a0e4-4d6d5f85889e.json",
+      "type": "application/geo+json",
+      "datetime": "2011-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2010/bdf8a436-98d8-4af6-b4c3-04b164148c49.json",
+      "type": "application/geo+json",
+      "datetime": "2010-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2009/e3bfe081-41ef-4008-b3d9-ada5b2c4c4c9.json",
+      "type": "application/geo+json",
+      "datetime": "2009-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2008/b9a6e779-fc2c-46bd-85a7-8cddcf3d0298.json",
+      "type": "application/geo+json",
+      "datetime": "2008-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-59d1245b-46ac-438f-b7be-32d550da04f3/2007/dd36ce0a-3a7a-4f02-9fb8-afc95af93c42.json",
+      "type": "application/geo+json",
+      "datetime": "2007-01-01T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "ADD_Melt_Onset",
+      "wms:layers": [
+        "VIS_4D_ANTARTICA_ONSET"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Antarctica Melt Onset"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P. (2019): The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674.\n",
+      "doi": "10.5285/836f016a-33be-6ddc-e053-6c86abc0788e"
+    }
+  ],
+  "subtitle": "Antarctica Melt Onset from 4D Antarctica",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_Melt_Onset/thumbnail.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Antarctica",
+    "Climate change",
+    "Polar regions",
+    "Open data",
+    "Open Science",
+    "Cryosphere",
+    "Glaciers",
+    "Ice cap",
+    "Melt",
+    "Scatterometer",
+    "C-SAR",
+    "Ice monitoring"
+  ],
+  "agency": [
+    "ESA",
+    "EUMETSAT"
+  ],
+  "subcode": "ADD_Melt_Onset",
+  "sensor": [
+    "ASCAT"
+  ],
+  "satellite": [
+    "MetOp"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      1,
+      365
+    ],
+    "range": [
+      "#306bff",
+      "#488eff",
+      "#5ca5ff",
+      "#6fb4ff",
+      "#82beff",
+      "#94c7ff",
+      "#a3d0ff",
+      "#b2d8ff",
+      "#c2deff",
+      "#cee5ff",
+      "#d8ecff",
+      "#e1f2ff",
+      "#e9f6ff",
+      "#f2fbff",
+      "#fbffff"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Ice melting onset [day of year]"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Antarctica Melt Onset",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -100,
+          -75,
+          -70,
+          -68
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2007-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "name": "EUMETSAT",
+      "url": "https://www.eumetsat.int/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_Melt_Onset/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_Melt_Onset/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://4d-antarctica.org/",
+      "type": "text/html",
+      "title": "4D Antarctica Project Page",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://opensciencedata.esa.int/projects/4d-Antarctica/collection",
+      "type": "text/html",
+      "title": "ESA Open Science Data Catalogue: 4D-Antarctica",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

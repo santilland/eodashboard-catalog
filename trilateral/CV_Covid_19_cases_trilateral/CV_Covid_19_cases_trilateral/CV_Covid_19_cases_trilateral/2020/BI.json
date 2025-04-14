@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "BI",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        29.35,
+        -3.367
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    29.34,
+    -3.377,
+    29.360000000000003,
+    -3.357
+  ],
+  "properties": {
+    "start_datetime": "2020-01-22T00:00:00Z",
+    "end_datetime": "2023-03-09T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Covid-19 Cases"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Covid-19 Cases"
+    }
+  ],
+  "assets": {},
+  "collection": "CV_Covid_19_cases_trilateral"
+}

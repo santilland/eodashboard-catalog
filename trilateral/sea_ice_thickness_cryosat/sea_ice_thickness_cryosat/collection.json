@@ -1,0 +1,436 @@
+{
+  "type": "Collection",
+  "id": "sea_ice_thickness_cryosat",
+  "stac_version": "1.1.0",
+  "description": "## CryoSat Sea Ice Thickness Product\n\nThis dataset provides a Climate Data Record of Sea Ice Thickness for the NH polar region, derived from the SIRAL (SAR Interferometer Radar ALtimeter) instrument on the CryoSat-2 satellite.\nThis product was generated in the context of the ESA Climate Change Initiative Programme (ESA CCI) by the Sea Ice CCI ([Sea_Ice_cci](https://climate.esa.int/en/odp/#/project/sea-ice)) project.\n\nIt provides daily sea ice thickness data for the months October to April annually on the satellite measurement grid (Level 2P) at the full sensor resolution for the period November 2010 to April 2017.\n\n\n### Additional information\n\n- Read more on [ESA's Climate Change Initiative Website](https://climate.esa.int/en/projects/cmug/case-studies/new-dimension-cci-sea-ice-thickness-data-set/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2017/22406.json",
+      "type": "application/geo+json",
+      "datetime": "2017-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2017/22405.json",
+      "type": "application/geo+json",
+      "datetime": "2017-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2017/22404.json",
+      "type": "application/geo+json",
+      "datetime": "2017-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2017/22403.json",
+      "type": "application/geo+json",
+      "datetime": "2017-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22402.json",
+      "type": "application/geo+json",
+      "datetime": "2016-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22401.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22400.json",
+      "type": "application/geo+json",
+      "datetime": "2016-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22399.json",
+      "type": "application/geo+json",
+      "datetime": "2016-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22398.json",
+      "type": "application/geo+json",
+      "datetime": "2016-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22397.json",
+      "type": "application/geo+json",
+      "datetime": "2016-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2016/22396.json",
+      "type": "application/geo+json",
+      "datetime": "2016-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22395.json",
+      "type": "application/geo+json",
+      "datetime": "2015-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22394.json",
+      "type": "application/geo+json",
+      "datetime": "2015-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22393.json",
+      "type": "application/geo+json",
+      "datetime": "2015-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22392.json",
+      "type": "application/geo+json",
+      "datetime": "2015-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22391.json",
+      "type": "application/geo+json",
+      "datetime": "2015-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22390.json",
+      "type": "application/geo+json",
+      "datetime": "2015-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2015/22389.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22388.json",
+      "type": "application/geo+json",
+      "datetime": "2014-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22387.json",
+      "type": "application/geo+json",
+      "datetime": "2014-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22386.json",
+      "type": "application/geo+json",
+      "datetime": "2014-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22385.json",
+      "type": "application/geo+json",
+      "datetime": "2014-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22384.json",
+      "type": "application/geo+json",
+      "datetime": "2014-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22383.json",
+      "type": "application/geo+json",
+      "datetime": "2014-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2014/22382.json",
+      "type": "application/geo+json",
+      "datetime": "2014-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22381.json",
+      "type": "application/geo+json",
+      "datetime": "2013-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22380.json",
+      "type": "application/geo+json",
+      "datetime": "2013-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22379.json",
+      "type": "application/geo+json",
+      "datetime": "2013-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22378.json",
+      "type": "application/geo+json",
+      "datetime": "2013-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22377.json",
+      "type": "application/geo+json",
+      "datetime": "2013-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22376.json",
+      "type": "application/geo+json",
+      "datetime": "2013-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2013/22375.json",
+      "type": "application/geo+json",
+      "datetime": "2013-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22374.json",
+      "type": "application/geo+json",
+      "datetime": "2012-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22373.json",
+      "type": "application/geo+json",
+      "datetime": "2012-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22372.json",
+      "type": "application/geo+json",
+      "datetime": "2012-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22371.json",
+      "type": "application/geo+json",
+      "datetime": "2012-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22370.json",
+      "type": "application/geo+json",
+      "datetime": "2012-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22369.json",
+      "type": "application/geo+json",
+      "datetime": "2012-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2012/22368.json",
+      "type": "application/geo+json",
+      "datetime": "2012-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22367.json",
+      "type": "application/geo+json",
+      "datetime": "2011-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22366.json",
+      "type": "application/geo+json",
+      "datetime": "2011-11-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22365.json",
+      "type": "application/geo+json",
+      "datetime": "2011-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22364.json",
+      "type": "application/geo+json",
+      "datetime": "2011-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22363.json",
+      "type": "application/geo+json",
+      "datetime": "2011-03-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22362.json",
+      "type": "application/geo+json",
+      "datetime": "2011-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2011/22361.json",
+      "type": "application/geo+json",
+      "datetime": "2011-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2010/22360.json",
+      "type": "application/geo+json",
+      "datetime": "2010-12-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./zarr-b6915831-0a56-424b-bcb4-781deb062f31/2010/22359.json",
+      "type": "application/geo+json",
+      "datetime": "2010-11-01T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_ice_thickness_cryosat",
+      "wms:layers": [
+        "ESA-CCI-V2-CRYOSAT"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sea ice thickness (Cryosat-2)"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Hendricks, S.; Paul, S.; Rinne, E. (2018). ESA Sea Ice Climate Change Initiative (Sea_Ice_cci). \nNorthern hemisphere sea ice thickness from CryoSat-2 on the satellite swath (L2P), v2.0. Centre for Environmental Data Analysis, date of citation.\n",
+      "doi": "10.5285/5b6033bfb7f241e89132a83fdc3d5364"
+    }
+  ],
+  "subtitle": "Daily Arctic sea ice thickness",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Sea ice",
+    "Polar",
+    "ESA Climate Change Initiative",
+    "Open data",
+    "Polar",
+    "Arctic"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "SIC",
+  "sensor": [
+    "SIRAL"
+  ],
+  "satellite": [
+    "CryoSat-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      4
+    ],
+    "range": [
+      "#0d0887",
+      "#370499",
+      "#5801a4",
+      "#7701a8",
+      "#920fa3",
+      "#ac2694",
+      "#c23c81",
+      "#d45270",
+      "#e4695e",
+      "#f1814d",
+      "#fa9b3d",
+      "#feb82c",
+      "#fad824",
+      "#f0f921"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea-ice thickness [m]"
+  },
+  "endpointtype": "Sentinel Hub_zarr",
+  "title": "Sea ice thickness (Cryosat-2)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          16.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2010-11-01T00:00:00Z",
+          "2017-04-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "roles": "licensor, producer, processor",
+      "url": "https://climate.esa.int/en/data/#/dashboard"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://climate.esa.int/en/projects/cmug/studies/new-dimension-cci-sea-ice-thickness-data-set/",
+      "type": "text/html",
+      "title": "The CCI sea-ice thickness data set",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://catalogue.ceda.ac.uk/uuid/5b6033bfb7f241e89132a83fdc3d5364",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

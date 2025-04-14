@@ -1,0 +1,226 @@
+{
+  "type": "Collection",
+  "id": "ocean_primary_productivity",
+  "stac_version": "1.1.0",
+  "description": "## Monthly global Marine Phytoplankton Primary Production\n\nPrimary production by marine phytoplankton was modelled using ocean-colour remote sensing products and a spectrally-resolved primary production model that incorporates the\nvertical structure of phytoplankton and simulates changes in photosynthesis as a function of irradiance using a two-parameter photosynthesis versus irradiance (P-I) function\n(see Kulk et al. 2020, Sathyendranath et al. 2020a, and references therein for details).\nChlorophyll-a products were obtained from the European Space Agency (ESA) Ocean Colour Climate Change Initiative ([OC-CCI v4.2 dataset](https://climate.esa.int/en/projects/ocean-colour/news-and-events/news/version-4-2-data-release/)).\nPhotosynthetic Active Radiation (PAR) products were obtained from the National Aeronautics and Space Administration (NASA) and were corrected for inter-sensor bias in products.\nIn situ datasets of chlorophyll-a profile parameters and P-I parameters were incorporated as described in Kulk et al. (2020).\n\n### Additional information\n- This dataset is produced in the frame of project **Biological Pump and Carbon Exchange Processes (BICEP)**\n- [BICEP Project Page](https://bicep-project.org/Home)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ocean_primary_productivity/collection.json",
+      "type": "application/json",
+      "title": "Ocean net primary production (BICEP)",
+      "endpointtype": "WMS_OverwriteTimes",
+      "code": "NPP",
+      "id": "ocean_primary_productivity",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "Primary production",
+        "Open data",
+        "Photosynthesis",
+        "Organic material",
+        "Chlorophyll",
+        "Multi-sensors",
+        "Water",
+        "Carbon"
+      ],
+      "agency": [
+        "NASA",
+        "ESA"
+      ],
+      "subcode": "NPP",
+      "sensor": [
+        "MERIS",
+        "MODIS",
+        "VIIRS",
+        "SeaWiFS"
+      ],
+      "satellite": [
+        "Envisat",
+        "Aqua",
+        "Suomi",
+        "OrbView-2"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Kulk, G.; Platt, T.; Dingle, J.; Jackson, T.; J\u00f6nsson, B.F.; Bouman, H.A.; Babin, M.; Brewin, R.J.W.; Doblin, M.; Estrada, M.; Figueiras, F.G.; Furuya, K.; Gonz\u00e1lez-Ben\u00edtez, N.; Gudfinnsson, H.G.; Gudmundsson, K.; Huang, B.; Isada, T.; Kova\u010d, \u017d.; Lutz, V.A.; Mara\u00f1\u00f3n, E.; Raman, M.; Richardson, K.; Rozema, P.D.; van de Poll, W.H.; Segura, V.; Tilstone, G.H.; Uitz, J.; van Dongen-Vogels, V.; Yoshikawa, T.; Sathyendranath, S. (2021). \nBICEP / NCEO - Monthly global Marine Phytoplankton Primary Production, between 1998-2020 at 9 km resolution (derived from the Ocean Colour Climate Change Initiative v4.2 dataset). NERC EDS Centre for Environmental Data Analysis, 22 December 2021.\n",
+      "doi": "10.5285/69b2c9c6c4714517ba10dab3515e4ee6"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.png",
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "Primary production",
+    "Open data",
+    "Photosynthesis",
+    "Organic material",
+    "Chlorophyll",
+    "Multi-sensors",
+    "Water",
+    "Carbon"
+  ],
+  "agency": [
+    "NASA",
+    "ESA"
+  ],
+  "subcode": "NPP",
+  "sensor": [
+    "MERIS",
+    "MODIS",
+    "VIIRS",
+    "SeaWiFS"
+  ],
+  "satellite": [
+    "Envisat",
+    "Aqua",
+    "Suomi",
+    "OrbView-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      1
+    ],
+    "range": [
+      "#ffffff",
+      "#7600f0",
+      "#0ec5ff",
+      "#05ffc2",
+      "#98ff8a",
+      "#f3ff3e",
+      "#fcc700",
+      "#ff7700",
+      "#e93100",
+      "#b50000",
+      "#900000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "PP [g C/y m\u00b2]"
+  },
+  "title": "Ocean net primary production (BICEP)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -85,
+          180,
+          85
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1998-01-28T00:00:00Z",
+          "2020-12-11T03:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "roles": "licensor, producer, processor",
+      "url": "https://earth.esa.int/eogateway/search?category=data&data_access_type=data%20description&mission=envisat&instrument=meris"
+    },
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://data.nasa.gov/browse"
+    },
+    {
+      "name": "GeoEye",
+      "roles": "licensor, producer",
+      "url": "https://www.maxar.com/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "NPP"
+    ],
+    "themes": [
+      "oceans"
+    ],
+    "satellite": [
+      "Suomi",
+      "Aqua",
+      "OrbView-2",
+      "Envisat"
+    ],
+    "sensor": [
+      "MERIS",
+      "SeaWiFS",
+      "MODIS",
+      "VIIRS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://climate.esa.int/en/projects/ocean-colour/news-and-events/news/version-4-2-data-release/",
+      "type": "text/html",
+      "title": "Version 4.2 Data Release",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://bicep-project.org/",
+      "type": "text/html",
+      "title": "Biological Pump and Carbon Exchange Processes (BICEP) project",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://catalogue.ceda.ac.uk/uuid/69b2c9c6c4714517ba10dab3515e4ee6",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

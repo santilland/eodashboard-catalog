@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "ESDC_kndvi",
+  "stac_version": "1.1.0",
+  "description": "# Kernel Normalized Difference Vegetation Index\n\nMODIS/Terra+Aqua BRDF/Albedo Nadir BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg CMG and Vegetation Indices\n\nThe kNDVI is a nonlinear generalization of the normalized difference vegetation index (NDVI). \n\nVegetation indices are derived from spectral reflectance data and are widely used in remote sensing of the biosphere, as they represent robust proxies for canopy structure, leaf pigment content, and, subsequently, plant photosynthetic potential.\n\n\n### Additional information\n\n- The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ESDC_kndvi/collection.json",
+      "type": "application/json",
+      "title": "Kernel NDVI (daily)",
+      "endpointtype": "xcube_zarr",
+      "subtitle": "BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg",
+      "code": "ESDC_kndvi",
+      "id": "ESDC_kndvi",
+      "themes": [
+        "biomass"
+      ],
+      "yAxis": "1",
+      "tags": [
+        "CO2",
+        "Atmosphere",
+        "Photosynthesis",
+        "Open data",
+        "Vegetation Index",
+        "Carbon"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "ESDC_kndvi",
+      "satellite": [
+        "Other"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Gustau Camps-Valls et al., A unified vegetation index for quantifying the terrestrial biosphere.Sci. Adv.7,eabc7447(2021).\n",
+      "doi": "10.1126/sciadv.abc7447"
+    }
+  ],
+  "subtitle": "BRDF-Adjusted Reflectance Daily L3 Global 0.05 Deg",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_kndvi/ESDC_kndvi.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "CO2",
+    "Atmosphere",
+    "Photosynthesis",
+    "Open data",
+    "Vegetation Index",
+    "Carbon"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "ESDC_kndvi",
+  "satellite": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#a50026",
+      "#cb2527",
+      "#e75136",
+      "#f7814c",
+      "#fdb264",
+      "#fed885",
+      "#fff3ab",
+      "#f0f9ab",
+      "#d1ec86",
+      "#aadb6d",
+      "#7ac665",
+      "#43ac5a",
+      "#148d4a",
+      "#006837"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "KNDVI"
+  },
+  "title": "Kernel NDVI (daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-05T00:00:00Z",
+          "2021-12-23T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ESDC_kndvi"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "Other"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_kndvi/ESDC_kndvi.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_kndvi/ESDC_kndvi_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_kndvi/ESDC_kndvi.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://viewer.earthsystemdatalab.net/",
+      "type": "text/html",
+      "title": "Data served from the Earth System Data Lab xcube server",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

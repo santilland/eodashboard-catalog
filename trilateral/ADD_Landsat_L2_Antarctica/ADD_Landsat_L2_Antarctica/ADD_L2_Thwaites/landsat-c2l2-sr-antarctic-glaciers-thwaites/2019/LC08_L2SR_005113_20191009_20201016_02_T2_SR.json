@@ -1,0 +1,226 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
+  "id": "LC08_L2SR_005113_20191009_20201016_02_T2_SR",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -103.22209083554011,
+          -74.41312310536452
+        ],
+        [
+          -108.52592598766341,
+          -73.50376138963412
+        ],
+        [
+          -112.28696351944545,
+          -74.9102867624659
+        ],
+        [
+          -106.6911145178419,
+          -75.90325162899936
+        ],
+        [
+          -103.22209083554011,
+          -74.41312310536452
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -112.28696351944545,
+    -75.90325162899936,
+    -103.22209083554011,
+    -73.50376138963412
+  ],
+  "properties": {
+    "created": "2022-07-06T20:34:47.914000+00:00",
+    "updated": "2022-07-06T20:34:47.914000+00:00",
+    "datetime": "2019-10-09T15:16:56.581656Z",
+    "platform": "LANDSAT_8",
+    "proj:shape": [
+      8011,
+      7941
+    ],
+    "instruments": [
+      "OLI",
+      "TIRS"
+    ],
+    "eo:cloud_cover": 12.53,
+    "proj:transform": [
+      30,
+      0,
+      -1711515,
+      0,
+      -30,
+      -386685
+    ],
+    "view:off_nadir": 0,
+    "landsat:wrs_row": "113",
+    "landsat:scene_id": "LC80051132019282LGN00",
+    "landsat:wrs_path": "005",
+    "landsat:wrs_type": "2",
+    "view:sun_azimuth": 57.63693561,
+    "landsat:correction": "L2SR",
+    "view:sun_elevation": 14.79601627,
+    "landsat:cloud_cover_land": 12.49,
+    "landsat:collection_number": "02",
+    "landsat:collection_category": "T2",
+    "proj:code": "EPSG:3031"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Thwaites Glacier"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-antarctic-glaciers-thwaites/items/LC08_L2SR_005113_20191009_20201016_02_T2_SR/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "ADD_L2_Thwaites"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Thwaites Glacier"
+    }
+  ],
+  "assets": {
+    "red": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B4.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Red Band (B4)",
+      "description": "Collection 2 Level-2 Red Band (B4) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B4",
+          "common_name": "red",
+          "center_wavelength": 0.65
+        }
+      ],
+      "file:checksum": "1340087ae8707e2715c275cce36d19cd5abdee588475d97975d3da5acaebdb81e9c3d6b223f25cad57bc1602c1bf5368499d17cdc4a699b62faf7d5c562f6e59983a",
+      "roles": [
+        "data"
+      ]
+    },
+    "blue": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B2.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Blue Band (B2)",
+      "description": "Collection 2 Level-2 Blue Band (B2) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B2",
+          "common_name": "blue",
+          "center_wavelength": 0.48
+        }
+      ],
+      "file:checksum": "134012148db3f4c0c2357913412d949106dd0d0df6dfeeedae77061fd5e6d6a2cc90bc7b63e93e1444ff8ca94a8161a34438d0dbf0bbcfd0cbb5153ebb10048b0cfa",
+      "roles": [
+        "data"
+      ]
+    },
+    "green": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B3.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Green Band (B3)",
+      "description": "Collection 2 Level-2 Green Band (B3) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B3",
+          "common_name": "green",
+          "center_wavelength": 0.56
+        }
+      ],
+      "file:checksum": "1340ce9c4fcd2cd743ab6f90f11c11079600c6de18b56117d787eae7648ec3622bfc99efbf43bff8c149a290be3eb2c45ea347db3187b0691e2bd538962e42581488",
+      "roles": [
+        "data"
+      ]
+    },
+    "index": {
+      "href": "https://landsatlook.usgs.gov/stac-browser/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2"
+    },
+    "nir08": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B5.TIF",
+      "file:checksum": "13402de1af5f07181ad41ea4d9f709b1a2bd984ac4bb33521bd8cfbb3e437641a347b4a77b6d79e598ce6992724991342035d46eb43b8a0cc0a8b596581e5aeec11b"
+    },
+    "swir16": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B6.TIF",
+      "file:checksum": "134041b3a980a6e939695402de5ac55978d09449c7c6b9c54a40c175cc43d2675e38816c07324896f2d9a39c16d50941e75166445e1272a4d8abcedbbf52ef4fa5ac"
+    },
+    "swir22": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B7.TIF",
+      "file:checksum": "13406b51bb5298022c4df127ed10f514394487964fa302976ed62ea4e9cb7b798498767bbb03e2cf819e07e1acc35fddd17f088fb28e764125fe7eed1f10956df775"
+    },
+    "ANG.txt": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_ANG.txt",
+      "file:checksum": "1340f0245327ac2c09838b8c18eb46478fd4a837d798f0299fbae0742d22bcab0b2fc37ef59158f3ee2acce631619eea3f3d81499657c21bebf5e9bae04dd293a005"
+    },
+    "MTL.txt": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_MTL.txt",
+      "file:checksum": "13401067bd718a3562eda30c67e4557f34ebf4f0ab32cf85b36669bc1c57b66e5aba3e797a2eb2d76b311088ae496f9b99f5174566cf5fbb38150e61501a8946fa79"
+    },
+    "MTL.xml": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_MTL.xml",
+      "description": "Collection 2 Level-1 Product Metadata File (xml)",
+      "file:checksum": "1340b5f6288682c0c737fed09615e0c42c0a50653b386970fcb633029991ab38e23357707d242fd59ef78f6e7daad6a8c9e0e84912ff6aee9859a3cf93fd38b9e8d3"
+    },
+    "coastal": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_B1.TIF",
+      "file:checksum": "1340661878d57d5232926b1a5a92ae7ecb53f6f77fd3c2aee81b229632466bac530c8258c00b3bd5d2b088b6d57091261ecea7f98d62e620e4b3ae1840c5ceac816f"
+    },
+    "MTL.json": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_MTL.json",
+      "file:checksum": "1340fbd5bb44546ceb3afdef8c3a31b04a9bc602fd9b6f0b079df41c5fc0236dbc00f034b26bcec138fdf4bcc329fa653b145d11b448dfc5f74721016961a8952d57"
+    },
+    "qa_pixel": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_QA_PIXEL.TIF",
+      "file:checksum": "134055a0d09dc3b74c2ed4f8a3f4805acb4cb87ba35ade85d2b3be0badbf7e0e7bca48f2ab057f4cd45cf608cc53aa8d38ec59098de5517f5d8ac3473f0b45686060"
+    },
+    "qa_radsat": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_QA_RADSAT.TIF",
+      "file:checksum": "134081b8deca0886665a0b763ea1f8642cf96c77c76e300d18a63a9ee942a197d8e8a26fa997bf513e4d1b690e4bf645072a54bb7339e012b7777a57c7d56696bbac"
+    },
+    "thumbnail": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_thumb_small.jpeg",
+      "type": "image/jpeg",
+      "title": "Thumbnail image",
+      "file:checksum": "1340daad6127b773e09091f4675a832b9ad1a0d7188ff2f1b58eb19c1a1e8ef322e130714cc8cb6ee52119ef63c4150153b0fe760b51c9342ced6261f3e69b56cf3a",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "qa_aerosol": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_SR_QA_AEROSOL.TIF",
+      "description": "Collection 2 Level-2 Aerosol Quality Analysis Band (ANG) Surface Reflectance",
+      "file:checksum": "1340aad0fb456836b30eec382c88e39cbfd1ba360ac834a7a1f47db839820cf829ae71e8d62519f8bca1157c1ef26a03eda9f6557c1945f3922780742f2564ddb260"
+    },
+    "reduced_resolution_browse": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2019/005/113/LC08_L2SR_005113_20191009_20201016_02_T2/LC08_L2SR_005113_20191009_20201016_02_T2_thumb_large.jpeg",
+      "file:checksum": "1340d8710608a63e6ceffda38aabc236430110c3823b35de7a363e5763d2441cb8a254670f7d868c52a21315fef29e9d4922de380df61cb7e6b7b32a5eee92a94480"
+    }
+  },
+  "collection": "landsat-c2l2-sr-antarctic-glaciers-thwaites"
+}

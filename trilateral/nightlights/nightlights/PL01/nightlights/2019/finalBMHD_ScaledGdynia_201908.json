@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "finalBMHD_ScaledGdynia_201908",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          18.357982,
+          54.422751
+        ],
+        [
+          18.569061,
+          54.422751
+        ],
+        [
+          18.569061,
+          54.584515
+        ],
+        [
+          18.357982,
+          54.584515
+        ],
+        [
+          18.357982,
+          54.422751
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    18.357982,
+    54.422751,
+    18.569061,
+    54.584515
+  ],
+  "properties": {
+    "end_datetime": "2019-08-31T00:00:00+00:00",
+    "start_datetime": "2019-08-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/nightlights-hd-monthly/items/finalBMHD_ScaledGdynia_201908/map?bidx=1&assets=cog_default&rescale=0%2C255&colormap_name=inferno",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledGdynia_201908.tif&resampling_method=nearest&bidx=1&colormap_name=inferno&rescale=0,255",
+      "type": "image/png",
+      "title": "nightlights"
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Nightlights from SUOMI-NPP"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Gdynia"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledGdynia_201908.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        18.357982,
+        54.422751,
+        18.569061,
+        54.584515
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        1456,
+        1900
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint16",
+          "histogram": {
+            "max": 255.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              34591,
+              30878,
+              31422,
+              29719,
+              27667,
+              23544,
+              18398,
+              15838,
+              9889,
+              8632
+            ]
+          },
+          "statistics": {
+            "mean": 100.51467616164595,
+            "stddev": 66.04104442911702,
+            "maximum": 255,
+            "minimum": 1,
+            "valid_percent": 28.68456409235669
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.357982,
+              54.422751
+            ],
+            [
+              18.569061,
+              54.422751
+            ],
+            [
+              18.569061,
+              54.584515
+            ],
+            [
+              18.357982,
+              54.584515
+            ],
+            [
+              18.357982,
+              54.422751
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.00011109421052631663,
+        0.0,
+        18.357982,
+        0.0,
+        -0.00011110164835165187,
+        54.584515,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/nightlights-hd-monthly/items/finalBMHD_ScaledGdynia_201908/preview.png?bidx=1&assets=cog_default&rescale=0%2C255&colormap_name=inferno",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "nightlights"
+}

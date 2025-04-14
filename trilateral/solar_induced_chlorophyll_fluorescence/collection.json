@@ -1,0 +1,190 @@
+{
+  "type": "Collection",
+  "id": "solar_induced_chlorophyll_fluorescence",
+  "stac_version": "1.1.0",
+  "description": "## Solar Induced Chlorophyll Fluorescence from Sentinel-5p TROPOMI\n\n\nTROPOMI solar-induced chlorophyll fluorescence (SIF) shows the photosynthetic activity of plant ecosystem.\nPlant absorbs sunlight but re-emit a small fraction of energy as SIF, which is strongly related to carbon uptake of CO2 through photosynthesis over plant area (TROPOMI SIF in monthly average [mW/m2/sr/nm]).\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./solar_induced_chlorophyll_fluorescence/collection.json",
+      "type": "application/json",
+      "title": "Solar induced chlorophyll fluorescence",
+      "endpointtype": "WMS_Time",
+      "subtitle": "SIF monthly average from Sentinel-5p TROPOMI [mW/m2/sr/nm]",
+      "code": "SIF",
+      "id": "solar_induced_chlorophyll_fluorescence",
+      "themes": [
+        "agriculture"
+      ],
+      "tags": [
+        "photosynthesis"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "SIF",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5p"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "K\u00f6ehler, P., Frankenberg, C., Magney, T. S., Guanter, L., Joiner, J., & Landgraf, J. (2018). \nGlobal retrievals of solar-induced chlorophyll fluorescence with TROPOMI. First results and intersensor comparison to OCO-2. Geophysical Research Letters, 45, 10,456\u201310,463.\n",
+      "doi": "10.1029/2018GL079031"
+    },
+    {
+      "citation": "NOVELTIS, UPV, SRON, LSCE, ESA (2021). \nThe TROPOSIF global sun-induced fluorescence dataset from the TROPOMI mission.\n",
+      "doi": "10.5270/esa-s5p_innovation-sif-20180501_20210320-v2.1-202104"
+    },
+    {
+      "citation": "Guanter, L., Bacour, C., Schneider, A., Aben, I., van Kempen, T. A., Maignan, F., Retscher, C., K\u00f6hler, P., Frankenberg, C., Joiner, J., Zhang, Y. (2021). \nThe TROPOSIF global sun-induced fluorescence dataset from the Sentinel-5P TROPOMI mission, Earth Syst. Sci.\n",
+      "doi": "10.5194/essd2021-199"
+    }
+  ],
+  "subtitle": "SIF monthly average from Sentinel-5p TROPOMI [mW/m2/sr/nm]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIF_solar_induced_chlorophyll_fluorescence/SIF_solar_induced_chlorophyll_fluorescence.png",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "photosynthesis"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "SIF",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5p"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      3
+    ],
+    "range": [
+      "#F0F0E5",
+      "#D5E5C6",
+      "#A0C9AC",
+      "#8AA69A"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[mW/m\u00b2/sr/nm]"
+  },
+  "title": "Solar induced chlorophyll fluorescence",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ],
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-06-15T23:59:59.500000Z",
+          "2019-10-16T11:59:59.500000Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "roles": "licensor",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "name": "ESA",
+      "roles": "producer, processor",
+      "url": "https://s5p-troposif.noveltis.fr/data-access/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "SIF"
+    ],
+    "themes": [
+      "agriculture"
+    ],
+    "satellite": [
+      "Sentinel-5p"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIF_solar_induced_chlorophyll_fluorescence/SIF_solar_induced_chlorophyll_fluorescence.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIF_solar_induced_chlorophyll_fluorescence/SIF_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIF_solar_induced_chlorophyll_fluorescence/SIF_solar_induced_chlorophyll_fluorescence.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "ftp://fluo.gps.caltech.edu/data/tropomi/",
+      "type": "text/html",
+      "title": "CALTECH data access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://s5p-troposif.noveltis.fr/data-access/",
+      "type": "text/html",
+      "title": "ESA \u2013 TROPOSIF data access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://s5p-troposif.noveltis.fr/wp-content/uploads/2021/05/NOV-FE-0956-MU-019_v2.0.pdf",
+      "type": "text/html",
+      "title": "ESA \u2013 TROPOSIF documentation",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

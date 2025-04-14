@@ -1,0 +1,152 @@
+{
+  "type": "Collection",
+  "id": "Modis_SNPP_2023",
+  "stac_version": "1.1.0",
+  "description": "Modis_SNPP_2023/Modis_SNPP_2023.md",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Modis_SNPP_2023/collection.json",
+      "type": "application/json",
+      "title": "Active Fires (MODIS)",
+      "endpointtype": "Collection-only_OverwriteTimes",
+      "code": "Modis_SNPP_2023",
+      "id": "Modis_SNPP_2023",
+      "themes": [
+        "extreme-events"
+      ],
+      "tags": [
+        "Fire",
+        "Open data"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "Modis_SNPP_2023",
+      "sensor": [
+        "MODIS"
+      ],
+      "satellite": [
+        "Terra",
+        "Aqua"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Modis_SNPP_2023/Modis_SNPP_2023.png",
+  "themes": [
+    "extreme-events"
+  ],
+  "tags": [
+    "Fire",
+    "Open data"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "Modis_SNPP_2023",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Terra",
+    "Aqua"
+  ],
+  "title": "Active Fires (MODIS)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -85,
+          180,
+          85
+        ],
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-01-01T00:00:00Z",
+          "2023-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://firms.modaps.eosdis.nasa.gov/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "Modis_SNPP_2023"
+    ],
+    "themes": [
+      "extreme-events"
+    ],
+    "satellite": [
+      "Aqua",
+      "Terra"
+    ],
+    "sensor": [
+      "MODIS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Modis_SNPP_2023/Modis_SNPP_2023.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Modis_SNPP_2023/Modis_SNPP_2023.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://modis-fire.umd.edu/guides.html",
+      "type": "text/html",
+      "title": "User's Guides",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://modis-fire.umd.edu/ba.html",
+      "type": "text/html",
+      "title": "Burned Area Products",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://firms.modaps.eosdis.nasa.gov/download/",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

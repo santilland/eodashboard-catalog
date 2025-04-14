@@ -1,0 +1,273 @@
+{
+  "type": "Collection",
+  "id": "Lakes_SWT_surface_water_temperature",
+  "stac_version": "1.1.0",
+  "description": "# Lake surface water temperature (ESA CCI)\r\n\r\nLakes and enclosed inland seas are integrators of environmental and climatic changes occurring within their contributing basins.\r\nFactors driving lake conditions vary widely across space and time, and lakes, in turn, play an essential role in local and global climate regulation,\r\nwith positive and negative feedback depending on the catchment. \r\nnderstanding the complex behaviour of lakes in a changing environment is essential to effective water resource management and mitigation of climate change effects.\r\n\r\nLakes have been observed as sentinels of climate change, both directly and indirectly, through watershed changes.\r\nLakes integrate responses over time, and studies of globally distributed lakes can capture different aspects of climate change.\r\nTherefore, a global and consistent climate data record of lakes is essential to mitigate and adapt to climate change.\r\n\r\n## Dataset Description: \r\n\r\nThis dataset contains the Lakes Essential Climate Variable, which is comprised of processed satellite observations at the global scale,\r\nover the period 1992-2020, for over 2000 inland water bodies. This dataset was produced by the European Space Agency (ESA) Lakes Climate Change Initiative (Lakes_cci) project. \r\n\r\nThis is version 2.0.2 of the dataset. The five thematic climate variables included in this dataset are: \r\n\r\n- Lake Water Level (LWL), derived from satellite altimetry, is fundamental to understand the balance between water inputs and water loss and their connection with regional and global climate change\r\n- Lake Water Extent (LWE), modelled from the relation between LWL and high-resolution spatial extent observed at set time-points, describes the areal extent of the water body. This allows the observation of drought in arid environments, expansion in high Asia, or impact of large-scale atmospheric oscillations on lakes in tropical regions for example.\r\n- Lake Surface Water temperature (LSWT), derived from optical and thermal satellite observations, is correlated with regional air temperatures and is informative about vertical mixing regimes, driving biogeochemical cycling and seasonality.\r\n- Lake Ice Cover (LIC), determined from optical observations, describes the freeze-up in autumn and break-up of ice in spring, which are proxies for gradually changing climate patterns and seasonality.\r\n- Lake Water-Leaving Reflectance (LWLR), derived from optical satellite observations, is a direct indicator of biogeochemical processes and habitats in the visible part of the water column (e.g. seasonal phytoplankton biomass fluctuations), and an indicator of the frequency of extreme events (peak terrestrial run-off, changing mixing conditions).\r\n\r\nData generated in the Lakes_cci are derived from multiple satellite sensors including: TOPEX/Poseidon, Jason, ENVISAT, SARAL, Sentinel 2-3, Landsat OLI, ERS, MODIS Terra/Aqua and Metop. \r\n\r\nDetailed information about the generation and validation of this dataset is available from the Lakes_cci documentation available on the project website and in Carrea, L., Cr\u00e9taux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023). [https://doi.org/10.1038/s41597-022-01889-z](https://doi.org/10.1038/s41597-022-01889-z)\r\n\r\n\r\n## More information\r\n- [Data Documentation](https://climate.esa.int/en/projects/lakes/key-documents-lakes/)\r\n- [CCI Lakes project website](https://climate.esa.int/en/projects/lakes/about/).\r\n- Contact: \"[ESA](mailto:cci-lakes.contact@groupcls.com)\"\r\n- Provider: \"[ESA](http://www.esa.int/)\"\r\n- License: The Lakes CCI data are made available under a Creative Commons License by Attribution (CC By 4.0) ([details](https://creativecommons.org/licenses/by/4.0/))\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Aral/collection.json",
+      "type": "application/json",
+      "title": "Aral",
+      "id": "Aral",
+      "latlng": "45.303,58.581",
+      "name": "Aral"
+    },
+    {
+      "rel": "child",
+      "href": "./Biwa/collection.json",
+      "type": "application/json",
+      "title": "Biwa",
+      "id": "Biwa",
+      "latlng": "35.284,136.095",
+      "name": "Biwa"
+    },
+    {
+      "rel": "child",
+      "href": "./Tonle_sap/collection.json",
+      "type": "application/json",
+      "title": "Tonl\u00e9 Sap",
+      "id": "Tonle_sap",
+      "latlng": "12.7,104.2",
+      "name": "Tonl\u00e9 Sap"
+    },
+    {
+      "rel": "child",
+      "href": "./Vanern/collection.json",
+      "type": "application/json",
+      "title": "V\u00e4nern",
+      "id": "Vanern",
+      "latlng": "59.07,13.535",
+      "name": "V\u00e4nern"
+    },
+    {
+      "rel": "child",
+      "href": "./Balaton/collection.json",
+      "type": "application/json",
+      "title": "Balaton",
+      "id": "Balaton",
+      "latlng": "46.825,17.77",
+      "name": "Balaton"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Lakes_SWT_surface_water_temperature",
+      "wms:layers": [
+        "LAKES_SURFACE_WATER_TEMPERATURE"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "type": "text/html"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_SWT_surface_water_temperature/Lakes_SWT_surface_water_temperature.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-9fdb8c27-9000-4912-b715-1465f840a1db"
+    },
+    {
+      "rel": "example",
+      "href": "https://eurodatacube.com/notebooks/curated/EDC_Access_CCI_data.ipynb",
+      "type": "application/x-ipynb+json",
+      "title": "Accessing CCI data with xcube",
+      "example:language": "Jupyter Notebook",
+      "example:container": true
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes surface water temperature"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Carrea, L., Cr\u00e9taux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
+      "doi": "10.1038/s41597-022-01889-z"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_SWT_surface_water_temperature/Lakes_SWT_surface_water_temperature.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Climate Change Initiative",
+    "Water quality",
+    "Multi-sensors",
+    "Open data"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "Lakes_SWT",
+  "satellite": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      270,
+      310
+    ],
+    "range": [
+      "#274f85",
+      "#568dba",
+      "#80aecf",
+      "#c5dbe9",
+      "#f6f6f6",
+      "#f3d3c0",
+      "#e3a48e",
+      "#b7534a",
+      "#812028"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Lake Surface Temperature [K]"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Lakes surface water temperature",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          12.283333333333328,
+          12.350000000000005,
+          136.28333333333333,
+          59.42499999999999
+        ],
+        [
+          57.99999999999999,
+          44.0,
+          62.0,
+          47.00000000000001
+        ],
+        [
+          135.85,
+          34.97500000000001,
+          136.28333333333333,
+          35.525
+        ],
+        [
+          103.60000000000001,
+          12.350000000000005,
+          104.65833333333335,
+          13.3
+        ],
+        [
+          12.283333333333328,
+          58.34166666666667,
+          14.158333333333335,
+          59.42499999999999
+        ],
+        [
+          17.216666666666665,
+          46.650000000000006,
+          18.199999999999992,
+          47.1
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2010-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "ESA",
+      "url": "https://www.esa.int/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_SWT_surface_water_temperature/SWT_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_SWT_surface_water_temperature/Lakes_SWT_surface_water_temperature.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://climate.esa.int/en/projects/lakes/key-documents-lakes/",
+      "type": "text/html",
+      "title": "Data Documentation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://climate.esa.int/en/projects/lakes/about/",
+      "type": "text/html",
+      "title": "CCI Lakes project website",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://catalogue.ceda.ac.uk/uuid/a07deacaffb8453e93d57ee214676304",
+      "type": "text/html",
+      "title": "Data Source",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "https://www.earthsystemdatalab.net/",
+      "type": "text/html",
+      "title": "DeepESDL (Earth System Data Lab)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_5": {
+      "href": "https://viewer.earthsystemdatalab.net/",
+      "type": "text/html",
+      "title": "Lexcube - visualise datasets in a 3D cube",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_6": {
+      "href": "https://viewer.earthsystemdatalab.net/",
+      "type": "text/html",
+      "title": "xcube viewer - visualise DeepESDL datacubes (zarr) on the web",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_7": {
+      "href": "https://collections.eurodatacube.com/climate-change-initiative/",
+      "type": "text/html",
+      "title": "Euro Data Cube CCI Essential Climate Variables collection",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

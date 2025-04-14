@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Nagoya",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        136.7,
+        34.75
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    136.69,
+    34.74,
+    136.70999999999998,
+    34.76
+  ],
+  "properties": {
+    "start_datetime": "2019-01-05T00:00:00Z",
+    "end_datetime": "2025-02-22T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration"
+    }
+  ],
+  "assets": {},
+  "collection": "N3b_water_quality_chl_chart"
+}

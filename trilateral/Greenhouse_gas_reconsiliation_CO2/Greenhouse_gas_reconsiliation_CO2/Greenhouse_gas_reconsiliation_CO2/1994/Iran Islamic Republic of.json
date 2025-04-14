@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Iran Islamic Republic of",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        51.417,
+        35.7
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    51.407000000000004,
+    35.690000000000005,
+    51.427,
+    35.71
+  ],
+  "properties": {
+    "start_datetime": "1994-01-01T00:00:00Z",
+    "end_datetime": "2010-01-01T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from CCI RECCAP2"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from CCI RECCAP2"
+    }
+  ],
+  "assets": {},
+  "collection": "Greenhouse_gas_reconsiliation_CO2"
+}

@@ -1,0 +1,245 @@
+{
+  "type": "Collection",
+  "id": "soil_moisture_content",
+  "stac_version": "1.1.0",
+  "description": "## Soil Moisture Content\n\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature, Vegetation Index and anomaly, etc. Rainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2022/2022-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2022/2022-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2022/2022-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2022/2022-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2022/2022-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2022/2022-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2023/2023-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2023/2023-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2023/2023-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2023/2023-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2023/2023-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2023/2023-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2024/2024-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2024/2024-02-15T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-15T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2024/2024-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2024/2024-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2024/2024-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_content/2024/2024-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-15T23:59:30Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "type": "image/jpeg",
+      "title": "soil_moisture_content",
+      "wms:layers": [
+        "SMC-GCOMW-World-Monthly"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Soil moisture content from GSMaP"
+    }
+  ],
+  "subtitle": "Soil moisture content",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMCG_soil_moisture_content/SMCG_soil_moisture_content.png",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "SMCG",
+  "satellite": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "NaN",
+      50
+    ],
+    "range": [
+      "#ffffff",
+      "#ffffff",
+      "#2727d5",
+      "#00b330",
+      "#1ccb9a",
+      "#ffe01c",
+      "#ff5100",
+      "#b10600"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Soil moisture content"
+  },
+  "endpointtype": "WMS_Time",
+  "title": "Soil moisture content from GSMaP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-16T11:59:30Z",
+          "2024-06-15T23:59:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMCG_soil_moisture_content/SMCG_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMCG_soil_moisture_content/SMCG_soil_moisture_content.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.jpmap-jaxa.jp/jpmap/en/user_guide/",
+      "type": "text/html",
+      "title": "Jaxa Public-health Monitor and Analysis Platform",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/",
+      "type": "text/html",
+      "title": "Jaxa Global Satellite Mapping of Precipitation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf",
+      "type": "text/html",
+      "title": "GSMaP Documentation",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

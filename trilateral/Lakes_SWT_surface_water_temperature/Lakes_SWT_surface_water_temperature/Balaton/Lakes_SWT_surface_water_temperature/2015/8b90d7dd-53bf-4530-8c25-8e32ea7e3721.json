@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "8b90d7dd-53bf-4530-8c25-8e32ea7e3721",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          17.216666666666665,
+          46.650000000000006
+        ],
+        [
+          18.199999999999992,
+          46.650000000000006
+        ],
+        [
+          18.199999999999992,
+          47.1
+        ],
+        [
+          17.216666666666665,
+          47.1
+        ],
+        [
+          17.216666666666665,
+          46.650000000000006
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    17.216666666666665,
+    46.650000000000006,
+    18.199999999999992,
+    47.1
+  ],
+  "properties": {
+    "datetime": "2015-06-29T00:00:00Z",
+    "proj:bbox": [
+      17.216666666666665,
+      46.650000000000006,
+      18.199999999999992,
+      47.1
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            17.216666666666665,
+            46.650000000000006
+          ],
+          [
+            18.199999999999992,
+            46.650000000000006
+          ],
+          [
+            18.199999999999992,
+            47.1
+          ],
+          [
+            17.216666666666665,
+            47.1
+          ],
+          [
+            17.216666666666665,
+            46.650000000000006
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Lakes_SWT_surface_water_temperature",
+      "wms:layers": [
+        "LAKES_SURFACE_WATER_TEMPERATURE"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2015-06-29T00:00:00Z/2015-06-29T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Lakes surface water temperature"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Balaton"
+    }
+  ],
+  "assets": {},
+  "collection": "Lakes_SWT_surface_water_temperature"
+}

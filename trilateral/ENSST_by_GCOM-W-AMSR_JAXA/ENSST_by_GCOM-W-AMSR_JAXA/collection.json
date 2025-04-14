@@ -1,0 +1,714 @@
+{
+  "type": "Collection",
+  "id": "ENSST_by_GCOM-W-AMSR_JAXA",
+  "stac_version": "1.1.0",
+  "description": "# Sea Surface Temperature by GCOM-W AMSR JAXA\nThis dataset, ENSST (Enhanced Sea Surface Temperature), provides global coverage of sea surface temperature (SST) data derived from the Advanced Microwave Scanning Radiometer 2 (AMSR2) onboard the GCOM-W (Global Change Observation Mission - Water) satellite. It is crucial for analyzing sea surface temperature variations across the globe, which are important for climate research, weather forecasting, and marine ecosystem studies. The dataset offers insights into oceanic conditions, supporting the monitoring of marine environments, weather patterns, and ocean circulation.\n\nThe dataset uses color gradients to represent different SST levels; cooler ocean temperatures are shown in darker blue hues, while warmer sea temperatures appear in shades of yellow to red, indicating regions of increased heat such as the tropics or areas impacted by oceanic currents.\n\n## Dataset description\nThe dataset covers global oceans, focusing on sea surface temperature to support studies in climate change, weather prediction, marine ecosystems, and oceanography.\n- Metric: Sea surface temperature values (measured in degrees Celsius, \u00b0C), providing a precise measurement of the thermal state of the ocean surface. The data can be further analyzed for temporal trends in ocean warming and cooling patterns.\n- Temporal coverage includes long-term, multi-year data, enabling robust analysis of trends in sea surface temperature and oceanic heat content over time.\n\nThe dataset was developed by [JAXA](https://global.jaxa.jp/), using the [AMSR2 sensor](https://www.earthdata.nasa.gov/sensors/amsr2) onboard the [GCOM-W satellite](https://global.jaxa.jp/projects/sat/gcom_w/).\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2024/f808f963-140f-43bb-8c8b-125ab3cc450b.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-10T12:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2024/591312fe-403c-4843-a2cd-df6e4e298198.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-01T12:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/b73204e2-2bd6-48ee-a6a2-ead4a7d051a6.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/977e68f9-0285-4359-8e20-c3deaed61cd6.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/c4cb8834-9956-4795-b37e-37fc8ba71157.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/0576596f-ff1b-491a-8349-9a5fdb44b5c1.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/3b85f571-3f2c-425c-9109-69d3fb2d19b7.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/5c3de664-59e7-4453-87b1-c6659c21e827.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/434481aa-f7bf-405f-82ad-106927de9794.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/f3e5ac2d-3a76-4669-b99b-3b985bcfa5df.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/f1465839-9d0d-4b64-9722-949b56602da9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/2f0ab921-7940-496d-af6b-dc7ffc264e7a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/b7987bee-b266-4624-91e1-4baad58df704.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/5c685f14-f863-47db-803c-d211bb0de764.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/71d3297c-2907-4ad0-aa9f-20b8154e69ad.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/83068a5b-0e44-42f7-9ecc-c0b14fce5d1b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/719f0da3-9c0e-43a0-83f8-0f59720235fa.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/618e60cc-6ed6-4ae7-b289-349ae940e16a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/23e4039b-43ec-4f0e-8b09-31767e52f454.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/eba18140-60c7-4223-a66b-0838e4bdfce9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/93a72f56-1ac6-474b-998a-db962be1b602.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/cfa8804a-d7a7-47cd-b8c7-db4504e51a89.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/57dcb876-232d-4f81-9117-2c49c5b6793b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/87e50e52-20ca-4c55-821b-6717b8e3ef6a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/56f3fc24-527f-49e0-a697-04b8b3e57465.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/17f3e25a-3984-43a1-b9fe-98aea1413b2b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/66104486-1b7e-442b-b533-0b831835361c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/c9bf4c7a-ba84-4895-9da4-607fad626d83.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/39861ca4-b1d6-4724-b04f-514b831b3c3a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/95585ed1-2c79-48c5-9da1-0376c4811b4d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/ae94028b-2a35-4d01-afaa-9f53abda1452.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/6fa92e69-b06c-4acf-ac79-7617b4d1104b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/e86e2547-7252-4c16-9375-45536d7ec565.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/8762f75c-ea3e-4349-a0ee-112794c86389.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/939eff4e-ce3d-40a6-b50b-248c6641a410.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/ca856203-a610-4195-83d3-01836cd4d827.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/81670cd3-2dab-4ea2-9710-584799d0235a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/21e4c6cd-bb1a-48df-95b8-66a718413c22.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/07470bea-fe0d-46fb-866e-e9d554537f4c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/e1acffe0-7a66-442d-9441-9856e174f4fb.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/6dbdb14f-82be-48e3-89d9-8440c3ba32bb.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/206ce519-1019-4217-900a-2e43524a5441.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/94d8e32a-ed7e-4ef3-8c2a-e1c60702d5e0.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/f32859d0-90f1-4a1d-bae5-55c33ae82638.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/68fc4249-230b-49b3-8729-7f1e245fbc4a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/942aac3c-85a9-43e4-9ff8-36f0e716095b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/813ff0cf-9db2-412c-960b-4182187dcd49.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/73f269d7-86da-42ce-80e8-d7c8c4a83663.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/cb997993-8817-437a-9bc3-7a12ed29268a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/49e74270-6302-4b6c-b9cd-7b5437d423ba.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/87cf566c-1a17-4fcb-9f35-7cf6c5bf8908.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/4ce9f1c4-de47-416f-a1ad-eb33d4def1fc.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/3c7c3534-9c2b-48aa-a2eb-39568b668141.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/82a9332a-fdbc-4c51-8c0a-e45747d13d31.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/fecf5706-e6ce-4abc-89e8-8b0ecae3a6b6.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/c3248a01-a113-4775-bfe5-26ad9837c8a0.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/6b7ba47b-06bd-4cd3-8e0c-93ff02066bc4.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/046ceda4-f988-4d0e-9d34-6f7e3023b3df.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/3bdcaa13-7e93-4526-a6e6-99456ade1d89.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/0296705a-3d56-4f5c-bb9d-768ae638a00a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/53333284-71b5-4234-bf6d-6e8063e8814d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/491183cf-08eb-42aa-bca1-b11c13a193cb.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/4e0e2cde-9560-46e0-8c67-27965c15b7c4.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/7762fbb7-54fb-4432-b2ed-e008d7e33a29.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/1948c93b-56de-496f-85eb-6341c9566bc2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/d0d5d1bf-f659-45e3-92f5-f2e0a4594790.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/b0f360f9-cf67-4df1-b430-4ab57f433eb2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/7f281005-bb9e-451b-a9d0-c1043764fa56.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/c93b15a1-9b9a-4c17-b558-2d0055a05bc7.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/69459403-8bf1-4496-8df0-743c9376edc9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/71da98eb-6961-42f1-890a-96461d4d2f48.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/5ee5621d-70ad-49c1-9c2b-be9e49d57e62.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/9fef3f60-46dd-4b91-9d54-85be421b5ee4.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/0e7ce176-e98a-4192-a6cc-77af5b6472a2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/93559385-d05e-437f-a0cc-02ddbbb3346a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/9d7b62d9-0200-45b3-ab08-0e0eeb5c2e70.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/03146a11-a55b-4273-8d3c-9b7238454d2b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/08c91d64-923f-43de-a60e-b949106c4465.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/19ad1d77-0b7a-41e9-b204-dce6d6d97f9e.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/78ef8429-0576-46a6-a6d1-a6ee882593ec.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/4c53a1f9-b9b5-4a8d-8156-c76e9b18ea81.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/bf1d57c0-3a52-4410-a0ea-2d1ce6901d01.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/bff0d6bb-0501-45f0-bd12-9ba59d302723.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/6dd0de6a-d115-4c0a-b517-600dde783313.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/5752dc01-c03b-4d7c-9493-7a4db1a9dafe.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/55b204fd-f104-4b00-94f1-5c7a4f9f0aeb.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/b7ebf8d2-079d-4e2c-ac58-2d72eef4a56a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/2a4d111a-645b-4b33-abb5-b8de92fe05e5.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/09a16929-b33f-458b-b4af-01f3c259aa70.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/e1c1fe00-ec59-434a-b557-f79ce9cc02fd.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/09b36986-2d54-47bc-a9b0-c5861715b3f0.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/77d1c710-26d1-4a9e-a4f5-34c6b39ef5f7.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/bca0d8e1-4eaa-477c-8baa-0967042f1801.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-cb154978-c54f-4e15-a39e-5da7e601194d/2023/5269e578-8c48-4f13-b9bc-1e15ca7066cf.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-01T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "ENSST_by_GCOM-W-AMSR_JAXA",
+      "wms:layers": [
+        "SST_BY_GCOM-W-AMSR_JAXA"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sea Surface Temperature (GCOM-W)"
+    }
+  ],
+  "themes": [
+    "oceans",
+    "extreme-events"
+  ],
+  "tags": [
+    "SST",
+    "El Nino",
+    "Climate Change",
+    "Open data"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "ENSST",
+  "sensor": [
+    "AMSR2"
+  ],
+  "satellite": [
+    "GCOM-W"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      40
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea Surface Temperature [\u00b0C]"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Sea Surface Temperature (GCOM-W)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-06-01T00:00:00Z",
+          "2024-08-10T12:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor",
+      "url": "https://global.jaxa.jp/"
+    },
+    {
+      "name": "JAXA GCOM project",
+      "roles": "producer",
+      "url": "https://suzaku.eorc.jaxa.jp/GCOM/index.html"
+    },
+    {
+      "name": "JAXA EORC",
+      "roles": "processor",
+      "url": "https://earth.jaxa.jp/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ENSST_by_GCOM-W-AMSR_JAXA/ENSST_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_1": {
+      "href": "https://earth.jaxa.jp/en/earthview/2023/08/31/7718/",
+      "type": "text/html",
+      "title": "Climate Change 2023. Sea Surface Temperature Rise and El Nino Event",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://data.earth.jaxa.jp/ja/datasets/#/id/JAXA.G-Portal_GCOM-W.AMSR2_standard.L3-SST.daytime.v4_global_daily",
+      "type": "text/html",
+      "title": "Dataset",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://earth.jaxa.jp/en/data/products/sea-surface-temperature/index.html",
+      "type": "text/html",
+      "title": "Sea Surface Temperature",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

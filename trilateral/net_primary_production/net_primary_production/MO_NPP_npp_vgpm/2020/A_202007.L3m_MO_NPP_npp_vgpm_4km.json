@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "A_202007.L3m_MO_NPP_npp_vgpm_4km",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0000050868518,
+          -90.00000508655744
+        ],
+        [
+          180.0000050868518,
+          -90.00000508655744
+        ],
+        [
+          180.0000050868518,
+          89.9999974571629
+        ],
+        [
+          -180.0000050868518,
+          89.9999974571629
+        ],
+        [
+          -180.0000050868518,
+          -90.00000508655744
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0000050868518,
+    -90.00000508655744,
+    180.0000050868518,
+    89.9999974571629
+  ],
+  "properties": {
+    "end_datetime": "2020-07-31T00:00:00+00:00",
+    "start_datetime": "2020-07-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/MO_NPP_npp_vgpm/items/A_202007.L3m_MO_NPP_npp_vgpm_4km/map?assets=cog_default&rescale=0%2C1500&colormap_name=jet",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Ocean net primary production (MODIS)"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/MO_NPP_npp_vgpm/A_202007.L3m_MO_NPP_npp_vgpm_4km.tif&resampling_method=nearest&bidx=1&colormap_name=jet&rescale=0.0,1500.0",
+      "type": "image/png",
+      "title": "net_primary_production"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Ocean net primary production (MODIS)"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202007.L3m_MO_NPP_npp_vgpm_4km.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -180.0000050868518,
+        -90.00000508655744,
+        180.0000050868518,
+        89.9999974571629
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        4320,
+        8640
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -32767.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 34561.35546875,
+            "min": 63.2254524230957,
+            "count": 11,
+            "buckets": [
+              204912,
+              2019,
+              689,
+              166,
+              70,
+              35,
+              12,
+              4,
+              2,
+              2
+            ]
+          },
+          "statistics": {
+            "mean": 592.9041561052566,
+            "stddev": 953.0560803301092,
+            "maximum": 34561.35546875,
+            "minimum": 63.2254524230957,
+            "valid_percent": 39.65587615966797
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0000050868518,
+              -90.00000508655744
+            ],
+            [
+              180.0000050868518,
+              -90.00000508655744
+            ],
+            [
+              180.0000050868518,
+              89.9999974571629
+            ],
+            [
+              -180.0000050868518,
+              89.9999974571629
+            ],
+            [
+              -180.0000050868518,
+              -90.00000508655744
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.041666667844178655,
+        0.0,
+        -180.0000050868518,
+        0.0,
+        -0.04166666725549082,
+        89.9999974571629,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/MO_NPP_npp_vgpm/items/A_202007.L3m_MO_NPP_npp_vgpm_4km/preview.png?assets=cog_default&rescale=0%2C1500&colormap_name=jet",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "MO_NPP_npp_vgpm"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Heathrow",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.4580423952680147,
+        51.469716296645025
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -0.4680423952680147,
+    51.45971629664503,
+    -0.4480423952680147,
+    51.47971629664502
+  ],
+  "properties": {
+    "start_datetime": "2019-01-09T11:06:46Z",
+    "end_datetime": "2022-12-27T11:16:47Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "assets": {},
+  "collection": "E13b_parked_airplanes"
+}

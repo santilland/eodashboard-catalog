@@ -1,0 +1,197 @@
+{
+  "type": "Collection",
+  "id": "N3a2_total_suspended_matter_tri_esa",
+  "stac_version": "1.1.0",
+  "description": "# Water Quality: Total suspended matter\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n\nThe Sentinel-3 satellite, part of the European Space Agency's Copernicus program, carries several instruments for Earth observation, including the Ocean and Land Colour Instrument (OLCI). OLCI is designed specifically to monitor Earth's oceans, coastal zones, and land surfaces. One of its key uses is to map the concentration of Total Suspended Matter (TSM) in oceans, lakes, and coastal areas, which is important for understanding water quality and sediment dynamics in aquatic ecosystems.\n\nWhen interpreting TSM concentration maps produced by Sentinel-3 OLCI, it\u2019s essential to understand the color scale used to represent different levels of suspended matter in the water. The scale typically goes from blue to red, where:\n\nBlue indicates low TSM concentration.\nRed indicates high TSM concentration.\n\n## Dataset description\n- Spectral Range: OLCI has 21 spectral bands in the visible to near-infrared (VNIR) range, optimized for observing ocean color, vegetation, and atmospheric properties.\n- TSM Detection: OLCI is particularly useful for detecting Total Suspended Matter concentrations, providing insights into sediment load, coastal erosion, and water quality in both marine and freshwater environments.\n- Spatial Resolution: It offers a spatial resolution of 300 meters, allowing for detailed observations of coastal and inland water areas, as well as land surfaces.\n- Wide Swath Coverage: The instrument covers a 1270 km swath on the Earth's surface, enabling near-global coverage every 2 to 3 days, depending on latitude.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./NorthAdriaticTSM/collection.json",
+      "type": "application/json",
+      "title": "North Adriatic",
+      "id": "NorthAdriaticTSM",
+      "latlng": "45.19752,13.02978",
+      "name": "North Adriatic"
+    },
+    {
+      "rel": "child",
+      "href": "./RhoneDeltaTSM/collection.json",
+      "type": "application/json",
+      "title": "Rhone Delta",
+      "id": "RhoneDeltaTSM",
+      "latlng": "43.4,4.94",
+      "name": "Rhone Delta"
+    },
+    {
+      "rel": "child",
+      "href": "./BarcelonaTSM/collection.json",
+      "type": "application/json",
+      "title": "Barcelona",
+      "id": "BarcelonaTSM",
+      "latlng": "40.985,1.769",
+      "name": "Barcelona"
+    },
+    {
+      "rel": "child",
+      "href": "./DanubeDeltaTSM/collection.json",
+      "type": "application/json",
+      "title": "Danube Delta",
+      "id": "DanubeDeltaTSM",
+      "latlng": "45.05,29.9",
+      "name": "Danube Delta"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "N3a2_total_suspended_matter_tri_esa",
+      "wms:layers": [
+        "AWS_N3_CUSTOM_TRILATERAL_TSMNN"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/script.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-698ade22-bc30-44d1-8751-159ee135f998"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Total suspended matter from Sentinel-3"
+    }
+  ],
+  "subtitle": "Total suspended matter maps",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
+  "yAxis": "%",
+  "themes": [
+    "oceans"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CHL",
+    "CMEMS",
+    "Marine monitoring",
+    "Total Suspended Matter",
+    "Marine",
+    "CAMS"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N3a2_TSM_esa",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#053264",
+      "#7fb9d7",
+      "#ffffff",
+      "#e68764",
+      "#731432"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Total suspended matter anomaly [%]"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Total suspended matter from Sentinel-3",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.49828179185742777,
+          40.49733319888819,
+          30.602052688598633,
+          45.8014030456543
+        ],
+        [
+          11.99828290939331,
+          44.49984836578369,
+          13.82183313369751,
+          45.8014030456543
+        ],
+        [
+          4.198280334472656,
+          42.99985694885254,
+          5.501642227172852,
+          43.49162673950195
+        ],
+        [
+          0.49828179185742777,
+          40.49733319888819,
+          2.5017124860966735,
+          41.50076675415039
+        ],
+        [
+          28.998117446899414,
+          44.39944076538086,
+          30.602052688598633,
+          45.60050964355469
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "ESA",
+      "url": "https://sentinel.esa.int/web/sentinel/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "type": "Collection",
+  "id": "harvested_parcels_evolution",
+  "stac_version": "1.1.0",
+  "description": "## Winter Cereals Growth and Harvest - Spain\n\nThis indicator aims at showing the winter cereals (e.g. winter wheat and barley) harvest evolution at parcel-level over the Spanish autonomous regions [Castilla y Le\u00f3n, Andalucia, Castilla-la-Mancha, Arag\u00f3n](https://agridata.ec.europa.eu/extensions/DashboardCereals/CerealsProduction.html?selections=MS%20Name%20(Production)-Spain) by means of Sentinel-1, Sentinel-2 and Landsat-8 data with 10 meters resolution and 2-3 days revisit time.\n\nTime series of Sentinel-2 vegetation indices and Sentinel-1 backscatter and coherence values have been processed and analyzed using the open source Sen4CAP (and upcoming Sen4Stat) processing systems. \n\nParcels dataset have been kindly shared by the national Paying Agency \u201cFondo Espa\u00f1ol de Garant\u00eda Agraria O.A.\u201d (FEGA).\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Comunidad Foral de Navarra.json",
+      "type": "application/geo+json",
+      "id": "ES22a",
+      "latlng": "42.643,-1.648",
+      "country": "ES",
+      "city": "Comunidad Foral de Navarra"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Comunidad Foral de Navarra.json",
+      "type": "application/geo+json",
+      "id": "ES22b",
+      "latlng": "42.644,-1.648",
+      "country": "ES",
+      "city": "Comunidad Foral de Navarra"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/La Rioja.json",
+      "type": "application/geo+json",
+      "id": "ES23a",
+      "latlng": "42.312,-2.505",
+      "country": "ES",
+      "city": "La Rioja"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/La Rioja.json",
+      "type": "application/geo+json",
+      "id": "ES23b",
+      "latlng": "42.313,-2.505",
+      "country": "ES",
+      "city": "La Rioja"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Aragon.json",
+      "type": "application/geo+json",
+      "id": "ES24a",
+      "latlng": "41.445,-0.646",
+      "country": "ES",
+      "city": "Aragon"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Aragon.json",
+      "type": "application/geo+json",
+      "id": "ES24b",
+      "latlng": "41.4445,-0.646",
+      "country": "ES",
+      "city": "Aragon"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Comunidad de Madrid.json",
+      "type": "application/geo+json",
+      "id": "ES30a",
+      "latlng": "40.409,-3.729",
+      "country": "ES",
+      "city": "Comunidad de Madrid"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Comunidad de Madrid.json",
+      "type": "application/geo+json",
+      "id": "ES30b",
+      "latlng": "40.4095,-3.729",
+      "country": "ES",
+      "city": "Comunidad de Madrid"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Castilla y Leon.json",
+      "type": "application/geo+json",
+      "id": "ES41a",
+      "latlng": "41.8375,-4.3976",
+      "country": "ES",
+      "city": "Castilla y Leon"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Castilla y Leon.json",
+      "type": "application/geo+json",
+      "id": "ES41b",
+      "latlng": "41.8376,-4.3976",
+      "country": "ES",
+      "city": "Castilla y Leon"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/CastillaLa Mancha.json",
+      "type": "application/geo+json",
+      "id": "ES42a",
+      "latlng": "39.743,-3.125",
+      "country": "ES",
+      "city": "Castilla-La Mancha"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/CastillaLa Mancha.json",
+      "type": "application/geo+json",
+      "id": "ES42b",
+      "latlng": "39.7431,-3.125",
+      "country": "ES",
+      "city": "Castilla-La Mancha"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Extremadura.json",
+      "type": "application/geo+json",
+      "id": "ES43a",
+      "latlng": "39.165,-6.138",
+      "country": "ES",
+      "city": "Extremadura"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Extremadura.json",
+      "type": "application/geo+json",
+      "id": "ES43b",
+      "latlng": "39.166,-6.138",
+      "country": "ES",
+      "city": "Extremadura"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Cataluna.json",
+      "type": "application/geo+json",
+      "id": "ES51a",
+      "latlng": "41.859,1.486",
+      "country": "ES",
+      "city": "Cataluna"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Cataluna.json",
+      "type": "application/geo+json",
+      "id": "ES51b",
+      "latlng": "41.8591,1.486",
+      "country": "ES",
+      "city": "Cataluna"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Comunidad Valenciana.json",
+      "type": "application/geo+json",
+      "id": "ES52a",
+      "latlng": "39.531,-0.632",
+      "country": "ES",
+      "city": "Comunidad Valenciana"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Comunidad Valenciana.json",
+      "type": "application/geo+json",
+      "id": "ES52b",
+      "latlng": "39.5311,-0.632",
+      "country": "ES",
+      "city": "Comunidad Valenciana"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Andalucia.json",
+      "type": "application/geo+json",
+      "id": "ES61a",
+      "latlng": "37.549,-4.872",
+      "country": "ES",
+      "city": "Andalucia"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Andalucia.json",
+      "type": "application/geo+json",
+      "id": "ES61b",
+      "latlng": "37.5491,-4.872",
+      "country": "ES",
+      "city": "Andalucia"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Region de Murcia.json",
+      "type": "application/geo+json",
+      "id": "ES62a",
+      "latlng": "37.918,-1.334",
+      "country": "ES",
+      "city": "Region de Murcia"
+    },
+    {
+      "rel": "item",
+      "href": "./harvested_parcels_evolution/2020/Region de Murcia.json",
+      "type": "application/geo+json",
+      "id": "ES62b",
+      "latlng": "37.919,-1.334",
+      "country": "ES",
+      "city": "Region de Murcia"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Harvested parcels"
+    }
+  ],
+  "subtitle": "Evolution of harvested parcels in percentage",
+  "yAxis": "Cumulative (%)",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Copernicus",
+    "Sen4CAP",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "ESA",
+    "NASA",
+    "USGS"
+  ],
+  "subcode": "E10a6",
+  "sensor": [
+    "C-SAR",
+    "MSI",
+    "OLI"
+  ],
+  "satellite": [
+    "Sentinel-1",
+    "Sentinel-2",
+    "Landsat-8"
+  ],
+  "geoDBID": "E10a6",
+  "endpointtype": "GeoDB",
+  "title": "Harvested parcels",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -6.148,
+          37.539,
+          1.496,
+          42.653999999999996
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-05-17T00:00:00Z",
+          "2020-08-02T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "FEGA",
+      "url": "https://www.fega.gob.es/en"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Comunidad Foral de Navarra",
+      "La Rioja",
+      "Aragon",
+      "Comunidad de Madrid",
+      "Castilla y Leon",
+      "Castilla-La Mancha",
+      "Extremadura",
+      "Cataluna",
+      "Comunidad Valenciana",
+      "Andalucia",
+      "Region de Murcia"
+    ],
+    "countries": [
+      "ES"
+    ]
+  }
+}

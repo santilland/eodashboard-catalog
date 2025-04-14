@@ -1,0 +1,331 @@
+{
+  "type": "Collection",
+  "id": "Biwa",
+  "stac_version": "1.1.0",
+  "description": "",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2017/2017-07-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2017/2017-12-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2017-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-03-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-05-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-06-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-07-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-08-04T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-10-03T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-11-07T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-11-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2018/2018-12-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2019/2019-04-16T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2019/2019-05-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2019/2019-08-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2019/2019-11-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-03-21T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-03-26T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-04-25T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-04-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-08-23T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-10-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2020/2020-10-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-03-31T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-04-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-04-15T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-04-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-05-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-07-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-09-27T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-10-22T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2021/2021-11-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-01-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-02-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-04-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-04-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-04-20T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-05-05T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-06-09T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-07-24T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-09-12T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-10-02T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2022/2022-11-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2023/2023-03-06T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2023/2023-03-11T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2023/2023-04-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./Biwa/2023/2023-05-10T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-10T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Lakes_S2L2A",
+      "wms:layers": [
+        "SENTINEL-2-L2A-TRUE-COLOR"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (Sentinel 2)"
+    }
+  ],
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "Biwa",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          135.133,
+          33.535,
+          138.1728,
+          35.7509
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-15T00:00:00Z",
+          "2023-05-10T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

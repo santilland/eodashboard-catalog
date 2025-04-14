@@ -1,0 +1,146 @@
+{
+  "type": "Collection",
+  "id": "HLS_NDVI",
+  "stac_version": "1.1.0",
+  "description": "## Normalized difference vegetation index from HLS\n\n## Dataset Description:\n\nDataset represents a NDVI calculated from Harmonized Landsat and Sentinel-2 Data over Punta Gorda, Florida, USA.\n\n- GeographicalCoverage: [-82.37,26.31,-81.9,27.03]\n- TemporalAvailability: \"['2022-09-05', '2022-09-30']\"\n- TemporalResolution: individual dates\n- Host: \"[VEDA](https://www.earthdata.nasa.gov/esds/veda)\"\n\n## Data Access\n\n- \"[VEDA Catalog](https://staging-stac.delta-backend.com/collections/hls-ndvi)\"\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./hls-ndvi/2022/ndvi_cog_2022-09-30_day.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/hls-ndvi/ndvi_cog_2022-09-30_day.tif",
+      "datetime": "2022-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./hls-ndvi/2022/ndvi_cog_2022-09-05_day.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/hls-ndvi/ndvi_cog_2022-09-05_day.tif",
+      "datetime": "2022-09-05T00:00:00Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=cfastie&rescale=-1,1",
+      "type": "image/png",
+      "title": "HLS_NDVI"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "NDVI from HLS"
+    }
+  ],
+  "subtitle": "NDVI calculated from Harmonized Landsat and Sentinel-2",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/thumbnail.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "Biomass",
+    "NDVI",
+    "Vegetation index",
+    "Sentinel-2",
+    "MSI",
+    "Landsat",
+    "Ecosystem",
+    "Monitoring"
+  ],
+  "agency": [
+    "ESA",
+    "NASA"
+  ],
+  "subcode": "HLS_NDVI",
+  "sensor": [
+    "MSI",
+    "OLI"
+  ],
+  "satellite": [
+    "Sentinel-2",
+    "Landsat"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      1
+    ],
+    "range": [
+      "#ffffff",
+      "#acacac",
+      "#595959",
+      "#616161",
+      "#b4b4b4",
+      "#f5f5f5",
+      "#949494",
+      "#454558",
+      "#1be830",
+      "#83ff01",
+      "#ffe801",
+      "#ff8001",
+      "#ff1801",
+      "#ff01ef"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NDVI"
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "NDVI from HLS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -82.37631113903603,
+          26.31173859507485,
+          -81.9037040761012,
+          27.035837664631245
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-09-05T00:00:00Z",
+          "2022-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "url": "https://www.esa.int/"
+    },
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    },
+    {
+      "name": "VEDA",
+      "url": "https://www.earthdata.nasa.gov/esds/veda"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

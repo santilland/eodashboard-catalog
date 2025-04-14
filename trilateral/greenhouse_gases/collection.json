@@ -1,0 +1,210 @@
+{
+  "type": "Collection",
+  "id": "greenhouse_gases",
+  "stac_version": "1.1.0",
+  "description": "## Carbon Dioxide\n\nScientists use Japan\u2019s GOSAT data to determine changes in atmospheric CO2 over large urban areas, which experienced the largest changes in economic activity associated with the onset of the COVID-19 pandemic.\nWhile NASA\u2019s OCO-2 is optimized to detect the subtle, regional-scale changes in CO2, GOSAT has advantages for tracking changes in CO2 emissions over large cities.\n\nAnalysis of GOSAT observations revealed enhancements in ambient CO2 concentrations from things like fossil fuel emissions over cities, which are only detectable lower down in the atmosphere. \n\nIn Beijing, while the CO2 concentration enhancements vary substantially from month-to-month, they are generally much lower in 2020 than in earlier years. While this behavior is consistent with reported COVID-19-related reductions in fossil fuel emissions from Beijing, it is important to remember that these results include variations in CO2 concentrations not only from COVID-19 shutdowns, but also from other processes, such as photosynthesis and respiration by plants and transport by passing weather systems.\n\nFor New York City, CO2 values were higher than normal in January 2020, close to normal for February, and lower in March, as lockdowns began. There is no data for New York in April due to cloud cover.\n\nWhile this behavior is consistent with reported coronavirus-related reductions in fossil fuel emissions, it is important to remember that these results include variations in CO2 concentrations from not only COVID-19 shutdowns, but also from other processes such as photosynthesis and respiration by plants and transport by passing weather systems.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./greenhouse_gases/collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide at city level from GOSAT",
+      "endpointtype": "GeoDB",
+      "subtitle": "CO2 emissions over large cities [ppmv]",
+      "code": "N2_greenhouse_gases",
+      "id": "greenhouse_gases",
+      "themes": [
+        "atmosphere"
+      ],
+      "cities": [
+        "Dhaka",
+        "Beijing",
+        "Shanghai",
+        "New Delhi",
+        "Mumbai",
+        "Tokyo",
+        "New York"
+      ],
+      "countries": [
+        "BD",
+        "CN",
+        "IN",
+        "JP",
+        "US"
+      ],
+      "yAxis": "ppmv",
+      "tags": [
+        "Air quality",
+        "CO2",
+        "Open data",
+        "GHG",
+        "Greenhouse gases"
+      ],
+      "agency": [
+        "JAXA"
+      ],
+      "subcode": "N2_greenhouse_gases",
+      "sensor": [
+        "TANSO-FTS",
+        "TANSO-CAI"
+      ],
+      "satellite": [
+        "GOSAT"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_N2_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "method": "GET",
+      "id": "N2_tri"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "CO2 emissions over large cities [ppmv]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N2_greenhouse_gases",
+  "sensor": [
+    "TANSO-FTS",
+    "TANSO-CAI"
+  ],
+  "satellite": [
+    "GOSAT"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -12.5,
+      12.5
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "diff XCO2 [ppm]"
+  },
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
+  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "title": "Carbon Dioxide at city level from GOSAT",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -74.01581200000001,
+          19.066,
+          139.79,
+          40.72268
+        ],
+        [
+          -74.01581200000001,
+          19.066,
+          139.79,
+          40.72268
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          "2020-04-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://data2.gosat.nies.go.jp/index_en.html"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N2_greenhouse_gases"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "GOSAT"
+    ],
+    "sensor": [
+      "TANSO-CAI",
+      "TANSO-FTS"
+    ],
+    "cities": [
+      "Dhaka",
+      "Tokyo",
+      "Shanghai",
+      "New Delhi",
+      "New York",
+      "Beijing",
+      "Mumbai"
+    ],
+    "countries": [
+      "US",
+      "JP",
+      "CN",
+      "BD",
+      "IN"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

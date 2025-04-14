@@ -1,0 +1,276 @@
+{
+  "type": "Collection",
+  "id": "E13b_parked_airplanes",
+  "stac_version": "1.1.0",
+  "description": "## Grounded airplanes during the novel coronavirus pandemic\n\nDuring COVID-19 related lockdowns, activities like air travel decreased to prevent the spread of the novel coronavirus. To help quantify these changes, scientists are combining two kinds of space-based remote sensing data \u2013 synthetic aperture radar (SAR) data from JAXA\u2019s ALOS-2 and [ESA\u2019s Copernicus Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) satellites with NASA-processed high-resolution optical remote sensing data from Planet Inc. and [ESA's Copernicus Sentinel-2 multispectral satellite data](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) \u2013 to observe and quantify the changes in grounded airplanes and air traffic around the world.\n\nSAR is a high-resolution, space-based radar that makes 2D images out of 3D objects. By comparing SAR images of airports before, during, and after lockdowns, scientists can determine how air traffic may have changed during the pandemic. In general, manmade targets such as buildings, cars, and airplanes appear brighter in SAR imagery than natural targets like bare land, forested areas, or the ocean.\n\nFigure 1 shows a color composited SAR image of Tokyo International Airport, Haneda from the PALSAR-2 instrument aboard the ALOS-2 satellite. The different colors in the image correspond to the different dates the images were captured: red images were captured before lockdowns on November 28, 2019, green images were captured as lockdowns began on March 19, 2020, and blue images were captured during lockdowns on May 14, 2020. White colored areas, such as buildings, indicate no changes during the time period, whereas individual red, green, or blue colored pixels in the parking areas of the airport indicate airplanes at that time. Cyan colored areas show airplanes on March and May 2020.\n \n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/JP01-E8_Fig1.png)\n\n*Figure 1. A multi-temporal, color-composite PALSAR-2 image at Tokyo International Airport, Haneda acquired on November 2019 (red), March 2020 (green), and May 2020 (blue).*\n\nFigure 2 shows a time series animation of SAR images taken from [Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) at Tokyo International Airport, Haneda from January 10 to June 2, 2020. Brighter pixels in parking areas of the airport may correspond with airplanes at each acquisition date.\n\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/JP01-E13b_Animation.gif)\n\n*Figure 2. Sentinel-1 animation at Tokyo International Airport, Haneda from January to June 2020.*\n\nIn addition to the SAR imagery, NASA and ESA scientists also used artificial intelligence technology and high-resolution optical imagery from Planet and [Copernicus Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) to detect and count aircraft on the ground at airports. \n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/JP01-E13b-Fig3.png)\n\n*Figure 3. Aircraft detection using Planet imagery and AI.*\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/E13b-Fig4.png)\n\n*Figure 4. Aircraft detection over Paris CDG airport using Sentinel-2 imagery and AI.*\n\nCombining high-resolution optical remote sensing data from Planet and Sentinel-2 with SAR imagery from ALOS-2 and [Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) is a powerful method to provide reliable time series data on the number of aircrafts grounded at airports over time. While imagery from optical satellites like Planet or [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) is powerful to monitor changes in grounded aircrafts around the world systematically, their sensors cannot penetrate clouds, limiting the detection capability on cloudy or rainy days. Alternatively, SAR data, while lower resolution, can penetrate clouds. Therefore, scientists are combining these datasets to get the most comprehensive images of changes at aircraft counts at airports during the COVID-19 pandemic. \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Beijing.json",
+      "type": "application/geo+json",
+      "id": "CN011",
+      "latlng": "40.072,116.593",
+      "country": "CN",
+      "city": "Beijing"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Beijing Daxing.json",
+      "type": "application/geo+json",
+      "id": "CN012",
+      "latlng": "39.495,116.419",
+      "country": "CN",
+      "city": "Beijing Daxing"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2019/Paris.json",
+      "type": "application/geo+json",
+      "id": "FR8",
+      "latlng": "49.006976345624935,2.559786183921451",
+      "country": "FR",
+      "city": "Paris"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2019/Rome.json",
+      "type": "application/geo+json",
+      "id": "IT9",
+      "latlng": "41.80710100142961,12.253597669510512",
+      "country": "IT",
+      "city": "Rome"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Narita.json",
+      "type": "application/geo+json",
+      "id": "JP012",
+      "latlng": "35.774,140.385",
+      "country": "JP",
+      "city": "Narita"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2019/Heathrow.json",
+      "type": "application/geo+json",
+      "id": "UK4",
+      "latlng": "51.469716296645025,-0.4580423952680147",
+      "country": "GB",
+      "city": "Heathrow"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Los Angeles.json",
+      "type": "application/geo+json",
+      "id": "US021",
+      "latlng": "33.94,-118.41",
+      "country": "US",
+      "city": "Los Angeles"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Ontario.json",
+      "type": "application/geo+json",
+      "id": "US022",
+      "latlng": "34.057,-117.6",
+      "country": "US",
+      "city": "Ontario"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/San Francisco.json",
+      "type": "application/geo+json",
+      "id": "US031",
+      "latlng": "37.622,-122.378",
+      "country": "US",
+      "city": "San Francisco"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/San Jose.json",
+      "type": "application/geo+json",
+      "id": "US032",
+      "latlng": "37.363,-121.93",
+      "country": "US",
+      "city": "San Jose"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Oakland.json",
+      "type": "application/geo+json",
+      "id": "US033",
+      "latlng": "37.722,-122.226",
+      "country": "US",
+      "city": "Oakland"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Hayward.json",
+      "type": "application/geo+json",
+      "id": "US034",
+      "latlng": "37.6585,-122.121",
+      "country": "US",
+      "city": "Hayward"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Napa.json",
+      "type": "application/geo+json",
+      "id": "US035",
+      "latlng": "38.216,-122.276",
+      "country": "US",
+      "city": "Napa"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Marin.json",
+      "type": "application/geo+json",
+      "id": "US036",
+      "latlng": "38.144,-122.557",
+      "country": "US",
+      "city": "Marin"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Buchannan.json",
+      "type": "application/geo+json",
+      "id": "US037",
+      "latlng": "37.99,-122.057",
+      "country": "US",
+      "city": "Buchannan"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/New York.json",
+      "type": "application/geo+json",
+      "id": "US041",
+      "latlng": "40.642,-73.788",
+      "country": "US",
+      "city": "New York"
+    },
+    {
+      "rel": "item",
+      "href": "./E13b_parked_airplanes/2020/Newark.json",
+      "type": "application/geo+json",
+      "id": "US042",
+      "latlng": "40.689,-74.172",
+      "country": "US",
+      "city": "Newark"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "subtitle": "Grounded airplanes during the novel coronavirus pandemic",
+  "yAxis": "Time series of airport throughput",
+  "themes": [
+    "economy",
+    "covid-19"
+  ],
+  "tags": [
+    "Copernicus Services",
+    "Open data",
+    "COVID-19",
+    "Mobility",
+    "Community",
+    "Air traffic"
+  ],
+  "agency": [
+    "ESA",
+    "NASA",
+    "JAXA"
+  ],
+  "subcode": "E13b",
+  "sensor": [
+    "PALSAR-2",
+    "C-SAR",
+    "MSI",
+    "PSB.SD"
+  ],
+  "satellite": [
+    "ALOS-2",
+    "Sentinel-1",
+    "Sentinel-2",
+    "PlanetScope"
+  ],
+  "geoDBID": "E13b_tri",
+  "endpointtype": "GeoDB",
+  "title": "Parked Airplanes",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -122.56700000000001,
+          33.93,
+          140.39499999999998,
+          51.47971629664502
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-01T10:09:06Z",
+          "2022-12-31T10:09:10Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    },
+    {
+      "name": "ESA",
+      "url": "https://sentinel.esa.int/web/sentinel/"
+    },
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    },
+    {
+      "name": "planet",
+      "url": "https://www.planet.com/"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Beijing",
+      "Beijing Daxing",
+      "Paris",
+      "Rome",
+      "Narita",
+      "Heathrow",
+      "Los Angeles",
+      "Ontario",
+      "San Francisco",
+      "San Jose",
+      "Oakland",
+      "Hayward",
+      "Napa",
+      "Marin",
+      "Buchannan",
+      "New York",
+      "Newark"
+    ],
+    "countries": [
+      "CN",
+      "FR",
+      "IT",
+      "JP",
+      "GB",
+      "US"
+    ]
+  }
+}

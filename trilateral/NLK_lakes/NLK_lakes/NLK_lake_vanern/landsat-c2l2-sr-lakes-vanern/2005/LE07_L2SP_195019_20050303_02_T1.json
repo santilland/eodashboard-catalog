@@ -1,0 +1,195 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "id": "LE07_L2SP_195019_20050303_02_T1",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          12.2842625,
+          59.7183782
+        ],
+        [
+          15.4459928,
+          59.252961
+        ],
+        [
+          14.402743,
+          57.6825479
+        ],
+        [
+          11.3738873,
+          58.1268627
+        ],
+        [
+          12.2842625,
+          59.7183782
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    11.08652889,
+    57.61191555,
+    15.56283667,
+    59.76626445
+  ],
+  "properties": {
+    "gsd": 30.0,
+    "created": "2022-05-06T17:03:39.503711+00:00",
+    "sci:doi": "10.5066/P9C7I13B",
+    "datetime": "2005-03-03T10:03:00.645816Z",
+    "platform": "landsat-7",
+    "proj:shape": [
+      7801,
+      8391
+    ],
+    "description": "Landsat Collection 2 Level-2",
+    "instruments": [
+      "etm+"
+    ],
+    "eo:cloud_cover": 1.0,
+    "proj:transform": [
+      30.0,
+      0.0,
+      279885.0,
+      0.0,
+      -30.0,
+      6625515.0
+    ],
+    "view:off_nadir": 0,
+    "landsat:wrs_row": "019",
+    "landsat:scene_id": "LE71950192005062ASN00",
+    "landsat:wrs_path": "195",
+    "landsat:wrs_type": "2",
+    "view:sun_azimuth": 159.56899177,
+    "landsat:correction": "L2SP",
+    "view:sun_elevation": 22.87799112,
+    "landsat:cloud_cover_land": 1.0,
+    "landsat:collection_number": "02",
+    "landsat:collection_category": "T1",
+    "proj:code": "EPSG:32633"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "V\u00e4nern Lake"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-lakes-vanern/items/LE07_L2SP_195019_20050303_02_T1/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "NLK_lake_vanern"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "V\u00e4nern Lake"
+    }
+  ],
+  "assets": {
+    "red": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2005/195/019/LE07_L2SP_195019_20050303_20200914_02_T1/LE07_L2SP_195019_20050303_20200914_02_T1_SR_B3.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Red Band",
+      "description": "Collection 2 Level-2 Red Band (SR_B3) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "ETM_B3",
+          "common_name": "red",
+          "description": "Visible red",
+          "center_wavelength": 0.66,
+          "full_width_half_max": 0.06
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 2.75e-05,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data",
+        "reflectance"
+      ]
+    },
+    "blue": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2005/195/019/LE07_L2SP_195019_20050303_20200914_02_T1/LE07_L2SP_195019_20050303_20200914_02_T1_SR_B1.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Blue Band",
+      "description": "Collection 2 Level-2 Blue Band (SR_B1) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "ETM_B1",
+          "common_name": "blue",
+          "description": "Visible blue",
+          "center_wavelength": 0.48,
+          "full_width_half_max": 0.07
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 2.75e-05,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data",
+        "reflectance"
+      ]
+    },
+    "green": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2005/195/019/LE07_L2SP_195019_20050303_20200914_02_T1/LE07_L2SP_195019_20050303_20200914_02_T1_SR_B2.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Green Band",
+      "description": "Collection 2 Level-2 Green Band (SR_B2) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "ETM_B2",
+          "common_name": "green",
+          "description": "Visible green",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.08
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 2.75e-05,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data",
+        "reflectance"
+      ]
+    }
+  },
+  "collection": "landsat-c2l2-sr-lakes-vanern"
+}

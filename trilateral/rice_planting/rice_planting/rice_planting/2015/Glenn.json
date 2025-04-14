@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Glenn",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.06556,
+        39.48284
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -122.07556000000001,
+    39.472840000000005,
+    -122.05556,
+    39.49284
+  ],
+  "properties": {
+    "start_datetime": "2015-10-22T04:12:16Z",
+    "end_datetime": "2021-07-02T04:13:38Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Rice planting"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Rice planting"
+    }
+  ],
+  "assets": {},
+  "collection": "rice_planting"
+}

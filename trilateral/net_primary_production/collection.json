@@ -1,0 +1,188 @@
+{
+  "type": "Collection",
+  "id": "net_primary_production",
+  "stac_version": "1.1.0",
+  "description": "## Ocean Net Primary Production (MODIS)\n\nThe diversity of life on Earth is astonishing, yet most of the ecosystems you and I are familiar with share a common dependence on a miraculous process called photosynthesis.\nPhotosynthesis uses the energy in sunlight to fix carbon dioxide (CO2) into organic material.\nAquatic and terrestrial photosynthetic plants use some of their newly formed carbon products immediately for energy and maintenance.\nThe remaining photosynthetic products are available for plant growth or consumption by the heterotrophic community.\nWe refer to this \"available\" carbon as net primary production, and it is equal to gross photosynthetic carbon fixation minus the carbon respired to support maintenance requirements of the whole plant.\n\n<center>\n<img src=\"https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/phytoplankton.jpg\" width=\"500\">\n</center>\n\nTotal net primary production on Earth exceeds 100 billion tons of carbon per year, and it plays a profound role in the global carbon cycle.\nMany people are surprised to learn, however, that roughly half of this productivity occurs in the oceans and is conducted by microscopic plants called phytoplankton.\nWhile estimates of ocean productivity have been made for decades, it wasn't until ocean-observing satellites were launched that we truly gained adequate global coverage\nin space and time of phytoplankton populations to make reasonable estimates of ocean net primary production.\n\n\n### Additional information\n\n- Read more about ocean productivity and access data and documentation [here](https://sites.science.oregonstate.edu/ocean.productivity/index.php)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./net_primary_production/collection.json",
+      "type": "application/json",
+      "title": "Ocean net primary production (MODIS)",
+      "endpointtype": "VEDA_cog",
+      "code": "NPPN",
+      "id": "net_primary_production",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "Model",
+        "Primary production",
+        "Open data",
+        "Photosynthesis",
+        "Organic material",
+        "Chlorophyll",
+        "Carbon",
+        "Water"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NPPN",
+      "sensor": [
+        "MODIS"
+      ],
+      "satellite": [
+        "Aqua"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Behrenfeld, MJ, PG Falkowski - Limnology and Oceanography (1997a, Volume 42 1-20); Photosynthetic rates derived from satellite-based chlorophyll concentration\n",
+      "doi": "10.4319/lo.1997.42.1.0001"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png",
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "Model",
+    "Primary production",
+    "Open data",
+    "Photosynthesis",
+    "Organic material",
+    "Chlorophyll",
+    "Carbon",
+    "Water"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NPPN",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Aqua"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1500
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[mgC/m\u00b2/day]"
+  },
+  "title": "Ocean net primary production (MODIS)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0000050868518,
+          -90.00000508655744,
+          180.0000050868518,
+          89.9999974571629
+        ],
+        [
+          -180.0000050868518,
+          -90.00000508655744,
+          180.0000050868518,
+          89.9999974571629
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Ocean Productivity",
+      "roles": "processor",
+      "url": "http://orca.science.oregonstate.edu/npp_products.php"
+    },
+    {
+      "name": "NASA",
+      "roles": "licensor, producer",
+      "url": "https://www.earthdata.nasa.gov/esds/veda"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "NPPN"
+    ],
+    "themes": [
+      "oceans"
+    ],
+    "satellite": [
+      "Aqua"
+    ],
+    "sensor": [
+      "MODIS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://sites.science.oregonstate.edu/ocean.productivity/index.php",
+      "type": "text/html",
+      "title": "Ocean productivity",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

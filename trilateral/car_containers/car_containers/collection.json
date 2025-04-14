@@ -1,0 +1,169 @@
+{
+  "type": "Collection",
+  "id": "car_containers",
+  "stac_version": "1.1.0",
+  "description": "# Finished goods production: vehicles inventory level\n\nThis indicator aims at tracking production and movement at factories and ports importing and exporting cars to monitor the increase and decrease of new car production\nby combining satellite data from:\n###\n- PALSAR-2, which uses L-band SAR mounted on [JAXA](https://global.jaxa.jp/)'s ALOS-2 \n- C-band SAR mounted on the [ESA](https://esa.int/)'s Sentinel-1\n- NASA-processed high-resolution optical remote sensing data from Planet\u2019s SkySat\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2020/Beijing.json",
+      "type": "application/geo+json",
+      "id": "CN03",
+      "latlng": "40.08, 116.6",
+      "country": "CN",
+      "city": "Beijing"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2019/Nagoya.json",
+      "type": "application/geo+json",
+      "id": "JP03",
+      "latlng": "35.0800,136.8800",
+      "country": "JP",
+      "city": "Nagoya"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2020/Singapore.json",
+      "type": "application/geo+json",
+      "id": "SG01",
+      "latlng": "1.264856, 103.847663",
+      "country": "SG",
+      "city": "Singapore"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2019/Los Angeles.json",
+      "type": "application/geo+json",
+      "id": "US021",
+      "latlng": "33.94, -118.41",
+      "country": "US",
+      "city": "Los Angeles"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2020/Los Angeles.json",
+      "type": "application/geo+json",
+      "id": "US050",
+      "latlng": "33.79,-117.89",
+      "country": "US",
+      "city": "Los Angeles"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2020/Los Angeles.json",
+      "type": "application/geo+json",
+      "id": "US051",
+      "latlng": "34.07,-118.23",
+      "country": "US",
+      "city": "Los Angeles"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2020/Palm Springs.json",
+      "type": "application/geo+json",
+      "id": "US052",
+      "latlng": "33.82,-116.5",
+      "country": "US",
+      "city": "Palm Springs"
+    },
+    {
+      "rel": "item",
+      "href": "./car_containers/2020/Arcadia.json",
+      "type": "application/geo+json",
+      "id": "US053",
+      "latlng": "34.14,-118.04",
+      "country": "US",
+      "city": "Arcadia"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Car containers"
+    }
+  ],
+  "subtitle": "Change in the number of new cars at automobile factory",
+  "yAxis": "Car Density",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Mobility",
+    "SAR",
+    "Multi-sensors",
+    "Production",
+    "Finished goods",
+    "Automotive",
+    "Motor vehicles"
+  ],
+  "agency": [
+    "JAXA",
+    "ESA"
+  ],
+  "subcode": "E9",
+  "sensor": [
+    "PALSAR-2",
+    "C-SAR"
+  ],
+  "satellite": [
+    "ALOS-2",
+    "Sentinel-1"
+  ],
+  "geoDBID": "E9_tri",
+  "endpointtype": "GeoDB",
+  "title": "Car containers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -118.42,
+          1.254856,
+          136.89,
+          40.089999999999996
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-11-27T00:00:00Z",
+          "2022-12-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    },
+    {
+      "name": "ESA",
+      "url": "https://www.esa.int/"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Beijing",
+      "Nagoya",
+      "Singapore",
+      "Los Angeles",
+      "Palm Springs",
+      "Arcadia"
+    ],
+    "countries": [
+      "CN",
+      "JP",
+      "SG",
+      "US"
+    ]
+  }
+}

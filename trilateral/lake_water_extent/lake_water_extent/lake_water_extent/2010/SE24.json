@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "SE24",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.2542,
+        59.4542
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    12.244200000000001,
+    59.4442,
+    12.2642,
+    59.4642
+  ],
+  "properties": {
+    "start_datetime": "2010-01-14T00:00:00Z",
+    "end_datetime": "2020-12-28T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Lakes water extent"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Lakes water extent"
+    }
+  ],
+  "assets": {},
+  "collection": "lake_water_extent"
+}

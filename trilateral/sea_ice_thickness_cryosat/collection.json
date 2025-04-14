@@ -1,0 +1,189 @@
+{
+  "type": "Collection",
+  "id": "sea_ice_thickness_cryosat",
+  "stac_version": "1.1.0",
+  "description": "## CryoSat Sea Ice Thickness Product\n\nThis dataset provides a Climate Data Record of Sea Ice Thickness for the NH polar region, derived from the SIRAL (SAR Interferometer Radar ALtimeter) instrument on the CryoSat-2 satellite.\nThis product was generated in the context of the ESA Climate Change Initiative Programme (ESA CCI) by the Sea Ice CCI ([Sea_Ice_cci](https://climate.esa.int/en/odp/#/project/sea-ice)) project.\n\nIt provides daily sea ice thickness data for the months October to April annually on the satellite measurement grid (Level 2P) at the full sensor resolution for the period November 2010 to April 2017.\n\n\n### Additional information\n\n- Read more on [ESA's Climate Change Initiative Website](https://climate.esa.int/en/projects/cmug/case-studies/new-dimension-cci-sea-ice-thickness-data-set/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_thickness_cryosat/collection.json",
+      "type": "application/json",
+      "title": "Sea ice thickness (Cryosat-2)",
+      "endpointtype": "Sentinel Hub_zarr",
+      "subtitle": "Daily Arctic sea ice thickness",
+      "code": "SIC",
+      "id": "sea_ice_thickness_cryosat",
+      "themes": [
+        "cryosphere"
+      ],
+      "tags": [
+        "Sea ice",
+        "Polar",
+        "ESA Climate Change Initiative",
+        "Open data",
+        "Polar",
+        "Arctic"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "SIC",
+      "sensor": [
+        "SIRAL"
+      ],
+      "satellite": [
+        "CryoSat-2"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Hendricks, S.; Paul, S.; Rinne, E. (2018). ESA Sea Ice Climate Change Initiative (Sea_Ice_cci). \nNorthern hemisphere sea ice thickness from CryoSat-2 on the satellite swath (L2P), v2.0. Centre for Environmental Data Analysis, date of citation.\n",
+      "doi": "10.5285/5b6033bfb7f241e89132a83fdc3d5364"
+    }
+  ],
+  "subtitle": "Daily Arctic sea ice thickness",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Sea ice",
+    "Polar",
+    "ESA Climate Change Initiative",
+    "Open data",
+    "Polar",
+    "Arctic"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "SIC",
+  "sensor": [
+    "SIRAL"
+  ],
+  "satellite": [
+    "CryoSat-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      4
+    ],
+    "range": [
+      "#0d0887",
+      "#370499",
+      "#5801a4",
+      "#7701a8",
+      "#920fa3",
+      "#ac2694",
+      "#c23c81",
+      "#d45270",
+      "#e4695e",
+      "#f1814d",
+      "#fa9b3d",
+      "#feb82c",
+      "#fad824",
+      "#f0f921"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea-ice thickness [m]"
+  },
+  "title": "Sea ice thickness (Cryosat-2)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          16.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          16.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2010-11-01T00:00:00Z",
+          "2017-04-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "roles": "licensor, producer, processor",
+      "url": "https://climate.esa.int/en/data/#/dashboard"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "SIC"
+    ],
+    "themes": [
+      "cryosphere"
+    ],
+    "satellite": [
+      "CryoSat-2"
+    ],
+    "sensor": [
+      "SIRAL"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://climate.esa.int/en/projects/cmug/studies/new-dimension-cci-sea-ice-thickness-data-set/",
+      "type": "text/html",
+      "title": "The CCI sea-ice thickness data set",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://catalogue.ceda.ac.uk/uuid/5b6033bfb7f241e89132a83fdc3d5364",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

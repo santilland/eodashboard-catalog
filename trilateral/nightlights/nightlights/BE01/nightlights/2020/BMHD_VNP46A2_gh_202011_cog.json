@@ -1,0 +1,218 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "BMHD_VNP46A2_gh_202011_cog",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          3.6453969478607178,
+          51.06661950775742
+        ],
+        [
+          3.85839695022878,
+          51.06661950775742
+        ],
+        [
+          3.85839695022878,
+          51.28873062133789
+        ],
+        [
+          3.6453969478607178,
+          51.28873062133789
+        ],
+        [
+          3.6453969478607178,
+          51.06661950775742
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    3.6453969478607178,
+    51.06661950775742,
+    3.85839695022878,
+    51.28873062133789
+  ],
+  "properties": {
+    "end_datetime": "2020-11-30T00:00:00+00:00",
+    "start_datetime": "2020-11-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/nightlights-hd-monthly/items/BMHD_VNP46A2_gh_202011_cog/map?bidx=1&assets=cog_default&rescale=0%2C255&colormap_name=inferno",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/nightlights-hd-monthly/BMHD_VNP46A2_gh_202011_cog.tif&resampling_method=nearest&bidx=1&colormap_name=inferno&rescale=0,255",
+      "type": "image/png",
+      "title": "nightlights"
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Nightlights from SUOMI-NPP"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Ghent"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/nightlights-hd-monthly/BMHD_VNP46A2_gh_202011_cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        3.6453969478607178,
+        51.06661950775742,
+        3.85839695022878,
+        51.28873062133789
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        1999,
+        1917
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint16",
+          "histogram": {
+            "max": 255.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              840204,
+              39126,
+              27694,
+              22003,
+              18179,
+              15535,
+              16548,
+              16065,
+              8453,
+              1761
+            ]
+          },
+          "statistics": {
+            "mean": 17.928405637410897,
+            "stddev": 45.67499493555546,
+            "maximum": 255,
+            "minimum": 0,
+            "valid_percent": 9.944628309572301e-05
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.6453969478607178,
+              51.06661950775742
+            ],
+            [
+              3.85839695022878,
+              51.06661950775742
+            ],
+            [
+              3.85839695022878,
+              51.28873062133789
+            ],
+            [
+              3.6453969478607178,
+              51.28873062133789
+            ],
+            [
+              3.6453969478607178,
+              51.06661950775742
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.00011111111234640703,
+        0.0,
+        3.6453969478607178,
+        0.0,
+        -0.00011111111234640703,
+        51.28873062133789,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/nightlights-hd-monthly/items/BMHD_VNP46A2_gh_202011_cog/preview.png?bidx=1&assets=cog_default&rescale=0%2C255&colormap_name=inferno",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "nightlights"
+}

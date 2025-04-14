@@ -1,0 +1,143 @@
+{
+  "type": "Collection",
+  "id": "agricultural_production_productive_area",
+  "stac_version": "1.1.0",
+  "description": "## Agricultural production - Greenhouse removal activity\n\nThis indicator compares the total observed active fields in the cultivated areas in the 2020 season to the same months in 2019. It aims to show the impact of the lack of seasonal workers during the Covid-19 pandemic.\nThe indicator is based on optical data at suitable resolution to observe the respective greenhouse removal activity on the fields. It is provided for two types of harvests: white asparagus in Germany and red fruits in Spain. Both of these are labour intensive activities relying on seasonal workers.  \n\n- For the white asparagus harvest activity, the indicator is produced for the German federal state of Brandenburg (29.500 sqkm), based on Copernicus Sentinel-2 data.\n\n- For the red berries harvesting activity, the indicator is produced for the province of Huelva in Spain, that is responsible for 97.5% of the national red berries production. The indicator is based on optical data from the Pl\u00e9iades constellation.\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./agricultural_production_productive_area/collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - productive area",
+      "endpointtype": "GeoDB",
+      "subtitle": "Agricultural production in Europe",
+      "code": "E10a1",
+      "id": "agricultural_production_productive_area",
+      "themes": [
+        "agriculture"
+      ],
+      "cities": [
+        "Brandenburg",
+        "Huelva (Lagunas de las Madres)"
+      ],
+      "countries": [
+        "DE",
+        "ES"
+      ],
+      "yAxis": "Total area [ha]",
+      "tags": [
+        "Copernicus",
+        "Open data"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "E10a1",
+      "sensor": [
+        "MSI"
+      ],
+      "satellite": [
+        "Sentinel-2"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E10a1_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "method": "GET",
+      "id": "E10a1_tri"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Agricultural production in Europe",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Copernicus",
+    "Open data"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "E10a1",
+  "sensor": [
+    "MSI"
+  ],
+  "satellite": [
+    "Sentinel-2"
+  ],
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
+  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "title": "Agricultural production - productive area",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -6.85888,
+          37.17316,
+          13.10063,
+          52.14141
+        ],
+        [
+          -6.85888,
+          37.17316,
+          13.10063,
+          52.14141
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-12-27T11:21:32Z",
+          "2020-07-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Universit\u00e9 catholique de Louvain",
+      "url": "https://uclouvain.be/en/index.html"
+    },
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "E10a1"
+    ],
+    "themes": [
+      "agriculture"
+    ],
+    "satellite": [
+      "Sentinel-2"
+    ],
+    "sensor": [
+      "MSI"
+    ],
+    "cities": [
+      "Brandenburg",
+      "Huelva (Lagunas de las Madres)"
+    ],
+    "countries": [
+      "DE",
+      "ES"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "type": "Collection",
+  "id": "S14Amazonas_detections",
+  "stac_version": "1.1.0",
+  "description": "## Forest Loss Area from Sentinel-1 \r\n\r\nThis product was developed in the frame of the activity \"Sentinel-1 for Science Amazonas\" funded by the European Space Agency. The dataset covers the Amazon rainforest, showing the observed forest loss visible in red.\r\nThe project developed a simple space-time data cube design (referred to as StatCubes), where statistical information relevant to identify deforestation is extracted at each point in the SAR backscatter time-series. The cubes do not rely on decades of historical data, and the effects of seasonality, including rainfall, are inherently masked out. With this approach, the project demonstrates the use of Sentinel-1 data to create a dynamic deforestation product over the Amazon basin. Sentinel-1 satellite observations from 2015 to December 2021, each representing a 20 x 20 m of forest, were harmonised under theStatCubes design, and a simple thresholding approach to detect forest loss wass demonstrated in the first version of the results. \r\n\r\n\r\n### Relevant Links:\r\n* Project website: https://sen4ama.gisat.cz/\r\n* Data Access: https://drive.google.com/file/d/14nNZqO44M3-dINF4ugqsQ0mvU0gBuooq/view?usp=drive_link\r\n* Documentation: https://drive.google.com/file/d/1WEEpEbnQBfYomVdiyu4mR31psVM07bMR/view?usp=drive_link\r\n* Algorithm: https://github.com/gisat/s14amazonas\r\n* ESA webstory: https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Using_a_data_cube_to_monitor_forest_loss_in_the_Amazon\r\n\r\n![image](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/MCD_S14Amazonas_detections/MCD_S14Amazonas_detections_1.png)\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./S14Amazonas_detections/collection.json",
+      "type": "application/json",
+      "title": "ESA Sentinel-1 for Science Amazonas",
+      "endpointtype": "WMS_OverwriteTimes",
+      "subtitle": "Multi-temporal Change Detection",
+      "code": "MCD",
+      "id": "S14Amazonas_detections",
+      "themes": [
+        "biomass"
+      ],
+      "tags": [
+        "Copernicus",
+        "Forest disturbance"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "MCD",
+      "sensor": [
+        "C-SAR"
+      ],
+      "satellite": [
+        "Sentinel-1"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Multi-temporal Change Detection",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/sen4ama/thumbnail.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "Copernicus",
+    "Forest disturbance"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "MCD",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "title": "ESA Sentinel-1 for Science Amazonas",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -26.476719,
+          -76.07,
+          9.65,
+          -33.593252
+        ],
+        [
+          -26.476719,
+          -76.07,
+          9.65,
+          -33.593252
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01T00:00:00Z",
+          "2021-11-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GISAT s.r.o",
+      "url": "https://gisat.cz/"
+    },
+    {
+      "name": "FGI",
+      "url": "https://www.maanmittauslaitos.fi/en/research"
+    },
+    {
+      "name": "Agresta",
+      "url": "https://agresta.org/en/"
+    },
+    {
+      "name": "NMBU",
+      "url": "https://www.nmbu.no/en"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "MCD"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "Sentinel-1"
+    ],
+    "sensor": [
+      "C-SAR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/sen4ama/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/sen4ama/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://sen4ama.gisat.cz/",
+      "type": "text/html",
+      "title": "ESA Sentinel-1 for Science Amazonas",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

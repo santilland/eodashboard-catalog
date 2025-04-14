@@ -1,0 +1,205 @@
+{
+  "type": "Collection",
+  "id": "soil_moisture_timeseries",
+  "stac_version": "1.1.0",
+  "description": "# Soil Moisture Content\n\n[JAXA](https://global.jaxa.jp/)(Japan Aerospace Exploration Agency) together with Japanese Ministry of Agriculture, Forestry and Fisheries (MAFF) provide bi-monthly agrometeorological information for Asia on [JASMIN](https://suzaku.eorc.jaxa.jp/JASMIN/index.html) and on [JASMAI](https://jasmai.maff.go.jp/) for selected world areas.\n\nThis agrometeorological information is obtained from satellite observations (e.g. SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP)) and GPM Core Observatory, and includes precipitation, drought index, soil moisture, solar radiation, surface temperature, vegetation index and anomaly, rainfall, and other relevant agriculture and land products. \n\nThe soil water content calculated from satellite data is the volumetric water content (volume ratio of water contained in soil per unit volume). It corresponds to the soil moisture near the ground surface at a depth of several centimeters from the surface.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./soil_moisture_timeseries/collection.json",
+      "type": "application/json",
+      "title": "Local Soil Moisture from GSMaP",
+      "endpointtype": "GeoDB",
+      "subtitle": "Soil Moisture Timeseries",
+      "code": "SMCTS",
+      "id": "soil_moisture_timeseries",
+      "themes": [
+        "agriculture"
+      ],
+      "cities": [
+        "Paran\u00e1",
+        "Kansas"
+      ],
+      "countries": [
+        "BR",
+        "US"
+      ],
+      "yAxis": "Soil Moisture Contains[%]",
+      "tags": [
+        "Precipitation",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "JAXA"
+      ],
+      "subcode": "SMCTS",
+      "satellite": [
+        "Other"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_SMCTS_Soil_Moisture_Timeseries?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "method": "GET",
+      "id": "SMCTS_Soil_Moisture_Timeseries"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Soil Moisture Timeseries",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "SMCTS",
+  "satellite": [
+    "Other"
+  ],
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
+  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "title": "Local Soil Moisture from GSMaP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -98.33500000000001,
+          -24.625,
+          -51.305,
+          38.51
+        ],
+        [
+          -98.33500000000001,
+          -24.625,
+          -51.305,
+          38.51
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-09T00:00:00Z",
+          "2023-06-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "SMCTS"
+    ],
+    "themes": [
+      "agriculture"
+    ],
+    "satellite": [
+      "Other"
+    ],
+    "cities": [
+      "Paran\u00e1",
+      "Kansas"
+    ],
+    "countries": [
+      "US",
+      "BR"
+    ]
+  },
+  "assets": {
+    "reference_1": {
+      "href": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html",
+      "type": "text/html",
+      "title": "JAXA's Satellite based MonItoring Network system for FAO AMIS Market Monitor",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://jasmai.maff.go.jp/",
+      "type": "text/html",
+      "title": "JASMAI",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://jasmai.maff.go.jp/user_guide/#item_2_7",
+      "type": "text/html",
+      "title": "JASMAI user guide",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "http://www.eorc.jaxa.jp/",
+      "type": "text/html",
+      "title": "JAXA Earth Observation Research Center (EORC)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_5": {
+      "href": "https://gportal.jaxa.jp/gpr/?lang=en",
+      "type": "text/html",
+      "title": "Earth observation satellite data provision system (G-Portal)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_6": {
+      "href": "https://sharaku.eorc.jaxa.jp/AMSR/index_j.html",
+      "type": "text/html",
+      "title": "AMSR/AMSR-E",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_7": {
+      "href": "https://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html",
+      "type": "text/html",
+      "title": "GCOM-W",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_8": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm",
+      "type": "text/html",
+      "title": "Satellite Global Precipitation Map (GSMaP)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_9": {
+      "href": "https://kuroshio.eorc.jaxa.jp/JASMES/index_j.html",
+      "type": "text/html",
+      "title": "Climate Formation Physical Quantity Dataset (JASMES)",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

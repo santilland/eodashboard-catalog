@@ -1,0 +1,191 @@
+{
+  "type": "Collection",
+  "id": "methane_monitoring",
+  "stac_version": "1.1.0",
+  "description": "## Methane monitoring\n\nThis indicator aims at showing Methane (CH4) concentrations by means of Sentinel-5p [TROPOMI](http://www.tropomi.eu) data.\nTROPOMI uses absorption information from the Oxygen-A Band (760nm) and the SWIR spectral range to monitor CH4 levels in the Earth\u2019s atmosphere contributing to the enhancement of the greenhouse effect.\n\nData from the GOSAT satellite instrument and ground-based TCCON instruments are used for verification and validation.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./methane_monitoring/collection.json",
+      "type": "application/json",
+      "title": "Methane monitoring",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "Daily Methane Monitoring",
+      "code": "N1_CH4",
+      "id": "methane_monitoring",
+      "themes": [
+        "air"
+      ],
+      "tags": [
+        "Air quality",
+        "CH4",
+        "Multi-sensors",
+        "Open data"
+      ],
+      "agency": [
+        "ESA",
+        "JAXA",
+        "NASA",
+        "NIWA"
+      ],
+      "subcode": "N1_CH4",
+      "sensor": [
+        "TROPOMI",
+        "TANSO"
+      ],
+      "satellite": [
+        "Sentinel-5P",
+        "GOSAT"
+      ],
+      "insituSources": [
+        "TCCON"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Daily Methane Monitoring",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_methane_monitoring/N1_methane_monitoring.png",
+  "themes": [
+    "air"
+  ],
+  "tags": [
+    "Air quality",
+    "CH4",
+    "Multi-sensors",
+    "Open data"
+  ],
+  "agency": [
+    "ESA",
+    "JAXA",
+    "NASA",
+    "NIWA"
+  ],
+  "subcode": "N1_CH4",
+  "sensor": [
+    "TROPOMI",
+    "TANSO"
+  ],
+  "satellite": [
+    "Sentinel-5P",
+    "GOSAT"
+  ],
+  "insituSources": [
+    "TCCON"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      1680,
+      1980
+    ],
+    "range": [
+      "#000103",
+      "#006cd3",
+      "#00d2ff",
+      "#00ffff",
+      "#46ff96",
+      "#fffd00",
+      "#ffc100",
+      "#ff4900",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "CH4 volume mixing ratio [ppbv]"
+  },
+  "title": "Methane monitoring",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-04-30T00:00:00Z",
+          "2025-02-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "name": "JAXA",
+      "url": "https://earth.jaxa.jp/en/data/"
+    },
+    {
+      "name": "Caltech",
+      "url": "https://tccondata.org/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N1_CH4"
+    ],
+    "themes": [
+      "air"
+    ],
+    "satellite": [
+      "GOSAT",
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TANSO",
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_methane_monitoring/N1_methane_monitoring.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_methane_monitoring/N1_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_methane_monitoring/N1_methane_monitoring.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "tropomi_methane": {
+      "href": "http://www.tropomi.eu/data-products/methane",
+      "type": "text/html",
+      "title": "TROPOMI Methane",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "id": "LE07_L2SP_126051_20230305_02_T1",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          104.2711442,
+          13.9605577
+        ],
+        [
+          103.9290957,
+          12.3416438
+        ],
+        [
+          105.6783873,
+          12.0922405
+        ],
+        [
+          105.69334,
+          12.1182466
+        ],
+        [
+          106.03894,
+          13.7009542
+        ],
+        [
+          106.0262207,
+          13.7105002
+        ],
+        [
+          104.2711442,
+          13.9605577
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    103.86201222,
+    12.07938442,
+    106.08706883,
+    13.97034558
+  ],
+  "properties": {
+    "gsd": 30.0,
+    "created": "2023-04-01T09:14:27.643139+00:00",
+    "sci:doi": "10.5066/P9C7I13B",
+    "datetime": "2023-03-05T01:24:30.738277Z",
+    "platform": "landsat-7",
+    "proj:shape": [
+      6971,
+      8011
+    ],
+    "description": "Landsat Collection 2 Level-2",
+    "instruments": [
+      "etm+"
+    ],
+    "eo:cloud_cover": 1.0,
+    "proj:transform": [
+      30.0,
+      0.0,
+      377085.0,
+      0.0,
+      -30.0,
+      1544715.0
+    ],
+    "view:off_nadir": 0,
+    "landsat:wrs_row": "051",
+    "landsat:scene_id": "LE71260512023064EDC00",
+    "landsat:wrs_path": "126",
+    "landsat:wrs_type": "2",
+    "view:sun_azimuth": 105.33326453,
+    "landsat:correction": "L2SP",
+    "view:sun_elevation": 30.39393363,
+    "landsat:cloud_cover_land": 1.0,
+    "landsat:collection_number": "02",
+    "landsat:collection_category": "T1",
+    "proj:code": "EPSG:32648"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Tonl\u00e9 Sap Lake"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-lakes-tonle-sap/items/LE07_L2SP_126051_20230305_02_T1/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "NLK_lake_tonle_sap"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Tonl\u00e9 Sap Lake"
+    }
+  ],
+  "assets": {
+    "red": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2023/126/051/LE07_L2SP_126051_20230305_20230330_02_T1/LE07_L2SP_126051_20230305_20230330_02_T1_SR_B3.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Red Band",
+      "description": "Collection 2 Level-2 Red Band (SR_B3) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "ETM_B3",
+          "common_name": "red",
+          "description": "Visible red",
+          "center_wavelength": 0.66,
+          "full_width_half_max": 0.06
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 2.75e-05,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data",
+        "reflectance"
+      ]
+    },
+    "blue": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2023/126/051/LE07_L2SP_126051_20230305_20230330_02_T1/LE07_L2SP_126051_20230305_20230330_02_T1_SR_B1.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Blue Band",
+      "description": "Collection 2 Level-2 Blue Band (SR_B1) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "ETM_B1",
+          "common_name": "blue",
+          "description": "Visible blue",
+          "center_wavelength": 0.48,
+          "full_width_half_max": 0.07
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 2.75e-05,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data",
+        "reflectance"
+      ]
+    },
+    "green": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/etm/2023/126/051/LE07_L2SP_126051_20230305_20230330_02_T1/LE07_L2SP_126051_20230305_20230330_02_T1_SR_B2.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Green Band",
+      "description": "Collection 2 Level-2 Green Band (SR_B2) Surface Reflectance",
+      "eo:bands": [
+        {
+          "name": "ETM_B2",
+          "common_name": "green",
+          "description": "Visible green",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.08
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 2.75e-05,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ],
+      "roles": [
+        "data",
+        "reflectance"
+      ]
+    }
+  },
+  "collection": "landsat-c2l2-sr-lakes-tonle-sap"
+}

@@ -1,0 +1,2012 @@
+{
+  "type": "Collection",
+  "id": "TagusDelta",
+  "stac_version": "1.1.0",
+  "description": "Sea surface temperature in Tagus Delta",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2025/5e826089-ab1a-4fb8-af44-2d744710bdd9.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/f0a3f361-844d-48c0-9f54-992f524b9f4b.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/e277a530-8e36-4a6e-aef9-5d7b36abf8ed.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/463fd0ec-46cf-4845-9944-2a9f969bf65d.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/5ada2629-fa9f-48a8-8097-8407608857e3.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/bedefe27-9131-4174-b316-be8d443bfcd7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/e652956f-b4b8-413d-9679-29d2101661c1.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/808660fb-165f-4163-ae32-cb086e9d61fa.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/a9398536-5cd9-48d0-a050-5c7e239103f1.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/3ddda39b-ab6f-4a5a-a5c3-03e627d33276.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/b115ea34-f9ca-4743-abd3-fd21ba23a263.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/aefefbb2-b631-45a8-9347-29007f09d6cf.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/fa6e395e-948b-4789-a14f-46d9df0fe610.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/ac618c3b-3725-4ecd-9968-064f28353d4f.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/54cef543-a270-420b-a7a2-2616b508ad40.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/60545071-9e34-4cec-ba42-d9a3b8612144.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/dd0ba5aa-9ec1-4872-9927-13ffb2dacce2.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/349dc084-4c5d-4c4a-b352-f6a75a6f38e3.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/4961f04a-f5ac-4e80-a84f-d992d9457517.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/0ec10d75-295a-4c4a-b18a-5fbddb104eaf.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/4f01cce8-270d-4602-9dd3-57ffca4d87f3.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/32760e91-0327-4601-8fef-f1576f13c863.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/9446b43b-66f7-4898-b4e2-11b6c788a8c8.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/78b3d4ca-5fda-4eb5-bfbd-84ee22b203bf.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/87e4af38-065e-4611-b918-434d39225331.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/5154271e-6445-453c-9f33-a1ad4ee8423b.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/1727a8da-2e42-4d41-a877-bc72643fbdc1.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/6f74565c-2d6c-41a6-b8e4-29898733553a.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/09607c85-725c-42a9-b061-1f80eca7e005.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/966ae35a-454d-462b-846c-1f561bd76fa7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/71d5920d-d963-4b55-aec5-c038128ca639.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/ac0cfddd-3942-4b2a-ac3f-57dab4dd8052.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/6ac0ad42-6f9a-4e01-ba80-03fe78ff055d.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/04130539-be21-42ad-9df3-c295b0ec990e.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/0b038dd9-2948-4ba6-ba77-fb8641be32e4.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/d271a140-0692-47ce-8c6d-19b2fdd47bbe.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/22bf41bb-9fd6-4a56-a971-f2c6be07acc0.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/7cb5cf8e-02b7-48bd-95e5-eb0e9673be91.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/96d43b64-8587-4d05-ad96-cef5e56b7684.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/7d3a3fd1-e5e6-4f53-b880-85b59179e8e7.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/e9616476-eb17-4401-a49d-755f4e9cbaad.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/51c45458-b05b-448c-b4a6-b87948df5d02.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/3b7b2834-d4f5-44a0-a743-db807401bd2d.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/c0764d20-4435-452b-a5dd-cd789aed0f9b.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/254efefd-0e34-43d2-8f10-de7e7661c4ad.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/26966834-5cfc-4ba8-a1ed-be92502d7869.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/931f97bb-10f7-4c3b-ae78-3f81adf4ce44.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/9105e553-a553-4c47-84f1-f737e2500fab.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/9efa8bae-00f9-4d94-b7c0-1a4ac55b4dba.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/7ec33970-203c-4ae0-8bd3-dbde7a4d63ce.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/616a8f1b-c164-4265-9ee2-e4f551212673.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/2b596349-00b9-4622-b67a-f71e3a4ee969.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2024/78fbe0f4-d4b8-44ac-94c7-de75178e10be.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/9f41d9a7-6afc-4255-992d-740d0c2e82fd.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/b21add86-308f-411c-ae5f-c2bb2d27b064.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/2a483102-2573-4489-8206-e54af8f32a74.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/4806c1d4-d624-4269-a6d1-6d123a30fe29.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/7ff98f67-460b-4c92-aee0-e51fb28cf4c6.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/9187a59b-572e-4bda-916d-2ce79743ed00.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/25de619e-d29a-4c23-a579-48c0c020d23c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/b0ed87a2-4b8b-4e7b-90a3-1f4d8111e66d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/85c8a4a7-3ffe-4a59-a268-d4eef4ae0ba2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/2e986b05-7696-4da5-8b7d-6eb75872d9d6.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/379d460a-a4e0-4f5d-9bc8-59ac0287e057.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/08a3bf76-1272-4f4b-a6e0-16bc8104bc8b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/ef51d959-ec2f-41d9-97a7-1aa0f0758e98.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/4e78c3ea-f884-450c-811f-2f9e5d3f7de9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/3b67b644-9597-4a6e-bd49-238d7ace9ad9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/c203b70f-58a6-41f1-9625-ef7f1681e033.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/86a5b856-a5e6-4e62-9205-9183aff0a743.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/49984fee-806c-417b-b5dc-13fcd5eb8682.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/dcfe6cff-aaf1-457e-bbba-651e8f906b31.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/4ad0e5e3-6790-4433-84ba-132a187fa485.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/30aa3fce-9240-4751-98fa-ae8fdb817649.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/432eac83-7af3-4df2-8e00-b21f00b374d1.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/4466bf56-7f41-4d52-ab2f-e24f76f65a83.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/22f301ae-32c1-4727-a4a6-a7f943e4c136.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/5139a97c-ebff-4882-9e47-8eb0b09a7753.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/2da420f9-5ec4-43e2-9310-e69b9beba027.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/d6b1913d-de1e-4a2f-badb-eeb389fe50ed.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/14f22c97-a766-484e-8f60-01973ec04d4d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/dd1d020c-1c19-4c91-b8a4-77acbe468cf8.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/ab49e545-c7aa-485f-82d9-17b16bcae64b.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/a4169a3d-54a5-49bd-aa61-34c7cd0c562d.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/888fdfd2-2198-44df-8234-e256930c5ef9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/f8eceafa-34b5-4607-a8d7-0f89a0509994.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/ed2b6de0-f1ab-47ba-bb74-c7c06650a52f.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/28feeb5d-6992-4d51-b1d1-ff36f07fbaf2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/4f300be6-4b75-4b8d-92b0-06d71922c673.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/64d687fb-397a-4157-a141-150f868decf3.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/977b6ba3-ca4e-44ae-97f5-5e14a244c71c.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/e752b1e6-4613-441e-86c1-8369b6374706.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/754cd766-a0d6-494e-9dac-f9c41c4b465e.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/5f1121b2-7bda-4d0a-b54f-50b680d961db.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/a07fe572-00eb-41ca-96f1-e0c6312231b8.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/c949bde2-7cb6-4ff4-a0bb-65c06f9cfcbc.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/a7aa7b71-b303-406e-b12e-a56c7ce62ac4.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/18865050-28a3-4f2f-b95c-3d63ec871a0e.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/402043dd-f1aa-400c-a592-b21d4a4983c2.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/5e58b42e-a6e4-4837-b01b-1108e827b4bc.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/3269dcaf-d06e-4a11-965e-062a146f12e0.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/dac431af-61f5-4565-9520-976b2a5383f9.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/65ae2543-383f-4cf2-b9b6-8fa57328533a.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2023/f9cc71a9-0a34-4325-9b1b-cb98807260f8.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/98fbc286-8f2a-43a6-8c44-3c94cf6f2929.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/8ae366aa-581b-44d0-917a-80a20498762a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/b45710ec-6b16-4555-86c0-55f0683fe740.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/ee07b463-c81b-4a98-8ca5-f44e50d17aa4.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/f27405a1-7a89-4777-a201-67ba7e39bcd9.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/07288e9d-cd4c-4401-ad13-ca456aef993c.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/670f08c6-5aaa-4f97-a934-0a260a31aa14.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/632f0059-4c3a-4ddf-a667-903d2a846965.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/6fc5a0a1-a6b3-4c00-994b-ffb58a5227c2.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/2c71bae8-b60c-43b9-8218-15b3bca6977b.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/f14c7aa9-dcd8-4fe0-86f3-7bd5ea4aee3a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/3c0dbd1b-cff1-49ff-9486-2a538d93cf97.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/a11a6295-e0fc-45c8-9f6d-067ef388be1c.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/e4c72bb7-d389-4f7f-8bcd-4f585df5390b.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/0bf1cc4c-91f0-4b81-a0d5-7edf3491056e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/7d103a02-69ab-4f52-b8aa-bf7f4a8540a4.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/d513177e-1681-4535-aba9-d67e9a1d1121.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/ea4f45bc-c931-429e-a01a-3370fc471673.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/7e37553e-a1da-44e6-b2b5-970ff21f6e5e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/e440a8e4-2654-43d2-9bea-63dc68239c4d.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/9b00750c-e509-4e61-94b4-9e136c1a739a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/857ef494-40e6-4d86-a3ac-104d787cf38b.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/37834348-5747-49e7-88fa-804578930080.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/59ec3055-c4e2-458d-a865-e676f1adc625.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/7af0fcf4-b484-4def-a917-81b8ccac7562.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/06dbb0d4-b294-4fba-af7c-bfdd6bd92761.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/158e0e88-8294-4516-b134-99f762aa82fc.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/769a9cbc-72ee-4e26-99b8-896d9cd9bb9c.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/e3e6cfe3-f64d-41a3-aaec-0ee85a819fd3.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/c915bbc2-2fb2-4e87-a075-74dbc79e9efb.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/94b896f9-1976-4ef3-93d3-62aea26ee9a6.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/89db3f3b-3750-408f-a585-fab4b853a0b9.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/9ad5b478-8d8d-4c21-b7fa-8a3197b61de9.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/0731080c-2e61-4bcc-8f3f-854d01d6b2c6.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/3e2b4b66-672a-4b97-a081-c37a332a299c.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/7ad4e1f1-ecc7-40ed-844f-ab5de43dd189.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/c4827a84-966b-4f9e-ab26-053851d9855c.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/57d474a7-2283-4e1f-9abd-359def562149.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/e84d68a7-d859-4901-949e-362c82ee03e0.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/06649127-78f9-4e1b-903a-99f20750a167.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/28b25ada-f0a7-411d-885d-c02e7a755c86.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/e8809d8a-11dd-4d18-b80a-378c5e2e2450.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/c41b40b5-1851-4567-8efc-b689ff528822.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/352b7dbd-8ff1-4968-a802-3fe4ec558095.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/14a66373-7d63-4990-b9cc-003f7d317e5e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/82f9e4b8-4f8e-493d-9259-e202fc236b59.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/ab81e616-7535-432e-8493-dbfa76bb43ea.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/2ae86767-41e4-49bc-ada1-676b4a1d375e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/58b483cf-c2e5-4e43-85f4-5b282b0c64cc.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/edee9844-27b3-4c24-9519-6b97dd890164.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/709303a6-5d81-4cc9-b6ea-e9ba9c014b5a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/02986f81-f8e7-4a4f-b96d-2c6b69b65235.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2022/3199c495-2753-4099-b37a-db0df72d7c7f.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/f925a2d5-bbf2-47d3-a724-e4489d8f3465.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/bd87843e-1967-4491-a847-42b65b00ac5c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/3b96879b-0a4b-4c7a-98e8-b74963ea8843.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/b1208996-2ee3-431e-b740-cbc4e4e979da.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/2fb5dee3-5b43-4e1f-a855-9f6ab22a6cc3.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/97cdd71e-173c-4639-a8c9-04deeec3acb9.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/0f0f5442-dd56-4d84-896c-32f8cdc08fd9.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/cc1f98cc-3ec9-463b-86aa-471b059bd97d.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/402219f2-75e5-4bce-a0d0-94eafdaa7889.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/36f4dd76-4045-4f6a-a91a-f24b34b16616.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/d4afedfd-4614-4e1e-a1bf-f71506369db0.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/0dcb4ee1-7285-4116-86fc-ecb012f471d8.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/8ca56596-5d03-4504-9492-52648f067c2f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/84383bae-f3b4-4253-9a37-655ac5b7c308.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/90d698cd-6215-4bb0-afb0-d8618f328ef4.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/77c709ae-8b02-4081-ae7d-5211adc57fa8.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/99ccf663-ed6e-4315-b7c4-b1c5ca651dbc.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/b47bf3a2-33f8-472b-8c9e-deb50267a42d.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/6f769178-8697-4333-a627-4b68db2b6201.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/604ef21a-e799-4825-9a41-103500efd695.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/3840ccea-f83a-49d4-bd12-341986599ebb.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/6cc7fc0c-1253-4632-ac5c-bd1063d2b8e4.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/2b0d503c-cadc-44f9-aeaa-f9b7bbae63c3.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/0545bfc7-f91a-4bcc-bc64-73eaf1a4a89e.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/edc0b0dd-2f28-47da-9e34-247940d9c04c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/65f99b0c-a5b1-4403-96b5-e1470cd984d9.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/f8eb9612-4e07-4a1c-b7f0-4375d63c0cc1.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/aa09faf3-9d7e-4402-9792-2a90b4321ec9.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/532beb1b-2521-4149-9a31-c2f2d34a352e.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/7200193d-1b81-48d8-87c0-3375dc919e32.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/2438f349-23e6-4fa0-a2d2-8412bea8b3fd.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/5d1348fa-4000-46e2-81a4-c8ea410369ee.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/b455feba-5fda-49cb-bdd4-dfaa811bb5e7.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/cba4518f-47c1-4457-8c35-933c444fc626.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/08a601d0-1e04-44ba-9ab0-53fe619597ff.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/fb51e889-f246-416c-9808-45c9c679031f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/343a3935-db6e-44a6-b5c6-4c10db1ab363.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/4ad25339-b5e2-410f-a79d-9160c36a9674.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/f36a8524-5773-4ee7-ba2d-b34bf3d9a9bd.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/1e344e44-b427-40e8-ab36-1b517909c3d6.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/09106d81-8f02-4b79-87df-74d9be240641.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/876cd722-d240-48fa-8f77-4f818f4c5d77.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/488f8609-de94-41f3-a65d-c37220e2330f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/4e27f898-331d-4663-afc5-236b38d9ea3f.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/a789001f-e2fd-4199-99f8-dbe4e4725e84.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/cb4d485a-53da-4d24-83e2-dfec919d931a.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/ee1426a8-46f2-4813-9882-20ad8d0972a1.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/cf00544a-5ed3-4bac-aff1-b8217a3a45c4.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/6d5dbcc7-3d99-420a-a6b0-c51a2ec30011.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/515e57c1-c6a8-4305-9e4d-6d70c4107315.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/70956460-e2c1-48fb-9ad8-db9a5b83e36c.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2021/c6df200d-9054-465e-9b0e-d1958608f5fd.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/d3c4e8b5-0ed0-4772-a515-f923fe0771a1.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/79a10134-9984-47cc-87d3-0cbddeba223b.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/8afb0816-f4f1-4943-9c31-b43e40122941.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/8cd2c724-c929-48e9-b656-3e4555a5584c.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/017e1c89-31a3-43e8-86d5-7de391bbb37b.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/c58625e8-47d6-4b19-aef6-525febcd6d38.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/1bf12795-96e4-4395-af6e-fb2a088636fa.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/2d05598b-74d1-44ed-8bdd-9aa918112085.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/57e02db1-fb97-47cd-9585-4f1ef7211650.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/1b528786-5194-4c7c-84ec-9218c69b2fc2.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/41fecc8a-1ce1-453d-807f-a9b0f3c8ab62.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/f4597672-08e1-4afc-8323-15ccddba356d.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/2eb3f9c3-1c36-45d5-9735-d11d51185c68.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/a5ef2f49-ea45-4386-96a2-4673103c595a.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/455cc7fb-7b04-4f9d-b08d-6f4969786d9e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/64bc8529-364c-437c-8384-11fc9636d8b1.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/cbe13144-ddc3-429d-a74b-cdc98ddf1085.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/7ee125ee-d8b3-4d3d-ac1c-61977c32f5bc.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/65cb309f-bcb5-4ae9-87b4-6dacf2cdab42.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/ddc86658-3a83-4124-822b-aefb037eec50.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/e3b964ca-9bcf-4ea9-99b2-2abc7480b589.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/707dd742-f7b4-436d-bcbf-17f350a6408a.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/66314864-0acc-4a50-a3e9-bdc654ab6905.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/83ba8ba6-837f-41f6-a65f-9b99655c3015.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/4902be59-36f2-4bd1-a1ee-db6e3d43c2e1.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/1444a683-24fa-4c09-9a8a-6183f8ca6cbe.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/4bc63578-931d-4d2b-8254-544b4ece04f7.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/c1ce6336-f7b8-4576-a267-8e59b88c4da5.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/6be9a0b4-0c3a-41cd-bc7d-36e97964e2b1.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/20f35dd2-7088-46b7-91b9-7e3aa61b4558.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/e1bea27f-c832-4d89-9d4f-a2e5b6e772ff.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/5655b090-0065-490f-9350-e87ae15a3cf8.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/5257e38b-5b36-41c5-95f0-967e1abfe27e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/3f9beb61-6509-43a9-acec-f7769a77cb89.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/1b542dda-9bae-477d-a3e6-136f3e0b72db.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/91e7468c-652f-4596-93f0-573bce34e83f.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/51385db1-8c86-4dae-8a59-27f47205196e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/499ad509-3acc-4b27-b94e-291413308070.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/9db41860-3885-4bd7-b1f0-bc8c0ccd6a29.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/78c0f494-500d-4816-bf5a-053ce0865d0b.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/407ccdf9-a5d3-439e-838f-8f5eb52251a1.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/536684a9-30a4-418e-97c7-f4ba4c962633.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/61479400-77cb-4326-a549-1cd6616175d5.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/a9e63154-ef59-464e-a3a6-52b7d438b3de.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/6d0bf17a-498a-440f-801d-91a35edb4c78.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/43843775-65d7-4fd9-ae43-884d3d0078d1.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/1da9f1a4-20e0-464a-a606-dcbfd6e2136d.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/d79d1010-7042-4d97-9e8a-49ed19bf0632.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/f3260013-1606-496a-a1e6-0dd1f1812b4d.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/fbaa3e95-f4a1-483e-b5bc-7720aef7af59.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/13ba4f0f-0462-4b6c-9ad2-9f826b9927d8.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2020/01da658d-b49f-4ee2-9104-6610a215bd3e.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/045727dc-8b4b-4e6b-8657-bf959b08593e.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/05990f1f-2424-432b-9751-4451a5fd7a04.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/709bce3c-7421-4127-b15c-175029a3bcbd.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/2e13a717-5e8c-4d89-a7be-4a9416f60e2f.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/bc652487-f491-4acc-9835-72f1dfe4e1cf.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/638f96f2-4ed8-4397-b4ef-b42c034153e5.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/932000ce-a205-4fc3-bc09-ad333db5b5dd.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/e57d359b-18d8-4f6a-9534-19286e32a1a8.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/2ae4a877-08fb-46d5-8e28-f72a5eb63312.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/8d7c26b1-5fca-4942-9590-09f4325b0fcf.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/7da96909-ab49-45a3-9736-6dc03ef8909c.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/fb1ac00f-70f8-47c9-8fed-dde703ae5a93.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/f689c9fc-aae0-40cb-9817-e77dedc4394a.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-05T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/8921f20a-3dbf-47b9-b760-5a8d0d629b52.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/bacdd5a8-faf8-4e7c-ba29-bb73a0bb8305.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/4bb87eda-cf59-4325-b566-087b0f8aeb8b.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/f102c374-8aa0-4838-804e-3685fd552f92.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-07T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/abfc8cc3-14e4-4702-bf3d-1953d7c77244.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/6e8191e1-4d53-4073-8c7e-c5943a976d90.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/2e93ef83-8499-45f7-98cb-d21af33832f4.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-17T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/1bf58ae4-9303-4421-aaba-69ce465cd366.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-10T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/2dd06c7c-8795-4bb5-9d98-260057a763ca.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/e2332231-c6f4-4ff8-9240-4e33cb6882b9.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/80b4f7fe-d336-4204-9545-cc58f18fafde.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/48ee2548-fa09-479d-9ffa-a7ac3e9ad150.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/0f32fb23-a7f5-4ab8-9307-e4505c8f2d27.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/06b59646-d020-4ef3-ae69-50ff3c9cb73c.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/d92cbf95-4ccc-4983-8c79-d45d3a24808e.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/dc3dfdb8-480a-4f6f-900c-2d8fe3766a6d.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-15T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/955faf7a-27e9-4f5b-80b6-0b95949375e1.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-08T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/83543a9a-2f0a-4944-8664-2e9f685f1fce.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/3a07d402-1216-4d3a-bf87-8f9755aa1fa5.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-25T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/9093dc89-8ed1-4320-afb9-835d44e5f7ef.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-18T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/c9466861-74ee-4525-8372-cc62dee26793.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-11T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/204d749a-a956-42b0-929f-f1f3a7026bf2.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/61e83a81-fd01-46dc-a58a-17f7a63112d1.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-27T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/4f848735-b18d-47c0-8f3a-55b557b3b3c7.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/bb0a1627-bbe1-4854-a29e-231670b6f132.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/c024ed51-6ca4-4a0e-9c57-2cc47753c13a.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-06T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/d8e4f690-6111-4a52-a9f4-fcf804b61ecc.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/47a7a9bb-2a95-4f90-968d-2a98191f0c07.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/eb62566c-e9b0-4ac3-a428-e399cc58c2b8.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/8b5dba85-8252-4668-9332-2f1cb4930040.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/ec7a4832-06b8-4560-b1b9-54423b4210ea.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/aba48570-58e4-488b-bd25-119beb23b56f.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/35112735-5619-4322-8ae5-9b65a78de487.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-16T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/1098a99c-a80d-4704-b30a-e8cb52284db9.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/290e0d47-afda-4b8c-8455-fee30c19a558.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-02T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/2ee4c516-1908-4b06-b85e-a7e292e6dbf4.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-26T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/6f40e7d1-c318-41b1-a3c7-fa87cbf627d7.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-19T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/54d5aad0-8f16-423a-a469-36d0e6a5a41c.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-12T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./chl_concentration/2019/3f736cab-1398-44c7-baf1-6966e680b2f3.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-05T00:00:00Z"
+    },
+    {
+      "rel": "license",
+      "href": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+      "type": "text/html",
+      "title": "Licence to Use Copernicus Products"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-7db8e19e-bf12-4203-bdd1-673455647354"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "chl_concentration",
+      "wms:layers": [
+        "AWS_N3_CUSTOM"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration maps"
+    }
+  ],
+  "subtitle": "Chlorophyll-a concentration description",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration.png",
+  "themes": [
+    "oceans"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CHL",
+    "CMEMS",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "N3a2",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#000000",
+      "#0000ff",
+      "#009a57",
+      "#fbd063",
+      "#d68231"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Chl-a anomaly [%]"
+  },
+  "title": "Sea surface temperature in Tagus Delta",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -10.502786636352539,
+          37.99824142456055,
+          -8.74720573425293,
+          39.50302505493164
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-05T00:00:00Z",
+          "2025-01-04T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "url": "https://marine.copernicus.eu/access-data"
+    },
+    {
+      "name": "CNR ISMAR",
+      "url": "https://www.ismar.cnr.it/istituto/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration/N3a2_chl_concentration.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

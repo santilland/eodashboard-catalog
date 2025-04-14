@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Rome",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.496366,
+        41.902782
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    12.486366,
+    41.892782000000004,
+    12.506366,
+    41.912782
+  ],
+  "properties": {
+    "start_datetime": "2018-05-07T00:00:00Z",
+    "end_datetime": "2025-02-03T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide at City level"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide at City level"
+    }
+  ],
+  "assets": {},
+  "collection": "N1_NO2_city_trilateral"
+}

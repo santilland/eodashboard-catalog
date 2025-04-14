@@ -1,0 +1,93 @@
+{
+  "type": "Collection",
+  "id": "winter_cereals",
+  "stac_version": "1.1.0",
+  "description": "## Winter cereals growth and harvest \u2013 Spain\r\n\r\nThis indicator aims at showing the winter cereals (e.g. winter wheat and barley) harvest evolution at parcel-level over the Spanish autonomous regions [Castilla y Le\u00f3n, Andalucia, Castilla-la-Mancha, Arag\u00f3n](https://agridata.ec.europa.eu/extensions/DashboardCereals/CerealsProduction.html?selections=MS%20Name%20(Production)-Spain) by means of Sentinel-1, Sentinel-2 and Landsat-8 data with 10 meters resolution and 2-3 days revisit time.\r\n\r\nTime series of Sentinel-2 vegetation indices and Sentinel-1 backscatter and coherence values have been processed and analyzed using the open source Sen4CAP (and upcoming Sen4Stat) processing systems. \r\n\r\nParcels dataset have been kindly shared by the national Paying Agency \u201cFondo Espa\u00f1ol de Garant\u00eda Agraria O.A.\u201d (FEGA) which also provided advices on the results interpretation along with the regional paying agency of Castilla y Le\u00f3n.\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./winter_cereals/2020/Spain.json",
+      "type": "application/geo+json",
+      "id": "ES41",
+      "latlng": "40.044,-4.457",
+      "country": "ES",
+      "city": "Spain"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Winter cereals"
+    }
+  ],
+  "subtitle": "Winter cereals growth and harvest \u2013 Spain",
+  "yAxis": "(%) of Harvested and non-Harvested areas",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Copernicus",
+    "Sen4CAP",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "ESA",
+    "NASA",
+    "USGS"
+  ],
+  "subcode": "E10a8",
+  "sensor": [
+    "C-SAR",
+    "MSI",
+    "OLI"
+  ],
+  "satellite": [
+    "Sentinel-1",
+    "Sentinel-2",
+    "Landsat-8"
+  ],
+  "geoDBID": "E10a8",
+  "endpointtype": "GeoDB",
+  "title": "Winter cereals",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -4.467,
+          40.034,
+          -4.447,
+          40.053999999999995
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-05-17T00:00:00Z",
+          "2020-08-02T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "FEGA",
+      "url": "https://www.fega.gob.es/en"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Spain"
+    ],
+    "countries": [
+      "ES"
+    ]
+  }
+}

@@ -1,0 +1,574 @@
+{
+  "type": "Collection",
+  "id": "N6_geoglam",
+  "stac_version": "1.1.0",
+  "description": "## World, Crop Condition\n\nMeasures to slow the spread of COVID-19 are affecting the food supply chain in many ways, including the availability of inputs, labor, transport, and cross-border trade.\nThe [Group on Earth Observation\u2019s Global Agricultural Monitoring Initiative (GEOGLAM) Global Crop Monitor](https://cropmonitor.org/) uses remote sensing data like global precipitation and soil moisture measurements to help reduce uncertainty, promote market transparency, and provide early warning for crop failures through multi-agency collaboration. During the pandemic, this tool \u2013 developed in conjunction with NASA\u2019s food and agriculture program ([NASA Harvest](https://nasaharvest.org/)), ESA and JAXA \u2013 is increasingly used in lieu of on-the-ground validation of crop conditions.\n\nData from the GEOGLAM Crop Monitor inform two different agricultural tools that have helped lessen global concerns over food security during the novel coronavirus pandemic: the Agricultural Market Information System (AMIS) and the Crop Monitor for Early Warning (CM4EW). AMIS provides agricultural information based on remote sensing observations for the major producing nations of four primary crops \u2013 wheat, maize, rice, and soybeans. CM4EW provides agricultural data for countries at higher risk of food insecurity.\n\n\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N6_geoglam/N6-Fig-1.png)\n\n\n*Global crop conditions as of July 28, 2020. Blue and green colors indicate exceptional and favorable crop conditions, while red and burgundy indicate poor crop conditions and crop failure. Yellow areas are currently under watch for potential negative impacts on crops. Image Credit: GEOGLAM Crop Monitor*\n\n\n#### Major Producing and Exporting Countries\n\nCurrent estimates from GEOGLAM Crop Monitor data indicate the global food supply is adequate. While many countries experienced lockdowns and travel bans as the novel coronavirus spread, most farmers were able to continue operations due to the rural nature of most farm communities and the relatively less labor-intensive cultivation techniques associated with key crops.\n\nHowever, the spread of the coronavirus did have an impact on the ability of governments and agricultural organizations to perform in-person field surveys of sowing, crop progress, and harvesting. This reinforced the need for strong remote sensing capabilities. Satellite-based information from AMIS helped confirm that global food production during the early parts of the pandemic was secure, leading to the resumption of normal trade flows after some large producer and export countries issued temporary trade restrictions.\n\n\"Assessing the global supply situation and being able to predict unexpected shortfalls is the single most important task to guarantee global food security,\u201d explained Abdolreza Abbassian, Secretary of AMIS and a U.N. Food and Agriculture Organization senior economist. \u201cHowever, such assessments must be evidence-based and credible, and this is where reliance on timely information from remote sensing plays a fundamental role.\u201d\n\nAMIS data for the main grain producing and export countries show that crop conditions and related production for 2020 seasons are generally favorable. While dry conditions in parts of Europe, southern Ukraine, and southern Russia have impacted winter wheat yields, favorable harvests in North America, India, China, and elsewhere in the Black Sea region have offset those reductions. In the Southern Hemisphere, there have been good harvests of maize and soybeans in Brazil, Argentina, and South Africa. Looking ahead, conditions are favorable for most summer crops in the Northern Hemisphere, the monsoon season in India, the main rice season in northern Southeast Asia, and for winter wheat in Australia. Providing evidence through satellite data that overall global production of the major staple crops is adequate has been critical during this time of uncertainty.\n\n\n#### COVID-19 Impacts in East Africa\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N6_geoglam/N6-Fig-2.png)\n\n*Maize 1 conditions across East Africa as of July 28, 2020. Data inputs from a wide variety of Earth observation satellites combined with field statistics are used to generate meaningful crop condition reports. Image Credit: GEOGLAM Crop Monitor*\n\nDuring the 2020 growing season in East Africa, agricultural production has faced the triple threat of desert locusts, deadly flooding and COVID-19 impacts.\n\nThe overall impact of the pandemic on agricultural production of major grains within the region so far has been generally limited, and supplies of staple foods are reported to be sufficient. However, production has been disrupted in some areas through COVID-19 restrictions, causing agricultural labor supply shortages and disrupting supply chains, limiting farmers\u2019 access to seeds, fertilizers, and other inputs. This has already resulted in reported declines in planted area and yields in Ethiopia, Somalia and elsewhere across the region, and it will be critical to continue to monitor the situation and to provide timely and evidence driven crop assessments.\n\n\n#### COVID-19 Impacts in Southeast Asia\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N6_geoglam/N6-Fig-3.png)\n\n*Rice conditions across Southeast Asia as of July 28, 2020. Remotely sensed data is useful to visualize crop conditions and regions susceptible to potential crop failure. Image Credit: GEOGLAM Crop Monitor*\n\nIn Southern Asia, the GEOGLAM crop condition assessments are coordinated by the Asian Rice Crop Estimation & Monitoring (Asia-RiCE) initiative led by the Japan Aerospace Exploration Agency (JAXA) with inputs from the region\u2019s national ministries of agriculture. COVID-19 has impacted the region by restricting the ability of governments to do field surveys, particularly during the height of the outbreak.\n\nCurrently, on the northern side of Southeast Asia, the dry-season rice has come to a close and the wet-season rice (main producing season) is underway. The dry season, which ended in May-June, was affected by persistent dry conditions that drove down yields and planted area in Myanmar, Thailand, and Laos. The wet-season rice began under generally favorable conditions, with ample rainfall in most areas except for southern Vietnam. Additionally, there has been some flooding in Bangladesh.\n\nIn the southern side (Indonesia), the wet-season rice is complete, and the dry-season rice is underway. During the wet-season, reduced rainfall delayed the sowing of the rice and eventually resulted in less total sown area and a reduction in yields. As a consequence of the delay in the wet-season, the sowing of dry-season rice was delayed. Despite the delay, good rainfall has continued into the traditional dry season.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2025/CropMonitor_202501.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202501.tif",
+      "start_datetime": "2025-01-01T00:00:00Z",
+      "end_datetime": "2025-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202411.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202411.tif",
+      "start_datetime": "2024-11-01T00:00:00Z",
+      "end_datetime": "2024-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202410.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202410.tif",
+      "start_datetime": "2024-10-01T00:00:00Z",
+      "end_datetime": "2024-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202409.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202409.tif",
+      "start_datetime": "2024-09-01T00:00:00Z",
+      "end_datetime": "2024-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202408.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202408.tif",
+      "start_datetime": "2024-08-01T00:00:00Z",
+      "end_datetime": "2024-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202407.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202407.tif",
+      "start_datetime": "2024-07-01T00:00:00Z",
+      "end_datetime": "2024-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202406.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202406.tif",
+      "start_datetime": "2024-06-01T00:00:00Z",
+      "end_datetime": "2024-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202405.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202405.tif",
+      "start_datetime": "2024-05-01T00:00:00Z",
+      "end_datetime": "2024-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202404.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202404.tif",
+      "start_datetime": "2024-04-01T00:00:00Z",
+      "end_datetime": "2024-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202403.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202403.tif",
+      "start_datetime": "2024-03-01T00:00:00Z",
+      "end_datetime": "2024-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202402.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202402.tif",
+      "start_datetime": "2024-02-01T00:00:00Z",
+      "end_datetime": "2024-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2024/CropMonitor_202401.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202401.tif",
+      "start_datetime": "2024-01-01T00:00:00Z",
+      "end_datetime": "2024-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202311.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202311.tif",
+      "start_datetime": "2023-11-01T00:00:00Z",
+      "end_datetime": "2023-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202310.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202310.tif",
+      "start_datetime": "2023-10-01T00:00:00Z",
+      "end_datetime": "2023-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202309.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202309.tif",
+      "start_datetime": "2023-09-01T00:00:00Z",
+      "end_datetime": "2023-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202308.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202308.tif",
+      "start_datetime": "2023-08-01T00:00:00Z",
+      "end_datetime": "2023-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202307.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202307.tif",
+      "start_datetime": "2023-07-01T00:00:00Z",
+      "end_datetime": "2023-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202306.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202306.tif",
+      "start_datetime": "2023-06-01T00:00:00Z",
+      "end_datetime": "2023-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202305.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202305.tif",
+      "start_datetime": "2023-05-01T00:00:00Z",
+      "end_datetime": "2023-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_202304.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202304.tif",
+      "start_datetime": "2023-04-01T00:00:00Z",
+      "end_datetime": "2023-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_2023_03_28.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_2023_03_28.tif",
+      "start_datetime": "2023-03-01T00:00:00Z",
+      "end_datetime": "2023-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_2023_02_28.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_2023_02_28.tif",
+      "start_datetime": "2023-02-01T00:00:00Z",
+      "end_datetime": "2023-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2023/CropMonitor_2023_01_28.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_2023_01_28.tif",
+      "start_datetime": "2023-01-01T00:00:00Z",
+      "end_datetime": "2023-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202211.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202211.tif",
+      "start_datetime": "2022-11-01T00:00:00Z",
+      "end_datetime": "2022-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202210.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202210.tif",
+      "start_datetime": "2022-10-01T00:00:00Z",
+      "end_datetime": "2022-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202209.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202209.tif",
+      "start_datetime": "2022-09-01T00:00:00Z",
+      "end_datetime": "2022-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202208.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202208.tif",
+      "start_datetime": "2022-08-01T00:00:00Z",
+      "end_datetime": "2022-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202207.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202207.tif",
+      "start_datetime": "2022-07-01T00:00:00Z",
+      "end_datetime": "2022-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202206.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202206.tif",
+      "start_datetime": "2022-06-01T00:00:00Z",
+      "end_datetime": "2022-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202205.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202205.tif",
+      "start_datetime": "2022-05-01T00:00:00Z",
+      "end_datetime": "2022-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202204.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202204.tif",
+      "start_datetime": "2022-04-01T00:00:00Z",
+      "end_datetime": "2022-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202203.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202203.tif",
+      "start_datetime": "2022-03-01T00:00:00Z",
+      "end_datetime": "2022-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202202.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202202.tif",
+      "start_datetime": "2022-02-01T00:00:00Z",
+      "end_datetime": "2022-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2022/CropMonitor_202201.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202201.tif",
+      "start_datetime": "2022-01-01T00:00:00Z",
+      "end_datetime": "2022-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202111.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202111.tif",
+      "start_datetime": "2021-11-01T00:00:00Z",
+      "end_datetime": "2021-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202110.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202110.tif",
+      "start_datetime": "2021-10-01T00:00:00Z",
+      "end_datetime": "2021-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202109.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202109.tif",
+      "start_datetime": "2021-09-01T00:00:00Z",
+      "end_datetime": "2021-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202108.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202108.tif",
+      "start_datetime": "2021-08-01T00:00:00Z",
+      "end_datetime": "2021-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202107.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202107.tif",
+      "start_datetime": "2021-07-01T00:00:00Z",
+      "end_datetime": "2021-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202106.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202106.tif",
+      "start_datetime": "2021-06-01T00:00:00Z",
+      "end_datetime": "2021-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202105.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202105.tif",
+      "start_datetime": "2021-05-01T00:00:00Z",
+      "end_datetime": "2021-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202104.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202104.tif",
+      "start_datetime": "2021-04-01T00:00:00Z",
+      "end_datetime": "2021-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202103.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202103.tif",
+      "start_datetime": "2021-03-01T00:00:00Z",
+      "end_datetime": "2021-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202102.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202102.tif",
+      "start_datetime": "2021-02-01T00:00:00Z",
+      "end_datetime": "2021-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2021/CropMonitor_202101.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202101.tif",
+      "start_datetime": "2021-01-01T00:00:00Z",
+      "end_datetime": "2021-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202011.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202011.tif",
+      "start_datetime": "2020-11-01T00:00:00Z",
+      "end_datetime": "2020-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202010.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202010.tif",
+      "start_datetime": "2020-10-01T00:00:00Z",
+      "end_datetime": "2020-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202009.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202009.tif",
+      "start_datetime": "2020-09-01T00:00:00Z",
+      "end_datetime": "2020-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202008.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202008.tif",
+      "start_datetime": "2020-08-01T00:00:00Z",
+      "end_datetime": "2020-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202007.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202007.tif",
+      "start_datetime": "2020-07-01T00:00:00Z",
+      "end_datetime": "2020-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202006.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202006.tif",
+      "start_datetime": "2020-06-01T00:00:00Z",
+      "end_datetime": "2020-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202005.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202005.tif",
+      "start_datetime": "2020-05-01T00:00:00Z",
+      "end_datetime": "2020-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202004.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202004.tif",
+      "start_datetime": "2020-04-01T00:00:00Z",
+      "end_datetime": "2020-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202003.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202003.tif",
+      "start_datetime": "2020-03-01T00:00:00Z",
+      "end_datetime": "2020-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202002.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202002.tif",
+      "start_datetime": "2020-02-01T00:00:00Z",
+      "end_datetime": "2020-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./geoglam/2020/CropMonitor_202001.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/geoglam/CropMonitor_202001.tif",
+      "start_datetime": "2020-01-01T00:00:00Z",
+      "end_datetime": "2020-01-31T00:00:00Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap=%7B%221%22%3A%20%5B120%2C%20120%2C%20120%2C%20255%5D%2C%222%22%3A%20%5B130%2C%2065%2C%200%2C%20255%5D%2C%223%22%3A%20%5B66%2C%20207%2C%2056%2C%20255%5D%2C%224%22%3A%20%5B245%2C%20239%2C%200%2C%20255%5D%2C%225%22%3A%20%5B241%2C%2089%2C%2032%2C%20255%5D%2C%226%22%3A%20%5B168%2C%200%2C%200%2C%20255%5D%2C%227%22%3A%20%5B0%2C%20143%2C%20201%2C%20255%5D%7D",
+      "type": "image/png",
+      "title": "N6_geoglam"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Crop Conditions (GEOGLAM)"
+    }
+  ],
+  "subtitle": "Estimates from GEOGLAM Crop Monitor",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N6_geoglam/N6_geoglam.png",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Agriculture",
+    "Human activities",
+    "Open data",
+    "Global crop conditions",
+    "Crop monitor"
+  ],
+  "agency": [
+    "NASA",
+    "ESA",
+    "JAXA"
+  ],
+  "subcode": "N6",
+  "satellite": [
+    "Other"
+  ],
+  "insituSources": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "Exceptional",
+      "Favourable",
+      "Watch",
+      "Poor",
+      "Failure",
+      "Out-of-season",
+      "No data"
+    ],
+    "range": [
+      "#447fca",
+      "#0be840",
+      "#f1ff00",
+      "#f34a00",
+      "#8e0000",
+      "#787878",
+      "#834100"
+    ],
+    "scaleType": "categorical",
+    "title": "Crop conditions"
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "Crop Conditions (GEOGLAM)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.004464285715,
+          -90.0,
+          180.00611292773385,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2025-01-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "GEOGLAM",
+      "roles": "licensor, processor",
+      "url": "https://www.cropmonitor.org/eo-data"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N6_geoglam/N6_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N6_geoglam/N6_geoglam.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://nasaharvest.org/",
+      "type": "text/html",
+      "title": "NASA Harvest Mission",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

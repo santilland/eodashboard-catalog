@@ -1,0 +1,183 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "CropMonitor_202304",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "end_datetime": "2023-04-30T00:00:00+00:00",
+    "start_datetime": "2023-04-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/geoglam/items/CropMonitor_202304/map?bidx=1&assets=cog_default&unscale=False&colormap=%7B%221%22%3A+%5B120%2C+120%2C+120%5D%2C+%222%22%3A+%5B130%2C+65%2C+0%5D%2C+%223%22%3A+%5B66%2C+207%2C+56%5D%2C+%224%22%3A+%5B245%2C+239%2C+0%5D%2C+%225%22%3A+%5B241%2C+89%2C+32%5D%2C+%226%22%3A+%5B168%2C+0%2C+0%5D%2C+%227%22%3A+%5B0%2C+143%2C+201%5D%7D&max_size=1024&resampling=nearest&return_mask=True",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Crop Conditions (GEOGLAM)"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/geoglam/CropMonitor_202304.tif&resampling_method=nearest&bidx=1&colormap=%7B%221%22%3A%20%5B120%2C%20120%2C%20120%2C%20255%5D%2C%222%22%3A%20%5B130%2C%2065%2C%200%2C%20255%5D%2C%223%22%3A%20%5B66%2C%20207%2C%2056%2C%20255%5D%2C%224%22%3A%20%5B245%2C%20239%2C%200%2C%20255%5D%2C%225%22%3A%20%5B241%2C%2089%2C%2032%2C%20255%5D%2C%226%22%3A%20%5B168%2C%200%2C%200%2C%20255%5D%2C%227%22%3A%20%5B0%2C%20143%2C%20201%2C%20255%5D%7D",
+      "type": "image/png",
+      "title": "N6_geoglam"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Crop Conditions (GEOGLAM)"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/geoglam/CropMonitor_202304.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:shape": [
+        18000,
+        36000
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 99.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 7.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              8703,
+              444,
+              0,
+              26478,
+              0,
+              5551,
+              1804,
+              0,
+              0,
+              1514
+            ]
+          },
+          "statistics": {
+            "mean": 2.9407785319368904,
+            "stddev": 1.2728864206168755,
+            "maximum": 7,
+            "minimum": 1,
+            "valid_percent": 8.486557006835938
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -90.0
+            ],
+            [
+              180.0,
+              -90.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -90.0
+            ]
+          ]
+        ]
+      },
+      "proj:transform": [
+        0.01,
+        0.0,
+        -180.0,
+        0.0,
+        -0.01,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/geoglam/items/CropMonitor_202304/preview.png?bidx=1&assets=cog_default&unscale=False&colormap=%7B%221%22%3A+%5B120%2C+120%2C+120%5D%2C+%222%22%3A+%5B130%2C+65%2C+0%5D%2C+%223%22%3A+%5B66%2C+207%2C+56%5D%2C+%224%22%3A+%5B245%2C+239%2C+0%5D%2C+%225%22%3A+%5B241%2C+89%2C+32%5D%2C+%226%22%3A+%5B168%2C+0%2C+0%5D%2C+%227%22%3A+%5B0%2C+143%2C+201%5D%7D&max_size=1024&resampling=nearest&return_mask=True",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "geoglam"
+}

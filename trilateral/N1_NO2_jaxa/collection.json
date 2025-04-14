@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "N1_NO2_jaxa",
+  "stac_version": "1.1.0",
+  "description": "## Nitrogen Dioxide for Cairo (Sentinel-5p TROPOMI)\n\nTROPOMI observes nitrogen dioxide (NO2) column density with a high resolution of 5 km. \nNO2 is an air pollution trace gas as a result of anthropogenic activities along with fossil fuel combustion such as oil refinery, power plant, steelwork and automobile transportation the same as the CO2 emission. However, NO2 reduction is processed by decomposition different from CO2 uptake.\n\nData source: https://data-portal.s5p-pal.com/products/no2.html \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N1_NO2_jaxa/collection.json",
+      "type": "application/json",
+      "title": "Nitrogen dioxide daily (Cairo) [mol/m3]",
+      "endpointtype": "WMS_Time",
+      "subtitle": "NO2 daily column density in Cairo based on Sentinel-5P data",
+      "code": "N1_NO2_jaxa",
+      "id": "N1_NO2_jaxa",
+      "themes": [
+        "atmosphere"
+      ],
+      "tags": [
+        "Air quality",
+        "NO2",
+        "Open data"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "N1_NO2_jaxa",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "NO2 daily column density in Cairo based on Sentinel-5P data",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "NO2",
+    "Open data"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N1_NO2_jaxa",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      360
+    ],
+    "range": [
+      "#0000C8",
+      "#0041FF",
+      "#00C1FF",
+      "#49FFAD",
+      "#B1FF46",
+      "#FFD000",
+      "#FF5900",
+      "#C40000",
+      "#800000"
+    ],
+    "scaleType": "discrete",
+    "title": "NO2 (\u00b5mol/m\u00b2)"
+  },
+  "title": "Nitrogen dioxide daily (Cairo) [mol/m3]",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ],
+        [
+          30,
+          29,
+          32,
+          31
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-06-30T11:59:59.500000Z",
+          "2019-10-05T11:59:59.500000Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "roles": "licensor, producer",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "name": "ESA",
+      "roles": "processor",
+      "url": "https://www.esa.int/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N1_NO2_jaxa"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_jaxa/N1_NO2_jaxa_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Tropomi",
+      "type": "text/html",
+      "title": "Tropomi",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Air_pollution_remains_low_as_Europeans_stay_at_home",
+      "type": "text/html",
+      "title": "Air pollution remains low as Europeans stay at home",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://www.esa.int/ESA_Multimedia/Images/2020/04/NO2_concentrations_over_India",
+      "type": "text/html",
+      "title": "NO2 concentrations over India",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "MT",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.5,
+        35.883
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    14.49,
+    35.873000000000005,
+    14.51,
+    35.893
+  ],
+  "properties": {
+    "start_datetime": "2021-01-17T00:00:00Z",
+    "end_datetime": "2024-03-05T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Covid-19 Vaccinations"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Covid-19 Vaccinations"
+    }
+  ],
+  "assets": {},
+  "collection": "OW_Covid_19_vaccinations_trilateral"
+}

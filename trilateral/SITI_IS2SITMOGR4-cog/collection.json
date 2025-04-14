@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "SITI_IS2SITMOGR4-cog",
+  "stac_version": "1.1.0",
+  "description": "## Monthly Gridded Sea Ice Thickness (ICESat-2 L4)\n\nThis data set reports monthly, gridded winter sea ice thickness across the Arctic Ocean. Sea ice thickness is estimated using ATLAS/ICESat-2 L3A Sea Ice Freeboard (ATL10),\nVersion 5 data and NASA Eulerian Snow On Sea Ice Model (NESOSIM) snow loading.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./SITI_IS2SITMOGR4-cog/collection.json",
+      "type": "application/json",
+      "title": "Sea Ice Thickness (ICESat-2)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Monthly Arctic sea ice thickness",
+      "code": "SITI",
+      "id": "SITI_IS2SITMOGR4-cog",
+      "themes": [
+        "cryosphere"
+      ],
+      "tags": [
+        "Sea ice",
+        "Arctic",
+        "Open data",
+        "Polar",
+        "Arctic"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "SITI",
+      "sensor": [
+        "ATLAS"
+      ],
+      "satellite": [
+        "ICESat-2"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Monthly Arctic sea ice thickness",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.png",
+  "themes": [
+    "cryosphere"
+  ],
+  "tags": [
+    "Sea ice",
+    "Arctic",
+    "Open data",
+    "Polar",
+    "Arctic"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "SITI",
+  "sensor": [
+    "ATLAS"
+  ],
+  "satellite": [
+    "ICESat-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      4
+    ],
+    "range": [
+      "#0d0887",
+      "#370499",
+      "#5801a4",
+      "#7701a8",
+      "#920fa3",
+      "#ac2694",
+      "#c23c81",
+      "#d45270",
+      "#e4695e",
+      "#f1814d",
+      "#fa9b3d",
+      "#feb82c",
+      "#fad824",
+      "#f0f921"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea-ice thickness [m]"
+  },
+  "title": "Sea Ice Thickness (ICESat-2)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          31.269270721494188,
+          179.7061752664782,
+          85.18898561151076
+        ],
+        [
+          -180.0,
+          31.269270721494188,
+          179.7061752664782,
+          85.18898561151076
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-11-01T00:00:00Z",
+          "2021-04-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer",
+      "url": "https://www.earthdata.nasa.gov/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "SITI"
+    ],
+    "themes": [
+      "cryosphere"
+    ],
+    "satellite": [
+      "ICESat-2"
+    ],
+    "sensor": [
+      "ATLAS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://nsidc.org/data/is2sitmogr4/versions/2",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

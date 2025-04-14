@@ -1,0 +1,134 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2012-01-01T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -79.0,
+          -18.25
+        ],
+        [
+          -79.0,
+          -12.85
+        ],
+        [
+          -79.0,
+          -7.449999999999999
+        ],
+        [
+          -79.0,
+          -2.049999999999997
+        ],
+        [
+          -79.0,
+          3.3500000000000014
+        ],
+        [
+          -79.0,
+          8.75
+        ],
+        [
+          -72.05,
+          8.75
+        ],
+        [
+          -65.1,
+          8.75
+        ],
+        [
+          -58.15,
+          8.75
+        ],
+        [
+          -51.2,
+          8.75
+        ],
+        [
+          -44.25,
+          8.75
+        ],
+        [
+          -44.25,
+          3.3499999999999996
+        ],
+        [
+          -44.25,
+          -2.0500000000000007
+        ],
+        [
+          -44.25,
+          -7.450000000000003
+        ],
+        [
+          -44.25,
+          -12.850000000000001
+        ],
+        [
+          -44.25,
+          -18.25
+        ],
+        [
+          -51.2,
+          -18.25
+        ],
+        [
+          -58.15,
+          -18.25
+        ],
+        [
+          -65.1,
+          -18.25
+        ],
+        [
+          -72.05,
+          -18.25
+        ],
+        [
+          -79.0,
+          -18.25
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -79.0,
+    -18.25,
+    -44.25,
+    8.75
+  ],
+  "properties": {
+    "datetime": "2012-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "xyz",
+      "href": "https://reccap2.api.brockmann-consult.de/api/tiles/cop28~reccap2-9x108x139-0.0.1.zarr/SF_biomass_growth/{z}/{y}/{x}?crs=EPSG:3857&time=2012-01-01 00:00:00+00:00&vmin=0&vmax=2&cbar=YlGn",
+      "type": "image/png",
+      "title": "xcube tiles"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Secondary forest growth (CCI RECCAP2)"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Secondary forest growth (CCI RECCAP2)"
+    }
+  ],
+  "assets": {},
+  "collection": "RECCAP2_5_SF_biomass_growth"
+}

@@ -1,0 +1,49 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/web-map-links/v1.1.0/schema.json"
+  ],
+  "id": "2023-05-28T11:59:30Z",
+  "geometry": null,
+  "properties": {
+    "datetime": "2023-05-28T11:59:30Z"
+  },
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "type": "image/jpeg",
+      "title": "N12_sea_ice_concentration_antarctic",
+      "wms:layers": [
+        "SIC_S"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2023-05-28T11:59:30Z"
+      }
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea ice concentration GCOM-W - Antarctic"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea ice concentration GCOM-W - Antarctic"
+    }
+  ],
+  "assets": {},
+  "collection": "N12_sea_ice_concentration_antarctic"
+}

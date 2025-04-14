@@ -1,0 +1,130 @@
+{
+  "type": "Collection",
+  "id": "facebook_population_density",
+  "stac_version": "1.1.0",
+  "description": "## High-resolution population density maps\n\nThis indicator shows the high-resolution maps estimating the number of people living within 30-meter grid tiles in nearly every country around the world. \nDarker areas indicate higher population density areas and lighter areas indicate lower population density areas.\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/FB-Fig1.png)\n\n\nData provider: Meta ([https://dataforgood.fb.com](https://dataforgood.facebook.com/dfg/about))\n\n\nRead more about the methodology employed to create these maps on the [Data for Good Website](https://dataforgood.fb.com/docs/methodology-high-resolution-population-density-maps-demographic-estimates/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./facebook_population_density/2015/hrsl_general_latest_global_cog_2015-01-01_2022-06-8.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/facebook_population_density/hrsl_general_latest_global_cog_2015-01-01_2022-06-8.tif",
+      "datetime": "2015-01-01T00:00:00Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=ylorrd&rescale=0,70",
+      "type": "image/png",
+      "title": "facebook_population_density"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Population Density (Meta)"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.png",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Human settlement",
+    "Human activities",
+    "Open data",
+    "Urban",
+    "Rural",
+    "Builtup"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "FB",
+  "otherSources": [
+    "Multi-sensors"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      80
+    ],
+    "range": [
+      "#ffffcc",
+      "#fff4b1",
+      "#ffe896",
+      "#fedc7c",
+      "#fec763",
+      "#feaf4b",
+      "#fd9841",
+      "#fd7a36",
+      "#fc532b",
+      "#ef3222",
+      "#dd161e",
+      "#c60624",
+      "#a60026",
+      "#800026"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Population density [People/m\u00b2]"
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "Population Density (Meta)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.00041666666667,
+          -55.985972222324634,
+          179.82041666695605,
+          71.33069444444443
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2015-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Meta",
+      "url": "https://dataforgood.facebook.com/dfg/about"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/FB_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://dataforgood.facebook.com/dfg/docs/methodology-high-resolution-population-density-maps",
+      "type": "text/html",
+      "title": "High Resolution Population Density Maps + Demographic Estimates",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

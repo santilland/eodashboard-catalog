@@ -1,0 +1,157 @@
+{
+  "type": "Collection",
+  "id": "Ocean_Heat_Content_upper_300m",
+  "stac_version": "1.1.0",
+  "description": "## Ocean heat content for the upper 300m \n\nOcean Heat Content for the Upper 300m (OHC300) is a variable provided by the ORAS5 dataset, a global ocean and sea-ice reanalysis system developed by ECMWF. \nORAS5 data, available from 1958 to the present, offers a comprehensive view of the ocean's thermal structure by combining model data with global observations to create a consistent and complete dataset that adheres to the physical laws of the ocean.\n\nOcean heat content (OHC) represents the energy stored in the ocean, an essential indicator of the Earth's energy imbalance. \nThe OHC300 specifically measures the amount of heat stored in the upper 300 meters of the ocean, expressed in Joules per square meter (J/m\u00b2). \nThis layer is crucial because it is where most of the heat exchange between the ocean and atmosphere occurs, influencing climate and weather patterns.\n\nThe ORAS5 dataset calculates OHC300 by integrating temperature, sea water density, and specific heat capacity from the ocean surface down to 300 meters. \nThis parameter is a two-dimensional field that provides monthly means across the globe, with data resolution approximately 0.25\u00b0 x 0.25\u00b0 (around 25 km in the tropics and 9 km in the Arctic). \nThe dataset's temporal coverage extends from January 1958 to the present without gaps, and new near real-time data is added monthly.\n\n**Note**\nAs with all model data, care should be taken when comparing OHC300 with in-situ observations, as observations typically represent specific points in space and time, while the model data averages over a grid box.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Ocean_Heat_Content_upper_300m/collection.json",
+      "type": "application/json",
+      "title": "Ocean heat content for the upper 300m",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "ORAS5 global ocean reanalysis monthly data from 1958 to present",
+      "code": "OHC300",
+      "id": "Ocean_Heat_Content_upper_300m",
+      "themes": [
+        "oceans"
+      ],
+      "tags": [
+        "Copernicus Services",
+        "C3S",
+        "CDS",
+        "Multi-sensors",
+        "Open data",
+        "Climate change service"
+      ],
+      "agency": [
+        "European Commission",
+        "ECMWF"
+      ],
+      "subcode": "OHC300",
+      "otherSources": [
+        "ORAS5"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
+      "type": "application/pdf",
+      "title": "Licence to Use Copernicus Products"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:doi": "10.24381/cds.67e8eeb7",
+  "sci:citation": "Copernicus Climate Change Service, Climate Data Store, (2021).\nORAS5 global ocean reanalysis monthly data from 1958 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS).\n",
+  "subtitle": "ORAS5 global ocean reanalysis monthly data from 1958 to present",
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "Copernicus Services",
+    "C3S",
+    "CDS",
+    "Multi-sensors",
+    "Open data",
+    "Climate change service"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "OHC300",
+  "otherSources": [
+    "ORAS5"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -2,
+      30
+    ],
+    "range": [
+      "#0000FF",
+      "#00FFFF",
+      "#FFFF00",
+      "#FF0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[GJ/m2]"
+  },
+  "title": "Ocean heat content for the upper 300m",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -77.0614030046477,
+          180.0,
+          89.94786834716797
+        ],
+        [
+          -180.0,
+          -77.0614030046477,
+          180.0,
+          89.94786834716797
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00Z",
+          "2024-06-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "roles": "licensor, producer",
+      "url": "https://www.copernicus.eu/en"
+    },
+    {
+      "name": "ECMWF",
+      "roles": "processor",
+      "url": "https://www.ecmwf.int/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "OHC300"
+    ],
+    "themes": [
+      "oceans"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OHC300_Ocean_Heat_Content_upper_300m/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_1": {
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-oras5?tab=form",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

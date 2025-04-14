@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Suez",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        32.314923,
+        30.939554
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    32.304923,
+    30.929554,
+    32.324923,
+    30.949554000000003
+  ],
+  "properties": {
+    "start_datetime": "2019-01-04T08:41:29Z",
+    "end_datetime": "2022-12-29T08:41:33Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Shipping Activity at Major Ports"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Shipping Activity at Major Ports"
+    }
+  ],
+  "assets": {},
+  "collection": "E13c_shipping_activity"
+}

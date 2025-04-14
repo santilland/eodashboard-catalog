@@ -1,0 +1,340 @@
+{
+  "type": "Collection",
+  "id": "Greenhouse_gas_reconsiliation_CH4",
+  "stac_version": "1.1.0",
+  "description": "# Greenhouse gas reconciliation 2022 CH4 (CCI RECCAP2)\n\nThese indicators compare the differences between the latest national greenhouse gas inventories (NGHGI) and atmospheric inversion models to support the global stocktake of the Paris Agreement.\n\nThe comparison framework used includes net ecosystem exchange carbon dioxide (CO2) flux, anthropogenic methane (CH4) emissions, and anthropogenic nitrous oxide (N2O) emissions.\n\nThe global harmonized NGHGI database was updated for inventory data by compiling data from periodical UNFCCC inventories by Annex I countries and sporadic and less detailed emissions reports by non-Annex I countries given by National Communications and Biennial Update Reports.\n\nFor the inversion data, updated results from an ensemble of global inversions produced for the Global Carbon Project were used for the three greenhouse gases, with ancillary data.\n\nFor CH4 inversions are updated to 2020.\n\n\n## Additional information\n\n- Dataset contributed by: [ESA CCI RECCAP2](https://climate.esa.int/en/projects/reccap-2/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Argentina.json",
+      "type": "application/geo+json",
+      "id": "ARG",
+      "latlng": "-34.583,-58.667",
+      "country": "Argentina",
+      "city": "Argentina"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Australia.json",
+      "type": "application/geo+json",
+      "id": "AUS",
+      "latlng": "-35.267,149.133",
+      "country": "Australia",
+      "city": "Australia"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/Bangladesh.json",
+      "type": "application/geo+json",
+      "id": "BGD",
+      "latlng": "23.717,90.4",
+      "country": "Bangladesh",
+      "city": "Bangladesh"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Brazil.json",
+      "type": "application/geo+json",
+      "id": "BRA",
+      "latlng": "-15.783,-47.917",
+      "country": "Brazil",
+      "city": "Brazil"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Canada.json",
+      "type": "application/geo+json",
+      "id": "CAN",
+      "latlng": "45.417,-75.7",
+      "country": "Canada",
+      "city": "Canada"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/China.json",
+      "type": "application/geo+json",
+      "id": "CHN",
+      "latlng": "39.917,116.383",
+      "country": "China",
+      "city": "China"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/Democratic Republic of the Congo.json",
+      "type": "application/geo+json",
+      "id": "COD",
+      "latlng": "-4.317,15.3",
+      "country": "Democratic Republic of the Congo",
+      "city": "Democratic Republic of the Congo"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Colombia.json",
+      "type": "application/geo+json",
+      "id": "COL",
+      "latlng": "4.6,-74.083",
+      "country": "Colombia",
+      "city": "Colombia"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/European Union Convention.json",
+      "type": "application/geo+json",
+      "id": "EUA",
+      "latlng": "50.83,4.34",
+      "country": "European Union (Convention)",
+      "city": "European Union (Convention)"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/European Union KP.json",
+      "type": "application/geo+json",
+      "id": "EUC",
+      "latlng": "50.8301,4.3401",
+      "country": "European Union (KP)",
+      "city": "European Union (KP)"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Indonesia.json",
+      "type": "application/geo+json",
+      "id": "IDN",
+      "latlng": "-6.167,106.817",
+      "country": "Indonesia",
+      "city": "Indonesia"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/India.json",
+      "type": "application/geo+json",
+      "id": "IND",
+      "latlng": "28.6,77.2",
+      "country": "India",
+      "city": "India"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/Iran Islamic Republic of.json",
+      "type": "application/geo+json",
+      "id": "IRN",
+      "latlng": "35.7,51.417",
+      "country": "Iran (Islamic Republic of)",
+      "city": "Iran (Islamic Republic of)"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Kazakhstan.json",
+      "type": "application/geo+json",
+      "id": "KAZ",
+      "latlng": "51.167,71.417",
+      "country": "Kazakhstan",
+      "city": "Kazakhstan"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Mexico.json",
+      "type": "application/geo+json",
+      "id": "MEX",
+      "latlng": "19.433,-99.133",
+      "country": "Mexico",
+      "city": "Mexico"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Mongolia.json",
+      "type": "application/geo+json",
+      "id": "MNG",
+      "latlng": "47.917,106.917",
+      "country": "Mongolia",
+      "city": "Mongolia"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/2000/Nigeria.json",
+      "type": "application/geo+json",
+      "id": "NGA",
+      "latlng": "9.083,7.533",
+      "country": "Nigeria",
+      "city": "Nigeria"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/Pakistan.json",
+      "type": "application/geo+json",
+      "id": "PAK",
+      "latlng": "33.683,73.05",
+      "country": "Pakistan",
+      "city": "Pakistan"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/Russian Federation.json",
+      "type": "application/geo+json",
+      "id": "RUS",
+      "latlng": "55.75,37.6",
+      "country": "Russian Federation",
+      "city": "Russian Federation"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1995/Sudan.json",
+      "type": "application/geo+json",
+      "id": "SDN",
+      "latlng": "15.6,32.533",
+      "country": "Sudan",
+      "city": "Sudan"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1994/Thailand.json",
+      "type": "application/geo+json",
+      "id": "THA",
+      "latlng": "13.75,100.517",
+      "country": "Thailand",
+      "city": "Thailand"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/United States of America.json",
+      "type": "application/geo+json",
+      "id": "USA",
+      "latlng": "38.883,-77.0",
+      "country": "United States of America",
+      "city": "United States of America"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1999/Venezuela Bolivarian Republic of.json",
+      "type": "application/geo+json",
+      "id": "VEN",
+      "latlng": "10.483,-66.867",
+      "country": "Venezuela (Bolivarian Republic of)",
+      "city": "Venezuela (Bolivarian Republic of)"
+    },
+    {
+      "rel": "item",
+      "href": "./Greenhouse_gas_reconsiliation_CH4/1990/South Africa.json",
+      "type": "application/geo+json",
+      "id": "ZAF",
+      "latlng": "-25.7,28.217",
+      "country": "South Africa",
+      "city": "South Africa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Methane from CCI RECCAP2"
+    }
+  ],
+  "sci:doi": "10.5281/zenodo.10841716",
+  "sci:citation": "Zhu Deng, Philippe Ciais, Liting Hu, Martinez, A., Saunois, M., Thompson, R., & Fr\u00e9d\u00e9ric Chevallier. (2024). Global greenhouse gas reconciliation 2022 [Data set]. Zenodo.\n",
+  "subtitle": "CH4 from National greenhouse gas inventories (NGHGI) database",
+  "yAxis": "Tg CH4",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "CH4",
+    "Open data",
+    "reconciliation"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "GGI_CH4",
+  "satellite": [
+    "Other"
+  ],
+  "geoDBID": "GGI_CH4",
+  "endpointtype": "GeoDB",
+  "title": "Methane from CCI RECCAP2",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -99.143,
+          -35.277,
+          149.143,
+          55.76
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1990-01-01T00:00:00Z",
+          "2020-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "roles": "licensor, producer, processor",
+      "url": "https://climate.esa.int/en/projects/reccap-2/"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Argentina",
+      "Australia",
+      "Bangladesh",
+      "Brazil",
+      "Canada",
+      "China",
+      "Democratic Republic of the Congo",
+      "Colombia",
+      "European Union (Convention)",
+      "European Union (KP)",
+      "Indonesia",
+      "India",
+      "Iran (Islamic Republic of)",
+      "Kazakhstan",
+      "Mexico",
+      "Mongolia",
+      "Nigeria",
+      "Pakistan",
+      "Russian Federation",
+      "Sudan",
+      "Thailand",
+      "United States of America",
+      "Venezuela (Bolivarian Republic of)",
+      "South Africa"
+    ],
+    "countries": [
+      "Argentina",
+      "Australia",
+      "Bangladesh",
+      "Brazil",
+      "Canada",
+      "China",
+      "Democratic Republic of the Congo",
+      "Colombia",
+      "European Union (Convention)",
+      "European Union (KP)",
+      "Indonesia",
+      "India",
+      "Iran (Islamic Republic of)",
+      "Kazakhstan",
+      "Mexico",
+      "Mongolia",
+      "Nigeria",
+      "Pakistan",
+      "Russian Federation",
+      "Sudan",
+      "Thailand",
+      "United States of America",
+      "Venezuela (Bolivarian Republic of)",
+      "South Africa"
+    ]
+  }
+}

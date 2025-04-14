@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "5269e578-8c48-4f13-b9bc-1e15ca7066cf",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          0.0,
+          -90.0
+        ],
+        [
+          0.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    0.0,
+    90.0
+  ],
+  "properties": {
+    "datetime": "2023-06-01T00:00:00Z",
+    "proj:bbox": [
+      -180.0,
+      -90.0,
+      0.0,
+      90.0
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            -180.0,
+            -90.0
+          ],
+          [
+            0.0,
+            -90.0
+          ],
+          [
+            0.0,
+            90.0
+          ],
+          [
+            -180.0,
+            90.0
+          ],
+          [
+            -180.0,
+            -90.0
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea Surface Temperature (GCOM-W)"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "ENSST_by_GCOM-W-AMSR_JAXA",
+      "wms:layers": [
+        "SST_BY_GCOM-W-AMSR_JAXA"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2023-06-01T00:00:00Z/2023-06-01T23:59:59Z"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea Surface Temperature (GCOM-W)"
+    }
+  ],
+  "assets": {},
+  "collection": "byoc-cb154978-c54f-4e15-a39e-5da7e601194d"
+}

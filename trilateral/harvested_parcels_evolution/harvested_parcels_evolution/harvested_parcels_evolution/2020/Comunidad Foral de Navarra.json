@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Comunidad Foral de Navarra",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -1.648,
+        42.644
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -1.658,
+    42.634,
+    -1.638,
+    42.653999999999996
+  ],
+  "properties": {
+    "start_datetime": "2020-05-17T00:00:00Z",
+    "end_datetime": "2020-08-02T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Harvested parcels"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Harvested parcels"
+    }
+  ],
+  "assets": {},
+  "collection": "harvested_parcels_evolution"
+}

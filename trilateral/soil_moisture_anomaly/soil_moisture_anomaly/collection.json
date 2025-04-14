@@ -1,0 +1,247 @@
+{
+  "type": "Collection",
+  "id": "soil_moisture_anomaly",
+  "stac_version": "1.1.0",
+  "description": "## Soil Moisture Anomaly \r\n\r\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature, Vegetation Index and anomaly, etc.\r\nRainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas. \r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2022/2022-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2022/2022-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2022/2022-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2022/2022-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2022/2022-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2022/2022-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2023/2023-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2023/2023-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2023/2023-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2023/2023-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2023/2023-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2023/2023-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2024/2024-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2024/2024-02-15T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-15T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2024/2024-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2024/2024-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2024/2024-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./soil_moisture_anomaly/2024/2024-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-15T23:59:30Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "type": "image/jpeg",
+      "title": "soil_moisture_anomaly",
+      "wms:layers": [
+        "SMC-Anomaly-GCOMW-World-Monthly"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Soil Moisture Anomaly from GSMaP"
+    }
+  ],
+  "subtitle": "Global Soil Moisture Anomaly",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "SMC",
+  "satellite": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "NaN",
+      300
+    ],
+    "range": [
+      "#ffffff",
+      "#3e3eff",
+      "#3737ff",
+      "#7777ff",
+      "#b6b6ff",
+      "#fafaff",
+      "#ffc6c6",
+      "#ff8484",
+      "#ff4545",
+      "#ff0606"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Soil moisture anomaly"
+  },
+  "endpointtype": "WMS_Time",
+  "title": "Soil Moisture Anomaly from GSMaP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-16T11:59:30Z",
+          "2024-06-15T23:59:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.jpmap-jaxa.jp/jpmap/en/user_guide/",
+      "type": "text/html",
+      "title": "Jaxa Public-health Monitor and Analysis Platform",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/",
+      "type": "text/html",
+      "title": "Jaxa Global Satellite Mapping of Precipitation",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf",
+      "type": "text/html",
+      "title": "GSMaP Documentation",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

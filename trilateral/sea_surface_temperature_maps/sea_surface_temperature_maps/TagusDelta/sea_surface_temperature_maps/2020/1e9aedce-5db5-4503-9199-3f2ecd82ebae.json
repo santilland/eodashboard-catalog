@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "1e9aedce-5db5-4503-9199-3f2ecd82ebae",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          -10.504186630249023,
+          37.997182846069336
+        ],
+        [
+          -8.74580192565918,
+          37.997182846069336
+        ],
+        [
+          -8.74580192565918,
+          39.50436973571777
+        ],
+        [
+          -10.504186630249023,
+          39.50436973571777
+        ],
+        [
+          -10.504186630249023,
+          37.997182846069336
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -10.504186630249023,
+    37.997182846069336,
+    -8.74580192565918,
+    39.50436973571777
+  ],
+  "properties": {
+    "datetime": "2020-08-08T00:00:00Z",
+    "proj:bbox": [
+      -10.504186630249023,
+      37.997182846069336,
+      -8.74580192565918,
+      39.50436973571777
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            -10.504186630249023,
+            37.997182846069336
+          ],
+          [
+            -8.74580192565918,
+            37.997182846069336
+          ],
+          [
+            -8.74580192565918,
+            39.50436973571777
+          ],
+          [
+            -10.504186630249023,
+            39.50436973571777
+          ],
+          [
+            -10.504186630249023,
+            37.997182846069336
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_surface_temperature_maps",
+      "wms:layers": [
+        "AWS_VIS_SST_MAPS"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2020-08-08T00:00:00Z/2020-08-08T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature maps"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Tagus Delta"
+    }
+  ],
+  "assets": {},
+  "collection": "sea_surface_temperature_maps"
+}

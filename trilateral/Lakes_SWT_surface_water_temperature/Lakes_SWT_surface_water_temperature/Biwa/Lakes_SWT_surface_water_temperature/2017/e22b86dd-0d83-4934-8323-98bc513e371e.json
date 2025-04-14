@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "e22b86dd-0d83-4934-8323-98bc513e371e",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          135.85,
+          34.97500000000001
+        ],
+        [
+          136.28333333333333,
+          34.97500000000001
+        ],
+        [
+          136.28333333333333,
+          35.525
+        ],
+        [
+          135.85,
+          35.525
+        ],
+        [
+          135.85,
+          34.97500000000001
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    135.85,
+    34.97500000000001,
+    136.28333333333333,
+    35.525
+  ],
+  "properties": {
+    "datetime": "2017-02-15T00:00:00Z",
+    "proj:bbox": [
+      135.85,
+      34.97500000000001,
+      136.28333333333333,
+      35.525
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            135.85,
+            34.97500000000001
+          ],
+          [
+            136.28333333333333,
+            34.97500000000001
+          ],
+          [
+            136.28333333333333,
+            35.525
+          ],
+          [
+            135.85,
+            35.525
+          ],
+          [
+            135.85,
+            34.97500000000001
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Lakes_SWT_surface_water_temperature",
+      "wms:layers": [
+        "LAKES_SURFACE_WATER_TEMPERATURE"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2017-02-15T00:00:00Z/2017-02-15T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Lakes surface water temperature"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Biwa"
+    }
+  ],
+  "assets": {},
+  "collection": "Lakes_SWT_surface_water_temperature"
+}

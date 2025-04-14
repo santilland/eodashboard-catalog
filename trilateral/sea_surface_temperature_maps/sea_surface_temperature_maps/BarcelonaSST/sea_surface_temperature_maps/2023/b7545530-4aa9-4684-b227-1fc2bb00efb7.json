@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "b7545530-4aa9-4684-b227-1fc2bb00efb7",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          0.4958158806278117,
+          40.49169459203297
+        ],
+        [
+          2.504193179278194,
+          40.49169459203297
+        ],
+        [
+          2.504193179278194,
+          41.50425148010254
+        ],
+        [
+          0.4958158806278117,
+          41.50425148010254
+        ],
+        [
+          0.4958158806278117,
+          40.49169459203297
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    0.4958158806278117,
+    40.49169459203297,
+    2.504193179278194,
+    41.50425148010254
+  ],
+  "properties": {
+    "datetime": "2023-11-11T00:00:00Z",
+    "proj:bbox": [
+      0.4958158806278117,
+      40.49169459203297,
+      2.504193179278194,
+      41.50425148010254
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            0.4958158806278117,
+            40.49169459203297
+          ],
+          [
+            2.504193179278194,
+            40.49169459203297
+          ],
+          [
+            2.504193179278194,
+            41.50425148010254
+          ],
+          [
+            0.4958158806278117,
+            41.50425148010254
+          ],
+          [
+            0.4958158806278117,
+            40.49169459203297
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "sea_surface_temperature_maps",
+      "wms:layers": [
+        "AWS_VIS_SST_MAPS"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2023-11-11T00:00:00Z/2023-11-11T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature maps"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature in Barcelona"
+    }
+  ],
+  "assets": {},
+  "collection": "sea_surface_temperature_maps"
+}

@@ -1,0 +1,172 @@
+{
+  "type": "Collection",
+  "id": "CO_3_daily",
+  "stac_version": "1.1.0",
+  "description": "## Carbon Monoxide observed by Sentinel-5p TROPOMI\n\nCarbon monoxide (CO) is an important atmospheric trace gas for our understanding of tropospheric chemistry. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. Whereas fossil fuel combustion is the main source of CO at Northern mid-latitudes, the oxidation of isoprene and biomass burning play an important role in the tropics. \n\n[TROPOMI on ESA's Sentinel 5 Precursor (S5P) satellite](https://sentinel.esa.int/web/sentinel/missions/sentinel-5p) observes the CO global abundance exploiting clear-sky and cloudy-sky Earth radiance measurements in the 2.3 \u00b5m spectral range of the shortwave infrared (SWIR) part of the solar spectrum. \n\nTROPOMI clear sky observations provide CO total columns with sensitivity to the tropospheric boundary layer. For cloudy atmospheres, the column sensitivity changes according to the light path.  \n\nThe figure below shows the S5P/TROPOMI CO total column mixing ratio averaged from November 13th to 19th, 2017 (from Borsdorff et al., GRL 2018). The data show clearly CO enhancements by wildfires in Brazil, Africa, Madagascar, and Australia as well as anthropogenic air pollution in India and China.\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/CO_Figure.png)\n\n*Figure 1. S5P/TROPOMI CO total column mixing ratio averaged from November 13th to 19th, 2017 (from Borsdorff et al., GRL 2018). The data show clearly CO enhancements by wildfires in Brazil, Africa, Madagascar, and Australia as well as anthropogenic air pollution in India and China.*\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./CO_3_daily/collection.json",
+      "type": "application/json",
+      "title": "Carbon Monoxide observed by Sentinel-5p TROPOMI",
+      "endpointtype": "Sentinel Hub_byoc",
+      "subtitle": "Global 3-daily Carbon monoxide",
+      "code": "N1_CO",
+      "id": "CO_3_daily",
+      "themes": [
+        "air",
+        "extreme-events"
+      ],
+      "tags": [
+        "Air quality",
+        "CO",
+        "Open data",
+        "Air pollution"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "N1_CO",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Global 3-daily Carbon monoxide",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.png",
+  "themes": [
+    "air",
+    "extreme-events"
+  ],
+  "tags": [
+    "Air quality",
+    "CO",
+    "Open data",
+    "Air pollution"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N1_CO",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      175
+    ],
+    "range": [
+      "#f8f6f4",
+      "#9e61a8",
+      "#5366b6",
+      "#3c8cc6",
+      "#51aca2",
+      "#e3a625",
+      "#eb490e",
+      "#ba0006",
+      "#74120d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "CO [ppbv]"
+  },
+  "title": "Carbon Monoxide observed by Sentinel-5p TROPOMI",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-04-30T00:00:00Z",
+          "2025-03-02T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "name": "Copernicus Data Space",
+      "url": "https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel5P.html"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N1_CO"
+    ],
+    "themes": [
+      "air",
+      "extreme-events"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "tropomi_co": {
+      "href": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide",
+      "type": "text/html",
+      "title": "TROPOMI CO",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

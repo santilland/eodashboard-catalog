@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Venice",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.508056,
+        45.314247
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    12.498056,
+    45.304247000000004,
+    12.518056,
+    45.324247
+  ],
+  "properties": {
+    "start_datetime": "2019-01-04T11:50:00Z",
+    "end_datetime": "2025-02-22T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Total Suspended Matter concentration anomaly"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Total Suspended Matter concentration anomaly"
+    }
+  ],
+  "assets": {},
+  "collection": "N3b_water_quality_tsm_chart"
+}

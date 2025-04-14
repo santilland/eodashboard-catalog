@@ -1,0 +1,226 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
+  "id": "LC08_L2SR_001113_20181213_20201016_02_T2_SR",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -97.00601086481328,
+          -74.41241192990378
+        ],
+        [
+          -102.30747428461285,
+          -73.50416045859541
+        ],
+        [
+          -106.06798753491628,
+          -74.91100276184386
+        ],
+        [
+          -100.470367992652,
+          -75.90361590488153
+        ],
+        [
+          -97.00601086481328,
+          -74.41241192990378
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -106.06798753491628,
+    -75.90361590488153,
+    -97.00601086481328,
+    -73.50416045859541
+  ],
+  "properties": {
+    "created": "2022-07-06T18:14:04.678000+00:00",
+    "updated": "2022-07-06T18:14:04.678000+00:00",
+    "datetime": "2018-12-13T14:51:42.344633Z",
+    "platform": "LANDSAT_8",
+    "proj:shape": [
+      8441,
+      8381
+    ],
+    "instruments": [
+      "OLI",
+      "TIRS"
+    ],
+    "eo:cloud_cover": 1.96,
+    "proj:transform": [
+      30,
+      0,
+      -1763715,
+      0,
+      -30,
+      -204885
+    ],
+    "view:off_nadir": 0,
+    "landsat:wrs_row": "113",
+    "landsat:scene_id": "LC80011132018347LGN00",
+    "landsat:wrs_path": "001",
+    "landsat:wrs_type": "2",
+    "view:sun_azimuth": 63.88349792,
+    "landsat:correction": "L2SR",
+    "view:sun_elevation": 30.74710957,
+    "landsat:cloud_cover_land": 2.08,
+    "landsat:collection_number": "02",
+    "landsat:collection_category": "T2",
+    "proj:code": "EPSG:3031"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pine Island"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-antarctic-glaciers-pine-island/items/LC08_L2SR_001113_20181213_20201016_02_T2_SR/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "ADD_L2_Pine_Island"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Pine Island"
+    }
+  ],
+  "assets": {
+    "red": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B4.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Red Band (B4)",
+      "description": "Collection 2 Level-2 Red Band (B4) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B4",
+          "common_name": "red",
+          "center_wavelength": 0.65
+        }
+      ],
+      "file:checksum": "13405600f698f4f22c96324a93893ac6b9898cb478dfcdecfda03efecb275c0e474c0994f4b0e844ca4a1a69c69b8f858f122ab679dc5ee0267a206236cec509c090",
+      "roles": [
+        "data"
+      ]
+    },
+    "blue": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B2.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Blue Band (B2)",
+      "description": "Collection 2 Level-2 Blue Band (B2) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B2",
+          "common_name": "blue",
+          "center_wavelength": 0.48
+        }
+      ],
+      "file:checksum": "1340115746b7af8d674e05a0c77c3600b9e2954e0535078f7625face79ed448ca998fe8eda808b0449b309f8721b30122194337397aa2727daa661409d70da84c91b",
+      "roles": [
+        "data"
+      ]
+    },
+    "green": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B3.TIF",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "title": "Green Band (B3)",
+      "description": "Collection 2 Level-2 Green Band (B3) Surface Reflectance",
+      "eo:bands": [
+        {
+          "gsd": 30,
+          "name": "B3",
+          "common_name": "green",
+          "center_wavelength": 0.56
+        }
+      ],
+      "file:checksum": "13405f168f10a28008a50d28906e9616617a52fc87a230caf3f5d2a45f0b94b7d97006e883375d9f9c917a7e7b709c6a005d4148f4b5bcbd21d0efc1c342087ae47d",
+      "roles": [
+        "data"
+      ]
+    },
+    "index": {
+      "href": "https://landsatlook.usgs.gov/stac-browser/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2"
+    },
+    "nir08": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B5.TIF",
+      "file:checksum": "1340f1cc23e9a446edbb602b86bd117383523f5492a99b7b06bfdee78f215bb4274842e9240722736584bf689597c798a794adb4b3fc7f16a13e03810385ac5789d8"
+    },
+    "swir16": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B6.TIF",
+      "file:checksum": "1340e5a598eb49d3209494db42d1aecd0ffaa4410b0f7ae55fb72457fe6db60e94317e06c85f6fc58f90a5fb8e66d650659fe297fc78714239b3ed37c21f20bf97e6"
+    },
+    "swir22": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B7.TIF",
+      "file:checksum": "13401b5f3b544c6199271ec242134bd1396eaf0e38886717b48ce19a9ccfee042aeef4145d704f0bb9728af6276dd6f9419db94a2d175edab2f5e0a486161150e5e9"
+    },
+    "ANG.txt": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_ANG.txt",
+      "file:checksum": "1340f6974d1b013bbc0c215bbdf061e3da28eef100704576626047eaa52529707671e90ace0dc7bd34cd054844b6b260b2a0279476a3a80b178347de4c79fedcb8de"
+    },
+    "MTL.txt": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_MTL.txt",
+      "file:checksum": "1340a6788111b5804b326bb3b2c446974e3d2715d0097799eb3f48b03aee671a24fb9b19461deaff756cd45f08ad46522bec60f7905109c2151943b1ce8b1bfefa8b"
+    },
+    "MTL.xml": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_MTL.xml",
+      "description": "Collection 2 Level-1 Product Metadata File (xml)",
+      "file:checksum": "134091d6dba1003a244e4111acd66a55db1a85ca32071fd8eb58ac0ad32df2794cd4e2ca458351aed7262f9124e365a427895fc01a3294808cb3bcdc1ad68d0a69b9"
+    },
+    "coastal": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_B1.TIF",
+      "file:checksum": "134012c5f12347d8f486fda4b61379671f8e917edc46bbd91fe19eea4378699d912414d777639d1ed18cd2b019c78b2acec30f2e770e094fd19c2f8f3bff2befdced"
+    },
+    "MTL.json": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_MTL.json",
+      "file:checksum": "13404fecc3a121ceb29200c3fafc149dc3f8e02b2a76e0833e86c61207900bff76a3b7e880e30b2a9b9c8391196dee4dacc6ddaa5a1d3e370aa82fb954281268a44e"
+    },
+    "qa_pixel": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_QA_PIXEL.TIF",
+      "file:checksum": "134037084684fea02dc1689cead9e16de5cdcfc99a444cee2e1fdd798d4462a1994ea516de4ae01cd3c786c5d2723400b216cbfd2687ea995cce4ee010d46091beb1"
+    },
+    "qa_radsat": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_QA_RADSAT.TIF",
+      "file:checksum": "13402a2ae0f08181597269b2c6553c245758f020919f00f4f85be279e57b777aee84773373f7fa1786b092ec2c3f20738ced95f50a96c0c9f2a6a5659877495c8e90"
+    },
+    "thumbnail": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_thumb_small.jpeg",
+      "type": "image/jpeg",
+      "title": "Thumbnail image",
+      "file:checksum": "134027182150aecd5fec9b02aa61a273caf0c5543ac95e7550e058978f4eb88f1a8dad3080c14412dff07c2c6011e68cb19f83e0da980373efdf243247726018ce1d",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "qa_aerosol": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_SR_QA_AEROSOL.TIF",
+      "description": "Collection 2 Level-2 Aerosol Quality Analysis Band (ANG) Surface Reflectance",
+      "file:checksum": "13408ede6d01c6c6ec3b723223e4cab44ad0064b346b242c9440d270cd35ac96d67e36198a4082af3b2ac942ee677de794fdace07b6e78fd58dc7d86056c65312b28"
+    },
+    "reduced_resolution_browse": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2018/001/113/LC08_L2SR_001113_20181213_20201016_02_T2/LC08_L2SR_001113_20181213_20201016_02_T2_thumb_large.jpeg",
+      "file:checksum": "13402f01a632ade363732995582ce3e2bc9b2bf0326a3cf762cc28234b2386b1dced0b64b396c2da708d39acb439add3afd390f7fc47bb16947222369ea0def072e5"
+    }
+  },
+  "collection": "landsat-c2l2-sr-antarctic-glaciers-pine-island"
+}

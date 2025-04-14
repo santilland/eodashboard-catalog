@@ -1,0 +1,174 @@
+{
+  "type": "Collection",
+  "id": "nightlights",
+  "stac_version": "1.1.0",
+  "description": "# Nightlights \nThe Nightlights dataset is collected by the Visible Infrared Radiometer Suite (VIIRS) Day/Night Band (DNB) aboard the Suomi-National Polar-Orbiting Partnership (Suomi-NPP) satellite, a joint mission of the National Oceanic and Atmospheric Administration (NOAA) and NASA. The Nightlights data is processed and made available through NASA's Black Marble product suite, which provides consistent, high-quality images of nighttime lights across the globe. These data are essential for analyzing human activity, urbanization patterns, energy consumption, and even socio-economic trends.\n\nThe High Definition Nightlights dataset is designed to eliminate interference from natural sources such as moonlight and cloud cover, ensuring a clear representation of human-made light sources. The dataset uses varying shades of color to represent different intensities of light; darker shades indicate areas with less artificial light (e.g., rural or undeveloped regions), while lighter shades of yellow signify regions with higher concentrations of light (e.g., cities and industrial zones).\n\n## Dataset Description\n- Coverage: Global, spanning urban and rural areas across all continents. The polar orbit of Suomi-NPP ensures comprehensive global coverage during nighttime.\n- Metric: Nighttime light intensity data represented in spatial grids with a resolution of 500 meters.\n- Temporal Coverage: Multi-year aggregation, with continuous data available from 2011 to the present. This allows for monitoring trends in nighttime light intensity over time.\n- Data Features: The dataset provides daily calibrated and corrected measurements, with ground validation to ensure science-ready accuracy. It excludes natural light sources such as moonlight, offering a precise depiction of artificial lighting patterns. The aggregation of multiple years allows for the analysis of long-term trends in urbanization, economic development, and population growth.\n\nUse Case:\nStudying urbanization and regional development by analyzing the growth of artificial light over time.\nMonitoring human activity patterns and socio-economic shifts, particularly in emerging economies.\nProviding valuable insights into disaster recovery efforts by tracking changes in nighttime light intensity in regions affected by power outages or natural disasters.\n\nThe dataset is often referenced in scientific and public health research. For example, Bunpei Tojo (2021) used Nightlights data in the study \"Application of Earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" presented at the 12th Federation of Science and Technology conference, to analyze the relationship between nighttime light intensity and public health factors. \nCitation: Bunpei Tojo, \"Application of earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" Transdisciplinary 12th Federation of Science and Technology conference 2021, https://doi.org/10.11487/oukan.2021.0_B-4-4.\n\nThe dataset is a product of [NOAA](https://www.noaa.gov/) and [NASA](https://www.jpl.nasa.gov/), and the data can be accessed through [NASA's Black Marble suite](https://blackmarble.gsfc.nasa.gov/).\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./nightlights/collection.json",
+      "type": "application/json",
+      "title": "Nightlights from SUOMI-NPP",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "30-meter Black Marble High Definition (HD) nighttime lights",
+      "code": "N5",
+      "id": "nightlights",
+      "themes": [
+        "economy"
+      ],
+      "locations": true,
+      "tags": [
+        "Human activities",
+        "Open data",
+        "SUOMI-NPP"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N5",
+      "sensor": [
+        "VIIRS"
+      ],
+      "satellite": [
+        "Suomi"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "30-meter Black Marble High Definition (HD) nighttime lights",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+  "themes": [
+    "economy"
+  ],
+  "locations": true,
+  "tags": [
+    "Human activities",
+    "Open data",
+    "SUOMI-NPP"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N5",
+  "sensor": [
+    "VIIRS"
+  ],
+  "satellite": [
+    "Suomi"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "Less light",
+      "More light"
+    ],
+    "range": [
+      "#000004",
+      "#fcffa4"
+    ],
+    "scaleType": "categorical",
+    "title": ""
+  },
+  "title": "Nightlights from SUOMI-NPP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -77.18,
+          -37.08,
+          174.96,
+          54.584515
+        ],
+        [
+          -77.18,
+          -37.08,
+          174.96,
+          54.584515
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-01T00:00:00Z",
+          "2022-03-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://search.earthdata.nasa.gov/search?portal=idn&fi=VIIRS"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N5"
+    ],
+    "themes": [
+      "economy"
+    ],
+    "satellite": [
+      "Suomi"
+    ],
+    "sensor": [
+      "VIIRS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "black_marble": {
+      "href": "https://blackmarble.gsfc.nasa.gov/",
+      "type": "text/html",
+      "title": "NASA's Black Marble",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "suomi_npp": {
+      "href": "https://www.nasa.gov/mission_pages/NPP/main/index.html",
+      "type": "text/html",
+      "title": "Suomi National Polar-orbiting Partnership (Suomi NPP)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "covid_dashboard": {
+      "href": "https://www.earthdata.nasa.gov/covid19/indicators/bm",
+      "type": "text/html",
+      "title": "NASA Covid Dashboard",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

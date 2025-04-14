@@ -1,0 +1,197 @@
+{
+  "type": "Collection",
+  "id": "greenhouse_gases",
+  "stac_version": "1.1.0",
+  "description": "## Carbon Dioxide\n\nScientists use Japan\u2019s GOSAT data to determine changes in atmospheric CO2 over large urban areas, which experienced the largest changes in economic activity associated with the onset of the COVID-19 pandemic.\nWhile NASA\u2019s OCO-2 is optimized to detect the subtle, regional-scale changes in CO2, GOSAT has advantages for tracking changes in CO2 emissions over large cities.\n\nAnalysis of GOSAT observations revealed enhancements in ambient CO2 concentrations from things like fossil fuel emissions over cities, which are only detectable lower down in the atmosphere. \n\nIn Beijing, while the CO2 concentration enhancements vary substantially from month-to-month, they are generally much lower in 2020 than in earlier years. While this behavior is consistent with reported COVID-19-related reductions in fossil fuel emissions from Beijing, it is important to remember that these results include variations in CO2 concentrations not only from COVID-19 shutdowns, but also from other processes, such as photosynthesis and respiration by plants and transport by passing weather systems.\n\nFor New York City, CO2 values were higher than normal in January 2020, close to normal for February, and lower in March, as lockdowns began. There is no data for New York in April due to cloud cover.\n\nWhile this behavior is consistent with reported coronavirus-related reductions in fossil fuel emissions, it is important to remember that these results include variations in CO2 concentrations from not only COVID-19 shutdowns, but also from other processes such as photosynthesis and respiration by plants and transport by passing weather systems.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/Dhaka.json",
+      "type": "application/geo+json",
+      "id": "BD01",
+      "latlng": "23.8,90.3",
+      "country": "BD",
+      "city": "Dhaka"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/Beijing.json",
+      "type": "application/geo+json",
+      "id": "CN01",
+      "latlng": "39.9,116.38",
+      "country": "CN",
+      "city": "Beijing"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/Shanghai.json",
+      "type": "application/geo+json",
+      "id": "CN02",
+      "latlng": "31.3,121.4",
+      "country": "CN",
+      "city": "Shanghai"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/New Delhi.json",
+      "type": "application/geo+json",
+      "id": "IN01",
+      "latlng": "28.6448,77.216721",
+      "country": "IN",
+      "city": "New Delhi"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/Mumbai.json",
+      "type": "application/geo+json",
+      "id": "IN02",
+      "latlng": "19.076,72.8777",
+      "country": "IN",
+      "city": "Mumbai"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/Tokyo.json",
+      "type": "application/geo+json",
+      "id": "JP01",
+      "latlng": "35.61,139.78",
+      "country": "JP",
+      "city": "Tokyo"
+    },
+    {
+      "rel": "item",
+      "href": "./greenhouse_gases/2016/New York.json",
+      "type": "application/geo+json",
+      "id": "US01",
+      "latlng": "40.71268,-74.005812",
+      "country": "US",
+      "city": "New York"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide at city level from GOSAT"
+    }
+  ],
+  "subtitle": "CO2 emissions over large cities [ppmv]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases.png",
+  "yAxis": "ppmv",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N2_greenhouse_gases",
+  "sensor": [
+    "TANSO-FTS",
+    "TANSO-CAI"
+  ],
+  "satellite": [
+    "GOSAT"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -12.5,
+      12.5
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "diff XCO2 [ppm]"
+  },
+  "geoDBID": "N2_tri",
+  "endpointtype": "GeoDB",
+  "title": "Carbon Dioxide at city level from GOSAT",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -74.01581200000001,
+          19.066,
+          139.79,
+          40.72268
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          "2020-04-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://data2.gosat.nies.go.jp/index_en.html"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Dhaka",
+      "Beijing",
+      "Shanghai",
+      "New Delhi",
+      "Mumbai",
+      "Tokyo",
+      "New York"
+    ],
+    "countries": [
+      "BD",
+      "CN",
+      "IN",
+      "JP",
+      "US"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_greenhouse_gases/N2_greenhouse_gases.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

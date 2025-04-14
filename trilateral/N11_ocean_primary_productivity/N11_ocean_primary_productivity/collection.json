@@ -1,0 +1,649 @@
+{
+  "type": "Collection",
+  "id": "N11_ocean_primary_productivity",
+  "stac_version": "1.1.0",
+  "description": "## GCOM-C Ocean net primary productivity (ONPP)\n\nNet primary productivity [mgC/m2/day] is gross photosynthetic carbon fixation minus the carbon respired to support maintenance requirements of the whole plant.\n\nJAXA's GCOM-C mission aims to establish and demonstrate a global, long-term satellite-observing system to measure essential geophysical parameters to facilitate understanding the global radiation budget and carbon cycle mechanism, and eventually contribute to improving future climate projection through a collaborative framework with climate model institutions.\n\n\n## Additional information\n\n- Access the [Global Change Observation Mission - Climate (GCOM-C) Webpage](https://suzaku.eorc.jaxa.jp/GCOM_C/index.html)\n\n- Read more about the product: [https://doi.org/10.1007/s10872-005-0074-7](https://doi.org/10.1007/s10872-005-0074-7)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2018/2018-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2019/2019-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-02-15T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-02-15T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2020/2020-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2021/2021-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2021-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2022/2022-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-02-14T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2023/2023-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2023-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-02-15T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-02-15T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-03-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-03-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-04-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-04-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-05-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-05-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-06-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-06-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-07-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-07-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-08-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-08-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-09-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-09-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-10-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-10-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-11-15T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-11-15T23:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2024/2024-12-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-12-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2025/2025-01-16T11:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-16T11:59:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N11_ocean_primary_productivity/2025/2025-02-14T23:59:30Z.json",
+      "type": "application/geo+json",
+      "datetime": "2025-02-14T23:59:30Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "type": "image/jpeg",
+      "title": "N11_ocean_primary_productivity",
+      "wms:layers": [
+        "ONPP-GCOMC-World-Monthly"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Ocean Primary Productivity (GCOM-C)"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Kameda, T., Ishizaka, J. Size-Fractionated Primary Production Estimated by a Two-Phytoplankton Community Model Applicable to Ocean Color Remote Sensing. J Oceanogr 61, 663\u2013672 (2005).\n",
+      "doi": "10.1007/s10872-005-0074-7"
+    }
+  ],
+  "subtitle": "Net primary productivity [mgC/m2/day]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N11_ocean_primary_productivity/N11_ocean_primary_productivity.png",
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "Primary production",
+    "Open data",
+    "Water",
+    "Carbon",
+    "Global Change Observation Mission - Climate"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N11",
+  "sensor": [
+    "SGLI"
+  ],
+  "satellite": [
+    "GCOM-C"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      "NaN",
+      1500
+    ],
+    "range": [
+      "#ffffff",
+      "#9f409f",
+      "#2187f9",
+      "#76f6ff",
+      "#99e599",
+      "#f6fc81",
+      "#ff8a7f",
+      "#8b0b0b"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "mgC/m\u00b2/day"
+  },
+  "endpointtype": "WMS_Time",
+  "title": "Ocean Primary Productivity (GCOM-C)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.99999999997118,
+          179.99999999994236,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-16T11:59:30Z",
+          "2025-02-14T23:59:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N11_ocean_primary_productivity/N11_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N11_ocean_primary_productivity/N11_ocean_primary_productivity.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://suzaku.eorc.jaxa.jp/GCOM_C/index.html",
+      "type": "text/html",
+      "title": "Dataset access",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

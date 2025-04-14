@@ -1,0 +1,173 @@
+{
+  "type": "Collection",
+  "id": "N9_OMI_trno2-COG",
+  "stac_version": "1.1.0",
+  "description": "## NASA OMI/Aura Nitrogen Dioxide (NO2) Total and Tropospheric Column\n\nNitrogen dioxide (NO2) is a gas that is emitted into the air from the burning of fossil fuels.\nNO2 is injected into the atmosphere in the emissions from cars, trucks, buses, and power plants.\n\nRead more about the product and access NASA OMI/Aura NO2 data: [https://disc.gsfc.nasa.gov/](https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./N9_OMI_trno2-COG/collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide from OMI (Yearly)",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "Yearly NO2 from NASA's OMI Aura [10^14 molecules/cm^2]",
+      "code": "N9",
+      "id": "N9_OMI_trno2-COG",
+      "themes": [
+        "atmosphere"
+      ],
+      "tags": [
+        "Air quality",
+        "NO2",
+        "Open data",
+        "Air quality",
+        "Air pollution"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "N9",
+      "sensor": [
+        "OMI"
+      ],
+      "satellite": [
+        "Aura"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "Yearly NO2 from NASA's OMI Aura [10^14 molecules/cm^2]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "Air quality",
+    "Air pollution"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N9",
+  "sensor": [
+    "OMI"
+  ],
+  "satellite": [
+    "Aura"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      37
+    ],
+    "range": [
+      "#fff5f0",
+      "#fee8de",
+      "#fed7c7",
+      "#fcc1a9",
+      "#fca88b",
+      "#fc8f6f",
+      "#fb7656",
+      "#f75c41",
+      "#f03f2e",
+      "#dc2824",
+      "#c5171c",
+      "#ae1117",
+      "#8d0912",
+      "#67000d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NO2 [10^14 molecules/cm\u00b2]"
+  },
+  "title": "Nitrogen Dioxide from OMI (Yearly)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2005-01-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://search.earthdata.nasa.gov/search?q=OMNO2d_003"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "N9"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Aura"
+    ],
+    "sensor": [
+      "OMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "covid_dashboard": {
+      "href": "https://www.earthdata.nasa.gov/covid19/indicators/no2",
+      "type": "text/html",
+      "title": "NASA Covid Dashboard",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Paris",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        2.349014,
+        48.864716
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    2.339014,
+    48.854716,
+    2.3590139999999997,
+    48.874716
+  ],
+  "properties": {
+    "start_datetime": "2018-05-07T00:00:00Z",
+    "end_datetime": "2025-02-03T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide at City level"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide at City level"
+    }
+  ],
+  "assets": {},
+  "collection": "N1_NO2_city_trilateral"
+}

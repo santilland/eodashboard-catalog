@@ -1,0 +1,233 @@
+{
+  "type": "Collection",
+  "id": "GHS-BUILT-S-R2023A",
+  "stac_version": "1.1.0",
+  "description": "## Global Human Settlement (JRC GHS-BUILT-S R2023A)\n\n**Dataset:** GHS-BUILT-S R2023A - GHS built-up surface spatial raster dataset, derived\nfrom Sentinel-2 composite and Landsat, multi-temporal (1975-2030)\n\n**Dataset Documentation:** \nhttps://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422 \n\nThe datasets in the dashboard range from 0 (that is transparent) to 10 000 m2 - the square meters of built areas.\n\n**Short description:** The spatial raster dataset depicts the distribution of built-up surfaces, expressed as number of square metres. The data report about the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses.\nData are spatial-temporal interpolated or extrapolated from 1975 to 2030 in 5 years intervals.\nFor the temporal anchor point of 2018 the data is published at 10m as observed from the S2 image data.\n\n**Access dataset:**\n- from EC JRC Data Catalogue: https://ghsl.jrc.ec.europa.eu/download.php?ds=bu\n- on Euro Data Cube:\n\n**Use this dataset:**\n- [Execute Jupyter Notebook Fire impact analysis on Euro Data Cube](https://bids2023-nbviewer.hub.eox.at/localfile/bids2023/notebooks/Fire_impact_analysis.ipynb)\n\n**Cite as:** \n- Pesaresi M., Politis P. (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from Sentinel2 composite and Landsat, multitemporal (1975-2030)European Commission, Joint Research Centre (JRC)\n- [PID: http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea](http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea)\n- [doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA](https://doi.org/10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA)\n\n**Concept & Methodology:** European Commission\n\nGHSL Data Package 2023, Publications Office of the European Union, Luxembourg, 2023, JRC133256, ISBN 978-92-68-02341-9, doi:10.2760/098587\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2030/ab327809-b53c-4b1a-b910-f7e9056f6f3f.json",
+      "type": "application/geo+json",
+      "datetime": "2030-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2025/2e08c5b3-4c1a-4015-a677-29df31c380dc.json",
+      "type": "application/geo+json",
+      "datetime": "2025-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2020/9b68d7e7-c402-42b4-9d5a-851204836d13.json",
+      "type": "application/geo+json",
+      "datetime": "2020-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2015/3d0d3aa9-cd04-42ce-a92f-05f1435daf27.json",
+      "type": "application/geo+json",
+      "datetime": "2015-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2010/f6ce216f-2519-40e6-8a3f-692713bdd052.json",
+      "type": "application/geo+json",
+      "datetime": "2010-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2005/81495819-cfe2-4668-89dd-4b57b28426d5.json",
+      "type": "application/geo+json",
+      "datetime": "2005-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/2000/06aec358-e596-4d3b-8a72-fe3db7aeb0be.json",
+      "type": "application/geo+json",
+      "datetime": "2000-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/1995/085ad70a-30d1-4227-b7f8-76b60f872944.json",
+      "type": "application/geo+json",
+      "datetime": "1995-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/1990/d18ddcc2-f5ad-4a6c-8463-9e88eb034eb4.json",
+      "type": "application/geo+json",
+      "datetime": "1990-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/1985/eaf15d07-57bb-42c3-b3aa-222a1576fb97.json",
+      "type": "application/geo+json",
+      "datetime": "1985-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/1980/e7834c5b-2f9a-44cd-9cf6-c2d27e2adcd7.json",
+      "type": "application/geo+json",
+      "datetime": "1980-01-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./byoc-0c7aa265-50f9-4947-9980-2ee5ae204803/1975/7e6e7609-8ae7-44b5-890e-11c5bbd8c4b1.json",
+      "type": "application/geo+json",
+      "datetime": "1975-01-01T00:00:00Z"
+    },
+    {
+      "rel": "license",
+      "href": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "type": "text/html"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "GHS-BUILT-S-R2023A",
+      "wms:layers": [
+        "GHS_BUILT_S"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://creativecommons.org/licenses/by/4.0/legalcode",
+      "type": "text/html"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-0c7aa265-50f9-4947-9980-2ee5ae204803"
+    },
+    {
+      "rel": "example",
+      "href": "https://bids2023-nbviewer.hub.eox.at/localfile/bids2023/notebooks/Fire_impact_analysis.ipynb",
+      "type": "application/x-ipynb+json",
+      "title": "Evaluation of Fire Impact on Populated Areas on a European Site",
+      "example:language": "Jupyter Notebook",
+      "example:container": true
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GHS-BUILT-S-R2023A"
+    }
+  ],
+  "sci:doi": "10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA",
+  "sci:citation": "Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from Sentinel2 composite and Landsat, multitemporal (1975-2030). European Commission, Joint Research Centre (JRC) [Dataset]\n",
+  "sci:publications": [
+    {
+      "citation": "European Commission, GHSL Data Package 2023, Publications Office of the European Union, Luxembourg, 2023",
+      "doi": "10.2760/098587"
+    }
+  ],
+  "subtitle": "GHS built-up surface dataset GHS-BUILT-S_GLOBE_R2023A",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.png",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Copernicus",
+    "Human settlement",
+    "Human activities",
+    "EMS",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission"
+  ],
+  "subcode": "GHSBUILT",
+  "sensor": [
+    "MSI"
+  ],
+  "satellite": [
+    "Sentinel-2"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      10000
+    ],
+    "range": [
+      "#000000",
+      "#7c08a9",
+      "#cb4778",
+      "#f69a43",
+      "#fbfa90"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "0 - 10 000 m\u00b2 of built-up surface areas"
+  },
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "GHS-BUILT-S-R2023A",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.9999984622411,
+          -89.09115610672193,
+          179.9991200503413,
+          89.09138295441029
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1975-01-01T00:00:00Z",
+          "2030-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "Copernicus Emergency Management service",
+      "url": "https://emergency.copernicus.eu/emsdata.html"
+    },
+    {
+      "name": "Joint Research Centre",
+      "url": "https://data.jrc.ec.europa.eu/dataset/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea#dataaccess"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://human-settlement.emergency.copernicus.eu/download.php?ds=bu",
+      "type": "text/html",
+      "title": "GHSL - Global Human Settlement Layer",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

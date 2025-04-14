@@ -1,0 +1,169 @@
+{
+  "type": "Collection",
+  "id": "vegetation_index_timeseries",
+  "stac_version": "1.1.0",
+  "description": "# Vegetation Index (NDVI)\n\n[JAXA](https://global.jaxa.jp/)(Japan Aerospace Exploration Agency) together with Japanese Ministry of Agriculture, Forestry and Fisheries (MAFF) provide bi-monthly agrometeorological information for Asia on [JASMIN](https://suzaku.eorc.jaxa.jp/JASMIN/index.html) and on [JASMAI](https://jasmai.maff.go.jp/) for selected world areas.\n\nThis agrometeorological information is obtained from satellite observations (e.g. SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP)) and GPM Core Observatory, and includes precipitation, drought index, soil moisture, solar radiation, surface temperature, vegetation index and anomaly, rainfall, and other relevant agriculture and land products. \n\nThe vegetation index (NDVI) is an index that uses the sunlight reflection characteristics of plants to indicate the amount and activity of green leaves in plants. \n\n\n### Additional information\n\n* Vegetation Index (NDVI): Ministry of Agriculture, Forestry and Fisheries \"Agricultural Meteorological Information Satellite Monitoring System\"\n(Created by processing JAXA's \"Natural Vegetation Index (NDVI) Product\")\n* JAXA Earth Observation Research Center (EORC)\thttp://www.eorc.jaxa.jp\n* JAXA \"Earth observation satellite data provision system (G-Portal)\"\thttps://gportal.jaxa.jp/gpr/?lang=en\n* JAXA \"AMSR/AMSR-E\"\thttps://sharaku.eorc.jaxa.jp/AMSR/index_j.html\n* JAXA \"GCOM-W\"\thttps://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html\n* JAXA \"Satellite Global Precipitation Map (GSMaP)\"\thttps://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm\n* JAXA \"Climate Formation Physical Quantity Dataset (JASMES)\"\thttps://kuroshio.eorc.jaxa.jp/JASMES/index_j.html\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./vegetation_index_timeseries/2020/Paran\u00e1.json",
+      "type": "application/geo+json",
+      "id": "BR04",
+      "latlng": "-24.615, -51.315",
+      "country": "BR",
+      "city": "Paran\u00e1"
+    },
+    {
+      "rel": "item",
+      "href": "./vegetation_index_timeseries/2020/Kansas.json",
+      "type": "application/geo+json",
+      "id": "US10",
+      "latlng": "38.5,-98.325",
+      "country": "US",
+      "city": "Kansas"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Local NDVI from GSMaP"
+    }
+  ],
+  "subtitle": "Normalized Difference Vegetation Index Timeseries",
+  "yAxis": "Normalized Difference Vegetation Index [Dimensionless]",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "VITS",
+  "satellite": [
+    "Other"
+  ],
+  "geoDBID": "VITS_Vegetation_Index_Timeseries",
+  "endpointtype": "GeoDB",
+  "title": "Local NDVI from GSMaP",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -98.33500000000001,
+          -24.625,
+          -51.305,
+          38.51
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-09T00:00:00Z",
+          "2023-06-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "summaries": {
+    "cities": [
+      "Paran\u00e1",
+      "Kansas"
+    ],
+    "countries": [
+      "BR",
+      "US"
+    ]
+  },
+  "assets": {
+    "reference_1": {
+      "href": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html",
+      "type": "text/html",
+      "title": "JAXA's Satellite based MonItoring Network system for FAO AMIS Market Monitor",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://jasmai.maff.go.jp/",
+      "type": "text/html",
+      "title": "JASMAI",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://jasmai.maff.go.jp/user_guide/#item_2_7",
+      "type": "text/html",
+      "title": "JASMAI user guide",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "http://www.eorc.jaxa.jp/",
+      "type": "text/html",
+      "title": "JAXA Earth Observation Research Center (EORC)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_5": {
+      "href": "https://gportal.jaxa.jp/gpr/?lang=en",
+      "type": "text/html",
+      "title": "Earth observation satellite data provision system (G-Portal)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_6": {
+      "href": "https://sharaku.eorc.jaxa.jp/AMSR/index_j.html",
+      "type": "text/html",
+      "title": "AMSR/AMSR-E",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_7": {
+      "href": "https://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html",
+      "type": "text/html",
+      "title": "GCOM-W",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_8": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm",
+      "type": "text/html",
+      "title": "Satellite Global Precipitation Map (GSMaP)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_9": {
+      "href": "https://kuroshio.eorc.jaxa.jp/JASMES/index_j.html",
+      "type": "text/html",
+      "title": "Climate Formation Physical Quantity Dataset (JASMES)",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "type": "Collection",
+  "id": "NASA_ECOSTRESS_LST",
+  "stac_version": "1.1.0",
+  "description": "# ECOSTRESS Land Surface Temperature (NELST)\nThe NELST (NASA's ECOSTRESS Land Surface Temperature) dataset provides high-resolution measurements of land surface temperature (LST) across diverse global ecosystems. \nIt is derived from the ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) instrument aboard the International Space Station (ISS), providing atmospherically corrected land surface temperature and emissivity (LST&E) values derived from five thermal infrared (TIR) bands. This dataset allows to better understand how much water plants need and how they respond to stress.\n\n## Dataset Description\n- Coverage: Global, spanning various biomes and climatic zones. ECOSTRESS provides day and night measurements of surface temperature with high temporal frequency.\n- Metric: Land Surface Temperature (LST) data with a spatial resolution of 70 meters.\n- Temporal Coverage: Continuous data from 2018 to the present, with multiple passes per day due to the ISS's orbit.\n- Data Features: The dataset includes observations in different times of the day to capture diurnal temperature variations, helping to assess evapotranspiration rates and plant-water stress.\n\n\nThe dataset was developed by [NASA's Jet Propulsion Laboratory (JPL)](https://www.jpl.nasa.gov/) under the [ECOSTRESS mission](https://ecostress.jpl.nasa.gov/).\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./NASA_ECOSTRESS_LST/collection.json",
+      "type": "application/json",
+      "title": "NASA ECOSTRESS land surface temperature",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "NELST",
+      "id": "NASA_ECOSTRESS_LST",
+      "themes": [
+        "extreme-events"
+      ],
+      "tags": [
+        "Temperature",
+        "Open data"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NELST",
+      "otherSources": [
+        "ECOSTRESS"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "sci:doi": "10.5067/ECOSTRESS/ECO2LSTE.001",
+  "sci:citation": "Hook, S., Hulley, G. (2019). ECOSTRESS Land Surface Temperature and Emissivity Daily L2 Global 70 m V001 [Data set]. NASA EOSDIS Land Processes Distributed Active Archive Center\n",
+  "themes": [
+    "extreme-events"
+  ],
+  "tags": [
+    "Temperature",
+    "Open data"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NELST",
+  "otherSources": [
+    "ECOSTRESS"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      281,
+      309
+    ],
+    "range": [
+      "#ffffff",
+      "#dbeef5",
+      "#bbdeed",
+      "#6800fd",
+      "#e4ff00",
+      "#ff9400",
+      "#ff0000",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Temperature [\u00b0K]"
+  },
+  "title": "NASA ECOSTRESS land surface temperature",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          8.443481683418574,
+          36.325907822882115,
+          25.45969131904627,
+          45.5535761820316
+        ],
+        [
+          8.443481683418574,
+          36.325907822882115,
+          25.45969131904627,
+          45.5535761820316
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-07-15T18:01:59Z",
+          "2023-07-16T18:49:30Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA/JPL/ECOSTRESS",
+      "roles": "processor",
+      "url": "https://ecostress.jpl.nasa.gov/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "NELST"
+    ],
+    "themes": [
+      "extreme-events"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NELST_ECOSTRESS_LST/NELST_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_1": {
+      "href": "https://search.earthdata.nasa.gov/search/granules/collection-details?p=C1534729776-LPDAAC_ECS&pg[0][v]=f&pg[0][qt]=2023-07-15T00%3A00%3A00.000Z%2C2023-07-16T23%3A59%3A59.999Z&pg[0][gsk]=-start_date&g=G2734741231-LPDAAC_ECS&q=ecostress&sb[0]=12.0498%2C42.35287%2C12.05859%2C42.36165&ac=true&tl=1724937696!3!!&lat=40.89111328125&long=11.988281250000002&zoom=6",
+      "type": "text/html",
+      "title": "Data access",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534729776-LPDAAC_ECS.html",
+      "type": "text/html",
+      "title": "ECOSTRESS Land Surface Temperature and Emissivity Daily L2 Global 70 m",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

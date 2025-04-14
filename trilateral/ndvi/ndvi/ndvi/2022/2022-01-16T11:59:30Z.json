@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/web-map-links/v1.1.0/schema.json"
+  ],
+  "id": "2022-01-16T11:59:30Z",
+  "geometry": null,
+  "properties": {
+    "datetime": "2022-01-16T11:59:30Z"
+  },
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "type": "image/jpeg",
+      "title": "ndvi",
+      "wms:layers": [
+        "NDVI-GCOMC-World-Monthly"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2022-01-16T11:59:30Z"
+      },
+      "wms:styles": [
+        ""
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Normalized Difference Vegetation Index"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Normalized Difference Vegetation Index"
+    }
+  ],
+  "assets": {},
+  "collection": "ndvi"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Colombia",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -74.083,
+        4.6
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -74.093,
+    4.59,
+    -74.073,
+    4.609999999999999
+  ],
+  "properties": {
+    "start_datetime": "1990-01-01T00:00:00Z",
+    "end_datetime": "2014-01-01T00:00:00Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from CCI RECCAP2"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from CCI RECCAP2"
+    }
+  ],
+  "assets": {},
+  "collection": "Greenhouse_gas_reconsiliation_CO2"
+}

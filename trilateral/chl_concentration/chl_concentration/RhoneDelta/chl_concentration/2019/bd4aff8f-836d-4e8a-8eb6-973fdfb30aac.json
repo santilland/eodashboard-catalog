@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "bd4aff8f-836d-4e8a-8eb6-973fdfb30aac",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          4.198280334472656,
+          42.99985694885254
+        ],
+        [
+          5.501642227172852,
+          42.99985694885254
+        ],
+        [
+          5.501642227172852,
+          43.49162673950195
+        ],
+        [
+          4.198280334472656,
+          43.49162673950195
+        ],
+        [
+          4.198280334472656,
+          42.99985694885254
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    4.198280334472656,
+    42.99985694885254,
+    5.501642227172852,
+    43.49162673950195
+  ],
+  "properties": {
+    "datetime": "2019-07-06T00:00:00Z",
+    "proj:bbox": [
+      4.198280334472656,
+      42.99985694885254,
+      5.501642227172852,
+      43.49162673950195
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            4.198280334472656,
+            42.99985694885254
+          ],
+          [
+            5.501642227172852,
+            42.99985694885254
+          ],
+          [
+            5.501642227172852,
+            43.49162673950195
+          ],
+          [
+            4.198280334472656,
+            43.49162673950195
+          ],
+          [
+            4.198280334472656,
+            42.99985694885254
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "chl_concentration",
+      "wms:layers": [
+        "AWS_N3_CUSTOM"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2019-07-06T00:00:00Z/2019-07-06T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration maps"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration in Rhone Delta"
+    }
+  ],
+  "assets": {},
+  "collection": "chl_concentration"
+}

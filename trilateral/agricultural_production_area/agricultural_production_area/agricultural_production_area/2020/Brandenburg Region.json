@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Brandenburg Region",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.090632,
+        52.131413
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    13.080632,
+    52.121413000000004,
+    13.100632,
+    52.141413
+  ],
+  "properties": {
+    "start_datetime": "2020-03-14T10:10:19Z",
+    "end_datetime": "2020-06-27T10:10:31Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - area"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - area"
+    }
+  ],
+  "assets": {},
+  "collection": "agricultural_production_area"
+}

@@ -1,0 +1,564 @@
+{
+  "type": "Collection",
+  "id": "NLK_lake_biwa",
+  "stac_version": "1.1.0",
+  "description": "Biwa lake Landsat-8",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2023/LC08_L2SP_109036_20230319_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20230319_02_T1",
+      "datetime": "2023-03-19T01:28:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2022/LC09_L2SP_109036_20221119_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC09_L2SP_109036_20221119_02_T1",
+      "datetime": "2022-11-19T01:29:03Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2022/LC08_L2SP_109036_20221026_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20221026_02_T1",
+      "datetime": "2022-10-26T01:29:12Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2022/LC08_L2SP_109036_20220503_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20220503_02_T1",
+      "datetime": "2022-05-03T01:28:24Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2022/LE07_L2SP_109036_20220308_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20220308_02_T1",
+      "datetime": "2022-03-08T00:09:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2021/LE07_L2SP_109036_20211015_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20211015_02_T1",
+      "datetime": "2021-10-15T00:23:23Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2021/LC08_L2SP_109036_20210430_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20210430_02_T1",
+      "datetime": "2021-04-30T01:28:08Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2021/LC08_L2SP_109036_20210225_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20210225_02_T1",
+      "datetime": "2021-02-25T01:28:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2020/LC08_L2SP_109036_20201207_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20201207_02_T1",
+      "datetime": "2020-12-07T01:28:56Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2020/LC08_L2SP_109036_20200326_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20200326_02_T1",
+      "datetime": "2020-03-26T01:28:20Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2020/LC08_L2SP_109036_20200106_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20200106_02_T1",
+      "datetime": "2020-01-06T01:28:47Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2019/LE07_L2SP_109036_20191229_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20191229_02_T1",
+      "datetime": "2019-12-29T01:09:38Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2019/LC08_L2SP_109036_20190511_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20190511_02_T1",
+      "datetime": "2019-05-11T01:28:06Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2018/LC08_L2SP_109036_20180524_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20180524_02_T1",
+      "datetime": "2018-05-24T01:27:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2018/LE07_L2SP_109036_20180329_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20180329_02_T1",
+      "datetime": "2018-03-29T01:29:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2017/LE07_L2SP_109036_20171223_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20171223_02_T1",
+      "datetime": "2017-12-23T01:30:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2017/LE07_L2SP_109036_20171207_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20171207_02_T1",
+      "datetime": "2017-12-07T01:31:01Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2017/LE07_L2SP_109036_20170529_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20170529_02_T1",
+      "datetime": "2017-05-29T01:31:07Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2017/LC08_L2SP_109036_20170403_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20170403_02_T1",
+      "datetime": "2017-04-03T01:28:09Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2016/LC08_L2SP_109036_20161126_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20161126_02_T1",
+      "datetime": "2016-11-26T01:28:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2016/LC08_L2SP_109036_20160228_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20160228_02_T1",
+      "datetime": "2016-02-28T01:28:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2015/LC08_L2SP_109036_20151007_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20151007_02_T1",
+      "datetime": "2015-10-07T01:28:36Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2014/LE07_L2SP_109036_20141231_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20141231_02_T1",
+      "datetime": "2014-12-31T01:27:04Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2014/LC08_L2SP_109036_20141121_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20141121_02_T1",
+      "datetime": "2014-11-21T01:28:44Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2014/LE07_L2SP_109036_20140129_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20140129_02_T1",
+      "datetime": "2014-01-29T01:25:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2013/LC08_L2SP_109036_20130814_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LC08_L2SP_109036_20130814_02_T1",
+      "datetime": "2013-08-14T01:30:35Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2013/LE07_L2SP_109036_20130416_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20130416_02_T1",
+      "datetime": "2013-04-16T01:24:34Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2012/LE07_L2SP_109036_20121022_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20121022_02_T1",
+      "datetime": "2012-10-22T01:24:23Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2012/LE07_L2SP_109036_20120429_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20120429_02_T1",
+      "datetime": "2012-04-29T01:22:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2011/LE07_L2SP_109036_20110222_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20110222_02_T1",
+      "datetime": "2011-02-22T01:22:04Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2009/LT05_L2SP_109036_20091107_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20091107_02_T1",
+      "datetime": "2009-11-07T01:18:52Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2009/LT05_L2SP_109036_20090429_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20090429_02_T1",
+      "datetime": "2009-04-29T01:16:01Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2008/LT05_L2SP_109036_20081019_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20081019_02_T1",
+      "datetime": "2008-10-19T01:12:33Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2007/LT05_L2SP_109036_20070526_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20070526_02_T1",
+      "datetime": "2007-05-26T01:22:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2007/LT05_L2SP_109036_20070408_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20070408_02_T1",
+      "datetime": "2007-04-08T01:23:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2007/LT05_L2SP_109036_20070323_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20070323_02_T1",
+      "datetime": "2007-03-23T01:23:30Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2006/LE07_L2SP_109036_20060920_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20060920_02_T1",
+      "datetime": "2006-09-20T01:18:05Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2006/LE07_L2SP_109036_20060904_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20060904_02_T1",
+      "datetime": "2006-09-04T01:18:11Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2006/LE07_L2SP_109036_20060803_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20060803_02_T1",
+      "datetime": "2006-08-03T01:18:16Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2005/LT05_L2SP_109036_20050504_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20050504_02_T1",
+      "datetime": "2005-05-04T01:15:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2004/LE07_L2SP_109036_20041117_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20041117_02_T1",
+      "datetime": "2004-11-17T01:17:31Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2004/LE07_L2SP_109036_20040525_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20040525_02_T1",
+      "datetime": "2004-05-25T01:17:45Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2004/LT05_L2SP_109036_20040314_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20040314_02_T1",
+      "datetime": "2004-03-14T01:07:40Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2003/LT05_L2SP_109036_20031225_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20031225_02_T1",
+      "datetime": "2003-12-25T01:07:17Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2003/LE07_L2SP_109036_20030928_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20030928_02_T1",
+      "datetime": "2003-09-28T01:16:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2002/LE07_L2SP_109036_20020402_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20020402_02_T1",
+      "datetime": "2002-04-02T01:17:20Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2002/LT05_L2SP_109036_20020309_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20020309_02_T1",
+      "datetime": "2002-03-09T01:06:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2001/LE07_L2SP_109036_20011125_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20011125_02_T1",
+      "datetime": "2001-11-25T01:17:09Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2001/LE07_L2SP_109036_20010415_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20010415_02_T1",
+      "datetime": "2001-04-15T01:18:42Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2001/LT05_L2SP_109036_20010407_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_20010407_02_T1",
+      "datetime": "2001-04-07T01:08:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/2000/LE07_L2SP_109036_20001208_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_20001208_02_T1",
+      "datetime": "2000-12-08T01:18:55Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1999/LE07_L2SP_109036_19991120_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LE07_L2SP_109036_19991120_02_T1",
+      "datetime": "1999-11-20T01:21:25Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1998/LT05_L2SP_109036_19980330_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19980330_02_T2",
+      "datetime": "1998-03-30T01:05:21Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1997/LT05_L2SP_109036_19971021_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19971021_02_T2",
+      "datetime": "1997-10-21T01:01:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1997/LT05_L2SP_109036_19970412_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19970412_02_T1",
+      "datetime": "1997-04-12T00:55:47Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1996/LT05_L2SP_109036_19960714_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19960714_02_T1",
+      "datetime": "1996-07-14T00:42:54Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1996/LT05_L2SP_109036_19960425_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19960425_02_T1",
+      "datetime": "1996-04-25T00:38:29Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1995/LT05_L2SP_109036_19951117_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19951117_02_T2",
+      "datetime": "1995-11-17T00:28:06Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1995/LT05_L2SP_109036_19950728_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19950728_02_T1",
+      "datetime": "1995-07-28T00:32:50Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1995/LT05_L2SP_109036_19950509_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19950509_02_T1",
+      "datetime": "1995-05-09T00:36:28Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1993/LT05_L2SP_109036_19930519_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19930519_02_T1",
+      "datetime": "1993-05-19T00:51:04Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1991/LT05_L2SP_109036_19911122_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19911122_02_T1",
+      "datetime": "1991-11-22T00:52:45Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1990/LT05_L2SP_109036_19901205_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19901205_02_T1",
+      "datetime": "1990-12-05T00:47:47Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1990/LT05_L2SP_109036_19900425_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19900425_02_T2",
+      "datetime": "1990-04-25T00:48:48Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1990/LT05_L2SP_109036_19900119_02_T2.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19900119_02_T2",
+      "datetime": "1990-01-19T00:50:57Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1989/LT04_L2SP_109036_19890601_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT04_L2SP_109036_19890601_02_T1",
+      "datetime": "1989-06-01T01:02:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1987/LT05_L2SP_109036_19871111_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19871111_02_T1",
+      "datetime": "1987-11-11T00:56:34Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1986/LT05_L2SP_109036_19860601_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19860601_02_T1",
+      "datetime": "1986-06-01T00:52:46Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1985/LT05_L2SP_109036_19851121_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19851121_02_T1",
+      "datetime": "1985-11-21T00:57:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/1984/LT05_L2SP_109036_19840611_02_T1.json",
+      "type": "application/geo+json",
+      "item": "LT05_L2SP_109036_19840611_02_T1",
+      "datetime": "1984-06-11T00:56:49Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/collections/landsat-c2l2-sr-lakes-lake-biwa/items/{item}/tiles/WebMercatorQuad/{z}/{x}/{y}?&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&no_data=0",
+      "type": "image/png",
+      "title": "NLK_lake_biwa"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (Landsat-8)"
+    }
+  ],
+  "themes": [
+    "oceans"
+  ],
+  "tags": [
+    "lake"
+  ],
+  "satellite": [
+    "Landsat-8"
+  ],
+  "sensor": [
+    "OLI"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NLK_lake_biwa",
+  "endpointtype": "VEDA_tiles",
+  "title": "Biwa Lake",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          135.13362826,
+          33.53534479,
+          138.17282533,
+          35.75089521
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1984-06-11T00:56:49.159075Z",
+          "2023-03-19T01:28:30.265546Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lake_cloud_free/cm_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

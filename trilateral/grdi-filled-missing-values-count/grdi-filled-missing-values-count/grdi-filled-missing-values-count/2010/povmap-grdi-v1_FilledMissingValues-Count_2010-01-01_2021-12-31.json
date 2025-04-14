@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "povmap-grdi-v1_FilledMissingValues-Count_2010-01-01_2021-12-31",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -55.983333333333334
+        ],
+        [
+          179.81666666666666,
+          -55.983333333333334
+        ],
+        [
+          179.81666666666666,
+          82.18333333333332
+        ],
+        [
+          -180,
+          82.18333333333332
+        ],
+        [
+          -180,
+          -55.983333333333334
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -55.983333333333334,
+    179.81666666666666,
+    82.18333333333332
+  ],
+  "properties": {
+    "end_datetime": "2021-12-31T00:00:00+00:00",
+    "start_datetime": "2010-01-01T00:00:00+00:00",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "preview",
+      "href": "https://openveda.cloud/api/raster/collections/grdi-filled-missing-values-count/items/povmap-grdi-v1_FilledMissingValues-Count_2010-01-01_2021-12-31/map?assets=cog_default&rescale=1%2C2&colormap_name=viridis",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "GRDI Filled Missing Values Count"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=s3://veda-data-store/grdi-filled-missing-values-count/povmap-grdi-v1_FilledMissingValues-Count_2010-01-01_2021-12-31.tif&resampling_method=nearest&bidx=1&colormap_name=viridis&rescale=0.0,100.0",
+      "type": "image/png",
+      "title": "grdi-filled-missing-values-count"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "GRDI Filled Missing Values Count"
+    }
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/grdi-filled-missing-values-count/povmap-grdi-v1_FilledMissingValues-Count_2010-01-01_2021-12-31.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map",
+      "proj:bbox": [
+        -180.0,
+        -55.983333333333334,
+        179.81666666666666,
+        82.18333333333332
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        16580,
+        43178
+      ],
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 2.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              310,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          "statistics": {
+            "mean": 1.0095846645367412,
+            "stddev": 0.09743099477301541,
+            "maximum": 2.0,
+            "minimum": 1.0,
+            "valid_percent": 0.07757971129441624
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -55.983333333333334
+            ],
+            [
+              179.81666666666666,
+              -55.983333333333334
+            ],
+            [
+              179.81666666666666,
+              82.18333333333332
+            ],
+            [
+              -180.0,
+              82.18333333333332
+            ],
+            [
+              -180.0,
+              -55.983333333333334
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.008333333333333333,
+        0.0,
+        -180.0,
+        0.0,
+        -0.008333333333333333,
+        82.18333333333332,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "roles": [
+        "data",
+        "layer"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://openveda.cloud/api/raster/collections/grdi-filled-missing-values-count/items/povmap-grdi-v1_FilledMissingValues-Count_2010-01-01_2021-12-31/preview.png?assets=cog_default&rescale=1%2C2&colormap_name=viridis",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "grdi-filled-missing-values-count"
+}

@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "e7834c5b-2f9a-44cd-9cf6-c2d27e2adcd7",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          -179.9999984622411,
+          -89.09115610672193
+        ],
+        [
+          179.9991200503413,
+          -89.09115610672193
+        ],
+        [
+          179.9991200503413,
+          89.09138295441029
+        ],
+        [
+          -179.9999984622411,
+          89.09138295441029
+        ],
+        [
+          -179.9999984622411,
+          -89.09115610672193
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -179.9999984622411,
+    -89.09115610672193,
+    179.9991200503413,
+    89.09138295441029
+  ],
+  "properties": {
+    "datetime": "1980-01-01T00:00:00Z",
+    "proj:bbox": [
+      -179.9999984622411,
+      -89.09115610672193,
+      179.9991200503413,
+      89.09138295441029
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            -179.9999984622411,
+            -89.09115610672193
+          ],
+          [
+            179.9991200503413,
+            -89.09115610672193
+          ],
+          [
+            179.9991200503413,
+            89.09138295441029
+          ],
+          [
+            -179.9999984622411,
+            89.09138295441029
+          ],
+          [
+            -179.9999984622411,
+            -89.09115610672193
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "GHS-BUILT-S-R2023A"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "GHS-BUILT-S-R2023A",
+      "wms:layers": [
+        "GHS_BUILT_S"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "1980-01-01T00:00:00Z/1980-01-01T23:59:59Z"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "GHS-BUILT-S-R2023A"
+    }
+  ],
+  "assets": {},
+  "collection": "byoc-0c7aa265-50f9-4947-9980-2ee5ae204803"
+}

@@ -1,0 +1,49 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/web-map-links/v1.1.0/schema.json"
+  ],
+  "id": "2017-07-18T00:00:00Z",
+  "geometry": null,
+  "properties": {
+    "datetime": "2017-07-18T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/jpeg",
+      "title": "4D_Greenland_Meltmap",
+      "wms:layers": [
+        "VIS_GREENLAND_MELTMAP"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2017-07-18T00:00:00Z"
+      }
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Greenland Meltmap"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Greenland Meltmap"
+    }
+  ],
+  "assets": {},
+  "collection": "4D_Greenland_Meltmap"
+}

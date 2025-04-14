@@ -1,0 +1,885 @@
+{
+  "type": "Collection",
+  "id": "N1_NO2_monthly",
+  "stac_version": "1.1.0",
+  "description": "## Nitrogen Dioxide Monthly\n\nCars, trucks, power plants, and other industrial facilities emit nitrogen dioxide (NO2) as a product of burning fossil fuels. Once in the air, nitrogen dioxide can aggravate respiratory conditions, especially in people with asthma, leading to an increase of symptoms and hospital admissions. Long-term exposure can lead to the development of asthma and potentially increase susceptibility to respiratory infections. Nitrogen dioxide can quickly transform into ground-level ozone, a major respiratory pollutant and one of the main ingredients of summertime smog. Source: [Earthdata.Nasa.gov](https://www.earthdata.nasa.gov/learn/articles/find-no2-data#Visualize%20No2%20Data)\n\n\nThese maps present AURA OMI average tropospheric NO2 compared.\n\nFor details about this product, data access and additional products please visit https://www.earthdata.nasa.gov/learn/articles/find-no2-data#Visualize%20No2%20Data \n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202309_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202309_Col3_V4.nc.tif",
+      "start_datetime": "2023-09-01T00:00:00Z",
+      "end_datetime": "2023-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202308_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202308_Col3_V4.nc.tif",
+      "start_datetime": "2023-08-01T00:00:00Z",
+      "end_datetime": "2023-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202307_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202307_Col3_V4.nc.tif",
+      "start_datetime": "2023-07-01T00:00:00Z",
+      "end_datetime": "2023-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202306_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202306_Col3_V4.nc.tif",
+      "start_datetime": "2023-06-01T00:00:00Z",
+      "end_datetime": "2023-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202305_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202305_Col3_V4.nc.tif",
+      "start_datetime": "2023-05-01T00:00:00Z",
+      "end_datetime": "2023-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202304_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202304_Col3_V4.nc.tif",
+      "start_datetime": "2023-04-01T00:00:00Z",
+      "end_datetime": "2023-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202303_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202303_Col3_V4.nc.tif",
+      "start_datetime": "2023-03-01T00:00:00Z",
+      "end_datetime": "2023-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202302_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202302_Col3_V4.nc.tif",
+      "start_datetime": "2023-02-01T00:00:00Z",
+      "end_datetime": "2023-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2023/OMI_trno2_0.10x0.10_202301_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202301_Col3_V4.nc.tif",
+      "start_datetime": "2023-01-01T00:00:00Z",
+      "end_datetime": "2023-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202212_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202212_Col3_V4.nc.tif",
+      "start_datetime": "2022-12-01T00:00:00Z",
+      "end_datetime": "2022-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202211_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202211_Col3_V4.nc.tif",
+      "start_datetime": "2022-11-01T00:00:00Z",
+      "end_datetime": "2022-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202210_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202210_Col3_V4.nc.tif",
+      "start_datetime": "2022-10-01T00:00:00Z",
+      "end_datetime": "2022-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202209_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202209_Col3_V4.nc.tif",
+      "start_datetime": "2022-09-01T00:00:00Z",
+      "end_datetime": "2022-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202208_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202208_Col3_V4.nc.tif",
+      "start_datetime": "2022-08-01T00:00:00Z",
+      "end_datetime": "2022-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202207_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202207_Col3_V4.nc.tif",
+      "start_datetime": "2022-07-01T00:00:00Z",
+      "end_datetime": "2022-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202206_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202206_Col3_V4.nc.tif",
+      "start_datetime": "2022-06-01T00:00:00Z",
+      "end_datetime": "2022-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202205_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202205_Col3_V4.nc.tif",
+      "start_datetime": "2022-05-01T00:00:00Z",
+      "end_datetime": "2022-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202204_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202204_Col3_V4.nc.tif",
+      "start_datetime": "2022-04-01T00:00:00Z",
+      "end_datetime": "2022-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202203_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202203_Col3_V4.nc.tif",
+      "start_datetime": "2022-03-01T00:00:00Z",
+      "end_datetime": "2022-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202202_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202202_Col3_V4.nc.tif",
+      "start_datetime": "2022-02-01T00:00:00Z",
+      "end_datetime": "2022-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2022/OMI_trno2_0.10x0.10_202201_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202201_Col3_V4.nc.tif",
+      "start_datetime": "2022-01-01T00:00:00Z",
+      "end_datetime": "2022-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202112_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202112_Col3_V4.nc.tif",
+      "start_datetime": "2021-12-01T00:00:00Z",
+      "end_datetime": "2021-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202111_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202111_Col3_V4.nc.tif",
+      "start_datetime": "2021-11-01T00:00:00Z",
+      "end_datetime": "2021-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202110_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202110_Col3_V4.nc.tif",
+      "start_datetime": "2021-10-01T00:00:00Z",
+      "end_datetime": "2021-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202109_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202109_Col3_V4.nc.tif",
+      "start_datetime": "2021-09-01T00:00:00Z",
+      "end_datetime": "2021-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202108_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202108_Col3_V4.nc.tif",
+      "start_datetime": "2021-08-01T00:00:00Z",
+      "end_datetime": "2021-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202107_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202107_Col3_V4.nc.tif",
+      "start_datetime": "2021-07-01T00:00:00Z",
+      "end_datetime": "2021-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202106_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202106_Col3_V4.nc.tif",
+      "start_datetime": "2021-06-01T00:00:00Z",
+      "end_datetime": "2021-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202105_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202105_Col3_V4.nc.tif",
+      "start_datetime": "2021-05-01T00:00:00Z",
+      "end_datetime": "2021-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202104_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202104_Col3_V4.nc.tif",
+      "start_datetime": "2021-04-01T00:00:00Z",
+      "end_datetime": "2021-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202103_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202103_Col3_V4.nc.tif",
+      "start_datetime": "2021-03-01T00:00:00Z",
+      "end_datetime": "2021-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202102_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202102_Col3_V4.nc.tif",
+      "start_datetime": "2021-02-01T00:00:00Z",
+      "end_datetime": "2021-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2021/OMI_trno2_0.10x0.10_202101_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202101_Col3_V4.nc.tif",
+      "start_datetime": "2021-01-01T00:00:00Z",
+      "end_datetime": "2021-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202012_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202012_Col3_V4.nc.tif",
+      "start_datetime": "2020-12-01T00:00:00Z",
+      "end_datetime": "2020-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202011_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202011_Col3_V4.nc.tif",
+      "start_datetime": "2020-11-01T00:00:00Z",
+      "end_datetime": "2020-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202010_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202010_Col3_V4.nc.tif",
+      "start_datetime": "2020-10-01T00:00:00Z",
+      "end_datetime": "2020-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202009_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202009_Col3_V4.nc.tif",
+      "start_datetime": "2020-09-01T00:00:00Z",
+      "end_datetime": "2020-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202008_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202008_Col3_V4.nc.tif",
+      "start_datetime": "2020-08-01T00:00:00Z",
+      "end_datetime": "2020-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202007_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202007_Col3_V4.nc.tif",
+      "start_datetime": "2020-07-01T00:00:00Z",
+      "end_datetime": "2020-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202006_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202006_Col3_V4.nc.tif",
+      "start_datetime": "2020-06-01T00:00:00Z",
+      "end_datetime": "2020-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202005_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202005_Col3_V4.nc.tif",
+      "start_datetime": "2020-05-01T00:00:00Z",
+      "end_datetime": "2020-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202004_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202004_Col3_V4.nc.tif",
+      "start_datetime": "2020-04-01T00:00:00Z",
+      "end_datetime": "2020-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202003_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202003_Col3_V4.nc.tif",
+      "start_datetime": "2020-03-01T00:00:00Z",
+      "end_datetime": "2020-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202002_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202002_Col3_V4.nc.tif",
+      "start_datetime": "2020-02-01T00:00:00Z",
+      "end_datetime": "2020-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2020/OMI_trno2_0.10x0.10_202001_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_202001_Col3_V4.nc.tif",
+      "start_datetime": "2020-01-01T00:00:00Z",
+      "end_datetime": "2020-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201912_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201912_Col3_V4.nc.tif",
+      "start_datetime": "2019-12-01T00:00:00Z",
+      "end_datetime": "2019-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201911_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201911_Col3_V4.nc.tif",
+      "start_datetime": "2019-11-01T00:00:00Z",
+      "end_datetime": "2019-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201910_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201910_Col3_V4.nc.tif",
+      "start_datetime": "2019-10-01T00:00:00Z",
+      "end_datetime": "2019-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201909_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201909_Col3_V4.nc.tif",
+      "start_datetime": "2019-09-01T00:00:00Z",
+      "end_datetime": "2019-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201908_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201908_Col3_V4.nc.tif",
+      "start_datetime": "2019-08-01T00:00:00Z",
+      "end_datetime": "2019-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201907_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201907_Col3_V4.nc.tif",
+      "start_datetime": "2019-07-01T00:00:00Z",
+      "end_datetime": "2019-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201906_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201906_Col3_V4.nc.tif",
+      "start_datetime": "2019-06-01T00:00:00Z",
+      "end_datetime": "2019-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201905_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201905_Col3_V4.nc.tif",
+      "start_datetime": "2019-05-01T00:00:00Z",
+      "end_datetime": "2019-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201904_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201904_Col3_V4.nc.tif",
+      "start_datetime": "2019-04-01T00:00:00Z",
+      "end_datetime": "2019-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201903_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201903_Col3_V4.nc.tif",
+      "start_datetime": "2019-03-01T00:00:00Z",
+      "end_datetime": "2019-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201902_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201902_Col3_V4.nc.tif",
+      "start_datetime": "2019-02-01T00:00:00Z",
+      "end_datetime": "2019-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2019/OMI_trno2_0.10x0.10_201901_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201901_Col3_V4.nc.tif",
+      "start_datetime": "2019-01-01T00:00:00Z",
+      "end_datetime": "2019-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201812_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201812_Col3_V4.nc.tif",
+      "start_datetime": "2018-12-01T00:00:00Z",
+      "end_datetime": "2018-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201811_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201811_Col3_V4.nc.tif",
+      "start_datetime": "2018-11-01T00:00:00Z",
+      "end_datetime": "2018-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201810_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201810_Col3_V4.nc.tif",
+      "start_datetime": "2018-10-01T00:00:00Z",
+      "end_datetime": "2018-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201809_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201809_Col3_V4.nc.tif",
+      "start_datetime": "2018-09-01T00:00:00Z",
+      "end_datetime": "2018-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201808_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201808_Col3_V4.nc.tif",
+      "start_datetime": "2018-08-01T00:00:00Z",
+      "end_datetime": "2018-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201807_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201807_Col3_V4.nc.tif",
+      "start_datetime": "2018-07-01T00:00:00Z",
+      "end_datetime": "2018-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201806_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201806_Col3_V4.nc.tif",
+      "start_datetime": "2018-06-01T00:00:00Z",
+      "end_datetime": "2018-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201805_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201805_Col3_V4.nc.tif",
+      "start_datetime": "2018-05-01T00:00:00Z",
+      "end_datetime": "2018-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201804_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201804_Col3_V4.nc.tif",
+      "start_datetime": "2018-04-01T00:00:00Z",
+      "end_datetime": "2018-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201803_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201803_Col3_V4.nc.tif",
+      "start_datetime": "2018-03-01T00:00:00Z",
+      "end_datetime": "2018-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201802_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201802_Col3_V4.nc.tif",
+      "start_datetime": "2018-02-01T00:00:00Z",
+      "end_datetime": "2018-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2018/OMI_trno2_0.10x0.10_201801_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201801_Col3_V4.nc.tif",
+      "start_datetime": "2018-01-01T00:00:00Z",
+      "end_datetime": "2018-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201712_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201712_Col3_V4.nc.tif",
+      "start_datetime": "2017-12-01T00:00:00Z",
+      "end_datetime": "2017-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201711_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201711_Col3_V4.nc.tif",
+      "start_datetime": "2017-11-01T00:00:00Z",
+      "end_datetime": "2017-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201710_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201710_Col3_V4.nc.tif",
+      "start_datetime": "2017-10-01T00:00:00Z",
+      "end_datetime": "2017-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201709_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201709_Col3_V4.nc.tif",
+      "start_datetime": "2017-09-01T00:00:00Z",
+      "end_datetime": "2017-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201708_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201708_Col3_V4.nc.tif",
+      "start_datetime": "2017-08-01T00:00:00Z",
+      "end_datetime": "2017-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201707_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201707_Col3_V4.nc.tif",
+      "start_datetime": "2017-07-01T00:00:00Z",
+      "end_datetime": "2017-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201706_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201706_Col3_V4.nc.tif",
+      "start_datetime": "2017-06-01T00:00:00Z",
+      "end_datetime": "2017-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201705_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201705_Col3_V4.nc.tif",
+      "start_datetime": "2017-05-01T00:00:00Z",
+      "end_datetime": "2017-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201704_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201704_Col3_V4.nc.tif",
+      "start_datetime": "2017-04-01T00:00:00Z",
+      "end_datetime": "2017-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201703_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201703_Col3_V4.nc.tif",
+      "start_datetime": "2017-03-01T00:00:00Z",
+      "end_datetime": "2017-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201702_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201702_Col3_V4.nc.tif",
+      "start_datetime": "2017-02-01T00:00:00Z",
+      "end_datetime": "2017-02-28T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2017/OMI_trno2_0.10x0.10_201701_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201701_Col3_V4.nc.tif",
+      "start_datetime": "2017-01-01T00:00:00Z",
+      "end_datetime": "2017-01-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201612_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201612_Col3_V4.nc.tif",
+      "start_datetime": "2016-12-01T00:00:00Z",
+      "end_datetime": "2016-12-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201611_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201611_Col3_V4.nc.tif",
+      "start_datetime": "2016-11-01T00:00:00Z",
+      "end_datetime": "2016-11-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201610_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201610_Col3_V4.nc.tif",
+      "start_datetime": "2016-10-01T00:00:00Z",
+      "end_datetime": "2016-10-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201609_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201609_Col3_V4.nc.tif",
+      "start_datetime": "2016-09-01T00:00:00Z",
+      "end_datetime": "2016-09-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201608_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201608_Col3_V4.nc.tif",
+      "start_datetime": "2016-08-01T00:00:00Z",
+      "end_datetime": "2016-08-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201607_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201607_Col3_V4.nc.tif",
+      "start_datetime": "2016-07-01T00:00:00Z",
+      "end_datetime": "2016-07-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201606_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201606_Col3_V4.nc.tif",
+      "start_datetime": "2016-06-01T00:00:00Z",
+      "end_datetime": "2016-06-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201605_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201605_Col3_V4.nc.tif",
+      "start_datetime": "2016-05-01T00:00:00Z",
+      "end_datetime": "2016-05-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201604_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201604_Col3_V4.nc.tif",
+      "start_datetime": "2016-04-01T00:00:00Z",
+      "end_datetime": "2016-04-30T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201603_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201603_Col3_V4.nc.tif",
+      "start_datetime": "2016-03-01T00:00:00Z",
+      "end_datetime": "2016-03-31T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201602_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201602_Col3_V4.nc.tif",
+      "start_datetime": "2016-02-01T00:00:00Z",
+      "end_datetime": "2016-02-29T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./no2-monthly/2016/OMI_trno2_0.10x0.10_201601_Col3_V4.nc.json",
+      "type": "application/geo+json",
+      "cog_href": "s3://veda-data-store/no2-monthly/OMI_trno2_0.10x0.10_201601_Col3_V4.nc.tif",
+      "start_datetime": "2016-01-01T00:00:00Z",
+      "end_datetime": "2016-01-31T00:00:00Z"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=reds&rescale=0,108e14",
+      "type": "image/png",
+      "title": "N1_NO2_monthly"
+    },
+    {
+      "rel": "example",
+      "href": "https://openveda.cloud/api/raster/cog/statistics",
+      "type": "application/json",
+      "title": "VEDA Statistics",
+      "example:language": "JSON"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Nitrogen Dioxide (Monthly)"
+    }
+  ],
+  "subtitle": "Mean NO2 column density based on OMI data [10^15 mol/cm\u00b2]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_monthly/N1_NO2_monthly.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "OMI"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N1_NO2_monthly",
+  "sensor": [
+    "OMI"
+  ],
+  "satellite": [
+    "Aura"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      108
+    ],
+    "range": [
+      "#fff5f0",
+      "#fee8de",
+      "#fed7c7",
+      "#fcc1a9",
+      "#fca88b",
+      "#fc8f6f",
+      "#fb7656",
+      "#f75c41",
+      "#f03f2e",
+      "#dc2824",
+      "#c5171c",
+      "#ae1117",
+      "#8d0912",
+      "#67000d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NO2 [\u00b5mol/m\u00b2]"
+  },
+  "endpointtype": "VEDA_cog",
+  "title": "Nitrogen Dioxide (Monthly)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          "2023-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "licensor, producer, processor",
+      "url": "https://www.earthdata.nasa.gov/learn/articles/find-no2-data"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_monthly/N1_NO2_monthly_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_monthly/N1_NO2_monthly.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://aura.gsfc.nasa.gov/index.html",
+      "type": "text/html",
+      "title": "Aura satellite",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://earthobservatory.nasa.gov/images/146741/nitrogen-dioxide-levels-rebound-in-china",
+      "type": "text/html",
+      "title": "Nitrogen Dioxide Levels Rebound in China",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

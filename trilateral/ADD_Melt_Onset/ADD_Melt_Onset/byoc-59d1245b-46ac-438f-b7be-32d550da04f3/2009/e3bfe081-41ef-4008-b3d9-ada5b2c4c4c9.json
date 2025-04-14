@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "e3bfe081-41ef-4008-b3d9-ada5b2c4c4c9",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          -179.9999,
+          -88.99274
+        ],
+        [
+          179.9025,
+          -88.99274
+        ],
+        [
+          179.9025,
+          -56.0542
+        ],
+        [
+          -179.9999,
+          -56.0542
+        ],
+        [
+          -179.9999,
+          -88.99274
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -179.9999,
+    -88.99274,
+    179.9025,
+    -56.0542
+  ],
+  "properties": {
+    "datetime": "2009-01-01T00:00:00Z",
+    "proj:bbox": [
+      -179.9999,
+      -88.99274,
+      179.9025,
+      -56.0542
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            -179.9999,
+            -88.99274
+          ],
+          [
+            179.9025,
+            -88.99274
+          ],
+          [
+            179.9025,
+            -56.0542
+          ],
+          [
+            -179.9999,
+            -56.0542
+          ],
+          [
+            -179.9999,
+            -88.99274
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Antarctica Melt Onset"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "ADD_Melt_Onset",
+      "wms:layers": [
+        "VIS_4D_ANTARTICA_ONSET"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2009-01-01T00:00:00Z/2009-01-01T23:59:59Z"
+      }
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Antarctica Melt Onset"
+    }
+  ],
+  "assets": {},
+  "collection": "byoc-59d1245b-46ac-438f-b7be-32d550da04f3"
+}

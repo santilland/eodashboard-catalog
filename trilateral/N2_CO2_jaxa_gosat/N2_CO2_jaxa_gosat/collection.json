@@ -1,0 +1,166 @@
+{
+  "type": "Collection",
+  "id": "N2_CO2_jaxa_gosat",
+  "stac_version": "1.1.0",
+  "description": "## Atmospheric Carbon Dioxide from GOSAT\n\n This indicator is based on data from Japan\u2019s [Greenhouse gases Observing SATellite (GOSAT)](https://www.eorc.jaxa.jp/GOSAT/index.html).\n\nTo track atmospheric CO2 changes resulting from the lockdowns during the Covid-19 pandemic, observations collected by the NASA [Orbiting Carbon Observatory-2 (OCO-2)](https://oco.jpl.nasa.gov/) satellite and Japan\u2019s [Greenhouse gases Observing SATellite (GOSAT)](https://www.eorc.jaxa.jp/GOSAT/index.html) during the first few months of 2020 were compared to results collected in previous years. The OCO-2 results were used to search for changes on regional scales over the globe. Targeted observations from GOSAT were used to track changes in large urban areas, such as Beijing, Tokyo, Mumbai, and New York. Both types of observations yielded key insights into the CO2 changes accompanying the economic disruptions caused by the COVID-19 pandemic.\n\nCarbon dioxide (CO2) is a greenhouse gas primarily emitted from the combustion of fossil fuels such as petroleum, coal, and natural gas. Scientists widely agree that the build-up of excess carbon dioxide and other greenhouse gases within Earth\u2019s atmosphere has contributed to the rapid change in global climate.\n\nUnlike satellite-derived NO2 measurements, which are captured continuously on a daily basis, the coverage of CO2 measurements from OCO-2 and GOSAT is not as dense. Because of this, measurements from OCO-2 and GOSAT collected over weeks to months must be combined to yield high-resolution global maps of CO2. In addition, in order to account for long-range transport of CO2 by the wind, the data must further be assimilated into atmospheric transport models like those used to predict the weather.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./N2_CO2_jaxa_gosat/2018/2018-06-30T11:59:59Z.json",
+      "type": "application/geo+json",
+      "datetime": "2018-06-30T11:59:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N2_CO2_jaxa_gosat/2019/2019-02-01T11:59:59Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-02-01T11:59:59Z"
+    },
+    {
+      "rel": "item",
+      "href": "./N2_CO2_jaxa_gosat/2019/2019-10-05T11:59:59Z.json",
+      "type": "application/geo+json",
+      "datetime": "2019-10-05T11:59:59Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "type": "image/jpeg",
+      "title": "N2_CO2_jaxa_gosat",
+      "wms:layers": [
+        "XCO2-GOSAT-Cairo"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Carbon Dioxide from GOSAT"
+    }
+  ],
+  "sci:publications": [
+    {
+      "citation": "Le Qu\u00e9r\u00e9, C., Jackson, R.B., Jones, M.W. et al. Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nat. Clim. Chang. 10, 647\u2013653 (2020).\n",
+      "doi": "10.1038/s41558-020-0797-x"
+    }
+  ],
+  "subtitle": "GOSAT lower tropospheric CO2 [ppm]",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_jaxa_gosat/N2_CO2_jaxa_gosat.png",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CO2",
+    "Open data",
+    "GHG",
+    "Greenhouse gases"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N2_CO2_jaxa_gosat",
+  "sensor": [
+    "TANSO-FTS",
+    "TANSO-CAI"
+  ],
+  "satellite": [
+    "GOSAT"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      -10,
+      10
+    ],
+    "range": [
+      "#053061",
+      "#1b5a9b",
+      "#337eb8",
+      "#5ba2cb",
+      "#97c7df",
+      "#c7e0ed",
+      "#e8f0f4",
+      "#f9ece5",
+      "#fcd3bc",
+      "#f5a987",
+      "#df755d",
+      "#c53f3d",
+      "#a11228",
+      "#67001f"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "diff XCO2 [ppmv]"
+  },
+  "endpointtype": "WMS_Time",
+  "title": "Carbon Dioxide from GOSAT",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          30,
+          29,
+          32,
+          31
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-06-30T11:59:59.500000Z",
+          "2019-10-05T11:59:59.500000Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": "licensor, producer, processor",
+      "url": "https://data2.gosat.nies.go.jp/index_en.html"
+    }
+  ],
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_jaxa_gosat/N2_CO2_jaxa_gosat_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_jaxa_gosat/N2_CO2_jaxa_gosat.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://science.nasa.gov/climate-change/scientific-consensus/",
+      "type": "text/html",
+      "title": "Scientific Consensus on global climate change",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://www.eorc.jaxa.jp/GOSAT/index.html",
+      "type": "text/html",
+      "title": "GOSAT",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

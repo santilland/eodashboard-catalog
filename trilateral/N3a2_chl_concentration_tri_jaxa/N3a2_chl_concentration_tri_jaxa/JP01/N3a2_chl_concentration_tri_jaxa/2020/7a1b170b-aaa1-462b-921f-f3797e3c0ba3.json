@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "7a1b170b-aaa1-462b-921f-f3797e3c0ba3",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          139.25,
+          34.85
+        ],
+        [
+          140.25,
+          34.85
+        ],
+        [
+          140.25,
+          35.85
+        ],
+        [
+          139.25,
+          35.85
+        ],
+        [
+          139.25,
+          34.85
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    139.25,
+    34.85,
+    140.25,
+    35.85
+  ],
+  "properties": {
+    "datetime": "2020-04-11T00:00:00Z",
+    "proj:bbox": [
+      139.25,
+      34.85,
+      140.25,
+      35.85
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC::CRS84"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            139.25,
+            34.85
+          ],
+          [
+            140.25,
+            34.85
+          ],
+          [
+            140.25,
+            35.85
+          ],
+          [
+            139.25,
+            35.85
+          ],
+          [
+            139.25,
+            34.85
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:84"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "N3a2_chl_concentration_tri_jaxa",
+      "wms:layers": [
+        "AWS_JAXA_CHLA"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2020-04-11T00:00:00Z/2020-04-11T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration from GCOM-C"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Tokyo"
+    }
+  ],
+  "assets": {},
+  "collection": "N3a2_chl_concentration_tri_jaxa"
+}

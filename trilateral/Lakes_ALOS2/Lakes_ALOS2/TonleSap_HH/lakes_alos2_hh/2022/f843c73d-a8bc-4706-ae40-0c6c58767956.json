@@ -1,0 +1,127 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "f843c73d-a8bc-4706-ae40-0c6c58767956",
+  "geometry": {
+    "type": "Polygon",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC::CRS84"
+      }
+    },
+    "coordinates": [
+      [
+        [
+          102.10226105837272,
+          11.434529510520028
+        ],
+        [
+          105.89349686374575,
+          11.447510960361816
+        ],
+        [
+          105.90675757307484,
+          15.05344433122316
+        ],
+        [
+          102.05932248401675,
+          15.036209732710924
+        ],
+        [
+          102.10226105837272,
+          11.434529510520028
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    102.05932248401675,
+    11.434529510520028,
+    105.90675757307484,
+    15.05344433122316
+  ],
+  "properties": {
+    "datetime": "2022-08-24T00:00:00Z",
+    "proj:bbox": [
+      183787.5,
+      1265612.5,
+      597462.5,
+      1664437.5
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:EPSG::32648"
+        }
+      },
+      "coordinates": [
+        [
+          [
+            183787.49996189226,
+            1265612.499969734
+          ],
+          [
+            597462.4999999916,
+            1265612.4999727341
+          ],
+          [
+            597462.5000000058,
+            1664437.4999645122
+          ],
+          [
+            183787.49992236926,
+            1664437.4999608046
+          ],
+          [
+            183787.49996189226,
+            1265612.499969734
+          ]
+        ]
+      ]
+    },
+    "proj:code": "EPSG:32648"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "lakes_alos2_hh",
+      "wms:layers": [
+        "JAXA_LAKES_ALOS2_HH"
+      ],
+      "role": [
+        "data"
+      ],
+      "wms:dimensions": {
+        "TIME": "2022-08-24T00:00:00Z/2022-08-24T23:59:59Z"
+      }
+    },
+    {
+      "rel": "collection",
+      "href": null,
+      "type": "application/json",
+      "title": "Lakes (ALOS2-HH)"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Tonl\u00e9 Sap (ALOS2-HH)"
+    }
+  ],
+  "assets": {},
+  "collection": "lakes_alos2_hh"
+}

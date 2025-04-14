@@ -1,0 +1,50 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "Huelva Lagunas de las Madres",
+  "geometry": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -6.84888,
+        37.18316
+      ]
+    },
+    "properties": {}
+  },
+  "bbox": [
+    -6.85888,
+    37.17316,
+    -6.8388800000000005,
+    37.19316
+  ],
+  "properties": {
+    "start_datetime": "2019-12-27T11:21:32Z",
+    "end_datetime": "2020-06-05T11:33:22Z",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - productive area"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Agricultural production - productive area"
+    }
+  ],
+  "assets": {},
+  "collection": "agricultural_production_productive_area"
+}

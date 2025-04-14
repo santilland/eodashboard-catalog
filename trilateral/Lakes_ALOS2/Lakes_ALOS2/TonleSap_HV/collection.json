@@ -1,0 +1,177 @@
+{
+  "type": "Collection",
+  "id": "TonleSap_HV",
+  "stac_version": "1.1.0",
+  "description": "Tonl\u00e9 Sap (ALOS2-HV)",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/327e597f-5a8a-4b3d-aa63-bcd3c413ed5e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-12-14T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/9214e5c5-c50b-44b6-8db7-088aec899d7a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-09-21T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/26b9d0fb-929e-4c01-91d0-2be638ab3700.json",
+      "type": "application/geo+json",
+      "datetime": "2022-08-24T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/fa2c4f70-cf44-4db3-8217-d569e6ae3284.json",
+      "type": "application/geo+json",
+      "datetime": "2022-07-13T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/50fc780c-b976-47f8-adf5-252fde89ce27.json",
+      "type": "application/geo+json",
+      "datetime": "2022-06-01T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/32537d92-ea61-44bb-b441-ef081e41bcee.json",
+      "type": "application/geo+json",
+      "datetime": "2022-04-20T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/55eafc4d-8001-472f-9f64-cd35e6ce7c8a.json",
+      "type": "application/geo+json",
+      "datetime": "2022-03-23T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2022/400a4490-6fcc-4d3c-a42b-e560a84b656e.json",
+      "type": "application/geo+json",
+      "datetime": "2022-02-09T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2021/14fb4e45-e683-4747-a5ad-6bef579bd0a2.json",
+      "type": "application/geo+json",
+      "datetime": "2021-11-03T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2020/9332ea43-6620-4f55-8678-7774b355f87d.json",
+      "type": "application/geo+json",
+      "datetime": "2020-11-04T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2017/7c66a9e4-2067-44bc-bdc7-98ca42b477d3.json",
+      "type": "application/geo+json",
+      "datetime": "2017-11-22T00:00:00Z"
+    },
+    {
+      "rel": "item",
+      "href": "./lakes_alos2_hv/2016/51c2d0e6-f2d1-41a8-8b5b-16ff6af4bb78.json",
+      "type": "application/geo+json",
+      "datetime": "2016-11-23T00:00:00Z"
+    },
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "lakes_alos2_hv",
+      "wms:layers": [
+        "JAXA_LAKES_ALOS2_HV"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Lakes collection (ALOS2-HH/HV)"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_ALOS2_lakes_alos2_hv/thumbnail.png",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Open data",
+    "Water extent"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "Lakes_ALOS2_HV",
+  "sensor": [
+    "PALSAR-2"
+  ],
+  "satellite": [
+    "ALOS-2"
+  ],
+  "title": "Tonl\u00e9 Sap (ALOS2-HV)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          102.05815802238166,
+          11.433163363655378,
+          105.91024325063184,
+          15.053883303657637
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-11-23T00:00:00Z",
+          "2022-12-14T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_ALOS2_lakes_alos2_hv/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.eorc.jaxa.jp/ALOS-2/en/about/palsar2.htm",
+      "type": "text/html",
+      "title": "JAXA ALOS-2 PALSAR-2",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_data_e.htm",
+      "type": "text/html",
+      "title": "Use data",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "type": "Collection",
+  "id": "nceo_africa_2017",
+  "stac_version": "1.1.0",
+  "description": "## NCEO Africa Aboveground Woody Biomass\n\nThe NCEO Africa Aboveground Woody Biomass (AGB) map for the year 2017 at 100 m spatial resolution was developed using a combination of:\n\n- LiDAR\n- SAR\n- optical-based data\n\nThis product was developed by the UK\u2019s National Centre for Earth Observation (NCEO) through the Carbon Cycle and Official Development Assistance (ODA) programmes.\n\n### Additional information\n\n- [CEOS  biomass](https://ceos.org/gst/biomass.html)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./nceo_africa_2017/collection.json",
+      "type": "application/json",
+      "title": "Aboveground Woody Biomass",
+      "endpointtype": "VEDA_cog",
+      "subtitle": "NCEO Africa AGB map for 2017 at 100 m spatial resolution",
+      "code": "NCEO",
+      "id": "nceo_africa_2017",
+      "themes": [
+        "biomass"
+      ],
+      "tags": [
+        "Africa",
+        "Wood",
+        "Open data",
+        "Multi-sensors",
+        "Carbon",
+        "Forest"
+      ],
+      "agency": [
+        "NASA"
+      ],
+      "subcode": "NCEO",
+      "satellite": [
+        "Other"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "subtitle": "NCEO Africa AGB map for 2017 at 100 m spatial resolution",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "Africa",
+    "Wood",
+    "Open data",
+    "Multi-sensors",
+    "Carbon",
+    "Forest"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NCEO",
+  "satellite": [
+    "Other"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      400
+    ],
+    "range": [
+      "#fdfbfb",
+      "#e7cac0",
+      "#d1ae8c",
+      "#bfa764",
+      "#b5b65e",
+      "#94ae57",
+      "#72a551",
+      "#479a48",
+      "#3c8f60",
+      "#338478",
+      "#276b7d",
+      "#1a487a",
+      "#0d1d76",
+      "#000000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "mg/ha"
+  },
+  "title": "Aboveground Woody Biomass",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -18.273529509559307,
+          -35.054059016911935,
+          51.86423292864056,
+          37.73103856358817
+        ],
+        [
+          -18.273529509559307,
+          -35.054059016911935,
+          51.86423292864056,
+          37.73103856358817
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01T00:00:00Z",
+          "2017-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NCEO",
+      "roles": "licensor, processor",
+      "url": "https://www.nceo.ac.uk/data-tools/datasets/"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "NCEO"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "Other"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.png"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/NCEO_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://ceos.org/gst/biomass.html",
+      "type": "text/html",
+      "title": "Above Ground Biomass",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}
