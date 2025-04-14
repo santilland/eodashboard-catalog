@@ -1,0 +1,87 @@
+{
+  "Name": "CO_3_daily",
+  "Title": "Carbon Monoxide observed by Sentinel-5p TROPOMI",
+  "EodashIdentifier": "N1_CO",
+  "Subtitle": "Global 3-daily Carbon monoxide",
+  "Description": "N1_CO/N1_CO.md",
+  "Themes": [
+    "air",
+    "extreme-events"
+  ],
+  "Tags": [
+    "Air quality",
+    "CO",
+    "Open data",
+    "Air pollution"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-5P"
+      ],
+      "Sensor": [
+        "TROPOMI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Image": "N1_CO/N1_CO.png",
+  "Legend": "N1_CO/N1_CO_legend.png",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "57a07405-8ec2-4b9c-a273-23e287c173f8",
+      "LayerId": "AWS_VIS_CO_3DAILY_DATA"
+    }
+  ],
+  "Services": [
+    {
+      "Endpoint": "https://services.sentinel-hub.com/api/v1/statistics",
+      "Name": "Statistical API",
+      "Type": "byoc",
+      "CollectionId": "57a07405-8ec2-4b9c-a273-23e287c173f8",
+      "Script": "N1_CO/N1_CO.js"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "Copernicus",
+      "Url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "Name": "Copernicus Data Space",
+      "Url": "https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel5P.html"
+    }
+  ],
+  "References": [
+    {
+      "Name": "TROPOMI CO",
+      "Key": "tropomi_co",
+      "Url": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      175
+    ],
+    "range": [
+      "#f8f6f4",
+      "#9e61a8",
+      "#5366b6",
+      "#3c8cc6",
+      "#51aca2",
+      "#e3a625",
+      "#eb490e",
+      "#ba0006",
+      "#74120d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "CO [ppbv]"
+  }
+}

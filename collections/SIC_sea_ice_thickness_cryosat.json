@@ -1,0 +1,92 @@
+{
+  "Name": "sea_ice_thickness_cryosat",
+  "Title": "Sea ice thickness (Cryosat-2)",
+  "Subtitle": "Daily Arctic sea ice thickness",
+  "EodashIdentifier": "SIC",
+  "Description": "SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.md",
+  "Themes": [
+    "cryosphere"
+  ],
+  "Tags": [
+    "Sea ice",
+    "Polar",
+    "ESA Climate Change Initiative",
+    "Open data",
+    "Polar",
+    "Arctic"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "CryoSat-2"
+      ],
+      "Sensor": [
+        "SIRAL"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "Hendricks, S.; Paul, S.; Rinne, E. (2018). ESA Sea Ice Climate Change Initiative (Sea_Ice_cci). \nNorthern hemisphere sea ice thickness from CryoSat-2 on the satellite swath (L2P), v2.0. Centre for Environmental Data Analysis, date of citation.\n",
+        "DOI": "10.5285/5b6033bfb7f241e89132a83fdc3d5364"
+      }
+    ]
+  },
+  "Legend": "SIC_sea_ice_thickness_cryosat/SIC_legend.png",
+  "Image": "SIC_sea_ice_thickness_cryosat/SIC_sea_ice_thickness_cryosat.png",
+  "References": [
+    {
+      "Name": "The CCI sea-ice thickness data set",
+      "Url": "https://climate.esa.int/en/projects/cmug/studies/new-dimension-cci-sea-ice-thickness-data-set/"
+    },
+    {
+      "Name": "Data access",
+      "Url": "https://catalogue.ceda.ac.uk/uuid/5b6033bfb7f241e89132a83fdc3d5364"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "zarr",
+      "CollectionId": "b6915831-0a56-424b-bcb4-781deb062f31",
+      "LayerId": "ESA-CCI-V2-CRYOSAT"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "ESA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://climate.esa.int/en/data/#/dashboard"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      4
+    ],
+    "range": [
+      "#0d0887",
+      "#370499",
+      "#5801a4",
+      "#7701a8",
+      "#920fa3",
+      "#ac2694",
+      "#c23c81",
+      "#d45270",
+      "#e4695e",
+      "#f1814d",
+      "#fa9b3d",
+      "#feb82c",
+      "#fad824",
+      "#f0f921"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Sea-ice thickness [m]"
+  }
+}

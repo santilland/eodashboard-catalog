@@ -119,7 +119,10 @@ collections:
   - LIS_Global_DA_Evap
   - NTLU_JAXA_Nighttimelevel_Urban
   - NTLR_JAXA_Nighttimelevel_Rural
-  - 4D_Greenland
+  - 4D_Greenland_Duration
+  - 4D_Greenland_Melt_Onset
+  - 4D_Greenland_Melt_Season_End
+  - 4D_Greenland_Meltmap
   - ENSST_by_GCOM-W-AMSR_JAXA
   - SLSTR1_Sentinel-3-SLSTR-L2-LST
   - SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence

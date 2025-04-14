@@ -1,0 +1,123 @@
+{
+  "Name": "RECCAP2_8_edge_biomass_change",
+  "Title": "Edge biomass change (CCI RECCAP2)",
+  "EodashIdentifier": "RECCAP2_8",
+  "Description": "RECCAP2_8_edge_biomass_change/RECCAP2_8.md",
+  "Themes": [
+    "biomass"
+  ],
+  "Tags": [
+    "Amazon rainforest",
+    "Open data",
+    "Carbon",
+    "Forest"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "SMOS"
+      ],
+      "Sensor": [
+        "MIRAS"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "Fawcett, Dominic, Sitch, Stephen, Ciais, Philippe, Wigneron, Jean Pierre, Silva-Junior, Celso H. L., Heinrich, Viola, Vancutsem, Christelle, Achard, Fr\u00e9d\u00e9ric, Bastos, Ana, Yang, Hui, Li, Xiaojun, Albergel, Cl\u00e9ment, Friedlingstein, Pierre, & Arag\u00e3o, Luiz E. O. C. (2022). \nProcessed Data for Figures of 'Declining Amazon biomass due to deforestation and subsequent degradation losses exceeding gains' (Version v1) [Data set]. Zenodo.\n",
+        "DOI": "10.5281/zenodo.7245450"
+      }
+    ]
+  },
+  "Legend": "RECCAP2_6_deforested_biomass/RECCAP2_6_legend.png",
+  "Image": "RECCAP2_8_edge_biomass_change/World-RECCAP2_8.png",
+  "References": [
+    {
+      "Name": "RECCAP-2",
+      "Url": "https://climate.esa.int/en/projects/reccap-2/"
+    },
+    {
+      "Name": "CCI RECCAP2 xcube Viewer",
+      "Url": "https://reccap2.viewer.brockmann-consult.de/"
+    },
+    {
+      "Name": "Amazon biomass in decline due to deforestation and degradation",
+      "Url": "https://climate.esa.int/en/news-events/amazon-biomass-in-decline-due-to-deforestation-and-degradation/"
+    },
+    {
+      "Name": "Younger trees champion carbon capture",
+      "Url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/SMOS/Younger_trees_champion_carbon_capture"
+    },
+    {
+      "Name": "ESA results on display at COP27",
+      "Url": "https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/ESA_results_on_display_at_COP27"
+    },
+    {
+      "Name": "Satellites improve national reporting of greenhouse gases",
+      "Url": "https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Satellites_improve_national_reporting_of_greenhouse_gases"
+    },
+    {
+      "Name": "Counting carbon",
+      "Url": "https://www.esa.int/ESA_Multimedia/Videos/2021/07/Counting_carbon"
+    },
+    {
+      "Name": "Growth A toolkit for analyzing secondary forest aboveground carbon dynamics in the Brazilian Amazon",
+      "Url": "https://www.frontiersin.org/articles/10.3389/ffgc.2023.1230734"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://reccap2.api.brockmann-consult.de/api",
+      "Type": "zarr",
+      "Name": "xcube",
+      "StacEndpoint": "/ogc",
+      "DatacubeId": "cop28~reccap2-9x108x139-0.0.1.zarr",
+      "Variable": "edge_biomass_change",
+      "ColormapName": "YlOrRd",
+      "Rescale": [
+        0,
+        5
+      ],
+      "Query": {
+        "Start": "2011-01-01T00:00:00Z",
+        "End": "2018-12-31T00:00:00Z"
+      }
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "ESA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://climate.esa.int/en/projects/reccap-2/"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      5
+    ],
+    "range": [
+      "#ffffcc",
+      "#fff4b1",
+      "#ffe896",
+      "#fedc7c",
+      "#fec763",
+      "#feaf4b",
+      "#fd9841",
+      "#fd7a36",
+      "#fc532b",
+      "#ef3222",
+      "#dd161e",
+      "#c60624",
+      "#a60026",
+      "#800026"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[Mg C/ha/year]"
+  }
+}

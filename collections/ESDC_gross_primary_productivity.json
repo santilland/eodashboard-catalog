@@ -1,0 +1,100 @@
+{
+  "Name": "ESDC_gross_primary_productivity",
+  "Title": "Land Gross Primary Productivity",
+  "Subtitle": "Global land GPP",
+  "EodashIdentifier": "ESDC_gross_primary_productivity",
+  "Description": "ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.md",
+  "Themes": [
+    "biomass"
+  ],
+  "Tags": [
+    "CO2",
+    "Photosynthesis",
+    "Open data",
+    "Carbon"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Terra"
+      ],
+      "Sensor": [
+        "MODIS"
+      ]
+    }
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., R\u00e1duly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291\u20134313.\n",
+        "DOI": "10.5194/bg-13-4291-2016"
+      }
+    ]
+  },
+  "Legend": "ESDC_gross_primary_productivity/ESDC_gross_primary_productivity_legend.png",
+  "Image": "ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png",
+  "References": [
+    {
+      "Name": "Data served from the Earth System Data Lab xcube server",
+      "Url": "https://viewer.earthsystemdatalab.net/"
+    },
+    {
+      "Name": "What is the Global Carbon Budget",
+      "Url": "https://www.esa.int/ESA_Multimedia/Images/2021/11/Global_carbon_budget"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://api.earthsystemdatalab.net/api",
+      "Type": "zarr",
+      "Name": "xcube",
+      "StacEndpoint": "/ogc",
+      "DatacubeId": "esdc",
+      "Variable": "gross_primary_productivity",
+      "ColormapName": "jet",
+      "Rescale": [
+        -1,
+        15
+      ],
+      "Query": {
+        "Start": "2014-01-01T00:00:00Z",
+        "End": "2018-12-23T00:00:00Z"
+      }
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      -1,
+      15
+    ],
+    "range": [
+      "#000080",
+      "#0000d9",
+      "#001dff",
+      "#006cff",
+      "#00baff",
+      "#1cffda",
+      "#5cff9b",
+      "#9bff5c",
+      "#daff1c",
+      "#ffce00",
+      "#ff8500",
+      "#ff3c00",
+      "#d90000",
+      "#800000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[gC/m\u00b2/day]"
+  }
+}

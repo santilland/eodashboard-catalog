@@ -1,0 +1,92 @@
+{
+  "Name": "N9_OMI_trno2-COG",
+  "Title": "Nitrogen Dioxide from OMI (Yearly)",
+  "EodashIdentifier": "N9",
+  "Subtitle": "Yearly NO2 from NASA's OMI Aura [10^14 molecules/cm^2]",
+  "Description": "N9_OMI_trno2-COG/N9_OMI_trno2-COG.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "Air quality",
+    "NO2",
+    "Open data",
+    "Air quality",
+    "Air pollution"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Aura"
+      ],
+      "Sensor": [
+        "OMI"
+      ]
+    }
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Image": "N9_OMI_trno2-COG/N9_OMI_trno2-COG.png",
+  "Legend": "N9_OMI_trno2-COG/N9_legend.png",
+  "References": [
+    {
+      "Name": "NASA Covid Dashboard",
+      "Key": "covid_dashboard",
+      "Url": "https://www.earthdata.nasa.gov/covid19/indicators/no2"
+    }
+  ],
+  "Services": [
+    {
+      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
+      "Name": "VEDA Statistics",
+      "Rescale": "1e-14"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://openveda.cloud/api/stac/",
+      "Name": "VEDA",
+      "Type": "cog",
+      "CollectionId": "OMI_trno2-COG",
+      "ColormapName": "reds",
+      "Rescale": [
+        0,
+        "37e14"
+      ],
+      "Bidx": 1
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://search.earthdata.nasa.gov/search?q=OMNO2d_003"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      0,
+      37
+    ],
+    "range": [
+      "#fff5f0",
+      "#fee8de",
+      "#fed7c7",
+      "#fcc1a9",
+      "#fca88b",
+      "#fc8f6f",
+      "#fb7656",
+      "#f75c41",
+      "#f03f2e",
+      "#dc2824",
+      "#c5171c",
+      "#ae1117",
+      "#8d0912",
+      "#67000d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NO2 [10^14 molecules/cm\u00b2]"
+  }
+}

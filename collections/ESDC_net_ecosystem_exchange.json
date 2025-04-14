@@ -1,0 +1,97 @@
+{
+  "Name": "ESDC_net_ecosystem_exchange",
+  "Title": "Land Net Ecosystem Exchange",
+  "Subtitle": "Net carbon exchange between the ecosystem and the atmosphere",
+  "EodashIdentifier": "ESDC_net_ecosystem_exchange",
+  "Description": "ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.md",
+  "Themes": [
+    "biomass"
+  ],
+  "Tags": [
+    "CO2",
+    "Atmosphere",
+    "Photosynthesis",
+    "Open data",
+    "Carbon"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Terra"
+      ],
+      "Sensor": [
+        "MODIS"
+      ]
+    }
+  },
+  "Agency": [
+    "NASA"
+  ],
+  "Citation": {
+    "Publication": [
+      {
+        "Citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., R\u00e1duly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291\u20134313.\n",
+        "DOI": "10.5194/bg-13-4291-2016, 2016"
+      }
+    ]
+  },
+  "Legend": "ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange_legend.png",
+  "Image": "ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.png",
+  "References": [
+    {
+      "Name": "Data served from the Earth System Data Lab xcube server",
+      "Url": "https://viewer.earthsystemdatalab.net/"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://api.earthsystemdatalab.net/api",
+      "Type": "zarr",
+      "Name": "xcube",
+      "StacEndpoint": "/ogc",
+      "DatacubeId": "esdc",
+      "Variable": "net_ecosystem_exchange",
+      "ColormapName": "bwr",
+      "Rescale": [
+        -7,
+        2
+      ],
+      "Query": {
+        "Start": "2014-01-01T00:00:00Z",
+        "End": "2018-12-23T00:00:00Z"
+      }
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Roles": "licensor, producer, processor",
+      "Url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "Colorlegend": {
+    "domain": [
+      -7,
+      2
+    ],
+    "range": [
+      "#0000ff",
+      "#2727ff",
+      "#4e4eff",
+      "#7676ff",
+      "#9d9dff",
+      "#c4c4ff",
+      "#ebebff",
+      "#ffebeb",
+      "#ffc4c4",
+      "#ff9d9d",
+      "#ff7676",
+      "#ff4e4e",
+      "#ff2727",
+      "#ff0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[gC/m\u00b2/day]"
+  }
+}
