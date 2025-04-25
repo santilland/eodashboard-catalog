@@ -22,7 +22,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-            submodules: 'true'
+            ref: ${{ github.event.pull_request.head.ref }}
+            repository: ${{ github.event.pull_request.head.repo.full_name }}
       - name: Install dependencies
         run: |
           pip install -U pip
