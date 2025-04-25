@@ -1,0 +1,58 @@
+{
+  "Name": "",
+  "Title": "",
+  "EodashIdentifier": "",
+  "Subtitle": "",
+  "Description": "",
+  "Themes": [],
+  "Tags": [],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [],
+      "Sensor": []
+    },
+    "InSitu": [],
+    "Other": []
+  },
+  "Agency": [],
+  "License": "",
+  "Locations": [],
+  "Provider": [],
+  "Citation": {
+    "DOI": "",
+    "Citation": "",
+    "Publications": []
+  },
+  "Image": "",
+  "Legend": "",
+  "Subcollections": [],
+  "Resources": [],
+  "Services": [],
+  "References": [],
+  "Colorlegend": {
+    "title": "",
+    "range": [],
+    "domain": [],
+    "tickFormat": "",
+    "tickValues": [],
+    "scaletype": "continuous",
+    "marktype": "rect"
+  },
+  "CollectionGroup": "",
+  "Process": {
+    "Name": "",
+    "JsonForm": "",
+    "VegaDefinition": "",
+    "EndPoints": [
+      {
+        "Identifier": "",
+        "Url": "",
+        "Type": "application/geo+json",
+        "EndPoint": "",
+        "Method": "GET",
+        "Body": "",
+        "Flatstyle": ""
+      }
+    ]
+  }
+}
