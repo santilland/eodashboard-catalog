@@ -36,7 +36,8 @@
       "Query": {
         "Start": "2024-01-01T00:00:00Z",
         "End": "2025-01-27T00:00:00Z"
-      }
+      },
+      "CollectionId": ""
     }
   ],
   "Services": [],
