@@ -10,6 +10,8 @@ on:
       - opened
       - reopened
       - synchronize
+# do not allow running multiple of pipelines for this PR in parallel
+concurrency: preview-${{ github.ref }}
 jobs:
   preview_changed_files:
     runs-on: ubuntu-latest 
@@ -22,8 +24,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-            ref: ${{ github.event.pull_request.head.ref }}
-            repository: ${{ github.event.pull_request.head.repo.full_name }}
+          submodules: 'true'
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Install dependencies
         run: |
           pip install -U pip
@@ -43,8 +50,7 @@ jobs:
             SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
             SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
             SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: |
-          eodash_catalog --catalog trilateral --catalogspath catalogs --collectionspath yaml_collections --indicatorspath yaml_indicators
+        run: eodash_catalog
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
