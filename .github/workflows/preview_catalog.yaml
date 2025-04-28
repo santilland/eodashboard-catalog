@@ -55,6 +55,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
+          comment: false
       - name: Find existing comment
         id: find-comment
         uses: peter-evans/find-comment@v3
@@ -69,7 +70,7 @@ jobs:
           body: |
             🚀 Preview ready!
 
-            👉 [View your dashboard preview](https://esa-eodashboards.github.io/eodashboard-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/trilateral/catalog.json )
+            👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://esa-eodashboards.github.io/eodashboard-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/trilateral/catalog.json )
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
       
