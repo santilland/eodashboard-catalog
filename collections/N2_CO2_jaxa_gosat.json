@@ -50,7 +50,7 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "EndPoint": "https://gpwmap.jaxa.jp/wms",
       "Name": "WMS",
       "Type": "Time",
       "LayerId": "XCO2-GOSAT-Cairo",

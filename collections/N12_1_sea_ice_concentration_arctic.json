@@ -44,10 +44,10 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "EndPoint": "https://gpwmap.jaxa.jp/wms",
       "Name": "WMS",
       "Type": "Time",
-      "LayerId": "SIC_N",
+      "LayerId": "EODASH:SIC_N",
       "OverwriteBBox": [
         -20,
         77,
