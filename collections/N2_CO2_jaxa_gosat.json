@@ -53,7 +53,7 @@
       "EndPoint": "https://gpwmap.jaxa.jp/wms",
       "Name": "WMS",
       "Type": "Time",
-      "LayerId": "XCO2-GOSAT-Cairo",
+      "LayerId": "EODASH:XCO2-GOSAT-Cairo",
       "OverwriteBBox": [
         30,
         29,
