@@ -18,38 +18,32 @@ jobs:
     permissions:
       contents: write
       pages: write
+      pull-requests: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Install dependencies
         run: |
           pip install -U pip
-          pip install json2yaml
           pip install eodash_catalog
-      - name: Convert JSON to YAML
-        run: |
-          mkdir -p yaml_collections
-          for file in collections/*.json; do
-            json2yaml "$file" > "yaml_collections/$(basename "$file" .json).yaml"
-          done
-          mkdir -p yaml_indicators
-          for file in indicators/*.json; do
-            json2yaml "$file" > "yaml_indicators/$(basename "$file" .json).yaml"
-          done
       - name: Build
         env:
           SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
-        run: eodash_catalog --catalog trilateral --collectionspath yaml_collections --indicatorspath yaml_indicators
+        run: eodash_catalog
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          force_orphan: true
+          folder: ./build
+          branch: gh-pages
+          clean-exclude: pr-preview
+          force: false
 
 

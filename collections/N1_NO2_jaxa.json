@@ -42,10 +42,10 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "EndPoint": "https://gpwmap.jaxa.jp/wms",
       "Name": "WMS",
       "Type": "Time",
-      "LayerId": "NO2-TROPOMI-Cairo-Daily",
+      "LayerId": "EODASH:NO2-TROPOMI-Cairo-Daily",
       "OverwriteBBox": [
         30,
         29,

@@ -45,10 +45,10 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "EndPoint": "https://gpwmap.jaxa.jp/wms",
       "Name": "WMS",
       "Type": "Time",
-      "LayerId": "ONPP-GCOMC-World-Monthly"
+      "LayerId": "EODASH:ONPP-GCOMC-World-Monthly"
     }
   ],
   "Provider": [
