@@ -43,11 +43,9 @@ with open(catalog_path, "r") as f:
         file = file.split("/")[-1].split(".")[0]
         catalog["collections"].append(file)
 
-# only update if any collection or indicator changed
-if catalog["collections"]:
-    with open(catalog_path, "w") as f:
-        print(
-            "adding the following as indicators to the catalog: ",
-            catalog["collections"],
-        )
-        json.dump(catalog, f)
+with open(catalog_path, "w") as f:
+    print(
+        "adding the following as indicators to the catalog: ",
+        catalog["collections"],
+    )
+    json.dump(catalog, f)
