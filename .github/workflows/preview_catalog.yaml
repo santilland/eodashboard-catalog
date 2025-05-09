@@ -83,7 +83,7 @@ jobs:
           while [ $ATTEMPTS -lt $MAX_ATTEMPTS ]; do
             RUN=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               https://api.github.com/repos/${{ github.repository }}/actions/runs \
-              | jq '.workflow_runs[] | select(.name=="pages-build-deployment")' \
+              | jq '.workflow_runs[] | select(.name=="pages build and deployment")' \
               | jq -s 'sort_by(.run_started_at) | reverse | .[0]')
       
             STATUS=$(echo "$RUN" | jq -r '.status')
