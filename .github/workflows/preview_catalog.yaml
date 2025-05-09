@@ -73,4 +73,30 @@ jobs:
             👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://esa-eodashboards.github.io/eodashboard-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/trilateral/catalog.json )
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
+      - name: Wait for GitHub Pages deployment
+        run: |
+          echo "Waiting for GitHub Pages deployment..."
+          ATTEMPTS=0
+          MAX_ATTEMPTS=30
+          while [ $ATTEMPTS -lt $MAX_ATTEMPTS ]; do
+            STATUS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/pages/deployment/status \
+              | jq -r .status)
+      
+            echo "Current status: $STATUS"
+      
+            if [ "$STATUS" = "built" ]; then
+              echo "✅ Deployment finished."
+              exit 0
+            elif [ "$STATUS" = "errored" ]; then
+              echo "❌ Deployment failed."
+              exit 1
+            fi
+      
+            ATTEMPTS=$((ATTEMPTS+1))
+            sleep 10
+          done
+      
+          echo "⚠️ Timed out waiting for deployment."
+          exit 1
       
