@@ -1,6 +1,6 @@
 {
   "Name": "cmems_data_chl",
-  "Title": "CMEMS Chlorophyll 2",
+  "Title": "CMEMS Chlorophyll",
   "EodashIdentifier": "CMEMS_CHL",
   "Description": "Description of data",
   "Themes": [],
