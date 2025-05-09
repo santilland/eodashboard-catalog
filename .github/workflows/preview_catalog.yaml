@@ -73,4 +73,38 @@ jobs:
             👉 [View your dashboard preview](https://eodash.github.io/preview-instance/?stacEndpoint=https://esa-eodashboards.github.io/eodashboard-catalog/pr-preview/pr-${{ github.event.pull_request.number }}/trilateral/catalog.json )
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           edit-mode: replace
+      - name: Wait for GitHub Pages deployment workflow
+        run: |
+          echo "Waiting for GitHub Pages deployment to complete..."
+          ATTEMPTS=0
+          MAX_ATTEMPTS=30
+          DELAY=10
+      
+          while [ $ATTEMPTS -lt $MAX_ATTEMPTS ]; do
+            RUN=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/actions/runs \
+              | jq '.workflow_runs[] | select(.name=="pages build and deployment")' \
+              | jq -s 'sort_by(.run_started_at) | reverse | .[0]')
+      
+            STATUS=$(echo "$RUN" | jq -r '.status')
+            CONCLUSION=$(echo "$RUN" | jq -r '.conclusion')
+      
+            echo "Current pages-build-deployment status: $STATUS / $CONCLUSION"
+      
+            if [[ "$STATUS" == "completed" ]]; then
+              if [[ "$CONCLUSION" == "success" ]]; then
+                echo "✅ GitHub Pages deployment completed successfully."
+                exit 0
+              else
+                echo "❌ GitHub Pages deployment failed."
+                exit 1
+              fi
+            fi
+      
+            ATTEMPTS=$((ATTEMPTS+1))
+            sleep $DELAY
+          done
+      
+          echo "⚠️ Timed out waiting for GitHub Pages deployment."
+          exit 1
       
