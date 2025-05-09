@@ -1,6 +1,6 @@
 {
   "Name": "cmems_data_chl",
-  "Title": "CMEMS Chlorophyll",
+  "Title": "CMEMS Chlorophyll 4",
   "EodashIdentifier": "CMEMS_CHL",
   "Description": "Description of data",
   "Themes": [],
@@ -8,16 +8,29 @@
   "Resources": [
     {
       "EndPoint": "https://wmts.marine.copernicus.eu/teroWmts/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-plankton_nrt_l4-olci-300m_P1M_202211",
-      "Type": "WMTSCapabilities",
+      "Type": "byoc",
       "Name": "marinedatastore",
       "LayerId": "OCEANCOLOUR_GLO_BGC_L4_NRT_009_102/cmems_obs-oc_glo_bgc-plankton_nrt_l4-olci-300m_P1M_202211/CHL",
       "Dimensions": {
-        "elevation": 0
+        "elevation": "0"
       },
       "Query": {
         "Start": "2024-01-01T00:00:00Z",
         "End": "2025-01-27T00:00:00Z"
-      }
+      },
+      "Variable": "",
+      "CollectionId": ""
     }
-  ]
+  ],
+  "DataSource": {},
+  "Agency": [],
+  "License": "",
+  "Locations": [],
+  "Provider": [],
+  "Citation": {
+    "DOI": "",
+    "Citation": ""
+  },
+  "Image": "",
+  "Legend": ""
 }
