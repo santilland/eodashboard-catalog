@@ -1,0 +1,32 @@
+{
+  "Name": "high_res_lst",
+  "Title": "High Resolution Land Surface Temperature",
+  "EodashIdentifier": "OHB_LST1",
+  "Description": "## Great description",
+  "Themes": [],
+  "Tags": [],
+  "DataSource": {},
+  "Agency": [],
+  "License": "",
+  "Locations": [],
+  "Provider": [],
+  "Citation": {
+    "DOI": "",
+    "Citation": ""
+  },
+  "Image": "",
+  "Legend": "",
+  "Resources": [
+    {
+      "EndPoint": "https://hi-res-lst.azurewebsites.net",
+      "Name": "xcube",
+      "Type": "zarr",
+      "StacEndpoint": "/ogc",
+      "DatacubeId": "STEPBYSTEP~heilbronn-difference.levels",
+      "Variable": "difference-raster-30m-lst",
+      "ColormapName": "coolwarm",
+      "CollectionId": "",
+      "LayerId": ""
+    }
+  ]
+}

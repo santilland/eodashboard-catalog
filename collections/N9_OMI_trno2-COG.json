@@ -31,6 +31,10 @@
   "Legend": "N9_OMI_trno2-COG/N9_legend.png",
   "References": [
     {
+      "Name": "OMI/Aura NO2 Cloud-Screened Total and Tropospheric Column L3 Global Gridded",
+      "Url": "https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary"
+    },
+    {
       "Name": "NASA Covid Dashboard",
       "Key": "covid_dashboard",
       "Url": "https://www.earthdata.nasa.gov/covid19/indicators/no2"
@@ -88,5 +92,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "NO2 [10^14 molecules/cm\u00b2]"
+  },
+  "Process": {
+    "Name": "VEDA Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_vega_definition.json",
+    "EndPoints": [
+      {
+        "Identifier": "veda_statistics",
+        "Url": "https://openveda.cloud/api/raster/cog/statistics",
+        "Method": "POST",
+        "EndPoint": "veda",
+        "Type": "application/json"
+      }
+    ]
   }
 }
