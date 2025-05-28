@@ -6,6 +6,8 @@
     "geodb_default_form": "https://santilland.github.io/process_example/definitions/geodbform.json",
     "geodb_default_vega": "https://santilland.github.io/process_example/definitions/geodbvega.json",
     "assets_endpoint": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections",
+    "default_base_layers": "layers/baselayers",
+    "default_overlay_layers": "layers/overlays",
     "collections": [
         "E9_car_containers",
         "N1_NO2",
