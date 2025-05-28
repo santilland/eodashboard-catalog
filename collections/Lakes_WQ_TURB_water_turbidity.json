@@ -60,7 +60,13 @@
       "Name": "Sentinel Hub",
       "Type": "zarr",
       "CollectionId": "ef59d045-a0cd-4ce0-a25d-5da91e70e965",
-      "LayerId": "LAKE_WATER_QUALITY_TURBIDITY_MEAN"
+      "LayerId": "LAKE_WATER_QUALITY_TURBIDITY_MEAN",
+      "OverwriteBBox": [
+        17,
+        46.5,
+        19,
+        48
+      ]
     }
   ],
   "Provider": [

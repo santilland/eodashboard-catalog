@@ -39,7 +39,13 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "ded2ac82-a4f8-4873-b725-60b9ac908c8d",
-      "LayerId": "NASA-ECOSTRESS-LST"
+      "LayerId": "NASA-ECOSTRESS-LST",
+      "OverwriteBBox": [
+        10,
+        42.5,
+        13,
+        45
+      ]
     }
   ],
   "Provider": [
