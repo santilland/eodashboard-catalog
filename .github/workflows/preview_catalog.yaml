@@ -23,14 +23,16 @@ jobs:
       packages: read
     name: Deploy changed-files
     steps:
-      - name: Checkout
+      -
+        if: github.event.action != 'closed' # skip the step if the PR has been closed, just for cleanup
+        name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: 'true'
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       -
-        if: github.event.action != 'closed' # skip the build if the PR has been closed, just for cleanup
+        if: github.event.action != 'closed' # skip the step if the PR has been closed, just for cleanup
         name: changed-files
         id: changed-files
         uses: tj-actions/changed-files@v45
@@ -38,13 +40,13 @@ jobs:
         # with:
         #   since_last_remote_commit: true 
       -
-        if: github.event.action != 'closed' # skip the build if the PR has been closed, just for cleanup
+        if: github.event.action != 'closed' # skip the step if the PR has been closed, just for cleanup
         name: List all changed files
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: python .github/update_catalog.py
       -
-        if: github.event.action != 'closed' # skip the build if the PR has been closed, just for cleanup
+        if: github.event.action != 'closed' # skip the step if the PR has been closed, just for cleanup
         name: Build
         env:
             SH_INSTANCE_ID: ${{ secrets.SH_INSTANCE_ID }}
