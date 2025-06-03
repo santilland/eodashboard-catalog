@@ -2,7 +2,7 @@
   "Name": "lakes_alos2_hh",
   "Title": "Lakes (ALOS2-HH)",
   "EodashIdentifier": "Lakes_ALOS2_HH",
-  "Description": "lakes_alos2_hh/lakes_alos2_hh.md",
+  "Description": "Lakes_ALOS2/Lakes_ALOS2.md",
   "Themes": [
     "water"
   ],
