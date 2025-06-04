@@ -24,7 +24,6 @@
   "Agency": [
     "JAXA"
   ],
-  "Legend": "E10e_ndvi/E10e_legend.png",
   "Image": "E10e_ndvi/E10e_ndvi.png",
   "References": [
     {
@@ -51,16 +50,19 @@
   ],
   "Colorlegend": {
     "domain": [
-      "0 (Water)",
-      "1 (Non-crop)",
-      "2 (Crop)"
+      0,
+      1
     ],
     "range": [
-      "#000004",
-      "#a6317d",
-      "#fcfdbf"
+      "#b79a4b",
+      "#ece267",
+      "#abff38",
+      "#61e43e",
+      "#1c9c03",
+      "#0e4303"
     ],
-    "scaleType": "categorical",
-    "title": "Land Cover Class"
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NDVI"
   }
 }
