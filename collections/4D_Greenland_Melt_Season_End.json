@@ -66,7 +66,11 @@
       "LayerId": "VIS_4D_GREENLAND_END",
       "Name": "Sentinel Hub",
       "Type": "byoc",
-      "CollectionId": "7bbcfb29-3260-466d-bdb6-da517019edd9"
+      "CollectionId": "7bbcfb29-3260-466d-bdb6-da517019edd9",
+      "DataProjection": {
+        "name": "EPSG:3413",
+        "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
     }
   ],
   "Image": "4D_Greenland_Melt_Season_End/thumbnail.png",
@@ -96,5 +100,9 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Ice melting end [day of year]"
+  },
+  "MapProjection": {
+    "name": "EPSG:3413",
+    "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
   }
 }
