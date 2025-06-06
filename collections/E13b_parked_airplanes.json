@@ -66,11 +66,11 @@
   "Process": {
     "Name": "GeoDB Statistics",
     "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/N2_greenhouse_gases/chart.json",
+    "VegaDefinition": "https://api.npoint.io/bf58c6f2615ddacf00f6",
     "EndPoints": [
       {
         "Identifier": "process_geodb",
-        "Url": "https://api.npoint.io/bf58c6f2615ddacf00f6",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
         "Type": "application/json"
       }
     ]
