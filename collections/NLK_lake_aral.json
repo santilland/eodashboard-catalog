@@ -25,6 +25,7 @@
   "Agency": [
     "NASA"
   ],
+  "Image": "NLK_lakes/thumbnail.jpg",
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
