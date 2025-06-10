@@ -5,6 +5,17 @@
     "endpoint": "https://eurodatacube.github.io/eodash-catalog/trilateral/",
     "geodb_default_form": "https://santilland.github.io/process_example/definitions/geodbform.json",
     "geodb_default_vega": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+    "default_xcube_process": {
+        "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+        "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_vega.json",
+        "EndPoints": [
+        {
+            "Identifier": "xcube_statistics",
+            "Method": "POST",
+            "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+            "Type": "application/json"
+        }]
+    },
     "assets_endpoint": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections",
     "default_base_layers": "layers/baselayers",
     "default_overlay_layers": "layers/overlays",
