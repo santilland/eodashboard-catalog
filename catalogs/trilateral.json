@@ -6,13 +6,11 @@
     "geodb_default_form": "https://santilland.github.io/process_example/definitions/geodbform.json",
     "geodb_default_vega": "https://santilland.github.io/process_example/definitions/geodbvega.json",
     "default_xcube_process": {
-        "Name": "xcube statistics",
         "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
         "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_vega.json",
         "EndPoints": [
         {
             "Identifier": "xcube_statistics",
-            "Url": "https://reccap2.api.brockmann-consult.de/api/timeseries/{DatacubeId}/{Variable}?aggMethods=median",
             "Method": "POST",
             "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
             "Type": "application/json"
