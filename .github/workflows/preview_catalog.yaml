@@ -24,7 +24,6 @@ jobs:
     name: Deploy changed-files
     steps:
       -
-        if: github.event.action != 'closed' # skip the step if the PR has been closed, just for cleanup
         name: Checkout
         uses: actions/checkout@v4
         with:
