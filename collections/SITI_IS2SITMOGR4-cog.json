@@ -27,12 +27,10 @@
   "Agency": [
     "NASA"
   ],
-  "Citation": [
-    {
+  "Citation": {
       "Citation": "Petty, A. A., N. Kurtz, R. Kwok, T. Markus, T. A. Neumann, and N. Keeney. 2022. ICESat-2 L4 Monthly Gridded Sea Ice Thickness, Version 2. [Indicate subset used]. \nBoulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. \n",
       "DOI": "10.5067/OE8BDP5KU30Q"
-    }
-  ],
+  },
   "Legend": "SITI_IS2SITMOGR4-cog/SITI_legend.png",
   "Image": "SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.png",
   "References": [
