@@ -66,7 +66,7 @@
   "Process": {
     "Name": "GeoDB Statistics",
     "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
-    "VegaDefinition": "https://api.npoint.io/16121279f081efb5acaf",
+    "VegaDefinition": "https://github.com/eurodatacube/eodash-assets/raw/refs/heads/main/collections/E13b_parked_airplanes/chart.json",
     "EndPoints": [
       {
         "Identifier": "process_geodb",
