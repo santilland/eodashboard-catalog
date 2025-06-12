@@ -5,7 +5,7 @@
   "Subtitle": "Gridded ERA5 reanalysis wind V field at 100 m at global level",
   "Description": "CDS8_windv_ERA5-SingleLevel_100m_GLOBAL/CDS8_windv_ERA5-SingleLevel_100m_GLOBAL.md",
   "Themes": [
-    "air"
+    "atmosphere"
   ],
   "Tags": [
     "Copernicus Services",

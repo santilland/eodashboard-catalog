@@ -4,12 +4,11 @@
   "EodashIdentifier": "NLK",
   "Description": "NLK_lakes/NLK_lakes.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
     "Water quality",
     "Lakes",
-    "Lake",
     "Landsat",
     "OLI",
     "Lake monitoring",

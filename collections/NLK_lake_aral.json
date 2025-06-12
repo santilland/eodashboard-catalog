@@ -4,10 +4,10 @@
   "EodashIdentifier": "NLK_lake_aral",
   "Description": "Landsat-8 images of the Aral Lake",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
-    "Lake",
+    "Lakes",
     "Optical",
     "Water",
     "Open Data"

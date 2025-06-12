@@ -3,5 +3,8 @@
   "Title": "World settlement footprint",
   "EodashIdentifier": "WSF_world_settlement_footprint_ind",
   "Description": "",
-  "Collections": ["WSF_world_settlement_footprint_2019", "WSF_world_settlement_footprint"]
+  "Collections": ["WSF_world_settlement_footprint_2019", "WSF_world_settlement_footprint"],
+  "Themes": [
+    "economy"
+  ]
 }

@@ -5,7 +5,7 @@
   "Subtitle": "Gridded ERA5 reanalysis wind U field at 100 m at global level",
   "Description": "CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.md",
   "Themes": [
-    "air"
+    "atmosphere"
   ],
   "Tags": [
     "Copernicus Services",

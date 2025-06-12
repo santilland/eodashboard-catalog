@@ -4,10 +4,10 @@
   "EodashIdentifier": "NLK_lake_vanern",
   "Description": "V\u00e4nern lake Landsat-8",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
-    "lake"
+    "Lakes"
   ],
   "Satellite": [
     "Landsat-8"

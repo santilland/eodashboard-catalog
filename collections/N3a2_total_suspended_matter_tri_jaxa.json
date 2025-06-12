@@ -5,7 +5,7 @@
   "Subtitle": "Total suspended matter maps",
   "Description": "N3a2_total_suspended_matter_tri_jaxa/N3a2_total_suspended_matter_tri_jaxa.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
     "Water quality",
@@ -14,7 +14,7 @@
     "SGLI",
     "Open data",
     "Marine monitoring",
-    "Total suspended matter"
+    "Total Suspended Matter"
   ],
   "DataSource": {
     "Spaceborne": {

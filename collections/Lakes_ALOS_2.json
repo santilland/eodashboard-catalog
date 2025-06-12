@@ -4,12 +4,11 @@
     "EodashIdentifier": "Lakes_ALOS2",
     "Description": "Lakes_ALOS2/Lakes_ALOS2.md",
     "Themes": [
-      "oceans"
+      "water"
     ],
     "Tags": [
       "Water quality",
       "Lakes",
-      "Lake",
       "SAR",
       "ALOS-2",
       "PALSAR-2",

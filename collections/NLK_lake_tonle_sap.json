@@ -4,10 +4,10 @@
   "EodashIdentifier": "NLK_lake_tonle_sap",
   "Description": "Tonl\u00e9 Sap lake Landsat-8",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
-    "lake"
+    "Lakes"
   ],
   "Satellite": [
     "Landsat-8"
