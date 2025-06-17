@@ -34,12 +34,22 @@
       "Url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
     }
   ],
+  "Locations": true,
   "Resources": [
     {
       "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
       "Name": "GeoDB",
       "Database": "eodash",
-      "CollectionId": "E10a2_tri"
+      "CollectionId": "E10a2_tri",
+      "InputData": [
+        {
+          "Identifier": "S2L2A",
+          "Url": "https://services.sentinel-hub.com/ogc/wms/",
+          "Type": "WMS",
+          "Layers": "SENTINEL-2-L2A-TRUE-COLOR",
+          "TimeDelta": 720
+        }
+      ]
     }
   ],
   "Process": {

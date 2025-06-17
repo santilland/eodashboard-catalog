@@ -55,18 +55,28 @@
       "Url": "https://www.planet.com/"
     }
   ],
+  "Locations": true,
   "Resources": [
     {
       "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
       "Name": "GeoDB",
       "Database": "eodash",
-      "CollectionId": "E13b_tri"
+      "CollectionId": "E13b_tri",
+      "InputData": [
+        {
+          "Identifier": "Sentinel 2 L2A",
+          "Url": "https://services.sentinel-hub.com/ogc/wms/",
+          "Type": "WMS",
+          "Layers": "SENTINEL-2-L2A-TRUE-COLOR",
+          "TimeDelta": 720
+        }
+      ]
     }
   ],
   "Process": {
     "Name": "GeoDB Statistics",
     "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
-    "VegaDefinition": "https://github.com/eurodatacube/eodash-assets/raw/refs/heads/main/collections/E13b_parked_airplanes/chart.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E13b_parked_airplanes/chart.json",
     "EndPoints": [
       {
         "Identifier": "process_geodb",

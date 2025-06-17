@@ -32,12 +32,26 @@
     "JAXA",
     "ESA"
   ],
+  "Locations": true,
   "Resources": [
     {
       "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
       "Name": "GeoDB",
       "Database": "eodash",
-      "CollectionId": "E9_tri"
+      "CollectionId": "E9_tri",
+      "InputData": [
+        {
+          "Identifier": "ALOS-2",
+          "Url": "https://services.sentinel-hub.com/ogc/wms/",
+          "Type": "WMS",
+          "Layers": "AWS_JAXA_CARS_CONTAINERS_ALOS2"
+        }, {
+          "Identifier": "Sentinel-1",
+          "Url": "https://services.sentinel-hub.com/ogc/wms/",
+          "Type": "WMS",
+          "Layers": "E8_SENTINEL1"
+        }
+      ]
     }
   ],
   "Provider": [
