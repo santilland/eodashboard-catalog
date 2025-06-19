@@ -53,10 +53,10 @@
       "Type": "byoc",
       "CollectionId": "603511b6-4316-4275-bf65-6c18a7813248",
       "OverwriteBBox": [
-        -180,
-        -60,
-        180,
-        75
+        -95,
+        35,
+        -80,
+        48
       ],
       "LayerId": "JAXA-NIGHTTIMELEVEL-URBAN"
     }

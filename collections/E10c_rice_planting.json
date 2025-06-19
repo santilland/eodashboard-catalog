@@ -102,7 +102,7 @@
       "#ff01ef"
     ],
     "scaleType": "continuous",
-    "tickFormat": ".0f",
+    "tickFormat": ".1f",
     "title": "NDVI"
   },
   "Process": {
