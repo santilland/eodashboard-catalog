@@ -38,6 +38,10 @@
   },
   "References": [
     {
+      "Name": "Nightlight maps Jupyter Notebook",
+      "Url": "https://esa-eodashboards.github.io/eodashboard-client/notebook/?id=notebooks/nightlights-notebook/night-lights-blending"
+    },
+    {
       "Name": "Level-1 data access",
       "Url": "https://ladsweb.modaps.eosdis.nasa.gov/"
     }
