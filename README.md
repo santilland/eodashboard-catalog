@@ -1,21 +1,33 @@
-# catalog-template
-Template for creating eodash catalog repository
+# Catalog holding collection definitions for eodashboard.org
 
-## How-to
-You can create a new repository using the "use this template" button.
-This will set-up a catalog repository for you with example configuration files as well as a github workflow that will automatically build and deploy the STAC catalog to the gh-page branch.
-For every commit you push to the main branch the catalog will be regenerated and deployed there.
+This repository allows generation of STAC catalogs based on the configuration JSON files provided in the repository.
+The configuration options are described in the [Wiki](https://github.com/eodash/eodash_catalog/wiki).
 
-Please consider! This deployment strategy is intended for reasonable sized catalogs, if a catalog gets larger a more robust strategy should be implemented, changing the current github action, for example deploying the build to an s3 bucket.
+The generation of the catalog runs automatically through github actions when pushing/merging to main branch. The final STAC catalog is pushed to `GitHub Pages` via `gh-pages` branch.
 
-To make the build catalog available through github pages, please go to:
- * repository settings
-   - Pages (left side panel)
-     - Source: "Deploy from branch" (should be selected)
-     - Branch: Select "gh-pages" from dropdown
-     - (leave root selected)
-     - Click on save
+Deployment branches just with the changed collections in Pull Requests are generated automatically too.
 
-Once enabled you can navigate to the catalog using:
+The generated STAC catalogs are deployed through github pages.
 
-https://\<organization\>.github.io/\<repository\>/\<catalog_name\>/catalog.json
+A preview of the catalogs can be seen using the [Stac Browser](https://radiantearth.github.io/stac-browser/#/)
+
+Here are preloaded preview links for the catalogs available through gh-pages:
+* [Trilateral Instance](https://radiantearth.github.io/stac-browser/#/external/ESA-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json)
+
+## Development
+
+In order to run the catalog generation locally, install the [eodash_catalog tool](https://github.com/eodash/eodash_catalog) and run the generation locally via 
+
+```bash
+pip install eodash_catalog
+eodash_catalog
+```
+Optionally you can generate only a subset of collections using the command line arguments:
+
+```bash
+eodash_catalog <collection1_file_name> <collection2_file_name>
+```
+
+The catalogs are saved in the `build` folder. If you want to test the generated catalog locally (either in the Stac Browser or with the eodash client) we recommend using npm [http-server](https://www.npmjs.com/package/http-server), especially to avoid possible CORS issues you can run it for example with following command:
+`npx http-server -p 8000 --cors` 
+when located in the build folder. 
