@@ -4,6 +4,7 @@
   "EodashIdentifier": "SMCTS",
   "Subtitle": "Soil Moisture Timeseries",
   "Description": "SMCTS_soil_moisture_timeseries/SMCTS_soil_moisture_timeseries.md",
+  "Image": "SMCTS_soil_moisture_timeseries/SMCTS_soil_moisture_timeseries.jpg",
   "Themes": [
     "agriculture"
   ],

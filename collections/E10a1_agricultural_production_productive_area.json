@@ -4,6 +4,7 @@
   "EodashIdentifier": "E10a1",
   "Subtitle": "Agricultural production in Europe",
   "Description": "E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.md",
+  "Image": "E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.jpg",
   "Themes": [
     "agriculture"
   ],
@@ -45,7 +46,7 @@
   "Process": {
     "Name": "GeoDB Statistics",
     "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a2_agricultural_production_area/chart.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a1_agricultural_production_productive_area/chart.json",
     "EndPoints": [
       {
         "Identifier": "process_geodb",

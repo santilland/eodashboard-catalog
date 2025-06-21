@@ -7,6 +7,7 @@
   "Themes": [
     "water"
   ],
+  "Image": "LWE_lake_water_extent/LWE_lake_water_extent.jpg",
   "Tags": [
     "Climate Change Initiative",
     "climate change initiative",
@@ -76,5 +77,17 @@
       "Name": "ESA",
       "Url": "https://www.esa.int/"
     }
-  ]
+  ],
+  "Process": {
+    "Name": "GeoDB Statistics",
+    "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Lake_water_extent_tri_timeseries/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "process_geodb",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_Lake_water_extent_tri_timeseries?aoi_id=eq.{{feature}}&select=site_name,time,aoi,measurement_value,input_dat",
+        "Type": "application/json"
+      }
+    ]
+  }
 }

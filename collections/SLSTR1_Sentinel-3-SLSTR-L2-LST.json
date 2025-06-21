@@ -3,6 +3,7 @@
   "Title": "Land Surface Temperature (Sentinel-3 SLSTR L2)",
   "EodashIdentifier": "SLSTR1",
   "Description": "SLSTR1_Sentinel-3-SLSTR-L2-LST/SLSTR1_Sentinel-3-SLSTR-L2-LST.md",
+  "Image": "SLSTR1_Sentinel-3-SLSTR-L2-LST/SLSTR1_Sentinel-3-SLSTR-L2-LST.jpg",
   "Themes": [
     "extreme-events"
   ],

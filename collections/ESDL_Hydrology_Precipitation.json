@@ -102,7 +102,7 @@
     }
   ],
   "Legend": "ESDL_Hydrology_Precipitation/cm_legend.png",
-  "Image": "ESDL_Hydrology_Precipitation/image.png",
+  "Image": "ESDL_Hydrology_Precipitation/image.jpg",
   "yAxis": "mm/day",
   "Colorlegend": {
     "domain": [

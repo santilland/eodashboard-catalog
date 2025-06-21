@@ -117,7 +117,7 @@
       "Script": "N3a2_total_suspended_matter_tri_jaxa/script.js"
     }
   ],
-  "Image": "N3a2_total_suspended_matter_tri/thumbnail.png",
+  "Image": "N3a2_total_suspended_matter_tri/thumbnail.jpg",
   "Legend": "N3a2_total_suspended_matter_tri/legend.png",
   "yAxis": "%",
   "Colorlegend": {

@@ -4,8 +4,9 @@
   "Subtitle": "Global map of night lights aggregated for years 2019-2022",
   "EodashIdentifier": "NTLR",
   "Description": "NTLR_JAXA_Nighttimelevel_Rural/NTLR_JAXA_Nighttimelevel_Rural.md",
+  "Image": "NTLR_JAXA_Nighttimelevel_Rural/NTLR_JAXA_Nighttimelevel_Rural.jpg",
   "Themes": [
-    "COVID-19"
+    "covid-19"
   ],
   "Tags": [
     "Human activities",

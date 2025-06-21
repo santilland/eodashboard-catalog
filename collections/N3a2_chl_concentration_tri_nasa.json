@@ -45,7 +45,7 @@
       "AdditionalQueryString": "indicator_code=eq.N3a2_chl_nasa"
     }
   ],
-  "Image": "N3a2_chl_concentration_tri/thumbnail.png",
+  "Image": "N3a2_chl_concentration_tri/thumbnail.jpg",
   "Legend": "N3a2_chl_concentration_tri/legend.png",
   "yAxis": "%",
   "Colorlegend": {

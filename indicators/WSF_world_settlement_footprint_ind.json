@@ -2,8 +2,50 @@
   "Name": "WSF_world_settlement_footprint_ind",
   "Title": "World settlement footprint",
   "EodashIdentifier": "WSF_world_settlement_footprint_ind",
-  "Description": "",
+  "Description": "WSF_world_settlement_footprint/WSF_world_settlement_footprint.md",
   "Collections": ["WSF_world_settlement_footprint_2019", "WSF_world_settlement_footprint"],
+  "Image": "WSF_world_settlement_footprint/WSF_world_settlement_footprint.png",
+  "Agency": [
+    "DLR"
+  ],
+  "Citation": {
+    "Citation": "Marconcini, M., Metz-Marconcini, A., Esch, T., Gorelick, N. (2021). Understanding Current Trends in Global Urbanisation \u2013 The World Settlement Footprint suite. GI_Forum, 1, 33-38.\n",
+    "DOI": "10.1553/giscience2021_01_s33"
+  },
+  "License": "CC-BY-4.0",
+  "Tags": [
+    "Human settlement",
+    "Human activities",
+    "Open data"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-1",
+        "Sentinel-2"
+      ],
+      "Sensor": [
+        "C-SAR",
+        "MSI"
+      ]
+    }
+  },
+  "Provider": [
+    {
+      "Name": "DLR",
+      "Url": "https://geoservice.dlr.de/web/maps/eoc:wsf2019"
+    }
+  ],
+  "References": [
+    {
+      "Name": "Mapping our human footprint from space",
+      "Url": "https://www.esa.int/Applications/Observing_the_Earth/Mapping_our_human_footprint_from_space"
+    },
+    {
+      "Name": "World Settlement Footprint (WSF) - Sentinel-1/Sentinel-2 - Global, 2019",
+      "Url": "https://geoservice.dlr.de/web/maps/eoc:wsf2019"
+    }
+  ],
   "Themes": [
     "economy"
   ]

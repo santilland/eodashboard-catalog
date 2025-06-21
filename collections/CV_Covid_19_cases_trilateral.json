@@ -4,8 +4,9 @@
   "EodashIdentifier": "CV",
   "Description": "CV_Covid_19_cases/CV_Covid_19_cases.md",
   "Themes": [
-    "COVID-19"
+    "covid-19"
   ],
+  "Image": "CV_Covid_19_cases/CV_Covid_19_cases.jpg",
   "Tags": [
     "COVID-19",
     "Human activities",

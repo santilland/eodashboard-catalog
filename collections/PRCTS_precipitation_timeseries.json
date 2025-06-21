@@ -4,6 +4,7 @@
   "EodashIdentifier": "PRCTS",
   "Subtitle": "Precipitation Timeseries",
   "Description": "PRCTS_precipitation_timeseries/PRCTS_precipitation_timeseries.md",
+  "Image": "PRCTS_precipitation_timeseries/PRCTS_precipitation_timeseries.jpg",
   "Themes": [
     "agriculture"
   ],

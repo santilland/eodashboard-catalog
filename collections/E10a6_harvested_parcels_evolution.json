@@ -4,6 +4,8 @@
   "EodashIdentifier": "E10a6",
   "Subtitle": "Evolution of harvested parcels in percentage",
   "Description": "E10a6_harvested_parcels_evolution/E10a6_harvested_parcels_evolution.md",
+  "Image": "E10a6_harvested_parcels_evolution/E10a6_harvested_parcels_evolution.jpg",
+
   "Themes": [
     "agriculture"
   ],
@@ -48,7 +50,7 @@
   "Process": {
     "Name": "GeoDB Statistics",
     "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a2_agricultural_production_area/chart.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a6_harvested_parcels_evolution/chart.json",
     "EndPoints": [
       {
         "Identifier": "process_geodb",

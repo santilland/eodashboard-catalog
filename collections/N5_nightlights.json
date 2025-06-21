@@ -418,7 +418,7 @@
     }
   ],
   "Legend": "N5_nightlights/N5_legend.png",
-  "Image": "N5_nightlights/N5_nightlights.png",
+  "Image": "N5_nightlights/N5_nightlights.jpg",
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",

@@ -4,6 +4,7 @@
   "EodashIdentifier": "N1_NO2_city_trilateral",
   "Subtitle": "Total Column NO2 averaged over a 50x50 sqkm area",
   "Description": "N1_NO2_trilateral/N1_NO2_trilateral.md",
+  "Image": "N1_NO2_trilateral/N1_NO2_city_trilateral.jpg",
   "Themes": [
     "atmosphere"
   ],

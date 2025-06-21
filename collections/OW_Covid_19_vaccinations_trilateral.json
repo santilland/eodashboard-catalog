@@ -3,8 +3,9 @@
   "Title": "Covid-19 Vaccinations",
   "EodashIdentifier": "OW",
   "Description": "OW_Covid_19_vaccinations/OW_Covid_19_vaccinations.md",
+  "Image": "OW_Covid_19_vaccinations/OW_Covid_19_vaccinations.jpg",
   "Themes": [
-    "COVID-19"
+    "covid-19"
   ],
   "Tags": [
     "COVID-19",

@@ -29,7 +29,7 @@
       "Rescale": "1e-12"
     }
   ],
-  "Image": "EPA_Forest_fire_Methane_Daily/thumbnail.png",
+  "Image": "EPA_Forest_fire_Methane_Daily/thumbnail.jpg",
   "Legend": "EPA_Forest_fire_Methane_Daily/cm_legend.png",
   "Process": {
     "Name": "VEDA Statistics",

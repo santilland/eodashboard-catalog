@@ -4,6 +4,7 @@
   "EodashIdentifier": "GGI_CH4",
   "Subtitle": "CH4 from National greenhouse gas inventories (NGHGI) database",
   "Description": "GGI_CH4/GGI_CH4.md",
+  "Image": "GGI_CH4/GGI_CH4.jpg",
   "Themes": [
     "atmosphere"
   ],

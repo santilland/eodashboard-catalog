@@ -4,6 +4,7 @@
   "EodashIdentifier": "GGI_CO2",
   "Subtitle": "CO2 from National greenhouse gas inventories (NGHGI) database",
   "Description": "GGI_CO2/GGI_CO2.md",
+  "Image": "GGI_CO2/GGI_CO2.jpg",
   "Themes": [
     "atmosphere"
   ],

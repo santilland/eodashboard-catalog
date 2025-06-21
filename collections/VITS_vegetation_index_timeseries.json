@@ -4,6 +4,7 @@
   "EodashIdentifier": "VITS",
   "Subtitle": "Normalized Difference Vegetation Index Timeseries",
   "Description": "VITS_vegetation_index_timeseries/VITS_vegetation_index_timeseries.md",
+  "Image": "VITS_vegetation_index_timeseries/VITS_vegetation_index_timeseries.jpg",
   "Themes": [
     "agriculture"
   ],

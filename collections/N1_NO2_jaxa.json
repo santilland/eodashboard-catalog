@@ -4,6 +4,7 @@
   "EodashIdentifier": "N1_NO2_jaxa",
   "Subtitle": "NO2 daily column density in Cairo based on Sentinel-5P data",
   "Description": "N1_NO2_trilateral/N1_NO2_jaxa.md",
+  "Image": "N1_NO2_jaxa/N1_NO2_jaxa.jpg",
   "Themes": [
     "atmosphere"
   ],

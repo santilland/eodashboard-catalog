@@ -4,6 +4,7 @@
   "EodashIdentifier": "GG",
   "Subtitle": "People mobility data showing the impact of COVID-19 lockdown restrictions",
   "Description": "GG_people_mobility_reports/GG_people_mobility_reports.md",
+  "Image": "GG_people_mobility_reports/GG_people_mobility_reports.jpg",
   "Themes": [
     "economy"
   ],
@@ -41,7 +42,7 @@
     "EndPoints": [
       {
         "Identifier": "process_geodb",
-        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_Mobility_data?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_Mobility_data?aoi_id=eq.{{feature}}&select=time,aoi,measurement_value,reference_value",
         "Type": "application/json"
       }
     ]

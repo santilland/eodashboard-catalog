@@ -4,6 +4,7 @@
   "EodashIdentifier": "SSLC2",
   "Subtitle": "Median seasonal repeat-pass coherences C-band SAR dataset - 12-days",
   "Description": "SSLC2_Seasonal_S1_COH12_hh_interferometric_coherence/SSLC2_Seasonal_S1_COH12_hh_interferometric_coherence.md",
+  "Image": "SSLC2_Seasonal_S1_COH12_hh_interferometric_coherence/SSLC2_Seasonal_S1_COH12_hh_interferometric_coherence.jpg",
   "Themes": [
     "cryosphere"
   ],

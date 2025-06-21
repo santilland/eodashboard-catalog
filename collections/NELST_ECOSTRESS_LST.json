@@ -3,6 +3,7 @@
   "Title": "NASA ECOSTRESS land surface temperature",
   "EodashIdentifier": "NELST",
   "Description": "NELST_ECOSTRESS_LST/NELST_ECOSTRESS_LST.md",
+  "Image": "NELST_ECOSTRESS_LST/NELST_ECOSTRESS_LST.jpg",
   "Themes": [
     "extreme-events"
   ],
@@ -57,8 +58,8 @@
   ],
   "Colorlegend": {
     "domain": [
-      281,
-      309
+      8,
+      36
     ],
     "range": [
       "#ffffff",
@@ -72,6 +73,6 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "Temperature [\u00b0K]"
+    "title": "Temperature [\u00b0°C]"
   }
 }

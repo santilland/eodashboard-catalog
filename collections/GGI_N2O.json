@@ -4,6 +4,7 @@
   "EodashIdentifier": "GGI_N2O",
   "Subtitle": "N2O from National greenhouse gas inventories (NGHGI) database",
   "Description": "GGI_N2O/GGI_N2O.md",
+  "Image": "GGI_N2O/GGI_N2O.jpg",
   "Themes": [
     "atmosphere"
   ],
