@@ -11,7 +11,7 @@ The generated STAC catalogs are deployed through github pages.
 
 A preview of the catalogs can be seen using the [Stac Browser](https://radiantearth.github.io/stac-browser/#/)
 
-Here are preloaded preview links for the catalogs available through gh-pages:
+Here are preloaded preview links for the catalog available through gh-pages:
 * [Trilateral Instance](https://radiantearth.github.io/stac-browser/#/external/ESA-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json)
 
 ## Development
