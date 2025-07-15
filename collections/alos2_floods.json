@@ -1,0 +1,55 @@
+{
+  "Name": "alos2_floods",
+  "Title": "Floods maps in East Africa",
+  "EodashIdentifier": "JAXA_ALOS2_Floodmap",
+  "Subtitle": "",
+  "Description": "alos2_floods/alos2_floods.md",
+  "Themes": [
+    "extremes"
+  ],
+  "Tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CHL",
+    "CMEMS",
+    "Open data"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "ALOS-2"
+      ],
+      "Sensor": [
+        "PALSAR-2"
+      ]
+    }
+  },
+  "Agency": [
+    "JAXA"
+  ],
+  "References": [
+    {
+      "Name": "JAXA ALOS-2 PALSAR-2",
+      "Url": "https://www.eorc.jaxa.jp/ALOS-2/en/about/palsar2.htm"
+    },
+    {
+      "Name": "Use data",
+      "Url": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_data_e.htm"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "a7fba3c3-511f-4b0e-9599-09cf7b6d78f0",
+      "LayerId": "JAXA_ALOS2_FLOODMAP_LAYER"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "JAXA",
+      "Url": "https://global.jaxa.jp/"
+    }
+  ]
+}
