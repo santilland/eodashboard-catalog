@@ -37,19 +37,49 @@
       "Url": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_data_e.htm"
     }
   ],
+  "Legend": "alos2_floods/cm_legend.png.png",
   "Resources": [
     {
-      "EndPoint": "https://services.sentinel-hub.com",
-      "Name": "Sentinel Hub",
-      "Type": "byoc",
-      "CollectionId": "a7fba3c3-511f-4b0e-9599-09cf7b6d78f0",
-      "LayerId": "JAXA_ALOS2_FLOODMAPS"
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
+      "Name": "WMS",
+      "Type": "OverwriteTimes",
+      "LayerId": "JAXA_ALOS2_FLOODMAPS",
+      "OverwriteBBox": [
+        34,
+        -18,
+        41,
+        -10
+      ],
+      "Times": [
+        "2023-03-15T00:00:00"
+      ]
     }
   ],
   "Provider": [
     {
       "Name": "JAXA",
       "Url": "https://global.jaxa.jp/"
+    }
+  ],
+  "BaseLayers": [
+    {
+      "id": "cloudless-2023",
+      "name": "EOxCloudless 2023",
+      "url": "//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpeg",
+      "media_type": "image/jpeg",
+      "attribution": "{ EOxCloudless 2023: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"//s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"//eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2023) }",
+      "maxNativeZoom": 17,
+      "protocol": "xyz",
+      "visible": true
+    },
+    {
+      "id": "OSM",
+      "name": "OSM Background",
+      "url": "//s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "media_type": "image/jpeg",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"//maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "protocol": "xyz",
+      "visible": false
     }
   ]
 }
