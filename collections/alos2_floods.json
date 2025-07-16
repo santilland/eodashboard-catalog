@@ -43,7 +43,7 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "a7fba3c3-511f-4b0e-9599-09cf7b6d78f0",
-      "LayerId": "JAXA_ALOS2_FLOODMAP_LAYER"
+      "LayerId": "JAXA_ALOS2_FLOODMAPS"
     }
   ],
   "Provider": [
