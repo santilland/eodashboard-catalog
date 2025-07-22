@@ -127,7 +127,7 @@
     },
     {
       "id": "sx-cat_ortho680500",
-      "name": "Terrain Light Stereographic South",
+      "name": "Terrain Light Stereographic North",
       "url": "//sxcat-demo.eox.at/sxcat_maps/wms",
       "layers": "sx-cat_ortho680500",
       "visible": true,
