@@ -42,9 +42,22 @@
       "Name": "GeoDB",
       "Database": "eodash",
       "CollectionId": "N3a2_nasa_tri",
-      "AdditionalQueryString": "indicator_code=eq.N3a2_chl_nasa"
+      "AdditionalQueryString": "indicator_code=eq.N3a2_chl_nasa",
+      "InputData": [
+        {
+          "Identifier": "water_quality_chl",
+          "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3://covid-eo-data/{site}-{time}.tif&resampling_method=bilinear&bidx=1&rescale=-100%2C100&color_map=rdbu_r",
+          "Type": "XYZ",
+          "SiteMapping": {
+            "NorthAdriaticCHL": "oc3_chla_anomaly/anomaly-chl-nas",
+            "US03": "oc3_chla_anomaly/anomaly-chl-sf",
+            "US04": "oc3_chla_anomaly/anomaly-chl-ny"
+          }
+        }
+      ]
     }
   ],
+  "Locations": true,
   "Image": "N3a2_chl_concentration_tri/thumbnail.jpg",
   "Legend": "N3a2_chl_concentration_tri/legend.png",
   "yAxis": "%",
@@ -63,19 +76,5 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Chl-a anomaly [%]"
-  },
-  "Process": {
-    "Name": "VEDA Statistics",
-    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_vega_definition.json",
-    "EndPoints": [
-      {
-        "Identifier": "veda_statistics",
-        "Url": "https://openveda.cloud/api/raster/cog/statistics",
-        "Method": "POST",
-        "EndPoint": "veda",
-        "Type": "application/json"
-      }
-    ]
   }
 }

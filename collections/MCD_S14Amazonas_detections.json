@@ -53,10 +53,6 @@
       "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
       "Name": "WMS",
       "Type": "OverwriteTimes",
-      "MediaType": "image/png",
-      "Styles": [
-        ""
-      ],
       "LayerId": "ID-AMAZONAS_PROJECT",
       "OverwriteBBox": [
         -76.07,
@@ -64,6 +60,7 @@
         -33.593252,
         9.65
       ],
+      "WMSIntervalsBetweenDates": true,
       "Times": [
         "2017-01-01",
         "2017-02-01",

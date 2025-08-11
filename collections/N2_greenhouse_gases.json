@@ -30,12 +30,30 @@
   ],
   "Image": "N2_greenhouse_gases/N2_greenhouse_gases.jpg",
   "Legend": "N2_greenhouse_gases/N2_greenhouse_gases_legend.png",
+  "Locations": true,
   "Resources": [
     {
       "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
       "Name": "GeoDB",
       "Database": "eodash",
-      "CollectionId": "N2_tri"
+      "CollectionId": "N2_tri",
+      "InputData": [
+        {
+          "Identifier": "GOSAT_XCO2",
+          "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3://covid-eo-data/xco2/GOSAT_XCO2_{time}_{site}_BG_circle_cog.tif&resampling_method=nearest",
+          "Type": "XYZ",
+          "DateFormat": "%Y%m",
+          "SiteMapping": {
+            "CN01": "be",
+            "CN02": "sh",
+            "BD01": "dh",
+            "IN01": "dl",
+            "IN02": "mb",
+            "US01": "ny",
+            "JP01": "tk"
+          }
+        }
+      ]
     }
   ],
   "Provider": [

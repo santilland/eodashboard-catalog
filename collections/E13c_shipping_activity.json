@@ -58,10 +58,31 @@
           "Identifier": "Sentinel 2 L2A",
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
-          "Layers": "SENTINEL-2-L2A-TRUE-COLOR",
-          "TimeDelta": 720
+          "Layers": "SENTINEL-2-L2A-TRUE-COLOR"
+        }, {
+          "Identifier": "ports",
+          "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3%3A%2F%2Fcovid-eo-data%2Fplanet%2F{site}-{time}.tif&resampling_method=bilinear&bidx=1%2C2%2C3",
+          "Type": "XYZ",
+          "SiteMapping": {
+            "US01": "ny",
+            "US02": "la",
+            "US03": "sf",
+            "EG01": "eg"
+          }
         }
       ]
     }
-  ]
+  ],
+  "Process": {
+    "Name": "GeoDB Statistics",
+    "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E13b_parked_airplanes/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "process_geodb",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E13c_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+        "Type": "application/json"
+      }
+    ]
+  }
 }

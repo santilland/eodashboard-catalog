@@ -47,8 +47,7 @@
           "Identifier": "S2L2A",
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
-          "Layers": "SENTINEL-2-L2A-TRUE-COLOR",
-          "TimeDelta": 720
+          "Layers": "SENTINEL-2-L2A-TRUE-COLOR"
         }
       ]
     }

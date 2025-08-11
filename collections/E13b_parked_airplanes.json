@@ -68,8 +68,28 @@
           "Identifier": "Sentinel 2 L2A",
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
-          "Layers": "SENTINEL-2-L2A-TRUE-COLOR",
-          "TimeDelta": 720
+          "Layers": "SENTINEL-2-L2A-TRUE-COLOR"
+        }, {
+          "Identifier": "airports",
+          "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3%3A%2F%2Fcovid-eo-data%2Fplanet%2F{site}-{time}.tif&resampling_method=bilinear&bidx=1%2C2%2C3",
+          "Type": "XYZ",
+          "SiteMapping": {
+            "US021": "la",
+            "US022": "la",
+            "US031": "sf",
+            "US032": "sf",
+            "US033": "sf",
+            "US034": "sf",
+            "US035": "sf",
+            "US036": "sf",
+            "US037": "sf",
+            "US041": "ny",
+            "US042": "ny",
+            "CN011": "be",
+            "CN012": "be",
+            "JP02": "tk",
+            "JP012": "tk"
+          }
         }
       ]
     }
