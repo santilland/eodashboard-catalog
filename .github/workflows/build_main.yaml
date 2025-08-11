@@ -31,8 +31,8 @@ jobs:
           SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
           SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
         run: |
-          docker pull ghcr.io/eodash/eodash_catalog:0.2.1
-          docker run -v "$PWD:/workspace" -w "/workspace" -e SH_INSTANCE_ID="$SH_INSTANCE_ID" -e SH_CLIENT_ID="$SH_CLIENT_ID" -e SH_CLIENT_SECRET="$SH_CLIENT_SECRET" ghcr.io/eodash/eodash_catalog:0.2.1 eodash_catalog
+          docker pull ghcr.io/eodash/eodash_catalog:0.3.3
+          docker run -v "$PWD:/workspace" -w "/workspace" -e SH_INSTANCE_ID="$SH_INSTANCE_ID" -e SH_CLIENT_ID="$SH_CLIENT_ID" -e SH_CLIENT_SECRET="$SH_CLIENT_SECRET" ghcr.io/eodash/eodash_catalog:0.3.3 eodash_catalog -gp
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
