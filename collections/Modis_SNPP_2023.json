@@ -56,6 +56,20 @@
       }
     }
   ],
+  "Process": {
+    "Name": "timeseries",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Modis_SNPP_2023/form.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Modis_SNPP_2023/timeseries_chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "timeseries",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/rpc/geodb_get_pg",
+        "Type": "application/json",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Modis_SNPP_2023/body_timeseries.json"
+      }
+    ]
+  },
   "Provider": [
     {
       "Name": "NASA",
