@@ -67,6 +67,14 @@
         "Type": "application/json",
         "Method": "POST",
         "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Modis_SNPP_2023/body_timeseries.json"
+      },
+      {
+        "Identifier": "features",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/rpc/geodb_get_pg",
+        "Type": "application/geodb",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Modis_SNPP_2023/body_features.json",
+        "Flatstyle": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Modis_SNPP_2023/style.json"
       }
     ]
   },
