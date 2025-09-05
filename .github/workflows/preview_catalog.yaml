@@ -11,6 +11,7 @@ on:
       - reopened
       - synchronize
       - closed
+  workflow_dispatch:
 # do not allow running multiple of pipelines for this PR in parallel
 concurrency: preview-${{ github.ref }}
 jobs:
