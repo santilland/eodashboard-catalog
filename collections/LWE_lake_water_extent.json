@@ -81,7 +81,7 @@
   "Process": {
     "Name": "GeoDB Statistics",
     "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/Lake_water_extent_tri_timeseries/chart.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/LWE_lake_water_extent/chart.json",
     "EndPoints": [
       {
         "Identifier": "process_geodb",
