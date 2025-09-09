@@ -1,3 +1,19 @@
 {
-  "Name": "veda1"
+  "Name": "veda1",
+  "EodashIdentifier": "veda1",
+  "Title": "veda1",
+  "Description": "N/A",
+  "Resources": [
+    {
+      "Name": "VEDA",
+      "EndPoint": "https://openveda.cloud/api/stac/",
+      "Type": "cog",
+      "CollectionId": "OMI_trno2-COG",
+      "Bidx": 1,
+      "Rescale": [
+        0,
+        3700000000000000
+      ]
+    }
+  ]
 }
