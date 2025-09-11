@@ -6,7 +6,7 @@
   "Resources": [
     {
       "Name": "COG source",
-      "Style": "https://gist.githubusercontent.com/santilland/5a0ade61590b8d99b852e49a0756ff6e/raw/21e845f33170d4bcd97ca20dfb9c4af8dd3fc2f5/teststyle.json",
+      "Style": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GCOM/style.json",
       "Bbox": [
         -176.8421052631579,
         -75.80701326069078,
