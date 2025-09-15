@@ -15,7 +15,7 @@
       ],
       "TimeEntries": [
         {
-          "Time": "202405",
+          "Time": "20240501",
           "Assets": [
             {
               "Identifier": "data",
@@ -24,7 +24,7 @@
           ]
         },
         {
-          "Time": "202406",
+          "Time": "20240601",
           "Assets": [
             {
               "Identifier": "data",
@@ -33,7 +33,7 @@
           ]
         },
         {
-          "Time": "202407",
+          "Time": "20240701",
           "Assets": [
             {
               "Identifier": "data",
