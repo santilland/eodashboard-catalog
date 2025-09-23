@@ -5,12 +5,12 @@
   "Subtitle": "",
   "Description": "alos2_floods/alos2_floods.md",
   "Themes": [
-    "extremes"
+    "extreme-events"
   ],
   "Tags": [
     "Water quality",
     "Copernicus Services",
-    "CHL",
+    "Chlorophyll",
     "CMEMS",
     "Open data"
   ],
@@ -37,7 +37,8 @@
       "Url": "https://www.eorc.jaxa.jp/ALOS/en/alos-2/a2_data_e.htm"
     }
   ],
-  "Legend": "alos2_floods/cm_legend.png.png",
+  "Legend": "alos2_floods/cm_legend.png",
+  "Image": "alos2_floods/image.png",
   "Resources": [
     {
       "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
