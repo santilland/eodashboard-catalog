@@ -1,3 +1,14 @@
 {
-  "Name": "flatgeobuf"
+  "Name": "flatgeobuf",
+  "EodashIdentifier": "fbg1",
+  "Title": "test",
+  "Description": "test",
+  "Resources": [
+    {
+      "Name": "FlatGeobuf source",
+      "Style": "",
+      "TimeEntries": [],
+      "ParquetSource": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4WaZei3Y-02/dmi-polaris/daily_items_merged.parquet"
+    }
+  ]
 }
