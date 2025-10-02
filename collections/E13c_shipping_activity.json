@@ -35,7 +35,7 @@
   "Provider": [
     {
       "Name": "ESA",
-      "Url": "https://sentinel.esa.int/web/sentinel/"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     },
     {
       "Name": "NASA\u2019s Interagency Implementation and Advanced Concepts Team (IMPACT)",

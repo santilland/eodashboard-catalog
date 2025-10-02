@@ -36,7 +36,7 @@
     },
     {
       "Name": "ESA",
-      "Url": "https://sentinel.esa.int/web/sentinel/"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     }
   ],
   "License": "MIT",

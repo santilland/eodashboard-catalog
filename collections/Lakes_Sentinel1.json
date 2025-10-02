@@ -66,7 +66,7 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://services.sentinel-hub.com",
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
       "Name": "Sentinel Hub WMS",
       "CollectionId": "sentinel-1-grd",
       "LayerId": "SENTINEL_1_IW_VV"

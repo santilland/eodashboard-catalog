@@ -37,7 +37,7 @@
     },
     {
       "Name": "ESA Sentinel-2 Data Products",
-      "Url": "https://sentinel.esa.int/web/sentinel/missions/sentinel-2/data-products"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/homemissions/sentinel-2/data-products"
     },
     {
       "Name": "Sentinel-Hub API and data Documentation",
@@ -887,7 +887,7 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://services.sentinel-hub.com",
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
       "Name": "Sentinel Hub WMS",
       "CollectionId": "sentinel-2-l2a",
       "LayerId": "SENTINEL-2-L2A-TRUE-COLOR"

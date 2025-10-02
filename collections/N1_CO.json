@@ -61,7 +61,7 @@
     {
       "Name": "TROPOMI CO",
       "Key": "tropomi_co",
-      "Url": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/homedata-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide"
     }
   ],
   "Colorlegend": {
