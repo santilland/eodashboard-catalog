@@ -1,0 +1,51 @@
+{
+  "Name": "ndvi_deepESDL",
+  "EodashIdentifier": "ndvi_deepESDL",
+  "Title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
+  "Description": "### Normalized Difference Vegetation Index (NDVI) (Weekly average)\nNDVI is a key indicator used in remote sensing to measure vegetation health. It works by comparing how plants reflect light in two specific spectral bands: near-infrared (NIR) and red light. The NDVI formula uses the difference between near-infrared (NIR) and red reflectance, divided by their sum:\n\n*NDVI = (NIR - Red) / (NIR + Red)*\n\n### Interpreting NDVI\nNDVI values range from -1 to 1. **Healthy**, dense vegetation reflects more NIR and absorbs more red light, resulting in **higher NDVI values**, while bare soil, water, or **stressed/unhealthy** vegetation yield **lower NDVI values**.\n\n### Additional Information\n* NDVI was calculated using MODIS/Terra + Aqua BRDF/Albedo Nadir Reflectance products, specifically using the red and NIR bands, and aggregated into 8-day means at a 0.25° spatial resolution.\n* The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/).",
+  "Resources": [
+    {
+      "Name": "xcube",
+      "EndPoint": "https://api.earthsystemdatalab.net/api",
+      "Type": "zarr",
+      "StacEndpoint": "/ogc",
+      "DatacubeId": "esdc",
+      "Variable": "ndvi",
+      "ColormapName": "RdYlGn",
+      "Rescale": [
+        -1,
+        1
+      ]                            
+    }
+  ],
+  "Legend": "https://github.com/eurodatacube/eodash-assets/blob/main/collections/ESDC_NDVI/cm_legend.png",
+  "Image": "/ESDC_NDVI/ESDC_NDVI.png",
+  "Provider": [
+    {
+      "Name": "NASA",
+      "Url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "License": "",
+  "Colorlegend": {},
+  "Tags": [
+    "vegetation",
+    "NDVI",
+    "monitoring",
+    "MODIS"
+  ],
+  "Themes": [
+    "land"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Aqua"
+      ],
+      "Sensor": [
+        "MODIS"
+      ]
+    }
+  },
+  "Agency": []
+}
