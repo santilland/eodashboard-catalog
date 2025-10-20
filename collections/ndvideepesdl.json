@@ -18,8 +18,8 @@
       ]                            
     }
   ],
-  "Legend": "https://github.com/eurodatacube/eodash-assets/blob/main/collections/ESDC_NDVI/cm_legend.png",
-  "Image": "/ESDC_NDVI/ESDC_NDVI.png",
+  "Legend": "ESDC_NDVI/cm_legend.png",
+  "Image": "ESDC_NDVI/ESDC_NDVI.png",
   "Provider": [
     {
       "Name": "NASA",
