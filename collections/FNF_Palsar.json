@@ -43,8 +43,8 @@
   ],
   "Resources": [
     {
-      "EndPoint": "https://ogcpreview1.restecmap.com/examind/api/WS/wmts/JAXA_WMTS_Preview",
-      "Name": "JAXA_WMTS_PALSAR",
+      "EndPoint": "https://ogcpreview1.restecmap.com/examind/api/WS/wms/JAXA_WMS_Preview",
+      "Name": "WMS",
       "Type": "OverwriteTimes",
       "OverwriteBBox": [
         -180,
