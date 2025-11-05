@@ -2,7 +2,7 @@
   "id": "trilateral",
   "title": "Earth Observing Dashboard",
   "description": "A Tri-Agency Dashboard by NASA, ESA, JAXA",
-  "endpoint": "https://eurodatacube.github.io/eodash-catalog/trilateral/",
+  "endpoint": "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/",
   "geodb_default_form": "https://santilland.github.io/process_example/definitions/geodbform.json",
   "geodb_default_vega": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/geodb_vega_definition.json",
   "default_xcube_process": {
@@ -17,6 +17,7 @@
       }
     ]
   },
+  "stories_endpoint": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main",
   "assets_endpoint": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections",
   "default_base_layers": "layers/baselayers",
   "default_overlay_layers": "layers/overlays",
