@@ -79,7 +79,8 @@
           "days": 30,
           "hours": 9
         }
-      }
+      },
+      "DataProjection": 3857
     }
   ],
   "Services": [

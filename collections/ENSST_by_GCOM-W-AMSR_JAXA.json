@@ -48,7 +48,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "cb154978-c54f-4e15-a39e-5da7e601194d",
-      "LayerId": "SST_BY_GCOM-W-AMSR_JAXA"
+      "LayerId": "SST_BY_GCOM-W-AMSR_JAXA",
+      "DataProjection": 3857
     }
   ],
   "Provider": [

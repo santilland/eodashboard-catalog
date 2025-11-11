@@ -59,7 +59,8 @@
         -80,
         48
       ],
-      "LayerId": "JAXA-NIGHTTIMELEVEL-RURAL"
+      "LayerId": "JAXA-NIGHTTIMELEVEL-RURAL",
+      "DataProjection": 3857
     }
   ],
   "Provider": [

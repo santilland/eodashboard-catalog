@@ -63,6 +63,8 @@
       "Name": "GeoDB",
       "Database": "eodash",
       "CollectionId": "E13b_tri",
+      "Style": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/features_style.json",
+      "FeatureCollection": "E13b_tri-detections",
       "InputData": [
         {
           "Identifier": "Sentinel 2 L2A",

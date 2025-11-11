@@ -48,7 +48,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "97577173-d4ef-4425-bd29-d367fe50475d",
-      "LayerId": "OCEAN_HEAT_CONTENT_UPPER_300M"
+      "LayerId": "OCEAN_HEAT_CONTENT_UPPER_300M",
+      "DataProjection": 3857
     }
   ],
   "Provider": [

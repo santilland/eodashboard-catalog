@@ -69,7 +69,7 @@ jobs:
             SH_CLIENT_ID: ${{ secrets.SH_CLIENT_ID }}
             SH_CLIENT_SECRET: ${{ secrets.SH_CLIENT_SECRET }}
         run: |
-          docker run -v "$PWD:/workspace" -w "/workspace" -e SH_INSTANCE_ID="$SH_INSTANCE_ID" -e SH_CLIENT_ID="$SH_CLIENT_ID" -e SH_CLIENT_SECRET="$SH_CLIENT_SECRET" ghcr.io/eodash/eodash_catalog:0.3.16 eodash_catalog -gp
+          docker run -v "$PWD:/workspace" -w "/workspace" -e SH_INSTANCE_ID="$SH_INSTANCE_ID" -e SH_CLIENT_ID="$SH_CLIENT_ID" -e SH_CLIENT_SECRET="$SH_CLIENT_SECRET" ghcr.io/eodash/eodash_catalog:0.3.21 eodash_catalog -gp
       - if: steps.get_pr_commit_message.outputs.should_skip != 'true'
         name: Deploy preview
         uses: rossjrw/pr-preview-action@v1

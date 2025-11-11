@@ -50,7 +50,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "b63afeed-f970-4c0e-9ecf-e216979f9642",
-      "LayerId": "S1_AMP_HV"
+      "LayerId": "S1_AMP_HV",
+      "DataProjection": 3857
     }
   ],
   "Provider": [
