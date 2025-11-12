@@ -4,7 +4,7 @@
   "EodashIdentifier": "SMOS_OS",
   "Description": "smos_ocean_salinity/smos_ocean_salinity.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
     "L-band",
