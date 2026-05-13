@@ -1,5 +1,5 @@
 {
-  "Name": "methanesat_l4",
+  "Name": "methanesat-l4-dispersed-area-emissions",
   "Title": "Methanesat Dispersed Area Emissions",
   "Description": "methanesat_l4/methanesat_l4.md",
   "Themes": [
@@ -33,7 +33,7 @@
     }
   ],
   "Image": "methanesat_l4/methanesat_l4_thumbnail.jpg",
-  "EodashIdentifier": "methanesat_l4",
+  "EodashIdentifier": "methanesat-l4-dispersed-area-emissions",
   "Resources": [
     {
       "Type": "tiles",
