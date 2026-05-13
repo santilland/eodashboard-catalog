@@ -3,6 +3,7 @@
   "Title": "NASA ECOSTRESS land surface temperature",
   "EodashIdentifier": "NELST",
   "Description": "NELST_ECOSTRESS_LST/NELST_ECOSTRESS_LST.md",
+  "Image": "NELST_ECOSTRESS_LST/NELST_ECOSTRESS_LST.jpg",
   "Themes": [
     "extreme-events"
   ],
@@ -39,20 +40,26 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "ded2ac82-a4f8-4873-b725-60b9ac908c8d",
-      "LayerId": "NASA-ECOSTRESS-LST"
+      "LayerId": "NASA-ECOSTRESS-LST",
+      "OverwriteBBox": [
+        10,
+        42.5,
+        13,
+        45
+      ]
     }
   ],
   "Provider": [
     {
       "Name": "NASA/JPL/ECOSTRESS",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://ecostress.jpl.nasa.gov/"
     }
   ],
   "Colorlegend": {
     "domain": [
-      281,
-      309
+      8,
+      36
     ],
     "range": [
       "#ffffff",
@@ -66,6 +73,6 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "Temperature [\u00b0K]"
+    "title": "Temperature [\u00b0°C]"
   }
 }

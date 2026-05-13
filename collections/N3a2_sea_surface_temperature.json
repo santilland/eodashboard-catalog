@@ -35,7 +35,7 @@
       "Title": "Licence to Use Copernicus Products"
     }
   ],
-  "Image": "N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.png",
+  "Image": "N3a2_sea_surface_temperature/N3a2_sea_surface_temperature.jpg",
   "Legend": "N3a2_sea_surface_temperature/N3a2_SST_legend.png",
   "Locations": [
     {
@@ -166,5 +166,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Sea Surface Temperature Anomaly [%]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N3a2_sea_surface_temperature/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

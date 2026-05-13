@@ -28,7 +28,7 @@
     "NASA"
   ],
   "Legend": "N2_CO2_diff/N2_CO2_diff_legend.png",
-  "Image": "N2_CO2_diff/N2_CO2_diff.png",
+  "Image": "N2_CO2_diff/N2_CO2_diff.jpg",
   "Citation": {
     "Publication": [
       {
@@ -45,13 +45,6 @@
     {
       "Name": "Orbiting Carbon Observatory-2",
       "Url": "https://ocov2.jpl.nasa.gov/"
-    }
-  ],
-  "Services": [
-    {
-      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
-      "Name": "VEDA Statistics",
-      "Rescale": "1e6"
     }
   ],
   "Resources": [
@@ -71,7 +64,7 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://ocov2.jpl.nasa.gov/science/oco-2-data-center/"
     }
   ],
@@ -97,7 +90,21 @@
       "#67001f"
     ],
     "scaleType": "continuous",
-    "tickFormat": ".0f",
+    "tickFormat": ".1f",
     "title": "CO2 difference [ppm]"
+  },
+  "Process": {
+    "Name": "VEDA Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
+    "VegaDefinition": "N2_CO2_diff/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "veda_statistics",
+        "Url": "https://openveda.cloud/api/raster/cog/statistics",
+        "Method": "POST",
+        "EndPoint": "veda",
+        "Type": "application/json"
+      }
+    ]
   }
 }

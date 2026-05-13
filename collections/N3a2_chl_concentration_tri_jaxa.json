@@ -5,7 +5,7 @@
   "Subtitle": "Chlorophyll-a concentration maps",
   "Description": "N3a2_chl_concentration_tri_jaxa/N3a2_chl_concentration_tri_jaxa.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
     "Water quality",
@@ -14,7 +14,7 @@
     "SGLI",
     "Open data",
     "Marine monitoring",
-    "Chlorophyll-a"
+    "Chlorophyll"
   ],
   "DataSource": {
     "Spaceborne": {
@@ -117,7 +117,7 @@
       "Script": "N3a2_chl_concentration_tri_jaxa/script.js"
     }
   ],
-  "Image": "N3a2_chl_concentration_tri/thumbnail.png",
+  "Image": "N3a2_chl_concentration_tri/thumbnail.jpg",
   "Legend": "N3a2_chl_concentration_tri/legend.png",
   "yAxis": "%",
   "Colorlegend": {
@@ -135,5 +135,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Chl-a anomaly [%]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N3a2_chl_concentration_tri_jaxa/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

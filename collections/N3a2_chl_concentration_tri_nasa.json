@@ -5,7 +5,7 @@
   "Subtitle": "Chlorophyll-a concentration maps",
   "Description": "N3a2_chl_concentration_tri_nasa/N3a2_chl_concentration_tri_nasa.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
     "Water quality",
@@ -14,7 +14,7 @@
     "MODIS",
     "Open data",
     "Marine monitoring",
-    "Chlorophyll-a"
+    "Chlorophyll"
   ],
   "DataSource": {
     "Spaceborne": {
@@ -42,10 +42,23 @@
       "Name": "GeoDB",
       "Database": "eodash",
       "CollectionId": "N3a2_nasa_tri",
-      "AdditionalQueryString": "indicator_code=eq.N3a2_chl_nasa"
+      "AdditionalQueryString": "indicator_code=eq.N3a2_chl_nasa",
+      "InputData": [
+        {
+          "Identifier": "water_quality_chl",
+          "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3://covid-eo-data/{site}-{time}.tif&resampling_method=bilinear&bidx=1&rescale=-100%2C100&color_map=rdbu_r",
+          "Type": "XYZ",
+          "SiteMapping": {
+            "NorthAdriaticCHL": "oc3_chla_anomaly/anomaly-chl-nas",
+            "US03": "oc3_chla_anomaly/anomaly-chl-sf",
+            "US04": "oc3_chla_anomaly/anomaly-chl-ny"
+          }
+        }
+      ]
     }
   ],
-  "Image": "N3a2_chl_concentration_tri/thumbnail.png",
+  "Locations": true,
+  "Image": "N3a2_chl_concentration_tri/thumbnail.jpg",
   "Legend": "N3a2_chl_concentration_tri/legend.png",
   "yAxis": "%",
   "Colorlegend": {

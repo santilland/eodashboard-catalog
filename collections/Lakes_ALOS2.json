@@ -3,13 +3,10 @@
   "Title": "Lakes collection (ALOS2-HH/HV)",
   "EodashIdentifier": "Lakes_ALOS2",
   "Description": "Lakes_ALOS2/Lakes_ALOS2.md",
-  "Themes": [
-    "oceans"
-  ],
+  "Themes": ["water"],
   "Tags": [
     "Water quality",
     "Lakes",
-    "Lake",
     "SAR",
     "ALOS-2",
     "PALSAR-2",
@@ -22,17 +19,11 @@
   ],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "ALOS-2"
-      ],
-      "Sensor": [
-        "PALSAR-2"
-      ]
+      "Satellite": ["ALOS-2"],
+      "Sensor": ["PALSAR-2"]
     }
   },
-  "Agency": [
-    "JAXA"
-  ],
+  "Agency": ["JAXA"],
   "Provider": [
     {
       "Name": "JAXA",
@@ -40,6 +31,7 @@
     }
   ],
   "License": "MIT",
+  "Resources": [],
   "Subcollections": [
     {
       "Identifier": "lakes_alos2_hh",
@@ -50,5 +42,15 @@
       "Collection": "Lakes_ALOS2_HV"
     }
   ],
-  "Image": "Lakes_ALOS2_lakes_alos2/thumbnail.png"
+  "Image": "Lakes_ALOS2/thumbnail.jpg",
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
+    }
+  ]
 }

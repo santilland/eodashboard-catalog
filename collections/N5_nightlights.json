@@ -418,7 +418,7 @@
     }
   ],
   "Legend": "N5_nightlights/N5_legend.png",
-  "Image": "N5_nightlights/N5_nightlights.png",
+  "Image": "N5_nightlights/N5_nightlights.jpg",
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
@@ -436,7 +436,7 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://search.earthdata.nasa.gov/search?portal=idn&fi=VIIRS"
     }
   ],

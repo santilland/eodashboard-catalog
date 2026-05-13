@@ -1,0 +1,56 @@
+{
+  "Name": "Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "Aerosol",
+    "Atmosphere",
+    "Particles",
+    "Dust",
+    "Ash",
+    "AOD",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-5P"
+      ],
+      "Sensor": [
+        "TROPOMI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/aod-494nm"
+    }
+  ],
+  "Image": "S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_thumbnail.jpg",
+  "Legend": "S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-AOD-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "53d472ef-072e-4aa6-a916-effbaf73d46d",
+      "LayerId": "S5P-L3GRD-AOD-DAY",
+      "DataProjection": 3857
+    }
+  ]
+}

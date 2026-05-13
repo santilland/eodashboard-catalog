@@ -1,0 +1,51 @@
+{
+  "Name": "Cloud Top Height by Sentinel-5P TROPOMI (Monthly)",
+  "Title": "Cloud Top Height by Sentinel-5P TROPOMI (Monthly)",
+  "Description": "S5P-L3GRD-CLOUDTH-MONTH/S5P-L3GRD-CLOUDTH-MONTH.md",
+  "Themes": ["atmosphere"],
+  "Tags": [
+    "Cloud",
+    "Cloud Top Height",
+    "CTH",
+    "Atmosphere",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Monthly Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {"Spaceborne": {"Satellite": ["Sentinel-5P"],"Sensor": ["TROPOMI"]}},
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/cloud-top-height/month"
+    }
+  ],
+  "Image": "S5P-L3GRD-CLOUDTH-MONTH/S5P-L3GRD-CLOUDTH-MONTH_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [0.0, 12.0],
+    "range": [
+      "#1c37b0","#1c37b0","#1d38b0","#1e39af","#1e39af","#1e3aaf","#1e3baf","#1f3cae","#1f3cae","#1f3dae","#203ead","#203ead","#203fad","#2140ac","#2140ac","#2141ac","#2242ab","#2242ab","#2242ab","#2344aa","#2344aa","#2345aa","#2345aa","#2446a9","#2447a9","#2447a9","#2548a8","#2549a8","#264aa7","#264aa7","#264aa7","#274ca6","#274ca6","#274ca6","#274da6","#284ea5","#284ea5","#284fa5","#2950a4","#2950a4","#2951a4","#2a52a3","#2a52a3","#2a53a3","#2b53a2","#2b54a2","#2b55a2","#2b55a2","#2c56a1","#2c57a1","#2c57a1","#2d57a0","#2d59a0","#2d59a0","#2e599f","#2e5a9f","#2f5b9e","#2f5c9e","#2f5c9e","#2f5d9e","#305e9d","#305e9d","#305f9c","#315f9c","#31609c","#32609b","#32619b","#32629b","#33629a","#33639a","#346499","#346499","#346598","#356598","#356698","#366797","#366797","#376896","#376896","#376896","#386995","#396a94","#396b94","#396b94","#3a6b93","#3b6c92","#3b6c92","#3b6d92","#3c6e91","#3d6f90","#3d6f90","#3d6f90","#3e708f","#3e708f","#3f718e","#40728d","#40728d","#41738c","#41738c","#42748b","#42748b","#43758a","#44768a","#447689","#447689","#457788","#467888","#467987","#477987","#487a86","#487b86","#497b85","#497b85","#4a7c85","#4b7d84","#4b7d84","#4c7e83","#4c7f83","#4d7f82","#4e8082","#4e8181","#4f8181","#508281","#518380","#518480","#528580","#53857f","#54867f","#55877f","#56887e","#56897e","#578a7e","#588a7d","#598b7d","#5a8c7d","#5b8d7d","#5c8e7c","#5c8e7c","#5d907c","#5e917b","#5e917b","#5f927b","#61937b","#62947a","#62947a","#63957a","#64967a","#66987a","#66987a","#679979","#679a79","#689b79","#699c79","#6a9d78","#6b9e78","#6c9f78","#6da078","#6ea177","#6ea177","#70a377","#71a477","#72a576","#73a676","#74a776","#75a876","#76a975","#76a975","#78ab75","#79ac75","#79ac75","#7aad74","#7caf74","#7caf74","#7db074","#7eb173","#80b373","#81b473","#81b473","#82b572","#84b772","#84b772","#85b872","#86b971","#87ba71","#88bb71","#89bc71","#8abd70","#8bbe70","#8cbf70","#8dc070","#8ec16f","#8fc16f","#91c36f","#92c46e","#93c56e","#93c66e","#95c86e","#96c96d","#96c96d","#97ca6d","#99cc6d","#9acd6c","#9bcd6c","#9cce6c","#9ed06c","#9ed16c","#9fd26b","#a1d36b","#a2d46b","#a3d56b","#a4d66a","#a6d76a","#a8d86a","#a9d96a","#aada69","#acdb69","#aedd69","#afde69","#b0df68","#b1e068","#b3e068","#b5e268","#b6e368","#b8e368","#b9e468","#bce667","#bee767","#bfe767","#c1e867","#c4ea67","#c5eb67","#c7eb67","#c8eb67","#cced66","#ceed66","#cfee66","#d1ef66","#d4f066","#d5f066","#d7f166","#d9f266","#dcf366","#ddf466","#dff466","#e1f566","#e5f666","#e6f666","#e8f766","#e9f866","#ecf966","#eef966","#effa66","#f1fa66","#f5fb66","#f7fc66","#f7fc66"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Cloud top height [km]",
+    "tickValues": [0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0]
+  },
+  "Legend": "S5P-L3GRD-CLOUDTH-MONTH/S5P-L3GRD-CLOUDTH-MONTH_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-CLOUDTH-MONTH",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "1d7b9864-6a25-498f-bfe5-e4b818a6aeb8",
+      "LayerId": "S5P-L3GRD-CLOUDTH-MONTH",
+      "DataProjection": 3857
+    }
+  ]
+}

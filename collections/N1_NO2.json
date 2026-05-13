@@ -5,7 +5,7 @@
   "Subtitle": "Daily Nitrogen Dioxide",
   "Description": "N1_NO2/N1_NO2.md",
   "Themes": [
-    "air"
+    "atmosphere"
   ],
   "Tags": [
     "Air quality",
@@ -26,7 +26,7 @@
   "Agency": [
     "ESA"
   ],
-  "Image": "N1_NO2/N1_NO2.png",
+  "Image": "N1_NO2/N1_NO2.jpg",
   "Legend": "N1_NO2/N1_NO2_legend.png",
   "References": [
     {
@@ -43,7 +43,7 @@
     },
     {
       "Name": "TROPOMI NO2",
-      "Url": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-nitrogen-dioxide"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/homedata-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-nitrogen-dioxide"
     }
   ],
   "Provider": [
@@ -58,7 +58,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "972e67a7-2ca8-4bf6-964a-11fe772e3ac2",
-      "LayerId": "AWS_NO2-VISUALISATION"
+      "LayerId": "AWS_NO2-VISUALISATION",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -94,5 +95,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Tropospheric NO2 [\u00b5mol/m\u00b2]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N1_NO2/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

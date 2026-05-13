@@ -28,20 +28,38 @@
   "Agency": [
     "JAXA"
   ],
-  "Image": "N2_greenhouse_gases/N2_greenhouse_gases.png",
+  "Image": "N2_greenhouse_gases/N2_greenhouse_gases.jpg",
   "Legend": "N2_greenhouse_gases/N2_greenhouse_gases_legend.png",
+  "Locations": true,
   "Resources": [
     {
       "EndPoint": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/",
       "Name": "GeoDB",
       "Database": "eodash",
-      "CollectionId": "N2_tri"
+      "CollectionId": "N2_tri",
+      "InputData": [
+        {
+          "Identifier": "GOSAT_XCO2",
+          "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3://covid-eo-data/xco2/GOSAT_XCO2_{time}_{site}_BG_circle_cog.tif&resampling_method=nearest",
+          "Type": "XYZ",
+          "DateFormat": "%Y%m",
+          "SiteMapping": {
+            "CN01": "be",
+            "CN02": "sh",
+            "BD01": "dh",
+            "IN01": "dl",
+            "IN02": "mb",
+            "US01": "ny",
+            "JP01": "tk"
+          }
+        }
+      ]
     }
   ],
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://data2.gosat.nies.go.jp/index_en.html"
     }
   ],
@@ -69,5 +87,17 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "diff XCO2 [ppm]"
+  },
+  "Process": {
+    "Name": "GeoDB Statistics",
+    "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/N2_greenhouse_gases/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "process_geodb",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_N2_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+        "Type": "application/json"
+      }
+    ]
   }
 }

@@ -4,10 +4,10 @@
   "EodashIdentifier": "NLK_lake_aral",
   "Description": "Landsat-8 images of the Aral Lake",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
-    "Lake",
+    "Lakes",
     "Optical",
     "Water",
     "Open Data"
@@ -25,6 +25,7 @@
   "Agency": [
     "NASA"
   ],
+  "Image": "NLK_lakes/thumbnail.jpg",
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
@@ -42,8 +43,22 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://landsat.gsfc.nasa.gov/data/data-access/"
+    }
+  ],
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Changing Lakes Due to Human Activity",
+      "Id": "lakes-human-activity"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
     }
   ]
 }

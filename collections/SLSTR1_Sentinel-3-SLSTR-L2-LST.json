@@ -3,6 +3,7 @@
   "Title": "Land Surface Temperature (Sentinel-3 SLSTR L2)",
   "EodashIdentifier": "SLSTR1",
   "Description": "SLSTR1_Sentinel-3-SLSTR-L2-LST/SLSTR1_Sentinel-3-SLSTR-L2-LST.md",
+  "Image": "SLSTR1_Sentinel-3-SLSTR-L2-LST/SLSTR1_Sentinel-3-SLSTR-L2-LST.jpg",
   "Themes": [
     "extreme-events"
   ],
@@ -45,37 +46,40 @@
       "DateTimeInterval": {
         "Start": "2023-06-01T00:00:00Z",
         "End": "2023-08-31T00:00:00Z"
-      }
+      },
+      "WMSIntervalsBetweenDates": true
     }
   ],
   "Provider": [
     {
       "Name": "Copernicus",
-      "Roles": "licensor, producer",
+      "Roles": ["licensor, producer"],
       "Url": "https://www.copernicus.eu/en"
     },
     {
       "Name": "ESA",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     }
   ],
   "Colorlegend": {
     "domain": [
-      0,
-      200
+      0, 10, 20, 30, 50
     ],
     "range": [
-      "#fefce7",
-      "#fde191",
-      "#f69855",
-      "#ec6927",
-      "#aa2d1d",
-      "#650401",
-      "#3d0200"
+      "rgb(254, 252, 231)",
+      "rgb(253, 225, 145)",
+      "rgb(246, 152, 85)",
+      "rgb(236, 105, 39)"
     ],
-    "scaleType": "continuous",
+    "scaleType": "threshold",
     "tickFormat": ".0f",
-    "title": "Temperature [\u00b0C]"
-  }
+    "title": "Temperature [°C]"
+  },
+  "Stories": [
+    {
+      "Name": "Record Breaking Temperatures",
+      "Id": "record_breaking_temperatures"
+    }
+  ]
 }

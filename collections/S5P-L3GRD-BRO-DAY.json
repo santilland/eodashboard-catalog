@@ -1,0 +1,60 @@
+{
+  "Name": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "BrO",
+    "Bromine Monoxide",
+    "Bromine",
+    "Ozone",
+    "Polar",
+    "Atmosphere",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
+    }
+  },
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/bro"
+    }
+  ],
+  "Image": "S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [2.0, 10.0],
+    "range": [
+      "#1c36b0","#1c37b0","#1c38b0","#1d39af","#1d39af","#1d3aaf","#1e3aae","#1e3bae","#1f3cae","#1f3cad","#1f3dad","#203eac","#203eac","#203fac","#203fac","#2141ab","#2141ab","#2242aa","#2242aa","#2243aa","#2344a9","#2345a9","#2345a9","#2446a8","#2447a8","#2447a8","#2447a8","#2548a7","#2549a7","#2549a7","#264aa6","#264ba6","#264ba6","#274ca5","#274ca5","#274da5","#284ea4","#284ea4","#284fa4","#2850a3","#2950a3","#2951a3","#2952a2","#2a52a2","#2a53a2","#2a54a1","#2b54a1","#2b54a1","#2b56a0","#2c56a0","#2c56a0","#2c57a0","#2d589f","#2d589f","#2d599f","#2d5a9e","#2e5b9e","#2e5b9d","#2e5b9d","#2f5c9d","#305d9c","#305d9c","#305e9c","#305f9c","#315f9b","#31609b","#31619a","#32619a","#32629a","#336299","#336399","#346498","#346498","#346598","#356597","#356697","#356697","#366796","#376895","#376895","#376895","#386a94","#396a93","#396a93","#396b93","#3a6c92","#3a6c92","#3b6d91","#3b6d91","#3c6e90","#3c6e90","#3d6f8f","#3d6f8f","#3e708e","#3f708d","#3f718d","#40728c","#40728c","#41738b","#41738b","#42748a","#42758a","#437589","#447689","#447689","#457788","#457887","#467886","#477986","#477986","#487a85","#487b85","#487b85","#497b84","#4a7d83","#4a7d83","#4b7d83","#4c7e82","#4d7f82","#4d8081","#4e8081","#4f8181","#4f8280","#508380","#51837f","#52847f","#53857f","#53867e","#54877e","#55877e","#56887d","#57897d","#588a7d","#588b7d","#598c7c","#5a8d7c","#5b8d7c","#5b8d7c","#5d8f7b","#5e907b","#5e907b","#5f917b","#60937a","#61947a","#61947a","#62957a","#639679","#659879","#659879","#669979","#679979","#689a78","#699b78","#6a9c78","#6b9d78","#6c9e77","#6d9f77","#6ea077","#6ea077","#70a276","#71a376","#72a476","#73a576","#73a675","#74a775","#75a875","#75a875","#77aa74","#78ab74","#78ab74","#79ac74","#7bae73","#7bae73","#7caf73","#7db073","#7fb272","#80b372","#81b372","#82b472","#84b671","#84b671","#85b771","#86b871","#87b971","#88ba70","#89bb70","#8abd70","#8bbe70","#8cbf6f","#8dc06f","#8ec16f","#8ec16f","#90c36e","#91c46e","#92c56e","#92c56e","#94c76d","#95c86d","#96c86d","#97c96d","#99cc6c","#9acd6c","#9acd6c","#9bce6c","#9dd06b","#9ed06b","#9fd16b","#a0d26b","#a2d36a","#a3d46a","#a4d56a","#a5d76a","#a7d869","#a9d969","#aada69","#abdb69","#addc68","#aedd68","#b0de68","#b1df68","#b2df68","#b5e167","#b6e267","#b7e267","#b8e367","#bbe567","#bde667","#bfe667","#c1e767","#c4e966","#c5ea66","#c7ea66","#c8eb66","#cbed66","#cded66","#ceed66","#d0ee66","#d3ef66","#d4f066","#d6f166","#d9f166","#dcf266","#ddf366","#dff466","#e0f566","#e4f566","#e5f666","#e7f766","#e8f766","#ecf866","#eef966","#effa66","#f1fa66","#f4fb66","#f6fc66","#f6fc66"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "BrO column number density [10¹³molec/cm²]",
+    "tickValues": [2.0, 4.0, 6.0, 8.0, 10.0]
+  },
+  "Legend": "S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-BRO-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "1978bc7d-f790-4ad0-aa74-12dbf4343e8d",
+      "LayerId": "S5P-L3GRD-BRO-DAY",
+      "DataProjection": 3857
+    }
+  ]
+}

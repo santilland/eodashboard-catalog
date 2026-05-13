@@ -2,14 +2,20 @@
   "Name": "lakes_alos2_hv",
   "Title": "Lakes (ALOS2-HV)",
   "EodashIdentifier": "Lakes_ALOS2_HV",
-  "Description": "lakes_alos2_hv/lakes_alos2_hv.md",
+  "Description": "Lakes_ALOS2/Lakes_ALOS2.md",
   "Themes": [
     "water"
   ],
   "Tags": [
-    "Water quality",
-    "Open data",
-    "Water extent"
+    "Lakes",
+    "SAR",
+    "ALOS-2",
+    "PALSAR-2",
+    "Lake monitoring",
+    "Surface Reflectance",
+    "Hydrological changes",
+    "Ecosystems",
+    "Resources"
   ],
   "DataSource": {
     "Spaceborne": {
@@ -24,7 +30,7 @@
   "Agency": [
     "JAXA"
   ],
-  "Image": "Lakes_ALOS2_lakes_alos2_hv/thumbnail.png",
+  "Image": "Lakes_ALOS2_lakes_alos2_hv/thumbnail.jpg",
   "References": [
     {
       "Name": "JAXA ALOS-2 PALSAR-2",
@@ -41,7 +47,7 @@
       "Country": [
         "KH"
       ],
-      "Name": "Tonl\u00e9 Sap (ALOS2-HV)",
+      "Name": "Tonlé Sap (ALOS2-HV)",
       "Point": [
         104.2,
         12.7
@@ -81,6 +87,16 @@
     {
       "Name": "JAXA",
       "Url": "https://global.jaxa.jp/"
+    }
+  ],
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
     }
   ]
 }

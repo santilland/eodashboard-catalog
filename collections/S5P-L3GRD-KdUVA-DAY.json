@@ -1,0 +1,46 @@
+{
+  "Name": "Kd Ocean Colour UVA by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Kd Ocean Colour UVA by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-KdUVA-DAY/S5P-L3GRD-KdUVA-DAY.md",
+  "Themes": ["water"],
+  "Tags": [
+    "Ocean Colour",
+    "Kd-UVA",
+    "Diffuse Attenuation",
+    "UVA",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "Open data",
+    "Open Science",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
+    }
+  },
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/ocean-colour-uva"
+    }
+  ],
+  "Image": "S5P-L3GRD-KdUVA-DAY/S5P-L3GRD-KdUVA-DAY_thumbnail.jpg",
+  "Legend": "S5P-L3GRD-KdUVA-DAY/S5P-L3GRD-KdUVA-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-KdUVA-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "7f9c73c9-931f-4aad-b6de-0f5923508382",
+      "LayerId": "S5P-L3GRD-KdUVA-DAY",
+      "DataProjection": 3857
+    }
+  ]
+}

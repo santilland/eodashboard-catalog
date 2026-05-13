@@ -5,7 +5,7 @@
   "Subtitle": "Daily Methane Monitoring",
   "Description": "N1_methane_monitoring/N1_methane_monitoring.md",
   "Themes": [
-    "air"
+    "atmosphere"
   ],
   "Tags": [
     "Air quality",
@@ -34,7 +34,7 @@
     "NASA",
     "NIWA"
   ],
-  "Image": "N1_methane_monitoring/N1_methane_monitoring.png",
+  "Image": "N1_methane_monitoring/N1_methane_monitoring.jpg",
   "Legend": "N1_methane_monitoring/N1_legend.png",
   "Resources": [
     {
@@ -42,7 +42,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "0ecb4a55-5ce2-4525-bdcb-a333d37d46ef",
-      "LayerId": "AWS_CH4_WEEKLY"
+      "LayerId": "AWS_CH4_WEEKLY",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -94,5 +95,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "CH4 volume mixing ratio [ppbv]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N1_methane_monitoring/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

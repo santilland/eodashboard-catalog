@@ -5,7 +5,7 @@
   "Subtitle": "Global 3-daily Carbon monoxide",
   "Description": "N1_CO/N1_CO.md",
   "Themes": [
-    "air",
+    "atmosphere",
     "extreme-events"
   ],
   "Tags": [
@@ -27,7 +27,7 @@
   "Agency": [
     "ESA"
   ],
-  "Image": "N1_CO/N1_CO.png",
+  "Image": "N1_CO/N1_CO.jpg",
   "Legend": "N1_CO/N1_CO_legend.png",
   "Resources": [
     {
@@ -35,7 +35,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "57a07405-8ec2-4b9c-a273-23e287c173f8",
-      "LayerId": "AWS_VIS_CO_3DAILY_DATA"
+      "LayerId": "AWS_VIS_CO_3DAILY_DATA",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -61,7 +62,7 @@
     {
       "Name": "TROPOMI CO",
       "Key": "tropomi_co",
-      "Url": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/homedata-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide"
     }
   ],
   "Colorlegend": {
@@ -83,5 +84,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "CO [ppbv]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N1_CO/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

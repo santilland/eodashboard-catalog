@@ -5,8 +5,9 @@
   "Subtitle": "Chlorophyll-a concentration time series",
   "Description": "N3b_water_quality_chl_chart/N3b_water_quality_chl_chart.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
+  "Image": "N3b_water_quality_chl_chart/N3b_water_quality_chl_chart.jpg",
   "Tags": [
     "Water quality",
     "Marine",
@@ -19,7 +20,7 @@
     "MODIS",
     "Open data",
     "Marine monitoring",
-    "Chlorophyll-a",
+    "Chlorophyll",
     "COVID-19"
   ],
   "DataSource": {
@@ -44,7 +45,7 @@
   "Provider": [
     {
       "Name": "ESA",
-      "Url": "https://sentinel.esa.int/web/sentinel/"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     },
     {
       "Name": "JAXA",
@@ -63,5 +64,17 @@
       "CollectionId": "Regional_Water_quality_timeseries",
       "AdditionalQueryString": "indicator_name=eq.Chlorophyll-a concentration anomaly"
     }
-  ]
+  ],
+  "Process": {
+    "Name": "GeoDB Statistics",
+    "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/N3b_water_quality_chl_chart/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "process_geodb",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_Regional_Water_quality_timeseries?aoi_id=eq.{{feature}}&select=site_name,city,time,aoi,measurement_value,eo_sensor,input_data",
+        "Type": "application/json"
+      }
+    ]
+  }
 }

@@ -1,0 +1,60 @@
+{
+  "Name": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Monthly)",
+  "Title": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Monthly)",
+  "Description": "S5P-L3GRD-ALH-MONTH/S5P-L3GRD-ALH-MONTH.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "Aerosol",
+    "Atmosphere",
+    "Particles",
+    "Dust",
+    "Ash",
+    "ALH",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Monthly Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
+    }
+  },
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/alh/month"
+    }
+  ],
+  "Image": "S5P-L3GRD-ALH-MONTH/S5P-L3GRD-ALH-MONTH_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [0.0, 12.0],
+    "range": [
+      "#f4eb8f","#f4eb8f","#f2eb8d","#efe98a","#eee989","#ede887","#ebe885","#eae884","#e7e682","#e5e680","#e4e67e","#e3e57d","#e1e57b","#dee479","#dce477","#dbe376","#d9e275","#d8e273","#d5e171","#d4e170","#d2e06e","#d0e06d","#cfdf6c","#ccdf6a","#cade68","#c7de67","#c6dd66","#c4dd65","#c1dc63","#bfdc62","#bedb61","#bcdb61","#b9db60","#b6da5e","#b4d95e","#b2d95d","#b0d95d","#afd85c","#abd75c","#a8d75b","#a6d75b","#a5d75b","#a2d65b","#9ed55b","#9cd55b","#9ad45c","#98d45c","#96d35c","#93d35d","#91d25d","#8fd25e","#8dd15f","#8bd05f","#88d060","#86cf61","#84ce62","#83ce63","#81ce63","#7ecc64","#7ccc65","#7bcb66","#79cb66","#77ca67","#74c969","#73c86a","#71c76b","#70c76b","#6fc66b","#6cc56d","#6bc46e","#6ac46e","#69c36f","#67c270","#65c171","#64c171","#63c072","#62bf73","#60be73","#5fbd74","#5ebc75","#5cbb76","#5bbb76","#5aba77","#59b978","#58b878","#57b779","#56b679","#56b679","#54b47b","#53b37b","#52b37c","#52b37c","#51b27c","#4fb07d","#4eaf7e","#4eae7e","#4eae7e","#4dad7f","#4bab80","#4aaa80","#4aaa80","#4aa980","#49a981","#48a782","#48a782","#47a682","#46a582","#46a483","#45a383","#45a283","#44a183","#43a084","#439f84","#429e84","#429e84","#419d85","#419c85","#419c85","#409a85","#3f9985","#3e9886","#3e9886","#3e9786","#3d9586","#3c9486","#3c9486","#3c9486","#3b9387","#3a9187","#3a9087","#3a9087","#398f87","#398e87","#388c87","#388c87","#378c87","#378b87","#368a87","#368988","#358888","#348788","#348688","#338588","#338588","#328488","#318388","#318288","#318288","#308088","#2f7f88","#2e7f88","#2e7f88","#2e7e88","#2c7c88","#2c7b88","#2b7a89","#2b7a89","#2a7989","#297889","#287789","#287789","#277689","#277589","#257389","#257389","#247389","#237289","#23718a","#22708a","#216f8a","#206e8a","#1f6d8a","#1f6d8a","#1e6c8b","#1d6b8b","#1c6a8b","#1b698b","#1b698b","#1a678c","#19678c","#18668c","#18668c","#17658c","#15638d","#15628d","#15628d","#14618d","#13608e","#125e8e","#115d8f","#115d8f","#105d8f","#0f5c8f","#0e5a90","#0e5a90","#0e5990","#0d5891","#0d5791","#0c5692","#0c5592","#0c5493","#0c5393","#0c5294","#0c5194","#0c4f95","#0c4e95","#0c4d96","#0c4d96","#0d4b97","#0e4a98","#0f4998","#0f4898","#0f4799","#11459a","#12449b","#12439b","#13429b","#14419c","#163f9d","#173d9e","#183c9e","#193b9f","#1a3a9f","#1c37a0","#1d36a0","#1e35a1","#1f33a1","#2131a2","#222fa2","#232ea2","#252ca2","#262aa2","#2729a2","#2827a2","#2925a1","#2a23a0","#2b229f","#2b229e","#2d209b","#2d1f99","#2d1e98","#2d1e96","#2e1d94","#2e1c90","#2e1c8f","#2e1c8d","#2e1b8a","#2d1b89","#2d1a85","#2d1a82","#2d1a80","#2c1a7f","#2c1a7c","#2b1978","#2b1976","#2b1975"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Aerosol Layer Height [km]",
+    "tickValues": [0.0, 3.0, 6.0, 9.0, 12.0]
+  },
+  "Legend": "S5P-L3GRD-ALH-MONTH/S5P-L3GRD-ALH-MONTH_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-ALH-MONTH",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "c1e246a0-5de1-4d22-8217-3f8314151dfe",
+      "LayerId": "S5P-L3GRD-ALH-MONTH",
+      "DataProjection": 3857
+    }
+  ]
+}

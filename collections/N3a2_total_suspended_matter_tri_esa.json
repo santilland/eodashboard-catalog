@@ -5,12 +5,11 @@
   "Subtitle": "Total suspended matter maps",
   "Description": "N3a2_total_suspended_matter_tri_esa/N3a2_total_suspended_matter_tri_esa.md",
   "Themes": [
-    "oceans"
+    "water"
   ],
   "Tags": [
     "Water quality",
     "Copernicus Services",
-    "CHL",
     "CMEMS",
     "Marine monitoring",
     "Total Suspended Matter",
@@ -37,7 +36,7 @@
     },
     {
       "Name": "ESA",
-      "Url": "https://sentinel.esa.int/web/sentinel/"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     }
   ],
   "License": "MIT",
@@ -122,7 +121,7 @@
       "Script": "N3a2_total_suspended_matter_tri/script.js"
     }
   ],
-  "Image": "N3a2_total_suspended_matter_tri/thumbnail.png",
+  "Image": "N3a2_total_suspended_matter_tri/thumbnail.jpg",
   "Legend": "N3a2_total_suspended_matter_tri/legend.png",
   "yAxis": "%",
   "Colorlegend": {
@@ -140,5 +139,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Total suspended matter anomaly [%]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N3a2_total_suspended_matter_tri_esa/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

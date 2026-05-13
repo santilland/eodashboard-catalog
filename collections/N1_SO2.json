@@ -5,7 +5,7 @@
   "Subtitle": "Global daily SO2",
   "Description": "N1_SO2/N1_SO2.md",
   "Themes": [
-    "air"
+    "atmosphere"
   ],
   "Tags": [
     "Air quality",
@@ -26,7 +26,7 @@
   "Agency": [
     "ESA"
   ],
-  "Image": "N1_SO2/N1_SO2.png",
+  "Image": "N1_SO2/N1_SO2.jpg",
   "Legend": "N1_SO2/N1_SO2_legend.png",
   "References": [
     {
@@ -35,7 +35,7 @@
     },
     {
       "Name": "TROPOMI SO2",
-      "Url": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-sulphur-dioxide"
+      "Url": "https://sentinels.copernicus.eu/web/sentinel/homedata-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-sulphur-dioxide"
     }
   ],
   "Provider": [
@@ -50,7 +50,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "4ad9663f-d173-411d-8d28-3081d4d9e3aa",
-      "LayerId": "AWS_VIS_SO2_DAILY_DATA"
+      "LayerId": "AWS_VIS_SO2_DAILY_DATA",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -81,5 +82,19 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "SO2 column number density [DU]"
+  },
+  "Process": {
+    "Name": "Sentinel Hub Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+    "VegaDefinition": "N1_SO2/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "sentinelhub-statistics",
+        "Url": "https://services.sentinel-hub.com/api/v1/statistics",
+        "Method": "POST",
+        "EndPoint": "sentinelhub",
+        "Type": "application/json"
+      }
+    ]
   }
 }

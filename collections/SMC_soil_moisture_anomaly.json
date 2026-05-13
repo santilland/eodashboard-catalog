@@ -22,7 +22,7 @@
     "JAXA"
   ],
   "Legend": "SMC_soil_moisture_anomaly/SMC_legend.png",
-  "Image": "SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
+  "Image": "SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg",
   "References": [
     {
       "Name": "Jaxa Public-health Monitor and Analysis Platform",
@@ -48,17 +48,23 @@
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://global.jaxa.jp/"
     }
   ],
   "Colorlegend": {
     "domain": [
-      "NaN",
+      0,
+      30,
+      70,
+      90,
+      100,
+      120,
+      150,
+      200,
       300
     ],
     "range": [
-      "#ffffff",
       "#3e3eff",
       "#3737ff",
       "#7777ff",
@@ -72,5 +78,11 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Soil moisture anomaly"
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "Id": "world_crop_supply_and_demand"
+    }
+  ]
 }

@@ -7,9 +7,9 @@
   "Themes": [
     "water"
   ],
+  "Image": "LWE_lake_water_extent/LWE_lake_water_extent.jpg",
   "Tags": [
     "Climate Change Initiative",
-    "CCI",
     "Water quality",
     "Multi-sensors",
     "Open data",
@@ -28,7 +28,7 @@
   "Citation": {
     "Publication": [
       {
-        "Citation": "Carrea, L., Cr\u00e9taux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
+        "Citation": "Carrea, L., Crétaux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
         "DOI": "10.1038/s41597-022-01889-z"
       }
     ]
@@ -75,6 +75,24 @@
     {
       "Name": "ESA",
       "Url": "https://www.esa.int/"
+    }
+  ],
+  "Process": {
+    "Name": "GeoDB Statistics",
+    "JsonForm": "https://santilland.github.io/process_example/definitions/geodbform.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/LWE_lake_water_extent/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "process_geodb",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_Lake_water_extent_tri_timeseries?aoi_id=eq.{{feature}}&select=site_name,time,aoi,measurement_value,input_dat",
+        "Type": "application/json"
+      }
+    ]
+  },
+  "Stories": [
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
     }
   ]
 }

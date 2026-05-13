@@ -38,7 +38,7 @@
   "Citation": {
     "Citation": "European Commission Directorate-General Joint Research Centre. Lake Water Quality 2016-present (raster 300 m), global, 10-daily - version 1. \nhttps://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/clms_global_lwq_300m_v1_10daily-nrt\n"
   },
-  "Image": "Lakes_WQ_TURB_water_turbidity/Lakes_WQ_TURB_water_turbidity.png",
+  "Image": "Lakes_WQ_TURB_water_turbidity/Lakes_WQ_TURB_water_turbidity.jpg",
   "Legend": "Lakes_WQ_TURB_water_turbidity/Lakes_WQ_TURB_legend.png",
   "References": [
     {
@@ -60,7 +60,13 @@
       "Name": "Sentinel Hub",
       "Type": "zarr",
       "CollectionId": "ef59d045-a0cd-4ce0-a25d-5da91e70e965",
-      "LayerId": "LAKE_WATER_QUALITY_TURBIDITY_MEAN"
+      "LayerId": "LAKE_WATER_QUALITY_TURBIDITY_MEAN",
+      "OverwriteBBox": [
+        17,
+        46.5,
+        19,
+        48
+      ]
     }
   ],
   "Provider": [
