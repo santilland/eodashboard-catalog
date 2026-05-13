@@ -36,17 +36,7 @@
   "EodashIdentifier": "methanesat-l4-dispersed-area-emissions",
   "Resources": [
     {
-      "Type": "tiles",
-      "Name": "VEDA",
-      "EndPoint": "https://eoapi.workspace.dashboards-operations.aws.hub.eox.at/stac/",
-      "CollectionId": "methanesat-l4-dispersed-area-emissions",
-      "Assets": ["data"],
-      "Expression": "data_b1",
-      "ColormapName": "reds",
-      "Rescale": [
-        0,
-        100
-      ]
+      "Name": "Collection-only"
     }
   ],
   "Provider": [
