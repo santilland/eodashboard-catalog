@@ -46,20 +46,6 @@
       "Url": "https://www.methanesat.org/sites/default/files/2025-02/MethaneSAT%20-%20Content%20License%20Terms%20of%20Use%20(Revised%202-12-2025)%5B25%5D.pdf"
     }
   ],
-  "Process": {
-    "Name": "VEDA Statistics",
-    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
-    "VegaDefinition": "methanesat_l4/chart.json",
-    "EndPoints": [
-      {
-        "Identifier": "veda_statistics",
-        "Url": "https://eoapi.workspace.dashboards-operations.aws.hub.eox.at/raster/collections/methanesat-l4-dispersed-area-emissions/statistics?assets=data",
-        "Method": "POST",
-        "EndPoint": "veda_stac",
-        "Type": "application/json"
-      }
-    ]
-  },
   "OverlayLayers": [
     {
       "id": "overlay_bright",
