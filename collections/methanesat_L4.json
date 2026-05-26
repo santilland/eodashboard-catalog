@@ -44,8 +44,7 @@
   "EodashIdentifier": "methanesat-l4-dispersed-area-emissions",
   "Resources": [
     {
-      "Name": "Collection-only",
-      "Times": ["2024-05-22", "2025-06-14"]
+      "Name": "Collection-only"
     }
   ],
   "Provider": [
