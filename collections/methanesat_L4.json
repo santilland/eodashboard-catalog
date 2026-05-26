@@ -30,13 +30,22 @@
     {
       "Url": "https://portal.methanesat.org/en/emissions-map/",
       "Name": "MethaneSAT Emissions Map"
+    },
+    {
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/eoapi.workspace.dashboards-operations.aws.hub.eox.at/stac/collections/methanesat-l4-dispersed-area-emissions?.language=en",
+      "Name": "STAC API"
+    },
+    {
+      "Url": "https://docs.google.com/spreadsheets/d/1-NWtb9JaSv3J_0ZL39Wv96XtqmM9QJWWCT6-vEFW_tU",
+      "Name": "MethaneSAT Target List"
     }
   ],
   "Image": "methanesat_l4/methanesat_l4_thumbnail.jpg",
   "EodashIdentifier": "methanesat-l4-dispersed-area-emissions",
   "Resources": [
     {
-      "Name": "Collection-only"
+      "Name": "Collection-only",
+      "Times": ["2024-05-22", "2025-06-14"]
     }
   ],
   "Provider": [
