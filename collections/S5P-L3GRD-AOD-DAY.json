@@ -41,7 +41,25 @@
     }
   ],
   "Image": "S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_thumbnail.jpg",
-  "Legend": "S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_legend.png",
+  "Colorlegend": {
+    "domain": [
+      0.2,
+      10
+    ],
+    "range": [
+      "#dbe1dd",
+      "#91ddc3",
+      "#54bbaa",
+      "#348fac",
+      "#35629d",
+      "#354076",
+      "#2f2145",
+      "#2e292d"
+    ],
+    "scaleType": "log10",
+    "tickFormat": ".1f",
+    "title": "Aerosol Optical Depth @ 494nm"
+  },
   "EodashIdentifier": "S5P-L3GRD-AOD-DAY",
   "Resources": [
     {
