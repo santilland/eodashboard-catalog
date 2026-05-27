@@ -35,7 +35,7 @@
     "MODIS"
   ],
   "Themes": [
-    "land"
+    "biomass"
   ],
   "DataSource": {
     "Spaceborne": {
