@@ -2,39 +2,15 @@
   "Name": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Monthly)",
   "Title": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Monthly)",
   "Description": "S5P-L3GRD-AAI-MONTH/S5P-L3GRD-AAI-MONTH.md",
-  "Themes": [
-    "atmosphere"
-  ],
-  "Tags": [
-    "UV",
-    "Atmosphere",
-    "Particles",
-    "Pollution",
-    "Ash",
-    "AAI",
-    "UVAI",
-    "Open data",
-    "Open Science",
-    "TROPOMI",
-    "Sentinel-5P",
-    "Remote Sensing",
-    "Monthly Data",
-    "S5P",
-    "Copernicus"
-  ],
+  "Themes": ["atmosphere"],
+  "Tags": ["UV","Atmosphere","Particles","Pollution","Ash","AAI","UVAI","Open data","Open Science","TROPOMI","Sentinel-5P","Remote Sensing","Monthly Data","S5P","Copernicus"],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "Sentinel-5P"
-      ],
-      "Sensor": [
-        "TROPOMI"
-      ]
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
     }
   },
-  "Agency": [
-    "ESA"
-  ],
+  "Agency": ["ESA"],
   "References": [
     {
       "Name": "Source Product Page",
@@ -43,10 +19,7 @@
   ],
   "Image": "S5P-L3GRD-AAI-MONTH/S5P-L3GRD-AAI-MONTH_thumbnail.jpg",
   "Colorlegend": {
-    "domain": [
-      1.0,
-      7.0
-    ],
+    "domain": [0.5, 7.0],
     "range": [
       "#fbfea2",
       "#fbb318",
@@ -57,10 +30,10 @@
       "#36331e"
     ],
     "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "Absorbing Aerosol Index @ 354/388 nm"
+    "tickFormat": ".1f",
+    "title": "Absorbing Aerosol Index @ 354/388 nm",
+    "tickValues": [0.5, 1.0, 2.0, 3.0, 5.0, 7.0]
   },
-  "Legend": "S5P-L3GRD-AAI-MONTH/S5P-L3GRD-AAI-MONTH_legend.png",
   "EodashIdentifier": "S5P-L3GRD-AAI-MONTH",
   "Resources": [
     {
