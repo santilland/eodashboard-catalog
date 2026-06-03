@@ -2,25 +2,8 @@
   "Name": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Monthly)",
   "Title": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Monthly)",
   "Description": "S5P-L3GRD-ALH-MONTH/S5P-L3GRD-ALH-MONTH.md",
-  "Themes": [
-    "atmosphere"
-  ],
-  "Tags": [
-    "Aerosol",
-    "Atmosphere",
-    "Particles",
-    "Dust",
-    "Ash",
-    "ALH",
-    "Open data",
-    "Open Science",
-    "TROPOMI",
-    "Sentinel-5P",
-    "Remote Sensing",
-    "Monthly Data",
-    "S5P",
-    "Copernicus"
-  ],
+  "Themes": ["atmosphere"],
+  "Tags": ["Aerosol","Atmosphere","Particles","Dust","Ash","ALH","Open data","Open Science","TROPOMI","Sentinel-5P","Remote Sensing","Monthly Data","S5P","Copernicus"],
   "DataSource": {
     "Spaceborne": {
       "Satellite": ["Sentinel-5P"],
@@ -45,7 +28,6 @@
     "title": "Aerosol Layer Height [km]",
     "tickValues": [0.0, 3.0, 6.0, 9.0, 12.0]
   },
-  "Legend": "S5P-L3GRD-ALH-MONTH/S5P-L3GRD-ALH-MONTH_legend.png",
   "EodashIdentifier": "S5P-L3GRD-ALH-MONTH",
   "Resources": [
     {
