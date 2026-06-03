@@ -2,25 +2,8 @@
   "Name": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
   "Title": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
   "Description": "S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY.md",
-  "Themes": [
-    "atmosphere"
-  ],
-  "Tags": [
-    "BrO",
-    "Bromine Monoxide",
-    "Bromine",
-    "Ozone",
-    "Polar",
-    "Atmosphere",
-    "Open data",
-    "Open Science",
-    "TROPOMI",
-    "Sentinel-5P",
-    "Remote Sensing",
-    "Daily Data",
-    "S5P",
-    "Copernicus"
-  ],
+  "Themes": ["atmosphere"],
+  "Tags": ["BrO","Bromine Monoxide","Bromine","Ozone","Polar","Atmosphere","Open data","Open Science","TROPOMI","Sentinel-5P","Remote Sensing","Daily Data","S5P","Copernicus"],
   "DataSource": {
     "Spaceborne": {
       "Satellite": ["Sentinel-5P"],
@@ -45,7 +28,6 @@
     "title": "BrO column number density [10¹³molec/cm²]",
     "tickValues": [2.0, 4.0, 6.0, 8.0, 10.0]
   },
-  "Legend": "S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_legend.png",
   "EodashIdentifier": "S5P-L3GRD-BRO-DAY",
   "Resources": [
     {
