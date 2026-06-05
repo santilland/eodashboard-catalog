@@ -69,7 +69,9 @@ def check_url(task):
 # -------------------------------------------------------------------
 # Extract links recursively
 # -------------------------------------------------------------------
-def extract_links(data, skip_keys=["resources", "process"]):
+def extract_links(
+    data, skip_keys=["resources", "process", "baselayers", "overlaylayers"]
+):
     results = []
     if isinstance(data, dict):
         for key, value in data.items():

@@ -52,7 +52,7 @@
   "References": [
     {
       "Name": "RT1 Surface Soil Moisture",
-      "Url": "https://stac.eurac.edu:8080/collections/SM_RT"
+      "Url": "https://stac.eurac.edu/collections/SM_RT"
     }
   ],
   "Resources": [

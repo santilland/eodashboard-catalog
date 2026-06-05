@@ -79,7 +79,7 @@
   "References": [
     {
       "Name": "Daily precipitation product",
-      "Url": "https://stac.eurac.edu:8080/collections/rainfall_all_domain"
+      "Url": "https://stac.eurac.edu/collections/rainfall_all_domain"
     }
   ],
   "Resources": [
