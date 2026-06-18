@@ -41,6 +41,8 @@ jobs:
         run: |
           pip install requests
 
+          pip install requests curl_cffi
+
       - name: Get changed JSON files
         id: changed
         uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47
@@ -114,6 +116,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests
+
+          pip install requests curl_cffi
 
       - name: Run full link audit
         env:
