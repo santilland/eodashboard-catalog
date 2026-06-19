@@ -42,7 +42,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "0ecb4a55-5ce2-4525-bdcb-a333d37d46ef",
-      "LayerId": "AWS_CH4_WEEKLY"
+      "LayerId": "AWS_CH4_WEEKLY",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -98,7 +99,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "N1_methane_monitoring/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",

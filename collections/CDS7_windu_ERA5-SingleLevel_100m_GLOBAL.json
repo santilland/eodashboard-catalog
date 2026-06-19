@@ -4,27 +4,11 @@
   "EodashIdentifier": "CDS7",
   "Subtitle": "Gridded ERA5 reanalysis wind U field at 100 m at global level",
   "Description": "CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.md",
-  "Themes": [
-    "atmosphere"
-  ],
+  "Themes": ["atmosphere"],
   "Image": "CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.jpg",
-  "Tags": [
-    "Copernicus Services",
-    "C3S",
-    "CDS",
-    "Multi-sensors",
-    "Open data",
-    "Climate change service"
-  ],
-  "DataSource": {
-    "Other": [
-      "ERA5"
-    ]
-  },
-  "Agency": [
-    "European Commission",
-    "ECMWF"
-  ],
+  "Tags": ["Copernicus Services", "C3S", "CDS", "Multi-sensors", "Open data", "Climate change service"],
+  "DataSource": {"Other": ["ERA5"]},
+  "Agency": ["European Commission", "ECMWF"],
   "License": [
     {
       "Url": "https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
@@ -33,17 +17,11 @@
     }
   ],
   "Provider": [
-    {
-      "Name": "Copernicus Climate Change Service",
-      "Url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.68d2bb30"
-    },
-    {
-      "Name": "Climate Data Store",
-      "Url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.68d2bb30"
-    }
+    {"Name": "Copernicus Climate Change Service", "Url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.68d2bb30"},
+    {"Name": "Climate Data Store", "Url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.68d2bb30"}
   ],
   "Citation": {
-    "Citation": "Citing the data:\nHersbach, H., Bell, B., Berrisford, P., Biavati, G., Hor\u00e1nyi, A., Mu\u00f1oz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Th\u00e9paut, J-N. (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS) (Accessed on 02-M07-2024)\n",
+    "Citation": "Citing the data:\nHersbach, H., Bell, B., Berrisford, P., Biavati, G., Horányi, A., Muñoz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Thépaut, J-N. (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS) (Accessed on 02-M07-2024)\n",
     "DOI": "10.24381/cds.adbb2d47"
   },
   "Legend": "CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/cm_legend.png",
@@ -53,7 +31,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "ac99bb32-a94d-4f4f-b8dd-c0098ca07665",
-      "LayerId": "VIS_ERA5_SINGLELEVEL_WIND_U_100M_GLOBAL"
+      "LayerId": "VIS_ERA5_SINGLELEVEL_WIND_U_100M_GLOBAL",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -66,21 +45,8 @@
     }
   ],
   "Colorlegend": {
-    "domain": [
-      -4,
-      4
-    ],
-    "range": [
-      "#0b3587",
-      "#0b74c5",
-      "#4eb5fa",
-      "#abeaf3",
-      "#f4fced",
-      "#fbd45f",
-      "#f78500",
-      "#dd1800",
-      "#a30100"
-    ],
+    "domain": [-4, 4],
+    "range": ["#0b3587", "#0b74c5", "#4eb5fa", "#abeaf3", "#f4fced", "#fbd45f", "#f78500", "#dd1800", "#a30100"],
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Wind field [m/s]"
@@ -88,7 +54,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",
@@ -98,5 +64,15 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "Id": "extreme_air_pollution_india_and_pakistan"
+    },
+    {
+      "Name": "Hunga Tonga Aerosol Plumes",
+      "Id": "hunga_tonga_aerosol_plumes"
+    }
+  ]
 }

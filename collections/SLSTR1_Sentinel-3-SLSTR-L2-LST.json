@@ -53,12 +53,12 @@
   "Provider": [
     {
       "Name": "Copernicus",
-      "Roles": "licensor, producer",
+      "Roles": ["licensor, producer"],
       "Url": "https://www.copernicus.eu/en"
     },
     {
       "Name": "ESA",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     }
   ],
@@ -74,6 +74,12 @@
     ],
     "scaleType": "threshold",
     "tickFormat": ".0f",
-    "title": "Temperature [\u00b0C]"
-  }
+    "title": "Temperature [°C]"
+  },
+  "Stories": [
+    {
+      "Name": "Record Breaking Temperatures",
+      "Id": "record_breaking_temperatures"
+    }
+  ]
 }

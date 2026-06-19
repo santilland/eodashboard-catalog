@@ -38,7 +38,7 @@
   "Provider": [
     {
       "Name": "ESA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://climate.esa.int/en/projects/reccap-2/"
     }
   ],

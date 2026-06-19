@@ -54,7 +54,7 @@
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://global.jaxa.jp/"
     }
   ],

@@ -4,9 +4,7 @@
   "EodashIdentifier": "EPA_Field_burning_Monthly",
   "Subtitle": "Emissions from sector 4F from agricultural field burning (monthly), gridded",
   "Description": "EPA_Field_burning_Monthly/EPA_Field_burning_Monthly.md",
-  "Themes": [
-    "biomass"
-  ],
+  "Themes": ["biomass"],
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
@@ -14,18 +12,8 @@
       "Name": "VEDA",
       "CollectionId": "EPA-monthly-emissions_4F_Field_Burning",
       "ColormapName": "rainbow",
-      "Rescale": [
-        0,
-        "4.5e9"
-      ],
+      "Rescale": [0, "4.5e9"],
       "Bidx": 1
-    }
-  ],
-  "Services": [
-    {
-      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
-      "Name": "VEDA Statistics",
-      "Rescale": "1e-9"
     }
   ],
   "Image": "EPA_Field_burning_Monthly/thumbnail.jpg",
@@ -33,7 +21,7 @@
   "Process": {
     "Name": "VEDA Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_vega_definition.json",
+    "VegaDefinition": "EPA_Field_burning_Monthly/chart.json",
     "EndPoints": [
       {
         "Identifier": "veda_statistics",
@@ -43,5 +31,22 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Colorlegend": {
+    "domain": [0, 4.5],
+    "range": ["#7f00ff", "#4756fb", "#0da4ef", "#2adcdc", "#62fac3", "#9cfaa3", "#d4dc7f", "#ffa457", "#ff562b", "#ff0000"],
+    "scaleType": "continuous",
+    "tickFormat": ".1f",
+    "title": "10^9 [molec/cm2/s]"
+  },
+  "Stories": [
+    {
+      "Name": "Forest Loss and Degradation",
+      "Id": "forest_loss_and_degradation"
+    },
+    {
+      "Name": "Australian Bushfires",
+      "Id": "australian-bushfires"
+    }
+  ]
 }

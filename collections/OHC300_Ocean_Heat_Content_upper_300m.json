@@ -5,26 +5,10 @@
   "Subtitle": "ORAS5 global ocean reanalysis monthly data from 1958 to present",
   "Description": "OHC300_Ocean_Heat_Content_upper_300m/OHC300_Ocean_Heat_Content_upper_300m.md",
   "Image": "OHC300_Ocean_Heat_Content_upper_300m/OHC300_Ocean_Heat_Content_upper_300m.jpg",
-  "Themes": [
-    "water"
-  ],
-  "Tags": [
-    "Copernicus Services",
-    "C3S",
-    "CDS",
-    "Multi-sensors",
-    "Open data",
-    "Climate change service"
-  ],
-  "DataSource": {
-    "Other": [
-      "ORAS5"
-    ]
-  },
-  "Agency": [
-    "European Commission",
-    "ECMWF"
-  ],
+  "Themes": ["water"],
+  "Tags": ["Copernicus Services", "C3S", "CDS", "Multi-sensors", "Open data", "Climate change service"],
+  "DataSource": {"Other": ["ORAS5"]},
+  "Agency": ["European Commission", "ECMWF"],
   "License": [
     {
       "Url": "https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
@@ -37,10 +21,7 @@
     "DOI": "10.24381/cds.67e8eeb7"
   },
   "References": [
-    {
-      "Name": "Data access",
-      "Url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-oras5?tab=form"
-    }
+    {"Name": "Data access", "Url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-oras5?tab=form"}
   ],
   "Resources": [
     {
@@ -48,20 +29,13 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "97577173-d4ef-4425-bd29-d367fe50475d",
-      "LayerId": "OCEAN_HEAT_CONTENT_UPPER_300M"
+      "LayerId": "OCEAN_HEAT_CONTENT_UPPER_300M",
+      "DataProjection": 3857
     }
   ],
   "Provider": [
-    {
-      "Name": "Copernicus",
-      "Roles": "licensor, producer",
-      "Url": "https://www.copernicus.eu/en"
-    },
-    {
-      "Name": "ECMWF",
-      "Roles": "processor",
-      "Url": "https://www.ecmwf.int/"
-    }
+    {"Name": "Copernicus", "Roles": ["licensor, producer"], "Url": "https://www.copernicus.eu/en"},
+    {"Name": "ECMWF", "Roles": ["processor"], "Url": "https://www.ecmwf.int/"}
   ],
   "Legend": "OHC300_Ocean_Heat_Content_upper_300m/cm_legend.png",
   "Services": [
@@ -74,16 +48,8 @@
     }
   ],
   "Colorlegend": {
-    "domain": [
-      -2,
-      30
-    ],
-    "range": [
-      "#0000FF",
-      "#00FFFF",
-      "#FFFF00",
-      "#FF0000"
-    ],
+    "domain": [-2, 30],
+    "range": ["#0000FF", "#00FFFF", "#FFFF00", "#FF0000"],
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "[GJ/m2]"
@@ -91,7 +57,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "OHC300_Ocean_Heat_Content_upper_300m/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",
@@ -101,5 +67,11 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "El Niño 2023-2024 Part 2: Rising Global Sea Surface Temperatures",
+      "Id": "rising_global_sea_surface_temperatures"
+    }
+  ]
 }

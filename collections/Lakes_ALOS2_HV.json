@@ -47,7 +47,7 @@
       "Country": [
         "KH"
       ],
-      "Name": "Tonl\u00e9 Sap (ALOS2-HV)",
+      "Name": "Tonlé Sap (ALOS2-HV)",
       "Point": [
         104.2,
         12.7
@@ -87,6 +87,16 @@
     {
       "Name": "JAXA",
       "Url": "https://global.jaxa.jp/"
+    }
+  ],
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
     }
   ]
 }

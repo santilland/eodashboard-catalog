@@ -52,7 +52,7 @@
   "References": [
     {
       "Name": "RT1 Surface Soil Moisture",
-      "Url": "https://stac.eurac.edu:8080/collections/SM_RT"
+      "Url": "https://stac.eurac.edu/collections/SM_RT"
     }
   ],
   "Resources": [
@@ -74,6 +74,19 @@
       }
     }
   ],
+  "Process": {
+  "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "VegaDefinition": "ESDL_Hydrology_SM/chart.json",
+  "EndPoints": [
+      {
+        "Url": "https://api.earthsystemdatalab.net/api/timeseries/hydrology/SM?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
+    ]
+  },
   "Legend": "ESDL_Hydrology_SM/cm_legend.png",
   "Image": "ESDL_Hydrology_SM/image.jpg",
   "Colorlegend": {
@@ -99,6 +112,6 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".1f",
-    "title": "[% relative saturation]"
+    "title": "[relative saturation]"
   }
 }

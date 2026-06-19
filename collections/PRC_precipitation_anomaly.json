@@ -4,39 +4,20 @@
   "EodashIdentifier": "PRC",
   "Subtitle": "Global Precipitation Anomaly",
   "Description": "PRC_precipitation_anomaly/PRC_precipitation_anomaly.md",
-  "Themes": [
-    "agriculture"
-  ],
-  "Tags": [
-    "Precipitation",
-    "Rainfall",
-    "Multi-sensors"
-  ],
+  "Themes": ["agriculture"],
+  "Tags": ["Precipitation", "Rainfall", "Multi-sensors"],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "Other"
-      ]
+      "Satellite": ["Other"]
     }
   },
-  "Agency": [
-    "JAXA"
-  ],
+  "Agency": ["JAXA"],
   "Legend": "PRC_precipitation_anomaly/PRC_legend.png",
   "Image": "PRC_precipitation_anomaly/PRC_precipitation_anomaly.jpg",
   "References": [
-    {
-      "Name": "Jaxa Public-health Monitor and Analysis Platform",
-      "Url": "https://www.jpmap-jaxa.jp/jpmap/en/user_guide/"
-    },
-    {
-      "Name": "Jaxa Global Satellite Mapping of Precipitation",
-      "Url": "https://sharaku.eorc.jaxa.jp/GSMaP/"
-    },
-    {
-      "Name": "GSMaP Documentation",
-      "Url": "https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf"
-    }
+    {"Name": "Jaxa Public-health Monitor and Analysis Platform", "Url": "https://www.jpmap-jaxa.jp/jpmap/en/user_guide/"},
+    {"Name": "Jaxa Global Satellite Mapping of Precipitation", "Url": "https://sharaku.eorc.jaxa.jp/GSMaP/"},
+    {"Name": "GSMaP Documentation", "Url": "https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf"}
   ],
   "Resources": [
     {
@@ -49,28 +30,28 @@
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://global.jaxa.jp/"
     }
   ],
   "Colorlegend": {
-    "domain": [
-      -200,
-      200
-    ],
+    "domain": [-200, 200],
     "range": [
-      "#3e3eff",
-      "#3737ff",
-      "#7777ff",
-      "#b6b6ff",
-      "#fafaff",
-      "#ffc6c6",
-      "#ff8484",
-      "#ff4545",
-      "#ff0606"
+      "#3e3eff", "#3737ff", "#7777ff", "#b6b6ff", "#fafaff",
+      "#ffc6c6", "#ff8484", "#ff4545", "#ff0606"
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Precipitation anomaly"
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "Id": "world_crop_supply_and_demand"
+    },
+    {
+      "Name": "El Niño 2023-2024: Food Security Impacts",
+      "Id": "el_nino_part_3_food_security"
+    }
+  ]
 }

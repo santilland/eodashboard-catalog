@@ -1,0 +1,75 @@
+{
+  "Name": "methanesat-l4-dispersed-area-emissions",
+  "Title": "Methanesat Dispersed Area Emissions",
+  "Description": "methanesat_l4/methanesat_l4.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "Air quality",
+    "CH4",
+    "Multi-sensors",
+    "Methane",
+    "Emissions"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "MethaneSAT"
+      ]
+    }
+  },
+  "Agency": [
+    "MethaneSAT LLC"
+  ],
+  "References": [
+    {
+      "Name": "MethaneSAT Science & Research",
+      "Url": "https://www.methanesat.org/scienceandresearch"
+    },
+    {
+      "Url": "https://portal.methanesat.org/en/emissions-map/",
+      "Name": "MethaneSAT Emissions Map"
+    },
+    {
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/eoapi.workspace.dashboards-operations.aws.hub.eox.at/stac/collections/methanesat-l4-dispersed-area-emissions?.language=en",
+      "Name": "STAC API"
+    },
+    {
+      "Url": "https://docs.google.com/spreadsheets/d/1-NWtb9JaSv3J_0ZL39Wv96XtqmM9QJWWCT6-vEFW_tU",
+      "Name": "MethaneSAT Target List"
+    }
+  ],
+  "Image": "methanesat_l4/methanesat_l4_thumbnail.jpg",
+  "EodashIdentifier": "methanesat-l4-dispersed-area-emissions",
+  "Resources": [
+    {
+      "Name": "Collection-only"
+    }
+  ],
+  "Provider": [
+    {
+      "Name": "MethaneSAT LLC",
+      "Roles": ["licensor, producer, processor"],
+      "Url": "https://www.methanesat.org/sites/default/files/2025-02/MethaneSAT%20-%20Content%20License%20Terms%20of%20Use%20(Revised%202-12-2025)%5B25%5D.pdf"
+    }
+  ],
+  "OverlayLayers": [
+    {
+      "id": "overlay_bright",
+      "name": "Overlay labels",
+      "url": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "Attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }",
+      "visible": true,
+      "protocol": "xyz"
+    },
+    {
+      "id": "Openinframap",
+      "name": "Open Infrastructure Map",
+      "Attribution": "{ Open Infrastructure Map: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors; Map Design and Analysis <a href=\"https://openinframap.org/copyright\" target=\"_blank\">OpenInfraMap</a> }",
+      "url": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/PowerOpenInfrastructure/mapboxstyledoc.json",
+      "visible": true,
+      "protocol": "mapbox-style-document"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "Name": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-AAI-DAY/S5P-L3GRD-AAI-DAY.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "UV",
+    "Atmosphere",
+    "Particles",
+    "Pollution",
+    "Ash",
+    "AAI",
+    "UVAI",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": [
+        "Sentinel-5P"
+      ],
+      "Sensor": [
+        "TROPOMI"
+      ]
+    }
+  },
+  "Agency": [
+    "ESA"
+  ],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/aai"
+    }
+  ],
+  "Image": "S5P-L3GRD-AAI-DAY/S5P-L3GRD-AAI-DAY_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [
+      1.0,
+      7.0
+    ],
+    "range": [
+      "#fbfea2",
+      "#fbb318",
+      "#ec6726",
+      "#bb3754",
+      "#781c6d",
+      "#33095e",
+      "#36331e"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Absorbing Aerosol Index @ 354/388 nm"
+  },
+  "Legend": "S5P-L3GRD-AAI-DAY/S5P-L3GRD-AAI-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-AAI-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "62136507-01d9-4f1c-a502-77a79454d264",
+      "LayerId": "S5P-L3GRD-AAI-DAY",
+      "DataProjection": 3857
+    }
+  ]
+}

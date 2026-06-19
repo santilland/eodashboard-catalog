@@ -38,7 +38,7 @@
       "Url": "https://sentinels.copernicus.eu/web/sentinel/home"
     },
     {
-      "Name": "NASA\u2019s Interagency Implementation and Advanced Concepts Team (IMPACT)",
+      "Name": "NASA's Interagency Implementation and Advanced Concepts Team (IMPACT)",
       "Url": "https://www.earthdata.nasa.gov/esds/impact"
     },
     {
@@ -61,7 +61,8 @@
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
           "Layers": "SENTINEL-2-L2A-TRUE-COLOR"
-        }, {
+        },
+        {
           "Identifier": "ports",
           "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3%3A%2F%2Fcovid-eo-data%2Fplanet%2F{site}-{time}.tif&resampling_method=bilinear&bidx=1%2C2%2C3",
           "Type": "XYZ",
@@ -86,5 +87,11 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Travel Restrictions Interrupted Global Supply Chains Dependent on Cargo Shipping",
+      "Id": "shipping"
+    }
+  ]
 }

@@ -28,7 +28,7 @@
   "Citation": {
     "Publication": [
       {
-        "Citation": "Carrea, L., Cr\u00e9taux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
+        "Citation": "Carrea, L., Crétaux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
         "DOI": "10.1038/s41597-022-01889-z"
       }
     ]
@@ -88,5 +88,11 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
+    }
+  ]
 }

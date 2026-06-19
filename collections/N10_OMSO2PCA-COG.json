@@ -43,12 +43,6 @@
       "Url": "https://aura.gsfc.nasa.gov/"
     }
   ],
-  "Services": [
-    {
-      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
-      "Name": "VEDA Statistics"
-    }
-  ],
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
@@ -66,7 +60,7 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://www.earthdata.nasa.gov/learn/articles/find-no2-data"
     }
   ],
@@ -98,7 +92,7 @@
   "Process": {
     "Name": "VEDA Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_vega_definition.json",
+    "VegaDefinition": "N10_OMSO2PCA-COG/chart.json",
     "EndPoints": [
       {
         "Identifier": "veda_statistics",

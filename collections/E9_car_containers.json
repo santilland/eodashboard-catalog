@@ -46,7 +46,8 @@
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
           "Layers": "AWS_JAXA_CARS_CONTAINERS_ALOS2"
-        }, {
+        },
+        {
           "Identifier": "Sentinel-1",
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
@@ -76,5 +77,11 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "COVID-19 Changes in Car Manufacturing",
+      "Id": "covid-cars"
+    }
+  ]
 }

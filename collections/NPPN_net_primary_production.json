@@ -3,32 +3,15 @@
   "Title": "Ocean net primary production (MODIS)",
   "EodashIdentifier": "NPPN",
   "Description": "NPPN_net_primary_production/NPPN_net_primary_production.md",
-  "Themes": [
-    "water"
-  ],
-  "Tags": [
-    "Model",
-    "Primary production",
-    "Open data",
-    "Photosynthesis",
-    "Organic material",
-    "Chlorophyll",
-    "Carbon",
-    "Water"
-  ],
+  "Themes": ["water"],
+  "Tags": ["Model", "Primary production", "Open data", "Photosynthesis", "Organic material", "Chlorophyll", "Carbon", "Water"],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "Aqua"
-      ],
-      "Sensor": [
-        "MODIS"
-      ]
+      "Satellite": ["Aqua"],
+      "Sensor": ["MODIS"]
     }
   },
-  "Agency": [
-    "NASA"
-  ],
+  "Agency": ["NASA"],
   "Citation": {
     "Publication": [
       {
@@ -40,16 +23,7 @@
   "Legend": "NPPN_net_primary_production/NPPN_legend.png",
   "Image": "NPPN_net_primary_production/NPPN_net_primary_production.jpg",
   "References": [
-    {
-      "Name": "Ocean productivity",
-      "Url": "https://sites.science.oregonstate.edu/ocean.productivity/index.php"
-    }
-  ],
-  "Services": [
-    {
-      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
-      "Name": "VEDA Statistics"
-    }
+    {"Name": "Ocean productivity", "Url": "https://sites.science.oregonstate.edu/ocean.productivity/index.php"}
   ],
   "Resources": [
     {
@@ -58,54 +32,25 @@
       "Type": "cog",
       "CollectionId": "MO_NPP_npp_vgpm",
       "ColormapName": "jet",
-      "Rescale": [
-        0.0,
-        1500.0
-      ],
+      "Rescale": [0.0, 1500.0],
       "Bidx": 1
     }
   ],
   "Provider": [
-    {
-      "Name": "Ocean Productivity",
-      "Roles": "processor",
-      "Url": "http://orca.science.oregonstate.edu/npp_products.php"
-    },
-    {
-      "Name": "NASA",
-      "Roles": "licensor, producer",
-      "Url": "https://www.earthdata.nasa.gov/esds/veda"
-    }
+    {"Name": "Ocean Productivity", "Roles": ["processor"], "Url": "http://orca.science.oregonstate.edu/npp_products.php"},
+    {"Name": "NASA", "Roles": ["licensor, producer"], "Url": "https://www.earthdata.nasa.gov/esds/veda"}
   ],
   "Colorlegend": {
-    "domain": [
-      0,
-      1500
-    ],
-    "range": [
-      "#000080",
-      "#0000d9",
-      "#001dff",
-      "#006cff",
-      "#00baff",
-      "#1cffda",
-      "#5cff9b",
-      "#9bff5c",
-      "#daff1c",
-      "#ffce00",
-      "#ff8500",
-      "#ff3c00",
-      "#d90000",
-      "#800000"
-    ],
+    "domain": [0, 1500],
+    "range": ["#000080", "#0000d9", "#001dff", "#006cff", "#00baff", "#1cffda", "#5cff9b", "#9bff5c", "#daff1c", "#ffce00", "#ff8500", "#ff3c00", "#d90000", "#800000"],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "[mgC/m\u00b2/day]"
+    "title": "[mgC/m²/day]"
   },
   "Process": {
     "Name": "VEDA Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_vega_definition.json",
+    "VegaDefinition": "NPPN_net_primary_production/chart.json",
     "EndPoints": [
       {
         "Identifier": "veda_statistics",
@@ -115,5 +60,15 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Ocean Primary Productivity",
+      "Id": "primary-productivity"
+    },
+    {
+      "Name": "Ocean Plants",
+      "Id": "ocean_plants"
+    }
+  ]
 }

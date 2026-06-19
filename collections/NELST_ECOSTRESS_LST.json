@@ -52,7 +52,7 @@
   "Provider": [
     {
       "Name": "NASA/JPL/ECOSTRESS",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://ecostress.jpl.nasa.gov/"
     }
   ],

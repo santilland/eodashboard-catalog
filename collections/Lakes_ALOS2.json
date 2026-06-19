@@ -31,6 +31,7 @@
     }
   ],
   "License": "MIT",
+  "Resources": [],
   "Subcollections": [
     {
       "Identifier": "lakes_alos2_hh",
@@ -41,5 +42,15 @@
       "Collection": "Lakes_ALOS2_HV"
     }
   ],
-  "Image": "Lakes_ALOS2/thumbnail.jpg"
+  "Image": "Lakes_ALOS2/thumbnail.jpg",
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
+    }
+  ]
 }

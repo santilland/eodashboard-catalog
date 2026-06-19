@@ -15,7 +15,7 @@
       "Rescale": [
         -1,
         1
-      ]                            
+      ]
     }
   ],
   "Legend": "ESDC_NDVI/cm_legend.png",
@@ -35,7 +35,7 @@
     "MODIS"
   ],
   "Themes": [
-    "land"
+    "biomass"
   ],
   "DataSource": {
     "Spaceborne": {
@@ -47,5 +47,11 @@
       ]
     }
   },
-  "Agency": []
+  "Agency": [],
+  "Stories": [
+    {
+      "Name": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "Id": "scienceHub_timeSeries_vegetation"
+    }
+  ]
 }

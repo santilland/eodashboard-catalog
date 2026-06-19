@@ -33,5 +33,19 @@
       "ColorFormula": "gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55",
       "NoData": 0
     }
+  ],
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Changing Lakes Due to Human Activity",
+      "Id": "lakes-human-activity"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
+    }
   ]
 }

@@ -170,7 +170,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "N3a2_sea_surface_temperature/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",

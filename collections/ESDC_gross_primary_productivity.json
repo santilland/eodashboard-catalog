@@ -65,10 +65,23 @@
       }
     }
   ],
+  "Process": {
+  "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "VegaDefinition": "ESDC_gross_primary_productivity/chart.json",
+  "EndPoints": [
+      {
+        "Url": "https://api.earthsystemdatalab.net/api/timeseries/esdc/gross_primary_productivity?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
+    ]
+  },
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://terra.nasa.gov/data/modis-data"
     }
   ],

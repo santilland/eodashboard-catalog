@@ -50,7 +50,7 @@
   "Provider": [
     {
       "Name": "NCEO",
-      "Roles": "licensor, processor",
+      "Roles": ["licensor, processor"],
       "Url": "https://www.nceo.ac.uk/data-tools/datasets/"
     }
   ],

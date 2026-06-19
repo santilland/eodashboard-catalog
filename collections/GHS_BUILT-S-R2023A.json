@@ -52,7 +52,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "0c7aa265-50f9-4947-9980-2ee5ae204803",
-      "LayerId": "GHS_BUILT_S"
+      "LayerId": "GHS_BUILT_S",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -66,7 +67,7 @@
     {
       "Name": "EOxHub Notebook",
       "Title": "Evaluation of Fire Impact on Populated Areas on a European Site",
-      "Url": "https://bids2023-nbviewer.hub.eox.at/localfile/bids2023/notebooks/Fire_impact_analysis.ipynb"
+      "Url": "https://esa-eodashboards.github.io/eodashboard-notebooks/notebooks/fire-impact-analysis/"
     }
   ],
   "Provider": [
@@ -98,7 +99,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "GHS-BUILT-S-R2023A/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",

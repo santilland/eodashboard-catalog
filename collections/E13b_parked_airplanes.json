@@ -63,13 +63,16 @@
       "Name": "GeoDB",
       "Database": "eodash",
       "CollectionId": "E13b_tri",
+      "Style": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/features_style.json",
+      "FeatureCollection": "E13b_tri-detections",
       "InputData": [
         {
           "Identifier": "Sentinel 2 L2A",
           "Url": "https://services.sentinel-hub.com/ogc/wms/",
           "Type": "WMS",
           "Layers": "SENTINEL-2-L2A-TRUE-COLOR"
-        }, {
+        },
+        {
           "Identifier": "airports",
           "Url": "https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3%3A%2F%2Fcovid-eo-data%2Fplanet%2F{site}-{time}.tif&resampling_method=bilinear&bidx=1%2C2%2C3",
           "Type": "XYZ",
@@ -105,5 +108,11 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Grounded: How COVID-19 Emptied the World's Airports",
+      "Id": "airports"
+    }
+  ]
 }

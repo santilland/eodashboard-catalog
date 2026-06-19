@@ -50,7 +50,7 @@
   "Provider": [
     {
       "Name": "GEOGLAM",
-      "Roles": "licensor, processor",
+      "Roles": ["licensor, processor"],
       "Url": "https://www.cropmonitor.org/eo-data"
     }
   ],
@@ -75,5 +75,15 @@
     ],
     "scaleType": "categorical",
     "title": "Crop conditions"
-  }
+  },
+  "Stories": [
+    {
+      "Name": "El Niño 2023-2024: Food Security Impacts",
+      "Id": "el_nino_part_3_food_security"
+    },
+    {
+      "Name": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "Id": "world_crop_supply_and_demand"
+    }
+  ]
 }

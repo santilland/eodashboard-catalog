@@ -28,7 +28,7 @@
   "Citation": {
     "Publication": [
       {
-        "Citation": "Carrea, L., Cr\u00e9taux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
+        "Citation": "Carrea, L., Crétaux, JF., Liu, X. et al. Satellite-derived multivariate world-wide lake physical variable timeseries for climate studies. Sci Data 10, 30 (2023).",
         "DOI": "10.1038/s41597-022-01889-z"
       }
     ]
@@ -66,89 +66,38 @@
   "Locations": [
     {
       "Identifier": "Aral",
-      "Country": [
-        "UZ",
-        "KZ"
-      ],
+      "Country": ["UZ", "KZ"],
       "Name": "Aral",
-      "Point": [
-        58.581,
-        45.303
-      ],
-      "Bbox": [
-        57,
-        43.24,
-        62.29,
-        47.72
-      ]
+      "Point": [58.581, 45.303],
+      "Bbox": [57, 43.24, 62.29, 47.72]
     },
     {
       "Identifier": "Biwa",
-      "Country": [
-        "JP"
-      ],
+      "Country": ["JP"],
       "Name": "Biwa",
-      "Point": [
-        136.095,
-        35.284
-      ],
-      "Bbox": [
-        135.133,
-        33.535,
-        138.1728,
-        35.7509
-      ]
+      "Point": [136.095, 35.284],
+      "Bbox": [135.133, 33.535, 138.1728, 35.7509]
     },
     {
       "Identifier": "Tonle_sap",
-      "Country": [
-        "KH"
-      ],
-      "Name": "Tonl\u00e9 Sap",
-      "Point": [
-        104.2,
-        12.7
-      ],
-      "Bbox": [
-        101.938,
-        11.945,
-        106.37,
-        14.0674
-      ]
+      "Country": ["KH"],
+      "Name": "Tonlé Sap",
+      "Point": [104.2, 12.7],
+      "Bbox": [101.938, 11.945, 106.37, 14.0674]
     },
     {
       "Identifier": "Vanern",
-      "Country": [
-        "SW"
-      ],
-      "Name": "V\u00e4nern",
-      "Point": [
-        13.535,
-        59.07
-      ],
-      "Bbox": [
-        10.6994,
-        57.353,
-        15.9848,
-        59.83119
-      ]
+      "Country": ["SW"],
+      "Name": "Vänern",
+      "Point": [13.535, 59.07],
+      "Bbox": [10.6994, 57.353, 15.9848, 59.83119]
     },
     {
       "Identifier": "Balaton",
-      "Country": [
-        "HU"
-      ],
+      "Country": ["HU"],
       "Name": "Balaton",
-      "Point": [
-        17.77,
-        46.825
-      ],
-      "Bbox": [
-        17.08,
-        46.55,
-        18.24,
-        47.12
-      ]
+      "Point": [17.77, 46.825],
+      "Bbox": [17.08, 46.55, 18.24, 47.12]
     }
   ],
   "Resources": [
@@ -203,7 +152,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "Lakes_SWT_surface_water_temperature/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",
@@ -213,5 +162,15 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Climate Change Impacts on Inland Water Bodies",
+      "Id": "lakes-climate"
+    },
+    {
+      "Name": "Troubled Waters: The State of the World's Lakes",
+      "Id": "lakes-intro"
+    }
+  ]
 }

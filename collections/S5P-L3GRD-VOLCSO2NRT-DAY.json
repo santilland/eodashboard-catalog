@@ -1,0 +1,68 @@
+{
+  "Name": "Volcanic SO₂ (7km) NRT by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Volcanic SO₂ (7km) NRT by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-VOLCSO2NRT-DAY/S5P-L3GRD-VOLCSO2NRT-DAY.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "SO2",
+    "Sulfur Dioxide",
+    "Volcanic",
+    "Atmosphere",
+    "Volcano",
+    "Eruption",
+    "NRT",
+    "Near Real-Time",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
+    }
+  },
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/so2-7km-nrt"
+    }
+  ],
+  "Image": "S5P-L3GRD-VOLCSO2NRT-DAY/S5P-L3GRD-VOLCSO2NRT-DAY_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [0.0, 20.0],
+    "range": [
+      "#e6e0ee","#e5deed","#e0d6e8","#d5c5df","#d0bcda","#cab0d5","#c3a5ce","#b48dc0","#ac80b8","#a979b4","#a573b1","#9e66a9","#9960a5","#955ca3","#9057a0","#8b529d","#804e9b","#7b4f9c","#754f9e","#6f509f","#6754a3","#6457a7","#615aaa","#5e5dad","#5b60b0","#5667b6","#546bba","#526ebd","#5172bf","#4f79c2","#4e7dc3","#4d81c4","#4d84c4","#4d8ac3","#4d8dc2","#4d90c1","#4e91c0","#4e93be","#4f97bb","#4f99b9","#519ab7","#529cb5","#549fb2","#55a0b0","#56a1af","#57a2ad","#58a3ab","#5aa5a8","#5ba6a6","#5ca7a4","#5da9a3","#5faa9f","#60ab9e","#61ac9c","#63ad9a","#65ae97","#67af95","#68b093","#69b191","#6bb28e","#6eb389","#70b486","#72b484","#74b581","#79b77c","#7bb879","#7db977","#80b974","#83ba71","#88bb6c","#8abc6a","#8dbc68","#90bc66","#95bd61","#98bd5f","#9bbd5d","#9ebe5a","#a3be56","#a6be55","#a8bd53","#abbd52","#aebd50","#b3bd4e","#b5bc4c","#b8bc4b","#bbbc4a","#bfbb48","#c1bb46","#c3ba45","#c5ba45","#c7b944","#cab843","#ccb742","#ceb642","#cfb541","#d2b440","#d3b340","#d4b23f","#d5b13f","#d8af3e","#d9ae3e","#daad3d","#dbac3d","#dcab3c","#dda93c","#dea83c","#dea73b","#dfa63b","#e0a43b","#e0a33b","#e1a23a","#e2a13a","#e2a03a","#e39d39","#e39c39","#e49b38","#e49a38","#e59737","#e59637","#e59537","#e59337","#e69136","#e69036","#e68f36","#e68d36","#e68c35","#e68935","#e68835","#e68735","#e68534","#e68334","#e68234","#e68134","#e68033","#e67e33","#e67c33","#e67b32","#e67a32","#e67832","#e67631","#e57531","#e57330","#e57230","#e57030","#e56e2f","#e56d2f","#e56c2f","#e56b2f","#e4682e","#e4672e","#e4652e","#e4642e","#e3612d","#e3602d","#e35f2d","#e35d2d","#e25c2c","#e2592c","#e2572b","#e2562b","#e1552b","#e1522a","#e1512a","#e05029","#e04f29","#e04c29","#e04a29","#df4928","#df4728","#df4628","#df4227","#de4027","#de3e26","#de3c26","#dd3825","#dd3725","#dd3525","#dd3325","#dd3225","#dc2e24","#dc2d24","#dc2b24","#dc2923","#db2622","#db2522","#d92422","#d82321","#d62221","#d52221","#d42221","#d32221","#d12221","#cf2221","#cd2221","#cb2220","#ca2220","#c72220","#c6221f","#c5221f","#c3221f","#c2221f","#c0221f","#be221f","#bd221f","#bc221f","#b9221e","#b8221e","#b7221e","#b5221e","#b3221e","#b2221e","#b1221e","#af221e","#ae221d","#ab221d","#aa221d","#a9221d","#a7221c","#a5221c","#a4221c","#a2221c","#a1211c","#a0211c","#9d211c","#9c211b","#9b211b","#9a211b","#98211b","#97211b","#96211b","#95211b","#92211b","#91211a","#90211a","#8f211a","#8d211a","#8b2019","#8a2019","#892019","#882019","#862019","#852019","#842019","#832019","#821f18","#811f18","#801f18","#7e1f18","#7d1f18","#7b1f18","#7a1f18","#791e17","#781e17","#761e17","#751e17","#751e17"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "SO2 column number density [DU]",
+    "tickValues": [0.0, 4.0, 8.0, 12.0, 16.0, 20.0]
+  },
+  "Legend": "S5P-L3GRD-VOLCSO2NRT-DAY/S5P-L3GRD-VOLCSO2NRT-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-VOLCSO2NRT-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "134390d3-5fd2-4ba2-9551-d30f91d350ca",
+      "LayerId": "S5P-L3GRD-VOLCSO2NRT-DAY",
+      "DataProjection": 3857
+    }
+  ],
+  "Stories": [
+    {
+      "Name": "Hunga Tonga Aerosol Plumes",
+      "Id": "hunga_tonga_aerosol_plumes"
+    }
+  ]
+}

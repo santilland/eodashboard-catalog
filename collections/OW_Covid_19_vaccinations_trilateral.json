@@ -3,25 +3,15 @@
   "Title": "Covid-19 Vaccinations",
   "EodashIdentifier": "OW",
   "Description": "OW_Covid_19_vaccinations/OW_Covid_19_vaccinations.md",
-  "Image": "OW_Covid_19_vaccinations/OW_Covid_19_vaccinations.jpg",
-  "Themes": [
-    "covid-19"
-  ],
-  "Tags": [
-    "COVID-19",
-    "Human activities",
-    "Open data"
-  ],
+  "Image": "OW_Covid_19_vaccinations/OW_Covid_19_vaccinations_photo.jpg",
+  "Themes": ["covid-19"],
+  "Tags": ["COVID-19", "Human activities", "Open data"],
   "DataSource": {
-    "InSitu": [
-      "Other"
-    ]
+    "InSitu": ["Other"]
   },
-  "Agency": [
-    "ESA"
-  ],
+  "Agency": ["ESA"],
   "Citation": {
-    "Citation": "Edouard Mathieu, Hannah Ritchie, Lucas Rod\u00e9s-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - \"Coronavirus Pandemic (COVID-19)\". \nPublished online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]\n"
+    "Citation": "Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - \"Coronavirus Pandemic (COVID-19)\". \nPublished online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]\n"
   },
   "Resources": [
     {
@@ -32,9 +22,48 @@
     }
   ],
   "Provider": [
+    {"Name": "Our World in Data", "Url": "https://ourworldindata.org/covid-vaccinations"}
+  ],
+  "Process": {
+    "Name": "GeoDB Statistics",
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/geodb_form.json",
+    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/OW_Covid_19_vaccinations/chart.json",
+    "EndPoints": [
+      {
+        "Identifier": "process_geodb",
+        "Url": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/Global_COVID_vaccination_data?aoi_id=eq.{{feature}}&select=time,measurement_value,reference_value",
+        "Type": "application/json"
+      }
+    ]
+  },
+  "Stories": [
     {
-      "Name": "Our World in Data",
-      "Url": "https://ourworldindata.org/covid-vaccinations"
+      "Name": "During COVID-19 Lockdowns Night Lights in Central Business Districts Decreased",
+      "Id": "nightlights"
+    },
+    {
+      "Name": "Observing Nightlights from Space",
+      "Id": "nightlights_from_space"
+    },
+    {
+      "Name": "COVID-19 Changes in Car Manufacturing",
+      "Id": "covid-cars"
+    },
+    {
+      "Name": "COVID-19 Lockdowns Reduce Nitrogen Dioxide Levels",
+      "Id": "covid-no2"
+    },
+    {
+      "Name": "COVID-19 Impacts on CO2 Emissions",
+      "Id": "covid-co2"
+    },
+    {
+      "Name": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "Id": "early_rice_planting"
+    },
+    {
+      "Name": "Travel Restrictions Interrupted Global Supply Chains Dependent on Cargo Shipping",
+      "Id": "shipping"
     }
   ]
 }

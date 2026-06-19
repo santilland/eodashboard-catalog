@@ -50,28 +50,29 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "b63afeed-f970-4c0e-9ecf-e216979f9642",
-      "LayerId": "S1_AMP_HV"
+      "LayerId": "S1_AMP_HV",
+      "DataProjection": 3857
     }
   ],
   "Provider": [
     {
       "Name": "Copernicus",
-      "Roles": "licensor",
+      "Roles": ["licensor"],
       "Url": "https://www.copernicus.eu/en"
     },
     {
       "Name": "NASA",
-      "Roles": "producer",
+      "Roles": ["producer"],
       "Url": "https://jpl.nasa.gov/?_ga=2.243049538.1322991491.1723040890-976169570.1722866809"
     },
     {
       "Name": "Earth Big Data",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://earthbigdata.com/"
     },
     {
       "Name": "Gamma Remote Sensing",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://www.gamma-rs.ch/"
     }
   ]

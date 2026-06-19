@@ -74,7 +74,7 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://firms.modaps.eosdis.nasa.gov/"
     }
   ]

@@ -5,61 +5,24 @@
   "Subtitle": "Precipitation Timeseries",
   "Description": "PRCTS_precipitation_timeseries/PRCTS_precipitation_timeseries.md",
   "Image": "PRCTS_precipitation_timeseries/PRCTS_precipitation_timeseries.jpg",
-  "Themes": [
-    "agriculture"
-  ],
-  "Tags": [
-    "Precipitation",
-    "Rainfall",
-    "Multi-sensors"
-  ],
+  "Themes": ["agriculture"],
+  "Tags": ["Precipitation", "Rainfall", "Multi-sensors"],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "Other"
-      ]
+      "Satellite": ["Other"]
     }
   },
-  "Agency": [
-    "JAXA"
-  ],
+  "Agency": ["JAXA"],
   "References": [
-    {
-      "Name": "JAXA's Satellite based MonItoring Network system for FAO AMIS Market Monitor",
-      "Url": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html"
-    },
-    {
-      "Name": "JASMAI",
-      "Url": "https://jasmai.maff.go.jp/"
-    },
-    {
-      "Name": "JASMAI user guide",
-      "Url": "https://jasmai.maff.go.jp/user_guide/#item_2_7"
-    },
-    {
-      "Name": "JAXA Earth Observation Research Center (EORC)",
-      "Url": "http://www.eorc.jaxa.jp/"
-    },
-    {
-      "Name": "Earth observation satellite data provision system (G-Portal)",
-      "Url": "https://gportal.jaxa.jp/gpr/?lang=en"
-    },
-    {
-      "Name": "AMSR/AMSR-E",
-      "Url": "https://sharaku.eorc.jaxa.jp/AMSR/index_j.html"
-    },
-    {
-      "Name": "GCOM-W",
-      "Url": "https://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html"
-    },
-    {
-      "Name": "Satellite Global Precipitation Map (GSMaP)",
-      "Url": "https://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm"
-    },
-    {
-      "Name": "Climate Formation Physical Quantity Dataset (JASMES)",
-      "Url": "https://kuroshio.eorc.jaxa.jp/JASMES/index_j.html"
-    }
+    {"Name": "JAXA's Satellite based MonItoring Network system for FAO AMIS Market Monitor", "Url": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html"},
+    {"Name": "JASMAI", "Url": "https://jasmai.maff.go.jp/"},
+    {"Name": "JASMAI user guide", "Url": "https://jasmai.maff.go.jp/user_guide/#item_2_7"},
+    {"Name": "JAXA Earth Observation Research Center (EORC)", "Url": "http://www.eorc.jaxa.jp/"},
+    {"Name": "Earth observation satellite data provision system (G-Portal)", "Url": "https://gportal.jaxa.jp/gpr/?lang=en"},
+    {"Name": "AMSR/AMSR-E", "Url": "https://sharaku.eorc.jaxa.jp/AMSR/index_j.html"},
+    {"Name": "GCOM-W", "Url": "https://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html"},
+    {"Name": "Satellite Global Precipitation Map (GSMaP)", "Url": "https://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm"},
+    {"Name": "Climate Formation Physical Quantity Dataset (JASMES)", "Url": "https://kuroshio.eorc.jaxa.jp/JASMES/index_j.html"}
   ],
   "Resources": [
     {
@@ -72,7 +35,7 @@
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://global.jaxa.jp/"
     }
   ],
@@ -87,5 +50,15 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "Id": "world_crop_supply_and_demand"
+    },
+    {
+      "Name": "El Niño 2023-2024: Food Security Impacts",
+      "Id": "el_nino_part_3_food_security"
+    }
+  ]
 }

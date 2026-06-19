@@ -28,11 +28,11 @@
   "Citation": {
     "Publication": [
       {
-        "Citation": "Vancutsem, C., Achard, F., Pekel, J.-F., Vieilledent, G., Carboni, S., Simonetti, D., Gallego, J., Arag\u00e3o, L. E. O. C., & Nasi, R. (2021). Long-term (1990\u20132019) monitoring of forest cover changes in the humid tropics. \nScience Advances, 7(10), eabe1603.\n",
+        "Citation": "Vancutsem, C., Achard, F., Pekel, J.-F., Vieilledent, G., Carboni, S., Simonetti, D., Gallego, J., Aragão, L. E. O. C., & Nasi, R. (2021). Long-term (1990–2019) monitoring of forest cover changes in the humid tropics. \nScience Advances, 7(10), eabe1603.\n",
         "DOI": "10.1126/sciadv.abe1603"
       },
       {
-        "Citation": "Fawcett, Dominic, Sitch, Stephen, Ciais, Philippe, Wigneron, Jean Pierre, Silva-Junior, Celso H. L., Heinrich, Viola, Vancutsem, Christelle, Achard, Fr\u00e9d\u00e9ric, Bastos, Ana, Yang, Hui, Li, Xiaojun, Albergel, Cl\u00e9ment, Friedlingstein, Pierre, & Arag\u00e3o, Luiz E. O. C. (2022). \nProcessed Data for Figures of 'Declining Amazon biomass due to deforestation and subsequent degradation losses exceeding gains' (Version v1) [Data set]. Zenodo.\n",
+        "Citation": "Fawcett, Dominic, Sitch, Stephen, Ciais, Philippe, Wigneron, Jean Pierre, Silva-Junior, Celso H. L., Heinrich, Viola, Vancutsem, Christelle, Achard, Frédéric, Bastos, Ana, Yang, Hui, Li, Xiaojun, Albergel, Clément, Friedlingstein, Pierre, & Aragão, Luiz E. O. C. (2022). \nProcessed Data for Figures of 'Declining Amazon biomass due to deforestation and subsequent degradation losses exceeding gains' (Version v1) [Data set]. Zenodo.\n",
         "DOI": "10.5281/zenodo.7245450"
       }
     ]
@@ -92,10 +92,23 @@
       }
     }
   ],
+  "Process": {
+  "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "VegaDefinition": "RECCAP2_7_degraded_biomass/chart.json",
+  "EndPoints": [
+      {
+        "Url": "https://reccap2.api.brockmann-consult.de/api/timeseries/cop28~reccap2-9x108x139-0.0.1.zarr/degraded_biomass?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
+    ]
+  },
   "Provider": [
     {
       "Name": "ESA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://climate.esa.int/en/projects/reccap-2/"
     }
   ],
@@ -123,5 +136,15 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "[Mg C/ha/year]"
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Forest Loss and Degradation",
+      "Id": "forest_loss_and_degradation"
+    },
+    {
+      "Name": "Biomass Harmonization Activity",
+      "Id": "biomass-harmonization-activity"
+    }
+  ]
 }

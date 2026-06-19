@@ -1,0 +1,74 @@
+{
+  "Name": "Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "NO2",
+    "Nitrogen Dioxide",
+    "Air Quality",
+    "Pollution",
+    "Troposphere",
+    "Atmosphere",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
+    }
+  },
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/no2-tropospheric"
+    }
+  ],
+  "Image": "S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [0.0, 180.0],
+    "range": [
+      "#fbf9f7","#fbf9f7","#fbf9f6","#fbf9f6","#fbf9f5","#fbf8f5","#fbf8f5","#fbf8f5","#fbf7f5","#fbf7f4","#fbf7f4","#fcf7f3","#fcf7f2","#fcf6f2","#fcf6f1","#fcf6f1","#fcf5f1","#fcf5f0","#fcf4f0","#fcf4ef","#fcf3ee","#fcf3ed","#fcf2ed","#fcf2ed","#fcf2ec","#fcf2eb","#fcf1eb","#fcf1ea","#fcf0ea","#fcefe8","#fcefe8","#fceee7","#fceee7","#fcede6","#fcede4","#fcece4","#fdece3","#fdebe2","#fdeae0","#fdeae0","#fdeadf","#fde9df","#fde8dd","#fde7dd","#fde6dc","#fde6db","#fde5d9","#fee4d8","#fee4d7","#fee3d7","#fee2d5","#fee2d4","#fee0d3","#fee0d2","#fedfd1","#fedecf","#feddce","#fedccd","#fedbcc","#fedac9","#fed9c8","#fed8c7","#fed7c6","#fdd5c4","#fdd5c3","#fdd4c2","#fdd3c1","#fdd1bf","#fdd1be","#fdd0bd","#fdcfbb","#fdceba","#fdcdb8","#fdccb7","#fdcbb6","#fdcab5","#fdc8b3","#fdc8b2","#fdc7b1","#fdc6b0","#fdc4ad","#fcc4ac","#fcc3ab","#fcc2aa","#fcc1a9","#fcc0a7","#fcbfa6","#fcbea5","#fcbda4","#fcbca2","#fcbba1","#fcb99f","#fcb89e","#fcb69b","#fcb59a","#fcb499","#fcb398","#fcb296","#fcaf94","#fcae92","#fcad91","#fcac90","#fcaa8d","#fca98c","#fca78b","#fca689","#fca487","#fca385","#fca284","#fca183","#fca082","#fc9d7f","#fc9c7e","#fc9b7c","#fc9a7b","#fc9879","#fc9777","#fc9576","#fc9475","#fc9272","#fc9171","#fc9070","#fc8f6f","#fc8e6e","#fc8b6b","#fc8a6a","#fc8969","#fc8868","#fc8666","#fc8565","#fc8464","#fc8363","#fc8161","#fc7f5f","#fc7e5e","#fb7d5d","#fb7c5c","#fb7a5a","#fb7959","#fb7858","#fb7757","#fb7454","#fb7353","#fb7252","#fb7151","#fb6f4f","#fb6e4e","#fb6d4d","#fb6c4c","#fb6b4b","#fb6849","#fa6748","#fa6647","#fa6446","#f96245","#f96044","#f85f43","#f85e42","#f75b41","#f75a40","#f7593f","#f6573e","#f6563d","#f5533c","#f5523b","#f5513a","#f45039","#f44d37","#f34c37","#f34a36","#f34935","#f24733","#f24533","#f14432","#f14331","#f14130","#f03f2e","#f03e2e","#ef3c2d","#ef3b2c","#ed392b","#ec382b","#eb372a","#ea362a","#e83429","#e73329","#e63228","#e53128","#e43027","#e22f27","#e12e26","#e02d26","#df2c25","#dd2a25","#dc2924","#db2824","#da2723","#d82523","#d72422","#d62322","#d52221","#d42021","#d31f20","#d21e20","#d11d1f","#d01c1f","#ce1b1e","#cd1a1e","#cc191d","#cb181d","#c9171c","#c8171c","#c7171c","#c5171c","#c3161b","#c2161b","#c1161b","#c0151b","#bf151b","#bd151a","#bc141a","#bb141a","#ba1419","#b81319","#b71319","#b61319","#b51318","#b31218","#b21218","#b11217","#b01217","#af1117","#ac1117","#ab1116","#aa1016","#a91016","#a71015","#a60f15","#a50f15","#a30f15","#9f0d14","#9c0d14","#9a0c14","#980c13","#950b13","#910a12","#8f0a12","#8c0912","#8a0812","#850711","#830711","#810610","#7f0610","#7a050f","#78040f","#77040f"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NO2 column number density [µmol/m²]",
+    "tickValues": [0.0, 45.0, 90.0, 135.0, 180.0]
+  },
+  "Legend": "S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-TROPONO2-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "18602fe4-03dc-4588-8f5e-8c61063f3125",
+      "LayerId": "S5P-L3GRD-TROPONO2-DAY",
+      "DataProjection": 3857
+    }
+  ],
+  "Stories": [
+    {
+      "Name": "COVID-19 Lockdowns Reduce Nitrogen Dioxide Levels",
+      "Id": "covid-no2"
+    },
+    {
+      "Name": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "Id": "extreme_air_pollution_india_and_pakistan"
+    },
+    {
+      "Name": "Urban Health and Megacities: the case of New Delhi",
+      "Id": "urban-health-final"
+    }
+  ]
+}

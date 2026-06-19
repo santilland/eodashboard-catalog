@@ -1,0 +1,60 @@
+{
+  "Name": "Total Column O₃ by Sentinel-5P TROPOMI (Daily)",
+  "Title": "Total Column O₃ by Sentinel-5P TROPOMI (Daily)",
+  "Description": "S5P-L3GRD-TCO3-DAY/S5P-L3GRD-TCO3-DAY.md",
+  "Themes": [
+    "atmosphere"
+  ],
+  "Tags": [
+    "O3",
+    "Ozone",
+    "Total Column",
+    "Stratosphere",
+    "Atmosphere",
+    "UV",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-5P"],
+      "Sensor": ["TROPOMI"]
+    }
+  },
+  "Agency": ["ESA"],
+  "References": [
+    {
+      "Name": "Source Product Page",
+      "Url": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/o3"
+    }
+  ],
+  "Image": "S5P-L3GRD-TCO3-DAY/S5P-L3GRD-TCO3-DAY_thumbnail.jpg",
+  "Colorlegend": {
+    "domain": [100.0, 500.0],
+    "range": [
+      "#04007a","#04007c","#04007e","#040083","#050086","#050088","#05008a","#05008f","#050092","#050094","#050097","#05019b","#05019c","#05019f","#0502a1","#0602a6","#0603a8","#0604aa","#0605ab","#0707af","#0709b1","#080bb3","#080cb4","#090fb7","#0911b9","#0a12ba","#0a14bc","#0a15bd","#0b18c1","#0c19c2","#0c1bc4","#0c1cc5","#0d1ec8","#0d1fca","#0d20cb","#0e22cd","#0e24d0","#0e26d1","#0f27d2","#0f28d4","#0f2ad7","#102bd8","#102cda","#102edc","#1030df","#1131e0","#1132e2","#1133e3","#1134e5","#1237e8","#1238e9","#1239ea","#123aeb","#143cee","#143eee","#1440ef","#1642f0","#1845f0","#1946ef","#1a48ef","#1b4aee","#1d4fec","#1d51ea","#1e53e8","#1f56e5","#1f5ae0","#1f5ddd","#1f5fda","#1f61d7","#1d66d0","#1c68cd","#1a6aca","#186cc6","#156fc3","#1173bc","#0e75b9","#0b77b5","#0879b1","#067dab","#067ea7","#0780a3","#09819f","#108596","#138692","#17888e","#1a898a","#208c81","#228d7d","#258e79","#279074","#2b936b","#2c9466","#2d9562","#2e975d","#2f9859","#309b4e","#309c49","#309e45","#319f40","#31a137","#32a333","#33a42e","#34a52a","#37a722","#38a81e","#3aa91b","#3daa18","#42ad12","#45ae0f","#48af0d","#4baf0b","#51b108","#54b208","#57b208","#5ab307","#5fb506","#63b506","#65b606","#68b706","#6bb806","#70ba05","#73bb05","#76bc05","#79bd05","#7ebe05","#80bf05","#82c005","#85c105","#8ac204","#8cc304","#8fc404","#91c404","#96c604","#99c704","#9cc804","#9ec804","#a3ca04","#a5cb03","#a7cb03","#aacc03","#accd03","#b0ce03","#b3cf03","#b5d003","#b7d103","#bcd203","#bed302","#c0d402","#c3d502","#c8d602","#cad702","#cdd802","#cfd902","#d4d902","#d6da02","#d8db02","#dadb02","#dfdd02","#e0de02","#e2de02","#e5de02","#eadf02","#ecdf02","#eddf02","#efdf02","#f0de03","#f3dd04","#f4dd04","#f5dc05","#f7da05","#f8d806","#f8d707","#f9d607","#fad508","#fad109","#fad00a","#face0b","#fbcc0b","#fbc90c","#fbc80d","#fbc60d","#fbc50e","#fbc20e","#fbc00f","#fbbf0f","#fbbd0f","#fbbc10","#fcb811","#fcb711","#fcb511","#fcb412","#fcb113","#fcaf13","#fcae13","#fcac13","#fca814","#fca614","#fca514","#fca315","#fca015","#fc9f15","#fc9d15","#fc9a15","#fc9716","#fc9616","#fc9416","#fc9216","#fc8f15","#fc8d15","#fc8b15","#fc8915","#fc8815","#fc8414","#fd8114","#fd7f14","#fd7d13","#fd7913","#fd7712","#fd7512","#fe7312","#fe6f11","#fe6d11","#fe6b11","#fe6810","#fe6410","#fe6110","#fe5f0f","#fe5c0f","#fe570f","#fe540e","#fe510e","#fe4f0e","#fe4c0e","#fe470e","#fe440d","#fd410d","#fd3e0d","#fc390d","#fb360d","#fb340d","#fa310d","#f82c0d","#f72a0d","#f6280d","#f5260d","#f2230d","#f1210d","#ef200d","#ee1f0d","#eb1c0d","#e91a0d","#e8190d","#e6170d","#e3150d","#e1130d","#e0120d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "O3 column number density [DU]",
+    "tickValues": [100.0, 200.0, 300.0, 400.0, 500.0]
+  },
+  "Legend": "S5P-L3GRD-TCO3-DAY/S5P-L3GRD-TCO3-DAY_legend.png",
+  "EodashIdentifier": "S5P-L3GRD-TCO3-DAY",
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com",
+      "Name": "Sentinel Hub",
+      "Type": "byoc",
+      "CollectionId": "9379feee-ae88-45e5-8448-fbf770597ead",
+      "LayerId": "S5P-L3GRD-TCO3-DAY",
+      "DataProjection": 3857
+    }
+  ]
+}

@@ -81,5 +81,11 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "index"
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Urban Health and Megacities: the case of New Delhi",
+      "Id": "urban-health-final"
+    }
+  ]
 }

@@ -35,7 +35,6 @@
       }
     ]
   },
-  "Legend": "ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange_legend.png",
   "Image": "ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.jpg",
   "References": [
     {
@@ -48,6 +47,7 @@
       "EndPoint": "https://api.earthsystemdatalab.net/api",
       "Type": "zarr",
       "Name": "xcube",
+      "Style": "http://0.0.0.0:8001/collections/ESDC_net_ecosystem_exchange/style.json",
       "StacEndpoint": "/ogc",
       "DatacubeId": "esdc",
       "Variable": "net_ecosystem_exchange",
@@ -62,36 +62,24 @@
       }
     }
   ],
+    "Process": {
+  "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "VegaDefinition": "ESDC_net_ecosystem_exchange/chart.json",
+  "EndPoints": [
+      {
+        "Url": "https://api.earthsystemdatalab.net/api/timeseries/esdc/net_ecosystem_exchange?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
+    ]
+  },
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://terra.nasa.gov/data/modis-data"
     }
-  ],
-  "Colorlegend": {
-    "domain": [
-      -7,
-      2
-    ],
-    "range": [
-      "#0000ff",
-      "#2727ff",
-      "#4e4eff",
-      "#7676ff",
-      "#9d9dff",
-      "#c4c4ff",
-      "#ebebff",
-      "#ffebeb",
-      "#ffc4c4",
-      "#ff9d9d",
-      "#ff7676",
-      "#ff4e4e",
-      "#ff2727",
-      "#ff0000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "[gC/m\u00b2/day]"
-  }
+  ]
 }

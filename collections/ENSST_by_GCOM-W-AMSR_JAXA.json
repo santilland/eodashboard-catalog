@@ -48,23 +48,24 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "cb154978-c54f-4e15-a39e-5da7e601194d",
-      "LayerId": "SST_BY_GCOM-W-AMSR_JAXA"
+      "LayerId": "SST_BY_GCOM-W-AMSR_JAXA",
+      "DataProjection": 3857
     }
   ],
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor",
+      "Roles": ["licensor"],
       "Url": "https://global.jaxa.jp/"
     },
     {
       "Name": "JAXA GCOM project",
-      "Roles": "producer",
+      "Roles": ["producer"],
       "Url": "https://suzaku.eorc.jaxa.jp/GCOM/index.html"
     },
     {
       "Name": "JAXA EORC",
-      "Roles": "processor",
+      "Roles": ["processor"],
       "Url": "https://earth.jaxa.jp/"
     }
   ],
@@ -91,6 +92,12 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "Sea Surface Temperature [\u00b0C]"
-  }
+    "title": "Sea Surface Temperature [°C]"
+  },
+  "Stories": [
+    {
+      "Name": "El Niño 2023-2024 Part 2: Rising Global Sea Surface Temperatures",
+      "Id": "rising_global_sea_surface_temperatures"
+    }
+  ]
 }

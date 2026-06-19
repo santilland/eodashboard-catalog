@@ -71,7 +71,7 @@
   "Provider": [
     {
       "Name": "JAXA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://global.jaxa.jp/"
     }
   ],
@@ -86,5 +86,11 @@
         "Type": "application/json"
       }
     ]
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "Id": "world_crop_supply_and_demand"
+    }
+  ]
 }

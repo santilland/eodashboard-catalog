@@ -4,9 +4,7 @@
   "EodashIdentifier": "EPA_Forest_fire_Methane_Yearly",
   "Subtitle": "Emissions from sector 5 from forest fires.",
   "Description": "EPA_Forest_fire_Methane_Yearly/EPA_Forest_fire_Methane_Yearly.md",
-  "Themes": [
-    "biomass"
-  ],
+  "Themes": ["biomass"],
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
@@ -14,13 +12,27 @@
       "Name": "VEDA",
       "CollectionId": "EPA-annual-emissions_5_Forest_Fires",
       "ColormapName": "rainbow",
-      "Rescale": [
-        0,
-        "2e10"
-      ],
+      "Rescale": [0, "2e10"],
       "Bidx": 1
     }
   ],
   "Image": "EPA_Forest_fire_Methane_Yearly/thumbnail.jpg",
-  "Legend": "EPA_Forest_fire_Methane_Yearly/cm_legend.png"
+  "Legend": "EPA_Forest_fire_Methane_Yearly/cm_legend.png",
+  "Colorlegend": {
+    "domain": [0, 2],
+    "range": ["#7f00ff", "#4756fb", "#0da4ef", "#2adcdc", "#62fac3", "#9cfaa3", "#d4dc7f", "#ffa457", "#ff562b", "#ff0000"],
+    "scaleType": "continuous",
+    "tickFormat": ".1f",
+    "title": "10^10 [molec/cm2/s]"
+  },
+  "Stories": [
+    {
+      "Name": "Forest Loss and Degradation",
+      "Id": "forest_loss_and_degradation"
+    },
+    {
+      "Name": "Australian Bushfires",
+      "Id": "australian-bushfires"
+    }
+  ]
 }

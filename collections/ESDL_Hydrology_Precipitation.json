@@ -79,7 +79,7 @@
   "References": [
     {
       "Name": "Daily precipitation product",
-      "Url": "https://stac.eurac.edu:8080/collections/rainfall_all_domain"
+      "Url": "https://stac.eurac.edu/collections/rainfall_all_domain"
     }
   ],
   "Resources": [
@@ -101,6 +101,19 @@
       }
     }
   ],
+  "Process": {
+  "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "VegaDefinition": "ESDL_Hydrology_Precipitation/chart.json",
+  "EndPoints": [
+      {
+        "Url": "https://api.earthsystemdatalab.net/api/timeseries/hydrology/precip?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
+    ]
+  },
   "Legend": "ESDL_Hydrology_Precipitation/cm_legend.png",
   "Image": "ESDL_Hydrology_Precipitation/image.jpg",
   "yAxis": "mm/day",

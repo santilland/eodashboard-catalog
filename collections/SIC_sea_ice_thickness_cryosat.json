@@ -59,7 +59,7 @@
   "Provider": [
     {
       "Name": "ESA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://climate.esa.int/en/data/#/dashboard"
     }
   ],
@@ -87,5 +87,11 @@
     "scaleType": "continuous",
     "tickFormat": ".0f",
     "title": "Sea-ice thickness [m]"
-  }
+  },
+  "Stories": [
+    {
+      "Name": "Sea Ice Freeboard and Thickness",
+      "Id": "sea-ice-freeboard-thickness"
+    }
+  ]
 }

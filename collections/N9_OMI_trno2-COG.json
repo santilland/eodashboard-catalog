@@ -40,13 +40,6 @@
       "Url": "https://www.earthdata.nasa.gov/covid19/indicators/no2"
     }
   ],
-  "Services": [
-    {
-      "Endpoint": "https://openveda.cloud/api/raster/cog/statistics",
-      "Name": "VEDA Statistics",
-      "Rescale": "1e-14"
-    }
-  ],
   "Resources": [
     {
       "EndPoint": "https://openveda.cloud/api/stac/",
@@ -64,7 +57,7 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://search.earthdata.nasa.gov/search?q=OMNO2d_003"
     }
   ],
@@ -96,7 +89,7 @@
   "Process": {
     "Name": "VEDA Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_vega_definition.json",
+    "VegaDefinition": "N9_OMI_trno2-COG/chart.json",
     "EndPoints": [
       {
         "Identifier": "veda_statistics",

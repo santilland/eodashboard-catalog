@@ -50,7 +50,8 @@
       "Name": "Sentinel Hub",
       "Type": "byoc",
       "CollectionId": "4ad9663f-d173-411d-8d28-3081d4d9e3aa",
-      "LayerId": "AWS_VIS_SO2_DAILY_DATA"
+      "LayerId": "AWS_VIS_SO2_DAILY_DATA",
+      "DataProjection": 3857
     }
   ],
   "Services": [
@@ -85,7 +86,7 @@
   "Process": {
     "Name": "Sentinel Hub Statistics",
     "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
-    "VegaDefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/statistical_api_vega_definition.json",
+    "VegaDefinition": "N1_SO2/chart.json",
     "EndPoints": [
       {
         "Identifier": "sentinelhub-statistics",

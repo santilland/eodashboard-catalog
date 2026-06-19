@@ -3,9 +3,7 @@
   "Title": "SMOS Ocean Salinity",
   "EodashIdentifier": "SMOS_OS",
   "Description": "smos_ocean_salinity/smos_ocean_salinity.md",
-  "Themes": [
-    "oceans"
-  ],
+  "Themes": ["water"],
   "Tags": [
     "L-band",
     "Ocean salinity",
@@ -26,17 +24,11 @@
   ],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "SMOS"
-      ],
-      "Sensor": [
-        "MIRAS"
-      ]
+      "Satellite": ["SMOS"],
+      "Sensor": ["MIRAS"]
     }
   },
-  "Agency": [
-    "ESA"
-  ],
+  "Agency": ["ESA"],
   "Colorlegend": {
     "title": "Sea Surface Salinity [psu]",
     "range": [
@@ -47,10 +39,7 @@
       "rgb(250, 0, 0)",
       "rgb(128, 0, 0)"
     ],
-    "domain": [
-      0,
-      50
-    ]
+    "domain": [0, 50]
   },
   "Image": "SMOS_OS/SMOS_OS.png",
   "Resources": [
@@ -62,13 +51,23 @@
       "DatacubeId": "smos-os",
       "Variable": "SSS_corr",
       "ColormapName": "jet",
-      "Rescale": [
-        0,
-        50
-      ],
+      "Rescale": [0, 50],
       "Query": {
         "Start": "2023-01-04T00:00:00Z"
       }
     }
-  ]
+  ],
+  "Process": {
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+    "VegaDefinition": "smos_ocean_salinity/chart.json",
+    "EndPoints": [
+      {
+        "Url": "https://api.earthsystemdatalab.net/api/timeseries/smos-os/SSS_corr?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
+    ]
+  }
 }

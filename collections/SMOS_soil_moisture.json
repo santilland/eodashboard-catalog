@@ -3,9 +3,7 @@
   "Title": "SMOS Soil Moisture",
   "EodashIdentifier": "SMOS_SM",
   "Description": "smos_soil_moisture/smos_soil_moisture.md",
-  "Themes": [
-    "agriculture"
-  ],
+  "Themes": ["agriculture"],
   "Tags": [
     "CO2",
     "Photosynthesis",
@@ -30,17 +28,11 @@
   ],
   "DataSource": {
     "Spaceborne": {
-      "Satellite": [
-        "SMOS"
-      ],
-      "Sensor": [
-        "MIRAS"
-      ]
+      "Satellite": ["SMOS"],
+      "Sensor": ["MIRAS"]
     }
   },
-  "Agency": [
-    "ESA"
-  ],
+  "Agency": ["ESA"],
   "Colorlegend": {
     "title": "Soil moisture [mg m-3]",
     "range": [
@@ -51,9 +43,19 @@
       "rgb(250, 0, 0)",
       "rgb(128, 0, 0)"
     ],
-    "domain": [
-      0,
-      1
+    "domain": [0, 1]
+  },
+  "Process": {
+    "JsonForm": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+    "VegaDefinition": "SMOS_SM/chart.json",
+    "EndPoints": [
+      {
+        "Url": "https://api.earthsystemdatalab.net/api/timeseries/smos-sm/Soil_Moisture?aggMethods=median",
+        "Identifier": "xcube_statistics",
+        "Method": "POST",
+        "Body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json",
+        "Type": "application/json"
+      }
     ]
   },
   "Image": "SMOS_SM/SMOS_SM.png",
@@ -66,10 +68,7 @@
       "DatacubeId": "smos-sm",
       "Variable": "Soil_Moisture",
       "ColormapName": "jet",
-      "Rescale": [
-        0,
-        1
-      ],
+      "Rescale": [0, 1],
       "Query": {
         "Start": "2023-01-04T00:00:00Z"
       }

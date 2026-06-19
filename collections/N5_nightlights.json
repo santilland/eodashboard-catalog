@@ -436,7 +436,7 @@
   "Provider": [
     {
       "Name": "NASA",
-      "Roles": "licensor, producer, processor",
+      "Roles": ["licensor, producer, processor"],
       "Url": "https://search.earthdata.nasa.gov/search?portal=idn&fi=VIIRS"
     }
   ],
