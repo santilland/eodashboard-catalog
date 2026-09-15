@@ -1,0 +1,336 @@
+{
+  "type": "Collection",
+  "id": "ndvi_deepESDL",
+  "stac_version": "1.1.0",
+  "description": "### Normalized Difference Vegetation Index (NDVI) (Weekly average)\nNDVI is a key indicator used in remote sensing to measure vegetation health. It works by comparing how plants reflect light in two specific spectral bands: near-infrared (NIR) and red light. The NDVI formula uses the difference between near-infrared (NIR) and red reflectance, divided by their sum:\n\n*NDVI = (NIR - Red) / (NIR + Red)*\n\n### Interpreting NDVI\nNDVI values range from -1 to 1. **Healthy**, dense vegetation reflects more NIR and absorbs more red light, resulting in **higher NDVI values**, while bare soil, water, or **stressed/unhealthy** vegetation yield **lower NDVI values**.\n\n### Additional Information\n* NDVI was calculated using MODIS/Terra + Aqua BRDF/Albedo Nadir Reflectance products, specifically using the red and NIR bands, and aggregated into 8-day means at a 0.25° spatial resolution.\n* The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://api.earthsystemdatalab.net/api/tiles/esdc/ndvi/{z}/{y}/{x}?crs=EPSG:3857&time={time}&vmin=-1&vmax=1&cbar=RdYlGn",
+      "type": "image/png",
+      "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) "
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) "
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": -1,
+              "format": "range",
+              "minimum": 0,
+              "step": 0.1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 1,
+              "format": "range",
+              "maximum": 1.5,
+              "step": 0.1
+            }
+          },
+          "format": "minmax"
+        },
+        "cbar": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "RdYlGn",
+          "enum": [
+            "Accent",
+            "Blues",
+            "BrBG",
+            "BuGn",
+            "BuPu",
+            "CMRmap",
+            "Dark2",
+            "GnBu",
+            "Grays",
+            "Greens",
+            "Greys",
+            "OrRd",
+            "Oranges",
+            "PRGn",
+            "Paired",
+            "Pastel1",
+            "Pastel2",
+            "PiYG",
+            "PuBu",
+            "PuBuGn",
+            "PuOr",
+            "PuRd",
+            "Purples",
+            "RdBu",
+            "RdGy",
+            "RdPu",
+            "RdYlBu",
+            "RdYlGn",
+            "Reds",
+            "Set1",
+            "Set2",
+            "Set3",
+            "Spectral",
+            "Wistia",
+            "YlGn",
+            "YlGnBu",
+            "YlOrBr",
+            "YlOrRd",
+            "afmhot",
+            "algae",
+            "algae_i",
+            "algae_r_i",
+            "amp",
+            "amp_i",
+            "amp_r_i",
+            "autumn",
+            "balance",
+            "balance_i",
+            "balance_r_i",
+            "berlin",
+            "binary",
+            "bone",
+            "brg",
+            "bwr",
+            "chl_DeM2",
+            "cividis",
+            "cool",
+            "coolwarm",
+            "copper",
+            "cubehelix",
+            "curl",
+            "curl_i",
+            "curl_r_i",
+            "deep",
+            "deep_i",
+            "deep_r_i",
+            "delta",
+            "delta_i",
+            "delta_r_i",
+            "dense",
+            "dense_i",
+            "dense_r_i",
+            "diff",
+            "diff_i",
+            "diff_r_i",
+            "esa_cci_lc_classes",
+            "flag",
+            "gist_earth",
+            "gist_gray",
+            "gist_grey",
+            "gist_heat",
+            "gist_ncar",
+            "gist_rainbow",
+            "gist_stern",
+            "gist_yarg",
+            "gist_yerg",
+            "gnuplot",
+            "gnuplot2",
+            "gray",
+            "gray_i",
+            "gray_r_i",
+            "grey",
+            "haline",
+            "haline_i",
+            "haline_r_i",
+            "hot",
+            "hsv",
+            "ice",
+            "ice_i",
+            "ice_r_i",
+            "inferno",
+            "jet",
+            "magma",
+            "managua",
+            "matter",
+            "matter_i",
+            "matter_r_i",
+            "nipy_spectral",
+            "ocean",
+            "oxy",
+            "oxy_i",
+            "oxy_r_i",
+            "phase",
+            "phase_i",
+            "phase_r_i",
+            "pink",
+            "plasma",
+            "plasma_r",
+            "prism",
+            "rain",
+            "rain_i",
+            "rain_r_i",
+            "rainbow",
+            "reg_map",
+            "reg_map_i",
+            "reg_map_r_i",
+            "seismic",
+            "solar",
+            "solar_i",
+            "solar_r_i",
+            "speed",
+            "speed_i",
+            "speed_r_i",
+            "spring",
+            "summer",
+            "tab10",
+            "tab20",
+            "tab20b",
+            "tab20c",
+            "tarn",
+            "tarn_i",
+            "tarn_r_i",
+            "tempo",
+            "tempo_i",
+            "tempo_r_i",
+            "terrain",
+            "thermal",
+            "thermal_i",
+            "thermal_r_i",
+            "topo",
+            "topo_i",
+            "topo_r_i",
+            "turbid",
+            "turbid_i",
+            "turbid_r_i",
+            "turbo",
+            "twilight",
+            "twilight_shifted",
+            "vanimo",
+            "viridis",
+            "viridis_alpha",
+            "winter"
+          ]
+        }
+      }
+    },
+    "legend": {
+      "title": "Value Range",
+      "scaleType": "continuous",
+      "tickFormat": ".1f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "cbar"
+    }
+  },
+  "eodash:stories": {
+    "scienceHub_timeSeries_vegetation": {
+      "href": "https://eodashboard.org/story/?id=scienceHub_timeSeries_vegetation",
+      "type": "text/markdown",
+      "title": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/scienceHub_timeSeries_vegetation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "vegetation",
+    "NDVI",
+    "monitoring",
+    "MODIS"
+  ],
+  "subcode": "ndvi_deepESDL",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Aqua"
+  ],
+  "endpointtype": "xcube_zarr",
+  "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-05T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "scienceHub_timeSeries_vegetation": {
+      "href": "https://eodashboard.org/story/?id=scienceHub_timeSeries_vegetation",
+      "type": "text/markdown",
+      "title": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/scienceHub_timeSeries_vegetation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "type": "Collection",
+  "id": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Daily)\nThe Aerosol Layer Height (ALH) reveals the **vertical position** of aerosol layers in the free troposphere, pinpointing how high above the surface particles such as desert dust, biomass burning smoke, and volcanic ash are suspended. Unlike columnar aerosol measures, the ALH provides crucial three-dimensional context: the same aerosol plume can have profoundly different climatic, health, and safety implications depending on whether it resides near the surface or several kilometres aloft.\n\n#### About the dataset\n\n- The ALH is measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard Copernicus ESA's [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite, operating in the visible part of the spectrum.\n- The ALH is retrieved using an Optimal Estimation approach, deriving the pressure (and corresponding altitude) at the centre of a vertically localised aerosol layer from measurements performed in the visible part of the spectrum.\n- The measurements are performed once per day, providing near-global coverage of aerosol vertical structure for cloud-free scenes.\n- The product reports the mid-pressure and mid-height of the aerosol layer.\n- More information on the Tropomi aerosol index measurements and quality assessment can be found in the [Product Readme file](https://sentiwiki.copernicus.eu/__attachments/1673595/S5P-MPC-KNMI-PRF-AER_LH%20-%20Sentinel-5P%20Aerosol%20Layer%20Height%20Product%20Readme%20File%202025%20-%202.8.pdf).\n\n#### Use cases\nHeight information for aerosols in the free troposphere is particularly important for aviation safety. Scientific applications include radiative forcing studies, long-range transport modelling and studies of cloud formation processes. Aerosol height information also helps to interpret the [UV Aerosol Index (UVAI)](https://eodashboard.org/explore/?x=0.0000&y=0.0000&z=2.1662&template=expert&indicator=S5P-L3GRD-AAI-DAY&datetime=2024-01-24) in terms of aerosol absorption as the index is strongly height-dependent.\n",
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Daily)",
+      "wms:layers": [
+        "S5P-L3GRD-ALH-DAY"
+      ],
+      "role": [
+        "data"
+      ],
+      "proj:epsg": 3857
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Daily)"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0.0,
+      12.0
+    ],
+    "range": [
+      "#fcee98",
+      "#77ca67",
+      "#3b9287",
+      "#0e5a90",
+      "#403a71"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Aerosol Layer Height [km]"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-ALH-DAY/S5P-L3GRD-ALH-DAY_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Aerosol",
+    "Atmosphere",
+    "Particles",
+    "Dust",
+    "Ash",
+    "ALH",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-ALH-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "proj:epsg": 3857,
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Aerosol Layer Height (ALH) by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-04-30T00:00:00Z",
+          "2026-03-22T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-ALH-DAY/S5P-L3GRD-ALH-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/alh",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

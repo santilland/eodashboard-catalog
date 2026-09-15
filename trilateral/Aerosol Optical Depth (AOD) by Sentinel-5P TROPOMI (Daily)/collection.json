@@ -1,0 +1,214 @@
+{
+  "type": "Collection",
+  "id": "Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)\n\nThe Aerosol Optical Depth (AOD), also referred to as **Aerosol Optical Thickness (AOT)**, quantifies the **total column amount of aerosols by measuring how strongly particles scatter and absorb sunlight** between the surface and the top of the atmosphere.\n\nUnlike [aerosol height products](https://eodashboard.org/explore/?x=0.0000&y=0.0000&z=2.3432&template=expert&indicator=S5P-L3GRD-ALH-DAY&datetime=2025-01-06), AOD does not provide vertical information. Instead, it indicates the overall abundance of aerosols in the atmospheric column: higher AOD values correspond to hazier conditions and larger aerosol burdens, while low values indicate relatively clean air.\n\n#### About the dataset\n\n- The AOD product is derived from measurements by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite.\n- It provides daily global spatial distribution of aerosol optical thickness across cloud-free scenes.\n- The [retrieval algorithm](https://data-portal.s5p-pal.com/product-docs/aot/s5p_aot_pum_v2.1.0_signed.pdf) derives aerosol optical thickness in the 340–494 nm wavelength range, selected because it contains important information on aerosol absorption.\n- The dataset captures the spatial distribution of aerosols from both natural sources (e.g. desert dust, volcanic ash, sea salt) and anthropogenic sources (e.g. industrial pollution, biomass burning).\n- Together with the Sentinel-5P [Aerosol Absorbing Index (AAI)](https://eodashboard.org/explore/?x=0.0000&y=0.0000&z=2.4959&template=expert&indicator=S5P-L3GRD-AAI-DAY&datetime=2024-01-24) and [Aerosol Layer Height (ALH)](https://eodashboard.org/explore/?x=15.0000&y=18.3149&z=2.3450&template=expert&indicator=S5P-L3GRD-ALH-DAY&datetime=2025-01-06) products, AOD forms part of the Copernicus global aerosol monitoring suite.\n- More information on the TROPOMI AOD measurements and quality assessment can be found in the [Product Readme file](https://data-portal.s5p-pal.com/product-docs/aot/s5p_aot_pum_v2.1.0_signed.pdf).\n\n#### Use cases\n\nAOD is particularly useful for identifying large-scale aerosol events and assessing their evolution over time.Applications include:\n- Air quality assessment and pollution monitoring\n- Tracking desert dust and wildfire smoke transport\n- Volcanic ash monitoring\n- Climate research, including aerosol radiative forcing studies\n- Validation and assimilation in atmospheric and transport models\n\n\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)/collection.json",
+      "type": "application/json",
+      "title": "Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "S5P-L3GRD-AOD-DAY",
+      "id": "Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)",
+      "themes": [
+        "atmosphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_thumbnail.jpg"
+      ],
+      "tags": [
+        "Aerosol",
+        "Atmosphere",
+        "Particles",
+        "Dust",
+        "Ash",
+        "AOD",
+        "Open data",
+        "Open Science",
+        "TROPOMI",
+        "Sentinel-5P",
+        "Remote Sensing",
+        "Daily Data",
+        "S5P",
+        "Copernicus"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "S5P-L3GRD-AOD-DAY",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0.2,
+      10
+    ],
+    "range": [
+      "#dbe1dd",
+      "#91ddc3",
+      "#54bbaa",
+      "#348fac",
+      "#35629d",
+      "#354076",
+      "#2f2145",
+      "#2e292d"
+    ],
+    "scaleType": "log10",
+    "tickFormat": ".1f",
+    "title": "Aerosol Optical Depth @ 494nm"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Aerosol",
+    "Atmosphere",
+    "Particles",
+    "Dust",
+    "Ash",
+    "AOD",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-AOD-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "title": "Aerosol Optical Depth (AOD) by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-05-01T00:00:00Z",
+          "2025-10-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "S5P-L3GRD-AOD-DAY"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AOD-DAY/S5P-L3GRD-AOD-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/aod-494nm",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

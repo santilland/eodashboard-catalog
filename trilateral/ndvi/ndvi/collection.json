@@ -5,126 +5,12 @@
   "description": "## GCOM-C/SGLI L3 Normalized Difference Vegetation Index (NDVI)\n\nThis data is accessible on JAXA's G-Portal. G-Portal is a portal system allowing users to search, and download products acquired by [JAXA](https://global.jaxa.jp/) Earth observation satellites.\n\nAccess this data here: [https://gportal.jaxa.jp/](https://gportal.jaxa.jp/) \n",
   "links": [
     {
-      "rel": "root",
-      "href": "../../catalog.json",
-      "type": "application/json",
-      "title": "Earth Observing Dashboard"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2022/2022-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2022/2022-02-14T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-02-14T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2022/2022-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2022/2022-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2022/2022-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2022/2022-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-06-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2023/2023-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2023/2023-02-14T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-02-14T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2023/2023-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2023/2023-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2023/2023-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2023/2023-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-06-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2024/2024-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2024/2024-02-15T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-02-15T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2024/2024-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2024/2024-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2024/2024-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ndvi/2024/2024-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-06-15T23:59:30Z"
-    },
-    {
       "rel": "wms",
-      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "href": "https://gpwmap.jaxa.jp/wms",
       "type": "image/jpeg",
-      "title": "ndvi",
+      "title": "Normalized Difference Vegetation Index",
       "wms:layers": [
-        "NDVI-GCOMC-World-Monthly"
+        "EODASH:NDVI-GCOMC-World-Monthly"
       ],
       "role": [
         "data"
@@ -134,6 +20,12 @@
       ]
     },
     {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
@@ -141,7 +33,24 @@
     }
   ],
   "subtitle": "Normalized Difference Vegetation Index",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.png",
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      1
+    ],
+    "range": [
+      "#b79a4b",
+      "#ece267",
+      "#abff38",
+      "#61e43e",
+      "#1c9c03",
+      "#0e4303"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".1f",
+    "title": "NDVI"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.jpg",
   "themes": [
     "biomass"
   ],
@@ -159,20 +68,6 @@
   "satellite": [
     "GCOM-C"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      "0 (Water)",
-      "1 (Non-crop)",
-      "2 (Crop)"
-    ],
-    "range": [
-      "#000004",
-      "#a6317d",
-      "#fcfdbf"
-    ],
-    "scaleType": "categorical",
-    "title": "Land Cover Class"
-  },
   "endpointtype": "WMS_Time",
   "title": "Normalized Difference Vegetation Index",
   "extent": {
@@ -180,8 +75,8 @@
       "bbox": [
         [
           -180.0,
-          -89.99999999997118,
-          179.99999999994236,
+          -90.0,
+          180.0,
           90.0
         ]
       ]
@@ -189,8 +84,8 @@
     "temporal": {
       "interval": [
         [
-          "2022-01-16T11:59:30Z",
-          "2024-06-15T23:59:30Z"
+          "2022-01-01T00:00:00Z",
+          "2026-03-01T00:00:00Z"
         ]
       ]
     }
@@ -203,15 +98,16 @@
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10e_ndvi/E10e_ndvi.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

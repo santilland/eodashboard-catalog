@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "4D_Greenland_Meltmap",
   "stac_version": "1.1.0",
-  "description": "# Greenland meltmaps 2007 - 2021 \n### PROTOTYPE PRODUCT\n\nAuthor: Enveo IT, F\u00fcrstenweg 176, 6020 Innsbruck, Austria\n\n\nThe data set contains Antarctic-wide daily melt maps (indicating presence of liquid water) from 2007 until 2021 derived from the ASCAT Enhanced Resolution\u00a0\nScatterometer Image Reconstruction (SIR) product [1]. The melting extent/stage maps have a fixed colour palette, where the coding is as follows:\u00a0\u00a0\n\n 0:   No melt/liquid water presence down to signal penetration limit (for C-Band in the order of several metres)\n \n 1:   Surface layer melt (increase in depth of wet snow layer\n \n 2:   Wet snow layer \u2013 saturated signal\n \n 3:   Increase of refrozen layer above wet snow\n \n 4:   Stationary condition\n \n 255: NoData Value\n    \n    \nBased on these melt maps, value added melt map products are generated, indicating the melt onset, the melt duration and the end of the melt season on a pixel-by-pixel basis. \n\n**Explore these additional value added products on EO Dashboard:**\n\n* [Melt onset](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Onset) - refers to the first time that there are three consecutive days of melt in a year, thereby indicating the beginning of the snowmelt season.\n* [End of melt season](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Season_End) - the melt ending is marked by three consecutive days of stable winter (reference) conditions after the last refreezing event of the year. \n* [Melt duration](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Duration) - refers to the duration from the melt onset to the end date of melt.\n\nAll products are provided in GeoTiff format at a grid spacing of 5 km x 5 km in the projection WGS 84 / NSIDC Sea Ice Polar Stereographic North (EPSG:3413).\u00a0\n\n------------------------------------------------\n[1] The SIR product is processed by the Microwave Earth Remote Sensing Laboratory (MERS) at Brigham Young University (BYU) and based on the full resolution (SZF)\u00a0ASCAT C-Band Scatterometer data. It provides an enhanced resolution of 5km by combining multiple pass, irregularly spaced data into higher-resolution gridded images. The SIR product used combines all data acquired within a single 24-hr period (msfa). \n\n### Reference: \nLindsley, R. D. and Long, D. G. 2010. Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3.\n\n### Data Access:\nESA Open Science Data Catalogue https://opensciencedata.esa.int/projects/4d-greenland/collection \n\n### 4D Greenland Project Page\nhttps://4dgreenland.eo4cryo.dk/\n\n\n",
+  "description": "# Greenland meltmaps 2007 - 2021 \n### PROTOTYPE PRODUCT\n\nAuthor: Enveo IT, Fürstenweg 176, 6020 Innsbruck, Austria\n\n\nThe data set contains Antarctic-wide daily melt maps (indicating presence of liquid water) from 2007 until 2021 derived from the ASCAT Enhanced Resolution \nScatterometer Image Reconstruction (SIR) product [1]. The melting extent/stage maps have a fixed colour palette, where the coding is as follows:  \n\n 0:   No melt/liquid water presence down to signal penetration limit (for C-Band in the order of several metres)\n \n 1:   Surface layer melt (increase in depth of wet snow layer\n \n 2:   Wet snow layer – saturated signal\n \n 3:   Increase of refrozen layer above wet snow\n \n 4:   Stationary condition\n \n 255: NoData Value\n    \n    \nBased on these melt maps, value added melt map products are generated, indicating the melt onset, the melt duration and the end of the melt season on a pixel-by-pixel basis. \n\n**Explore these additional value added products on EO Dashboard:**\n\n* [Melt onset](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Onset) - refers to the first time that there are three consecutive days of melt in a year, thereby indicating the beginning of the snowmelt season.\n* [End of melt season](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Season_End) - the melt ending is marked by three consecutive days of stable winter (reference) conditions after the last refreezing event of the year. \n* [Melt duration](https://eodashboard.org/explore?indicator=4D_Greenland_Melt_Duration) - refers to the duration from the melt onset to the end date of melt.\n\nAll products are provided in GeoTiff format at a grid spacing of 5 km x 5 km in the projection WGS 84 / NSIDC Sea Ice Polar Stereographic North (EPSG:3413). \n\n------------------------------------------------\n[1] The SIR product is processed by the Microwave Earth Remote Sensing Laboratory (MERS) at Brigham Young University (BYU) and based on the full resolution (SZF) ASCAT C-Band Scatterometer data. It provides an enhanced resolution of 5km by combining multiple pass, irregularly spaced data into higher-resolution gridded images. The SIR product used combines all data acquired within a single 24-hr period (msfa). \n\n### Reference: \nLindsley, R. D. and Long, D. G. 2010. Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3.\n\n### Data Access:\nESA Open Science Data Catalogue https://opensciencedata.esa.int/projects/4d-greenland/collection \n\n### 4D Greenland Project Page\nhttps://4dgreenland.eo4cryo.dk/\n\n\n",
   "links": [
     {
       "rel": "root",
@@ -22,12 +22,19 @@
       "themes": [
         "cryosphere"
       ],
+      "providers": [
+        "ESA",
+        "EUMETSAT"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.jpg"
+      ],
       "tags": [
         "Greenland",
         "Arctic",
         "4D Visualization",
-        "Climate change",
-        "Polar regions",
+        "climate change",
+        "Polar Regions",
         "Open data",
         "Open Science",
         "Cryosphere",
@@ -48,7 +55,70 @@
       ],
       "satellite": [
         "MetOp"
-      ]
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3413",
+        "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -5314763.31,
+          -5314763.31,
+          5314763.31,
+          5314763.31
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs"
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -57,9 +127,64 @@
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:citation": "Citing the data:\nLindsley, R. D. and Long, D. G. (2010): Standard BYU ASCAT land/ice image products. Microwave Earth Remote Sensing Laboratory, 3\n",
   "subtitle": "Greenland Meltmap from 4D Greenland",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.png",
+  "eox:colorlegend": {
+    "domain": [
+      "no melt l.",
+      "surface melt l.",
+      "wet snow l.",
+      "new top frozen l."
+    ],
+    "range": [
+      "#AFABAB",
+      "#B4C7E7",
+      "#66A2D8",
+      "#FFF3CC"
+    ],
+    "scaleType": "categorical",
+    "title": "Ice melting status"
+  },
+  "eodash:stories": {
+    "jaxa-greenland-melting-and-darkening": {
+      "href": "https://eodashboard.org/story/?id=jaxa-greenland-melting-and-darkening",
+      "type": "text/markdown",
+      "title": "Recent Melting and Darkening of the Greenland Ice Sheet",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/jaxa-greenland-melting-and-darkening.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thwaites-intro": {
+      "href": "https://eodashboard.org/story/?id=thwaites-intro",
+      "type": "text/markdown",
+      "title": "Collaboration on Glaciers and Ice Sheets Research",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/thwaites-intro.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.jpg",
   "themes": [
     "cryosphere"
   ],
@@ -67,8 +192,8 @@
     "Greenland",
     "Arctic",
     "4D Visualization",
-    "Climate change",
-    "Polar regions",
+    "climate change",
+    "Polar Regions",
     "Open data",
     "Open Science",
     "Cryosphere",
@@ -90,32 +215,20 @@
   "satellite": [
     "MetOp"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      "no melt l.",
-      "surface melt l.",
-      "wet snow l.",
-      "new top frozen l."
-    ],
-    "range": [
-      "#AFABAB",
-      "#B4C7E7",
-      "#66A2D8",
-      "#FFF3CC"
-    ],
-    "scaleType": "categorical",
-    "title": "Ice melting status"
+  "eodash:mapProjection": {
+    "name": "EPSG:3413",
+    "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [
+      -5314763.31,
+      -5314763.31,
+      5314763.31,
+      5314763.31
+    ]
   },
   "title": "Greenland Meltmap",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -89.314518,
-          58.787273,
-          7.554587,
-          83.946756
-        ],
         [
           -89.314518,
           58.787273,
@@ -137,7 +250,7 @@
   "providers": [
     {
       "name": "ESA",
-      "url": "https://sentinel.esa.int/web/sentinel/"
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
     },
     {
       "name": "EUMETSAT",
@@ -158,7 +271,7 @@
       "ASCAT"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.jpg"
     ]
   },
   "assets": {
@@ -169,8 +282,44 @@
         "metadata"
       ]
     },
+    "jaxa-greenland-melting-and-darkening": {
+      "href": "https://eodashboard.org/story/?id=jaxa-greenland-melting-and-darkening",
+      "type": "text/markdown",
+      "title": "Recent Melting and Darkening of the Greenland Ice Sheet",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/jaxa-greenland-melting-and-darkening.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thwaites-intro": {
+      "href": "https://eodashboard.org/story/?id=thwaites-intro",
+      "type": "text/markdown",
+      "title": "Collaboration on Glaciers and Ice Sheets Research",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/thwaites-intro.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/4D_Greenland_Meltmap/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

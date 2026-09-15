@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "GHS-BUILT-S-R2023A",
   "stac_version": "1.1.0",
-  "description": "## Global Human Settlement (JRC GHS-BUILT-S R2023A)\n\n**Dataset:** GHS-BUILT-S R2023A - GHS built-up surface spatial raster dataset, derived\nfrom Sentinel-2 composite and Landsat, multi-temporal (1975-2030)\n\n**Dataset Documentation:** \nhttps://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422 \n\nThe datasets in the dashboard range from 0 (that is transparent) to 10 000 m2 - the square meters of built areas.\n\n**Short description:** The spatial raster dataset depicts the distribution of built-up surfaces, expressed as number of square metres. The data report about the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses.\nData are spatial-temporal interpolated or extrapolated from 1975 to 2030 in 5 years intervals.\nFor the temporal anchor point of 2018 the data is published at 10m as observed from the S2 image data.\n\n**Access dataset:**\n- from EC JRC Data Catalogue: https://ghsl.jrc.ec.europa.eu/download.php?ds=bu\n- on Euro Data Cube:\n\n**Use this dataset:**\n- [Execute Jupyter Notebook Fire impact analysis on Euro Data Cube](https://bids2023-nbviewer.hub.eox.at/localfile/bids2023/notebooks/Fire_impact_analysis.ipynb)\n\n**Cite as:** \n- Pesaresi M., Politis P. (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from Sentinel2 composite and Landsat, multitemporal (1975-2030)European Commission, Joint Research Centre (JRC)\n- [PID: http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea](http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea)\n- [doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA](https://doi.org/10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA)\n\n**Concept & Methodology:** European Commission\n\nGHSL Data Package 2023, Publications Office of the European Union, Luxembourg, 2023, JRC133256, ISBN 978-92-68-02341-9, doi:10.2760/098587\n",
+  "description": "## Global Human Settlement (JRC GHS-BUILT-S R2023A)\n\n**Dataset:** GHS-BUILT-S R2023A - GHS built-up surface spatial raster dataset, derived\nfrom Sentinel-2 composite and Landsat, multi-temporal (1975-2030)\n\n**Dataset Documentation:** \nhttps://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf?t=1683540422 \n\nThe datasets in the dashboard range from 0 (that is transparent) to 10 000 m2 - the square meters of built areas.\n\n**Short description:** The spatial raster dataset depicts the distribution of built-up surfaces, expressed as number of square metres. The data report about the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses.\nData are spatial-temporal interpolated or extrapolated from 1975 to 2030 in 5 years intervals.\nFor the temporal anchor point of 2018 the data is published at 10m as observed from the S2 image data.\n\n**Access dataset:**\n- from EC JRC Data Catalogue: https://ghsl.jrc.ec.europa.eu/download.php?ds=bu\n- on Euro Data Cube:\n\n**Use this dataset:**\n- [Execute Jupyter Notebook Fire impact analysis on Euro Data Cube](https://esa-eodashboards.github.io/eodashboard-notebooks/notebooks/fire-impact-analysis/)\n\n**Cite as:** \n- Pesaresi M., Politis P. (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from Sentinel2 composite and Landsat, multitemporal (1975-2030)European Commission, Joint Research Centre (JRC)\n- [PID: http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea](http://data.europa.eu/89h/9f06f36f-4b11-47ec-abb0-4f8b7b1d72ea)\n- [doi:10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA](https://doi.org/10.2905/9F06F36F-4B11-47EC-ABB0-4F8B7B1D72EA)\n\n**Concept & Methodology:** European Commission\n\nGHSL Data Package 2023, Publications Office of the European Union, Luxembourg, 2023, JRC133256, ISBN 978-92-68-02341-9, doi:10.2760/098587\n",
   "links": [
     {
       "rel": "root",
@@ -21,6 +21,13 @@
       "id": "GHS-BUILT-S-R2023A",
       "themes": [
         "economy"
+      ],
+      "providers": [
+        "Copernicus Emergency Management service",
+        "Joint Research Centre"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.jpg"
       ],
       "tags": [
         "Copernicus",
@@ -46,6 +53,62 @@
       "type": "text/html"
     },
     {
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
+      "type": "application/json",
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -61,7 +124,23 @@
     }
   ],
   "subtitle": "GHS built-up surface dataset GHS-BUILT-S_GLOBE_R2023A",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.png",
+  "eox:colorlegend": {
+    "domain": [
+      0,
+      10000
+    ],
+    "range": [
+      "#000000",
+      "#7c08a9",
+      "#cb4778",
+      "#f69a43",
+      "#fbfa90"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "0 - 10 000 m² of built-up surface areas"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.jpg",
   "themes": [
     "economy"
   ],
@@ -82,32 +161,12 @@
   "satellite": [
     "Sentinel-2"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      10000
-    ],
-    "range": [
-      "#000000",
-      "#7c08a9",
-      "#cb4778",
-      "#f69a43",
-      "#fbfa90"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "0 - 10 000 m\u00b2 of built-up surface areas"
-  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/chart.json",
   "title": "GHS-BUILT-S-R2023A",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -179.9999984622411,
-          -89.09115610672193,
-          179.9991200503413,
-          89.09138295441029
-        ],
         [
           -179.9999984622411,
           -89.09115610672193,
@@ -150,7 +209,7 @@
       "MSI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.jpg"
     ]
   },
   "assets": {
@@ -162,7 +221,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GHS-BUILT-S-R2023A/GHS-BUILT-S-R2023A.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

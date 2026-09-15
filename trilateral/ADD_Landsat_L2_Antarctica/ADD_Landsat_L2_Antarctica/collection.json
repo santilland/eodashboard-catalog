@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "ADD_Landsat_L2_Antarctica",
   "stac_version": "1.1.0",
-  "description": "Landsat Collection 2 includes scene-based global Level-2 surface reflectance and surface temperature science products.\n\nProvider: Created in partnership of NASA and U.S. Geological Survey (USGS) ([Landsat Collection 2 Level-2 Science Products](https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products))\n\nLicence: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf\n\n### Surface reflectance\n\nSurface reflectance (unitless) measures the fraction of incoming solar radiation that is reflected from the Earth's surface to the Landsat sensor. The LEDAPS and LaSRC surface reflectance algorithms correct for the temporally, spatially and spectrally varying scattering and absorbing effects of atmospheric gases, aerosols, and water vapor, which is necessary to reliably characterize the Earth\u2019s land surface.\n\n### Data Access\n\nThis dataset consists of pre-selected cloud-free Landsat 7,8,9 surface reflectance scenes from 2000-2023 taken over the area of both glaciers.\n\nData access is provided by the [Development Seed](https://developmentseed.org/), via the on-the-fly XYZ tile service powered by [TiTiler](https://developmentseed.org/titiler/) referencing Cloud Optimized COGs.\n\n### Map baselayer and geometries\n\nThe Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\nThis map uses the baselayer Antarctic hillshade and bathymetry south of 60\u00b0S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n",
+  "description": "Landsat Collection 2 includes scene-based global Level-2 surface reflectance and surface temperature science products.\n\nProvider: Created in partnership of NASA and U.S. Geological Survey (USGS) ([Landsat Collection 2 Level-2 Science Products](https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products))\n\nLicence: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf\n\n### Surface reflectance\n\nSurface reflectance (unitless) measures the fraction of incoming solar radiation that is reflected from the Earth's surface to the Landsat sensor. The LEDAPS and LaSRC surface reflectance algorithms correct for the temporally, spatially and spectrally varying scattering and absorbing effects of atmospheric gases, aerosols, and water vapor, which is necessary to reliably characterize the Earth’s land surface.\n\n### Data Access\n\nThis dataset consists of pre-selected cloud-free Landsat 7,8,9 surface reflectance scenes from 2000-2023 taken over the area of both glaciers.\n\nData access is provided by the [Development Seed](https://developmentseed.org/), via the on-the-fly XYZ tile service powered by [TiTiler](https://developmentseed.org/titiler/) referencing Cloud Optimized COGs.\n\n### Map baselayer and geometries\n\nThe Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\nThis map uses the baselayer Antarctic hillshade and bathymetry south of 60°S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n",
   "links": [
     {
       "rel": "root",
@@ -22,10 +22,17 @@
       "themes": [
         "cryosphere"
       ],
+      "providers": [
+        "NASA",
+        "USGS"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_L2_Pine_Island/thumbnail.jpg"
+      ],
       "tags": [
         "Antarctica",
-        "Climate change",
-        "Polar regions",
+        "climate change",
+        "Polar Regions",
         "Open data",
         "Open Science",
         "Cryosphere",
@@ -34,7 +41,6 @@
         "Melt",
         "Landsat",
         "OLI",
-        "Glacier",
         "Ice monitoring"
       ],
       "agency": [
@@ -50,6 +56,10 @@
         "Landsat-8",
         "Landsat-9"
       ],
+      "eodash:mapProjection": {
+        "name": "EPSG:5042",
+        "def": "+proj=stere +lat_0=-90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs"
+      },
       "latlng": "-74,-102",
       "name": "Pine Island"
     },
@@ -65,10 +75,17 @@
       "themes": [
         "cryosphere"
       ],
+      "providers": [
+        "NASA",
+        "USGS"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_L2_Thwaites/thumbnail.jpg"
+      ],
       "tags": [
         "Antarctica",
-        "Climate change",
-        "Polar regions",
+        "climate change",
+        "Polar Regions",
         "Open data",
         "Open Science",
         "Cryosphere",
@@ -77,7 +94,6 @@
         "Melt",
         "Landsat",
         "OLI",
-        "Glacier",
         "Ice monitoring"
       ],
       "agency": [
@@ -93,6 +109,10 @@
         "Landsat-8",
         "Landsat-9"
       ],
+      "eodash:mapProjection": {
+        "name": "EPSG:5042",
+        "def": "+proj=stere +lat_0=-90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs"
+      },
       "latlng": "-74,-107",
       "name": "Thwaites Glacier"
     },
@@ -101,6 +121,84 @@
       "href": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf",
       "type": "application/pdf",
       "title": "Landsat Data Distribution Policy"
+    },
+    {
+      "rel": "service",
+      "href": "./ADD_Landsat_L2_Antarctica/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
+      "method": "GET",
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic South",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "sx-cat_ortho320500",
+      "wms:layers": "sx-cat_ortho320500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:320500",
+        "def": "+proj=ortho +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs"
+      }
+    },
+    {
+      "rel": "wms",
+      "href": "https://maps.bas.ac.uk/antarctic/wms",
+      "type": "image/png",
+      "title": "Antarctic hilshade, bathymetry",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "Antarctic_hilshade",
+      "wms:layers": "add:antarctic_hillshade_and_bathymetry",
+      "attribution": "{ REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, https://doi.org/10.5194/tc-13-665-2019, 2019. ; GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) Available from: GEBCO; https://www.gebco.net/ }",
+      "eodash:proj4_def": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -112,15 +210,15 @@
   "sci:doi": "10.5285/836f016a-33be-6ddc-e053-6c86abc0788e",
   "sci:citation": "Citing the data:\nREMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P. (2019): The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674.\n",
   "subtitle": "Selected low-cloud-cover Landsat Collection-2 Level-2 Surface Reflectance scenes over selected area of Antarctica.",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_L2_Pine_Island/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_Landsat_L2_Antarctica/ADD_Landsat_L2_Antarctica.jpg",
   "themes": [
     "cryosphere"
   ],
   "locations": true,
   "tags": [
     "Antarctica",
-    "Climate change",
-    "Polar regions",
+    "climate change",
+    "Polar Regions",
     "Open data",
     "Open Science",
     "Cryosphere",
@@ -129,7 +227,6 @@
     "Melt",
     "Landsat",
     "OLI",
-    "Glacier",
     "Ice monitoring"
   ],
   "agency": [
@@ -145,15 +242,20 @@
     "Landsat-8",
     "Landsat-9"
   ],
+  "eodash:mapProjection": {
+    "name": "EPSG:5042",
+    "def": "+proj=stere +lat_0=-90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs"
+  },
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
   "title": "Landsat L2 Cloud free Antarctica",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -112.34773509182442,
-          -75.90451121841558,
-          -96.92800405298678,
-          -73.49948530332446
+          -115,
+          -78,
+          -97,
+          -73
         ],
         [
           -106,
@@ -192,8 +294,8 @@
   ],
   "summaries": {
     "cities": [
-      "Thwaites Glacier",
-      "Pine Island"
+      "Pine Island",
+      "Thwaites Glacier"
     ],
     "countries": [
       "AQ"
@@ -201,7 +303,7 @@
   },
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_L2_Pine_Island/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_Landsat_L2_Antarctica/ADD_Landsat_L2_Antarctica.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

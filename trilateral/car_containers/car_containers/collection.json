@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "car_containers",
   "stac_version": "1.1.0",
-  "description": "# Finished goods production: vehicles inventory level\n\nThis indicator aims at tracking production and movement at factories and ports importing and exporting cars to monitor the increase and decrease of new car production\nby combining satellite data from:\n###\n- PALSAR-2, which uses L-band SAR mounted on [JAXA](https://global.jaxa.jp/)'s ALOS-2 \n- C-band SAR mounted on the [ESA](https://esa.int/)'s Sentinel-1\n- NASA-processed high-resolution optical remote sensing data from Planet\u2019s SkySat\n\n\n",
+  "description": "# Finished goods production: vehicles inventory level\n\nThis indicator aims at tracking production and movement at factories and ports importing and exporting cars to monitor the increase and decrease of new car production\nby combining satellite data from:\n###\n- PALSAR-2, which uses L-band SAR mounted on [JAXA](https://global.jaxa.jp/)'s ALOS-2 \n- C-band SAR mounted on the [ESA](https://esa.int/)'s Sentinel-1\n- NASA-processed high-resolution optical remote sensing data from Planet’s SkySat\n\n\n",
   "links": [
     {
       "rel": "root",
@@ -11,76 +11,84 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2020/Beijing.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CN03/collection.json",
+      "type": "application/json",
+      "title": "Beijing - car_containers",
       "id": "CN03",
       "latlng": "40.08, 116.6",
       "country": "CN",
-      "city": "Beijing"
+      "name": "Beijing"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2019/Nagoya.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./JP03/collection.json",
+      "type": "application/json",
+      "title": "Nagoya - car_containers",
       "id": "JP03",
       "latlng": "35.0800,136.8800",
       "country": "JP",
-      "city": "Nagoya"
+      "name": "Nagoya"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2020/Singapore.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SG01/collection.json",
+      "type": "application/json",
+      "title": "Singapore - car_containers",
       "id": "SG01",
       "latlng": "1.264856, 103.847663",
       "country": "SG",
-      "city": "Singapore"
+      "name": "Singapore"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2019/Los Angeles.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US021/collection.json",
+      "type": "application/json",
+      "title": "Los Angeles - car_containers",
       "id": "US021",
       "latlng": "33.94, -118.41",
       "country": "US",
-      "city": "Los Angeles"
+      "name": "Los Angeles"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2020/Los Angeles.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US050/collection.json",
+      "type": "application/json",
+      "title": "Los Angeles - car_containers",
       "id": "US050",
       "latlng": "33.79,-117.89",
       "country": "US",
-      "city": "Los Angeles"
+      "name": "Los Angeles"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2020/Los Angeles.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US051/collection.json",
+      "type": "application/json",
+      "title": "Los Angeles - car_containers",
       "id": "US051",
       "latlng": "34.07,-118.23",
       "country": "US",
-      "city": "Los Angeles"
+      "name": "Los Angeles"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2020/Palm Springs.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US052/collection.json",
+      "type": "application/json",
+      "title": "Palm Springs - car_containers",
       "id": "US052",
       "latlng": "33.82,-116.5",
       "country": "US",
-      "city": "Palm Springs"
+      "name": "Palm Springs"
     },
     {
-      "rel": "item",
-      "href": "./car_containers/2020/Arcadia.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US053/collection.json",
+      "type": "application/json",
+      "title": "Arcadia - car_containers",
       "id": "US053",
       "latlng": "34.14,-118.04",
       "country": "US",
-      "city": "Arcadia"
+      "name": "Arcadia"
     },
     {
       "rel": "parent",
@@ -89,8 +97,30 @@
       "title": "Car containers"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Change in the number of new cars at automobile factory",
-  "yAxis": "Car Density",
+  "eodash:stories": {
+    "covid-cars": {
+      "href": "https://eodashboard.org/story/?id=covid-cars",
+      "type": "text/markdown",
+      "title": "COVID-19 Changes in Car Manufacturing",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-cars.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E9_car_containers/E9_car_containers.jpg",
   "themes": [
     "economy"
   ],
@@ -116,25 +146,73 @@
     "ALOS-2",
     "Sentinel-1"
   ],
-  "geoDBID": "E9_tri",
+  "locations": true,
   "endpointtype": "GeoDB",
   "title": "Car containers",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -118.42,
-          1.254856,
-          136.89,
-          40.089999999999996
+          -180.0,
+          -90.0,
+          241.633621,
+          90.0
+        ],
+        [
+          116.547,
+          40.039,
+          116.661,
+          40.127
+        ],
+        [
+          136.74201569988466,
+          34.93867142383858,
+          136.95693574382997,
+          35.13376088778208
+        ],
+        [
+          103.79106908,
+          1.22839947,
+          103.89963395,
+          1.33714062
+        ],
+        [
+          241.547974,
+          33.925984,
+          241.633621,
+          33.964007
+        ],
+        [
+          -118.09,
+          33.589999999999996,
+          -117.69,
+          33.99
+        ],
+        [
+          -118.43,
+          33.87,
+          -118.03,
+          34.27
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -118.24000000000001,
+          33.94,
+          -117.84,
+          34.34
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2019-11-27T00:00:00Z",
-          "2022-12-24T00:00:00Z"
+          "1970-01-01T00:00:00Z",
+          "2026-09-15T09:00:21.929094Z"
         ]
       ]
     }
@@ -165,5 +243,32 @@
       "SG",
       "US"
     ]
+  },
+  "assets": {
+    "covid-cars": {
+      "href": "https://eodashboard.org/story/?id=covid-cars",
+      "type": "text/markdown",
+      "title": "COVID-19 Changes in Car Manufacturing",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-cars.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E9_car_containers/E9_car_containers.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

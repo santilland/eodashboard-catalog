@@ -11,22 +11,24 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./vegetation_index_timeseries/2020/Paran\u00e1.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BR04/collection.json",
+      "type": "application/json",
+      "title": "Paraná - vegetation_index_timeseries",
       "id": "BR04",
       "latlng": "-24.615, -51.315",
       "country": "BR",
-      "city": "Paran\u00e1"
+      "name": "Paraná"
     },
     {
-      "rel": "item",
-      "href": "./vegetation_index_timeseries/2020/Kansas.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US10/collection.json",
+      "type": "application/json",
+      "title": "Kansas - vegetation_index_timeseries",
       "id": "US10",
       "latlng": "38.5,-98.325",
       "country": "US",
-      "city": "Kansas"
+      "name": "Kansas"
     },
     {
       "rel": "parent",
@@ -35,8 +37,30 @@
       "title": "Local NDVI from GSMaP"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Normalized Difference Vegetation Index Timeseries",
-  "yAxis": "Normalized Difference Vegetation Index [Dimensionless]",
+  "eodash:stories": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/VITS_vegetation_index_timeseries/VITS_vegetation_index_timeseries.jpg",
   "themes": [
     "agriculture"
   ],
@@ -51,17 +75,29 @@
   "satellite": [
     "Other"
   ],
-  "geoDBID": "VITS_Vegetation_Index_Timeseries",
+  "locations": true,
   "endpointtype": "GeoDB",
   "title": "Local NDVI from GSMaP",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -98.33500000000001,
-          -24.625,
-          -51.305,
-          38.51
+          -98.525,
+          -24.814999999999998,
+          -51.114999999999995,
+          38.7
+        ],
+        [
+          -51.515,
+          -24.814999999999998,
+          -51.114999999999995,
+          -24.415
+        ],
+        [
+          -98.525,
+          38.3,
+          -98.125,
+          38.7
         ]
       ]
     },
@@ -78,13 +114,15 @@
   "providers": [
     {
       "name": "JAXA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://global.jaxa.jp/"
     }
   ],
   "summaries": {
     "cities": [
-      "Paran\u00e1",
+      "Paraná",
       "Kansas"
     ],
     "countries": [
@@ -93,6 +131,31 @@
     ]
   },
   "assets": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/VITS_vegetation_index_timeseries/VITS_vegetation_index_timeseries.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
       "href": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html",
       "type": "text/html",

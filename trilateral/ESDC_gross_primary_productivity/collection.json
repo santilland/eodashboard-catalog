@@ -22,7 +22,12 @@
       "themes": [
         "biomass"
       ],
-      "yAxis": "g C m^-2 d^-1",
+      "providers": [
+        "NASA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.jpg"
+      ],
       "tags": [
         "CO2",
         "Photosynthesis",
@@ -41,6 +46,62 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://api.earthsystemdatalab.net/api/timeseries/esdc/gross_primary_productivity?aggMethods=median",
+      "type": "application/json",
+      "id": "xcube_statistics",
+      "method": "POST",
+      "body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -49,12 +110,12 @@
   ],
   "sci:publications": [
     {
-      "citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., R\u00e1duly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291\u20134313.\n",
+      "citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., Ráduly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291–4313.\n",
       "doi": "10.5194/bg-13-4291-2016"
     }
   ],
   "subtitle": "Global land GPP",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.jpg",
   "themes": [
     "biomass"
   ],
@@ -74,31 +135,8 @@
   "satellite": [
     "Terra"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -1,
-      15
-    ],
-    "range": [
-      "#000080",
-      "#0000d9",
-      "#001dff",
-      "#006cff",
-      "#00baff",
-      "#1cffda",
-      "#5cff9b",
-      "#9bff5c",
-      "#daff1c",
-      "#ffce00",
-      "#ff8500",
-      "#ff3c00",
-      "#d90000",
-      "#800000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "[gC/m\u00b2/day]"
-  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/chart.json",
   "title": "Land Gross Primary Productivity",
   "extent": {
     "spatial": {
@@ -130,7 +168,9 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://terra.nasa.gov/data/modis-data"
     }
   ],
@@ -148,19 +188,12 @@
       "MODIS"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.jpg"
     ]
   },
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity_legend.png",
-      "type": "image/png",
-      "roles": [
-        "metadata"
-      ]
-    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_gross_primary_productivity/ESDC_gross_primary_productivity.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

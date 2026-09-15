@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "grdi-vnl-raster",
   "stac_version": "1.1.0",
-  "description": "### Global Gridded Relative Deprivation Index (GRDI) VIIRS Night Lights (VNL) Constituent raster\n\nThis dataset is one component of the Global Gridded Relative Deprivation Index (GRDI), Version 1 (GRDIv1) data set which characterizes the relative levels of multidimensional deprivation and poverty in each 30 arc-second (~1 km) pixel, where a value of 100 represents the highest level of deprivation and a value of 0 the lowest. GRDIv1 is built from sociodemographic and satellite data inputs that were spatially harmonized, indexed, and weighted into six main components to produce the final index raster. Inputs were selected from the best-available data that either continuously vary across space or have at least administrative level 1 (provincial/state) resolution, and which have global spatial coverage. \n\n\nGRDIv1 has six input components, or dimensions, that are combined to determine the degree of relative deprivation:\n\n- **The child dependency ratio (CDR)** defined as the ratio between the population of children (ages 0 to 14) to the working-age population (age 15 to 64), where a higher ratio implies a higher dependency on the working population (UN DESA 2006). We interpret the CDR as a dimension where higher dependency ratios, generally associated with younger age structures, imply higher relative deprivation. \n- **Infant mortality rates (IMRs)** defined as the number of deaths in children under 1 year of age per 1,000 live births in the same year, are a common indicator of population health (Reidpath & Allotey, 2003; Schell et al., 2007). Higher IMRs imply higher deprivation.\n-  **The Subnational Human Development Index (SHDI)** attempts to assess human well-being through a combination of \u201cthree dimensions: education, health, and standard of living (Smits & Permanyer, 2019)\u201d. Lower SHDIs imply higher deprivation. \n-  Global rural populations are more likely to experience a higher degree of multidimensional poverty when compared to urban populations, other things being equal (Casta\u00f1eda et al., 2018; Laborde Debucquet & Martin, 2018; Lee & Kind, 2021; UN DESA, 2021; UNDP & OPHI, 2020). Therefore, we consider **the ratio of built-up area to non-built up area (BUILT)** as a dimension where low values imply higher deprivation. \n-  **Intensity of nighttime lights**, closely associated with anthropogenic activities, economic output, and infrastructure development (Elvidge et al., 2007; Ghosh et al., 2013; Lu et al., 2021; Small et al., 2013). We interpret the average intensity of nighttime lights for the year 2020 (VIIRS Night Lights (VNL) 2020) as a dimension where lower values imply higher deprivation. \n-  For the sixth component we calculated a **linear regression from annual VNL data between 2012 and 2020 (VNL slope) and considered the slope as a dimension where higher values (increasing brightness)** imply decreasing deprivation and lower values (decreasing brightness) imply increasing deprivation.\n",
+  "description": "### Global Gridded Relative Deprivation Index (GRDI) VIIRS Night Lights (VNL) Constituent raster\n\nThis dataset is one component of the Global Gridded Relative Deprivation Index (GRDI), Version 1 (GRDIv1) data set which characterizes the relative levels of multidimensional deprivation and poverty in each 30 arc-second (~1 km) pixel, where a value of 100 represents the highest level of deprivation and a value of 0 the lowest. GRDIv1 is built from sociodemographic and satellite data inputs that were spatially harmonized, indexed, and weighted into six main components to produce the final index raster. Inputs were selected from the best-available data that either continuously vary across space or have at least administrative level 1 (provincial/state) resolution, and which have global spatial coverage. \n\n\nGRDIv1 has six input components, or dimensions, that are combined to determine the degree of relative deprivation:\n\n- **The child dependency ratio (CDR)** defined as the ratio between the population of children (ages 0 to 14) to the working-age population (age 15 to 64), where a higher ratio implies a higher dependency on the working population (UN DESA 2006). We interpret the CDR as a dimension where higher dependency ratios, generally associated with younger age structures, imply higher relative deprivation. \n- **Infant mortality rates (IMRs)** defined as the number of deaths in children under 1 year of age per 1,000 live births in the same year, are a common indicator of population health (Reidpath & Allotey, 2003; Schell et al., 2007). Higher IMRs imply higher deprivation.\n-  **The Subnational Human Development Index (SHDI)** attempts to assess human well-being through a combination of “three dimensions: education, health, and standard of living (Smits & Permanyer, 2019)”. Lower SHDIs imply higher deprivation. \n-  Global rural populations are more likely to experience a higher degree of multidimensional poverty when compared to urban populations, other things being equal (Castañeda et al., 2018; Laborde Debucquet & Martin, 2018; Lee & Kind, 2021; UN DESA, 2021; UNDP & OPHI, 2020). Therefore, we consider **the ratio of built-up area to non-built up area (BUILT)** as a dimension where low values imply higher deprivation. \n-  **Intensity of nighttime lights**, closely associated with anthropogenic activities, economic output, and infrastructure development (Elvidge et al., 2007; Ghosh et al., 2013; Lu et al., 2021; Small et al., 2013). We interpret the average intensity of nighttime lights for the year 2020 (VIIRS Night Lights (VNL) 2020) as a dimension where lower values imply higher deprivation. \n-  For the sixth component we calculated a **linear regression from annual VNL data between 2012 and 2020 (VNL slope) and considered the slope as a dimension where higher values (increasing brightness)** imply decreasing deprivation and lower values (decreasing brightness) imply increasing deprivation.\n",
   "links": [
     {
       "rel": "root",
@@ -22,6 +22,12 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "NASA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.jpg"
+      ],
       "tags": [
         "Human activities",
         "Open data",
@@ -39,16 +45,86 @@
       ]
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:doi": "10.7927/3xxe-ap97",
   "sci:citation": "Center for International Earth Science Information Network - CIESIN - Columbia University. 2022. Global Gridded Relative Deprivation Index (GRDI), v1. Palisades, NY. NASA Socioeconomic Data and Applications Center (SEDAC).\n",
   "subtitle": "Global Gridded Relative Deprivation Index - VNL Constituent Raster",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.png",
+  "eodash:stories": {
+    "urban-health-final": {
+      "href": "https://eodashboard.org/story/?id=urban-health-final",
+      "type": "text/markdown",
+      "title": "Urban Health and Megacities: the case of New Delhi",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/urban-health-final.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.jpg",
   "themes": [
     "economy"
   ],
@@ -67,31 +143,6 @@
   "otherSources": [
     "Multi-sensors"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      100
-    ],
-    "range": [
-      "#440154",
-      "#481c6e",
-      "#453581",
-      "#3d4d8a",
-      "#34618d",
-      "#2b748e",
-      "#24878e",
-      "#1f998a",
-      "#25ac82",
-      "#40bd72",
-      "#67cc5c",
-      "#98d83e",
-      "#cde11d",
-      "#fde725"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "index"
-  },
   "title": "VIIRS Nighttime Lights (VNL) Constituent Raster",
   "extent": {
     "spatial": {
@@ -114,7 +165,7 @@
       "interval": [
         [
           "2020-01-01T00:00:00Z",
-          "2020-12-31T00:00:00Z"
+          "2020-01-01T00:00:00Z"
         ]
       ]
     }
@@ -134,19 +185,30 @@
       "economy"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.jpg"
     ]
   },
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-v1-built/cm_legend.png",
-      "type": "image/png",
+    "urban-health-final": {
+      "href": "https://eodashboard.org/story/?id=urban-health-final",
+      "type": "text/markdown",
+      "title": "Urban Health and Megacities: the case of New Delhi",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/urban-health-final.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
       "roles": [
-        "metadata"
+        "metadata",
+        "story"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/grdi-vnl-raster/grdi-vnl-raster.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

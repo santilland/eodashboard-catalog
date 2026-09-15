@@ -1,0 +1,136 @@
+{
+  "type": "Collection",
+  "id": "MEX",
+  "stac_version": "1.1.0",
+  "description": "# Greenhouse gas reconciliation 2022 CH4 (CCI RECCAP2)\n\nThese indicators compare the differences between the latest national greenhouse gas inventories (NGHGI) and atmospheric inversion models to support the global stocktake of the Paris Agreement.\n\nThe comparison framework used includes net ecosystem exchange carbon dioxide (CO2) flux, anthropogenic methane (CH4) emissions, and anthropogenic nitrous oxide (N2O) emissions.\n\nThe global harmonized NGHGI database was updated for inventory data by compiling data from periodical UNFCCC inventories by Annex I countries and sporadic and less detailed emissions reports by non-Annex I countries given by National Communications and Biennial Update Reports.\n\nFor the inversion data, updated results from an ensemble of global inversions produced for the Global Carbon Project were used for the three greenhouse gases, with ancillary data.\n\nFor CH4 inversions are updated to 2020.\n\n\n## Additional information\n\n- Dataset contributed by: [ESA CCI RECCAP2](https://climate.esa.int/en/projects/reccap-2/)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_GGI_CH4?aoi_id=eq.MEX&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Methane from CCI RECCAP2"
+    }
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/empty_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GGI_CH4/chart.json",
+  "subcode": "GGI_CH4",
+  "sci:doi": "10.5281/zenodo.10841716",
+  "sci:citation": "Zhu Deng, Philippe Ciais, Liting Hu, Martinez, A., Saunois, M., Thompson, R., & Frédéric Chevallier. (2024). Global greenhouse gas reconciliation 2022 [Data set]. Zenodo.\n",
+  "subtitle": "CH4 from National greenhouse gas inventories (NGHGI) database",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GGI_CH4/GGI_CH4.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "CH4",
+    "Open data",
+    "reconciliation"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "satellite": [
+    "Other"
+  ],
+  "title": "Mexico - Greenhouse_gas_reconsiliation_CH4",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -99.333,
+          19.233,
+          -98.93299999999999,
+          19.633
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1990-01-01T00:00:00Z",
+          "2015-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "ESA",
+      "roles": [
+        "licensor, producer, processor"
+      ],
+      "url": "https://climate.esa.int/en/projects/reccap-2/"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GGI_CH4/GGI_CH4.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

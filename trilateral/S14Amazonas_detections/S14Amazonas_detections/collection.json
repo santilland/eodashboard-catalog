@@ -11,372 +11,15 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-02-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-02-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-03-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-03-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-04-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-04-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-05-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-05-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-06-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-06-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-07-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-07-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-09-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-09-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-10-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-10-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-11-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-11-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2017/2017-12-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-12-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-02-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-02-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-03-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-03-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-04-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-04-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-05-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-05-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-06-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-06-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-07-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-07-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-09-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-09-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-10-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-10-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-11-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-11-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2018/2018-12-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-12-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-02-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-02-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-03-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-03-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-04-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-04-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-05-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-05-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-06-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-06-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-07-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-07-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-09-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-09-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-10-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-10-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-11-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-11-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2019/2019-12-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-12-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-02-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-02-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-03-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-03-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-04-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-04-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-05-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-05-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-06-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-06-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-07-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-07-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-09-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-09-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-10-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-10-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-11-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-11-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2020/2020-12-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-12-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-02-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-02-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-03-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-03-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-04-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-04-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-05-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-05-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-06-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-06-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-07-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-07-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-09-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-09-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-10-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-10-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./S14Amazonas_detections/2021/2021-11-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-11-01T00:00:00Z"
-    },
-    {
       "rel": "wms",
-      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
-      "type": "image/png",
-      "title": "S14Amazonas_detections",
+      "href": "https://services.sentinel-hub.com/ogc/wms/",
+      "type": "image/jpeg",
+      "title": "ESA Sentinel-1 for Science Amazonas",
       "wms:layers": [
         "ID-AMAZONAS_PROJECT"
       ],
       "role": [
         "data"
-      ],
-      "wms:styles": [
-        ""
       ]
     },
     {
@@ -387,7 +30,7 @@
     }
   ],
   "subtitle": "Multi-temporal Change Detection",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/sen4ama/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/MCD_S14Amazonas_detections/thumbnail.jpg",
   "themes": [
     "biomass"
   ],
@@ -411,10 +54,10 @@
     "spatial": {
       "bbox": [
         [
-          -26.476719,
           -76.07,
-          9.65,
-          -33.593252
+          -26.476719,
+          -33.593252,
+          9.65
         ]
       ]
     },
@@ -447,8 +90,16 @@
     }
   ],
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/sen4ama/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/MCD_S14Amazonas_detections/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

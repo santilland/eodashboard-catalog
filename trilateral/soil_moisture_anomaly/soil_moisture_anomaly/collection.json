@@ -5,130 +5,22 @@
   "description": "## Soil Moisture Anomaly \r\n\r\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature, Vegetation Index and anomaly, etc.\r\nRainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas. \r\n",
   "links": [
     {
-      "rel": "root",
-      "href": "../../catalog.json",
-      "type": "application/json",
-      "title": "Earth Observing Dashboard"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2022/2022-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2022/2022-02-14T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-02-14T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2022/2022-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2022/2022-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2022/2022-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2022/2022-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-06-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2023/2023-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2023/2023-02-14T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-02-14T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2023/2023-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2023/2023-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2023/2023-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2023/2023-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-06-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2024/2024-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2024/2024-02-15T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-02-15T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2024/2024-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2024/2024-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2024/2024-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./soil_moisture_anomaly/2024/2024-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-06-15T23:59:30Z"
-    },
-    {
       "rel": "wms",
-      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
+      "href": "https://gpwmap.jaxa.jp/wms",
       "type": "image/jpeg",
-      "title": "soil_moisture_anomaly",
+      "title": "Soil Moisture Anomaly from GSMaP",
       "wms:layers": [
-        "SMC-Anomaly-GCOMW-World-Monthly"
+        "EODASH:SMC-Anomaly-GCOMW-World-Monthly"
       ],
       "role": [
         "data"
       ]
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
     },
     {
       "rel": "parent",
@@ -137,29 +29,23 @@
       "title": "Soil Moisture Anomaly from GSMaP"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Global Soil Moisture Anomaly",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
-  "themes": [
-    "agriculture"
-  ],
-  "tags": [
-    "Precipitation",
-    "Multi-sensors"
-  ],
-  "agency": [
-    "JAXA"
-  ],
-  "subcode": "SMC",
-  "satellite": [
-    "Other"
-  ],
   "eox:colorlegend": {
     "domain": [
-      "NaN",
+      0,
+      30,
+      70,
+      90,
+      100,
+      120,
+      150,
+      200,
       300
     ],
     "range": [
-      "#ffffff",
       "#3e3eff",
       "#3737ff",
       "#7777ff",
@@ -174,6 +60,40 @@
     "tickFormat": ".0f",
     "title": "Soil moisture anomaly"
   },
+  "eodash:stories": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "SMC",
+  "satellite": [
+    "Other"
+  ],
   "endpointtype": "WMS_Time",
   "title": "Soil Moisture Anomaly from GSMaP",
   "extent": {
@@ -181,8 +101,8 @@
       "bbox": [
         [
           -180.0,
-          -89.99999999997118,
-          179.99999999994236,
+          -90.0,
+          180.0,
           90.0
         ]
       ]
@@ -190,8 +110,8 @@
     "temporal": {
       "interval": [
         [
-          "2022-01-16T11:59:30Z",
-          "2024-06-15T23:59:30Z"
+          "2022-01-01T00:00:00Z",
+          "2026-05-01T00:00:00Z"
         ]
       ]
     }
@@ -200,11 +120,21 @@
   "providers": [
     {
       "name": "JAXA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://global.jaxa.jp/"
     }
   ],
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
     "legend": {
       "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_legend.png",
       "type": "image/png",
@@ -212,8 +142,26 @@
         "metadata"
       ]
     },
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

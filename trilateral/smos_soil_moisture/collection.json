@@ -1,0 +1,215 @@
+{
+  "type": "Collection",
+  "id": "smos_soil_moisture",
+  "stac_version": "1.1.0",
+  "description": "## Soil Moisture\n\nThis indicator shows the distribution of soil moisture acquired by the ESA Earth Explorer [Soil Moisture and Ocean Salinity (SMOS) mission](https://earth.esa.int/eogateway/missions/smos/description). The amount of water held in soil, is crucial for primary production but it is also intrinsically linked to our weather and climate. This is because soil moisture is a key variable controlling the exchange of water and heat energy between the land and the atmosphere. The variability in soil moisture is mainly governed by different rates of evaporation and precipitation. The importance of estimating soil moisture in the root zone is paramount for improving short- and medium-term meteorological modelling, hydrological modelling, the monitoring of plant growth, as well as contributing to the forecasting of hazardous events such as floods.\n\nThis dataset is provided by the **Euro Data Cube**'s [SMOS Level-2C Datacube Service](https://collections.eurodatacube.com/smos-datacube/readme.html) offered by Brockmann Consult. The SMOS data cube service is implemented using the [xcube-smos datastore](https://github.com/xcube-dev/xcube-smos), which is available with the permissive MIT license.   \n\n### Dataset description\n-  Data is acquired by the sensor onboard SMOS, the [Microwave Imaging Radiometer with Aperture Synthesis (MIRAS)](https://earth.esa.int/eogateway/instruments/miras). MIRAS creates images of radiation emitted in the microwave L-band (1.4 GHz), by measuring soil moisture  observing variations in the natural microwave emission coming up off the surface of the planet.\n-  The Level 2 Soil Moisture (SM) product comprises soil moisture measurements geo-located in an equal-area (grid system ISEA 4H9).\n-  Spatial resolution: ~40 km (varies due to the SMOS interferometric imaging technique)\n\n### Applications\nSoil moisture can be used for various applications, including climate monitoring, weather forecasting, agriculture and water management.\n\n### Read more\n\n* [SMOS L1 and L2 Science data](https://earth.esa.int/eogateway/catalog/smos-science-products)\n* [SMOS Datacube Service - Euro Data Cube](https://collections.eurodatacube.com/smos-datacube/)\n* [xcube SMOS Python Package](https://xcube-dev.github.io/xcube-smos/)\n* [Notebooks for xcube SMOS store](https://github.com/xcube-dev/xcube-smos/tree/main/notebooks)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./smos_soil_moisture/collection.json",
+      "type": "application/json",
+      "title": "SMOS Soil Moisture",
+      "endpointtype": "xcube_zarr",
+      "code": "SMOS_SM",
+      "id": "smos_soil_moisture",
+      "themes": [
+        "agriculture"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_SM/SMOS_SM.png"
+      ],
+      "tags": [
+        "CO2",
+        "Photosynthesis",
+        "Open data",
+        "Carbon",
+        "Agriculture",
+        "Farming",
+        "L-band",
+        "Carbon cycle",
+        "Evaporation",
+        "Forecast",
+        "Water cycle",
+        "Atmosphere",
+        "Atmospheric humidity",
+        "Plants",
+        "Vegetation",
+        "SMOS",
+        "Soil Moisture and Ocean Salinity",
+        "Weather forecasting",
+        "MIRAS",
+        "Microwave Imaging Radiometer"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "SMOS_SM",
+      "sensor": [
+        "MIRAS"
+      ],
+      "satellite": [
+        "SMOS"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://api.earthsystemdatalab.net/api/timeseries/smos-sm/Soil_Moisture?aggMethods=median",
+      "type": "application/json",
+      "id": "xcube_statistics",
+      "method": "POST",
+      "body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_SM/SMOS_SM.png",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "CO2",
+    "Photosynthesis",
+    "Open data",
+    "Carbon",
+    "Agriculture",
+    "Farming",
+    "L-band",
+    "Carbon cycle",
+    "Evaporation",
+    "Forecast",
+    "Water cycle",
+    "Atmosphere",
+    "Atmospheric humidity",
+    "Plants",
+    "Vegetation",
+    "SMOS",
+    "Soil Moisture and Ocean Salinity",
+    "Weather forecasting",
+    "MIRAS",
+    "Microwave Imaging Radiometer"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "SMOS_SM",
+  "sensor": [
+    "MIRAS"
+  ],
+  "satellite": [
+    "SMOS"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_SM/chart.json",
+  "title": "SMOS Soil Moisture",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -88.59375,
+          180.0,
+          88.59375
+        ],
+        [
+          -180.0,
+          -88.59375,
+          180.0,
+          88.59375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-01-04T00:00:00Z",
+          "2023-12-27T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "SMOS_SM"
+    ],
+    "themes": [
+      "agriculture"
+    ],
+    "satellite": [
+      "SMOS"
+    ],
+    "sensor": [
+      "MIRAS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_SM/SMOS_SM.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_SM/SMOS_SM.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

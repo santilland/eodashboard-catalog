@@ -1,0 +1,469 @@
+{
+  "type": "Collection",
+  "id": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Total Column BrO by Sentinel-5P TROPOMI (Daily)\nThe Total Column Bromine Monoxide (BrO) product provides measurements of bromine oxide in the total atmospheric column, from the surface to the top of the atmosphere. The product was developed for monitoring the daily global spatial and temporal distribution of this trace gas in the Earth's atmosphere.\nInorganic bromine plays an important role in atmospheric chemistry: BrO contributes to mid-latitude ozone loss and polar ozone depletion in the stratosphere. In the troposphere, BrO is released over sea ice covered regions every polar spring, driving chemical reactions that contribute to ozone depletion and mercury deposition. BrO can further be found over salt lakes and in volcanic plumes.\n\n#### About the dataset\n- The BrO total vertical column product is measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite.\n- The product was developed for monitoring the daily global spatial and temporal distribution of bromine oxide in the Earth's atmosphere.\n- Only high-quality measurements (qa_value > 0.5) are used in the final gridded product.\n- More information on the TROPOMI BrO measurements and quality assessment can be found in the [Product Readme file](https://data-portal.s5p-pal.com/product-docs/bro/S5P-BIRA-PRF-BRO_v01.02.02_20240806.pdf).\n\n#### Use cases\nBrO measurements are particularly useful for:\n- Monitoring polar ozone depletion events driven by bromine chemistry over sea ice regions every polar spring.\n- Detecting and tracking BrO enhancements from volcanic eruptions, salt lakes, and salt marshes.\n- Studying mercury deposition processes in polar regions linked to reactive bromine chemistry.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Total Column BrO by Sentinel-5P TROPOMI (Daily)/collection.json",
+      "type": "application/json",
+      "title": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "S5P-L3GRD-BRO-DAY",
+      "id": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
+      "themes": [
+        "atmosphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_thumbnail.jpg"
+      ],
+      "tags": [
+        "BrO",
+        "Bromine Monoxide",
+        "Bromine",
+        "Ozone",
+        "Polar",
+        "Atmosphere",
+        "Open data",
+        "Open Science",
+        "TROPOMI",
+        "Sentinel-5P",
+        "Remote Sensing",
+        "Daily Data",
+        "S5P",
+        "Copernicus"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "S5P-L3GRD-BRO-DAY",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      2.0,
+      10.0
+    ],
+    "range": [
+      "#1c36b0",
+      "#1c37b0",
+      "#1c38b0",
+      "#1d39af",
+      "#1d39af",
+      "#1d3aaf",
+      "#1e3aae",
+      "#1e3bae",
+      "#1f3cae",
+      "#1f3cad",
+      "#1f3dad",
+      "#203eac",
+      "#203eac",
+      "#203fac",
+      "#203fac",
+      "#2141ab",
+      "#2141ab",
+      "#2242aa",
+      "#2242aa",
+      "#2243aa",
+      "#2344a9",
+      "#2345a9",
+      "#2345a9",
+      "#2446a8",
+      "#2447a8",
+      "#2447a8",
+      "#2447a8",
+      "#2548a7",
+      "#2549a7",
+      "#2549a7",
+      "#264aa6",
+      "#264ba6",
+      "#264ba6",
+      "#274ca5",
+      "#274ca5",
+      "#274da5",
+      "#284ea4",
+      "#284ea4",
+      "#284fa4",
+      "#2850a3",
+      "#2950a3",
+      "#2951a3",
+      "#2952a2",
+      "#2a52a2",
+      "#2a53a2",
+      "#2a54a1",
+      "#2b54a1",
+      "#2b54a1",
+      "#2b56a0",
+      "#2c56a0",
+      "#2c56a0",
+      "#2c57a0",
+      "#2d589f",
+      "#2d589f",
+      "#2d599f",
+      "#2d5a9e",
+      "#2e5b9e",
+      "#2e5b9d",
+      "#2e5b9d",
+      "#2f5c9d",
+      "#305d9c",
+      "#305d9c",
+      "#305e9c",
+      "#305f9c",
+      "#315f9b",
+      "#31609b",
+      "#31619a",
+      "#32619a",
+      "#32629a",
+      "#336299",
+      "#336399",
+      "#346498",
+      "#346498",
+      "#346598",
+      "#356597",
+      "#356697",
+      "#356697",
+      "#366796",
+      "#376895",
+      "#376895",
+      "#376895",
+      "#386a94",
+      "#396a93",
+      "#396a93",
+      "#396b93",
+      "#3a6c92",
+      "#3a6c92",
+      "#3b6d91",
+      "#3b6d91",
+      "#3c6e90",
+      "#3c6e90",
+      "#3d6f8f",
+      "#3d6f8f",
+      "#3e708e",
+      "#3f708d",
+      "#3f718d",
+      "#40728c",
+      "#40728c",
+      "#41738b",
+      "#41738b",
+      "#42748a",
+      "#42758a",
+      "#437589",
+      "#447689",
+      "#447689",
+      "#457788",
+      "#457887",
+      "#467886",
+      "#477986",
+      "#477986",
+      "#487a85",
+      "#487b85",
+      "#487b85",
+      "#497b84",
+      "#4a7d83",
+      "#4a7d83",
+      "#4b7d83",
+      "#4c7e82",
+      "#4d7f82",
+      "#4d8081",
+      "#4e8081",
+      "#4f8181",
+      "#4f8280",
+      "#508380",
+      "#51837f",
+      "#52847f",
+      "#53857f",
+      "#53867e",
+      "#54877e",
+      "#55877e",
+      "#56887d",
+      "#57897d",
+      "#588a7d",
+      "#588b7d",
+      "#598c7c",
+      "#5a8d7c",
+      "#5b8d7c",
+      "#5b8d7c",
+      "#5d8f7b",
+      "#5e907b",
+      "#5e907b",
+      "#5f917b",
+      "#60937a",
+      "#61947a",
+      "#61947a",
+      "#62957a",
+      "#639679",
+      "#659879",
+      "#659879",
+      "#669979",
+      "#679979",
+      "#689a78",
+      "#699b78",
+      "#6a9c78",
+      "#6b9d78",
+      "#6c9e77",
+      "#6d9f77",
+      "#6ea077",
+      "#6ea077",
+      "#70a276",
+      "#71a376",
+      "#72a476",
+      "#73a576",
+      "#73a675",
+      "#74a775",
+      "#75a875",
+      "#75a875",
+      "#77aa74",
+      "#78ab74",
+      "#78ab74",
+      "#79ac74",
+      "#7bae73",
+      "#7bae73",
+      "#7caf73",
+      "#7db073",
+      "#7fb272",
+      "#80b372",
+      "#81b372",
+      "#82b472",
+      "#84b671",
+      "#84b671",
+      "#85b771",
+      "#86b871",
+      "#87b971",
+      "#88ba70",
+      "#89bb70",
+      "#8abd70",
+      "#8bbe70",
+      "#8cbf6f",
+      "#8dc06f",
+      "#8ec16f",
+      "#8ec16f",
+      "#90c36e",
+      "#91c46e",
+      "#92c56e",
+      "#92c56e",
+      "#94c76d",
+      "#95c86d",
+      "#96c86d",
+      "#97c96d",
+      "#99cc6c",
+      "#9acd6c",
+      "#9acd6c",
+      "#9bce6c",
+      "#9dd06b",
+      "#9ed06b",
+      "#9fd16b",
+      "#a0d26b",
+      "#a2d36a",
+      "#a3d46a",
+      "#a4d56a",
+      "#a5d76a",
+      "#a7d869",
+      "#a9d969",
+      "#aada69",
+      "#abdb69",
+      "#addc68",
+      "#aedd68",
+      "#b0de68",
+      "#b1df68",
+      "#b2df68",
+      "#b5e167",
+      "#b6e267",
+      "#b7e267",
+      "#b8e367",
+      "#bbe567",
+      "#bde667",
+      "#bfe667",
+      "#c1e767",
+      "#c4e966",
+      "#c5ea66",
+      "#c7ea66",
+      "#c8eb66",
+      "#cbed66",
+      "#cded66",
+      "#ceed66",
+      "#d0ee66",
+      "#d3ef66",
+      "#d4f066",
+      "#d6f166",
+      "#d9f166",
+      "#dcf266",
+      "#ddf366",
+      "#dff466",
+      "#e0f566",
+      "#e4f566",
+      "#e5f666",
+      "#e7f766",
+      "#e8f766",
+      "#ecf866",
+      "#eef966",
+      "#effa66",
+      "#f1fa66",
+      "#f4fb66",
+      "#f6fc66",
+      "#f6fc66"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "BrO column number density [10¹³molec/cm²]",
+    "tickValues": [
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0
+    ]
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "BrO",
+    "Bromine Monoxide",
+    "Bromine",
+    "Ozone",
+    "Polar",
+    "Atmosphere",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-BRO-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "title": "Total Column BrO by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-04-30T00:00:00Z",
+          "2026-02-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "S5P-L3GRD-BRO-DAY"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-BRO-DAY/S5P-L3GRD-BRO-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/bro",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

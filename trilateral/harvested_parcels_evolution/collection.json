@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "harvested_parcels_evolution",
   "stac_version": "1.1.0",
-  "description": "## Winter Cereals Growth and Harvest - Spain\n\nThis indicator aims at showing the winter cereals (e.g. winter wheat and barley) harvest evolution at parcel-level over the Spanish autonomous regions [Castilla y Le\u00f3n, Andalucia, Castilla-la-Mancha, Arag\u00f3n](https://agridata.ec.europa.eu/extensions/DashboardCereals/CerealsProduction.html?selections=MS%20Name%20(Production)-Spain) by means of Sentinel-1, Sentinel-2 and Landsat-8 data with 10 meters resolution and 2-3 days revisit time.\n\nTime series of Sentinel-2 vegetation indices and Sentinel-1 backscatter and coherence values have been processed and analyzed using the open source Sen4CAP (and upcoming Sen4Stat) processing systems. \n\nParcels dataset have been kindly shared by the national Paying Agency \u201cFondo Espa\u00f1ol de Garant\u00eda Agraria O.A.\u201d (FEGA).\n",
+  "description": "## Winter Cereals Growth and Harvest - Spain\n\nThis indicator aims at showing the winter cereals (e.g. winter wheat and barley) harvest evolution at parcel-level over the Spanish autonomous regions [Castilla y León, Andalucia, Castilla-la-Mancha, Aragón](https://agridata.ec.europa.eu/extensions/DashboardCereals/CerealsProduction.html?selections=MS%20Name%20(Production)-Spain) by means of Sentinel-1, Sentinel-2 and Landsat-8 data with 10 meters resolution and 2-3 days revisit time.\n\nTime series of Sentinel-2 vegetation indices and Sentinel-1 backscatter and coherence values have been processed and analyzed using the open source Sen4CAP (and upcoming Sen4Stat) processing systems. \n\nParcels dataset have been kindly shared by the national Paying Agency “Fondo Español de Garantía Agraria O.A.” (FEGA).\n",
   "links": [
     {
       "rel": "root",
@@ -22,6 +22,9 @@
       "themes": [
         "agriculture"
       ],
+      "providers": [
+        "FEGA"
+      ],
       "cities": [
         "Comunidad Foral de Navarra",
         "La Rioja",
@@ -38,7 +41,9 @@
       "countries": [
         "ES"
       ],
-      "yAxis": "Cumulative (%)",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a6_harvested_parcels_evolution/E10a6_harvested_parcels_evolution.jpg"
+      ],
       "tags": [
         "Copernicus",
         "Sen4CAP",
@@ -65,8 +70,56 @@
       "rel": "service",
       "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E10a6?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
       "type": "application/json",
-      "method": "GET",
-      "id": "E10a6"
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -76,6 +129,7 @@
     }
   ],
   "subtitle": "Evolution of harvested parcels in percentage",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a6_harvested_parcels_evolution/E10a6_harvested_parcels_evolution.jpg",
   "themes": [
     "agriculture"
   ],
@@ -101,22 +155,16 @@
     "Landsat-8"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a6_harvested_parcels_evolution/chart.json",
   "title": "Harvested parcels",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -6.148,
-          37.539,
-          1.496,
-          42.653999999999996
-        ],
-        [
-          -6.148,
-          37.539,
-          1.496,
-          42.653999999999996
+          -6.338,
+          37.349,
+          1.686,
+          42.844
         ]
       ]
     },
@@ -144,30 +192,42 @@
       "agriculture"
     ],
     "satellite": [
-      "Sentinel-1",
       "Sentinel-2",
-      "Landsat-8"
+      "Landsat-8",
+      "Sentinel-1"
     ],
     "sensor": [
       "OLI",
-      "C-SAR",
-      "MSI"
+      "MSI",
+      "C-SAR"
     ],
     "cities": [
       "Comunidad de Madrid",
-      "Region de Murcia",
-      "Comunidad Foral de Navarra",
       "Extremadura",
-      "Cataluna",
-      "La Rioja",
-      "Aragon",
       "Andalucia",
+      "La Rioja",
       "Castilla y Leon",
+      "Aragon",
+      "Comunidad Foral de Navarra",
+      "Cataluna",
       "Comunidad Valenciana",
-      "Castilla-La Mancha"
+      "Castilla-La Mancha",
+      "Region de Murcia"
     ],
     "countries": [
       "ES"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a6_harvested_parcels_evolution/E10a6_harvested_parcels_evolution.jpg"
     ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a6_harvested_parcels_evolution/E10a6_harvested_parcels_evolution.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

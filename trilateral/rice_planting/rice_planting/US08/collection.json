@@ -1,0 +1,267 @@
+{
+  "type": "Collection",
+  "id": "US08",
+  "stac_version": "1.1.0",
+  "description": "## Early Rice Planting in Sacramento, California, USA\r\n\r\n\r\nThis indicator aims at assessing the state of rice cultivation near Sacramento (California, USA) by means of satellite imagery obtained from:\r\n###\r\n- [JAXA](https://global.jaxa.jp/) ALOS-2 PALSAR-2 and GCOM-C \r\n- [ESA](https://esa.int/) Sentinel-2 \r\n- [NASA](https://www.nasa.gov/)/[USGS](https://www.usgs.gov/) Landsat-8 \r\n\r\n\r\n### Overview\r\n\r\nThe satellite-based observations show that the rice planting, heading and harvesting in 2020 began earlier than the past two years in many regions, and rice planting area was larger than in 2019. \r\nAs for the timing of planting, effect of weather conditions is one reason.\r\nIn addition, there is a possibility that high rice price caused by the COVID-19 related concerns over global rice supply through potential increases in demand,\r\nthreats of export restrictions, and shortage of labor. \r\n\r\nRead more about this data in the corresponding story under theme AGRICULTURE.\r\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E10c_tri?aoi_id=eq.US08&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Rice planting"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/empty_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10c_rice_planting/chart.json",
+  "subcode": "E10c",
+  "subtitle": "Early Rice Planting in Sacramento, California, USA",
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      1
+    ],
+    "range": [
+      "#ffffff",
+      "#acacac",
+      "#595959",
+      "#616161",
+      "#b4b4b4",
+      "#f5f5f5",
+      "#949494",
+      "#454558",
+      "#1be830",
+      "#83ff01",
+      "#ffe801",
+      "#ff8001",
+      "#ff1801",
+      "#ff01ef"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".1f",
+    "title": "NDVI"
+  },
+  "eodash:stories": {
+    "early_rice_planting": {
+      "href": "https://eodashboard.org/story/?id=early_rice_planting",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/early_rice_planting.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_rice_planting.jpg",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Multi-sensors",
+    "Food security",
+    "Cereals"
+  ],
+  "agency": [
+    "NASA",
+    "USGS",
+    "JAXA",
+    "ESA"
+  ],
+  "sensor": [
+    "PALSAR-2",
+    "SGLI",
+    "MSI",
+    "OLI"
+  ],
+  "satellite": [
+    "ALOS-2",
+    "GCOM-C",
+    "Sentinel-2",
+    "Landsat-8"
+  ],
+  "title": "Glenn - rice_planting",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -122.26556000000001,
+          39.28284,
+          -121.86556,
+          39.682840000000006
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-10-22T04:12:16Z",
+          "2021-07-02T04:13:38Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    },
+    {
+      "name": "ESA",
+      "url": "https://www.esa.int/"
+    },
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    },
+    {
+      "name": "USGS",
+      "url": "https://www.usgs.gov/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "early_rice_planting": {
+      "href": "https://eodashboard.org/story/?id=early_rice_planting",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/early_rice_planting.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_rice_planting.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.ers.usda.gov/publications/pub-details/?pubid=101645",
+      "type": "text/html",
+      "title": "Rice Outlook - July 2021",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?West",
+      "type": "text/html",
+      "title": "U.S. Drought Monitor",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://www.nass.usda.gov/Quick_Stats/Ag_Overview/stateOverview.php?state=CALIFORNIA",
+      "type": "text/html",
+      "title": "Statistics by USDA",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "https://www.maff.go.jp/j/zyukyu/jki/j_rep/monthly/attach/pdf/r2index-28.pdf",
+      "type": "text/html",
+      "title": "Foreign Food Supply and Demand Report (October 2020, in Japanese)",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

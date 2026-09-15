@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "so2_daily",
   "stac_version": "1.1.0",
-  "description": "## Sulfur Dioxide observed by Sentinel-5p TROPOMI\n\nSulphur dioxide (SO2) enters the Earth\u2019s atmosphere through both natural and anthropogenic processes. It plays a role in chemistry on a local and global scale and its impact ranges from short term pollution to effects on climate. Only about 30% of the emitted SO2 comes from natural sources; the majority is of anthropogenic origin. SO2 emissions adversely affect human health and air quality. SO2 has an effect on climate through radiative forcing, via the formation of sulphate aerosols. \n\nVolcanic SO2 emissions can also pose a threat to aviation, along with volcanic ash. S5P/TROPOMI samples the Earth\u2019s surface with a revisit time of one day with unprecedented spatial resolution of 3.5 x 5.5 km which allows the resolution of fine details including the detection of much smaller SO2 plumes. Source: [TROPOMI website](http://www.tropomi.eu/data-products/sulphur-dioxide).\n\nBelow is an example of sulfur dioxide emissions captured by the [Copernicus Sentinel-5p](https://sentinel.esa.int/web/sentinel/missions/sentinel-5p) satellite on 06 October 2021 when large amounts of SO2 from the [Cumbre Vieja volcanic eruption](https://www.esa.int/ESA_Multimedia/Images/2021/10/La_Palma_lava_flows_into_the_sea#.YiYvOOYIkkQ.link) were transported over the Atlantic Ocean towards Central America. \n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N9-Fig1.png)\n",
+  "description": "## Sulfur Dioxide observed by Sentinel-5p TROPOMI\n\nSulphur dioxide (SO2) enters the Earth’s atmosphere through both natural and anthropogenic processes. It plays a role in chemistry on a local and global scale and its impact ranges from short term pollution to effects on climate. Only about 30% of the emitted SO2 comes from natural sources; the majority is of anthropogenic origin. SO2 emissions adversely affect human health and air quality. SO2 has an effect on climate through radiative forcing, via the formation of sulphate aerosols. \n\nVolcanic SO2 emissions can also pose a threat to aviation, along with volcanic ash. S5P/TROPOMI samples the Earth’s surface with a revisit time of one day with unprecedented spatial resolution of 3.5 x 5.5 km which allows the resolution of fine details including the detection of much smaller SO2 plumes. Source: [TROPOMI website](https://www.tropomi.eu/data-products/s/sulfur-dioxide).\n\nBelow is an example of sulfur dioxide emissions captured by the [Copernicus Sentinel-5p](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite on 06 October 2021 when large amounts of SO2 from the [Cumbre Vieja volcanic eruption](https://www.esa.int/ESA_Multimedia/Images/2021/10/La_Palma_lava_flows_into_the_sea#.YiYvOOYIkkQ.link) were transported over the Atlantic Ocean towards Central America. \n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N9-Fig1.png)\n",
   "links": [
     {
       "rel": "root",
@@ -20,7 +20,13 @@
       "code": "N1_SO2",
       "id": "so2_daily",
       "themes": [
-        "air"
+        "atmosphere"
+      ],
+      "providers": [
+        "Copernicus"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.jpg"
       ],
       "tags": [
         "Air quality",
@@ -40,6 +46,62 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
+      "type": "application/json",
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -47,26 +109,6 @@
     }
   ],
   "subtitle": "Global daily SO2",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.png",
-  "themes": [
-    "air"
-  ],
-  "tags": [
-    "Air quality",
-    "SO2",
-    "Open data",
-    "Air pollution"
-  ],
-  "agency": [
-    "ESA"
-  ],
-  "subcode": "N1_SO2",
-  "sensor": [
-    "TROPOMI"
-  ],
-  "satellite": [
-    "Sentinel-5P"
-  ],
   "eox:colorlegend": {
     "domain": [
       0,
@@ -87,16 +129,32 @@
     "tickFormat": ".0f",
     "title": "SO2 column number density [DU]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "SO2",
+    "Open data",
+    "Air pollution"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N1_SO2",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/chart.json",
   "title": "Sulfur Dioxide observed by Sentinel-5p TROPOMI",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ],
         [
           -180.0,
           -90.0,
@@ -108,8 +166,8 @@
     "temporal": {
       "interval": [
         [
-          "2018-05-07T00:00:00Z",
-          "2025-03-03T00:00:00Z"
+          "2018-04-30T00:00:00Z",
+          "2025-06-08T00:00:00Z"
         ]
       ]
     }
@@ -126,7 +184,7 @@
       "N1_SO2"
     ],
     "themes": [
-      "air"
+      "atmosphere"
     ],
     "satellite": [
       "Sentinel-5P"
@@ -135,7 +193,7 @@
       "TROPOMI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.jpg"
     ]
   },
   "assets": {
@@ -147,7 +205,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_SO2/N1_SO2.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
@@ -162,7 +220,7 @@
       ]
     },
     "reference_2": {
-      "href": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-sulphur-dioxide",
+      "href": "https://sentinels.copernicus.eu/web/sentinel/homedata-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-sulphur-dioxide",
       "type": "text/html",
       "title": "TROPOMI SO2",
       "roles": [

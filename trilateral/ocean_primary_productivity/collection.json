@@ -19,7 +19,15 @@
       "code": "NPP",
       "id": "ocean_primary_productivity",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "providers": [
+        "ESA",
+        "NASA",
+        "GeoEye"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.jpg"
       ],
       "tags": [
         "Primary production",
@@ -50,21 +58,138 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
+      "type": "application/json",
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:publications": [
     {
-      "citation": "Kulk, G.; Platt, T.; Dingle, J.; Jackson, T.; J\u00f6nsson, B.F.; Bouman, H.A.; Babin, M.; Brewin, R.J.W.; Doblin, M.; Estrada, M.; Figueiras, F.G.; Furuya, K.; Gonz\u00e1lez-Ben\u00edtez, N.; Gudfinnsson, H.G.; Gudmundsson, K.; Huang, B.; Isada, T.; Kova\u010d, \u017d.; Lutz, V.A.; Mara\u00f1\u00f3n, E.; Raman, M.; Richardson, K.; Rozema, P.D.; van de Poll, W.H.; Segura, V.; Tilstone, G.H.; Uitz, J.; van Dongen-Vogels, V.; Yoshikawa, T.; Sathyendranath, S. (2021). \nBICEP / NCEO - Monthly global Marine Phytoplankton Primary Production, between 1998-2020 at 9 km resolution (derived from the Ocean Colour Climate Change Initiative v4.2 dataset). NERC EDS Centre for Environmental Data Analysis, 22 December 2021.\n",
+      "citation": "Kulk, G.; Platt, T.; Dingle, J.; Jackson, T.; Jönsson, B.F.; Bouman, H.A.; Babin, M.; Brewin, R.J.W.; Doblin, M.; Estrada, M.; Figueiras, F.G.; Furuya, K.; González-Benítez, N.; Gudfinnsson, H.G.; Gudmundsson, K.; Huang, B.; Isada, T.; Kovač, Ž.; Lutz, V.A.; Marañón, E.; Raman, M.; Richardson, K.; Rozema, P.D.; van de Poll, W.H.; Segura, V.; Tilstone, G.H.; Uitz, J.; van Dongen-Vogels, V.; Yoshikawa, T.; Sathyendranath, S. (2021). \nBICEP / NCEO - Monthly global Marine Phytoplankton Primary Production, between 1998-2020 at 9 km resolution (derived from the Ocean Colour Climate Change Initiative v4.2 dataset). NERC EDS Centre for Environmental Data Analysis, 22 December 2021.\n",
       "doi": "10.5285/69b2c9c6c4714517ba10dab3515e4ee6"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.png",
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      1
+    ],
+    "range": [
+      "#ffffff",
+      "#7600f0",
+      "#0ec5ff",
+      "#05ffc2",
+      "#98ff8a",
+      "#f3ff3e",
+      "#fcc700",
+      "#ff7700",
+      "#e93100",
+      "#b50000",
+      "#900000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".1f",
+    "title": "PP [g C/y m²]"
+  },
+  "eodash:stories": {
+    "primary-productivity": {
+      "href": "https://eodashboard.org/story/?id=primary-productivity",
+      "type": "text/markdown",
+      "title": "Ocean Primary Productivity",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/primary-productivity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "ocean_plants": {
+      "href": "https://eodashboard.org/story/?id=ocean_plants",
+      "type": "text/markdown",
+      "title": "Ocean Plants",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/ocean_plants.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.jpg",
   "themes": [
-    "oceans"
+    "water"
   ],
   "tags": [
     "Primary production",
@@ -93,38 +218,12 @@
     "Suomi",
     "OrbView-2"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -1,
-      1
-    ],
-    "range": [
-      "#ffffff",
-      "#7600f0",
-      "#0ec5ff",
-      "#05ffc2",
-      "#98ff8a",
-      "#f3ff3e",
-      "#fcc700",
-      "#ff7700",
-      "#e93100",
-      "#b50000",
-      "#900000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "PP [g C/y m\u00b2]"
-  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/chart.json",
   "title": "Ocean net primary production (BICEP)",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180,
-          -85,
-          180,
-          85
-        ],
         [
           -180,
           -85,
@@ -146,17 +245,23 @@
   "providers": [
     {
       "name": "ESA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://earth.esa.int/eogateway/search?category=data&data_access_type=data%20description&mission=envisat&instrument=meris"
     },
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://data.nasa.gov/browse"
     },
     {
       "name": "GeoEye",
-      "roles": "licensor, producer",
+      "roles": [
+        "licensor, producer"
+      ],
       "url": "https://www.maxar.com/"
     }
   ],
@@ -165,22 +270,22 @@
       "NPP"
     ],
     "themes": [
-      "oceans"
+      "water"
     ],
     "satellite": [
-      "Suomi",
       "Aqua",
+      "Envisat",
       "OrbView-2",
-      "Envisat"
+      "Suomi"
     ],
     "sensor": [
-      "MERIS",
-      "SeaWiFS",
       "MODIS",
-      "VIIRS"
+      "VIIRS",
+      "SeaWiFS",
+      "MERIS"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.jpg"
     ]
   },
   "assets": {
@@ -191,8 +296,44 @@
         "metadata"
       ]
     },
+    "primary-productivity": {
+      "href": "https://eodashboard.org/story/?id=primary-productivity",
+      "type": "text/markdown",
+      "title": "Ocean Primary Productivity",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/primary-productivity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "ocean_plants": {
+      "href": "https://eodashboard.org/story/?id=ocean_plants",
+      "type": "text/markdown",
+      "title": "Ocean Plants",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/ocean_plants.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPP_ocean_primary_productivity/NPP_ocean_primary_productivity.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

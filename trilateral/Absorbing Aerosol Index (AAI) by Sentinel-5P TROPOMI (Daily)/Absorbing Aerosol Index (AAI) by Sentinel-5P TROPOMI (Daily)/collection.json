@@ -1,0 +1,138 @@
+{
+  "type": "Collection",
+  "id": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)\n\nThe Absorbing Aerosol Index (AAI), also known as Ultraviolet Aerosol Index (UVAI), is a dimensionless quantity that reveals the presence of absorbing aerosols in the atmosphere: particles such as desert dust, volcanic ash, and smoke from biomass burning that absorb incoming solar radiation. Unlike many other satellite retrievals, the AAI can be calculated even in the presence of clouds, enabling daily, near-global coverage and making it particularly powerful for tracking the evolution of episodic aerosol plumes across the globe.\n\n#### About the dataset\n- The AAI is measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard Copernicus ESA's [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite, operating in the UV spectral range.\n- The AAI is derived from the difference between observed and modelled reflectance, based on wavelength-dependent changes in Rayleigh scattering in the UV spectral range for a pair of wavelengths, where ozone absorption is minimal.\n- The measurements are performed once per day, providing a full global snapshot of aerosol activity.\n- A positive aerosol index indicates the presence of absorbing aerosols (such as mineral dust or carbonaceous smoke), while negative values are typically associated with non-absorbing aerosols or clouds.\n- More information on the TROPOMI AAI measurements and quality assessment can be found in the [Product Readme file](https://sentiwiki.copernicus.eu/__attachments/1673595/S5P-MPC-KNMI-PRF-AER-AI%20-%20Sentinel-5P%20UV%20Aerosol%20Level%202%20Product%20Readme%20File%202025%20-%202.9.pdf?inst-v=14961565-47a3-4449-92de-8bd773526398).\n\n#### Use cases \nThe AAI is especially well suited for monitoring natural and human-driven aerosol events. Saharan dust storms leave a strong positive signal as mineral-rich particles are lofted thousands of metres into the atmosphere and transported across the Atlantic. Similarly, large-scale wildfires in regions such as the Amazon, sub-Saharan Africa, or Siberia produce dense smoke plumes that are readily detected and tracked over days to weeks. Volcanic eruptions inject fine ash and sulfur-rich particles that can spread across hemispheres and impact aviation safety and climate.\n\n\n",
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)",
+      "wms:layers": [
+        "S5P-L3GRD-AAI-DAY"
+      ],
+      "role": [
+        "data"
+      ],
+      "proj:epsg": 3857
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      1.0,
+      7.0
+    ],
+    "range": [
+      "#fbfea2",
+      "#fbb318",
+      "#ec6726",
+      "#bb3754",
+      "#781c6d",
+      "#33095e",
+      "#36331e"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Absorbing Aerosol Index @ 354/388 nm"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AAI-DAY/S5P-L3GRD-AAI-DAY_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "UV",
+    "Atmosphere",
+    "Particles",
+    "Pollution",
+    "Ash",
+    "AAI",
+    "UVAI",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-AAI-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "proj:epsg": 3857,
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Absorbing Aerosol Index (AAI) by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-04-30T00:00:00Z",
+          "2026-02-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AAI-DAY/S5P-L3GRD-AAI-DAY_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-AAI-DAY/S5P-L3GRD-AAI-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/aai",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

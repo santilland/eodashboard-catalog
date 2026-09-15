@@ -14,19 +14,19 @@
       "rel": "child",
       "href": "./TonleSap_VV/collection.json",
       "type": "application/json",
-      "title": "Tonl\u00e9 Sap (S1-VV)",
+      "title": "Tonlé Sap (S1-VV)",
       "id": "TonleSap_VV",
       "latlng": "12.7,104.2",
       "country": [
         "KH"
       ],
-      "city": "Tonl\u00e9 Sap (S1-VV)"
+      "city": "Tonlé Sap (S1-VV)"
     },
     {
       "rel": "wms",
-      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "href": "https://services.sentinel-hub.com/ogc/wms/",
       "type": "image/png",
-      "title": "Lakes_Sentinel1",
+      "title": "Lakes collection (Sentinel 1)",
       "wms:layers": [
         "SENTINEL_1_IW_VV"
       ],
@@ -41,7 +41,7 @@
       "title": "Lakes collection (Sentinel 1)"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.jpg",
   "themes": [
     "water"
   ],
@@ -100,7 +100,7 @@
   ],
   "assets": {
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

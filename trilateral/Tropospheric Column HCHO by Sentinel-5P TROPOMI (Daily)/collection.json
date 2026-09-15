@@ -1,0 +1,477 @@
+{
+  "type": "Collection",
+  "id": "Tropospheric Column HCHO by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Tropospheric Column HCHO by Sentinel-5P TROPOMI (Daily)\nFormaldehyde (HCHO) is an intermediate gas in almost all oxidation chains of Non-Methane Volatile Organic Compounds (NMVOC), leading eventually to CO2. NMVOCs are, together with NOx, CO and CH4, among the most important precursors of tropospheric O3. The major HCHO source in the remote atmosphere is CH4 oxidation. Over the continents, the oxidation of higher NMVOCs emitted from vegetation, fires, traffic and industrial sources results in important and localised enhancements of the HCHO levels.\n\n#### About the dataset\n- The HCHO productsis measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite.\n- More information on the TROPOMI HCHO measurements and quality assessment can be found in the [Product Readme file](https://sentiwiki.copernicus.eu/__attachments/1673595/S5P-MPC-BIRA-PRF-HCHO%20-%20Sentinel-5P%20Formaldehyde%20Level%202%20Readme%202025%20-%202.9.pdf).\n\n#### Use cases\nHCHO measurements are particularly useful for:\n- Monitoring NMVOC emissions from vegetation, fires, traffic, and industrial sources.\n- Studying tropospheric ozone formation and chemistry.\n- Tracking the seasonal and inter-annual variability of biogenic and pyrogenic emissions.\n- Supporting air quality assessments and chemistry-climate model validation.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Tropospheric Column HCHO by Sentinel-5P TROPOMI (Daily)/collection.json",
+      "type": "application/json",
+      "title": "Tropospheric Column HCHO by Sentinel-5P TROPOMI (Daily)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "S5P-L3GRD-TROPOHCHO-DAY",
+      "id": "Tropospheric Column HCHO by Sentinel-5P TROPOMI (Daily)",
+      "themes": [
+        "atmosphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPOHCHO-DAY/S5P-L3GRD-TROPOHCHO-DAY_thumbnail.jpg"
+      ],
+      "tags": [
+        "HCHO",
+        "Formaldehyde",
+        "NMVOC",
+        "Troposphere",
+        "Atmosphere",
+        "Air Quality",
+        "Open data",
+        "Open Science",
+        "TROPOMI",
+        "Sentinel-5P",
+        "Remote Sensing",
+        "Daily Data",
+        "S5P",
+        "Copernicus"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "S5P-L3GRD-TROPOHCHO-DAY",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0.0,
+      500.0
+    ],
+    "range": [
+      "#04007f",
+      "#040081",
+      "#040083",
+      "#050088",
+      "#05008a",
+      "#05008c",
+      "#05008f",
+      "#050094",
+      "#050097",
+      "#050199",
+      "#05019b",
+      "#05019f",
+      "#0502a1",
+      "#0502a3",
+      "#0602a6",
+      "#0603a8",
+      "#0605ab",
+      "#0606ad",
+      "#0707af",
+      "#0709b1",
+      "#080cb4",
+      "#080eb6",
+      "#090fb7",
+      "#0911b9",
+      "#0a12ba",
+      "#0a15bd",
+      "#0b17bf",
+      "#0b18c1",
+      "#0c19c2",
+      "#0c1cc5",
+      "#0c1dc7",
+      "#0d1ec8",
+      "#0d1fca",
+      "#0e22cd",
+      "#0e23ce",
+      "#0e24d0",
+      "#0e26d1",
+      "#0f27d2",
+      "#0f29d5",
+      "#0f2ad7",
+      "#102bd8",
+      "#102cda",
+      "#102fdd",
+      "#1030df",
+      "#1131e0",
+      "#1132e2",
+      "#1133e3",
+      "#1135e6",
+      "#1237e8",
+      "#1238e9",
+      "#1239ea",
+      "#133bed",
+      "#143cee",
+      "#143eee",
+      "#1440ef",
+      "#1743f0",
+      "#1845f0",
+      "#1946ef",
+      "#1a48ef",
+      "#1b4aee",
+      "#1d4fec",
+      "#1d51ea",
+      "#1e53e8",
+      "#1f56e5",
+      "#1f5ae0",
+      "#1f5ddd",
+      "#1f5fda",
+      "#1f61d7",
+      "#1e64d4",
+      "#1c68cd",
+      "#1a6aca",
+      "#186cc6",
+      "#156fc3",
+      "#1173bc",
+      "#0e75b9",
+      "#0b77b5",
+      "#0879b1",
+      "#067dab",
+      "#067ea7",
+      "#0780a3",
+      "#09819f",
+      "#0d839a",
+      "#138692",
+      "#17888e",
+      "#1a898a",
+      "#1d8b85",
+      "#228d7d",
+      "#258e79",
+      "#279074",
+      "#29926f",
+      "#2b936b",
+      "#2d9562",
+      "#2e975d",
+      "#2f9859",
+      "#2f9a53",
+      "#309c49",
+      "#309e45",
+      "#319f40",
+      "#31a03c",
+      "#32a333",
+      "#33a42e",
+      "#34a52a",
+      "#35a626",
+      "#37a722",
+      "#3aa91b",
+      "#3daa18",
+      "#3fab15",
+      "#42ad12",
+      "#48af0d",
+      "#4baf0b",
+      "#4eb00a",
+      "#51b108",
+      "#54b208",
+      "#5ab307",
+      "#5db406",
+      "#5fb506",
+      "#63b506",
+      "#68b706",
+      "#6bb806",
+      "#6db906",
+      "#70ba05",
+      "#76bc05",
+      "#79bd05",
+      "#7bbd05",
+      "#7ebe05",
+      "#80bf05",
+      "#85c105",
+      "#88c105",
+      "#8ac204",
+      "#8cc304",
+      "#91c404",
+      "#93c504",
+      "#96c604",
+      "#99c704",
+      "#9cc804",
+      "#a0c904",
+      "#a3ca04",
+      "#a5cb03",
+      "#a7cb03",
+      "#accd03",
+      "#aece03",
+      "#b0ce03",
+      "#b3cf03",
+      "#b7d103",
+      "#bad203",
+      "#bcd203",
+      "#bed302",
+      "#c0d402",
+      "#c6d602",
+      "#c8d602",
+      "#cad702",
+      "#cdd802",
+      "#d1d902",
+      "#d4d902",
+      "#d6da02",
+      "#d8db02",
+      "#dadb02",
+      "#dfdd02",
+      "#e0de02",
+      "#e2de02",
+      "#e5de02",
+      "#eadf02",
+      "#ecdf02",
+      "#eddf02",
+      "#efdf02",
+      "#f2de03",
+      "#f3dd04",
+      "#f4dd04",
+      "#f5dc05",
+      "#f7da05",
+      "#f8d806",
+      "#f8d707",
+      "#f9d607",
+      "#fad508",
+      "#fad109",
+      "#fad00a",
+      "#face0b",
+      "#fbcc0b",
+      "#fbcb0c",
+      "#fbc80d",
+      "#fbc60d",
+      "#fbc50e",
+      "#fbc30e",
+      "#fbc00f",
+      "#fbbf0f",
+      "#fbbd0f",
+      "#fbbc10",
+      "#fcb811",
+      "#fcb711",
+      "#fcb511",
+      "#fcb412",
+      "#fcb212",
+      "#fcaf13",
+      "#fcae13",
+      "#fcac13",
+      "#fcaa14",
+      "#fca614",
+      "#fca514",
+      "#fca315",
+      "#fca215",
+      "#fca015",
+      "#fc9d15",
+      "#fc9a15",
+      "#fc9916",
+      "#fc9716",
+      "#fc9416",
+      "#fc9216",
+      "#fc9016",
+      "#fc8f15",
+      "#fc8b15",
+      "#fc8915",
+      "#fc8815",
+      "#fc8614",
+      "#fc8414",
+      "#fd7f14",
+      "#fd7d13",
+      "#fd7b13",
+      "#fd7913",
+      "#fd7512",
+      "#fe7312",
+      "#fe7011",
+      "#fe6f11",
+      "#fe6d11",
+      "#fe6810",
+      "#fe6610",
+      "#fe6410",
+      "#fe6110",
+      "#fe5c0f",
+      "#fe590f",
+      "#fe570f",
+      "#fe540e",
+      "#fe4f0e",
+      "#fe4c0e",
+      "#fe490e",
+      "#fe470e",
+      "#fe440d",
+      "#fd3e0d",
+      "#fd3c0d",
+      "#fc390d",
+      "#fb360d",
+      "#fa310d",
+      "#f92f0d",
+      "#f82c0d",
+      "#f72a0d",
+      "#f6280d",
+      "#f3240d",
+      "#f2230d",
+      "#f1210d",
+      "#ef200d",
+      "#ec1d0d",
+      "#eb1c0d",
+      "#e91a0d",
+      "#e8190d",
+      "#e5160d",
+      "#e3150d",
+      "#e2140d"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "HCHO column density [µmol/m²]",
+    "tickValues": [
+      0.0,
+      100.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0
+    ]
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPOHCHO-DAY/S5P-L3GRD-TROPOHCHO-DAY_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "HCHO",
+    "Formaldehyde",
+    "NMVOC",
+    "Troposphere",
+    "Atmosphere",
+    "Air Quality",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-TROPOHCHO-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "title": "Tropospheric Column HCHO by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-01-01T00:00:00Z",
+          "2026-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "S5P-L3GRD-TROPOHCHO-DAY"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPOHCHO-DAY/S5P-L3GRD-TROPOHCHO-DAY_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPOHCHO-DAY/S5P-L3GRD-TROPOHCHO-DAY_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPOHCHO-DAY/S5P-L3GRD-TROPOHCHO-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/hcho",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

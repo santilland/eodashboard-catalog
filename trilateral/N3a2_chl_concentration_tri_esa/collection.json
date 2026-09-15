@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "N3a2_chl_concentration_tri_esa",
   "stac_version": "1.1.0",
-  "description": "# Water Quality - Chlorophyll-a concentrations\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nThe Sentinel-3 satellite, part of the European Space Agency's Copernicus program, carries several instruments for Earth observation, including the Ocean and Land Colour Instrument (OLCI). OLCI is designed specifically to monitor Earth's oceans, coastal zones, and land surfaces. One of its key uses is to map the concentration of chlorophyll-a in oceans and lakes, an indicator of phytoplankton biomass and, by extension, oceanic and freshwater ecosystems' health.\n\nWhen interpreting chlorophyll concentration maps produced by Sentinel-3 OLCI, it\u2019s essential to understand the color scale used to represent different levels of chlorophyll-a in the water. The scale typically goes from blue to red, where:\n\n- Blue indicates low chlorophyll concentration.\n- Red indicates high chlorophyll concentration.\n\n## Dataset Description\n- Spectral Range: OLCI has 21 spectral bands in the visible to near-infrared (VNIR) range, optimized for observing ocean color, vegetation, and atmospheric properties.\n- Chlorophyll-a Detection: OLCI is particularly useful for detecting chlorophyll-a concentrations, providing insights into phytoplankton populations, ocean productivity, and marine ecosystem health.\n- Spatial Resolution: It offers a spatial resolution of 300 meters, allowing for detailed observations of coastal and inland water areas, as well as land surfaces.\n- Wide Swath Coverage: The instrument covers a 1270 km swath on the Earth's surface, enabling near-global coverage every 2 to 3 days, depending on latitude.\n",
+  "description": "# Water Quality - Chlorophyll-a concentrations\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nThe Sentinel-3 satellite, part of the European Space Agency's Copernicus program, carries several instruments for Earth observation, including the Ocean and Land Colour Instrument (OLCI). OLCI is designed specifically to monitor Earth's oceans, coastal zones, and land surfaces. One of its key uses is to map the concentration of chlorophyll-a in oceans and lakes, an indicator of phytoplankton biomass and, by extension, oceanic and freshwater ecosystems' health.\n\nWhen interpreting chlorophyll concentration maps produced by Sentinel-3 OLCI, it’s essential to understand the color scale used to represent different levels of chlorophyll-a in the water. The scale typically goes from blue to red, where:\n\n- Blue indicates low chlorophyll concentration.\n- Red indicates high chlorophyll concentration.\n\n## Dataset Description\n- Spectral Range: OLCI has 21 spectral bands in the visible to near-infrared (VNIR) range, optimized for observing ocean color, vegetation, and atmospheric properties.\n- Chlorophyll-a Detection: OLCI is particularly useful for detecting chlorophyll-a concentrations, providing insights into phytoplankton populations, ocean productivity, and marine ecosystem health.\n- Spatial Resolution: It offers a spatial resolution of 300 meters, allowing for detailed observations of coastal and inland water areas, as well as land surfaces.\n- Wide Swath Coverage: The instrument covers a 1270 km swath on the Earth's surface, enabling near-global coverage every 2 to 3 days, depending on latitude.\n",
   "links": [
     {
       "rel": "root",
@@ -20,17 +20,21 @@
       "code": "N3a2_chl_esa",
       "id": "N3a2_chl_concentration_tri_esa",
       "themes": [
-        "oceans"
+        "water"
       ],
-      "yAxis": "%",
-      "locations": true,
+      "providers": [
+        "Copernicus Marine Service",
+        "ESA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg"
+      ],
       "tags": [
         "Water quality",
         "Copernicus Services",
-        "CHL",
         "CMEMS",
         "Marine monitoring",
-        "Chlorophyll-a",
+        "Chlorophyll",
         "Marine",
         "CAMS"
       ],
@@ -51,6 +55,62 @@
       "type": "text/html"
     },
     {
+      "rel": "service",
+      "href": "./N3a2_chl_concentration_tri_esa/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
+      "method": "GET",
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -58,32 +118,6 @@
     }
   ],
   "subtitle": "Chlorophyll-a concentration maps",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.png",
-  "yAxis": "%",
-  "themes": [
-    "oceans"
-  ],
-  "locations": true,
-  "tags": [
-    "Water quality",
-    "Copernicus Services",
-    "CHL",
-    "CMEMS",
-    "Marine monitoring",
-    "Chlorophyll-a",
-    "Marine",
-    "CAMS"
-  ],
-  "agency": [
-    "ESA"
-  ],
-  "subcode": "N3a2_chl_esa",
-  "sensor": [
-    "OLCI"
-  ],
-  "satellite": [
-    "Sentinel-3"
-  ],
   "eox:colorlegend": {
     "domain": [
       -100,
@@ -100,16 +134,35 @@
     "tickFormat": ".0f",
     "title": "Chl-a anomaly [%]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CMEMS",
+    "Marine monitoring",
+    "Chlorophyll",
+    "Marine",
+    "CAMS"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N3a2_chl_esa",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
   "title": "Chlorophyll-a concentration from Sentinel-3",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -10.502786636352539,
-          37.99824142456055,
-          30.602052688598633,
-          54.40245819091797
-        ],
         [
           -10.502786636352539,
           37.99824142456055,
@@ -135,7 +188,7 @@
     },
     {
       "name": "ESA",
-      "url": "https://sentinel.esa.int/web/sentinel/"
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
     }
   ],
   "summaries": {
@@ -143,7 +196,7 @@
       "N3a2_chl_esa"
     ],
     "themes": [
-      "oceans"
+      "water"
     ],
     "satellite": [
       "Sentinel-3"
@@ -152,7 +205,7 @@
       "OLCI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg"
     ]
   },
   "assets": {
@@ -164,7 +217,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

@@ -22,6 +22,12 @@
       "themes": [
         "atmosphere"
       ],
+      "providers": [
+        "NASA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.jpg"
+      ],
       "tags": [
         "Air quality",
         "NO2",
@@ -41,6 +47,62 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://openveda.cloud/api/raster/cog/statistics",
+      "type": "application/json",
+      "id": "veda_statistics",
+      "method": "POST",
+      "endpoint": "veda"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -48,7 +110,7 @@
     }
   ],
   "subtitle": "Yearly NO2 from NASA's OMI Aura [10^14 molecules/cm^2]",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.jpg",
   "themes": [
     "atmosphere"
   ],
@@ -69,31 +131,8 @@
   "satellite": [
     "Aura"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      37
-    ],
-    "range": [
-      "#fff5f0",
-      "#fee8de",
-      "#fed7c7",
-      "#fcc1a9",
-      "#fca88b",
-      "#fc8f6f",
-      "#fb7656",
-      "#f75c41",
-      "#f03f2e",
-      "#dc2824",
-      "#c5171c",
-      "#ae1117",
-      "#8d0912",
-      "#67000d"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "NO2 [10^14 molecules/cm\u00b2]"
-  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/chart.json",
   "title": "Nitrogen Dioxide from OMI (Yearly)",
   "extent": {
     "spatial": {
@@ -116,7 +155,7 @@
       "interval": [
         [
           "2005-01-01T00:00:00Z",
-          "2022-12-31T00:00:00Z"
+          "2022-01-01T00:00:00Z"
         ]
       ]
     }
@@ -125,7 +164,9 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://search.earthdata.nasa.gov/search?q=OMNO2d_003"
     }
   ],
@@ -143,22 +184,23 @@
       "OMI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.jpg"
     ]
   },
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_legend.png",
-      "type": "image/png",
-      "roles": [
-        "metadata"
-      ]
-    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N9_OMI_trno2-COG/N9_OMI_trno2-COG.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary",
+      "type": "text/html",
+      "title": "OMI/Aura NO2 Cloud-Screened Total and Tropospheric Column L3 Global Gridded",
+      "roles": [
+        "metadata"
       ]
     },
     "covid_dashboard": {

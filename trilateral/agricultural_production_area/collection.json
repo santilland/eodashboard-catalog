@@ -22,13 +22,19 @@
       "themes": [
         "agriculture"
       ],
+      "providers": [
+        "Université catholique de Louvain",
+        "Copernicus"
+      ],
       "cities": [
         "Brandenburg Region"
       ],
       "countries": [
         "DE"
       ],
-      "yAxis": "Cumulative Proportion of total areas under active management",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a2_agricultural_production_area/E10a2_agricultural_production_area.jpg"
+      ],
       "tags": [
         "Copernicus",
         "Open data"
@@ -46,10 +52,66 @@
     },
     {
       "rel": "service",
+      "href": "./agricultural_production_area/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
+      "method": "GET",
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "service",
       "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E10a2_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
       "type": "application/json",
-      "method": "GET",
-      "id": "E10a2_tri"
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -59,9 +121,11 @@
     }
   ],
   "subtitle": "Agricultural production in Europe",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a2_agricultural_production_area/E10a2_agricultural_production_area.jpg",
   "themes": [
     "agriculture"
   ],
+  "locations": true,
   "tags": [
     "Copernicus",
     "Open data"
@@ -77,22 +141,16 @@
     "Sentinel-2"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a2_agricultural_production_area/chart.json",
   "title": "Agricultural production - area",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          13.080632,
-          52.121413000000004,
-          13.100632,
-          52.141413
-        ],
-        [
-          13.080632,
-          52.121413000000004,
-          13.100632,
-          52.141413
+          11.26573,
+          51.36071,
+          14.76504,
+          53.5587
         ]
       ]
     },
@@ -108,7 +166,7 @@
   "license": "other",
   "providers": [
     {
-      "name": "Universit\u00e9 catholique de Louvain",
+      "name": "Université catholique de Louvain",
       "url": "https://uclouvain.be/en/index.html"
     },
     {
@@ -134,6 +192,18 @@
     ],
     "countries": [
       "DE"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a2_agricultural_production_area/E10a2_agricultural_production_area.jpg"
     ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a2_agricultural_production_area/E10a2_agricultural_production_area.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

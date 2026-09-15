@@ -1,0 +1,206 @@
+{
+  "type": "Collection",
+  "id": "US042",
+  "stac_version": "1.1.0",
+  "description": "## Grounded airplanes during the novel coronavirus pandemic\n\nDuring COVID-19 related lockdowns, activities like air travel decreased to prevent the spread of the novel coronavirus. To help quantify these changes, scientists are combining two kinds of space-based remote sensing data – synthetic aperture radar (SAR) data from JAXA’s ALOS-2 and [ESA’s Copernicus Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) satellites with NASA-processed high-resolution optical remote sensing data from Planet Inc. and [ESA's Copernicus Sentinel-2 multispectral satellite data](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) – to observe and quantify the changes in grounded airplanes and air traffic around the world.\n\nSAR is a high-resolution, space-based radar that makes 2D images out of 3D objects. By comparing SAR images of airports before, during, and after lockdowns, scientists can determine how air traffic may have changed during the pandemic. In general, manmade targets such as buildings, cars, and airplanes appear brighter in SAR imagery than natural targets like bare land, forested areas, or the ocean.\n\nFigure 1 shows a color composited SAR image of Tokyo International Airport, Haneda from the PALSAR-2 instrument aboard the ALOS-2 satellite. The different colors in the image correspond to the different dates the images were captured: red images were captured before lockdowns on November 28, 2019, green images were captured as lockdowns began on March 19, 2020, and blue images were captured during lockdowns on May 14, 2020. White colored areas, such as buildings, indicate no changes during the time period, whereas individual red, green, or blue colored pixels in the parking areas of the airport indicate airplanes at that time. Cyan colored areas show airplanes on March and May 2020.\n \n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/JP01-E8_Fig1.png)\n\n*Figure 1. A multi-temporal, color-composite PALSAR-2 image at Tokyo International Airport, Haneda acquired on November 2019 (red), March 2020 (green), and May 2020 (blue).*\n\nFigure 2 shows a time series animation of SAR images taken from [Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) at Tokyo International Airport, Haneda from January 10 to June 2, 2020. Brighter pixels in parking areas of the airport may correspond with airplanes at each acquisition date.\n\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/JP01-E13b_Animation.gif)\n\n*Figure 2. Sentinel-1 animation at Tokyo International Airport, Haneda from January to June 2020.*\n\nIn addition to the SAR imagery, NASA and ESA scientists also used artificial intelligence technology and high-resolution optical imagery from Planet and [Copernicus Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) to detect and count aircraft on the ground at airports. \n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/JP01-E13b-Fig3.png)\n\n*Figure 3. Aircraft detection using Planet imagery and AI.*\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/E13b-Fig4.png)\n\n*Figure 4. Aircraft detection over Paris CDG airport using Sentinel-2 imagery and AI.*\n\nCombining high-resolution optical remote sensing data from Planet and Sentinel-2 with SAR imagery from ALOS-2 and [Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) is a powerful method to provide reliable time series data on the number of aircrafts grounded at airports over time. While imagery from optical satellites like Planet or [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) is powerful to monitor changes in grounded aircrafts around the world systematically, their sensors cannot penetrate clouds, limiting the detection capability on cloudy or rainy days. Alternatively, SAR data, while lower resolution, can penetrate clouds. Therefore, scientists are combining these datasets to get the most comprehensive images of changes at aircraft counts at airports during the COVID-19 pandemic. \n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E13b_tri?aoi_id=eq.US042&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Parked Airplanes"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/empty_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E13b_parked_airplanes/chart.json",
+  "subcode": "E13b",
+  "subtitle": "Grounded airplanes during the novel coronavirus pandemic",
+  "eodash:stories": {
+    "airports": {
+      "href": "https://eodashboard.org/story/?id=airports",
+      "type": "text/markdown",
+      "title": "Grounded: How COVID-19 Emptied the World's Airports",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/airports.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/E13b_parked_airplanes.jpg",
+  "themes": [
+    "economy",
+    "covid-19"
+  ],
+  "tags": [
+    "Copernicus Services",
+    "Open data",
+    "COVID-19",
+    "Mobility",
+    "Community",
+    "Air traffic"
+  ],
+  "agency": [
+    "ESA",
+    "NASA",
+    "JAXA"
+  ],
+  "sensor": [
+    "PALSAR-2",
+    "C-SAR",
+    "MSI",
+    "PSB.SD"
+  ],
+  "satellite": [
+    "ALOS-2",
+    "Sentinel-1",
+    "Sentinel-2",
+    "PlanetScope"
+  ],
+  "title": "Newark - E13b_parked_airplanes",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -74.19,
+          40.67,
+          -74.155,
+          40.708
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-20T00:00:00Z",
+          "2020-10-15T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "url": "https://global.jaxa.jp/"
+    },
+    {
+      "name": "ESA",
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
+    },
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    },
+    {
+      "name": "planet",
+      "url": "https://www.planet.com/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "airports": {
+      "href": "https://eodashboard.org/story/?id=airports",
+      "type": "text/markdown",
+      "title": "Grounded: How COVID-19 Emptied the World's Airports",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/airports.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13b_parked_airplanes/E13b_parked_airplanes.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

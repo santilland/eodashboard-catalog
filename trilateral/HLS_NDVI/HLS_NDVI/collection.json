@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "HLS_NDVI",
   "stac_version": "1.1.0",
-  "description": "## Normalized difference vegetation index from HLS\n\n## Dataset Description:\n\nDataset represents a NDVI calculated from Harmonized Landsat and Sentinel-2 Data over Punta Gorda, Florida, USA.\n\n- GeographicalCoverage: [-82.37,26.31,-81.9,27.03]\n- TemporalAvailability: \"['2022-09-05', '2022-09-30']\"\n- TemporalResolution: individual dates\n- Host: \"[VEDA](https://www.earthdata.nasa.gov/esds/veda)\"\n\n## Data Access\n\n- \"[VEDA Catalog](https://staging-stac.delta-backend.com/collections/hls-ndvi)\"\n",
+  "description": "## Normalized difference vegetation index from HLS\n\n## Dataset Description:\n\nDataset represents a NDVI calculated from Harmonized Landsat and Sentinel-2 Data over Punta Gorda, Florida, USA.\n\n- GeographicalCoverage: [-82.37,26.31,-81.9,27.03]\n- TemporalAvailability: \"['2022-09-05', '2022-09-30']\"\n- TemporalResolution: individual dates\n- Host: \"[VEDA](https://www.earthdata.nasa.gov/esds/veda)\"\n\n## Data Access\n\n- \"[VEDA Catalog](https://openveda.cloud/api/stac/collections/hls-ndvi)\"\n",
   "links": [
     {
       "rel": "root",
@@ -11,24 +11,10 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./hls-ndvi/2022/ndvi_cog_2022-09-30_day.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/hls-ndvi/ndvi_cog_2022-09-30_day.tif",
-      "datetime": "2022-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./hls-ndvi/2022/ndvi_cog_2022-09-05_day.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/hls-ndvi/ndvi_cog_2022-09-05_day.tif",
-      "datetime": "2022-09-05T00:00:00Z"
-    },
-    {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=cfastie&rescale=-1,1",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?&bidx=1&colormap_name=cfastie&rescale=-1,1&resampling_method=nearest",
       "type": "image/png",
-      "title": "HLS_NDVI"
+      "title": "NDVI from HLS"
     },
     {
       "rel": "parent",
@@ -38,18 +24,18 @@
     }
   ],
   "subtitle": "NDVI calculated from Harmonized Landsat and Sentinel-2",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/thumbnail.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/thumbnail.jpg",
   "themes": [
     "biomass"
   ],
   "tags": [
     "Biomass",
     "NDVI",
-    "Vegetation index",
+    "Vegetation Index",
     "Sentinel-2",
     "MSI",
     "Landsat",
-    "Ecosystem",
+    "Ecosystems",
     "Monitoring"
   ],
   "agency": [
@@ -65,30 +51,230 @@
     "Sentinel-2",
     "Landsat"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -1,
-      1
-    ],
-    "range": [
-      "#ffffff",
-      "#acacac",
-      "#595959",
-      "#616161",
-      "#b4b4b4",
-      "#f5f5f5",
-      "#949494",
-      "#454558",
-      "#1be830",
-      "#83ff01",
-      "#ffe801",
-      "#ff8001",
-      "#ff1801",
-      "#ff01ef"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "NDVI"
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": -1,
+              "format": "range",
+              "minimum": 0,
+              "step": 0.1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 1,
+              "format": "range",
+              "maximum": 1.5,
+              "step": 0.1
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "cfastie",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "NDVI",
+      "scaleType": "continuous",
+      "tickFormat": ".1f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
   },
   "endpointtype": "VEDA_cog",
   "title": "NDVI from HLS",
@@ -128,15 +314,16 @@
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/cm_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/HLS_NDVI/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

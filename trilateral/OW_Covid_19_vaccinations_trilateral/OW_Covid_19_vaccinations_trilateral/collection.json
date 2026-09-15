@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "OW_Covid_19_vaccinations_trilateral",
   "stac_version": "1.1.0",
-  "description": "## Data on COVID-19 (coronavirus) \n\nThe source of this data is [Our World in Data](https://ourworldindata.org/coronavirus)\n\nThe full dataset is is updated daily and includes data on confirmed cases, deaths, hospitalizations, testing, and vaccinations as well as other variables of potential interest. Here, our interactive charts show visualise the variation of the total number of cases and the evolution of vaccinations. \n\nTry interacting with the charts to visualise each variable. \n\n**References:**\n\nThis data has been collected, aggregated, and documented by Cameron Appel, Diana Beltekian, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Edouard Mathieu, Esteban Ortiz-Ospina, Hannah Ritchie, Lucas Rod\u00e9s-Guirao, Max Roser.\n\nHasell, J., Mathieu, E., Beltekian, D. et al. A cross-country database of COVID-19 testing. Sci Data 7, 345 (2020). https://doi.org/10.1038/s41597-020-00688-8\n",
+  "description": "## Data on COVID-19 (coronavirus) \n\nThe source of this data is [Our World in Data](https://ourworldindata.org/coronavirus)\n\nThe full dataset is is updated daily and includes data on confirmed cases, deaths, hospitalizations, testing, and vaccinations as well as other variables of potential interest. Here, our interactive charts show visualise the variation of the total number of cases and the evolution of vaccinations. \n\nTry interacting with the charts to visualise each variable. \n\n**References:**\n\nThis data has been collected, aggregated, and documented by Cameron Appel, Diana Beltekian, Daniel Gavrilov, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Edouard Mathieu, Esteban Ortiz-Ospina, Hannah Ritchie, Lucas Rodés-Guirao, Max Roser.\n\nHasell, J., Mathieu, E., Beltekian, D. et al. A cross-country database of COVID-19 testing. Sci Data 7, 345 (2020). https://doi.org/10.1038/s41597-020-00688-8\n",
   "links": [
     {
       "rel": "root",
@@ -11,1471 +11,1634 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AE",
       "latlng": "24.467,54.367",
       "country": "United Arab Emirates",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AF.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AF/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AF",
       "latlng": "34.517,69.183",
       "country": "Afghanistan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AL",
       "latlng": "41.317,19.817",
       "country": "Albania",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AM",
       "latlng": "40.167,44.5",
       "country": "Armenia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AO",
       "latlng": "-8.833,13.217",
       "country": "Angola",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/AR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AR",
       "latlng": "-34.583,-58.667",
       "country": "Argentina",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AT",
       "latlng": "48.2,16.367",
       "country": "Austria",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AU.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AU/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AU",
       "latlng": "-35.267,149.133",
       "country": "Australia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/AZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./AZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "AZ",
       "latlng": "40.383,49.867",
       "country": "Azerbaijan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BA",
       "latlng": "43.867,18.417",
       "country": "Bosnia and Herzegovina",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BD.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BD/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BD",
       "latlng": "23.717,90.4",
       "country": "Bangladesh",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/BE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BE",
       "latlng": "50.833,4.333",
       "country": "Belgium",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BF.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BF/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BF",
       "latlng": "12.367,-1.517",
       "country": "Burkina Faso",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/BG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BG",
       "latlng": "42.683,23.317",
       "country": "Bulgaria",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BI.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BI/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BI",
       "latlng": "-3.367,29.35",
       "country": "Burundi",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BJ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BJ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BJ",
       "latlng": "6.483,2.617",
       "country": "Benin",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BM",
       "latlng": "32.283,-64.783",
       "country": "Bermuda",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BN",
       "latlng": "4.883,114.933",
       "country": "Brunei",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BO",
       "latlng": "-16.5,-68.15",
       "country": "Bolivia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BR",
       "latlng": "-15.783,-47.917",
       "country": "Brazil",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BT",
       "latlng": "27.467,89.633",
       "country": "Bhutan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BW.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BW/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BW",
       "latlng": "-24.633,25.9",
       "country": "Botswana",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/BY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BY",
       "latlng": "53.9,27.567",
       "country": "Belarus",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/BZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./BZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "BZ",
       "latlng": "17.25,-88.767",
       "country": "Belize",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/CA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CA",
       "latlng": "45.417,-75.7",
       "country": "Canada",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/CF.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CF/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CF",
       "latlng": "4.367,18.583",
       "country": "Central African Republic",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/CH.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CH/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CH",
       "latlng": "46.917,7.467",
       "country": "Switzerland",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/CL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CL",
       "latlng": "-33.45,-70.667",
       "country": "Chile",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/CM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CM",
       "latlng": "3.867,11.517",
       "country": "Cameroon",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/CN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CN",
       "latlng": "39.917,116.383",
       "country": "China",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/CO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CO",
       "latlng": "4.6,-74.083",
       "country": "Colombia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/CR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CR",
       "latlng": "9.933,-84.083",
       "country": "Costa Rica",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/CU.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CU/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CU",
       "latlng": "23.117,-82.35",
       "country": "Cuba",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/CY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CY",
       "latlng": "35.167,33.367",
       "country": "Cyprus",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/CZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./CZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "CZ",
       "latlng": "50.083,14.467",
       "country": "Czechia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/DE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./DE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "DE",
       "latlng": "52.517,13.4",
       "country": "Germany",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/DJ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./DJ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "DJ",
       "latlng": "11.583,43.15",
       "country": "Djibouti",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/DK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./DK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "DK",
       "latlng": "55.667,12.583",
       "country": "Denmark",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/DO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./DO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "DO",
       "latlng": "18.467,-69.9",
       "country": "Dominican Republic",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/DZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./DZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "DZ",
       "latlng": "36.75,3.05",
       "country": "Algeria",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/EC.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./EC/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "EC",
       "latlng": "-0.217,-78.5",
       "country": "Ecuador",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/EE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./EE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "EE",
       "latlng": "59.433,24.717",
       "country": "Estonia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/EG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./EG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "EG",
       "latlng": "30.05,31.25",
       "country": "Egypt",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ES.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ES/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ES",
       "latlng": "40.4,-3.683",
       "country": "Spain",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ET.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ET/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ET",
       "latlng": "9.033,38.7",
       "country": "Ethiopia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/FI.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./FI/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "FI",
       "latlng": "60.167,24.933",
       "country": "Finland",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/FJ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./FJ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "FJ",
       "latlng": "-18.133,178.417",
       "country": "Fiji",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/FK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./FK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "FK",
       "latlng": "-51.7,-57.85",
       "country": "Falkland Islands",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/FR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./FR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "FR",
       "latlng": "48.867,2.333",
       "country": "France",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GA",
       "latlng": "0.383,9.45",
       "country": "Gabon",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GB.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GB/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GB",
       "latlng": "51.5,-0.083",
       "country": "United Kingdom",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GE",
       "latlng": "41.683,44.833",
       "country": "Georgia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GH.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GH/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GH",
       "latlng": "5.55,-0.217",
       "country": "Ghana",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GL",
       "latlng": "64.183,-51.75",
       "country": "Greenland",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GM",
       "latlng": "13.45,-16.567",
       "country": "Gambia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GN",
       "latlng": "9.5,-13.7",
       "country": "Guinea",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GQ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GQ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GQ",
       "latlng": "3.75,8.783",
       "country": "Equatorial Guinea",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/GR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GR",
       "latlng": "37.983,23.733",
       "country": "Greece",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GT",
       "latlng": "14.617,-90.517",
       "country": "Guatemala",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/GY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./GY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "GY",
       "latlng": "6.8,-58.15",
       "country": "Guyana",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/HN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./HN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "HN",
       "latlng": "14.1,-87.217",
       "country": "Honduras",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/HR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./HR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "HR",
       "latlng": "45.8,16.0",
       "country": "Croatia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/HT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./HT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "HT",
       "latlng": "18.533,-72.333",
       "country": "Haiti",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/HU.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./HU/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "HU",
       "latlng": "47.5,19.083",
       "country": "Hungary",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ID.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ID/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ID",
       "latlng": "-6.167,106.817",
       "country": "Indonesia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/IE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IE",
       "latlng": "53.317,-6.233",
       "country": "Ireland",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/IL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IL",
       "latlng": "31.767,35.233",
       "country": "Israel",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/IN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IN",
       "latlng": "28.6,77.2",
       "country": "India",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/IQ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IQ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IQ",
       "latlng": "33.333,44.4",
       "country": "Iraq",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/IR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IR",
       "latlng": "35.7,51.417",
       "country": "Iran",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/IS.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IS/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IS",
       "latlng": "64.15,-21.95",
       "country": "Iceland",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/IT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./IT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "IT",
       "latlng": "41.9,12.483",
       "country": "Italy",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/JM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./JM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "JM",
       "latlng": "18.0,-76.8",
       "country": "Jamaica",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/JO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./JO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "JO",
       "latlng": "31.95,35.933",
       "country": "Jordan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/JP.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./JP/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "JP",
       "latlng": "35.683,139.75",
       "country": "Japan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/KE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./KE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "KE",
       "latlng": "-1.283,36.817",
       "country": "Kenya",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/KG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./KG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "KG",
       "latlng": "42.867,74.6",
       "country": "Kyrgyzstan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/KH.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./KH/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "KH",
       "latlng": "11.55,104.917",
       "country": "Cambodia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/KR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./KR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "KR",
       "latlng": "37.55,126.983",
       "country": "South Korea",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/KW.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./KW/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "KW",
       "latlng": "29.367,47.967",
       "country": "Kuwait",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/KZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./KZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "KZ",
       "latlng": "51.167,71.417",
       "country": "Kazakhstan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/LA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LA",
       "latlng": "17.967,102.6",
       "country": "Laos",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/LB.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LB/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LB",
       "latlng": "33.867,35.5",
       "country": "Lebanon",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/LK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LK",
       "latlng": "6.917,79.833",
       "country": "Sri Lanka",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/LR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LR",
       "latlng": "6.3,-10.8",
       "country": "Liberia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/LS.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LS/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LS",
       "latlng": "-29.317,27.483",
       "country": "Lesotho",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/LT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LT",
       "latlng": "54.683,25.317",
       "country": "Lithuania",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/LU.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LU/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LU",
       "latlng": "49.6,6.117",
       "country": "Luxembourg",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/LV.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LV/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LV",
       "latlng": "56.95,24.1",
       "country": "Latvia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/LY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./LY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "LY",
       "latlng": "32.883,13.167",
       "country": "Libya",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MA",
       "latlng": "34.017,-6.817",
       "country": "Morocco",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/MC.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MC/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MC",
       "latlng": "43.733,7.417",
       "country": "Monaco",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MD.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MD/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MD",
       "latlng": "47.0,28.85",
       "country": "Moldova",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ME.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ME/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ME",
       "latlng": "42.433,19.267",
       "country": "Montenegro",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MG",
       "latlng": "-18.917,47.517",
       "country": "Madagascar",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MK",
       "latlng": "42.0,21.433",
       "country": "North Macedonia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ML.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ML/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ML",
       "latlng": "12.65,-8.0",
       "country": "Mali",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MM",
       "latlng": "16.8,96.15",
       "country": "Myanmar",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MN",
       "latlng": "47.917,106.917",
       "country": "Mongolia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MR",
       "latlng": "18.067,-15.967",
       "country": "Mauritania",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MT",
       "latlng": "35.883,14.5",
       "country": "Malta",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MW.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MW/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MW",
       "latlng": "-13.967,33.783",
       "country": "Malawi",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/MX.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MX/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MX",
       "latlng": "19.433,-99.133",
       "country": "Mexico",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MY",
       "latlng": "3.167,101.7",
       "country": "Malaysia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/MZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./MZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "MZ",
       "latlng": "-25.95,32.583",
       "country": "Mozambique",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NA",
       "latlng": "-22.567,17.083",
       "country": "Namibia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NC.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NC/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NC",
       "latlng": "-22.267,166.45",
       "country": "New Caledonia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NE",
       "latlng": "13.517,2.117",
       "country": "Niger",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NG",
       "latlng": "9.083,7.533",
       "country": "Nigeria",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NI.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NI/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NI",
       "latlng": "12.133,-86.25",
       "country": "Nicaragua",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NL",
       "latlng": "52.35,4.917",
       "country": "Netherlands",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/NO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NO",
       "latlng": "59.917,10.75",
       "country": "Norway",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NP.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NP/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NP",
       "latlng": "27.717,85.317",
       "country": "Nepal",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/NZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./NZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "NZ",
       "latlng": "-41.3,174.783",
       "country": "New Zealand",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/OM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./OM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "OM",
       "latlng": "23.617,58.583",
       "country": "Oman",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PA",
       "latlng": "8.967,-79.533",
       "country": "Panama",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PE",
       "latlng": "-12.05,-77.05",
       "country": "Peru",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PG",
       "latlng": "-9.45,147.183",
       "country": "Papua New Guinea",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PH.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PH/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PH",
       "latlng": "14.6,120.967",
       "country": "Philippines",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PK",
       "latlng": "33.683,73.05",
       "country": "Pakistan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/PL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PL",
       "latlng": "52.25,21.0",
       "country": "Poland",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PT",
       "latlng": "38.717,-9.133",
       "country": "Portugal",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/PY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./PY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "PY",
       "latlng": "-25.267,-57.667",
       "country": "Paraguay",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/QA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./QA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "QA",
       "latlng": "25.283,51.533",
       "country": "Qatar",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/RO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./RO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "RO",
       "latlng": "44.433,26.1",
       "country": "Romania",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/RS.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./RS/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "RS",
       "latlng": "44.833,20.5",
       "country": "Serbia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/RU.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./RU/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "RU",
       "latlng": "55.75,37.6",
       "country": "Russia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/RW.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./RW/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "RW",
       "latlng": "-1.95,30.05",
       "country": "Rwanda",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SA",
       "latlng": "24.65,46.7",
       "country": "Saudi Arabia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SB.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SB/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SB",
       "latlng": "-9.433,159.95",
       "country": "Solomon Islands",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SD.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SD/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SD",
       "latlng": "15.6,32.533",
       "country": "Sudan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SE",
       "latlng": "59.333,18.05",
       "country": "Sweden",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/SG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SG",
       "latlng": "1.283,103.85",
       "country": "Singapore",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/SI.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SI/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SI",
       "latlng": "46.05,14.517",
       "country": "Slovenia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SK",
       "latlng": "48.15,17.117",
       "country": "Slovakia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SL.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SL/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SL",
       "latlng": "8.483,-13.233",
       "country": "Sierra Leone",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SN",
       "latlng": "14.733,-17.633",
       "country": "Senegal",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SO.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SO/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SO",
       "latlng": "2.067,45.333",
       "country": "Somalia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SR",
       "latlng": "5.833,-55.167",
       "country": "Suriname",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SS.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SS/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SS",
       "latlng": "37.55,126.983",
       "country": "South Sudan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SV.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SV/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SV",
       "latlng": "13.7,-89.2",
       "country": "El Salvador",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/SY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./SY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "SY",
       "latlng": "33.5,36.3",
       "country": "Syria",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TD.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TD/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TD",
       "latlng": "12.1,15.033",
       "country": "Chad",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TG",
       "latlng": "6.117,1.217",
       "country": "Togo",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TH.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TH/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TH",
       "latlng": "13.75,100.517",
       "country": "Thailand",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TJ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TJ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TJ",
       "latlng": "38.55,68.767",
       "country": "Tajikistan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TM",
       "latlng": "37.95,58.383",
       "country": "Turkmenistan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TN",
       "latlng": "36.8,10.183",
       "country": "Tunisia",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TR.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TR/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TR",
       "latlng": "39.933,32.867",
       "country": "Turkey",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TT.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TT/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TT",
       "latlng": "10.65,-61.517",
       "country": "Trinidad and Tobago",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/TW.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./TW/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "TW",
       "latlng": "25.033,121.517",
       "country": "Taiwan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/UA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./UA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "UA",
       "latlng": "50.433,30.517",
       "country": "Ukraine",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/UG.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./UG/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "UG",
       "latlng": "0.317,32.55",
       "country": "Uganda",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2020/US.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "US",
       "latlng": "38.883,-77.0",
       "country": "United States of America",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/UY.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./UY/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "UY",
       "latlng": "-34.85,-56.167",
       "country": "Uruguay",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/UZ.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./UZ/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "UZ",
       "latlng": "41.317,69.25",
       "country": "Uzbekistan",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/VE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./VE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "VE",
       "latlng": "10.483,-66.867",
       "country": "Venezuela",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/VN.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./VN/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "VN",
       "latlng": "21.033,105.85",
       "country": "Vietnam",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/VU.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./VU/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "VU",
       "latlng": "-17.733,168.317",
       "country": "Vanuatu",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/XK.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./XK/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "XK",
       "latlng": "-1.283,36.817",
       "country": "Kosovo",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/YE.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./YE/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "YE",
       "latlng": "15.35,44.2",
       "country": "Yemen",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ZA.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ZA/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ZA",
       "latlng": "-25.7,28.217",
       "country": "South Africa",
-      "city": "/"
+      "name": "/"
     },
     {
-      "rel": "item",
-      "href": "./OW_Covid_19_vaccinations_trilateral/2021/ZM.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./ZM/collection.json",
+      "type": "application/json",
+      "title": "/ - OW_Covid_19_vaccinations_trilateral",
       "id": "ZM",
       "latlng": "-15.417,28.283",
       "country": "Zambia",
-      "city": "/"
+      "name": "/"
     },
     {
       "rel": "parent",
@@ -1484,13 +1647,137 @@
       "title": "Covid-19 Vaccinations"
     }
   ],
-  "sci:citation": "Edouard Mathieu, Hannah Ritchie, Lucas Rod\u00e9s-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - \"Coronavirus Pandemic (COVID-19)\". \nPublished online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]\n",
-  "yAxis": "/",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "sci:citation": "Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - \"Coronavirus Pandemic (COVID-19)\". \nPublished online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]\n",
+  "eodash:stories": {
+    "nightlights": {
+      "href": "https://eodashboard.org/story/?id=nightlights",
+      "type": "text/markdown",
+      "title": "During COVID-19 Lockdowns Night Lights in Central Business Districts Decreased",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "nightlights_from_space": {
+      "href": "https://eodashboard.org/story/?id=nightlights_from_space",
+      "type": "text/markdown",
+      "title": "Observing Nightlights from Space",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights_from_space.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "covid-cars": {
+      "href": "https://eodashboard.org/story/?id=covid-cars",
+      "type": "text/markdown",
+      "title": "COVID-19 Changes in Car Manufacturing",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-cars.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "covid-no2": {
+      "href": "https://eodashboard.org/story/?id=covid-no2",
+      "type": "text/markdown",
+      "title": "COVID-19 Lockdowns Reduce Nitrogen Dioxide Levels",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-no2.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "covid-co2": {
+      "href": "https://eodashboard.org/story/?id=covid-co2",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on CO2 Emissions",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-co2.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "early_rice_planting": {
+      "href": "https://eodashboard.org/story/?id=early_rice_planting",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/early_rice_planting.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "shipping": {
+      "href": "https://eodashboard.org/story/?id=shipping",
+      "type": "text/markdown",
+      "title": "Travel Restrictions Interrupted Global Supply Chains Dependent on Cargo Shipping",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/shipping.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OW_Covid_19_vaccinations/OW_Covid_19_vaccinations_photo.jpg",
   "themes": [
-    "health"
+    "covid-19"
   ],
   "tags": [
-    "Covid-19",
+    "COVID-19",
     "Human activities",
     "Open data"
   ],
@@ -1501,17 +1788,995 @@
   "insituSources": [
     "Other"
   ],
-  "geoDBID": "Global_COVID_vaccination_data",
+  "locations": true,
   "endpointtype": "GeoDB",
   "title": "Covid-19 Vaccinations",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -99.143,
-          -51.71,
-          178.427,
-          64.19300000000001
+          -99.333,
+          -51.900000000000006,
+          178.617,
+          64.38300000000001
+        ],
+        [
+          54.166999999999994,
+          24.267,
+          54.567,
+          24.666999999999998
+        ],
+        [
+          68.983,
+          34.317,
+          69.38300000000001,
+          34.717000000000006
+        ],
+        [
+          19.617,
+          41.117,
+          20.017,
+          41.517
+        ],
+        [
+          44.3,
+          39.967,
+          44.7,
+          40.367000000000004
+        ],
+        [
+          13.017000000000001,
+          -9.033,
+          13.417,
+          -8.633000000000001
+        ],
+        [
+          -58.867000000000004,
+          -34.783,
+          -58.467,
+          -34.382999999999996
+        ],
+        [
+          16.167,
+          48.0,
+          16.567,
+          48.400000000000006
+        ],
+        [
+          148.93300000000002,
+          -35.467000000000006,
+          149.333,
+          -35.067
+        ],
+        [
+          49.666999999999994,
+          40.183,
+          50.067,
+          40.583000000000006
+        ],
+        [
+          18.217000000000002,
+          43.666999999999994,
+          18.617,
+          44.067
+        ],
+        [
+          90.2,
+          23.517,
+          90.60000000000001,
+          23.916999999999998
+        ],
+        [
+          4.133,
+          50.632999999999996,
+          4.533,
+          51.033
+        ],
+        [
+          -1.7169999999999999,
+          12.167000000000002,
+          -1.317,
+          12.567
+        ],
+        [
+          23.117,
+          42.483,
+          23.517,
+          42.883
+        ],
+        [
+          29.150000000000002,
+          -3.567,
+          29.55,
+          -3.167
+        ],
+        [
+          2.417,
+          6.2829999999999995,
+          2.817,
+          6.683
+        ],
+        [
+          -64.983,
+          32.083,
+          -64.583,
+          32.483000000000004
+        ],
+        [
+          114.733,
+          4.683,
+          115.13300000000001,
+          5.083
+        ],
+        [
+          -68.35000000000001,
+          -16.7,
+          -67.95,
+          -16.3
+        ],
+        [
+          -48.117000000000004,
+          -15.982999999999999,
+          -47.717,
+          -15.583
+        ],
+        [
+          89.43299999999999,
+          27.267,
+          89.833,
+          27.666999999999998
+        ],
+        [
+          25.7,
+          -24.833,
+          26.099999999999998,
+          -24.433
+        ],
+        [
+          27.367,
+          53.699999999999996,
+          27.767,
+          54.1
+        ],
+        [
+          -88.967,
+          17.05,
+          -88.567,
+          17.45
+        ],
+        [
+          -75.9,
+          45.217,
+          -75.5,
+          45.617000000000004
+        ],
+        [
+          18.383,
+          4.167,
+          18.782999999999998,
+          4.567
+        ],
+        [
+          7.2669999999999995,
+          46.717,
+          7.667,
+          47.117000000000004
+        ],
+        [
+          -70.867,
+          -33.650000000000006,
+          -70.467,
+          -33.25
+        ],
+        [
+          11.317,
+          3.667,
+          11.716999999999999,
+          4.067
+        ],
+        [
+          116.18299999999999,
+          39.717,
+          116.583,
+          40.117000000000004
+        ],
+        [
+          -74.283,
+          4.3999999999999995,
+          -73.883,
+          4.8
+        ],
+        [
+          -84.283,
+          9.733,
+          -83.883,
+          10.133
+        ],
+        [
+          -82.55,
+          22.917,
+          -82.14999999999999,
+          23.317
+        ],
+        [
+          33.166999999999994,
+          34.967,
+          33.567,
+          35.367000000000004
+        ],
+        [
+          14.267000000000001,
+          49.882999999999996,
+          14.667,
+          50.283
+        ],
+        [
+          13.200000000000001,
+          52.317,
+          13.6,
+          52.717000000000006
+        ],
+        [
+          42.949999999999996,
+          11.383000000000001,
+          43.35,
+          11.783
+        ],
+        [
+          12.383000000000001,
+          55.467,
+          12.783,
+          55.867000000000004
+        ],
+        [
+          -70.10000000000001,
+          18.267,
+          -69.7,
+          18.666999999999998
+        ],
+        [
+          2.8499999999999996,
+          36.55,
+          3.25,
+          36.95
+        ],
+        [
+          -78.7,
+          -0.41700000000000004,
+          -78.3,
+          -0.016999999999999987
+        ],
+        [
+          24.517,
+          59.233,
+          24.916999999999998,
+          59.633
+        ],
+        [
+          31.05,
+          29.85,
+          31.45,
+          30.25
+        ],
+        [
+          -3.883,
+          40.199999999999996,
+          -3.4829999999999997,
+          40.6
+        ],
+        [
+          38.5,
+          8.833,
+          38.900000000000006,
+          9.232999999999999
+        ],
+        [
+          24.733,
+          59.967,
+          25.133,
+          60.367000000000004
+        ],
+        [
+          178.217,
+          -18.333,
+          178.617,
+          -17.933
+        ],
+        [
+          -58.050000000000004,
+          -51.900000000000006,
+          -57.65,
+          -51.5
+        ],
+        [
+          2.133,
+          48.666999999999994,
+          2.5330000000000004,
+          49.067
+        ],
+        [
+          9.25,
+          0.183,
+          9.649999999999999,
+          0.583
+        ],
+        [
+          -0.28300000000000003,
+          51.3,
+          0.117,
+          51.7
+        ],
+        [
+          44.632999999999996,
+          41.483,
+          45.033,
+          41.883
+        ],
+        [
+          -0.41700000000000004,
+          5.35,
+          -0.016999999999999987,
+          5.75
+        ],
+        [
+          -51.95,
+          63.983000000000004,
+          -51.55,
+          64.38300000000001
+        ],
+        [
+          -16.767,
+          13.25,
+          -16.367,
+          13.649999999999999
+        ],
+        [
+          -13.899999999999999,
+          9.3,
+          -13.5,
+          9.7
+        ],
+        [
+          8.583,
+          3.55,
+          8.982999999999999,
+          3.95
+        ],
+        [
+          23.533,
+          37.782999999999994,
+          23.933,
+          38.183
+        ],
+        [
+          -90.717,
+          14.417000000000002,
+          -90.317,
+          14.817
+        ],
+        [
+          -58.35,
+          6.6,
+          -57.949999999999996,
+          7.0
+        ],
+        [
+          -87.417,
+          13.9,
+          -87.017,
+          14.299999999999999
+        ],
+        [
+          15.8,
+          45.599999999999994,
+          16.2,
+          46.0
+        ],
+        [
+          -72.533,
+          18.333000000000002,
+          -72.133,
+          18.733
+        ],
+        [
+          18.883,
+          47.3,
+          19.282999999999998,
+          47.7
+        ],
+        [
+          106.61699999999999,
+          -6.367,
+          107.017,
+          -5.967
+        ],
+        [
+          -6.433,
+          53.117,
+          -6.0329999999999995,
+          53.517
+        ],
+        [
+          35.032999999999994,
+          31.567,
+          35.433,
+          31.967
+        ],
+        [
+          77.0,
+          28.400000000000002,
+          77.4,
+          28.8
+        ],
+        [
+          44.199999999999996,
+          33.132999999999996,
+          44.6,
+          33.533
+        ],
+        [
+          51.217,
+          35.5,
+          51.617000000000004,
+          35.900000000000006
+        ],
+        [
+          -22.15,
+          63.95,
+          -21.75,
+          64.35000000000001
+        ],
+        [
+          12.283000000000001,
+          41.699999999999996,
+          12.683,
+          42.1
+        ],
+        [
+          -77.0,
+          17.8,
+          -76.6,
+          18.2
+        ],
+        [
+          35.733,
+          31.75,
+          36.133,
+          32.15
+        ],
+        [
+          139.55,
+          35.483,
+          139.95,
+          35.883
+        ],
+        [
+          36.617,
+          -1.4829999999999999,
+          37.017,
+          -1.083
+        ],
+        [
+          74.39999999999999,
+          42.666999999999994,
+          74.8,
+          43.067
+        ],
+        [
+          104.717,
+          11.350000000000001,
+          105.117,
+          11.75
+        ],
+        [
+          126.783,
+          37.349999999999994,
+          127.183,
+          37.75
+        ],
+        [
+          47.766999999999996,
+          29.167,
+          48.167,
+          29.567
+        ],
+        [
+          71.217,
+          50.967,
+          71.617,
+          51.367000000000004
+        ],
+        [
+          102.39999999999999,
+          17.767,
+          102.8,
+          18.166999999999998
+        ],
+        [
+          35.3,
+          33.666999999999994,
+          35.7,
+          34.067
+        ],
+        [
+          79.633,
+          6.717,
+          80.033,
+          7.117
+        ],
+        [
+          -11.0,
+          6.1,
+          -10.600000000000001,
+          6.5
+        ],
+        [
+          27.283,
+          -29.517,
+          27.683,
+          -29.117
+        ],
+        [
+          25.117,
+          54.483,
+          25.517,
+          54.883
+        ],
+        [
+          5.917,
+          49.4,
+          6.317,
+          49.800000000000004
+        ],
+        [
+          23.900000000000002,
+          56.75,
+          24.3,
+          57.150000000000006
+        ],
+        [
+          12.967,
+          32.683,
+          13.366999999999999,
+          33.083000000000006
+        ],
+        [
+          -7.017,
+          33.817,
+          -6.617,
+          34.217000000000006
+        ],
+        [
+          7.217,
+          43.532999999999994,
+          7.617,
+          43.933
+        ],
+        [
+          28.650000000000002,
+          46.8,
+          29.05,
+          47.2
+        ],
+        [
+          19.067,
+          42.233,
+          19.467,
+          42.633
+        ],
+        [
+          47.317,
+          -19.117,
+          47.717000000000006,
+          -18.717000000000002
+        ],
+        [
+          21.233,
+          41.8,
+          21.633,
+          42.2
+        ],
+        [
+          -8.2,
+          12.450000000000001,
+          -7.8,
+          12.85
+        ],
+        [
+          95.95,
+          16.6,
+          96.35000000000001,
+          17.0
+        ],
+        [
+          106.717,
+          47.717,
+          107.117,
+          48.117000000000004
+        ],
+        [
+          -16.167,
+          17.867,
+          -15.767000000000001,
+          18.267
+        ],
+        [
+          14.3,
+          35.683,
+          14.7,
+          36.083000000000006
+        ],
+        [
+          33.583,
+          -14.167,
+          33.983000000000004,
+          -13.767000000000001
+        ],
+        [
+          -99.333,
+          19.233,
+          -98.93299999999999,
+          19.633
+        ],
+        [
+          101.5,
+          2.9669999999999996,
+          101.9,
+          3.367
+        ],
+        [
+          32.382999999999996,
+          -26.15,
+          32.783,
+          -25.75
+        ],
+        [
+          16.883,
+          -22.767,
+          17.282999999999998,
+          -22.367
+        ],
+        [
+          166.25,
+          -22.467,
+          166.64999999999998,
+          -22.067
+        ],
+        [
+          1.917,
+          13.317,
+          2.317,
+          13.716999999999999
+        ],
+        [
+          7.333,
+          8.883000000000001,
+          7.7330000000000005,
+          9.283
+        ],
+        [
+          -86.45,
+          11.933,
+          -86.05,
+          12.332999999999998
+        ],
+        [
+          4.717,
+          52.15,
+          5.117,
+          52.550000000000004
+        ],
+        [
+          10.55,
+          59.717,
+          10.95,
+          60.117000000000004
+        ],
+        [
+          85.11699999999999,
+          27.517,
+          85.517,
+          27.916999999999998
+        ],
+        [
+          174.583,
+          -41.5,
+          174.98299999999998,
+          -41.099999999999994
+        ],
+        [
+          58.382999999999996,
+          23.417,
+          58.783,
+          23.817
+        ],
+        [
+          -79.733,
+          8.767000000000001,
+          -79.333,
+          9.167
+        ],
+        [
+          -77.25,
+          -12.25,
+          -76.85,
+          -11.850000000000001
+        ],
+        [
+          146.983,
+          -9.649999999999999,
+          147.38299999999998,
+          -9.25
+        ],
+        [
+          120.767,
+          14.4,
+          121.167,
+          14.799999999999999
+        ],
+        [
+          72.85,
+          33.483,
+          73.25,
+          33.883
+        ],
+        [
+          20.8,
+          52.05,
+          21.2,
+          52.45
+        ],
+        [
+          -9.332999999999998,
+          38.516999999999996,
+          -8.933,
+          38.917
+        ],
+        [
+          -57.867000000000004,
+          -25.467,
+          -57.467,
+          -25.067
+        ],
+        [
+          51.333,
+          25.083000000000002,
+          51.733000000000004,
+          25.483
+        ],
+        [
+          25.900000000000002,
+          44.233,
+          26.3,
+          44.633
+        ],
+        [
+          20.3,
+          44.632999999999996,
+          20.7,
+          45.033
+        ],
+        [
+          37.4,
+          55.55,
+          37.800000000000004,
+          55.95
+        ],
+        [
+          29.85,
+          -2.15,
+          30.25,
+          -1.75
+        ],
+        [
+          46.5,
+          24.45,
+          46.900000000000006,
+          24.849999999999998
+        ],
+        [
+          159.75,
+          -9.633,
+          160.14999999999998,
+          -9.233
+        ],
+        [
+          32.333,
+          15.4,
+          32.733000000000004,
+          15.799999999999999
+        ],
+        [
+          17.85,
+          59.132999999999996,
+          18.25,
+          59.533
+        ],
+        [
+          103.64999999999999,
+          1.083,
+          104.05,
+          1.4829999999999999
+        ],
+        [
+          14.317,
+          45.849999999999994,
+          14.716999999999999,
+          46.25
+        ],
+        [
+          16.917,
+          47.949999999999996,
+          17.317,
+          48.35
+        ],
+        [
+          -13.433,
+          8.283000000000001,
+          -13.033000000000001,
+          8.683
+        ],
+        [
+          -17.833,
+          14.533000000000001,
+          -17.433,
+          14.933
+        ],
+        [
+          45.132999999999996,
+          1.8670000000000002,
+          45.533,
+          2.2670000000000003
+        ],
+        [
+          -55.367000000000004,
+          5.633,
+          -54.967,
+          6.033
+        ],
+        [
+          126.783,
+          37.349999999999994,
+          127.183,
+          37.75
+        ],
+        [
+          -89.4,
+          13.5,
+          -89.0,
+          13.899999999999999
+        ],
+        [
+          36.099999999999994,
+          33.3,
+          36.5,
+          33.7
+        ],
+        [
+          14.833,
+          11.9,
+          15.232999999999999,
+          12.299999999999999
+        ],
+        [
+          1.0170000000000001,
+          5.917,
+          1.417,
+          6.317
+        ],
+        [
+          100.317,
+          13.55,
+          100.717,
+          13.95
+        ],
+        [
+          68.567,
+          38.349999999999994,
+          68.967,
+          38.75
+        ],
+        [
+          58.183,
+          37.75,
+          58.583000000000006,
+          38.150000000000006
+        ],
+        [
+          9.983,
+          36.599999999999994,
+          10.383,
+          37.0
+        ],
+        [
+          32.666999999999994,
+          39.733,
+          33.067,
+          40.133
+        ],
+        [
+          -61.717000000000006,
+          10.450000000000001,
+          -61.317,
+          10.85
+        ],
+        [
+          121.317,
+          24.833000000000002,
+          121.717,
+          25.233
+        ],
+        [
+          30.317,
+          50.233,
+          30.717,
+          50.633
+        ],
+        [
+          32.349999999999994,
+          0.11699999999999999,
+          32.75,
+          0.517
+        ],
+        [
+          -77.2,
+          38.683,
+          -76.8,
+          39.083000000000006
+        ],
+        [
+          -56.367000000000004,
+          -35.050000000000004,
+          -55.967,
+          -34.65
+        ],
+        [
+          69.05,
+          41.117,
+          69.45,
+          41.517
+        ],
+        [
+          -67.06700000000001,
+          10.283000000000001,
+          -66.667,
+          10.683
+        ],
+        [
+          105.64999999999999,
+          20.833000000000002,
+          106.05,
+          21.233
+        ],
+        [
+          168.11700000000002,
+          -17.933,
+          168.517,
+          -17.533
+        ],
+        [
+          36.617,
+          -1.4829999999999999,
+          37.017,
+          -1.083
+        ],
+        [
+          44.0,
+          15.15,
+          44.400000000000006,
+          15.549999999999999
+        ],
+        [
+          28.017,
+          -25.9,
+          28.416999999999998,
+          -25.5
+        ],
+        [
+          28.083000000000002,
+          -15.616999999999999,
+          28.483,
+          -15.217
         ]
       ]
     },
@@ -1535,5 +2800,140 @@
     "cities": [
       "/"
     ]
+  },
+  "assets": {
+    "nightlights": {
+      "href": "https://eodashboard.org/story/?id=nightlights",
+      "type": "text/markdown",
+      "title": "During COVID-19 Lockdowns Night Lights in Central Business Districts Decreased",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "nightlights_from_space": {
+      "href": "https://eodashboard.org/story/?id=nightlights_from_space",
+      "type": "text/markdown",
+      "title": "Observing Nightlights from Space",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights_from_space.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "covid-cars": {
+      "href": "https://eodashboard.org/story/?id=covid-cars",
+      "type": "text/markdown",
+      "title": "COVID-19 Changes in Car Manufacturing",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-cars.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "covid-no2": {
+      "href": "https://eodashboard.org/story/?id=covid-no2",
+      "type": "text/markdown",
+      "title": "COVID-19 Lockdowns Reduce Nitrogen Dioxide Levels",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-no2.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "covid-co2": {
+      "href": "https://eodashboard.org/story/?id=covid-co2",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on CO2 Emissions",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-co2.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "early_rice_planting": {
+      "href": "https://eodashboard.org/story/?id=early_rice_planting",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/early_rice_planting.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "shipping": {
+      "href": "https://eodashboard.org/story/?id=shipping",
+      "type": "text/markdown",
+      "title": "Travel Restrictions Interrupted Global Supply Chains Dependent on Cargo Shipping",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/shipping.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OW_Covid_19_vaccinations/OW_Covid_19_vaccinations_photo.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

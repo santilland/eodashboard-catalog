@@ -1,0 +1,132 @@
+{
+  "type": "Collection",
+  "id": "Kd Ocean Colour UVAB by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Kd Ocean Colour UVAB by Sentinel-5P TROPOMI (Daily)\nThe Kd Ocean Colour (UVAB) product provides the diffuse attenuation coefficient (Kd) in the UVAB wavelength range (312.5–338.5 nm), quantifying how sunlight is absorbed and scattered in the upper ocean layer in the deep ultraviolet spectral region. Data are essential for monitoring ocean optical properties and marine ecosystem health at shorter UV wavelengths.\n\n#### About the dataset\n- The Kd-UVAB product is measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P)\n- Kd-UVAB measures the attenuation of downwelling plane irradiance in the ocean's first optical depth in the UVAB wavelength range (312.5–338.5 nm).\n- The product is generated using Differential Optical Absorption Spectroscopy (DOAS) adapted to oceanic applications (PhytoDOAS), with retrievals converted into physical Kd values using radiative transfer look-up tables. Only high-quality measurements (qa_value == 1.0) are used in the final gridded product.\n- More information on the TROPOMI Kd Ocean Colour measurements and quality assessment can be found in the [Product Readme file](https://data-portal.s5p-pal.com/product-docs/kd/S5P_KD_PAL_PUM_v1.1.pdf).\n\n#### Use cases\nKd-UVAB measurements are particularly useful for:\n- Studying light penetration and ocean color dynamics in the UVAB wavelength range.\n- Ocean biogeochemistry and primary productivity modeling.\n- Monitoring phytoplankton blooms and water quality.\n- Climate studies related to ocean radiative transfer and carbon cycling.\n",
+  "links": [
+    {
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Kd Ocean Colour UVAB by Sentinel-5P TROPOMI (Daily)",
+      "wms:layers": [
+        "S5P-L3GRD-KdUVAB-DAY"
+      ],
+      "role": [
+        "data"
+      ],
+      "proj:epsg": 3857
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Kd Ocean Colour UVAB by Sentinel-5P TROPOMI (Daily)"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0.01,
+      0.3
+    ],
+    "range": [
+      "#403a71",
+      "#0e5a90",
+      "#3b9287",
+      "#77ca67",
+      "#fcee98"
+    ],
+    "scaleType": "log10",
+    "tickFormat": ".2f",
+    "title": "Diffuse attenuation coefficient UVAB [m⁻¹]",
+    "tickValues": [
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ]
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-KdUVAB-DAY/S5P-L3GRD-KdUVAB-DAY_thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "tags": [
+    "Ocean Colour",
+    "Kd-UVAB",
+    "Diffuse Attenuation",
+    "UVAB",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "Open data",
+    "Open Science",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-KdUVAB-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "proj:epsg": 3857,
+  "endpointtype": "Sentinel Hub_byoc",
+  "title": "Kd Ocean Colour UVAB by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-05-01T00:00:00Z",
+          "2025-01-02T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-KdUVAB-DAY/S5P-L3GRD-KdUVAB-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/ocean-colour-uvab",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

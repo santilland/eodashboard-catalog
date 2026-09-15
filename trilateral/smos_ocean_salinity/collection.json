@@ -1,0 +1,207 @@
+{
+  "type": "Collection",
+  "id": "smos_ocean_salinity",
+  "stac_version": "1.1.0",
+  "description": "## Ocean Salinity\n\nThis indicator shows the sea surface salinity globally acquired by the ESA Earth Explorer [Soil Moisture and Ocean Salinity (SMOS) mission](https://earth.esa.int/eogateway/missions/smos/description). Ocean currents are driven by temperature and salinity variations in the seawater and Understanding ocean salinity's annual and inter-annual variability are crucial in understanding the role of the ocean in the climate system. Ocean circulation is mainly driven by the water and heat flux through the atmosphere-ocean interface, but salinity is also fundamental in determining ocean density and hence thermohaline circulation. \n\nThis dataset is provided by the **Euro Data Cube**'s [SMOS Level-2C Datacube Service](https://collections.eurodatacube.com/smos-datacube/readme.html) offered by Brockmann Consult. The SMOS data cube service is implemented using the [xcube-smos datastore](https://github.com/xcube-dev/xcube-smos), which is available with the permissive MIT license.   \n\n### Dataset description\n-  Data is acquired by the sensor onboard SMOS, the [Microwave Imaging Radiometer with Aperture Synthesis (MIRAS)](https://earth.esa.int/eogateway/instruments/miras). MIRAS creates images of radiation emitted in the microwave L-band (1.4 GHz), by measuring changes in the salinity of seawater by observing variations in the natural microwave emission coming up off the surface of the ocean.\n-  The Level 2 Ocean Salinity (OS) product comprises sea surface salinity measurements geo-located in an equal-area (grid system ISEA 4H9).\n-  Spatial resolution: ~40 km (varies due to the SMOS interferometric imaging technique)\n\n### Applications\nOcean salinity can be used for various applications, including ocean circulation, climate monitoring and water management.\n\n### Read more\n\n* [SMOS L1 and L2 Science data](https://earth.esa.int/eogateway/catalog/smos-science-products)\n* [SMOS Datacube Service - Euro Data Cube](https://collections.eurodatacube.com/smos-datacube/)\n* [xcube SMOS Python Package](https://xcube-dev.github.io/xcube-smos/)\n* [Notebooks for xcube SMOS store](https://github.com/xcube-dev/xcube-smos/tree/main/notebooks)\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./smos_ocean_salinity/collection.json",
+      "type": "application/json",
+      "title": "SMOS Ocean Salinity",
+      "endpointtype": "xcube_zarr",
+      "code": "SMOS_OS",
+      "id": "smos_ocean_salinity",
+      "themes": [
+        "water"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_OS/SMOS_OS.png"
+      ],
+      "tags": [
+        "L-band",
+        "Ocean salinity",
+        "Water density",
+        "water salinity",
+        "Water cycle",
+        "Carbon cycle",
+        "CO2",
+        "CO2 cycle",
+        "climate change",
+        "Temperature",
+        "Microwave radiation",
+        "SMOS",
+        "Soil Moisture and Ocean Salinity",
+        "Weather forecasting",
+        "MIRAS",
+        "Microwave Imaging Radiometer"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "SMOS_OS",
+      "sensor": [
+        "MIRAS"
+      ],
+      "satellite": [
+        "SMOS"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://api.earthsystemdatalab.net/api/timeseries/smos-os/SSS_corr?aggMethods=median",
+      "type": "application/json",
+      "id": "xcube_statistics",
+      "method": "POST",
+      "body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_OS/SMOS_OS.png",
+  "themes": [
+    "water"
+  ],
+  "tags": [
+    "L-band",
+    "Ocean salinity",
+    "Water density",
+    "water salinity",
+    "Water cycle",
+    "Carbon cycle",
+    "CO2",
+    "CO2 cycle",
+    "climate change",
+    "Temperature",
+    "Microwave radiation",
+    "SMOS",
+    "Soil Moisture and Ocean Salinity",
+    "Weather forecasting",
+    "MIRAS",
+    "Microwave Imaging Radiometer"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "SMOS_OS",
+  "sensor": [
+    "MIRAS"
+  ],
+  "satellite": [
+    "SMOS"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/smos_ocean_salinity/chart.json",
+  "title": "SMOS Ocean Salinity",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -88.59375,
+          180.0,
+          88.59375
+        ],
+        [
+          -180.0,
+          -88.59375,
+          180.0,
+          88.59375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-01-04T00:00:00Z",
+          "2023-12-27T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "SMOS_OS"
+    ],
+    "themes": [
+      "water"
+    ],
+    "satellite": [
+      "SMOS"
+    ],
+    "sensor": [
+      "MIRAS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_OS/SMOS_OS.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMOS_OS/SMOS_OS.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

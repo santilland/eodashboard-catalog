@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "PE01",
   "stac_version": "1.1.0",
-  "description": "Lima",
+  "description": "# Nightlights \nThe Nightlights dataset is collected by the Visible Infrared Radiometer Suite (VIIRS) Day/Night Band (DNB) aboard the Suomi-National Polar-Orbiting Partnership (Suomi-NPP) satellite, a joint mission of the National Oceanic and Atmospheric Administration (NOAA) and NASA. The Nightlights data is processed and made available through NASA's Black Marble product suite, which provides consistent, high-quality images of nighttime lights across the globe. These data are essential for analyzing human activity, urbanization patterns, energy consumption, and even socio-economic trends.\n\nThe High Definition Nightlights dataset is designed to eliminate interference from natural sources such as moonlight and cloud cover, ensuring a clear representation of human-made light sources. The dataset uses varying shades of color to represent different intensities of light; darker shades indicate areas with less artificial light (e.g., rural or undeveloped regions), while lighter shades of yellow signify regions with higher concentrations of light (e.g., cities and industrial zones).\n\n## Dataset Description\n- Coverage: Global, spanning urban and rural areas across all continents. The polar orbit of Suomi-NPP ensures comprehensive global coverage during nighttime.\n- Metric: Nighttime light intensity data represented in spatial grids with a resolution of 500 meters.\n- Temporal Coverage: Multi-year aggregation, with continuous data available from 2011 to the present. This allows for monitoring trends in nighttime light intensity over time.\n- Data Features: The dataset provides daily calibrated and corrected measurements, with ground validation to ensure science-ready accuracy. It excludes natural light sources such as moonlight, offering a precise depiction of artificial lighting patterns. The aggregation of multiple years allows for the analysis of long-term trends in urbanization, economic development, and population growth.\n\nUse Case:\nStudying urbanization and regional development by analyzing the growth of artificial light over time.\nMonitoring human activity patterns and socio-economic shifts, particularly in emerging economies.\nProviding valuable insights into disaster recovery efforts by tracking changes in nighttime light intensity in regions affected by power outages or natural disasters.\n\nThe dataset is often referenced in scientific and public health research. For example, Bunpei Tojo (2021) used Nightlights data in the study \"Application of Earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" presented at the 12th Federation of Science and Technology conference, to analyze the relationship between nighttime light intensity and public health factors. \nCitation: Bunpei Tojo, \"Application of earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" Transdisciplinary 12th Federation of Science and Technology conference 2021, https://doi.org/10.11487/oukan.2021.0_B-4-4.\n\nThe dataset is a product of [NOAA](https://www.noaa.gov/) and [NASA](https://www.jpl.nasa.gov/), and the data can be accessed through [NASA's Black Marble suite](https://blackmarble.gsfc.nasa.gov/).\n",
   "links": [
     {
       "rel": "root",
@@ -11,322 +11,58 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./nightlights/2022/finalBMHD_ScaledLima_202203.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202203.tif",
-      "start_datetime": "2022-03-01T00:00:00Z",
-      "end_datetime": "2022-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2022/finalBMHD_ScaledLima_202202.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202202.tif",
-      "start_datetime": "2022-02-01T00:00:00Z",
-      "end_datetime": "2022-02-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2022/finalBMHD_ScaledLima_202201.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202201.tif",
-      "start_datetime": "2022-01-01T00:00:00Z",
-      "end_datetime": "2022-01-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202112.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202112.tif",
-      "start_datetime": "2021-12-01T00:00:00Z",
-      "end_datetime": "2021-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202111.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202111.tif",
-      "start_datetime": "2021-11-01T00:00:00Z",
-      "end_datetime": "2021-11-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202110.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202110.tif",
-      "start_datetime": "2021-10-01T00:00:00Z",
-      "end_datetime": "2021-10-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202109.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202109.tif",
-      "start_datetime": "2021-09-01T00:00:00Z",
-      "end_datetime": "2021-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202108.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202108.tif",
-      "start_datetime": "2021-08-01T00:00:00Z",
-      "end_datetime": "2021-08-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202107.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202107.tif",
-      "start_datetime": "2021-07-01T00:00:00Z",
-      "end_datetime": "2021-07-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202106.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202106.tif",
-      "start_datetime": "2021-06-01T00:00:00Z",
-      "end_datetime": "2021-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202105.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202105.tif",
-      "start_datetime": "2021-05-01T00:00:00Z",
-      "end_datetime": "2021-05-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202104.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202104.tif",
-      "start_datetime": "2021-04-01T00:00:00Z",
-      "end_datetime": "2021-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202103.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202103.tif",
-      "start_datetime": "2021-03-01T00:00:00Z",
-      "end_datetime": "2021-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202102.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202102.tif",
-      "start_datetime": "2021-02-01T00:00:00Z",
-      "end_datetime": "2021-02-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2021/finalBMHD_ScaledLima_202101.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202101.tif",
-      "start_datetime": "2021-01-01T00:00:00Z",
-      "end_datetime": "2021-01-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202012.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202012.tif",
-      "start_datetime": "2020-12-01T00:00:00Z",
-      "end_datetime": "2020-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202011.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202011.tif",
-      "start_datetime": "2020-11-01T00:00:00Z",
-      "end_datetime": "2020-11-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202010.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202010.tif",
-      "start_datetime": "2020-10-01T00:00:00Z",
-      "end_datetime": "2020-10-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202009.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202009.tif",
-      "start_datetime": "2020-09-01T00:00:00Z",
-      "end_datetime": "2020-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202008.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202008.tif",
-      "start_datetime": "2020-08-01T00:00:00Z",
-      "end_datetime": "2020-08-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202007.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202007.tif",
-      "start_datetime": "2020-07-01T00:00:00Z",
-      "end_datetime": "2020-07-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202006.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202006.tif",
-      "start_datetime": "2020-06-01T00:00:00Z",
-      "end_datetime": "2020-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202005.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202005.tif",
-      "start_datetime": "2020-05-01T00:00:00Z",
-      "end_datetime": "2020-05-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202004.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202004.tif",
-      "start_datetime": "2020-04-01T00:00:00Z",
-      "end_datetime": "2020-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202003.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202003.tif",
-      "start_datetime": "2020-03-01T00:00:00Z",
-      "end_datetime": "2020-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202002.tif",
-      "start_datetime": "2020-02-01T00:00:00Z",
-      "end_datetime": "2020-02-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2020/finalBMHD_ScaledLima_202001.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_202001.tif",
-      "start_datetime": "2020-01-01T00:00:00Z",
-      "end_datetime": "2020-01-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201912.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201912.tif",
-      "start_datetime": "2019-12-01T00:00:00Z",
-      "end_datetime": "2019-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201911.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201911.tif",
-      "start_datetime": "2019-11-01T00:00:00Z",
-      "end_datetime": "2019-11-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201910.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201910.tif",
-      "start_datetime": "2019-10-01T00:00:00Z",
-      "end_datetime": "2019-10-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201909.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201909.tif",
-      "start_datetime": "2019-09-01T00:00:00Z",
-      "end_datetime": "2019-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201908.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201908.tif",
-      "start_datetime": "2019-08-01T00:00:00Z",
-      "end_datetime": "2019-08-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201907.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201907.tif",
-      "start_datetime": "2019-07-01T00:00:00Z",
-      "end_datetime": "2019-07-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201906.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201906.tif",
-      "start_datetime": "2019-06-01T00:00:00Z",
-      "end_datetime": "2019-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201905.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201905.tif",
-      "start_datetime": "2019-05-01T00:00:00Z",
-      "end_datetime": "2019-05-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201904.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201904.tif",
-      "start_datetime": "2019-04-01T00:00:00Z",
-      "end_datetime": "2019-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201903.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201903.tif",
-      "start_datetime": "2019-03-01T00:00:00Z",
-      "end_datetime": "2019-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201902.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201902.tif",
-      "start_datetime": "2019-02-01T00:00:00Z",
-      "end_datetime": "2019-02-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./nightlights/2019/finalBMHD_ScaledLima_201901.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/nightlights-hd-monthly/finalBMHD_ScaledLima_201901.tif",
-      "start_datetime": "2019-01-01T00:00:00Z",
-      "end_datetime": "2019-01-31T00:00:00Z"
+      "rel": "xyz",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?&bidx=1&colormap_name=inferno&rescale=0,255&resampling_method=nearest",
+      "type": "image/png",
+      "title": "Nightlights from SUOMI-NPP"
     },
     {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=inferno&rescale=0,255",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
       "type": "image/png",
-      "title": "nightlights"
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -336,11 +72,10 @@
     }
   ],
   "subtitle": "30-meter Black Marble High Definition (HD) nighttime lights",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.jpg",
   "themes": [
     "economy"
   ],
-  "locations": true,
   "tags": [
     "Human activities",
     "Open data",
@@ -356,17 +91,230 @@
   "satellite": [
     "Suomi"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      "Less light",
-      "More light"
-    ],
-    "range": [
-      "#000004",
-      "#fcffa4"
-    ],
-    "scaleType": "categorical",
-    "title": ""
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0,
+              "format": "range",
+              "minimum": 0,
+              "step": 1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 255,
+              "format": "range",
+              "maximum": 382.5,
+              "step": 1
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "inferno",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "Value Range",
+      "scaleType": "continuous",
+      "tickFormat": ".0f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
   },
   "title": "Lima",
   "extent": {
@@ -384,7 +332,7 @@
       "interval": [
         [
           "2019-01-01T00:00:00Z",
-          "2022-03-31T00:00:00Z"
+          "2022-03-01T00:00:00Z"
         ]
       ]
     }
@@ -393,20 +341,23 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://search.earthdata.nasa.gov/search?portal=idn&fi=VIIRS"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

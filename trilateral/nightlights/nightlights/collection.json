@@ -246,9 +246,9 @@
     },
     {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=inferno&rescale=0,255",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?&bidx=1&colormap_name=inferno&rescale=0,255&resampling_method=nearest",
       "type": "image/png",
-      "title": "nightlights"
+      "title": "Nightlights from SUOMI-NPP"
     },
     {
       "rel": "parent",
@@ -257,8 +257,233 @@
       "title": "Nightlights from SUOMI-NPP"
     }
   ],
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0,
+              "format": "range",
+              "minimum": 0,
+              "step": 1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 255,
+              "format": "range",
+              "maximum": 382.5,
+              "step": 1
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "inferno",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "Value Range",
+      "scaleType": "continuous",
+      "tickFormat": ".0f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
+  },
   "subtitle": "30-meter Black Marble High Definition (HD) nighttime lights",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.jpg",
   "themes": [
     "economy"
   ],
@@ -278,18 +503,6 @@
   "satellite": [
     "Suomi"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      "Less light",
-      "More light"
-    ],
-    "range": [
-      "#000004",
-      "#fcffa4"
-    ],
-    "scaleType": "categorical",
-    "title": ""
-  },
   "endpointtype": "VEDA_cog",
   "title": "Nightlights from SUOMI-NPP",
   "extent": {
@@ -463,7 +676,7 @@
       "interval": [
         [
           "2019-01-01T00:00:00Z",
-          "2022-03-31T00:00:00Z"
+          "2022-03-01T00:00:00Z"
         ]
       ]
     }
@@ -472,20 +685,15 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://search.earthdata.nasa.gov/search?portal=idn&fi=VIIRS"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_legend.png",
-      "type": "image/png",
-      "roles": [
-        "metadata"
-      ]
-    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N5_nightlights/N5_nightlights.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

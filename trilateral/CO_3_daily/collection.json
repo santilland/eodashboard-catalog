@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "CO_3_daily",
   "stac_version": "1.1.0",
-  "description": "## Carbon Monoxide observed by Sentinel-5p TROPOMI\n\nCarbon monoxide (CO) is an important atmospheric trace gas for our understanding of tropospheric chemistry. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. Whereas fossil fuel combustion is the main source of CO at Northern mid-latitudes, the oxidation of isoprene and biomass burning play an important role in the tropics. \n\n[TROPOMI on ESA's Sentinel 5 Precursor (S5P) satellite](https://sentinel.esa.int/web/sentinel/missions/sentinel-5p) observes the CO global abundance exploiting clear-sky and cloudy-sky Earth radiance measurements in the 2.3 \u00b5m spectral range of the shortwave infrared (SWIR) part of the solar spectrum. \n\nTROPOMI clear sky observations provide CO total columns with sensitivity to the tropospheric boundary layer. For cloudy atmospheres, the column sensitivity changes according to the light path.  \n\nThe figure below shows the S5P/TROPOMI CO total column mixing ratio averaged from November 13th to 19th, 2017 (from Borsdorff et al., GRL 2018). The data show clearly CO enhancements by wildfires in Brazil, Africa, Madagascar, and Australia as well as anthropogenic air pollution in India and China.\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/CO_Figure.png)\n\n*Figure 1. S5P/TROPOMI CO total column mixing ratio averaged from November 13th to 19th, 2017 (from Borsdorff et al., GRL 2018). The data show clearly CO enhancements by wildfires in Brazil, Africa, Madagascar, and Australia as well as anthropogenic air pollution in India and China.*\n",
+  "description": "## Carbon Monoxide observed by Sentinel-5p TROPOMI\n\nCarbon monoxide (CO) is an important atmospheric trace gas for our understanding of tropospheric chemistry. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. Whereas fossil fuel combustion is the main source of CO at Northern mid-latitudes, the oxidation of isoprene and biomass burning play an important role in the tropics. \n\n[TROPOMI on ESA's Sentinel 5 Precursor (S5P) satellite](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) observes the CO global abundance exploiting clear-sky and cloudy-sky Earth radiance measurements in the 2.3 µm spectral range of the shortwave infrared (SWIR) part of the solar spectrum. \n\nTROPOMI clear sky observations provide CO total columns with sensitivity to the tropospheric boundary layer. For cloudy atmospheres, the column sensitivity changes according to the light path.  \n\nThe figure below shows the S5P/TROPOMI CO total column mixing ratio averaged from November 13th to 19th, 2017 (from Borsdorff et al., GRL 2018). The data show clearly CO enhancements by wildfires in Brazil, Africa, Madagascar, and Australia as well as anthropogenic air pollution in India and China.\n\n![](https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/CO_Figure.png)\n\n*Figure 1. S5P/TROPOMI CO total column mixing ratio averaged from November 13th to 19th, 2017 (from Borsdorff et al., GRL 2018). The data show clearly CO enhancements by wildfires in Brazil, Africa, Madagascar, and Australia as well as anthropogenic air pollution in India and China.*\n",
   "links": [
     {
       "rel": "root",
@@ -20,8 +20,15 @@
       "code": "N1_CO",
       "id": "CO_3_daily",
       "themes": [
-        "air",
+        "atmosphere",
         "extreme-events"
+      ],
+      "providers": [
+        "Copernicus",
+        "Copernicus Data Space"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.jpg"
       ],
       "tags": [
         "Air quality",
@@ -41,6 +48,62 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
+      "type": "application/json",
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -48,27 +111,6 @@
     }
   ],
   "subtitle": "Global 3-daily Carbon monoxide",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.png",
-  "themes": [
-    "air",
-    "extreme-events"
-  ],
-  "tags": [
-    "Air quality",
-    "CO",
-    "Open data",
-    "Air pollution"
-  ],
-  "agency": [
-    "ESA"
-  ],
-  "subcode": "N1_CO",
-  "sensor": [
-    "TROPOMI"
-  ],
-  "satellite": [
-    "Sentinel-5P"
-  ],
   "eox:colorlegend": {
     "domain": [
       0,
@@ -89,16 +131,33 @@
     "tickFormat": ".0f",
     "title": "CO [ppbv]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.jpg",
+  "themes": [
+    "atmosphere",
+    "extreme-events"
+  ],
+  "tags": [
+    "Air quality",
+    "CO",
+    "Open data",
+    "Air pollution"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N1_CO",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/chart.json",
   "title": "Carbon Monoxide observed by Sentinel-5p TROPOMI",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ],
         [
           -180.0,
           -90.0,
@@ -111,7 +170,7 @@
       "interval": [
         [
           "2018-04-30T00:00:00Z",
-          "2025-03-02T00:00:00Z"
+          "2025-08-06T00:00:00Z"
         ]
       ]
     }
@@ -132,8 +191,8 @@
       "N1_CO"
     ],
     "themes": [
-      "air",
-      "extreme-events"
+      "extreme-events",
+      "atmosphere"
     ],
     "satellite": [
       "Sentinel-5P"
@@ -142,7 +201,7 @@
       "TROPOMI"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.jpg"
     ]
   },
   "assets": {
@@ -154,14 +213,14 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_CO/N1_CO.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
       ]
     },
     "tropomi_co": {
-      "href": "https://sentinel.esa.int/web/sentinel/data-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide",
+      "href": "https://sentinels.copernicus.eu/web/sentinel/homedata-products/-/asset_publisher/fp37fc19FN8F/content/sentinel-5-precursor-level-2-carbon-monoxide",
       "type": "text/html",
       "title": "TROPOMI CO",
       "roles": [

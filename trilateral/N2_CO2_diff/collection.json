@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "N2_CO2_diff",
   "stac_version": "1.1.0",
-  "description": "## Atmospheric Carbon Dioxide Difference from 2015-2019 baseline (from OCO-2)\n\nThese maps show The difference in carbon dioxide (CO2) levels compared to the 2015-2019 baseline. Redder colors indicate increases in CO2. Bluer colors indicate lower levels of CO2. \n\nCarbon dioxide (CO2) is a greenhouse gas primarily emitted from the combustion of fossil fuels such as petroleum, coal, and natural gas. Scientists widely agree that the build-up of excess carbon dioxide and other greenhouse gases within Earth\u2019s atmosphere has contributed to the rapid change in global climate.\n\nUnlike satellite-derived NO2 measurements, which are captured continuously on a daily basis, the coverage of CO2 measurements from OCO-2 and GOSAT is not as dense. Because of this, measurements from OCO-2 and GOSAT collected over weeks to months must be combined to yield high-resolution global maps of CO2. In addition, in order to account for long-range transport of CO2 by the wind, the data must further be assimilated into atmospheric transport models like those used to predict the weather.\n\nThe NASA dashboard uses NASA\u2019s Global Earth Observing System Constituent Data Assimilation System (GEOS CoDAS) developed by GMAO to ingest the OCO-2 data and produce gap-filled maps.\n\nSource: [NASA Covid Dashboard](https://www.earthdata.nasa.gov/covid19/indicators/co2)\n\nRead more:\n- [Orbiting Carbon Observatory 2 (OCO-2)](https://ocov2.jpl.nasa.gov/)\n- [Orbiting Carbon Observatory 3 (OCO-3)](https://ocov3.jpl.nasa.gov/)\n- [Ozone Monitoring Instrument (OMI)](https://aura.gsfc.nasa.gov/omi.html)\n",
+  "description": "## Atmospheric Carbon Dioxide Difference from 2015-2019 baseline (from OCO-2)\n\nThese maps show The difference in carbon dioxide (CO2) levels compared to the 2015-2019 baseline. Redder colors indicate increases in CO2. Bluer colors indicate lower levels of CO2. \n\nCarbon dioxide (CO2) is a greenhouse gas primarily emitted from the combustion of fossil fuels such as petroleum, coal, and natural gas. Scientists widely agree that the build-up of excess carbon dioxide and other greenhouse gases within Earth’s atmosphere has contributed to the rapid change in global climate.\n\nUnlike satellite-derived NO2 measurements, which are captured continuously on a daily basis, the coverage of CO2 measurements from OCO-2 and GOSAT is not as dense. Because of this, measurements from OCO-2 and GOSAT collected over weeks to months must be combined to yield high-resolution global maps of CO2. In addition, in order to account for long-range transport of CO2 by the wind, the data must further be assimilated into atmospheric transport models like those used to predict the weather.\n\nThe NASA dashboard uses NASA’s Global Earth Observing System Constituent Data Assimilation System (GEOS CoDAS) developed by GMAO to ingest the OCO-2 data and produce gap-filled maps.\n\nSource: [NASA Covid Dashboard](https://www.earthdata.nasa.gov/covid19/indicators/co2)\n\nRead more:\n- [Orbiting Carbon Observatory 2 (OCO-2)](https://ocov2.jpl.nasa.gov/)\n- [Orbiting Carbon Observatory 3 (OCO-3)](https://ocov3.jpl.nasa.gov/)\n- [Ozone Monitoring Instrument (OMI)](https://aura.gsfc.nasa.gov/omi.html)\n",
   "links": [
     {
       "rel": "root",
@@ -21,6 +21,12 @@
       "id": "N2_CO2_diff",
       "themes": [
         "atmosphere"
+      ],
+      "providers": [
+        "NASA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.jpg"
       ],
       "tags": [
         "Air quality",
@@ -41,6 +47,62 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://openveda.cloud/api/raster/cog/statistics",
+      "type": "application/json",
+      "id": "veda_statistics",
+      "method": "POST",
+      "endpoint": "veda"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -49,12 +111,12 @@
   ],
   "sci:publications": [
     {
-      "citation": "Le Qu\u00e9r\u00e9, C., Jackson, R.B., Jones, M.W. et al. Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nat. Clim. Chang. 10, 647\u2013653 (2020).\n",
+      "citation": "Le Quéré, C., Jackson, R.B., Jones, M.W. et al. Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nat. Clim. Chang. 10, 647–653 (2020).\n",
       "doi": "10.1038/s41558-020-0797-x"
     }
   ],
   "subtitle": "CO2 difference compared to 2015-2019 baseline [ppm]",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.jpg",
   "themes": [
     "atmosphere"
   ],
@@ -75,31 +137,8 @@
   "satellite": [
     "OCO-2"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -1,
-      1
-    ],
-    "range": [
-      "#053061",
-      "#1b5a9b",
-      "#337eb8",
-      "#5ba2cb",
-      "#97c7df",
-      "#c7e0ed",
-      "#e8f0f4",
-      "#f9ece5",
-      "#fcd3bc",
-      "#f5a987",
-      "#df755d",
-      "#c53f3d",
-      "#a11228",
-      "#67001f"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "CO2 difference [ppm]"
-  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/veda_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/chart.json",
   "title": "Carbon Dioxide from OCO-2 (daily difference)",
   "extent": {
     "spatial": {
@@ -131,7 +170,9 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://ocov2.jpl.nasa.gov/science/oco-2-data-center/"
     }
   ],
@@ -149,19 +190,12 @@
       "OCO-2"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.jpg"
     ]
   },
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff_legend.png",
-      "type": "image/png",
-      "roles": [
-        "metadata"
-      ]
-    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N2_CO2_diff/N2_CO2_diff.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

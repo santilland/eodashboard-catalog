@@ -11,186 +11,14 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2021/IS2SITMOGR4_01_202104_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202104_005_002.tif",
-      "start_datetime": "2021-04-01T00:00:00Z",
-      "end_datetime": "2021-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2021/IS2SITMOGR4_01_202103_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202103_005_002.tif",
-      "start_datetime": "2021-03-01T00:00:00Z",
-      "end_datetime": "2021-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2021/IS2SITMOGR4_01_202102_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202102_005_002.tif",
-      "start_datetime": "2021-02-01T00:00:00Z",
-      "end_datetime": "2021-02-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2021/IS2SITMOGR4_01_202101_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202101_005_002.tif",
-      "start_datetime": "2021-01-01T00:00:00Z",
-      "end_datetime": "2021-01-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202012_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202012_005_002.tif",
-      "start_datetime": "2020-12-01T00:00:00Z",
-      "end_datetime": "2020-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202011_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202011_005_002.tif",
-      "start_datetime": "2020-11-01T00:00:00Z",
-      "end_datetime": "2020-11-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202010_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202010_005_002.tif",
-      "start_datetime": "2020-10-01T00:00:00Z",
-      "end_datetime": "2020-10-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202009_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202009_005_002.tif",
-      "start_datetime": "2020-09-01T00:00:00Z",
-      "end_datetime": "2020-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202004_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202004_005_002.tif",
-      "start_datetime": "2020-04-01T00:00:00Z",
-      "end_datetime": "2020-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202003_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202003_005_002.tif",
-      "start_datetime": "2020-03-01T00:00:00Z",
-      "end_datetime": "2020-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202002_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202002_005_002.tif",
-      "start_datetime": "2020-02-01T00:00:00Z",
-      "end_datetime": "2020-02-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2020/IS2SITMOGR4_01_202001_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_202001_005_002.tif",
-      "start_datetime": "2020-01-01T00:00:00Z",
-      "end_datetime": "2020-01-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201912_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201912_005_002.tif",
-      "start_datetime": "2019-12-01T00:00:00Z",
-      "end_datetime": "2019-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201911_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201911_005_002.tif",
-      "start_datetime": "2019-11-01T00:00:00Z",
-      "end_datetime": "2019-11-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201910_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201910_005_002.tif",
-      "start_datetime": "2019-10-01T00:00:00Z",
-      "end_datetime": "2019-10-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201909_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201909_005_002.tif",
-      "start_datetime": "2019-09-01T00:00:00Z",
-      "end_datetime": "2019-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201904_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201904_005_002.tif",
-      "start_datetime": "2019-04-01T00:00:00Z",
-      "end_datetime": "2019-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201903_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201903_005_002.tif",
-      "start_datetime": "2019-03-01T00:00:00Z",
-      "end_datetime": "2019-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201902_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201902_005_002.tif",
-      "start_datetime": "2019-02-01T00:00:00Z",
-      "end_datetime": "2019-02-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2019/IS2SITMOGR4_01_201901_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201901_005_002.tif",
-      "start_datetime": "2019-01-01T00:00:00Z",
-      "end_datetime": "2019-01-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2018/IS2SITMOGR4_01_201812_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201812_005_002.tif",
-      "start_datetime": "2018-12-01T00:00:00Z",
-      "end_datetime": "2018-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./IS2SITMOGR4-cog/2018/IS2SITMOGR4_01_201811_005_002.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/IS2SITMOGR4-cog/IS2SITMOGR4_01_201811_005_002.tif",
-      "start_datetime": "2018-11-01T00:00:00Z",
-      "end_datetime": "2018-11-30T00:00:00Z"
-    },
-    {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=plasma&rescale=0.0,4.0",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/UPSArcticWGS84Quad/{z}/{x}/{y}?&bidx=1&colormap_name=plasma&rescale=0.0,4.0&resampling_method=nearest",
       "type": "image/png",
-      "title": "SITI_IS2SITMOGR4-cog"
+      "title": "Sea Ice Thickness (ICESat-2)",
+      "eodash:proj4_def": {
+        "name": "EPSG:5041",
+        "def": "+proj=stere +lat_0=90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
     },
     {
       "rel": "parent",
@@ -199,8 +27,32 @@
       "title": "Sea Ice Thickness (ICESat-2)"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "sci:doi": "10.5067/OE8BDP5KU30Q",
+  "sci:citation": "Petty, A. A., N. Kurtz, R. Kwok, T. Markus, T. A. Neumann, and N. Keeney. 2022. ICESat-2 L4 Monthly Gridded Sea Ice Thickness, Version 2. [Indicate subset used]. \nBoulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. \n",
   "subtitle": "Monthly Arctic sea ice thickness",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.png",
+  "eodash:stories": {
+    "sea-ice-freeboard-thickness": {
+      "href": "https://eodashboard.org/story/?id=sea-ice-freeboard-thickness",
+      "type": "text/markdown",
+      "title": "Sea Ice Freeboard and Thickness",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/sea-ice-freeboard-thickness.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.jpg",
   "themes": [
     "cryosphere"
   ],
@@ -208,7 +60,7 @@
     "Sea ice",
     "Arctic",
     "Open data",
-    "Polar",
+    "Polar Regions",
     "Arctic"
   ],
   "agency": [
@@ -221,30 +73,238 @@
   "satellite": [
     "ICESat-2"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      4
-    ],
-    "range": [
-      "#0d0887",
-      "#370499",
-      "#5801a4",
-      "#7701a8",
-      "#920fa3",
-      "#ac2694",
-      "#c23c81",
-      "#d45270",
-      "#e4695e",
-      "#f1814d",
-      "#fa9b3d",
-      "#feb82c",
-      "#fad824",
-      "#f0f921"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "Sea-ice thickness [m]"
+  "eodash:mapProjection": {
+    "name": "EPSG:5041",
+    "def": "+proj=stere +lat_0=90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs"
+  },
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0.0,
+              "format": "range",
+              "minimum": 0,
+              "step": 0.1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 4.0,
+              "format": "range",
+              "maximum": 6.0,
+              "step": 0.1
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "plasma",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "Sea-ice thickness [m]",
+      "scaleType": "continuous",
+      "tickFormat": ".1f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
+  },
+  "eodash:proj4_def": {
+    "name": "EPSG:5041",
+    "def": "+proj=stere +lat_0=90 +lon_0=0 +k=0.994 +x_0=2000000 +y_0=2000000 +datum=WGS84 +units=m +no_defs +type=crs"
   },
   "endpointtype": "VEDA_cog",
   "title": "Sea Ice Thickness (ICESat-2)",
@@ -263,7 +323,7 @@
       "interval": [
         [
           "2018-11-01T00:00:00Z",
-          "2021-04-30T00:00:00Z"
+          "2021-04-01T00:00:00Z"
         ]
       ]
     }
@@ -272,20 +332,41 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer",
+      "roles": [
+        "licensor, producer"
+      ],
       "url": "https://www.earthdata.nasa.gov/"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
+      ]
+    },
+    "sea-ice-freeboard-thickness": {
+      "href": "https://eodashboard.org/story/?id=sea-ice-freeboard-thickness",
+      "type": "text/markdown",
+      "title": "Sea Ice Freeboard and Thickness",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/sea-ice-freeboard-thickness.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SITI_IS2SITMOGR4-cog/SITI_IS2SITMOGR4-cog.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

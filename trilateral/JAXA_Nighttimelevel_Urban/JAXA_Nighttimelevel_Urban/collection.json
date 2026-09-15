@@ -2,31 +2,26 @@
   "type": "Collection",
   "id": "JAXA_Nighttimelevel_Urban",
   "stac_version": "1.1.0",
-  "description": "# NTLU JAXA Nighttime Light Urban\nThis dataset, NTLU (Nighttime Light Urban), provides a comprehensive global spatial representation of nighttime light levels in \n**urban areas**. It is derived from satellite observations from the [Visible Infrared Imaging Radiometer Suite (VIIRS)](https://www.earthdata.nasa.gov/learn/find-data/near-real-time/viirs) sensor onboard the Suomi National Polar-orbiting Partnership (Suomi NPP) satellite. This dataset is valuable for studying the distribution of artificial lighting in urban regions, offering insights into urban growth, infrastructure development, and socio-economic activity.\nThe dataset uses varying shades of color to represent different intensities of light; darker shades indicate areas with less artificial light (e.g., rural or undeveloped regions), while lighter shades of yellow signify regions with higher concentrations of light (e.g., cities and industrial zones).\n\n## Dataset description\n- The dataset covers urban areas globally, highlighting nighttime light levels to analyze urbanization, energy use, and economic activities.\n- Metric: Nighttime radiance values (measured in nanowatts per square centimeter per steradian, nW/cm\u00b2/sr), which represent the brightness of artificial lighting in urban areas. From this, the Nighttime Light Intensity (NTLI) can be generated, a composite of observations reflecting the overall intensity of visible nighttime lights in urban landscapes.\n- Temporal coverage includes multi-year data, enabling trend analysis in urban growth, infrastructure changes, and energy consumption patterns over time.\n\nThe dataset was developed by [JAXA](https://global.jaxa.jp/) to support global research on urban development, infrastructure expansion, and the socio-economic impacts of urbanization. The data from VIIRS, onboard the Suomi NPP satellite, provides consistent, high-quality nighttime light data for urban regions worldwide.\n\nThe dataset is often referenced in scientific and public health research. For example, Bunpei Tojo (2021) used Nightlights data in the study \"Application of Earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" presented at the 12th Federation of Science and Technology conference, to analyze the relationship between nighttime light intensity and public health factors. \nCitation: Bunpei Tojo, \"Application of earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" Transdisciplinary 12th Federation of Science and Technology conference 2021, https://doi.org/10.11487/oukan.2021.0_B-4-4.\n\n\n",
+  "description": "# NTLU JAXA Nighttime Light Urban\nThis dataset, NTLU (Nighttime Light Urban), provides a comprehensive global spatial representation of nighttime light levels in \n**urban areas**. It is derived from satellite observations from the [Visible Infrared Imaging Radiometer Suite (VIIRS)](https://www.earthdata.nasa.gov/learn/find-data/near-real-time/viirs) sensor onboard the Suomi National Polar-orbiting Partnership (Suomi NPP) satellite. This dataset is valuable for studying the distribution of artificial lighting in urban regions, offering insights into urban growth, infrastructure development, and socio-economic activity.\nThe dataset uses varying shades of color to represent different intensities of light; darker shades indicate areas with less artificial light (e.g., rural or undeveloped regions), while lighter shades of yellow signify regions with higher concentrations of light (e.g., cities and industrial zones).\n\n## Dataset description\n- The dataset covers urban areas globally, highlighting nighttime light levels to analyze urbanization, energy use, and economic activities.\n- Metric: Nighttime radiance values (measured in nanowatts per square centimeter per steradian, nW/cm²/sr), which represent the brightness of artificial lighting in urban areas. From this, the Nighttime Light Intensity (NTLI) can be generated, a composite of observations reflecting the overall intensity of visible nighttime lights in urban landscapes.\n- Temporal coverage includes multi-year data, enabling trend analysis in urban growth, infrastructure changes, and energy consumption patterns over time.\n\nThe dataset was developed by [JAXA](https://global.jaxa.jp/) to support global research on urban development, infrastructure expansion, and the socio-economic impacts of urbanization. The data from VIIRS, onboard the Suomi NPP satellite, provides consistent, high-quality nighttime light data for urban regions worldwide.\n\nThe dataset is often referenced in scientific and public health research. For example, Bunpei Tojo (2021) used Nightlights data in the study \"Application of Earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" presented at the 12th Federation of Science and Technology conference, to analyze the relationship between nighttime light intensity and public health factors. \nCitation: Bunpei Tojo, \"Application of earth observation satellite data to public health: Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic,\" Transdisciplinary 12th Federation of Science and Technology conference 2021, https://doi.org/10.11487/oukan.2021.0_B-4-4.\n\n\n",
   "links": [
-    {
-      "rel": "root",
-      "href": "../../catalog.json",
-      "type": "application/json",
-      "title": "Earth Observing Dashboard"
-    },
-    {
-      "rel": "item",
-      "href": "./byoc-603511b6-4316-4275-bf65-6c18a7813248/2019/94325551-cd9f-4ff3-8060-62edb1fdb4b6.json",
-      "type": "application/geo+json",
-      "datetime": "2019-01-01T00:00:00Z"
-    },
     {
       "rel": "wms",
       "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
       "type": "image/png",
-      "title": "JAXA_Nighttimelevel_Urban",
+      "title": "Night lights in urban areas",
       "wms:layers": [
         "JAXA-NIGHTTIMELEVEL-URBAN"
       ],
       "role": [
         "data"
-      ]
+      ],
+      "proj:epsg": 3857
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
     },
     {
       "rel": "parent",
@@ -35,6 +30,9 @@
       "title": "Night lights in urban areas"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:publications": [
     {
       "citation": "Bunpei Tojo, \"Application of earth observation satellite data to public health Comparison of night light (VIIRS) and solar radiation (SGLI) and domestic COVID-19 epidemic\", Transdisciplinary 12th Federation of Science and Technology conference 2021\n",
@@ -42,8 +40,45 @@
     }
   ],
   "subtitle": "Global map of night lights aggregated for years 2019-2022",
+  "eodash:stories": {
+    "nightlights": {
+      "href": "https://eodashboard.org/story/?id=nightlights",
+      "type": "text/markdown",
+      "title": "During COVID-19 Lockdowns Night Lights in Central Business Districts Decreased",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "nightlights_from_space": {
+      "href": "https://eodashboard.org/story/?id=nightlights_from_space",
+      "type": "text/markdown",
+      "title": "Observing Nightlights from Space",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights_from_space.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NTLU_JAXA_Nighttimelevel_Urban/NTLU_JAXA_Nighttimelevel_Urban.jpg",
   "themes": [
-    "Covid-19"
+    "covid-19"
   ],
   "tags": [
     "Human activities",
@@ -63,16 +98,17 @@
   "otherSources": [
     "Other"
   ],
+  "proj:epsg": 3857,
   "endpointtype": "Sentinel Hub_byoc",
   "title": "Night lights in urban areas",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180,
-          -60,
-          180,
-          75
+          -95,
+          35,
+          -80,
+          48
         ]
       ]
     },
@@ -89,22 +125,87 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer",
+      "roles": [
+        "licensor, producer"
+      ],
       "url": "https://www.nasa.gov/"
     },
     {
       "name": "JAXA",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://earth.jaxa.jp/"
     },
     {
       "name": "Tokyo University of Foreign Studies",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://www.tufs.ac.jp/english/education/ia/"
     }
   ],
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "nightlights": {
+      "href": "https://eodashboard.org/story/?id=nightlights",
+      "type": "text/markdown",
+      "title": "During COVID-19 Lockdowns Night Lights in Central Business Districts Decreased",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "nightlights_from_space": {
+      "href": "https://eodashboard.org/story/?id=nightlights_from_space",
+      "type": "text/markdown",
+      "title": "Observing Nightlights from Space",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nightlights_from_space.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NTLU_JAXA_Nighttimelevel_Urban/NTLU_JAXA_Nighttimelevel_Urban.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
+      "href": "https://esa-eodashboards.github.io/eodashboard-client/notebook/?id=notebooks/nightlights-notebook/night-lights-blending",
+      "type": "text/html",
+      "title": "Nightlight maps Jupyter Notebook",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
       "href": "https://ladsweb.modaps.eosdis.nasa.gov/",
       "type": "text/html",
       "title": "Level-1 data access",

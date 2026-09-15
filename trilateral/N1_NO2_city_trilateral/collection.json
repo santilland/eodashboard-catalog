@@ -22,6 +22,10 @@
       "themes": [
         "atmosphere"
       ],
+      "providers": [
+        "Copernicus",
+        "ESA"
+      ],
       "cities": [
         "Beijing",
         "Madrid",
@@ -44,7 +48,9 @@
         "JP",
         "US"
       ],
-      "yAxis": "Tropospheric NO2 (\u03bcmol/m2)",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_trilateral/N1_NO2_city_trilateral.jpg"
+      ],
       "tags": [
         "Air quality",
         "NO2",
@@ -70,6 +76,54 @@
       "id": "N1_tri"
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -77,6 +131,7 @@
     }
   ],
   "subtitle": "Total Column NO2 averaged over a 50x50 sqkm area",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_trilateral/N1_NO2_city_trilateral.jpg",
   "themes": [
     "atmosphere"
   ],
@@ -97,22 +152,16 @@
     "Sentinel-5P"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/geodb_vega_definition.json",
   "title": "Nitrogen Dioxide at City level",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -122.426389,
-          19.066,
-          139.79,
-          48.874716
-        ],
-        [
-          -122.426389,
-          19.066,
-          139.79,
-          48.874716
+          -122.616389,
+          18.876,
+          139.98,
+          49.064716000000004
         ]
       ]
     },
@@ -120,7 +169,7 @@
       "interval": [
         [
           "2018-05-07T00:00:00Z",
-          "2025-02-03T00:00:00Z"
+          "2025-06-23T00:00:00Z"
         ]
       ]
     }
@@ -129,12 +178,16 @@
   "providers": [
     {
       "name": "Copernicus",
-      "roles": "licensor, producer",
+      "roles": [
+        "licensor, producer"
+      ],
       "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
     },
     {
       "name": "ESA",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://www.esa.int/"
     }
   ],
@@ -152,29 +205,39 @@
       "TROPOMI"
     ],
     "cities": [
-      "Tokyo",
-      "New Delhi",
-      "Los Angeles",
-      "Rome",
       "Madrid",
-      "New York",
+      "Los Angeles",
+      "Tokyo",
       "Milan",
-      "Paris",
       "Beijing",
+      "New Delhi",
+      "New York",
+      "Paris",
+      "San Francisco",
       "Mumbai",
-      "San Francisco"
+      "Rome"
     ],
     "countries": [
-      "US",
-      "FR",
-      "JP",
-      "ES",
       "IT",
+      "ES",
+      "FR",
+      "US",
       "CN",
-      "IN"
+      "IN",
+      "JP"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_trilateral/N1_NO2_city_trilateral.jpg"
     ]
   },
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N1_NO2_trilateral/N1_NO2_city_trilateral.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
       "href": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Tropomi",
       "type": "text/html",

@@ -1,0 +1,226 @@
+{
+  "type": "Collection",
+  "id": "ndvi_deepESDL",
+  "stac_version": "1.1.0",
+  "description": "### Normalized Difference Vegetation Index (NDVI) (Weekly average)\nNDVI is a key indicator used in remote sensing to measure vegetation health. It works by comparing how plants reflect light in two specific spectral bands: near-infrared (NIR) and red light. The NDVI formula uses the difference between near-infrared (NIR) and red reflectance, divided by their sum:\n\n*NDVI = (NIR - Red) / (NIR + Red)*\n\n### Interpreting NDVI\nNDVI values range from -1 to 1. **Healthy**, dense vegetation reflects more NIR and absorbs more red light, resulting in **higher NDVI values**, while bare soil, water, or **stressed/unhealthy** vegetation yield **lower NDVI values**.\n\n### Additional Information\n* NDVI was calculated using MODIS/Terra + Aqua BRDF/Albedo Nadir Reflectance products, specifically using the red and NIR bands, and aggregated into 8-day means at a 0.25° spatial resolution.\n* The data shown is served from the [Earth System Data Lab xcube server](https://viewer.earthsystemdatalab.net/).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./ndvi_deepESDL/collection.json",
+      "type": "application/json",
+      "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
+      "endpointtype": "xcube_zarr",
+      "code": "ndvi_deepESDL",
+      "id": "ndvi_deepESDL",
+      "themes": [
+        "biomass"
+      ],
+      "providers": [
+        "NASA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png"
+      ],
+      "tags": [
+        "vegetation",
+        "NDVI",
+        "monitoring",
+        "MODIS"
+      ],
+      "subcode": "ndvi_deepESDL",
+      "sensor": [
+        "MODIS"
+      ],
+      "satellite": [
+        "Aqua"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "https://api.earthsystemdatalab.net/api/timeseries/esdc/ndvi?aggMethods=median",
+      "type": "application/json",
+      "id": "xcube_statistics",
+      "method": "POST",
+      "body": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_body.json"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:stories": {
+    "scienceHub_timeSeries_vegetation": {
+      "href": "https://eodashboard.org/story/?id=scienceHub_timeSeries_vegetation",
+      "type": "text/markdown",
+      "title": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/scienceHub_timeSeries_vegetation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "vegetation",
+    "NDVI",
+    "monitoring",
+    "MODIS"
+  ],
+  "subcode": "ndvi_deepESDL",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Aqua"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/xcube_vega.json",
+  "title": "Normalized Difference Vegetation Index (NDVI) (Weekly Average) ",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-05T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "NASA",
+      "url": "https://terra.nasa.gov/data/modis-data"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "ndvi_deepESDL"
+    ],
+    "themes": [
+      "biomass"
+    ],
+    "satellite": [
+      "Aqua"
+    ],
+    "sensor": [
+      "MODIS"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png"
+    ]
+  },
+  "assets": {
+    "scienceHub_timeSeries_vegetation": {
+      "href": "https://eodashboard.org/story/?id=scienceHub_timeSeries_vegetation",
+      "type": "text/markdown",
+      "title": "Evaluating Time Series Interpolation Techniques for Vegetation Monitoring Using Remote Sensing Data",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/scienceHub_timeSeries_vegetation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_NDVI/ESDC_NDVI.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

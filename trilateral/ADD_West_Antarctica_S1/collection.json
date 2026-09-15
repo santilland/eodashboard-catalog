@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "ADD_West_Antarctica_S1",
   "stac_version": "1.1.0",
-  "description": "# Sentinel-1 observations of Antarctica\n\nThe Sentinel-1 Antarctica dataset provides comprehensive radar imagery of the Antarctic continent through the Copernicus Earth observation program. This dataset is particularly valuable for monitoring ice sheet dynamics, glacier movements, and environmental changes in Antarctica. The data is collected using Synthetic Aperture Radar (SAR) technology, which enables continuous observation regardless of weather conditions or seasonal darkness.\n\nThe Sentinel-1\u2019s radar can operate in four modes: Interferometric Wide Swath (IW), Extra Wide Swath (EW), Wave (WV) and Stripmap (SM). The EW mode is aimed primarily for use over sea-ice, polar zones and certain maritime areas, in particular for ice, oil spill monitoring and security services. Like IW, EW mode can also be used for interferometry since it shares the same characteristics for burst synchronisation, baseline and Doppler stability.\n\n## Dataset Description\n- Sensor: C-band Synthetic Aperture Radar (operating at 5.405 GHz)\n- Mode: Extra Wide (EW) swath mode with TOPSAR technique\n- Resolution: 20 m by 40 m spatial resolution\n- Swath Width: 400 km\n- Temporal coverageL continuous observations since 2014\n- Data features: all-weather, day-and-night imaging capability, ideal for ice monitoring and maritime surveillance.\n\n- The Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\n- This map uses the baselayer Antarctic hillshade and bathymetry south of 60\u00b0S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n\n\n\n[Sentinel-1](https://docs.sentinel-hub.com/api/latest/data/sentinel-1-grd/) dataset is [provided by the Euro Data Cube](https://eurodatacube.com/documentation/analysis-ready-data), via the on-the-fly data cube access service powered by [Sentinel Hub](https://www.sentinel-hub.com/). The Sentinel-1 mission is the European Radar Observatory for the [Copernicus](https://www.copernicus.eu/en) joint initiative of the European Commission (EC) and the European Space Agency (ESA) \n\n\n### Read More on the ESA website\n\n[Sentinel-1 Homepage on ESA Website](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1)\n\n\n\n\n\n",
+  "description": "# Sentinel-1 observations of Antarctica\n\nThe Sentinel-1 Antarctica dataset provides comprehensive radar imagery of the Antarctic continent through the Copernicus Earth observation program. This dataset is particularly valuable for monitoring ice sheet dynamics, glacier movements, and environmental changes in Antarctica. The data is collected using Synthetic Aperture Radar (SAR) technology, which enables continuous observation regardless of weather conditions or seasonal darkness.\n\nThe Sentinel-1’s radar can operate in four modes: Interferometric Wide Swath (IW), Extra Wide Swath (EW), Wave (WV) and Stripmap (SM). The EW mode is aimed primarily for use over sea-ice, polar zones and certain maritime areas, in particular for ice, oil spill monitoring and security services. Like IW, EW mode can also be used for interferometry since it shares the same characteristics for burst synchronisation, baseline and Doppler stability.\n\n## Dataset Description\n- Sensor: C-band Synthetic Aperture Radar (operating at 5.405 GHz)\n- Mode: Extra Wide (EW) swath mode with TOPSAR technique\n- Resolution: 20 m by 40 m spatial resolution\n- Swath Width: 400 km\n- Temporal coverageL continuous observations since 2014\n- Data features: all-weather, day-and-night imaging capability, ideal for ice monitoring and maritime surveillance.\n\n- The Pine Island Glacier and Thwaites Glacier geometries shown on this map are for illustration purposes only. They were produced using [QGIS](http://www.qgis.org) by georeferencing maps made available by [the Polar Geospatial Center](https://data.pgc.umn.edu/maps/antarctica/pgc/19/preview/Thwaites%20Glacier%20Regional.jpg) and  the [Quantarctica/Norwegian Polar Institute](https://www.carbonbrief.org/guest-post-how-close-is-the-west-antarctic-ice-sheet-to-a-tipping-point/).\n\n- This map uses the baselayer Antarctic hillshade and bathymetry south of 60°S. Citation: REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, [external resource], 2019.  GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) \n\n\n\n[Sentinel-1](https://docs.sentinel-hub.com/api/latest/data/sentinel-1-grd/) dataset is [provided by the Euro Data Cube](https://eurodatacube.com/documentation/analysis-ready-data), via the on-the-fly data cube access service powered by [Sentinel Hub](https://www.sentinel-hub.com/). The Sentinel-1 mission is the European Radar Observatory for the [Copernicus](https://www.copernicus.eu/en) joint initiative of the European Commission (EC) and the European Space Agency (ESA) \n\n\n### Read More on the ESA website\n\n[Sentinel-1 Homepage on ESA Website](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1)\n\n\n\n\n\n",
   "links": [
     {
       "rel": "root",
@@ -22,16 +22,24 @@
       "themes": [
         "cryosphere"
       ],
+      "providers": [
+        "ESA",
+        "Carbon Brief",
+        "Euro Data Cube"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.jpg"
+      ],
       "tags": [
         "Copernicus",
         "Open data",
         "SAR",
         "Antarctica",
-        "Polar regions",
-        "Climate change",
+        "Polar Regions",
+        "climate change",
         "Cryosphere",
         "C-SAR",
-        "Open science",
+        "Open Science",
         "Cryosphere",
         "Ice monitoring"
       ],
@@ -44,7 +52,92 @@
       ],
       "satellite": [
         "Sentinel-1"
-      ]
+      ],
+      "eodash:mapProjection": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "extent": [
+          -3299207.53,
+          -3333134.03,
+          3299207.53,
+          3333134.03
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic South",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "sx-cat_ortho320500",
+      "wms:layers": "sx-cat_ortho320500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:320500",
+        "def": "+proj=ortho +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs"
+      }
+    },
+    {
+      "rel": "wms",
+      "href": "https://maps.bas.ac.uk/antarctic/wms",
+      "type": "image/png",
+      "title": "Antarctic hilshade, bathymetry",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "Antarctic_hilshade",
+      "wms:layers": "add:antarctic_hillshade_and_bathymetry",
+      "attribution": "{ REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P.: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, https://doi.org/10.5194/tc-13-665-2019, 2019. ; GEBCO Compilation Group (2019) GEBCO 2019 Grid (doi:10.5285/836f016a-33be-6ddc-e053-6c86abc0788e) Available from: GEBCO; https://www.gebco.net/ }",
+      "eodash:proj4_def": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
+    },
+    {
+      "rel": "wms",
+      "href": "https://maps.bas.ac.uk/antarctic/wms",
+      "type": "image/png",
+      "title": "Antarctic coastline",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "Antarctic_coastline",
+      "wms:layers": "add:antarctic_coastline_line_medium",
+      "attribution": "{ Gerrish, L., Fretwell, P., & Cooper, P. (2022). Medium resolution vector polylines of the Antarctic coastline (7.6) [Data set]. UK Polar Data Centre, Natural Environment Research Council, UK Research & Innovation. https://doi.org/10.5285/1db7f188-6c3e-46cf-a3bf-e39dbd77e14c }",
+      "eodash:proj4_def": {
+        "name": "EPSG:3031",
+        "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
     },
     {
       "rel": "parent",
@@ -53,6 +146,9 @@
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:publications": [
     {
       "citation": "REMA: Howat, I. M., Porter, C., Smith, B. E., Noh, M.-J., and Morin, P. (2019): The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674.\n",
@@ -60,7 +156,43 @@
     }
   ],
   "subtitle": "West Antarctica Sentinel-1 Subset",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.png",
+  "eodash:stories": {
+    "nasa-thwaites": {
+      "href": "https://eodashboard.org/story/?id=nasa-thwaites",
+      "type": "text/markdown",
+      "title": "Pine Island Glacier and Thwaites Glacier",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nasa-thwaites.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thwaites-intro": {
+      "href": "https://eodashboard.org/story/?id=thwaites-intro",
+      "type": "text/markdown",
+      "title": "Collaboration on Glaciers and Ice Sheets Research",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/thwaites-intro.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.jpg",
   "themes": [
     "cryosphere"
   ],
@@ -69,11 +201,11 @@
     "Open data",
     "SAR",
     "Antarctica",
-    "Polar regions",
-    "Climate change",
+    "Polar Regions",
+    "climate change",
     "Cryosphere",
     "C-SAR",
-    "Open science",
+    "Open Science",
     "Cryosphere",
     "Ice monitoring"
   ],
@@ -87,16 +219,20 @@
   "satellite": [
     "Sentinel-1"
   ],
+  "eodash:mapProjection": {
+    "name": "EPSG:3031",
+    "def": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+    "extent": [
+      -3299207.53,
+      -3333134.03,
+      3299207.53,
+      3333134.03
+    ]
+  },
   "title": "West Antarctica (Sentinel-1)",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -103,
-          -75,
-          -102,
-          -74
-        ],
         [
           -103,
           -75,
@@ -118,8 +254,10 @@
   "providers": [
     {
       "name": "ESA",
-      "roles": "producer, processor",
-      "url": "https://sentinel.esa.int/web/sentinel/"
+      "roles": [
+        "producer, processor"
+      ],
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
     },
     {
       "name": "Carbon Brief",
@@ -144,12 +282,48 @@
       "C-SAR"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.jpg"
     ]
   },
   "assets": {
+    "nasa-thwaites": {
+      "href": "https://eodashboard.org/story/?id=nasa-thwaites",
+      "type": "text/markdown",
+      "title": "Pine Island Glacier and Thwaites Glacier",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/nasa-thwaites.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thwaites-intro": {
+      "href": "https://eodashboard.org/story/?id=thwaites-intro",
+      "type": "text/markdown",
+      "title": "Collaboration on Glaciers and Ice Sheets Research",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/thwaites-intro.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ADD_West_Antarctica_S1/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

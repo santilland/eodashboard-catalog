@@ -1,0 +1,586 @@
+{
+  "type": "Collection",
+  "id": "Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)",
+  "stac_version": "1.1.0",
+  "description": "## Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)\nNitrogen dioxide (NO₂) is a short-lived air pollutant produced primarily by human activity, combustion of fossil fuels from road traffic, shipping, power plants, and industrial facilities. Burning activities and wildfires also contribute significantly. NO₂ has a direct impact on human health and indirectly contributes to the formation of ozone and fine particles. Because NO₂ concentrations respond rapidly to changes in emissions, they serve as useful indicators of economic activity and the effectiveness of emission reduction policies.\n\n## About the dataset\n- The Tropospheric Column NO₂product is measured  by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite.\n- The product provides the tropospheric NO₂ column between the surface and the top of the troposphere, as well as stratospheric and total column data.\n- Because TROPOMI cannot see through thick clouds, near-surface concentrations can only be retrieved under cloud-free or partly cloudy conditions.\n- More information on the TROPOMI NO₂ measurements and quality assessment can be found in the [Product Readme file](https://sentiwiki.copernicus.eu/__attachments/1673595/S5P-MPC-KNMI-PRF-NO2%20-%20Sentinel-5P%20Nitrogen%20Dioxide%20Level%202%20Product%20Readme%20File%202025%20-%202.8.pdf).\n\n## Use cases\nNO₂ measurements are particularly useful for:\n- Monitoring air quality and anthropogenic pollution from traffic, industry, and power generation at urban and regional scales.\n- Tracking emission reductions from policy interventions, economic slowdowns, or lockdown measures.\n- Detecting NO₂ from wildfires, biomass burning, and shipping lanes.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)/collection.json",
+      "type": "application/json",
+      "title": "Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "S5P-L3GRD-TROPONO2-DAY",
+      "id": "Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)",
+      "themes": [
+        "atmosphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_thumbnail.jpg"
+      ],
+      "tags": [
+        "NO2",
+        "Nitrogen Dioxide",
+        "Air Quality",
+        "Pollution",
+        "Troposphere",
+        "Atmosphere",
+        "Open data",
+        "Open Science",
+        "TROPOMI",
+        "Sentinel-5P",
+        "Remote Sensing",
+        "Daily Data",
+        "S5P",
+        "Copernicus"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "S5P-L3GRD-TROPONO2-DAY",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      0.0,
+      180.0
+    ],
+    "range": [
+      "#fbf9f7",
+      "#fbf9f7",
+      "#fbf9f6",
+      "#fbf9f6",
+      "#fbf9f5",
+      "#fbf8f5",
+      "#fbf8f5",
+      "#fbf8f5",
+      "#fbf7f5",
+      "#fbf7f4",
+      "#fbf7f4",
+      "#fcf7f3",
+      "#fcf7f2",
+      "#fcf6f2",
+      "#fcf6f1",
+      "#fcf6f1",
+      "#fcf5f1",
+      "#fcf5f0",
+      "#fcf4f0",
+      "#fcf4ef",
+      "#fcf3ee",
+      "#fcf3ed",
+      "#fcf2ed",
+      "#fcf2ed",
+      "#fcf2ec",
+      "#fcf2eb",
+      "#fcf1eb",
+      "#fcf1ea",
+      "#fcf0ea",
+      "#fcefe8",
+      "#fcefe8",
+      "#fceee7",
+      "#fceee7",
+      "#fcede6",
+      "#fcede4",
+      "#fcece4",
+      "#fdece3",
+      "#fdebe2",
+      "#fdeae0",
+      "#fdeae0",
+      "#fdeadf",
+      "#fde9df",
+      "#fde8dd",
+      "#fde7dd",
+      "#fde6dc",
+      "#fde6db",
+      "#fde5d9",
+      "#fee4d8",
+      "#fee4d7",
+      "#fee3d7",
+      "#fee2d5",
+      "#fee2d4",
+      "#fee0d3",
+      "#fee0d2",
+      "#fedfd1",
+      "#fedecf",
+      "#feddce",
+      "#fedccd",
+      "#fedbcc",
+      "#fedac9",
+      "#fed9c8",
+      "#fed8c7",
+      "#fed7c6",
+      "#fdd5c4",
+      "#fdd5c3",
+      "#fdd4c2",
+      "#fdd3c1",
+      "#fdd1bf",
+      "#fdd1be",
+      "#fdd0bd",
+      "#fdcfbb",
+      "#fdceba",
+      "#fdcdb8",
+      "#fdccb7",
+      "#fdcbb6",
+      "#fdcab5",
+      "#fdc8b3",
+      "#fdc8b2",
+      "#fdc7b1",
+      "#fdc6b0",
+      "#fdc4ad",
+      "#fcc4ac",
+      "#fcc3ab",
+      "#fcc2aa",
+      "#fcc1a9",
+      "#fcc0a7",
+      "#fcbfa6",
+      "#fcbea5",
+      "#fcbda4",
+      "#fcbca2",
+      "#fcbba1",
+      "#fcb99f",
+      "#fcb89e",
+      "#fcb69b",
+      "#fcb59a",
+      "#fcb499",
+      "#fcb398",
+      "#fcb296",
+      "#fcaf94",
+      "#fcae92",
+      "#fcad91",
+      "#fcac90",
+      "#fcaa8d",
+      "#fca98c",
+      "#fca78b",
+      "#fca689",
+      "#fca487",
+      "#fca385",
+      "#fca284",
+      "#fca183",
+      "#fca082",
+      "#fc9d7f",
+      "#fc9c7e",
+      "#fc9b7c",
+      "#fc9a7b",
+      "#fc9879",
+      "#fc9777",
+      "#fc9576",
+      "#fc9475",
+      "#fc9272",
+      "#fc9171",
+      "#fc9070",
+      "#fc8f6f",
+      "#fc8e6e",
+      "#fc8b6b",
+      "#fc8a6a",
+      "#fc8969",
+      "#fc8868",
+      "#fc8666",
+      "#fc8565",
+      "#fc8464",
+      "#fc8363",
+      "#fc8161",
+      "#fc7f5f",
+      "#fc7e5e",
+      "#fb7d5d",
+      "#fb7c5c",
+      "#fb7a5a",
+      "#fb7959",
+      "#fb7858",
+      "#fb7757",
+      "#fb7454",
+      "#fb7353",
+      "#fb7252",
+      "#fb7151",
+      "#fb6f4f",
+      "#fb6e4e",
+      "#fb6d4d",
+      "#fb6c4c",
+      "#fb6b4b",
+      "#fb6849",
+      "#fa6748",
+      "#fa6647",
+      "#fa6446",
+      "#f96245",
+      "#f96044",
+      "#f85f43",
+      "#f85e42",
+      "#f75b41",
+      "#f75a40",
+      "#f7593f",
+      "#f6573e",
+      "#f6563d",
+      "#f5533c",
+      "#f5523b",
+      "#f5513a",
+      "#f45039",
+      "#f44d37",
+      "#f34c37",
+      "#f34a36",
+      "#f34935",
+      "#f24733",
+      "#f24533",
+      "#f14432",
+      "#f14331",
+      "#f14130",
+      "#f03f2e",
+      "#f03e2e",
+      "#ef3c2d",
+      "#ef3b2c",
+      "#ed392b",
+      "#ec382b",
+      "#eb372a",
+      "#ea362a",
+      "#e83429",
+      "#e73329",
+      "#e63228",
+      "#e53128",
+      "#e43027",
+      "#e22f27",
+      "#e12e26",
+      "#e02d26",
+      "#df2c25",
+      "#dd2a25",
+      "#dc2924",
+      "#db2824",
+      "#da2723",
+      "#d82523",
+      "#d72422",
+      "#d62322",
+      "#d52221",
+      "#d42021",
+      "#d31f20",
+      "#d21e20",
+      "#d11d1f",
+      "#d01c1f",
+      "#ce1b1e",
+      "#cd1a1e",
+      "#cc191d",
+      "#cb181d",
+      "#c9171c",
+      "#c8171c",
+      "#c7171c",
+      "#c5171c",
+      "#c3161b",
+      "#c2161b",
+      "#c1161b",
+      "#c0151b",
+      "#bf151b",
+      "#bd151a",
+      "#bc141a",
+      "#bb141a",
+      "#ba1419",
+      "#b81319",
+      "#b71319",
+      "#b61319",
+      "#b51318",
+      "#b31218",
+      "#b21218",
+      "#b11217",
+      "#b01217",
+      "#af1117",
+      "#ac1117",
+      "#ab1116",
+      "#aa1016",
+      "#a91016",
+      "#a71015",
+      "#a60f15",
+      "#a50f15",
+      "#a30f15",
+      "#9f0d14",
+      "#9c0d14",
+      "#9a0c14",
+      "#980c13",
+      "#950b13",
+      "#910a12",
+      "#8f0a12",
+      "#8c0912",
+      "#8a0812",
+      "#850711",
+      "#830711",
+      "#810610",
+      "#7f0610",
+      "#7a050f",
+      "#78040f",
+      "#77040f"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "NO2 column number density [µmol/m²]",
+    "tickValues": [
+      0.0,
+      45.0,
+      90.0,
+      135.0,
+      180.0
+    ]
+  },
+  "eodash:stories": {
+    "covid-no2": {
+      "href": "https://eodashboard.org/story/?id=covid-no2",
+      "type": "text/markdown",
+      "title": "COVID-19 Lockdowns Reduce Nitrogen Dioxide Levels",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-no2.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "extreme_air_pollution_india_and_pakistan": {
+      "href": "https://eodashboard.org/story/?id=extreme_air_pollution_india_and_pakistan",
+      "type": "text/markdown",
+      "title": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/extreme_air_pollution_india_and_pakistan.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "urban-health-final": {
+      "href": "https://eodashboard.org/story/?id=urban-health-final",
+      "type": "text/markdown",
+      "title": "Urban Health and Megacities: the case of New Delhi",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/urban-health-final.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "NO2",
+    "Nitrogen Dioxide",
+    "Air Quality",
+    "Pollution",
+    "Troposphere",
+    "Atmosphere",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Daily Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-TROPONO2-DAY",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "title": "Tropospheric Column NO₂ by Sentinel-5P TROPOMI (Daily)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-01-01T00:00:00Z",
+          "2026-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "S5P-L3GRD-TROPONO2-DAY"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "covid-no2": {
+      "href": "https://eodashboard.org/story/?id=covid-no2",
+      "type": "text/markdown",
+      "title": "COVID-19 Lockdowns Reduce Nitrogen Dioxide Levels",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-no2.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "extreme_air_pollution_india_and_pakistan": {
+      "href": "https://eodashboard.org/story/?id=extreme_air_pollution_india_and_pakistan",
+      "type": "text/markdown",
+      "title": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/extreme_air_pollution_india_and_pakistan.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "urban-health-final": {
+      "href": "https://eodashboard.org/story/?id=urban-health-final",
+      "type": "text/markdown",
+      "title": "Urban Health and Megacities: the case of New Delhi",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/urban-health-final.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TROPONO2-DAY/S5P-L3GRD-TROPONO2-DAY_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/no2-tropospheric",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "ENSST_by_GCOM-W-AMSR_JAXA",
   "stac_version": "1.1.0",
-  "description": "# Sea Surface Temperature by GCOM-W AMSR JAXA\nThis dataset, ENSST (Enhanced Sea Surface Temperature), provides global coverage of sea surface temperature (SST) data derived from the Advanced Microwave Scanning Radiometer 2 (AMSR2) onboard the GCOM-W (Global Change Observation Mission - Water) satellite. It is crucial for analyzing sea surface temperature variations across the globe, which are important for climate research, weather forecasting, and marine ecosystem studies. The dataset offers insights into oceanic conditions, supporting the monitoring of marine environments, weather patterns, and ocean circulation.\n\nThe dataset uses color gradients to represent different SST levels; cooler ocean temperatures are shown in darker blue hues, while warmer sea temperatures appear in shades of yellow to red, indicating regions of increased heat such as the tropics or areas impacted by oceanic currents.\n\n## Dataset description\nThe dataset covers global oceans, focusing on sea surface temperature to support studies in climate change, weather prediction, marine ecosystems, and oceanography.\n- Metric: Sea surface temperature values (measured in degrees Celsius, \u00b0C), providing a precise measurement of the thermal state of the ocean surface. The data can be further analyzed for temporal trends in ocean warming and cooling patterns.\n- Temporal coverage includes long-term, multi-year data, enabling robust analysis of trends in sea surface temperature and oceanic heat content over time.\n\nThe dataset was developed by [JAXA](https://global.jaxa.jp/), using the [AMSR2 sensor](https://www.earthdata.nasa.gov/sensors/amsr2) onboard the [GCOM-W satellite](https://global.jaxa.jp/projects/sat/gcom_w/).\n",
+  "description": "# Sea Surface Temperature by GCOM-W AMSR JAXA\nThis dataset, ENSST (Enhanced Sea Surface Temperature), provides global coverage of sea surface temperature (SST) data derived from the Advanced Microwave Scanning Radiometer 2 (AMSR2) onboard the GCOM-W (Global Change Observation Mission - Water) satellite. It is crucial for analyzing sea surface temperature variations across the globe, which are important for climate research, weather forecasting, and marine ecosystem studies. The dataset offers insights into oceanic conditions, supporting the monitoring of marine environments, weather patterns, and ocean circulation.\n\nThe dataset uses color gradients to represent different SST levels; cooler ocean temperatures are shown in darker blue hues, while warmer sea temperatures appear in shades of yellow to red, indicating regions of increased heat such as the tropics or areas impacted by oceanic currents.\n\n## Dataset description\nThe dataset covers global oceans, focusing on sea surface temperature to support studies in climate change, weather prediction, marine ecosystems, and oceanography.\n- Metric: Sea surface temperature values (measured in degrees Celsius, °C), providing a precise measurement of the thermal state of the ocean surface. The data can be further analyzed for temporal trends in ocean warming and cooling patterns.\n- Temporal coverage includes long-term, multi-year data, enabling robust analysis of trends in sea surface temperature and oceanic heat content over time.\n\nThe dataset was developed by [JAXA](https://global.jaxa.jp/), using the [AMSR2 sensor](https://www.earthdata.nasa.gov/sensors/amsr2) onboard the [GCOM-W satellite](https://global.jaxa.jp/projects/sat/gcom_w/).\n",
   "links": [
     {
       "rel": "root",
@@ -19,13 +19,21 @@
       "code": "ENSST",
       "id": "ENSST_by_GCOM-W-AMSR_JAXA",
       "themes": [
-        "oceans",
+        "water",
         "extreme-events"
+      ],
+      "providers": [
+        "JAXA",
+        "JAXA GCOM project",
+        "JAXA EORC"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ENSST_by_GCOM-W-AMSR_JAXA/ENSST_by_GCOM-W-AMSR_JAXA.jpg"
       ],
       "tags": [
         "SST",
         "El Nino",
-        "Climate Change",
+        "climate change",
         "Open data"
       ],
       "agency": [
@@ -40,31 +48,62 @@
       ]
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
-  "themes": [
-    "oceans",
-    "extreme-events"
-  ],
-  "tags": [
-    "SST",
-    "El Nino",
-    "Climate Change",
-    "Open data"
-  ],
-  "agency": [
-    "JAXA"
-  ],
-  "subcode": "ENSST",
-  "sensor": [
-    "AMSR2"
-  ],
-  "satellite": [
-    "GCOM-W"
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
   ],
   "eox:colorlegend": {
     "domain": [
@@ -89,18 +128,52 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "Sea Surface Temperature [\u00b0C]"
+    "title": "Sea Surface Temperature [°C]"
   },
+  "eodash:stories": {
+    "rising_global_sea_surface_temperatures": {
+      "href": "https://eodashboard.org/story/?id=rising_global_sea_surface_temperatures",
+      "type": "text/markdown",
+      "title": "El Niño 2023-2024 Part 2: Rising Global Sea Surface Temperatures",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/rising_global_sea_surface_temperatures.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ENSST_by_GCOM-W-AMSR_JAXA/ENSST_by_GCOM-W-AMSR_JAXA.jpg",
+  "themes": [
+    "water",
+    "extreme-events"
+  ],
+  "tags": [
+    "SST",
+    "El Nino",
+    "climate change",
+    "Open data"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "ENSST",
+  "sensor": [
+    "AMSR2"
+  ],
+  "satellite": [
+    "GCOM-W"
+  ],
   "title": "Sea Surface Temperature (GCOM-W)",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ],
         [
           -180.0,
           -90.0,
@@ -122,17 +195,23 @@
   "providers": [
     {
       "name": "JAXA",
-      "roles": "licensor",
+      "roles": [
+        "licensor"
+      ],
       "url": "https://global.jaxa.jp/"
     },
     {
       "name": "JAXA GCOM project",
-      "roles": "producer",
+      "roles": [
+        "producer"
+      ],
       "url": "https://suzaku.eorc.jaxa.jp/GCOM/index.html"
     },
     {
       "name": "JAXA EORC",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://earth.jaxa.jp/"
     }
   ],
@@ -141,14 +220,17 @@
       "ENSST"
     ],
     "themes": [
-      "extreme-events",
-      "oceans"
+      "water",
+      "extreme-events"
     ],
     "satellite": [
       "GCOM-W"
     ],
     "sensor": [
       "AMSR2"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ENSST_by_GCOM-W-AMSR_JAXA/ENSST_by_GCOM-W-AMSR_JAXA.jpg"
     ]
   },
   "assets": {
@@ -157,6 +239,31 @@
       "type": "image/png",
       "roles": [
         "metadata"
+      ]
+    },
+    "rising_global_sea_surface_temperatures": {
+      "href": "https://eodashboard.org/story/?id=rising_global_sea_surface_temperatures",
+      "type": "text/markdown",
+      "title": "El Niño 2023-2024 Part 2: Rising Global Sea Surface Temperatures",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/rising_global_sea_surface_temperatures.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ENSST_by_GCOM-W-AMSR_JAXA/ENSST_by_GCOM-W-AMSR_JAXA.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
       ]
     },
     "reference_1": {

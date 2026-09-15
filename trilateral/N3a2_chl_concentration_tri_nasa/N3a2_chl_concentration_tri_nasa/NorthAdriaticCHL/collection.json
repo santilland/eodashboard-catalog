@@ -1,0 +1,165 @@
+{
+  "type": "Collection",
+  "id": "NorthAdriaticCHL",
+  "stac_version": "1.1.0",
+  "description": "# Water Quality - Chlorophyll-a concentrations\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nNASA’s Aqua satellite, part of the Earth Observing System (EOS), is equipped with several instruments designed to study Earth’s water cycle, climate, and ecosystems. Among these instruments, the Moderate Resolution Imaging Spectroradiometer (MODIS) is particularly important for mapping chlorophyll-a concentrations in oceans, lakes, and rivers. MODIS’s ability to detect chlorophyll-a helps monitor phytoplankton biomass, marine productivity, and the overall health of aquatic ecosystems on a global scale.\n\nWhen interpreting chlorophyll-a concentration maps produced by Aqua’s MODIS sensor, it’s crucial to understand the color scale used to represent different levels of chlorophyll-a. The scale typically goes from blue to red, where:\n\n- Blue represents low chlorophyll-a concentration.\n- Red represents high chlorophyll-a concentration.\n\n## Dataset Description\n- Spectral Range: MODIS has 36 spectral bands, covering visible, near-infrared, and thermal infrared wavelengths, optimized for observing ocean color, vegetation, and atmospheric properties.\n- Chlorophyll-a Detection: MODIS is highly effective for detecting chlorophyll-a concentrations, providing insights into phytoplankton distribution, ocean productivity, and marine ecosystem dynamics.\n- Spatial Resolution: MODIS offers spatial resolutions of 250 m for certain key bands (including those used for chlorophyll-a) and 500 m to 1 km for others, enabling detailed monitoring of coastal, inland, and oceanic waters.\n- Wide Swath Coverage: With a swath width of 2330 km, MODIS enables near-global coverage every 1 to 2 days, making it ideal for tracking phytoplankton blooms and monitoring marine ecosystem health on both regional and global scales.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Chlorophyll-a concentration from MODIS"
+    }
+  ],
+  "subcode": "N3a2_chl_nasa",
+  "subtitle": "Chlorophyll-a concentration maps",
+  "eox:colorlegend": {
+    "domain": [
+      -100,
+      100
+    ],
+    "range": [
+      "#053264",
+      "#7fb9d7",
+      "#ffffff",
+      "#e68764",
+      "#731432"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Chl-a anomaly [%]"
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "tags": [
+    "Water quality",
+    "Marine",
+    "Acqua",
+    "MODIS",
+    "Open data",
+    "Marine monitoring",
+    "Chlorophyll"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Acqua"
+  ],
+  "title": "North Adriatic - N3a2_chl_concentration_tri_nasa",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          12.06659,
+          44.48155,
+          14.0,
+          45.81168
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2022-03-16T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "providers": [
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}

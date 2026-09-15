@@ -20,7 +20,14 @@
       "code": "CDS8",
       "id": "windv_ERA5-SingleLevel_100m_GLOBAL",
       "themes": [
-        "air"
+        "atmosphere"
+      ],
+      "providers": [
+        "Copernicus Climate Change Service",
+        "Climate Data Store"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.jpg"
       ],
       "tags": [
         "Copernicus Services",
@@ -46,34 +53,74 @@
       "title": "Licence to Use Copernicus Products"
     },
     {
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
+      "type": "application/json",
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:doi": "10.24381/cds.adbb2d47",
-  "sci:citation": "Citing the data:\nHersbach, H., Bell, B., Berrisford, P., Biavati, G., Hor\u00e1nyi, A., Mu\u00f1oz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Th\u00e9paut, J-N. (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS) (Accessed on 02-M07-2024)\n",
+  "sci:citation": "Citing the data:\nHersbach, H., Bell, B., Berrisford, P., Biavati, G., Horányi, A., Muñoz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Thépaut, J-N. (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS) (Accessed on 02-M07-2024)\n",
   "subtitle": "Gridded ERA5 reanalysis wind V field at 100 m at global level",
-  "themes": [
-    "air"
-  ],
-  "tags": [
-    "Copernicus Services",
-    "C3S",
-    "CDS",
-    "Multi-sensors",
-    "Open data",
-    "Climate change service"
-  ],
-  "agency": [
-    "European Commission",
-    "ECMWF"
-  ],
-  "subcode": "CDS8",
-  "otherSources": [
-    "ERA5"
-  ],
   "eox:colorlegend": {
     "domain": [
       -4,
@@ -94,16 +141,68 @@
     "tickFormat": ".0f",
     "title": "Wind field [m/s]"
   },
+  "eodash:stories": {
+    "extreme_air_pollution_india_and_pakistan": {
+      "href": "https://eodashboard.org/story/?id=extreme_air_pollution_india_and_pakistan",
+      "type": "text/markdown",
+      "title": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/extreme_air_pollution_india_and_pakistan.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "hunga_tonga_aerosol_plumes": {
+      "href": "https://eodashboard.org/story/?id=hunga_tonga_aerosol_plumes",
+      "type": "text/markdown",
+      "title": "Hunga Tonga Aerosol Plumes",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/hunga_tonga_aerosol_plumes.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Copernicus Services",
+    "C3S",
+    "CDS",
+    "Multi-sensors",
+    "Open data",
+    "Climate change service"
+  ],
+  "agency": [
+    "European Commission",
+    "ECMWF"
+  ],
+  "subcode": "CDS8",
+  "otherSources": [
+    "ERA5"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/CDS8_windv_ERA5-SingleLevel_100m_GLOBAL/chart.json",
   "title": "Wind V Field at 100m",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -90.22495138408348,
-          180.0,
-          90.0
-        ],
         [
           -180.0,
           -90.22495138408348,
@@ -137,7 +236,10 @@
       "CDS8"
     ],
     "themes": [
-      "air"
+      "atmosphere"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.jpg"
     ]
   },
   "assets": {
@@ -146,6 +248,49 @@
       "type": "image/png",
       "roles": [
         "metadata"
+      ]
+    },
+    "extreme_air_pollution_india_and_pakistan": {
+      "href": "https://eodashboard.org/story/?id=extreme_air_pollution_india_and_pakistan",
+      "type": "text/markdown",
+      "title": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/extreme_air_pollution_india_and_pakistan.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "hunga_tonga_aerosol_plumes": {
+      "href": "https://eodashboard.org/story/?id=hunga_tonga_aerosol_plumes",
+      "type": "text/markdown",
+      "title": "Hunga Tonga Aerosol Plumes",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/hunga_tonga_aerosol_plumes.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL/CDS7_windu_ERA5-SingleLevel_100m_GLOBAL.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
       ]
     }
   }

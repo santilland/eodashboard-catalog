@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "TonleSap_VV",
   "stac_version": "1.1.0",
-  "description": "",
+  "description": "## Sentinel 1 for Lake areas\n\n",
   "links": [
     {
       "rel": "root",
@@ -11,112 +11,64 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./TonleSap_VV/2015/2015-05-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-05-15T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2015/2015-10-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-10-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2016/2016-03-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-03-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2016/2016-10-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-10-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2017/2017-10-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-10-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2018/2018-05-11T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-05-11T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2018/2018-10-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-10-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2019/2019-05-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-05-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2019/2019-10-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-10-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2020/2020-05-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-05-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2020/2020-10-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2020-10-15T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2021/2021-05-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-05-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2021/2021-10-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-10-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2021/2021-10-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2021-10-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2022/2022-05-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-05-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./TonleSap_VV/2022/2022-10-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-10-17T00:00:00Z"
-    },
-    {
       "rel": "wms",
-      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "href": "https://services.sentinel-hub.com/ogc/wms/",
       "type": "image/png",
-      "title": "Lakes_Sentinel1",
+      "title": "Lakes collection (Sentinel 1)",
       "wms:layers": [
         "SENTINEL_1_IW_VV"
       ],
       "role": [
         "data"
       ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -126,7 +78,28 @@
     }
   ],
   "endpointtype": "Sentinel Hub WMS",
-  "title": "Tonl\u00e9 Sap (S1-VV)",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "tags": [
+    "Sentinel",
+    "Open data",
+    "Water quality",
+    "Water extent"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "subcode": "Lakes_Sentinel1",
+  "sensor": [
+    "C-SAR"
+  ],
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "title": "Tonlé Sap (S1-VV)",
   "extent": {
     "spatial": {
       "bbox": [
@@ -147,5 +120,28 @@
       ]
     }
   },
-  "license": "other"
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/Lakes_Sentinel1/thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
 }

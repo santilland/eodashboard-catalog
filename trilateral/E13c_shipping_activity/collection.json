@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "E13c_shipping_activity",
   "stac_version": "1.1.0",
-  "description": "## Shipping Activity at Major Ports\r\n\r\nSupply chains around the world dependent on cargo shipping have been interrupted by travel restrictions and quarantines designed to stop the spread of the novel coronavirus. Many ports are closed, shipments have been canceled, and, in some locations, altered shipping routes have prevented the efficient movement of cargo. \r\n\r\nNASA and ESA researchers are using cutting-edge artificial intelligence technology and high-resolution satellite imagery from Planet Labs and [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) to track shipping activity at major ports in the U.S. and in Europe during the coronavirus pandemic. This data will help quantify the level of shipping-related economic activity over time and could eventually contribute to our understanding of the environmental implications of global decreases in shipping on key air pollutants like nitrogen dioxide (NO2) and sulphur dioxide (SO2).\r\n\r\n### Detection of ships on PlanetScope images\r\n\r\nNASA\u2019s Interagency Implementation and Advanced Concepts Team (IMPACT), based at NASA\u2019s Marshall Space Flight Center in Huntsville, Alabama, trained an algorithm using supervised machine learning technique to detect ships on PlanetScope images. The algorithm detects a ship on the image and geolocates it. The NASA team has also built an Application Programming Interface (API) that allows ship detections to be aggregated across a port area for a given day. Efforts are also underway to conduct a study of ship detections in U.S. ports during the period of pandemic travel restrictions, as compared to the same period of time in previous years. \r\n\r\nNASA researchers have access to the high-resolution imagery from Planet Labs, through the Commercial SmallSat Data Acquisition Program (CSDAP), which acquires data from commercial sources that support NASA's Earth science research goals. The PlanetScope image resolution is 3 meters per pixel, which allows researchers to get a detailed look at changes occurring on the ground. Commercial small satellites also provide high temporal resolution, making images available almost every day (depending on cloud cover) for key areas of interest. \r\n\r\nShip detections will be provided daily, except when prevented by significant cloud cover. After the machine learning model detects the ships, a secondary human validation is also performed before the detections are made available for the dashboard. \r\n\r\n### Detection of ships on Sentinel-2 images\r\n\r\nESA engineers based at ESA's [Centre for Earth Observation (ESRIN)](https://www.esa.int/About_Us/ESRIN) trained a Machine Learning algorithm to recognise ships on  Copernicus Sentinel-2 satellite images. Sentinel-2 provides high-resolution (10 meters) multi-spectral imagery for land services. It provides for example, imagery of vegetation, soil and water cover, inland waterways and coastal areas. Sentinel-2 also delivers information for emergency services. The Copernicus Sentinel-2 mission comprises a constellation of two polar-orbiting satellites and has a high revisit time (10 days at the equator with one satellite, and 5 days with 2 satellites under cloud-free conditions which results in 2-3 days at mid-latitudes). \r\n\r\nTo reduce the number of false alarms and mis-detections, a cloud-masking operation is performed on the images before the Machine Learning algorithm is applied. The outputs of the Machine Learning algorithm are bounding boxes of the detected ships within pre-defined areas of interest at major European harbours, such as Genova in Italy or Hamburg in Germany. \r\n",
+  "description": "## Shipping Activity at Major Ports\r\n\r\nSupply chains around the world dependent on cargo shipping have been interrupted by travel restrictions and quarantines designed to stop the spread of the novel coronavirus. Many ports are closed, shipments have been canceled, and, in some locations, altered shipping routes have prevented the efficient movement of cargo. \r\n\r\nNASA and ESA researchers are using cutting-edge artificial intelligence technology and high-resolution satellite imagery from Planet Labs and [Sentinel-2](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) to track shipping activity at major ports in the U.S. and in Europe during the coronavirus pandemic. This data will help quantify the level of shipping-related economic activity over time and could eventually contribute to our understanding of the environmental implications of global decreases in shipping on key air pollutants like nitrogen dioxide (NO2) and sulphur dioxide (SO2).\r\n\r\n### Detection of ships on PlanetScope images\r\n\r\nNASA’s Interagency Implementation and Advanced Concepts Team (IMPACT), based at NASA’s Marshall Space Flight Center in Huntsville, Alabama, trained an algorithm using supervised machine learning technique to detect ships on PlanetScope images. The algorithm detects a ship on the image and geolocates it. The NASA team has also built an Application Programming Interface (API) that allows ship detections to be aggregated across a port area for a given day. Efforts are also underway to conduct a study of ship detections in U.S. ports during the period of pandemic travel restrictions, as compared to the same period of time in previous years. \r\n\r\nNASA researchers have access to the high-resolution imagery from Planet Labs, through the Commercial SmallSat Data Acquisition Program (CSDAP), which acquires data from commercial sources that support NASA's Earth science research goals. The PlanetScope image resolution is 3 meters per pixel, which allows researchers to get a detailed look at changes occurring on the ground. Commercial small satellites also provide high temporal resolution, making images available almost every day (depending on cloud cover) for key areas of interest. \r\n\r\nShip detections will be provided daily, except when prevented by significant cloud cover. After the machine learning model detects the ships, a secondary human validation is also performed before the detections are made available for the dashboard. \r\n\r\n### Detection of ships on Sentinel-2 images\r\n\r\nESA engineers based at ESA's [Centre for Earth Observation (ESRIN)](https://www.esa.int/About_Us/ESRIN) trained a Machine Learning algorithm to recognise ships on  Copernicus Sentinel-2 satellite images. Sentinel-2 provides high-resolution (10 meters) multi-spectral imagery for land services. It provides for example, imagery of vegetation, soil and water cover, inland waterways and coastal areas. Sentinel-2 also delivers information for emergency services. The Copernicus Sentinel-2 mission comprises a constellation of two polar-orbiting satellites and has a high revisit time (10 days at the equator with one satellite, and 5 days with 2 satellites under cloud-free conditions which results in 2-3 days at mid-latitudes). \r\n\r\nTo reduce the number of false alarms and mis-detections, a cloud-masking operation is performed on the images before the Machine Learning algorithm is applied. The outputs of the Machine Learning algorithm are bounding boxes of the detected ships within pre-defined areas of interest at major European harbours, such as Genova in Italy or Hamburg in Germany. \r\n",
   "links": [
     {
       "rel": "root",
@@ -21,6 +21,11 @@
       "id": "E13c_shipping_activity",
       "themes": [
         "economy"
+      ],
+      "providers": [
+        "ESA",
+        "NASA's Interagency Implementation and Advanced Concepts Team (IMPACT)",
+        "planet"
       ],
       "cities": [
         "Ghent",
@@ -43,7 +48,9 @@
         "PL",
         "US"
       ],
-      "yAxis": "Number of ships in Port",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13c_shipping_activity/E13c_shipping_activity.jpg"
+      ],
       "tags": [
         "Economy",
         "Open data",
@@ -68,10 +75,66 @@
     },
     {
       "rel": "service",
+      "href": "./E13c_shipping_activity/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
+      "method": "GET",
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "service",
       "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E13c_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
       "type": "application/json",
-      "method": "GET",
-      "id": "E13c_tri"
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -80,10 +143,34 @@
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Ship detections in EO data at major international harbours",
+  "eodash:stories": {
+    "shipping": {
+      "href": "https://eodashboard.org/story/?id=shipping",
+      "type": "text/markdown",
+      "title": "Travel Restrictions Interrupted Global Supply Chains Dependent on Cargo Shipping",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/shipping.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13c_shipping_activity/E13c_shipping_activity.jpg",
   "themes": [
     "economy"
   ],
+  "locations": true,
   "tags": [
     "Economy",
     "Open data",
@@ -106,22 +193,16 @@
     "PlanetScope"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E13b_parked_airplanes/chart.json",
   "title": "Shipping Activity at Major Ports",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -122.42638000000001,
-          30.04,
-          32.57,
-          54.547858999999995
-        ],
-        [
-          -122.42638000000001,
-          30.04,
-          32.57,
-          54.547858999999995
+          -122.63488,
+          29.81916,
+          32.78062,
+          54.54650770491618
         ]
       ]
     },
@@ -138,10 +219,10 @@
   "providers": [
     {
       "name": "ESA",
-      "url": "https://sentinel.esa.int/web/sentinel/"
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
     },
     {
-      "name": "NASA\u2019s Interagency Implementation and Advanced Concepts Team (IMPACT)",
+      "name": "NASA's Interagency Implementation and Advanced Concepts Team (IMPACT)",
       "url": "https://www.earthdata.nasa.gov/esds/impact"
     },
     {
@@ -161,29 +242,59 @@
       "Sentinel-2"
     ],
     "sensor": [
-      "MSI",
-      "PS2"
+      "PS2",
+      "MSI"
     ],
     "cities": [
-      "Los Angeles",
-      "New York",
       "Ghent",
-      "Hamburg",
-      "Dunkirk",
-      "Genoa",
-      "Suez ",
       "Gdynia",
-      "San Francisco",
-      "Suez"
+      "Suez",
+      "Dunkirk",
+      "Hamburg",
+      "Genoa",
+      "Los Angeles",
+      "Suez ",
+      "New York",
+      "San Francisco"
     ],
     "countries": [
-      "DE",
-      "US",
-      "FR",
-      "PL",
       "IT",
-      "EG",
-      "BE"
+      "FR",
+      "US",
+      "BE",
+      "DE",
+      "PL",
+      "EG"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13c_shipping_activity/E13c_shipping_activity.jpg"
     ]
+  },
+  "assets": {
+    "shipping": {
+      "href": "https://eodashboard.org/story/?id=shipping",
+      "type": "text/markdown",
+      "title": "Travel Restrictions Interrupted Global Supply Chains Dependent on Cargo Shipping",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/shipping.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E13c_shipping_activity/E13c_shipping_activity.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

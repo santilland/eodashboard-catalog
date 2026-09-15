@@ -22,6 +22,9 @@
       "themes": [
         "atmosphere"
       ],
+      "providers": [
+        "ESA"
+      ],
       "cities": [
         "Argentina",
         "Australia",
@@ -74,7 +77,9 @@
         "Venezuela (Bolivarian Republic of)",
         "South Africa"
       ],
-      "yAxis": "Tg N",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GGI_N2O/GGI_N2O.jpg"
+      ],
       "tags": [
         "NO2",
         "Open data",
@@ -92,8 +97,56 @@
       "rel": "service",
       "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_GGI_N2O?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
       "type": "application/json",
-      "method": "GET",
-      "id": "GGI_N2O"
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -103,8 +156,9 @@
     }
   ],
   "sci:doi": "10.5281/zenodo.10841716",
-  "sci:citation": "Zhu Deng, Philippe Ciais, Liting Hu, Martinez, A., Saunois, M., Thompson, R., & Fr\u00e9d\u00e9ric Chevallier. (2024). Global greenhouse gas reconciliation 2022 [Data set]. Zenodo.\n",
+  "sci:citation": "Zhu Deng, Philippe Ciais, Liting Hu, Martinez, A., Saunois, M., Thompson, R., & Frédéric Chevallier. (2024). Global greenhouse gas reconciliation 2022 [Data set]. Zenodo.\n",
   "subtitle": "N2O from National greenhouse gas inventories (NGHGI) database",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GGI_N2O/GGI_N2O.jpg",
   "themes": [
     "atmosphere"
   ],
@@ -121,22 +175,16 @@
     "Other"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/GGI_N2O/chart.json",
   "title": "Nitrous oxide from CCI RECCAP2",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -99.143,
-          -35.277,
-          149.143,
-          55.76
-        ],
-        [
-          -99.143,
-          -35.277,
-          149.143,
-          55.76
+          -99.333,
+          -35.467000000000006,
+          149.333,
+          55.95
         ]
       ]
     },
@@ -153,7 +201,9 @@
   "providers": [
     {
       "name": "ESA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://climate.esa.int/en/projects/reccap-2/"
     }
   ],
@@ -168,56 +218,68 @@
       "Other"
     ],
     "cities": [
-      "China",
-      "Bangladesh",
-      "Kazakhstan",
-      "Nigeria",
-      "European Union (Convention)",
-      "Canada",
-      "Russian Federation",
       "South Africa",
-      "Colombia",
-      "Democratic Republic of the Congo",
-      "Pakistan",
+      "United States of America",
+      "Sudan",
+      "Mexico",
+      "Nigeria",
       "Australia",
       "Mongolia",
-      "Iran (Islamic Republic of)",
-      "Mexico",
-      "European Union (KP)",
-      "India",
-      "Thailand",
       "Brazil",
+      "Iran (Islamic Republic of)",
       "Indonesia",
-      "United States of America",
-      "Argentina",
+      "Thailand",
+      "India",
+      "Kazakhstan",
+      "Canada",
+      "Bangladesh",
+      "European Union (Convention)",
+      "China",
       "Venezuela (Bolivarian Republic of)",
-      "Sudan"
+      "Colombia",
+      "Russian Federation",
+      "Argentina",
+      "Pakistan",
+      "Democratic Republic of the Congo",
+      "European Union (KP)"
     ],
     "countries": [
-      "China",
-      "Bangladesh",
-      "Kazakhstan",
-      "Nigeria",
-      "European Union (Convention)",
-      "Canada",
-      "Russian Federation",
       "South Africa",
-      "Colombia",
-      "Democratic Republic of the Congo",
-      "Pakistan",
+      "United States of America",
+      "Sudan",
+      "Mexico",
+      "Nigeria",
       "Australia",
       "Mongolia",
-      "Iran (Islamic Republic of)",
-      "Mexico",
-      "European Union (KP)",
-      "India",
-      "Thailand",
       "Brazil",
+      "Iran (Islamic Republic of)",
       "Indonesia",
-      "United States of America",
-      "Argentina",
+      "Thailand",
+      "India",
+      "Kazakhstan",
+      "Canada",
+      "Bangladesh",
+      "European Union (Convention)",
+      "China",
       "Venezuela (Bolivarian Republic of)",
-      "Sudan"
+      "Colombia",
+      "Russian Federation",
+      "Argentina",
+      "Pakistan",
+      "Democratic Republic of the Congo",
+      "European Union (KP)"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GGI_N2O/GGI_N2O.jpg"
     ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/GGI_N2O/GGI_N2O.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

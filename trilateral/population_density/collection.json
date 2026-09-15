@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "population_density",
   "stac_version": "1.1.0",
-  "description": "### UN WPP-Adjusted Population Density, v4.11 (2020)\n\n#### Data source: \nCenter for International Earth Science Information Network - CIESIN - Columbia University. 2018. \nGridded Population of the World, Version 4 (GPWv4): Population Density Adjusted to Match 2015 Revision UN WPP Country Totals, Revision 11. \n\nPalisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/H4F47M65. \n\nAccessed 2021-03-01\n",
+  "description": "### UN WPP-Adjusted Population Density, v4.11 (2020)\n\nThe Gridded Population of the World, Version 4 (GPWv4): Population Density Adjusted to Match 2015 Revision of UN WPP Country Totals, Revision 11 consists of estimates of human population density (number of persons per square kilometer) based on counts consistent with national censuses and population registers with respect to relative spatial distribution, but adjusted to match the 2015 Revision of the United Nation's World Population Prospects (UN WPP) country totals, for the years 2000, 2005, 2011, 2015, and 2020. A proportional allocation gridding algorithm, utilizing approximately 13.5 million national and sub-national administrative Units, was used to assign UN WPP-adjusted population counts to 30 arc-second grid cells. The density rasters were created by dividing the UN WPP-adjusted population count raster for a given target year by the land area raster. The data files were produced as global rasters at 30 arc-second (~1 km at the equator) resolution. To enable faster global processing, and in support of research commUnities, the 30 arc-second adjusted count data were aggregated to 2.5 arc-minute, 15 arc-minute, 30 arc-minute and 1 degree resolutions to produce density rasters at these resolutions.\n\n#### Data source: \nCenter for International Earth Science Information Network - CIESIN - Columbia University. 2018. \nGridded Population of the World, Version 4 (GPWv4): Population Density Adjusted to Match 2015 Revision UN WPP Country Totals, Revision 11. \n\nPalisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). https://doi.org/10.7927/H4F47M65. \n\nAccessed 2021-03-01\n",
   "links": [
     {
       "rel": "root",
@@ -21,6 +21,12 @@
       "id": "population_density",
       "themes": [
         "economy"
+      ],
+      "providers": [
+        "SEDAC"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.jpg"
       ],
       "tags": [
         "Society",
@@ -41,6 +47,54 @@
       "type": "text/html"
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -50,22 +104,6 @@
   "sci:doi": "10.7927/H4F47M65",
   "sci:citation": "Center for International Earth Science Information Network - CIESIN - Columbia University. 2018. Gridded Population of the World, Version 4 (GPWv4): Population Density Adjusted to Match 2015 Revision UN WPP Country Totals, Revision 11. Palisades, New York: NASA Socioeconomic Data and Applications Center (SEDAC).\n",
   "subtitle": "Population density 2020",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.png",
-  "themes": [
-    "economy"
-  ],
-  "tags": [
-    "Society",
-    "population",
-    "Open data"
-  ],
-  "agency": [
-    "NASA"
-  ],
-  "subcode": "NASAPopulation",
-  "insituSources": [
-    "Other"
-  ],
   "eox:colorlegend": {
     "domain": [
       1,
@@ -81,18 +119,28 @@
     ],
     "scaleType": "continuous",
     "tickFormat": ".0f",
-    "title": "[persons/km\u00b2]"
+    "title": "[persons/km²]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.jpg",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Society",
+    "population",
+    "Open data"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "NASAPopulation",
+  "insituSources": [
+    "Other"
+  ],
   "title": "Population density",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -90.0,
-          179.99999999999983,
-          89.99999999999991
-        ],
         [
           -180.0,
           -90.0,
@@ -125,7 +173,7 @@
       "economy"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.jpg"
     ]
   },
   "assets": {
@@ -137,7 +185,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NASAPopulation/NASAPopulation.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

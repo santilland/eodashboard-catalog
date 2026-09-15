@@ -1,0 +1,245 @@
+{
+  "type": "Collection",
+  "id": "BR04",
+  "stac_version": "1.1.0",
+  "description": "# Vegetation Index (NDVI)\n\n[JAXA](https://global.jaxa.jp/)(Japan Aerospace Exploration Agency) together with Japanese Ministry of Agriculture, Forestry and Fisheries (MAFF) provide bi-monthly agrometeorological information for Asia on [JASMIN](https://suzaku.eorc.jaxa.jp/JASMIN/index.html) and on [JASMAI](https://jasmai.maff.go.jp/) for selected world areas.\n\nThis agrometeorological information is obtained from satellite observations (e.g. SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP)) and GPM Core Observatory, and includes precipitation, drought index, soil moisture, solar radiation, surface temperature, vegetation index and anomaly, rainfall, and other relevant agriculture and land products. \n\nThe vegetation index (NDVI) is an index that uses the sunlight reflection characteristics of plants to indicate the amount and activity of green leaves in plants. \n\n\n### Additional information\n\n* Vegetation Index (NDVI): Ministry of Agriculture, Forestry and Fisheries \"Agricultural Meteorological Information Satellite Monitoring System\"\n(Created by processing JAXA's \"Natural Vegetation Index (NDVI) Product\")\n* JAXA Earth Observation Research Center (EORC)\thttp://www.eorc.jaxa.jp\n* JAXA \"Earth observation satellite data provision system (G-Portal)\"\thttps://gportal.jaxa.jp/gpr/?lang=en\n* JAXA \"AMSR/AMSR-E\"\thttps://sharaku.eorc.jaxa.jp/AMSR/index_j.html\n* JAXA \"GCOM-W\"\thttps://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html\n* JAXA \"Satellite Global Precipitation Map (GSMaP)\"\thttps://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm\n* JAXA \"Climate Formation Physical Quantity Dataset (JASMES)\"\thttps://kuroshio.eorc.jaxa.jp/JASMES/index_j.html\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "service",
+      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_VITS_Vegetation_Index_Timeseries?aoi_id=eq.BR04&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+      "type": "application/json",
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Local NDVI from GSMaP"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/empty_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/SMCTS_soil_moisture_timeseries/chart.json",
+  "subcode": "VITS",
+  "subtitle": "Normalized Difference Vegetation Index Timeseries",
+  "eodash:stories": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/VITS_vegetation_index_timeseries/VITS_vegetation_index_timeseries.jpg",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "satellite": [
+    "Other"
+  ],
+  "title": "Paraná - vegetation_index_timeseries",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -51.515,
+          -24.814999999999998,
+          -51.114999999999995,
+          -24.415
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-09T00:00:00Z",
+          "2023-06-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "JAXA",
+      "roles": [
+        "licensor, producer, processor"
+      ],
+      "url": "https://global.jaxa.jp/"
+    }
+  ],
+  "assets": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/VITS_vegetation_index_timeseries/VITS_vegetation_index_timeseries.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html",
+      "type": "text/html",
+      "title": "JAXA's Satellite based MonItoring Network system for FAO AMIS Market Monitor",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://jasmai.maff.go.jp/",
+      "type": "text/html",
+      "title": "JASMAI",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://jasmai.maff.go.jp/user_guide/#item_2_7",
+      "type": "text/html",
+      "title": "JASMAI user guide",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "http://www.eorc.jaxa.jp/",
+      "type": "text/html",
+      "title": "JAXA Earth Observation Research Center (EORC)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_5": {
+      "href": "https://gportal.jaxa.jp/gpr/?lang=en",
+      "type": "text/html",
+      "title": "Earth observation satellite data provision system (G-Portal)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_6": {
+      "href": "https://sharaku.eorc.jaxa.jp/AMSR/index_j.html",
+      "type": "text/html",
+      "title": "AMSR/AMSR-E",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_7": {
+      "href": "https://suzaku.eorc.jaxa.jp/GCOM_W/index_j.html",
+      "type": "text/html",
+      "title": "GCOM-W",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_8": {
+      "href": "https://sharaku.eorc.jaxa.jp/GSMaP/index_j.htm",
+      "type": "text/html",
+      "title": "Satellite Global Precipitation Map (GSMaP)",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_9": {
+      "href": "https://kuroshio.eorc.jaxa.jp/JASMES/index_j.html",
+      "type": "text/html",
+      "title": "Climate Formation Physical Quantity Dataset (JASMES)",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

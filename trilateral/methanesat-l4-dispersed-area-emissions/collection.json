@@ -1,0 +1,229 @@
+{
+  "type": "Collection",
+  "id": "methanesat-l4-dispersed-area-emissions",
+  "stac_version": "1.1.0",
+  "description": "## MethaneSAT Dispersed Area Emissions and Distinct Point Sources\nThis dataset was acquired by [MethaneSAT](https://www.methanesat.org/), the first satellite developed and funded by an environmental nonprofit organization, [Environmental Defense Fund (EDF)](https://www.edf.org/), with the purpose of speeding up reductions in **methane (CH₄)** emissions, a potent **greenhouse gas** with a warming effect roughly 80 times greater than CO₂, to slow down global warming. MethaneSAT measures methane concentrations averaged from the Earth's surface to the satellite, locations where methane is being emitted, and areas downwind, display higher concentrations than areas with no emissions. It was the only methane-detecting satellite capable of measuring both **dispersed area emissions** from millions of small sources and **distinct point sources**, large single emission events traceable to a specific location, providing a complete picture of methane emissions from oil and gas operations that was previously impossible from space.\n\nReducing methane emissions from oil and gas operations is one of the fastest ways to slow near-term climate change. MethaneSAT's data enable companies, governments, and advocates to track emissions, measure progress, and hold polluters accountable.\n\n⚠️ On 2 July 2025, contact with the MethaneSAT satellite was lost due to an undetermined problem with the outer platform. The existing datasets remain accessible and additional data collected prior to loss of contact will continue to be released. See the [official statement](https://www.methanesat.org/project-updates/methanesat-loses-contact-satellite) for more details.\n\n#### About the dataset\n- This dataset provides two complementary emission products: **dispersed area emissions**, methane heatmaps of spatially distributed sources gridded at resolutions such as 4 km × 4 km or 1 km × 1 km across target areas of approximately 200 km × 200 km, and **distinct point sources**, which pinpoint individual large emission events exceeding ~500 kg/hour to a specific geographic location.\n- Dispersed emissions are estimated from column-averaged dry-air mole fractions of methane (XCH₄) using atmospheric inversion models to trace those concentrations back to their sources. To produce the most reliable estimate, the algorithm runs 4,000 different possible emission scenarios and averages the results, accounting for wind patterns, terrain, and other environmental factors.\n- Interpretation of individual emission grids should be done with caution, as individual heatmaps can have spatial misallocations due to wind field uncertainty, observational uncertainty, and variable emission rates.\nMore information on definitions and limitations can be found in the [technical explanation file](https://www.methanesat.org/sites/default/files/2025-11/MethaneSAT%20Dispersed%20Area%20Emissions_Definitions%20and%20Limitations.pdf).\n\n\n#### Use cases\nMethaneSAT data are particularly useful for:\n- Quantifying total methane emissions from oil and gas basins.\n- Detecting and attributing large point source emission events to specific facilities or operators.\n- Tracking emission trends over time to measure the effectiveness of mitigation actions.\n- Supporting regulatory compliance and corporate accountability for methane reporting.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./methanesat-l4-dispersed-area-emissions/collection.json",
+      "type": "application/json",
+      "title": "Methanesat Dispersed Area Emissions",
+      "endpointtype": "Collection-only",
+      "code": "methanesat-l4-dispersed-area-emissions",
+      "id": "methanesat-l4-dispersed-area-emissions",
+      "themes": [
+        "atmosphere"
+      ],
+      "providers": [
+        "MethaneSAT LLC"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/methanesat_l4/methanesat_l4_thumbnail.jpg"
+      ],
+      "tags": [
+        "Air quality",
+        "CH4",
+        "Multi-sensors",
+        "Methane",
+        "Emissions"
+      ],
+      "agency": [
+        "MethaneSAT LLC"
+      ],
+      "subcode": "methanesat-l4-dispersed-area-emissions",
+      "satellite": [
+        "MethaneSAT"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "mapbox-style-document",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/PowerOpenInfrastructure/mapboxstyledoc.json",
+      "type": "application/json",
+      "title": "Open Infrastructure Map",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "Openinframap",
+      "auth:refs": [
+        "mapboxauth"
+      ],
+      "attribution": "{ Open Infrastructure Map: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors; Map Design and Analysis <a href=\"https://openinframap.org/copyright\" target=\"_blank\">OpenInfraMap</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json"
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/methanesat_l4/methanesat_l4_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "Air quality",
+    "CH4",
+    "Multi-sensors",
+    "Methane",
+    "Emissions"
+  ],
+  "agency": [
+    "MethaneSAT LLC"
+  ],
+  "subcode": "methanesat-l4-dispersed-area-emissions",
+  "satellite": [
+    "MethaneSAT"
+  ],
+  "auth:schemes": {
+    "mapboxauth": {
+      "type": "apiKey",
+      "name": "access_token",
+      "in": "query"
+    }
+  },
+  "title": "Methanesat Dispersed Area Emissions",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-09-15T09:17:51.613465Z",
+          "2026-09-15T09:17:51.613465Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "MethaneSAT LLC",
+      "roles": [
+        "licensor, producer, processor"
+      ],
+      "url": "https://www.methanesat.org/sites/default/files/2025-02/MethaneSAT%20-%20Content%20License%20Terms%20of%20Use%20(Revised%202-12-2025)%5B25%5D.pdf"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "methanesat-l4-dispersed-area-emissions"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "MethaneSAT"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/methanesat_l4/methanesat_l4_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/methanesat_l4/methanesat_l4_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://www.methanesat.org/scienceandresearch",
+      "type": "text/html",
+      "title": "MethaneSAT Science & Research",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://portal.methanesat.org/en/emissions-map/",
+      "type": "text/html",
+      "title": "MethaneSAT Emissions Map",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/eoapi.workspace.dashboards-operations.aws.hub.eox.at/stac/collections/methanesat-l4-dispersed-area-emissions?.language=en",
+      "type": "text/html",
+      "title": "STAC API",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_4": {
+      "href": "https://docs.google.com/spreadsheets/d/1-NWtb9JaSv3J_0ZL39Wv96XtqmM9QJWWCT6-vEFW_tU",
+      "type": "text/html",
+      "title": "MethaneSAT Target List",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

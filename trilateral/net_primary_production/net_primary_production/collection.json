@@ -11,113 +11,10 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202012.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202012.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-12-01T00:00:00Z",
-      "end_datetime": "2020-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202011.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202011.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-11-01T00:00:00Z",
-      "end_datetime": "2020-11-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202010.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202010.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-10-01T00:00:00Z",
-      "end_datetime": "2020-10-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202009.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202009.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-09-01T00:00:00Z",
-      "end_datetime": "2020-09-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202008.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202008.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-08-01T00:00:00Z",
-      "end_datetime": "2020-08-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202007.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202007.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-07-01T00:00:00Z",
-      "end_datetime": "2020-07-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202006.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202006.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-06-01T00:00:00Z",
-      "end_datetime": "2020-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202005.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202005.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-05-01T00:00:00Z",
-      "end_datetime": "2020-05-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202004.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202004.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-04-01T00:00:00Z",
-      "end_datetime": "2020-04-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202003.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202003.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-03-01T00:00:00Z",
-      "end_datetime": "2020-03-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202002.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202002.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-02-01T00:00:00Z",
-      "end_datetime": "2020-02-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./MO_NPP_npp_vgpm/2020/A_202001.L3m_MO_NPP_npp_vgpm_4km.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://veda-data-store/MO_NPP_npp_vgpm/A_202001.L3m_MO_NPP_npp_vgpm_4km.tif",
-      "start_datetime": "2020-01-01T00:00:00Z",
-      "end_datetime": "2020-01-31T00:00:00Z"
-    },
-    {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=jet&rescale=0.0,1500.0",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?&bidx=1&colormap_name=jet&rescale=0.0,1500.0&resampling_method=nearest",
       "type": "image/png",
-      "title": "net_primary_production"
-    },
-    {
-      "rel": "example",
-      "href": "https://openveda.cloud/api/raster/cog/statistics",
-      "type": "application/json",
-      "title": "VEDA Statistics",
-      "example:language": "JSON"
+      "title": "Ocean net primary production (MODIS)"
     },
     {
       "rel": "parent",
@@ -126,15 +23,54 @@
       "title": "Ocean net primary production (MODIS)"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:publications": [
     {
       "citation": "Behrenfeld, MJ, PG Falkowski - Limnology and Oceanography (1997a, Volume 42 1-20); Photosynthetic rates derived from satellite-based chlorophyll concentration\n",
       "doi": "10.4319/lo.1997.42.1.0001"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png",
+  "eodash:stories": {
+    "primary-productivity": {
+      "href": "https://eodashboard.org/story/?id=primary-productivity",
+      "type": "text/markdown",
+      "title": "Ocean Primary Productivity",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/primary-productivity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "ocean_plants": {
+      "href": "https://eodashboard.org/story/?id=ocean_plants",
+      "type": "text/markdown",
+      "title": "Ocean Plants",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/ocean_plants.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.jpg",
   "themes": [
-    "oceans"
+    "water"
   ],
   "tags": [
     "Model",
@@ -156,30 +92,230 @@
   "satellite": [
     "Aqua"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      1500
-    ],
-    "range": [
-      "#000080",
-      "#0000d9",
-      "#001dff",
-      "#006cff",
-      "#00baff",
-      "#1cffda",
-      "#5cff9b",
-      "#9bff5c",
-      "#daff1c",
-      "#ffce00",
-      "#ff8500",
-      "#ff3c00",
-      "#d90000",
-      "#800000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "[mgC/m\u00b2/day]"
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0.0,
+              "format": "range",
+              "minimum": 0,
+              "step": 1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 1500.0,
+              "format": "range",
+              "maximum": 2250.0,
+              "step": 1
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "jet",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "[mgC/m²/day]",
+      "scaleType": "continuous",
+      "tickFormat": ".0f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
   },
   "endpointtype": "VEDA_cog",
   "title": "Ocean net primary production (MODIS)",
@@ -198,7 +334,7 @@
       "interval": [
         [
           "2020-01-01T00:00:00Z",
-          "2020-12-31T00:00:00Z"
+          "2020-12-01T00:00:00Z"
         ]
       ]
     }
@@ -207,25 +343,66 @@
   "providers": [
     {
       "name": "Ocean Productivity",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "http://orca.science.oregonstate.edu/npp_products.php"
     },
     {
       "name": "NASA",
-      "roles": "licensor, producer",
+      "roles": [
+        "licensor, producer"
+      ],
       "url": "https://www.earthdata.nasa.gov/esds/veda"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
+      ]
+    },
+    "primary-productivity": {
+      "href": "https://eodashboard.org/story/?id=primary-productivity",
+      "type": "text/markdown",
+      "title": "Ocean Primary Productivity",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/primary-productivity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "ocean_plants": {
+      "href": "https://eodashboard.org/story/?id=ocean_plants",
+      "type": "text/markdown",
+      "title": "Ocean Plants",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/ocean_plants.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NPPN_net_primary_production/NPPN_net_primary_production.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

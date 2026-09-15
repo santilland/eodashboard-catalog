@@ -2,13 +2,32 @@
   "type": "Collection",
   "id": "N3a2_chl_concentration_tri_jaxa",
   "stac_version": "1.1.0",
-  "description": "# Water Quality - Chlorophyll-a concentrations\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nWhen interpreting chlorophyll-a concentration maps produced by GCOM-C's SGLI, it\u2019s important to understand the color scale that represents different levels of chlorophyll-a in the water. The scale typically ranges from blue to red, where:\n\n- Blue indicates low chlorophyll-a concentration.\n- Red indicates high chlorophyll-a concentration.\n\n## Dataset Description\n- Spectral Range: SGLI covers 19 spectral bands, including visible, near-infrared, and thermal infrared bands, optimized for monitoring ocean color, vegetation, and land surface changes.\n- Chlorophyll-a Detection: SGLI is particularly effective for detecting chlorophyll-a concentrations, offering insights into phytoplankton distribution, marine ecosystem health, and oceanic productivity.\n- Spatial Resolution: SGLI provides spatial resolutions of 250 m and 1 km, allowing for high-resolution observations of coastal zones, inland waters, and oceanic regions, making it suitable for detailed regional and global studies.\n- Wide Swath Coverage: With a swath width of 1150 km, GCOM-C achieves near-global coverage within two days, enabling frequent monitoring of phytoplankton dynamics and oceanic processes.\n",
+  "description": "# Water Quality - Chlorophyll-a concentrations\nChlorophyll-a (Chl-a) concentration is an indicator of algae abundance which fluctuates naturally over space and time, as a result of combined atmospheric and oceanic effects (e.g., marine currents and upwelling). In coastal areas, strongly influenced by river inputs and human activities, high Chl concentration can result from the discharge of urban sewage, industrial runoffs, and fertilizers from agriculture activities over watersheds. In particular, nutrient inputs of anthropogenic origin affect the natural amount of phytoplankton in marine and inland waters, representing a continuous threat to biodiversity and leading to undesirable modifications of phytoplankton concentration (i.e., eutrophication).\n\nWhen interpreting chlorophyll-a concentration maps produced by GCOM-C's SGLI, it’s important to understand the color scale that represents different levels of chlorophyll-a in the water. The scale typically ranges from blue to red, where:\n\n- Blue indicates low chlorophyll-a concentration.\n- Red indicates high chlorophyll-a concentration.\n\n## Dataset Description\n- Spectral Range: SGLI covers 19 spectral bands, including visible, near-infrared, and thermal infrared bands, optimized for monitoring ocean color, vegetation, and land surface changes.\n- Chlorophyll-a Detection: SGLI is particularly effective for detecting chlorophyll-a concentrations, offering insights into phytoplankton distribution, marine ecosystem health, and oceanic productivity.\n- Spatial Resolution: SGLI provides spatial resolutions of 250 m and 1 km, allowing for high-resolution observations of coastal zones, inland waters, and oceanic regions, making it suitable for detailed regional and global studies.\n- Wide Swath Coverage: With a swath width of 1150 km, GCOM-C achieves near-global coverage within two days, enabling frequent monitoring of phytoplankton dynamics and oceanic processes.\n",
   "links": [
     {
-      "rel": "root",
-      "href": "../../catalog.json",
-      "type": "application/json",
-      "title": "Earth Observing Dashboard"
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Chlorophyll-a concentration from GCOM-C",
+      "wms:layers": [
+        "AWS_JAXA_CHLA"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri_jaxa/script.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-198aa13a-b0c0-4b78-8f69-e08fc58551a7"
     },
     {
       "rel": "child",
@@ -47,29 +66,10 @@
       "name": "Kobe"
     },
     {
-      "rel": "wms",
-      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
-      "type": "image/png",
-      "title": "N3a2_chl_concentration_tri_jaxa",
-      "wms:layers": [
-        "AWS_JAXA_CHLA"
-      ],
-      "role": [
-        "data"
-      ]
-    },
-    {
-      "rel": "license",
-      "href": "http://www.opensource.org/licenses/MIT",
-      "type": "text/html"
-    },
-    {
-      "rel": "example",
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri_jaxa/script.js",
-      "type": "application/javascript",
-      "title": "evalscript",
-      "example:language": "JavaScript",
-      "dataId": "byoc-198aa13a-b0c0-4b78-8f69-e08fc58551a7"
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
     },
     {
       "rel": "parent",
@@ -79,31 +79,6 @@
     }
   ],
   "subtitle": "Chlorophyll-a concentration maps",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.png",
-  "yAxis": "%",
-  "themes": [
-    "oceans"
-  ],
-  "locations": true,
-  "tags": [
-    "Water quality",
-    "Marine",
-    "GCOM-C",
-    "SGLI",
-    "Open data",
-    "Marine monitoring",
-    "Chlorophyll-a"
-  ],
-  "agency": [
-    "JAXA"
-  ],
-  "subcode": "N3a2_chl_jaxa",
-  "sensor": [
-    "SGLI"
-  ],
-  "satellite": [
-    "GCOM-C"
-  ],
   "eox:colorlegend": {
     "domain": [
       -100,
@@ -120,6 +95,30 @@
     "tickFormat": ".0f",
     "title": "Chl-a anomaly [%]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Marine",
+    "GCOM-C",
+    "SGLI",
+    "Open data",
+    "Marine monitoring",
+    "Chlorophyll"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "N3a2_chl_jaxa",
+  "sensor": [
+    "SGLI"
+  ],
+  "satellite": [
+    "GCOM-C"
+  ],
   "endpointtype": "Sentinel Hub_byoc",
   "title": "Chlorophyll-a concentration from GCOM-C",
   "extent": {
@@ -161,7 +160,7 @@
       "interval": [
         [
           "2018-01-06T00:00:00Z",
-          "2025-02-22T00:00:00Z"
+          "2026-02-28T00:00:00Z"
         ]
       ]
     }
@@ -182,7 +181,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_chl_concentration_tri/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

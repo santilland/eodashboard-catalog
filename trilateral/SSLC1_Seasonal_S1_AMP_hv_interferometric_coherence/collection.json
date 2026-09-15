@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence",
   "stac_version": "1.1.0",
-  "description": "# Global Sentinel-1 Backscatter Signature (HV Band)\n\nThis dataset is the first-of-its-kind spatial representation of multi-seasonal, global SAR repeat-pass **backscatter signature**. \nThe dataset is derived from high-resolution multi-temporal repeat-pass interferometric processing of about 205,000 Sentinel-1 Single-Look-Complex (SLC) data acquired in Interferometric Wide-Swath mode (Sentinel-1 IW mode) from 1-Dec-2019 to 30-Nov-2020.\n\n\n\n## Dataset description\n- The dataset covers seasonal seasons which correspond to **northern hemisphere seasons**, namely winter (DJF), spring (MAM), summer (JJA), and fall (SON).\n- Metric: Mean seasonal backscatter amplitudes \u03b3\u2070 (AMP) for C-band **HV** polarized data\n- Local incidence and layover/shadow regions for all relative Sentinel-1A and Sentinel-1B orbits. \n\nThe dataset was developed by [Earth Big Data LLC](https://earthbigdata.com/) and [Gamma Remote Sensing AG](https://www.gamma-rs.ch/), under contract for [NASA\u2019s Jet Propulsion Laboratory](https://www.jpl.nasa.gov/).\n\n\n",
+  "description": "# Global Sentinel-1 Backscatter Signature (HV Band)\n\nThis dataset is the first-of-its-kind spatial representation of multi-seasonal, global SAR repeat-pass **backscatter signature**. \nThe dataset is derived from high-resolution multi-temporal repeat-pass interferometric processing of about 205,000 Sentinel-1 Single-Look-Complex (SLC) data acquired in Interferometric Wide-Swath mode (Sentinel-1 IW mode) from 1-Dec-2019 to 30-Nov-2020.\n\n\n\n## Dataset description\n- The dataset covers seasonal seasons which correspond to **northern hemisphere seasons**, namely winter (DJF), spring (MAM), summer (JJA), and fall (SON).\n- Metric: Mean seasonal backscatter amplitudes γ⁰ (AMP) for C-band **HV** polarized data\n- Local incidence and layover/shadow regions for all relative Sentinel-1A and Sentinel-1B orbits. \n\nThe dataset was developed by [Earth Big Data LLC](https://earthbigdata.com/) and [Gamma Remote Sensing AG](https://www.gamma-rs.ch/), under contract for [NASA’s Jet Propulsion Laboratory](https://www.jpl.nasa.gov/).\n\n\n",
   "links": [
     {
       "rel": "root",
@@ -21,6 +21,15 @@
       "id": "SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence",
       "themes": [
         "cryosphere"
+      ],
+      "providers": [
+        "Copernicus",
+        "NASA",
+        "Earth Big Data",
+        "Gamma Remote Sensing"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence.jpg"
       ],
       "tags": [
         "SAR",
@@ -45,6 +54,54 @@
       "type": "text/html"
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -52,14 +109,15 @@
     }
   ],
   "sci:doi": "10.5067/8W33RRS6S2RV",
-  "sci:citation": "Kellndorfer, J. , O. Cartus, M. Lavalle,  C. Magnard, P. Milillo, S. Oveisgharan, B. Osmanoglu, P. Rosen, and U. Wegm\u00fcller. 2022. \nGlobal seasonal Sentinel-1 interferometric coherence and backscatter data set. \nFairbanks, Alaska USA. NASA Alaska Satellite Facility Synthetic Aperture Radar Distributed Active Archive Center.\n",
+  "sci:citation": "Kellndorfer, J. , O. Cartus, M. Lavalle,  C. Magnard, P. Milillo, S. Oveisgharan, B. Osmanoglu, P. Rosen, and U. Wegmüller. 2022. \nGlobal seasonal Sentinel-1 interferometric coherence and backscatter data set. \nFairbanks, Alaska USA. NASA Alaska Satellite Facility Synthetic Aperture Radar Distributed Active Archive Center.\n",
   "sci:publications": [
     {
-      "citation": "Kellndorfer, J. , O. Cartus, M. Lavalle,  C. Magnard, P. Milillo, S. Oveisgharan, B. Osmanoglu, P. Rosen, and U. Wegm\u00fcller. 2022. \nGlobal seasonal Sentinel-1 interferometric coherence and backscatter data set., Scientific Data.\n",
+      "citation": "Kellndorfer, J. , O. Cartus, M. Lavalle,  C. Magnard, P. Milillo, S. Oveisgharan, B. Osmanoglu, P. Rosen, and U. Wegmüller. 2022. \nGlobal seasonal Sentinel-1 interferometric coherence and backscatter data set., Scientific Data.\n",
       "doi": "10.1038/s41597-022-01189-6"
     }
   ],
   "subtitle": "Mean seasonal backscatter amplitudes C-band SAR dataset - HV polarization",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence.jpg",
   "themes": [
     "cryosphere"
   ],
@@ -88,12 +146,6 @@
           -25.0,
           170.0,
           82.0
-        ],
-        [
-          -141.0,
-          -25.0,
-          170.0,
-          82.0
         ]
       ]
     },
@@ -110,22 +162,30 @@
   "providers": [
     {
       "name": "Copernicus",
-      "roles": "licensor",
+      "roles": [
+        "licensor"
+      ],
       "url": "https://www.copernicus.eu/en"
     },
     {
       "name": "NASA",
-      "roles": "producer",
+      "roles": [
+        "producer"
+      ],
       "url": "https://jpl.nasa.gov/?_ga=2.243049538.1322991491.1723040890-976169570.1722866809"
     },
     {
       "name": "Earth Big Data",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://earthbigdata.com/"
     },
     {
       "name": "Gamma Remote Sensing",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://www.gamma-rs.ch/"
     }
   ],
@@ -141,9 +201,19 @@
     ],
     "sensor": [
       "C-SAR"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence.jpg"
     ]
   },
   "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence/SSLC1_Seasonal_S1_AMP_hv_interferometric_coherence.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
     "reference_1": {
       "href": "https://asf.alaska.edu/datasets/daac/global-seasonal-sentinel-1-interferometric-coherence-and-backscatter-dataset/",
       "type": "text/html",

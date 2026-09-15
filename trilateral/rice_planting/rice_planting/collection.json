@@ -11,49 +11,54 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./rice_planting/2018/Glenn GCOMC.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US05/collection.json",
+      "type": "application/json",
+      "title": "Glenn (GCOM-C) - rice_planting",
       "id": "US05",
       "latlng": "39.586,-122.4",
       "country": "US",
-      "city": "Glenn (GCOM-C)"
+      "name": "Glenn (GCOM-C)"
     },
     {
-      "rel": "item",
-      "href": "./rice_planting/2018/Yolo.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US06/collection.json",
+      "type": "application/json",
+      "title": "Yolo - rice_planting",
       "id": "US06",
       "latlng": "38.732,-121.809",
       "country": "US",
-      "city": "Yolo"
+      "name": "Yolo"
     },
     {
-      "rel": "item",
-      "href": "./rice_planting/2018/Colusa.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US07/collection.json",
+      "type": "application/json",
+      "title": "Colusa - rice_planting",
       "id": "US07",
       "latlng": "39.139,-122.219",
       "country": "US",
-      "city": "Colusa"
+      "name": "Colusa"
     },
     {
-      "rel": "item",
-      "href": "./rice_planting/2015/Glenn.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US08/collection.json",
+      "type": "application/json",
+      "title": "Glenn - rice_planting",
       "id": "US08",
       "latlng": "39.48284,-122.06556",
       "country": "US",
-      "city": "Glenn"
+      "name": "Glenn"
     },
     {
-      "rel": "item",
-      "href": "./rice_planting/2013/Glenn.json",
-      "type": "application/geo+json",
+      "rel": "child",
+      "href": "./US09/collection.json",
+      "type": "application/json",
+      "title": "Glenn - rice_planting",
       "id": "US09",
       "latlng": "39.48284,-122.06557",
       "country": "US",
-      "city": "Glenn"
+      "name": "Glenn"
     },
     {
       "rel": "parent",
@@ -62,9 +67,55 @@
       "title": "Rice planting"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Early Rice Planting in Sacramento, California, USA",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_rice_planting.png",
-  "yAxis": "NDVI",
+  "eox:colorlegend": {
+    "domain": [
+      -1,
+      1
+    ],
+    "range": [
+      "#ffffff",
+      "#acacac",
+      "#595959",
+      "#616161",
+      "#b4b4b4",
+      "#f5f5f5",
+      "#949494",
+      "#454558",
+      "#1be830",
+      "#83ff01",
+      "#ffe801",
+      "#ff8001",
+      "#ff1801",
+      "#ff01ef"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".1f",
+    "title": "NDVI"
+  },
+  "eodash:stories": {
+    "early_rice_planting": {
+      "href": "https://eodashboard.org/story/?id=early_rice_planting",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/early_rice_planting.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_rice_planting.jpg",
   "themes": [
     "agriculture"
   ],
@@ -92,42 +143,47 @@
     "Sentinel-2",
     "Landsat-8"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -1,
-      1
-    ],
-    "range": [
-      "#ffffff",
-      "#acacac",
-      "#595959",
-      "#616161",
-      "#b4b4b4",
-      "#f5f5f5",
-      "#949494",
-      "#454558",
-      "#1be830",
-      "#83ff01",
-      "#ffe801",
-      "#ff8001",
-      "#ff1801",
-      "#ff01ef"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "NDVI"
-  },
-  "geoDBID": "E10c_tri",
+  "locations": true,
   "endpointtype": "GeoDB",
   "title": "Rice planting",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -122.41000000000001,
-          38.722,
-          -121.79899999999999,
-          39.596
+          -122.8,
+          38.0,
+          -120.8,
+          40.0
+        ],
+        [
+          -122.8,
+          38.0,
+          -120.8,
+          40.0
+        ],
+        [
+          -122.8,
+          38.0,
+          -120.8,
+          40.0
+        ],
+        [
+          -122.8,
+          38.0,
+          -120.8,
+          40.0
+        ],
+        [
+          -122.26556000000001,
+          39.28284,
+          -121.86556,
+          39.682840000000006
+        ],
+        [
+          -122.26557,
+          39.28284,
+          -121.86556999999999,
+          39.682840000000006
         ]
       ]
     },
@@ -178,8 +234,26 @@
         "metadata"
       ]
     },
+    "early_rice_planting": {
+      "href": "https://eodashboard.org/story/?id=early_rice_planting",
+      "type": "text/markdown",
+      "title": "COVID-19 Impacts on Rice Planting in Sacramento, California",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/early_rice_planting.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_rice_planting.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10c_rice_planting/E10c_rice_planting.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

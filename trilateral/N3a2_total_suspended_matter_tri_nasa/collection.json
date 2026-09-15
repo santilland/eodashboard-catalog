@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "N3a2_total_suspended_matter_tri_nasa",
   "stac_version": "1.1.0",
-  "description": "# Water Quality: Total suspended matter\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n\nNASA\u2019s Aqua satellite, part of the Earth Observing System (EOS), carries several instruments aimed at studying Earth's water cycle, climate, and ecosystems. Among these instruments, the Moderate Resolution Imaging Spectroradiometer (MODIS) plays a crucial role in mapping Total Suspended Matter (TSM) in oceans, lakes, and rivers. MODIS\u2019s capability to detect TSM contributes to monitoring sediment transport, water quality, and aquatic ecosystem health on a global scale.\n\nWhen interpreting TSM concentration maps produced by Aqua's MODIS sensor, it's crucial to understand the color scale used to represent varying levels of suspended particles. The scale typically goes from blue to red, where:\n\nBlue represents low TSM concentration.\nRed represents high TSM concentration.\n\n## Dataset Description\n- Spectral Range: MODIS has 36 spectral bands covering visible, near-infrared, and thermal infrared wavelengths, optimized for a wide range of Earth observation purposes, including ocean color and atmospheric properties.\n- TSM Detection: MODIS is well-equipped for detecting Total Suspended Matter, offering insights into sediment dynamics, coastal processes, and water quality management.\n- Spatial Resolution: MODIS offers two spatial resolutions: 250 m for certain bands (including those relevant to TSM) and 500 m to 1 km for others, enabling detailed monitoring of both large and small water bodies.\n- Wide Swath Coverage: MODIS has a swath width of 2330 km, enabling near-global coverage every 1 to 2 days, making it ideal for tracking changes in sediment load and water quality across diverse environments.\n",
+  "description": "# Water Quality: Total suspended matter\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n\nNASA’s Aqua satellite, part of the Earth Observing System (EOS), carries several instruments aimed at studying Earth's water cycle, climate, and ecosystems. Among these instruments, the Moderate Resolution Imaging Spectroradiometer (MODIS) plays a crucial role in mapping Total Suspended Matter (TSM) in oceans, lakes, and rivers. MODIS’s capability to detect TSM contributes to monitoring sediment transport, water quality, and aquatic ecosystem health on a global scale.\n\nWhen interpreting TSM concentration maps produced by Aqua's MODIS sensor, it's crucial to understand the color scale used to represent varying levels of suspended particles. The scale typically goes from blue to red, where:\n\nBlue represents low TSM concentration.\nRed represents high TSM concentration.\n\n## Dataset Description\n- Spectral Range: MODIS has 36 spectral bands covering visible, near-infrared, and thermal infrared wavelengths, optimized for a wide range of Earth observation purposes, including ocean color and atmospheric properties.\n- TSM Detection: MODIS is well-equipped for detecting Total Suspended Matter, offering insights into sediment dynamics, coastal processes, and water quality management.\n- Spatial Resolution: MODIS offers two spatial resolutions: 250 m for certain bands (including those relevant to TSM) and 500 m to 1 km for others, enabling detailed monitoring of both large and small water bodies.\n- Wide Swath Coverage: MODIS has a swath width of 2330 km, enabling near-global coverage every 1 to 2 days, making it ideal for tracking changes in sediment load and water quality across diverse environments.\n",
   "links": [
     {
       "rel": "root",
@@ -22,6 +22,9 @@
       "themes": [
         "water"
       ],
+      "providers": [
+        "NASA"
+      ],
       "cities": [
         "North Adriatic",
         "San Francisco",
@@ -31,7 +34,9 @@
         "IT",
         "US"
       ],
-      "yAxis": "%",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.jpg"
+      ],
       "tags": [
         "Water quality",
         "Marine",
@@ -39,7 +44,7 @@
         "MODIS",
         "Open data",
         "Marine monitoring",
-        "Total suspended matter"
+        "Total Suspended Matter"
       ],
       "agency": [
         "NASA"
@@ -59,10 +64,59 @@
     },
     {
       "rel": "service",
-      "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_N3a2_nasa_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
-      "type": "application/json",
+      "href": "./N3a2_total_suspended_matter_tri_nasa/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
       "method": "GET",
-      "id": "N3a2_nasa_tri"
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -72,30 +126,6 @@
     }
   ],
   "subtitle": "Total suspended matter maps",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
-  "yAxis": "%",
-  "themes": [
-    "water"
-  ],
-  "tags": [
-    "Water quality",
-    "Marine",
-    "Acqua",
-    "MODIS",
-    "Open data",
-    "Marine monitoring",
-    "Total suspended matter"
-  ],
-  "agency": [
-    "NASA"
-  ],
-  "subcode": "N3a2_tsm_nasa",
-  "sensor": [
-    "MODIS"
-  ],
-  "satellite": [
-    "Acqua"
-  ],
   "eox:colorlegend": {
     "domain": [
       -100,
@@ -112,23 +142,40 @@
     "tickFormat": ".0f",
     "title": "Total suspended matter anomaly [%]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Marine",
+    "Acqua",
+    "MODIS",
+    "Open data",
+    "Marine monitoring",
+    "Total Suspended Matter"
+  ],
+  "agency": [
+    "NASA"
+  ],
+  "subcode": "N3a2_tsm_nasa",
+  "sensor": [
+    "MODIS"
+  ],
+  "satellite": [
+    "Acqua"
+  ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
   "title": "Total suspended matter maps from MODIS",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -122.42638000000001,
-          37.767500000000005,
-          13.03978,
-          45.207519999999995
-        ],
-        [
-          -122.42638000000001,
-          37.767500000000005,
-          13.03978,
-          45.207519999999995
+          -122.6033,
+          37.39634,
+          14.0,
+          45.81168
         ]
       ]
     },
@@ -162,16 +209,16 @@
       "MODIS"
     ],
     "cities": [
+      "San Francisco",
       "North Adriatic",
-      "New York",
-      "San Francisco"
+      "New York"
     ],
     "countries": [
       "US",
       "IT"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.jpg"
     ]
   },
   "assets": {
@@ -183,7 +230,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

@@ -1,0 +1,477 @@
+{
+  "type": "Collection",
+  "id": "Total Column CO by Sentinel-5P TROPOMI (Monthly)",
+  "stac_version": "1.1.0",
+  "description": "## Total Column CO by Sentinel-5P TROPOMI (Monthly)\nThe Sentinel-5P Total Column CO product provides measurements of carbon monoxide (CO) in the atmosphere. CO is a colorless, odorless, and toxic gas found in the atmosphere at low concentrations, in the troposphere, but higher near pollution sources. Major sources include fossil fuel combustion (vehicles), biomass burning, and vegetation. It is also produced through natural processes, such as volcanic activity and the oxidation of methane.\n\nThis product is important because carbon monoxide is a toxic gas that affects human health and acts as a tracer for air pollution transport across regions. CO is a trace gas in the atmosphere, and it does not have a direct effect on the global temperature, like methane and carbon dioxide do. However, carbon monoxide plays a major role in atmospheric chemistry, and it affects the ability of the atmosphere to cleanse itself of many other polluting gases. In combination with other pollutants and sunshine, it also takes part in the formation of lower-atmospheric (“bad”) ozone and urban smog.\n\n#### About the dataset\n- The CO product is measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite.\n- This dataset shows the monthlt aveaged total column CO concentrations\n- More information on the TROPOMI CO measurements and quality assessment can be found in the [Product Readme file](https://sentiwiki.copernicus.eu/__attachments/1673595/S5P-MPC-SRON-PRF-CO%20-%20Sentinel-5P%20Carbon%20Monoxide%20Level%202%20Product%20Readme%20File%202025%20-%202.9.pdf).\n\n#### Use cases\nThe Sentinel-5P CO product is useful for:\n- Monitoring anthropogenic and biomass burning CO emissions.\n- Air quality assessment and pollution modeling.\n- Tracking transport and dispersion of carbon monoxide plumes.\n- Research on atmospheric chemistry and interactions with greenhouse gases.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Total Column CO by Sentinel-5P TROPOMI (Monthly)/collection.json",
+      "type": "application/json",
+      "title": "Total Column CO by Sentinel-5P TROPOMI (Monthly)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "S5P-L3GRD-TCCO-MONTH",
+      "id": "Total Column CO by Sentinel-5P TROPOMI (Monthly)",
+      "themes": [
+        "atmosphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCO-MONTH/S5P-L3GRD-TCCO-MONTH_thumbnail.jpg"
+      ],
+      "tags": [
+        "CO",
+        "Carbon Monoxide",
+        "Atmosphere",
+        "Air Quality",
+        "Combustion",
+        "Biomass Burning",
+        "Open data",
+        "Open Science",
+        "TROPOMI",
+        "Sentinel-5P",
+        "Remote Sensing",
+        "Monthly Data",
+        "S5P",
+        "Copernicus"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "S5P-L3GRD-TCCO-MONTH",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      60.0,
+      175.0
+    ],
+    "range": [
+      "#dfdbf0",
+      "#ddd8ee",
+      "#d5c9e5",
+      "#d1c1e0",
+      "#ccb9db",
+      "#c8b1d6",
+      "#bfa0cc",
+      "#ba99c8",
+      "#b692c3",
+      "#b28abf",
+      "#aa7cb6",
+      "#a776b3",
+      "#a370af",
+      "#a06aab",
+      "#985fa5",
+      "#935aa2",
+      "#8e559f",
+      "#8a519c",
+      "#7f4e9c",
+      "#794f9d",
+      "#74509e",
+      "#6e509f",
+      "#6655a5",
+      "#6259a8",
+      "#5f5cac",
+      "#5c5faf",
+      "#5866b5",
+      "#5569b8",
+      "#536cbb",
+      "#5073bf",
+      "#4f77c1",
+      "#4f7ac2",
+      "#4e7ec4",
+      "#4d84c4",
+      "#4d87c4",
+      "#4d8ac3",
+      "#4d8dc2",
+      "#4e91c0",
+      "#4e93be",
+      "#4e95bc",
+      "#4f97bb",
+      "#519ab7",
+      "#529cb6",
+      "#539db4",
+      "#549fb2",
+      "#56a1af",
+      "#57a2ad",
+      "#58a3ab",
+      "#59a4aa",
+      "#5ba6a6",
+      "#5ca7a5",
+      "#5ca8a3",
+      "#5da9a2",
+      "#60ab9e",
+      "#61ac9c",
+      "#63ad9b",
+      "#64ae99",
+      "#66af95",
+      "#67b093",
+      "#69b192",
+      "#6cb28d",
+      "#6eb38a",
+      "#6fb387",
+      "#71b485",
+      "#75b680",
+      "#77b77d",
+      "#79b77b",
+      "#7bb879",
+      "#81b973",
+      "#83ba71",
+      "#86bb6e",
+      "#89bb6c",
+      "#8ebc67",
+      "#90bc65",
+      "#93bd63",
+      "#96bd60",
+      "#9cbe5c",
+      "#9fbe59",
+      "#a2be57",
+      "#a5be55",
+      "#a9bd53",
+      "#acbd51",
+      "#aebd50",
+      "#b1bd4e",
+      "#b6bc4c",
+      "#b9bc4b",
+      "#bbbc49",
+      "#bfbb47",
+      "#c1bb46",
+      "#c3ba45",
+      "#c5ba45",
+      "#c9b843",
+      "#cab843",
+      "#ccb742",
+      "#cdb642",
+      "#d0b541",
+      "#d2b440",
+      "#d3b340",
+      "#d4b240",
+      "#d6b03f",
+      "#d7af3e",
+      "#d9ae3e",
+      "#daad3d",
+      "#dcab3d",
+      "#ddaa3c",
+      "#dda93c",
+      "#dea83c",
+      "#dfa63b",
+      "#dfa53b",
+      "#e0a43b",
+      "#e0a33b",
+      "#e1a13a",
+      "#e2a03a",
+      "#e29f3a",
+      "#e39d39",
+      "#e49c38",
+      "#e49a38",
+      "#e49938",
+      "#e59737",
+      "#e59637",
+      "#e59437",
+      "#e59337",
+      "#e69036",
+      "#e68f36",
+      "#e68e36",
+      "#e68d36",
+      "#e68a35",
+      "#e68935",
+      "#e68835",
+      "#e68635",
+      "#e68434",
+      "#e68334",
+      "#e68234",
+      "#e68134",
+      "#e67e33",
+      "#e67d33",
+      "#e67c33",
+      "#e67b32",
+      "#e67832",
+      "#e67732",
+      "#e67631",
+      "#e57431",
+      "#e57230",
+      "#e57130",
+      "#e56f30",
+      "#e56d2f",
+      "#e56c2f",
+      "#e56a2f",
+      "#e5692f",
+      "#e4672e",
+      "#e4652e",
+      "#e4642e",
+      "#e3632d",
+      "#e3602d",
+      "#e35f2d",
+      "#e35d2d",
+      "#e25c2c",
+      "#e2592c",
+      "#e2582c",
+      "#e2562b",
+      "#e1552b",
+      "#e1532a",
+      "#e1512a",
+      "#e1502a",
+      "#e04f29",
+      "#e04c29",
+      "#e04b29",
+      "#df4928",
+      "#df4828",
+      "#df4428",
+      "#df4327",
+      "#de4127",
+      "#de3d26",
+      "#de3b26",
+      "#de3a26",
+      "#dd3825",
+      "#dd3425",
+      "#dd3325",
+      "#dd3125",
+      "#dc3024",
+      "#dc2c24",
+      "#dc2b23",
+      "#db2923",
+      "#db2723",
+      "#da2522",
+      "#d92422",
+      "#d82321",
+      "#d72321",
+      "#d52221",
+      "#d42221",
+      "#d22221",
+      "#d12221",
+      "#ce2221",
+      "#cd2221",
+      "#cb2220",
+      "#ca2220",
+      "#c72220",
+      "#c6221f",
+      "#c5221f",
+      "#c2221f",
+      "#c1221f",
+      "#c0221f",
+      "#be221f",
+      "#bc221f",
+      "#bb221f",
+      "#b9221e",
+      "#b8221e",
+      "#b5221e",
+      "#b4221e",
+      "#b3221e",
+      "#b2221e",
+      "#af221e",
+      "#ae221d",
+      "#ad221d",
+      "#ab221d",
+      "#a9221d",
+      "#a8221c",
+      "#a6221c",
+      "#a5221c",
+      "#a3221c",
+      "#a1211c",
+      "#a0211c",
+      "#9f211c",
+      "#9d211c",
+      "#9c211b",
+      "#9b211b",
+      "#9a211b",
+      "#98211b",
+      "#96211b",
+      "#95211b",
+      "#93211b",
+      "#92211a",
+      "#91211a",
+      "#8f211a",
+      "#8d211a",
+      "#8c2019",
+      "#8b2019",
+      "#8a2019",
+      "#882019",
+      "#872019",
+      "#862019",
+      "#852019",
+      "#832019",
+      "#821f18",
+      "#811f18",
+      "#801f18",
+      "#7e1f18",
+      "#7d1f18",
+      "#7c1f18",
+      "#7b1f18",
+      "#791e17",
+      "#781e17",
+      "#771e17",
+      "#761e17",
+      "#741e17",
+      "#731e17"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "CO column volume mixing ratio [PPBV]",
+    "tickValues": [
+      60.0,
+      83.0,
+      106.0,
+      129.0,
+      152.0,
+      175.0
+    ]
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCO-MONTH/S5P-L3GRD-TCCO-MONTH_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "CO",
+    "Carbon Monoxide",
+    "Atmosphere",
+    "Air Quality",
+    "Combustion",
+    "Biomass Burning",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Monthly Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-TCCO-MONTH",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "title": "Total Column CO by Sentinel-5P TROPOMI (Monthly)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-05-01T00:00:00Z",
+          "2018-06-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "S5P-L3GRD-TCCO-MONTH"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCO-MONTH/S5P-L3GRD-TCCO-MONTH_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "legend": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCO-MONTH/S5P-L3GRD-TCCO-MONTH_legend.png",
+      "type": "image/png",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCO-MONTH/S5P-L3GRD-TCCO-MONTH_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/co/month",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

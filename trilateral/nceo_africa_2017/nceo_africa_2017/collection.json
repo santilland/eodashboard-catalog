@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "nceo_africa_2017",
   "stac_version": "1.1.0",
-  "description": "## NCEO Africa Aboveground Woody Biomass\n\nThe NCEO Africa Aboveground Woody Biomass (AGB) map for the year 2017 at 100 m spatial resolution was developed using a combination of:\n\n- LiDAR\n- SAR\n- optical-based data\n\nThis product was developed by the UK\u2019s National Centre for Earth Observation (NCEO) through the Carbon Cycle and Official Development Assistance (ODA) programmes.\n\n### Additional information\n\n- [CEOS  biomass](https://ceos.org/gst/biomass.html)\n",
+  "description": "## NCEO Africa Aboveground Woody Biomass\n\nThe NCEO Africa Aboveground Woody Biomass (AGB) map for the year 2017 at 100 m spatial resolution was developed using a combination of:\n\n- LiDAR\n- SAR\n- optical-based data\n\nThis product was developed by the UK’s National Centre for Earth Observation (NCEO) through the Carbon Cycle and Official Development Assistance (ODA) programmes.\n\n### Additional information\n\n- [CEOS  biomass](https://ceos.org/gst/biomass.html)\n",
   "links": [
     {
       "rel": "root",
@@ -11,18 +11,10 @@
       "title": "Earth Observing Dashboard"
     },
     {
-      "rel": "item",
-      "href": "./nceo_africa_2017/2017/AGB_map_2017v0m_COG.json",
-      "type": "application/geo+json",
-      "cog_href": "s3://nasa-maap-data-store/file-staging/nasa-map/nceo-africa-2017/AGB_map_2017v0m_COG.tif",
-      "start_datetime": "2017-01-01T00:00:00Z",
-      "end_datetime": "2017-12-31T23:59:59Z"
-    },
-    {
       "rel": "xyz",
-      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?resampling_method=nearest&bidx=1&colormap_name=gist_earth_r&rescale=0.0,400.0",
+      "href": "https://openveda.cloud/api/raster/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?&bidx=1&colormap_name=gist_earth_r&rescale=0.0,400.0&resampling_method=nearest",
       "type": "image/png",
-      "title": "nceo_africa_2017"
+      "title": "Aboveground Woody Biomass"
     },
     {
       "rel": "parent",
@@ -32,7 +24,7 @@
     }
   ],
   "subtitle": "NCEO Africa AGB map for 2017 at 100 m spatial resolution",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.png",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.jpg",
   "themes": [
     "biomass"
   ],
@@ -51,30 +43,230 @@
   "satellite": [
     "Other"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      400
-    ],
-    "range": [
-      "#fdfbfb",
-      "#e7cac0",
-      "#d1ae8c",
-      "#bfa764",
-      "#b5b65e",
-      "#94ae57",
-      "#72a551",
-      "#479a48",
-      "#3c8f60",
-      "#338478",
-      "#276b7d",
-      "#1a487a",
-      "#0d1d76",
-      "#000000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "mg/ha"
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0.0,
+              "format": "range",
+              "minimum": 0,
+              "step": 1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 400.0,
+              "format": "range",
+              "maximum": 600.0,
+              "step": 1
+            }
+          },
+          "format": "minmax"
+        },
+        "rescale": {
+          "type": "string",
+          "template": "{{vminmax.vmin}},{{vminmax.vmax}}",
+          "watch": {
+            "vminmax": "vminmax"
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "colormap_name": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "gist_earth_r",
+          "enum": [
+            "accent",
+            "accent_r",
+            "afmhot",
+            "afmhot_r",
+            "autumn",
+            "autumn_r",
+            "binary",
+            "binary_r",
+            "blues",
+            "blues_r",
+            "bone",
+            "bone_r",
+            "brbg",
+            "brbg_r",
+            "brg",
+            "brg_r",
+            "bugn",
+            "bugn_r",
+            "bupu",
+            "bupu_r",
+            "bwr",
+            "bwr_r",
+            "cfastie",
+            "cividis",
+            "cividis_r",
+            "cmrmap",
+            "cmrmap_r",
+            "cool",
+            "cool_r",
+            "coolwarm",
+            "coolwarm_r",
+            "copper",
+            "copper_r",
+            "cubehelix",
+            "cubehelix_r",
+            "dark2",
+            "dark2_r",
+            "flag",
+            "flag_r",
+            "gist_earth",
+            "gist_earth_r",
+            "gist_gray",
+            "gist_gray_r",
+            "gist_heat",
+            "gist_heat_r",
+            "gist_ncar",
+            "gist_ncar_r",
+            "gist_rainbow",
+            "gist_rainbow_r",
+            "gist_stern",
+            "gist_stern_r",
+            "gist_yarg",
+            "gist_yarg_r",
+            "gnbu",
+            "gnbu_r",
+            "gnuplot",
+            "gnuplot2",
+            "gnuplot2_r",
+            "gnuplot_r",
+            "gray",
+            "gray_r",
+            "greens",
+            "greens_r",
+            "greys",
+            "greys_r",
+            "hot",
+            "hot_r",
+            "hsv",
+            "hsv_r",
+            "inferno",
+            "inferno_r",
+            "jet",
+            "jet_r",
+            "magma",
+            "magma_r",
+            "nipy_spectral",
+            "nipy_spectral_r",
+            "ocean",
+            "ocean_r",
+            "oranges",
+            "oranges_r",
+            "orrd",
+            "orrd_r",
+            "paired",
+            "paired_r",
+            "pastel1",
+            "pastel1_r",
+            "pastel2",
+            "pastel2_r",
+            "pink",
+            "pink_r",
+            "piyg",
+            "piyg_r",
+            "plasma",
+            "plasma_r",
+            "prgn",
+            "prgn_r",
+            "prism",
+            "prism_r",
+            "pubu",
+            "pubu_r",
+            "pubugn",
+            "pubugn_r",
+            "puor",
+            "puor_r",
+            "purd",
+            "purd_r",
+            "purples",
+            "purples_r",
+            "rainbow",
+            "rainbow_r",
+            "rdbu",
+            "rdbu_r",
+            "rdgy",
+            "rdgy_r",
+            "rdpu",
+            "rdpu_r",
+            "rdylbu",
+            "rdylbu_r",
+            "rdylgn",
+            "rdylgn_r",
+            "reds",
+            "reds_r",
+            "rplumbo",
+            "schwarzwald",
+            "seismic",
+            "seismic_r",
+            "set1",
+            "set1_r",
+            "set2",
+            "set2_r",
+            "set3",
+            "set3_r",
+            "spectral",
+            "spectral_r",
+            "spring",
+            "spring_r",
+            "summer",
+            "summer_r",
+            "tab10",
+            "tab10_r",
+            "tab20",
+            "tab20_r",
+            "tab20b",
+            "tab20b_r",
+            "tab20c",
+            "tab20c_r",
+            "terrain",
+            "terrain_r",
+            "twilight",
+            "twilight_r",
+            "twilight_shifted",
+            "twilight_shifted_r",
+            "viridis",
+            "viridis_r",
+            "winter",
+            "winter_r",
+            "wistia",
+            "wistia_r",
+            "ylgn",
+            "ylgn_r",
+            "ylgnbu",
+            "ylgnbu_r",
+            "ylorbr",
+            "ylorbr_r",
+            "ylorrd",
+            "ylorrd_r"
+          ]
+        }
+      },
+      "required": [
+        "vminmax"
+      ]
+    },
+    "legend": {
+      "title": "mg/ha",
+      "scaleType": "continuous",
+      "tickFormat": ".0f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "colormap_name"
+    }
   },
   "endpointtype": "VEDA_cog",
   "title": "Aboveground Woody Biomass",
@@ -93,7 +285,7 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2017-12-31T23:59:59Z"
+          "2017-01-01T00:00:00Z"
         ]
       ]
     }
@@ -102,20 +294,23 @@
   "providers": [
     {
       "name": "NCEO",
-      "roles": "licensor, processor",
+      "roles": [
+        "licensor, processor"
+      ],
       "url": "https://www.nceo.ac.uk/data-tools/datasets/"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/NCEO_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/nceo_africa_2017/nceo_africa_2017.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

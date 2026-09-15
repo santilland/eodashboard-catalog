@@ -2,13 +2,32 @@
   "type": "Collection",
   "id": "N3a2_total_suspended_matter_tri_esa",
   "stac_version": "1.1.0",
-  "description": "# Water Quality: Total suspended matter\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n\nThe Sentinel-3 satellite, part of the European Space Agency's Copernicus program, carries several instruments for Earth observation, including the Ocean and Land Colour Instrument (OLCI). OLCI is designed specifically to monitor Earth's oceans, coastal zones, and land surfaces. One of its key uses is to map the concentration of Total Suspended Matter (TSM) in oceans, lakes, and coastal areas, which is important for understanding water quality and sediment dynamics in aquatic ecosystems.\n\nWhen interpreting TSM concentration maps produced by Sentinel-3 OLCI, it\u2019s essential to understand the color scale used to represent different levels of suspended matter in the water. The scale typically goes from blue to red, where:\n\nBlue indicates low TSM concentration.\nRed indicates high TSM concentration.\n\n## Dataset description\n- Spectral Range: OLCI has 21 spectral bands in the visible to near-infrared (VNIR) range, optimized for observing ocean color, vegetation, and atmospheric properties.\n- TSM Detection: OLCI is particularly useful for detecting Total Suspended Matter concentrations, providing insights into sediment load, coastal erosion, and water quality in both marine and freshwater environments.\n- Spatial Resolution: It offers a spatial resolution of 300 meters, allowing for detailed observations of coastal and inland water areas, as well as land surfaces.\n- Wide Swath Coverage: The instrument covers a 1270 km swath on the Earth's surface, enabling near-global coverage every 2 to 3 days, depending on latitude.\n",
+  "description": "# Water Quality: Total suspended matter\nTotal Suspended Matter (TSM) i.e, the concentration of organic and inorganic materials suspended in the water, is another proxy for water quality as different contaminants, including nutrients, trace metals, semi-volatile organic compounds, and numerous pesticides, can aggregate to these solids and brought in suspension. This can alter the state of the aquatic ecosystem and the use of freshwater resources. For instance, excessive suspended material might condition primary productivity. TSM concentration can be very high near the coasts due to the resuspension of terrestrial or submarine particulate matter by tides, waves, and currents.\n\nThe Sentinel-3 satellite, part of the European Space Agency's Copernicus program, carries several instruments for Earth observation, including the Ocean and Land Colour Instrument (OLCI). OLCI is designed specifically to monitor Earth's oceans, coastal zones, and land surfaces. One of its key uses is to map the concentration of Total Suspended Matter (TSM) in oceans, lakes, and coastal areas, which is important for understanding water quality and sediment dynamics in aquatic ecosystems.\n\nWhen interpreting TSM concentration maps produced by Sentinel-3 OLCI, it’s essential to understand the color scale used to represent different levels of suspended matter in the water. The scale typically goes from blue to red, where:\n\nBlue indicates low TSM concentration.\nRed indicates high TSM concentration.\n\n## Dataset description\n- Spectral Range: OLCI has 21 spectral bands in the visible to near-infrared (VNIR) range, optimized for observing ocean color, vegetation, and atmospheric properties.\n- TSM Detection: OLCI is particularly useful for detecting Total Suspended Matter concentrations, providing insights into sediment load, coastal erosion, and water quality in both marine and freshwater environments.\n- Spatial Resolution: It offers a spatial resolution of 300 meters, allowing for detailed observations of coastal and inland water areas, as well as land surfaces.\n- Wide Swath Coverage: The instrument covers a 1270 km swath on the Earth's surface, enabling near-global coverage every 2 to 3 days, depending on latitude.\n",
   "links": [
     {
-      "rel": "root",
-      "href": "../../catalog.json",
-      "type": "application/json",
-      "title": "Earth Observing Dashboard"
+      "rel": "wms",
+      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
+      "type": "image/png",
+      "title": "Total suspended matter from Sentinel-3",
+      "wms:layers": [
+        "AWS_N3_CUSTOM_TRILATERAL_TSMNN"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "license",
+      "href": "http://www.opensource.org/licenses/MIT",
+      "type": "text/html"
+    },
+    {
+      "rel": "example",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/script.js",
+      "type": "application/javascript",
+      "title": "evalscript",
+      "example:language": "JavaScript",
+      "dataId": "byoc-698ade22-bc30-44d1-8751-159ee135f998"
     },
     {
       "rel": "child",
@@ -47,29 +66,10 @@
       "name": "Danube Delta"
     },
     {
-      "rel": "wms",
-      "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54",
-      "type": "image/png",
-      "title": "N3a2_total_suspended_matter_tri_esa",
-      "wms:layers": [
-        "AWS_N3_CUSTOM_TRILATERAL_TSMNN"
-      ],
-      "role": [
-        "data"
-      ]
-    },
-    {
-      "rel": "license",
-      "href": "http://www.opensource.org/licenses/MIT",
-      "type": "text/html"
-    },
-    {
-      "rel": "example",
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/script.js",
-      "type": "application/javascript",
-      "title": "evalscript",
-      "example:language": "JavaScript",
-      "dataId": "byoc-698ade22-bc30-44d1-8751-159ee135f998"
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
     },
     {
       "rel": "parent",
@@ -79,32 +79,6 @@
     }
   ],
   "subtitle": "Total suspended matter maps",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
-  "yAxis": "%",
-  "themes": [
-    "oceans"
-  ],
-  "locations": true,
-  "tags": [
-    "Water quality",
-    "Copernicus Services",
-    "CHL",
-    "CMEMS",
-    "Marine monitoring",
-    "Total Suspended Matter",
-    "Marine",
-    "CAMS"
-  ],
-  "agency": [
-    "ESA"
-  ],
-  "subcode": "N3a2_TSM_esa",
-  "sensor": [
-    "OLCI"
-  ],
-  "satellite": [
-    "Sentinel-3"
-  ],
   "eox:colorlegend": {
     "domain": [
       -100,
@@ -121,6 +95,30 @@
     "tickFormat": ".0f",
     "title": "Total suspended matter anomaly [%]"
   },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.jpg",
+  "themes": [
+    "water"
+  ],
+  "locations": true,
+  "tags": [
+    "Water quality",
+    "Copernicus Services",
+    "CMEMS",
+    "Marine monitoring",
+    "Total Suspended Matter",
+    "Marine",
+    "CAMS"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "N3a2_TSM_esa",
+  "sensor": [
+    "OLCI"
+  ],
+  "satellite": [
+    "Sentinel-3"
+  ],
   "endpointtype": "Sentinel Hub_byoc",
   "title": "Total suspended matter from Sentinel-3",
   "extent": {
@@ -175,7 +173,7 @@
     },
     {
       "name": "ESA",
-      "url": "https://sentinel.esa.int/web/sentinel/"
+      "url": "https://sentinels.copernicus.eu/web/sentinel/home"
     }
   ],
   "assets": {
@@ -187,7 +185,7 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/N3a2_total_suspended_matter_tri/thumbnail.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

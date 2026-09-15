@@ -2,133 +2,25 @@
   "type": "Collection",
   "id": "precipitation_anomaly",
   "stac_version": "1.1.0",
-  "description": "## Global Precipitation anomaly\r\n\r\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature,\r\nVegetation Index and anomaly, etc. Rainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas.\r\n\r\n\r\n### Additional information\r\n\r\n- Access Jaxa\u2019s Public-health Monitor and Analysis Platform: [https://www.jpmap-jaxa.jp/jpmap/en/user_guide/](https://www.jpmap-jaxa.jp/jpmap/en/user_guide/)\r\n- Access JAXA's GSMaP (Global Satellite Mapping of Precipitation): [https://sharaku.eorc.jaxa.jp/GSMaP/](https://sharaku.eorc.jaxa.jp/GSMaP/)\r\n- GSMaP Documentation: [https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf](https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf)\r\n",
+  "description": "## Global Precipitation anomaly\r\n\r\nJAXA with Japanese MAFF provide agrometeorological information including Precipitation, Drought Index, Soil Moisture, Solar Radiation, Surface Temperature,\r\nVegetation Index and anomaly, etc. Rainfall, Agriculture, Land, GPM Core Observatory, SHIZUKU (GCOM-W), MODIS, Multiple Satellites (GSMaP) bi-Monthly on JASMIN for Asia and on JASMAI for selected world areas.\r\n\r\n\r\n### Additional information\r\n\r\n- Access Jaxa’s Public-health Monitor and Analysis Platform: [https://www.jpmap-jaxa.jp/jpmap/en/user_guide/](https://www.jpmap-jaxa.jp/jpmap/en/user_guide/)\r\n- Access JAXA's GSMaP (Global Satellite Mapping of Precipitation): [https://sharaku.eorc.jaxa.jp/GSMaP/](https://sharaku.eorc.jaxa.jp/GSMaP/)\r\n- GSMaP Documentation: [https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf](https://www.eorc.jaxa.jp/GPM/doc/algorithm/GSMaPforGPM_20140902_E.pdf)\r\n",
   "links": [
+    {
+      "rel": "wms",
+      "href": "https://gpwmap.jaxa.jp/wms",
+      "type": "image/jpeg",
+      "title": "Precipitation Anomaly from GSMap",
+      "wms:layers": [
+        "EODASH:PRC-Anomaly-GSMaP-World-Monthly"
+      ],
+      "role": [
+        "data"
+      ]
+    },
     {
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2022/2022-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2022/2022-02-14T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-02-14T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2022/2022-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2022/2022-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2022/2022-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2022/2022-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2022-06-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2023/2023-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2023/2023-02-14T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-02-14T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2023/2023-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2023/2023-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2023/2023-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2023/2023-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2023-06-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2024/2024-01-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-01-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2024/2024-02-15T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-02-15T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2024/2024-03-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-03-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2024/2024-04-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-04-15T23:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2024/2024-05-16T11:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-05-16T11:59:30Z"
-    },
-    {
-      "rel": "item",
-      "href": "./precipitation_anomaly/2024/2024-06-15T23:59:30Z.json",
-      "type": "application/geo+json",
-      "datetime": "2024-06-15T23:59:30Z"
-    },
-    {
-      "rel": "wms",
-      "href": "https://ogcpreview2.restecmap.com/examind/api/WS/wms/default",
-      "type": "image/jpeg",
-      "title": "precipitation_anomaly",
-      "wms:layers": [
-        "PRC-Anomaly-GSMaP-World-Monthly"
-      ],
-      "role": [
-        "data"
-      ]
     },
     {
       "rel": "parent",
@@ -137,8 +29,67 @@
       "title": "Precipitation Anomaly from GSMap"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Global Precipitation Anomaly",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.png",
+  "eox:colorlegend": {
+    "domain": [
+      -200,
+      200
+    ],
+    "range": [
+      "#3e3eff",
+      "#3737ff",
+      "#7777ff",
+      "#b6b6ff",
+      "#fafaff",
+      "#ffc6c6",
+      "#ff8484",
+      "#ff4545",
+      "#ff0606"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "Precipitation anomaly"
+  },
+  "eodash:stories": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "el_nino_part_3_food_security": {
+      "href": "https://eodashboard.org/story/?id=el_nino_part_3_food_security",
+      "type": "text/markdown",
+      "title": "El Niño 2023-2024: Food Security Impacts",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/el_nino_part_3_food_security.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.jpg",
   "themes": [
     "agriculture"
   ],
@@ -154,27 +105,6 @@
   "satellite": [
     "Other"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      "NaN",
-      200
-    ],
-    "range": [
-      "#ffffff",
-      "#3e3eff",
-      "#3737ff",
-      "#7777ff",
-      "#b6b6ff",
-      "#fafaff",
-      "#ffc6c6",
-      "#ff8484",
-      "#ff4545",
-      "#ff0606"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "Precipitation anomaly"
-  },
   "endpointtype": "WMS_Time",
   "title": "Precipitation Anomaly from GSMap",
   "extent": {
@@ -182,8 +112,8 @@
       "bbox": [
         [
           -180.0,
-          -89.99999999997118,
-          179.99999999994236,
+          -90.0,
+          180.0,
           90.0
         ]
       ]
@@ -191,8 +121,8 @@
     "temporal": {
       "interval": [
         [
-          "2022-01-16T11:59:30Z",
-          "2024-06-15T23:59:30Z"
+          "2022-01-01T00:00:00Z",
+          "2026-06-01T00:00:00Z"
         ]
       ]
     }
@@ -201,11 +131,21 @@
   "providers": [
     {
       "name": "JAXA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://global.jaxa.jp/"
     }
   ],
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
     "legend": {
       "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_legend.png",
       "type": "image/png",
@@ -213,8 +153,44 @@
         "metadata"
       ]
     },
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "el_nino_part_3_food_security": {
+      "href": "https://eodashboard.org/story/?id=el_nino_part_3_food_security",
+      "type": "text/markdown",
+      "title": "El Niño 2023-2024: Food Security Impacts",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/el_nino_part_3_food_security.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/PRC_precipitation_anomaly/PRC_precipitation_anomaly.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

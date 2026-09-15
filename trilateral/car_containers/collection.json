@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "car_containers",
   "stac_version": "1.1.0",
-  "description": "# Finished goods production: vehicles inventory level\n\nThis indicator aims at tracking production and movement at factories and ports importing and exporting cars to monitor the increase and decrease of new car production\nby combining satellite data from:\n###\n- PALSAR-2, which uses L-band SAR mounted on [JAXA](https://global.jaxa.jp/)'s ALOS-2 \n- C-band SAR mounted on the [ESA](https://esa.int/)'s Sentinel-1\n- NASA-processed high-resolution optical remote sensing data from Planet\u2019s SkySat\n\n\n",
+  "description": "# Finished goods production: vehicles inventory level\n\nThis indicator aims at tracking production and movement at factories and ports importing and exporting cars to monitor the increase and decrease of new car production\nby combining satellite data from:\n###\n- PALSAR-2, which uses L-band SAR mounted on [JAXA](https://global.jaxa.jp/)'s ALOS-2 \n- C-band SAR mounted on the [ESA](https://esa.int/)'s Sentinel-1\n- NASA-processed high-resolution optical remote sensing data from Planet’s SkySat\n\n\n",
   "links": [
     {
       "rel": "root",
@@ -22,6 +22,10 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "JAXA",
+        "ESA"
+      ],
       "cities": [
         "Beijing",
         "Nagoya",
@@ -36,7 +40,9 @@
         "SG",
         "US"
       ],
-      "yAxis": "Car Density",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E9_car_containers/E9_car_containers.jpg"
+      ],
       "tags": [
         "Mobility",
         "SAR",
@@ -62,10 +68,66 @@
     },
     {
       "rel": "service",
+      "href": "./car_containers/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
+      "method": "GET",
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "service",
       "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E9_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
       "type": "application/json",
-      "method": "GET",
-      "id": "E9_tri"
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -74,10 +136,34 @@
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Change in the number of new cars at automobile factory",
+  "eodash:stories": {
+    "covid-cars": {
+      "href": "https://eodashboard.org/story/?id=covid-cars",
+      "type": "text/markdown",
+      "title": "COVID-19 Changes in Car Manufacturing",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-cars.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E9_car_containers/E9_car_containers.jpg",
   "themes": [
     "economy"
   ],
+  "locations": true,
   "tags": [
     "Mobility",
     "SAR",
@@ -101,30 +187,24 @@
     "Sentinel-1"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E9_car_containers/chart.json",
   "title": "Car containers",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -118.42,
-          1.254856,
-          136.89,
-          40.089999999999996
-        ],
-        [
-          -118.42,
-          1.254856,
-          136.89,
-          40.089999999999996
+          -180.0,
+          -90.0,
+          241.633621,
+          90.0
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2019-11-27T00:00:00Z",
-          "2022-12-24T00:00:00Z"
+          "1970-01-01T00:00:00Z",
+          "2026-09-15T09:00:21.929094Z"
         ]
       ]
     }
@@ -152,22 +232,52 @@
       "Sentinel-1"
     ],
     "sensor": [
-      "C-SAR",
-      "PALSAR-2"
+      "PALSAR-2",
+      "C-SAR"
     ],
     "cities": [
-      "Los Angeles",
-      "Arcadia",
       "Palm Springs",
+      "Los Angeles",
       "Nagoya",
       "Beijing",
-      "Singapore"
+      "Singapore",
+      "Arcadia"
     ],
     "countries": [
-      "CN",
       "US",
       "JP",
+      "CN",
       "SG"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E9_car_containers/E9_car_containers.jpg"
     ]
+  },
+  "assets": {
+    "covid-cars": {
+      "href": "https://eodashboard.org/story/?id=covid-cars",
+      "type": "text/markdown",
+      "title": "COVID-19 Changes in Car Manufacturing",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/covid-cars.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E9_car_containers/E9_car_containers.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

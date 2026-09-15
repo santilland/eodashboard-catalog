@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "Ocean_Heat_Content_upper_300m",
   "stac_version": "1.1.0",
-  "description": "## Ocean heat content for the upper 300m \n\nOcean Heat Content for the Upper 300m (OHC300) is a variable provided by the ORAS5 dataset, a global ocean and sea-ice reanalysis system developed by ECMWF. \nORAS5 data, available from 1958 to the present, offers a comprehensive view of the ocean's thermal structure by combining model data with global observations to create a consistent and complete dataset that adheres to the physical laws of the ocean.\n\nOcean heat content (OHC) represents the energy stored in the ocean, an essential indicator of the Earth's energy imbalance. \nThe OHC300 specifically measures the amount of heat stored in the upper 300 meters of the ocean, expressed in Joules per square meter (J/m\u00b2). \nThis layer is crucial because it is where most of the heat exchange between the ocean and atmosphere occurs, influencing climate and weather patterns.\n\nThe ORAS5 dataset calculates OHC300 by integrating temperature, sea water density, and specific heat capacity from the ocean surface down to 300 meters. \nThis parameter is a two-dimensional field that provides monthly means across the globe, with data resolution approximately 0.25\u00b0 x 0.25\u00b0 (around 25 km in the tropics and 9 km in the Arctic). \nThe dataset's temporal coverage extends from January 1958 to the present without gaps, and new near real-time data is added monthly.\n\n**Note**\nAs with all model data, care should be taken when comparing OHC300 with in-situ observations, as observations typically represent specific points in space and time, while the model data averages over a grid box.",
+  "description": "## Ocean heat content for the upper 300m \n\nOcean Heat Content for the Upper 300m (OHC300) is a variable provided by the ORAS5 dataset, a global ocean and sea-ice reanalysis system developed by ECMWF. \nORAS5 data, available from 1958 to the present, offers a comprehensive view of the ocean's thermal structure by combining model data with global observations to create a consistent and complete dataset that adheres to the physical laws of the ocean.\n\nOcean heat content (OHC) represents the energy stored in the ocean, an essential indicator of the Earth's energy imbalance. \nThe OHC300 specifically measures the amount of heat stored in the upper 300 meters of the ocean, expressed in Joules per square meter (J/m²). \nThis layer is crucial because it is where most of the heat exchange between the ocean and atmosphere occurs, influencing climate and weather patterns.\n\nThe ORAS5 dataset calculates OHC300 by integrating temperature, sea water density, and specific heat capacity from the ocean surface down to 300 meters. \nThis parameter is a two-dimensional field that provides monthly means across the globe, with data resolution approximately 0.25° x 0.25° (around 25 km in the tropics and 9 km in the Arctic). \nThe dataset's temporal coverage extends from January 1958 to the present without gaps, and new near real-time data is added monthly.\n\n**Note**\nAs with all model data, care should be taken when comparing OHC300 with in-situ observations, as observations typically represent specific points in space and time, while the model data averages over a grid box.",
   "links": [
     {
       "rel": "root",
@@ -20,7 +20,14 @@
       "code": "OHC300",
       "id": "Ocean_Heat_Content_upper_300m",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "providers": [
+        "Copernicus",
+        "ECMWF"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OHC300_Ocean_Heat_Content_upper_300m/OHC300_Ocean_Heat_Content_upper_300m.jpg"
       ],
       "tags": [
         "Copernicus Services",
@@ -46,17 +53,111 @@
       "title": "Licence to Use Copernicus Products"
     },
     {
+      "rel": "service",
+      "href": "https://services.sentinel-hub.com/api/v1/statistics",
+      "type": "application/json",
+      "id": "sentinelhub-statistics",
+      "method": "POST",
+      "endpoint": "sentinelhub"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "sci:doi": "10.24381/cds.67e8eeb7",
   "sci:citation": "Copernicus Climate Change Service, Climate Data Store, (2021).\nORAS5 global ocean reanalysis monthly data from 1958 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS).\n",
   "subtitle": "ORAS5 global ocean reanalysis monthly data from 1958 to present",
+  "eox:colorlegend": {
+    "domain": [
+      -2,
+      30
+    ],
+    "range": [
+      "#0000FF",
+      "#00FFFF",
+      "#FFFF00",
+      "#FF0000"
+    ],
+    "scaleType": "continuous",
+    "tickFormat": ".0f",
+    "title": "[GJ/m2]"
+  },
+  "eodash:stories": {
+    "rising_global_sea_surface_temperatures": {
+      "href": "https://eodashboard.org/story/?id=rising_global_sea_surface_temperatures",
+      "type": "text/markdown",
+      "title": "El Niño 2023-2024 Part 2: Rising Global Sea Surface Temperatures",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/rising_global_sea_surface_temperatures.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OHC300_Ocean_Heat_Content_upper_300m/OHC300_Ocean_Heat_Content_upper_300m.jpg",
   "themes": [
-    "oceans"
+    "water"
   ],
   "tags": [
     "Copernicus Services",
@@ -74,31 +175,12 @@
   "otherSources": [
     "ORAS5"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -2,
-      30
-    ],
-    "range": [
-      "#0000FF",
-      "#00FFFF",
-      "#FFFF00",
-      "#FF0000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "[GJ/m2]"
-  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/defaults/sh_form.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OHC300_Ocean_Heat_Content_upper_300m/chart.json",
   "title": "Ocean heat content for the upper 300m",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180.0,
-          -77.0614030046477,
-          180.0,
-          89.94786834716797
-        ],
         [
           -180.0,
           -77.0614030046477,
@@ -120,12 +202,16 @@
   "providers": [
     {
       "name": "Copernicus",
-      "roles": "licensor, producer",
+      "roles": [
+        "licensor, producer"
+      ],
       "url": "https://www.copernicus.eu/en"
     },
     {
       "name": "ECMWF",
-      "roles": "processor",
+      "roles": [
+        "processor"
+      ],
       "url": "https://www.ecmwf.int/"
     }
   ],
@@ -134,7 +220,10 @@
       "OHC300"
     ],
     "themes": [
-      "oceans"
+      "water"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OHC300_Ocean_Heat_Content_upper_300m/OHC300_Ocean_Heat_Content_upper_300m.jpg"
     ]
   },
   "assets": {
@@ -143,6 +232,31 @@
       "type": "image/png",
       "roles": [
         "metadata"
+      ]
+    },
+    "rising_global_sea_surface_temperatures": {
+      "href": "https://eodashboard.org/story/?id=rising_global_sea_surface_temperatures",
+      "type": "text/markdown",
+      "title": "El Niño 2023-2024 Part 2: Rising Global Sea Surface Temperatures",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/rising_global_sea_surface_temperatures.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/OHC300_Ocean_Heat_Content_upper_300m/OHC300_Ocean_Heat_Content_upper_300m.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
       ]
     },
     "reference_1": {

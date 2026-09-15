@@ -15,15 +15,21 @@
       "href": "./FNF_Palsar/collection.json",
       "type": "application/json",
       "title": "PALSAR-2/PALSAR Forest/Non-Forest Map",
-      "endpointtype": "JAXA_WMTS_PALSAR_OverwriteTimes",
+      "endpointtype": "WMS_OverwriteTimes",
       "code": "FNF",
       "id": "FNF_Palsar",
       "themes": [
         "biomass"
       ],
+      "providers": [
+        "JAXA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.jpg"
+      ],
       "tags": [
         "Multi-sensors",
-        "Forests",
+        "Forest",
         "Open data",
         "Deforestation",
         "Forest degradation",
@@ -43,35 +49,62 @@
       ]
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.png",
-  "themes": [
-    "biomass"
-  ],
-  "tags": [
-    "Multi-sensors",
-    "Forests",
-    "Open data",
-    "Deforestation",
-    "Forest degradation",
-    "Carbon"
-  ],
-  "agency": [
-    "JAXA"
-  ],
-  "subcode": "FNF",
-  "sensor": [
-    "PALSAR",
-    "PALSAR-2"
-  ],
-  "satellite": [
-    "ALOS",
-    "ALOS-2"
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
   ],
   "eox:colorlegend": {
     "domain": [
@@ -91,16 +124,53 @@
     "scaleType": "categorical",
     "title": "Global 25m resolution PALSAR-2 Forest/Non-Forest Map"
   },
+  "eodash:stories": {
+    "forest_loss_and_degradation": {
+      "href": "https://eodashboard.org/story/?id=forest_loss_and_degradation",
+      "type": "text/markdown",
+      "title": "Forest Loss and Degradation",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/forest_loss_and_degradation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.jpg",
+  "themes": [
+    "biomass"
+  ],
+  "tags": [
+    "Multi-sensors",
+    "Forest",
+    "Open data",
+    "Deforestation",
+    "Forest degradation",
+    "Carbon"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "FNF",
+  "sensor": [
+    "PALSAR",
+    "PALSAR-2"
+  ],
+  "satellite": [
+    "ALOS",
+    "ALOS-2"
+  ],
   "title": "PALSAR-2/PALSAR Forest/Non-Forest Map",
   "extent": {
     "spatial": {
       "bbox": [
-        [
-          -180,
-          -60,
-          180,
-          85
-        ],
         [
           -180,
           -60,
@@ -133,15 +203,15 @@
       "biomass"
     ],
     "satellite": [
-      "ALOS-2",
-      "ALOS"
+      "ALOS",
+      "ALOS-2"
     ],
     "sensor": [
-      "PALSAR",
-      "PALSAR-2"
+      "PALSAR-2",
+      "PALSAR"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.jpg"
     ]
   },
   "assets": {
@@ -152,8 +222,26 @@
         "metadata"
       ]
     },
+    "forest_loss_and_degradation": {
+      "href": "https://eodashboard.org/story/?id=forest_loss_and_degradation",
+      "type": "text/markdown",
+      "title": "Forest Loss and Degradation",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/forest_loss_and_degradation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/FNF_Palsar/FNF_Palsar.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

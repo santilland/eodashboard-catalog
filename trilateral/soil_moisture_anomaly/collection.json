@@ -22,6 +22,12 @@
       "themes": [
         "agriculture"
       ],
+      "providers": [
+        "JAXA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg"
+      ],
       "tags": [
         "Precipitation",
         "Multi-sensors"
@@ -35,35 +41,77 @@
       ]
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
   "subtitle": "Global Soil Moisture Anomaly",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
-  "themes": [
-    "agriculture"
-  ],
-  "tags": [
-    "Precipitation",
-    "Multi-sensors"
-  ],
-  "agency": [
-    "JAXA"
-  ],
-  "subcode": "SMC",
-  "satellite": [
-    "Other"
-  ],
   "eox:colorlegend": {
     "domain": [
-      "NaN",
+      0,
+      30,
+      70,
+      90,
+      100,
+      120,
+      150,
+      200,
       300
     ],
     "range": [
-      "#ffffff",
       "#3e3eff",
       "#3737ff",
       "#7777ff",
@@ -78,20 +126,48 @@
     "tickFormat": ".0f",
     "title": "Soil moisture anomaly"
   },
+  "eodash:stories": {
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg",
+  "themes": [
+    "agriculture"
+  ],
+  "tags": [
+    "Precipitation",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "JAXA"
+  ],
+  "subcode": "SMC",
+  "satellite": [
+    "Other"
+  ],
   "title": "Soil Moisture Anomaly from GSMaP",
   "extent": {
     "spatial": {
       "bbox": [
         [
           -180.0,
-          -89.99999999997118,
-          179.99999999994236,
-          90.0
-        ],
-        [
-          -180.0,
-          -89.99999999997118,
-          179.99999999994236,
+          -90.0,
+          180.0,
           90.0
         ]
       ]
@@ -99,8 +175,8 @@
     "temporal": {
       "interval": [
         [
-          "2022-01-16T11:59:30Z",
-          "2024-06-15T23:59:30Z"
+          "2022-01-01T00:00:00Z",
+          "2026-05-01T00:00:00Z"
         ]
       ]
     }
@@ -109,7 +185,9 @@
   "providers": [
     {
       "name": "JAXA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://global.jaxa.jp/"
     }
   ],
@@ -124,7 +202,7 @@
       "Other"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg"
     ]
   },
   "assets": {
@@ -135,8 +213,26 @@
         "metadata"
       ]
     },
+    "world_crop_supply_and_demand": {
+      "href": "https://eodashboard.org/story/?id=world_crop_supply_and_demand",
+      "type": "text/markdown",
+      "title": "Satellites are Providing Insights into Agricultural Production, Crop Conditions, and Food Supply",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/world_crop_supply_and_demand.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/SMC_soil_moisture_anomaly/SMC_soil_moisture_anomaly.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

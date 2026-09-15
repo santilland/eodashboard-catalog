@@ -14,1383 +14,7 @@
       "rel": "xyz",
       "href": "https://api.earthsystemdatalab.net/api/tiles/esdc/net_ecosystem_exchange/{z}/{y}/{x}?crs=EPSG:3857&time={time}&vmin=-7&vmax=2&cbar=bwr",
       "type": "image/png",
-      "title": "xcube tiles"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-01-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-01-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-01-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-01-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-01-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-01-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-01-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-01-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-02-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-02-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-02-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-02-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-02-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-02-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-03-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-03-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-03-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-03-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-03-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-03-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-03-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-03-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-04-03T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-04-03T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-04-11T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-04-11T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-04-19T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-04-19T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-04-27T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-04-27T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-05-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-05-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-05-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-05-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-05-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-05-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-05-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-05-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-06-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-06-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-06-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-06-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-06-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-06-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-06-30T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-07-08T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-07-08T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-07-16T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-07-16T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-07-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-07-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-08-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-08-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-08-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-08-17T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-08-25T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-08-25T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-09-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-09-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-09-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-09-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-09-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-09-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-09-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-09-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-10-04T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-10-04T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-10-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-10-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-10-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-10-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-10-28T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-10-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-11-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-11-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-11-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-11-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-11-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-11-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-11-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-11-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-12-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-12-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-12-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-12-15T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-12-23T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-12-23T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2014/2014-12-31T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-01-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-01-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-01-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-01-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-01-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-01-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-01-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-01-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-02-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-02-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-02-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-02-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-02-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-02-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-03-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-03-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-03-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-03-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-03-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-03-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-03-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-03-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-04-03T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-04-03T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-04-11T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-04-11T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-04-19T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-04-19T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-04-27T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-04-27T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-05-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-05-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-05-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-05-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-05-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-05-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-05-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-05-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-06-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-06-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-06-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-06-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-06-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-06-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-06-30T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-07-08T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-07-08T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-07-16T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-07-16T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-07-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-07-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-08-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-08-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-08-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-08-17T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-08-25T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-08-25T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-09-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-09-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-09-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-09-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-09-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-09-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-09-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-09-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-10-04T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-10-04T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-10-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-10-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-10-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-10-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-10-28T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-10-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-11-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-11-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-11-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-11-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-11-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-11-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-11-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-11-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-12-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-12-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-12-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-12-15T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-12-23T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-12-23T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2015/2015-12-31T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-01-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-01-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-01-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-01-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-02-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-02-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-02-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-02-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-02-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-02-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-03-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-03-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-03-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-03-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-03-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-03-17T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-03-25T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-03-25T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-04-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-04-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-04-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-04-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-04-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-04-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-04-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-04-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-05-04T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-05-04T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-05-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-05-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-05-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-05-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-05-28T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-05-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-06-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-06-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-06-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-06-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-06-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-06-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-06-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-06-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-07-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-07-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-07-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-07-15T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-07-23T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-07-23T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-07-31T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-07-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-08-08T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-08-08T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-08-16T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-08-16T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-08-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-08-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-09-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-09-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-09-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-09-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-09-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-09-17T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-09-25T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-09-25T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-10-03T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-10-03T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-10-11T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-10-11T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-10-19T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-10-19T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-10-27T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-10-27T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-11-04T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-11-04T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-11-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-11-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-11-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-11-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-11-28T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-11-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-12-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-12-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-12-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-12-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-12-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-12-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2016/2016-12-30T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-12-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-01-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-01-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-01-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-01-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-02-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-02-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-02-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-02-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-02-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-02-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-03-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-03-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-03-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-03-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-03-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-03-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-03-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-03-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-04-03T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-04-03T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-04-11T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-04-11T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-04-19T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-04-19T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-04-27T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-04-27T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-05-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-05-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-05-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-05-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-05-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-05-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-05-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-05-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-06-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-06-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-06-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-06-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-06-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-06-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-06-30T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-07-08T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-07-08T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-07-16T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-07-16T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-07-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-07-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-08-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-08-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-08-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-08-17T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-08-25T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-08-25T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-09-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-09-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-09-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-09-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-09-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-09-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-09-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-09-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-10-04T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-10-04T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-10-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-10-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-10-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-10-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-10-28T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-10-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-11-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-11-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-11-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-11-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-11-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-11-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-11-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-11-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-12-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-12-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-12-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-12-15T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-12-23T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-12-23T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2017/2017-12-31T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-12-31T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-01-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-01-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-01-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-01-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-02-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-02-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-02-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-02-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-02-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-02-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-03-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-03-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-03-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-03-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-03-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-03-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-03-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-03-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-04-03T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-04-03T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-04-11T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-04-11T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-04-19T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-04-19T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-04-27T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-04-27T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-05-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-05-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-05-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-05-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-05-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-05-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-05-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-05-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-06-06T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-06-06T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-06-14T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-06-14T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-06-22T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-06-22T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-06-30T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-06-30T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-07-08T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-07-08T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-07-16T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-07-16T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-07-24T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-07-24T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-08-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-08-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-08-09T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-08-09T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-08-17T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-08-17T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-08-25T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-08-25T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-09-02T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-09-02T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-09-10T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-09-10T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-09-18T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-09-18T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-09-26T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-09-26T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-10-04T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-10-04T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-10-12T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-10-12T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-10-20T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-10-20T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-10-28T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-10-28T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-11-05T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-11-05T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-11-13T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-11-13T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-11-21T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-11-21T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-11-29T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-11-29T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-12-07T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-12-07T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./ESDC_net_ecosystem_exchange/2018/2018-12-15T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-12-15T00:00:00Z"
-    },
-    {
-      "rel": "example",
-      "href": "https://api.earthsystemdatalab.net/api/timeseries/esdc/net_ecosystem_exchange?aggMethods=median",
-      "type": "application/json",
-      "title": "xcube analytics",
-      "example:language": "JSON",
-      "example:method": "POST"
+      "title": "Land Net Ecosystem Exchange"
     },
     {
       "rel": "parent",
@@ -1399,15 +23,221 @@
       "title": "Land Net Ecosystem Exchange"
     }
   ],
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": -7,
+              "format": "range",
+              "minimum": 0,
+              "step": 0.1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 2,
+              "format": "range",
+              "maximum": 3.0,
+              "step": 0.1
+            }
+          },
+          "format": "minmax"
+        },
+        "cbar": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "bwr",
+          "enum": [
+            "Accent",
+            "Blues",
+            "BrBG",
+            "BuGn",
+            "BuPu",
+            "CMRmap",
+            "Dark2",
+            "GnBu",
+            "Grays",
+            "Greens",
+            "Greys",
+            "OrRd",
+            "Oranges",
+            "PRGn",
+            "Paired",
+            "Pastel1",
+            "Pastel2",
+            "PiYG",
+            "PuBu",
+            "PuBuGn",
+            "PuOr",
+            "PuRd",
+            "Purples",
+            "RdBu",
+            "RdGy",
+            "RdPu",
+            "RdYlBu",
+            "RdYlGn",
+            "Reds",
+            "Set1",
+            "Set2",
+            "Set3",
+            "Spectral",
+            "Wistia",
+            "YlGn",
+            "YlGnBu",
+            "YlOrBr",
+            "YlOrRd",
+            "afmhot",
+            "algae",
+            "algae_i",
+            "algae_r_i",
+            "amp",
+            "amp_i",
+            "amp_r_i",
+            "autumn",
+            "balance",
+            "balance_i",
+            "balance_r_i",
+            "berlin",
+            "binary",
+            "bone",
+            "brg",
+            "bwr",
+            "chl_DeM2",
+            "cividis",
+            "cool",
+            "coolwarm",
+            "copper",
+            "cubehelix",
+            "curl",
+            "curl_i",
+            "curl_r_i",
+            "deep",
+            "deep_i",
+            "deep_r_i",
+            "delta",
+            "delta_i",
+            "delta_r_i",
+            "dense",
+            "dense_i",
+            "dense_r_i",
+            "diff",
+            "diff_i",
+            "diff_r_i",
+            "esa_cci_lc_classes",
+            "flag",
+            "gist_earth",
+            "gist_gray",
+            "gist_grey",
+            "gist_heat",
+            "gist_ncar",
+            "gist_rainbow",
+            "gist_stern",
+            "gist_yarg",
+            "gist_yerg",
+            "gnuplot",
+            "gnuplot2",
+            "gray",
+            "gray_i",
+            "gray_r_i",
+            "grey",
+            "haline",
+            "haline_i",
+            "haline_r_i",
+            "hot",
+            "hsv",
+            "ice",
+            "ice_i",
+            "ice_r_i",
+            "inferno",
+            "jet",
+            "magma",
+            "managua",
+            "matter",
+            "matter_i",
+            "matter_r_i",
+            "nipy_spectral",
+            "ocean",
+            "oxy",
+            "oxy_i",
+            "oxy_r_i",
+            "phase",
+            "phase_i",
+            "phase_r_i",
+            "pink",
+            "plasma",
+            "plasma_r",
+            "prism",
+            "rain",
+            "rain_i",
+            "rain_r_i",
+            "rainbow",
+            "reg_map",
+            "reg_map_i",
+            "reg_map_r_i",
+            "seismic",
+            "solar",
+            "solar_i",
+            "solar_r_i",
+            "speed",
+            "speed_i",
+            "speed_r_i",
+            "spring",
+            "summer",
+            "tab10",
+            "tab20",
+            "tab20b",
+            "tab20c",
+            "tarn",
+            "tarn_i",
+            "tarn_r_i",
+            "tempo",
+            "tempo_i",
+            "tempo_r_i",
+            "terrain",
+            "thermal",
+            "thermal_i",
+            "thermal_r_i",
+            "topo",
+            "topo_i",
+            "topo_r_i",
+            "turbid",
+            "turbid_i",
+            "turbid_r_i",
+            "turbo",
+            "twilight",
+            "twilight_shifted",
+            "vanimo",
+            "viridis",
+            "viridis_alpha",
+            "winter"
+          ]
+        }
+      }
+    },
+    "legend": {
+      "title": "[gCm^-2d^-1]",
+      "scaleType": "continuous",
+      "tickFormat": ".1f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "cbar"
+    }
+  },
   "sci:publications": [
     {
-      "citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., R\u00e1duly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291\u20134313.\n",
+      "citation": "Tramontana, G., Jung, M., Schwalm, C. R., Ichii, K., Camps-Valls, G., Ráduly, B., Reichstein, M., Arain, M. A., Cescatti, A., Kiely, G., Merbold, L., Serrano-Ortiz, P., Sickert, S., Wolf, S., and Papale, D. \nPredicting carbon dioxide and energy fluxes across global FLUXNET sites with regression algorithms, Biogeosciences, 13, 4291–4313.\n",
       "doi": "10.5194/bg-13-4291-2016, 2016"
     }
   ],
   "subtitle": "Net carbon exchange between the ecosystem and the atmosphere",
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.png",
-  "yAxis": "g C m^-2 d^-1",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.jpg",
   "themes": [
     "biomass"
   ],
@@ -1428,31 +258,6 @@
   "satellite": [
     "Terra"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      -7,
-      2
-    ],
-    "range": [
-      "#0000ff",
-      "#2727ff",
-      "#4e4eff",
-      "#7676ff",
-      "#9d9dff",
-      "#c4c4ff",
-      "#ebebff",
-      "#ffebeb",
-      "#ffc4c4",
-      "#ff9d9d",
-      "#ff7676",
-      "#ff4e4e",
-      "#ff2727",
-      "#ff0000"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "[gC/m\u00b2/day]"
-  },
   "endpointtype": "xcube_zarr",
   "title": "Land Net Ecosystem Exchange",
   "extent": {
@@ -1479,20 +284,23 @@
   "providers": [
     {
       "name": "NASA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://terra.nasa.gov/data/modis-data"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/ESDC_net_ecosystem_exchange/ESDC_net_ecosystem_exchange.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

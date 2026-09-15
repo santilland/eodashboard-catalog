@@ -1,0 +1,468 @@
+{
+  "type": "Collection",
+  "id": "Total Column CHOCHO by Sentinel-5P TROPOMI (Monthly)",
+  "stac_version": "1.1.0",
+  "description": "## Total Column CHOCHO (Glyoxal) by Sentinel-5P TROPOMI (Monthly)\nGlyoxal (CHOCHO) is a short-lived trace gas produced primarily in the atmosphere as an intermediate product in the oxidation of non-methane volatile organic compounds (NMVOCs). It is also directly emitted from fire events and combustion processes. Natural sources and fires account for approximately 70% of glyoxal production, with human activities contributing around 30%. Due to its short atmospheric lifetime of only a few hours, elevated glyoxal concentrations are observed close to emission sources, making it a valuable tracer for NMVOC emissions. Glyoxal also contributes significantly to the formation of secondary organic aerosols, impacting both air quality and climate forcing.\n\n#### About the dataset\n- The CHOCHO product is measured by the [TROPOMI instrument](https://www.tropomi.eu/) aboard ESA’s [Sentinel-5P Precursor](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P) satellite.\n- This dataset is a monthly composite.\n- Because glyoxal is a weak absorber, averaging of multiple observations in time and/or space is generally required to detect glyoxal signal reliably above the noise level. Only in extreme fire events may single-observation columns occasionally exceed the detection limit.\n- More information on the TROPOMI CHOCHO measurements and quality assessment can be found in the [Product User Manual](https://data-portal.s5p-pal.com/product-docs/chocho/S5P-BIRA-PUM-CHOCHO_1.1.pdf).\n\n#### Use cases\nCHOCHO measurements are particularly useful for:\n\n- Monitoring NMVOC emissions from natural vegetation, fires, and anthropogenic sources.\n- Supporting air quality studies.\n- Studying seasonal patterns of fire emissions and biomass burning events at global scale.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    },
+    {
+      "rel": "child",
+      "href": "./Total Column CHOCHO by Sentinel-5P TROPOMI (Monthly)/collection.json",
+      "type": "application/json",
+      "title": "Total Column CHOCHO by Sentinel-5P TROPOMI (Monthly)",
+      "endpointtype": "Sentinel Hub_byoc",
+      "code": "S5P-L3GRD-TCCHOCHO-MONTH",
+      "id": "Total Column CHOCHO by Sentinel-5P TROPOMI (Monthly)",
+      "themes": [
+        "atmosphere"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCHOCHO-MONTH/S5P-L3GRD-TCCHOCHO-MONTH_thumbnail.jpg"
+      ],
+      "tags": [
+        "CHOCHO",
+        "Glyoxal",
+        "NMVOC",
+        "Atmosphere",
+        "Air Quality",
+        "Aerosol",
+        "Open data",
+        "Open Science",
+        "TROPOMI",
+        "Sentinel-5P",
+        "Remote Sensing",
+        "Monthly Data",
+        "S5P",
+        "Copernicus"
+      ],
+      "agency": [
+        "ESA"
+      ],
+      "subcode": "S5P-L3GRD-TCCHOCHO-MONTH",
+      "sensor": [
+        "TROPOMI"
+      ],
+      "satellite": [
+        "Sentinel-5P"
+      ]
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Earth Observing Dashboard"
+    }
+  ],
+  "eox:colorlegend": {
+    "domain": [
+      1.0,
+      10.0
+    ],
+    "range": [
+      "#1c36b0",
+      "#1c37b0",
+      "#1c38b0",
+      "#1d39af",
+      "#1d39af",
+      "#1d3aaf",
+      "#1e3aae",
+      "#1e3bae",
+      "#1f3cae",
+      "#1f3cad",
+      "#1f3dad",
+      "#203eac",
+      "#203eac",
+      "#203fac",
+      "#203fac",
+      "#2141ab",
+      "#2141ab",
+      "#2242aa",
+      "#2242aa",
+      "#2243aa",
+      "#2344a9",
+      "#2345a9",
+      "#2345a9",
+      "#2345a9",
+      "#2447a8",
+      "#2447a8",
+      "#2447a8",
+      "#2548a7",
+      "#2549a7",
+      "#2549a7",
+      "#264aa6",
+      "#264aa6",
+      "#264ba6",
+      "#274ca5",
+      "#274ca5",
+      "#274da5",
+      "#274da5",
+      "#284ea4",
+      "#284fa4",
+      "#2850a3",
+      "#2850a3",
+      "#2951a3",
+      "#2952a2",
+      "#2a52a2",
+      "#2a52a2",
+      "#2a54a1",
+      "#2b54a1",
+      "#2b54a1",
+      "#2b55a1",
+      "#2c56a0",
+      "#2c56a0",
+      "#2c57a0",
+      "#2c589f",
+      "#2d589f",
+      "#2d599f",
+      "#2d5a9e",
+      "#2e5a9e",
+      "#2e5b9e",
+      "#2e5b9d",
+      "#2f5c9d",
+      "#2f5d9d",
+      "#305d9c",
+      "#305e9c",
+      "#305f9c",
+      "#315f9b",
+      "#315f9b",
+      "#31619a",
+      "#32619a",
+      "#32629a",
+      "#32629a",
+      "#336299",
+      "#346498",
+      "#346498",
+      "#346498",
+      "#346598",
+      "#356697",
+      "#356697",
+      "#366796",
+      "#366796",
+      "#376895",
+      "#376895",
+      "#386994",
+      "#386a94",
+      "#396a93",
+      "#396b93",
+      "#3a6b92",
+      "#3a6c92",
+      "#3a6c92",
+      "#3b6d91",
+      "#3c6e90",
+      "#3c6e90",
+      "#3c6e90",
+      "#3d6f8f",
+      "#3e708e",
+      "#3e708e",
+      "#3f708d",
+      "#40728c",
+      "#40728c",
+      "#40728c",
+      "#41738b",
+      "#42748a",
+      "#42748a",
+      "#42758a",
+      "#437589",
+      "#447689",
+      "#447688",
+      "#457788",
+      "#457887",
+      "#467887",
+      "#477986",
+      "#477986",
+      "#487a85",
+      "#487b85",
+      "#497b84",
+      "#4a7c84",
+      "#4a7d83",
+      "#4a7d83",
+      "#4c7e82",
+      "#4d7f82",
+      "#4d7f82",
+      "#4d8081",
+      "#4e8081",
+      "#4f8280",
+      "#4f8280",
+      "#508380",
+      "#51837f",
+      "#53857f",
+      "#53857f",
+      "#53867e",
+      "#54877e",
+      "#55877e",
+      "#56887d",
+      "#57897d",
+      "#588a7d",
+      "#588b7d",
+      "#598c7c",
+      "#5a8d7c",
+      "#5b8d7c",
+      "#5b8d7c",
+      "#5d8f7b",
+      "#5e907b",
+      "#5e907b",
+      "#5f917b",
+      "#60937a",
+      "#61947a",
+      "#61947a",
+      "#62957a",
+      "#649779",
+      "#659879",
+      "#659879",
+      "#669979",
+      "#689a78",
+      "#689a78",
+      "#699b78",
+      "#6a9c78",
+      "#6b9d78",
+      "#6c9e77",
+      "#6d9f77",
+      "#6ea077",
+      "#6ea077",
+      "#70a276",
+      "#71a376",
+      "#72a476",
+      "#73a576",
+      "#73a675",
+      "#74a775",
+      "#75a875",
+      "#75a875",
+      "#77aa74",
+      "#78ab74",
+      "#78ab74",
+      "#79ac74",
+      "#7aad74",
+      "#7bae73",
+      "#7caf73",
+      "#7db073",
+      "#7eb173",
+      "#80b372",
+      "#81b372",
+      "#82b472",
+      "#83b572",
+      "#84b671",
+      "#85b771",
+      "#86b871",
+      "#87b971",
+      "#88ba70",
+      "#89bb70",
+      "#8abd70",
+      "#8bbe70",
+      "#8bbe70",
+      "#8dc06f",
+      "#8ec16f",
+      "#8ec16f",
+      "#8fc26f",
+      "#91c46e",
+      "#92c56e",
+      "#92c56e",
+      "#93c66d",
+      "#95c86d",
+      "#96c86d",
+      "#97c96d",
+      "#98ca6c",
+      "#9acd6c",
+      "#9acd6c",
+      "#9bce6c",
+      "#9ccf6b",
+      "#9dd06b",
+      "#9fd16b",
+      "#a0d26b",
+      "#a1d36a",
+      "#a2d36a",
+      "#a4d56a",
+      "#a5d76a",
+      "#a6d869",
+      "#a7d869",
+      "#aada69",
+      "#abdb69",
+      "#acdc68",
+      "#addc68",
+      "#b0de68",
+      "#b1df68",
+      "#b2df68",
+      "#b3e068",
+      "#b5e167",
+      "#b7e267",
+      "#b8e367",
+      "#bae467",
+      "#bbe567",
+      "#bfe667",
+      "#c1e767",
+      "#c2e866",
+      "#c4e966",
+      "#c7ea66",
+      "#c8eb66",
+      "#caec66",
+      "#cbed66",
+      "#ceed66",
+      "#d0ee66",
+      "#d1ef66",
+      "#d3ef66",
+      "#d4f066",
+      "#d9f166",
+      "#daf266",
+      "#dcf266",
+      "#ddf366",
+      "#e0f566",
+      "#e2f566",
+      "#e4f566",
+      "#e5f666",
+      "#e8f766",
+      "#eaf766",
+      "#ecf866",
+      "#eef966",
+      "#f1fa66",
+      "#f3fa66",
+      "#f3fa66"
+    ],
+    "scaleType": "log10",
+    "tickFormat": ".0f",
+    "title": "CHOCHO column number density [10¹⁴ molec/cm²]",
+    "tickValues": [
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ]
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCHOCHO-MONTH/S5P-L3GRD-TCCHOCHO-MONTH_thumbnail.jpg",
+  "themes": [
+    "atmosphere"
+  ],
+  "tags": [
+    "CHOCHO",
+    "Glyoxal",
+    "NMVOC",
+    "Atmosphere",
+    "Air Quality",
+    "Aerosol",
+    "Open data",
+    "Open Science",
+    "TROPOMI",
+    "Sentinel-5P",
+    "Remote Sensing",
+    "Monthly Data",
+    "S5P",
+    "Copernicus"
+  ],
+  "agency": [
+    "ESA"
+  ],
+  "subcode": "S5P-L3GRD-TCCHOCHO-MONTH",
+  "sensor": [
+    "TROPOMI"
+  ],
+  "satellite": [
+    "Sentinel-5P"
+  ],
+  "title": "Total Column CHOCHO by Sentinel-5P TROPOMI (Monthly)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-05-01T00:00:00Z",
+          "2018-07-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "S5P-L3GRD-TCCHOCHO-MONTH"
+    ],
+    "themes": [
+      "atmosphere"
+    ],
+    "satellite": [
+      "Sentinel-5P"
+    ],
+    "sensor": [
+      "TROPOMI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCHOCHO-MONTH/S5P-L3GRD-TCCHOCHO-MONTH_thumbnail.jpg"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/S5P-L3GRD-TCCHOCHO-MONTH/S5P-L3GRD-TCCHOCHO-MONTH_thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "reference_1": {
+      "href": "https://radiantearth.github.io/stac-browser/#/external/data-portal.s5p-pal.com/api/s5p-l3/chocho/month",
+      "type": "text/html",
+      "title": "Source Product Page",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

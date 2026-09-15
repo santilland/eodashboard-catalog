@@ -14,69 +14,7 @@
       "rel": "xyz",
       "href": "https://reccap2.api.brockmann-consult.de/api/tiles/cop28~reccap2-9x108x139-0.0.1.zarr/AGC_LVOD_amazonia_methods_mean_crop/{z}/{y}/{x}?crs=EPSG:3857&time={time}&vmin=0&vmax=150&cbar=rain",
       "type": "image/png",
-      "title": "xcube tiles"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2011/2011-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2011-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2012/2012-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2012-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2013/2013-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2013-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2014/2014-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2014-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2015/2015-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2015-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2016/2016-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2016-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2017/2017-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2017-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2018/2018-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2018-01-01T00:00:00Z"
-    },
-    {
-      "rel": "item",
-      "href": "./RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/2019/2019-01-01T00:00:00Z.json",
-      "type": "application/geo+json",
-      "datetime": "2019-01-01T00:00:00Z"
-    },
-    {
-      "rel": "example",
-      "href": "https://reccap2.api.brockmann-consult.de/api/timeseries/cop28~reccap2-9x108x139-0.0.1.zarr/AGC_LVOD_amazonia_methods_mean_crop?aggMethods=median",
-      "type": "application/json",
-      "title": "xcube analytics",
-      "example:language": "JSON",
-      "example:method": "POST"
+      "title": "Methods mean aboveground carbon (CCI RECCAP2)"
     },
     {
       "rel": "parent",
@@ -85,18 +23,263 @@
       "title": "Methods mean aboveground carbon (CCI RECCAP2)"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:rasterform": {
+    "jsonform": {
+      "type": "object",
+      "properties": {
+        "vminmax": {
+          "type": "object",
+          "title": "Value Range",
+          "properties": {
+            "vmin": {
+              "type": "number",
+              "default": 0,
+              "format": "range",
+              "minimum": 0,
+              "step": 1
+            },
+            "vmax": {
+              "type": "number",
+              "default": 150,
+              "format": "range",
+              "maximum": 225.0,
+              "step": 1
+            }
+          },
+          "format": "minmax"
+        },
+        "cbar": {
+          "type": "string",
+          "title": "Colormap",
+          "default": "rain",
+          "enum": [
+            "Accent",
+            "Blues",
+            "BrBG",
+            "BuGn",
+            "BuPu",
+            "CMRmap",
+            "Dark2",
+            "GnBu",
+            "Grays",
+            "Greens",
+            "Greys",
+            "OrRd",
+            "Oranges",
+            "PRGn",
+            "Paired",
+            "Pastel1",
+            "Pastel2",
+            "PiYG",
+            "PuBu",
+            "PuBuGn",
+            "PuOr",
+            "PuRd",
+            "Purples",
+            "RdBu",
+            "RdGy",
+            "RdPu",
+            "RdYlBu",
+            "RdYlGn",
+            "Reds",
+            "Set1",
+            "Set2",
+            "Set3",
+            "Spectral",
+            "Wistia",
+            "YlGn",
+            "YlGnBu",
+            "YlOrBr",
+            "YlOrRd",
+            "afmhot",
+            "algae",
+            "algae_i",
+            "algae_r_i",
+            "amp",
+            "amp_i",
+            "amp_r_i",
+            "autumn",
+            "balance",
+            "balance_i",
+            "balance_r_i",
+            "berlin",
+            "binary",
+            "bone",
+            "brg",
+            "bwr",
+            "chl_DeM2",
+            "cividis",
+            "cool",
+            "coolwarm",
+            "copper",
+            "cubehelix",
+            "curl",
+            "curl_i",
+            "curl_r_i",
+            "deep",
+            "deep_i",
+            "deep_r_i",
+            "delta",
+            "delta_i",
+            "delta_r_i",
+            "dense",
+            "dense_i",
+            "dense_r_i",
+            "diff",
+            "diff_i",
+            "diff_r_i",
+            "esa_cci_lc_classes",
+            "flag",
+            "gist_earth",
+            "gist_gray",
+            "gist_grey",
+            "gist_heat",
+            "gist_ncar",
+            "gist_rainbow",
+            "gist_stern",
+            "gist_yarg",
+            "gist_yerg",
+            "gnuplot",
+            "gnuplot2",
+            "gray",
+            "gray_i",
+            "gray_r_i",
+            "grey",
+            "haline",
+            "haline_i",
+            "haline_r_i",
+            "hot",
+            "hsv",
+            "ice",
+            "ice_i",
+            "ice_r_i",
+            "inferno",
+            "jet",
+            "magma",
+            "managua",
+            "matter",
+            "matter_i",
+            "matter_r_i",
+            "nipy_spectral",
+            "ocean",
+            "oxy",
+            "oxy_i",
+            "oxy_r_i",
+            "phase",
+            "phase_i",
+            "phase_r_i",
+            "pink",
+            "plasma",
+            "plasma_r",
+            "prism",
+            "rain",
+            "rain_i",
+            "rain_r_i",
+            "rainbow",
+            "reg_map",
+            "reg_map_i",
+            "reg_map_r_i",
+            "seismic",
+            "solar",
+            "solar_i",
+            "solar_r_i",
+            "speed",
+            "speed_i",
+            "speed_r_i",
+            "spring",
+            "summer",
+            "tab10",
+            "tab20",
+            "tab20b",
+            "tab20c",
+            "tarn",
+            "tarn_i",
+            "tarn_r_i",
+            "tempo",
+            "tempo_i",
+            "tempo_r_i",
+            "terrain",
+            "thermal",
+            "thermal_i",
+            "thermal_r_i",
+            "topo",
+            "topo_i",
+            "topo_r_i",
+            "turbid",
+            "turbid_i",
+            "turbid_r_i",
+            "turbo",
+            "twilight",
+            "twilight_shifted",
+            "vanimo",
+            "viridis",
+            "viridis_alpha",
+            "winter"
+          ]
+        }
+      }
+    },
+    "legend": {
+      "title": "[Mg C/ha]",
+      "scaleType": "continuous",
+      "tickFormat": ".0f",
+      "domainProperties": [
+        "vmin",
+        "vmax"
+      ],
+      "rangeProperty": "cbar"
+    }
+  },
   "sci:publications": [
     {
       "citation": "SMOS-IC passive microwave satellite images L-VOD product (version 2.0), Wigneron, J.-P., Li, X., Frappart F., Fan L., Al-Yaari A., De Lannoy G., Liu X., Wang M., Le Masson E., Moisy C. (2021). \nSMOS-IC data record of soil moisture and L-VOD. Historical development, applications and perspectives, Remote Sens. Env., 254, 112238.\n",
       "doi": "10.1016/j.rse.2020.112238"
     },
     {
-      "citation": "Fawcett, Dominic, Sitch, Stephen, Ciais, Philippe, Wigneron, Jean Pierre, Silva-Junior, Celso H. L., Heinrich, Viola, Vancutsem, Christelle, Achard, Fr\u00e9d\u00e9ric, Bastos, Ana, Yang, Hui, Li, Xiaojun, Albergel, Cl\u00e9ment, Friedlingstein, Pierre, & Arag\u00e3o, Luiz E. O. C. (2022). \nProcessed Data for Figures of 'Declining Amazon biomass due to deforestation and subsequent degradation losses exceeding gains' (Version v1) [Data set]. Zenodo.\n",
+      "citation": "Fawcett, Dominic, Sitch, Stephen, Ciais, Philippe, Wigneron, Jean Pierre, Silva-Junior, Celso H. L., Heinrich, Viola, Vancutsem, Christelle, Achard, Frédéric, Bastos, Ana, Yang, Hui, Li, Xiaojun, Albergel, Clément, Friedlingstein, Pierre, & Aragão, Luiz E. O. C. (2022). \nProcessed Data for Figures of 'Declining Amazon biomass due to deforestation and subsequent degradation losses exceeding gains' (Version v1) [Data set]. Zenodo.\n",
       "doi": "10.5281/zenodo.7245450"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/World-RECCAP2_1.png",
-  "yAxis": "Mg C ha",
+  "eodash:stories": {
+    "forest_loss_and_degradation": {
+      "href": "https://eodashboard.org/story/?id=forest_loss_and_degradation",
+      "type": "text/markdown",
+      "title": "Forest Loss and Degradation",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/forest_loss_and_degradation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "biomass-harmonization-activity": {
+      "href": "https://eodashboard.org/story/?id=biomass-harmonization-activity",
+      "type": "text/markdown",
+      "title": "Biomass Harmonization Activity",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/biomass-harmonization-activity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/World-RECCAP2_1.jpg",
   "themes": [
     "biomass"
   ],
@@ -116,31 +299,6 @@
   "satellite": [
     "SMOS"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      150
-    ],
-    "range": [
-      "#eeedf3",
-      "#e1d8d3",
-      "#d7c4ad",
-      "#beb68e",
-      "#9dab81",
-      "#7aa076",
-      "#54946f",
-      "#28886e",
-      "#08776e",
-      "#06656b",
-      "#185364",
-      "#234057",
-      "#252e47",
-      "#221b38"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "[Mg C/ha]"
-  },
   "endpointtype": "xcube_zarr",
   "title": "Methods mean aboveground carbon (CCI RECCAP2)",
   "extent": {
@@ -167,20 +325,59 @@
   "providers": [
     {
       "name": "ESA",
-      "roles": "licensor, producer, processor",
+      "roles": [
+        "licensor, producer, processor"
+      ],
       "url": "https://climate.esa.int/en/projects/reccap-2/"
     }
   ],
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/RECCAP2_1_legend.png",
-      "type": "image/png",
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
       "roles": [
-        "metadata"
+        "collection-mirror"
+      ]
+    },
+    "forest_loss_and_degradation": {
+      "href": "https://eodashboard.org/story/?id=forest_loss_and_degradation",
+      "type": "text/markdown",
+      "title": "Forest Loss and Degradation",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/forest_loss_and_degradation.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "biomass-harmonization-activity": {
+      "href": "https://eodashboard.org/story/?id=biomass-harmonization-activity",
+      "type": "text/markdown",
+      "title": "Biomass Harmonization Activity",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/biomass-harmonization-activity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/World-RECCAP2_1.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/RECCAP2_1_AGC_LVOD_amazonia_methods_mean_crop/World-RECCAP2_1.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

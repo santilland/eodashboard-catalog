@@ -21,6 +21,12 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "Meta"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.jpg"
+      ],
       "tags": [
         "Human settlement",
         "Human activities",
@@ -38,13 +44,76 @@
       ]
     },
     {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Earth Observing Dashboard"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.png",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:stories": {
+    "urban-health-final": {
+      "href": "https://eodashboard.org/story/?id=urban-health-final",
+      "type": "text/markdown",
+      "title": "Urban Health and Megacities: the case of New Delhi",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/urban-health-final.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "extreme_air_pollution_india_and_pakistan": {
+      "href": "https://eodashboard.org/story/?id=extreme_air_pollution_india_and_pakistan",
+      "type": "text/markdown",
+      "title": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/extreme_air_pollution_india_and_pakistan.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.jpg",
   "themes": [
     "economy"
   ],
@@ -63,31 +132,6 @@
   "otherSources": [
     "Multi-sensors"
   ],
-  "eox:colorlegend": {
-    "domain": [
-      0,
-      80
-    ],
-    "range": [
-      "#ffffcc",
-      "#fff4b1",
-      "#ffe896",
-      "#fedc7c",
-      "#fec763",
-      "#feaf4b",
-      "#fd9841",
-      "#fd7a36",
-      "#fc532b",
-      "#ef3222",
-      "#dd161e",
-      "#c60624",
-      "#a60026",
-      "#800026"
-    ],
-    "scaleType": "continuous",
-    "tickFormat": ".0f",
-    "title": "Population density [People/m\u00b2]"
-  },
   "title": "Population Density (Meta)",
   "extent": {
     "spatial": {
@@ -130,19 +174,48 @@
       "economy"
     ],
     "thumbnail": [
-      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.png"
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.jpg"
     ]
   },
   "assets": {
-    "legend": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/FB_legend.png",
-      "type": "image/png",
+    "urban-health-final": {
+      "href": "https://eodashboard.org/story/?id=urban-health-final",
+      "type": "text/markdown",
+      "title": "Urban Health and Megacities: the case of New Delhi",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/urban-health-final.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
       "roles": [
-        "metadata"
+        "metadata",
+        "story"
+      ]
+    },
+    "extreme_air_pollution_india_and_pakistan": {
+      "href": "https://eodashboard.org/story/?id=extreme_air_pollution_india_and_pakistan",
+      "type": "text/markdown",
+      "title": "Extreme Air Pollution Episodes in Northern India and Pakistan",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/extreme_air_pollution_india_and_pakistan.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.png",
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/facebook_population_density/facebook_population_density.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"

@@ -19,10 +19,16 @@
       "code": "NLK_lake_aral",
       "id": "NLK_lake_aral",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "providers": [
+        "NASA"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg"
       ],
       "tags": [
-        "Lake",
+        "Lakes",
         "Optical",
         "Water",
         "Open Data"
@@ -49,10 +55,13 @@
       "code": "NLK_lake_biwa",
       "id": "NLK_lake_biwa",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg"
       ],
       "tags": [
-        "lake"
+        "Lakes"
       ],
       "satellite": [
         "Landsat-8"
@@ -71,15 +80,18 @@
       "rel": "child",
       "href": "./NLK_lake_tonle_sap/collection.json",
       "type": "application/json",
-      "title": "Tonl\u00e9 Sap Lake cloud free",
+      "title": "Tonlé Sap Lake cloud free",
       "endpointtype": "VEDA_tiles",
       "code": "NLK_lake_tonle_sap",
       "id": "NLK_lake_tonle_sap",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg"
       ],
       "tags": [
-        "lake"
+        "Lakes"
       ],
       "satellite": [
         "Landsat-8"
@@ -92,21 +104,24 @@
       ],
       "subcode": "NLK_lake_tonle_sap",
       "latlng": "12.7,104.2",
-      "name": "Tonl\u00e9 Sap Lake"
+      "name": "Tonlé Sap Lake"
     },
     {
       "rel": "child",
       "href": "./NLK_lake_vanern/collection.json",
       "type": "application/json",
-      "title": "V\u00e4nern Lake cloud free",
+      "title": "Vänern Lake cloud free",
       "endpointtype": "VEDA_tiles",
       "code": "NLK_lake_vanern",
       "id": "NLK_lake_vanern",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg"
       ],
       "tags": [
-        "lake"
+        "Lakes"
       ],
       "satellite": [
         "Landsat-8"
@@ -119,7 +134,7 @@
       ],
       "subcode": "NLK_lake_vanern",
       "latlng": "59.07,13.535",
-      "name": "V\u00e4nern Lake"
+      "name": "Vänern Lake"
     },
     {
       "rel": "child",
@@ -130,10 +145,13 @@
       "code": "NLK_lake_balaton",
       "id": "NLK_lake_balaton",
       "themes": [
-        "oceans"
+        "water"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg"
       ],
       "tags": [
-        "lake"
+        "Lakes"
       ],
       "satellite": [
         "Landsat-8"
@@ -154,20 +172,132 @@
       "type": "text/html"
     },
     {
+      "rel": "service",
+      "href": "./NLK_lakes/{{feature}}/collection.json",
+      "type": "application/json; profile=collection",
+      "id": "locations",
+      "method": "GET",
+      "endpoint": "STAC"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
       "title": "Lakes collection (Landsat-8)"
     }
   ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json"
+  ],
+  "eodash:stories": {
+    "lakes-climate": {
+      "href": "https://eodashboard.org/story/?id=lakes-climate",
+      "type": "text/markdown",
+      "title": "Climate Change Impacts on Inland Water Bodies",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/lakes-climate.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "lakes-human-activity": {
+      "href": "https://eodashboard.org/story/?id=lakes-human-activity",
+      "type": "text/markdown",
+      "title": "Changing Lakes Due to Human Activity",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/lakes-human-activity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "lakes-intro": {
+      "href": "https://eodashboard.org/story/?id=lakes-intro",
+      "type": "text/markdown",
+      "title": "Troubled Waters: The State of the World's Lakes",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/lakes-intro.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    }
+  },
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg",
   "themes": [
-    "oceans"
+    "water"
   ],
   "locations": true,
   "tags": [
     "Water quality",
     "Lakes",
-    "Lake",
     "Landsat",
     "OLI",
     "Lake monitoring",
@@ -186,45 +316,46 @@
   "satellite": [
     "Landsat-8"
   ],
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
   "title": "Lakes collection (Landsat-8)",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          10.69941816,
-          11.94560442,
-          138.17282533,
-          59.83119443
+          10.9809643,
+          11.9586038,
+          138.0953959,
+          59.7931386
         ],
         [
-          56.91258402,
-          43.48369514,
-          63.64131735,
-          47.11744485
+          56.9984407,
+          43.5345394,
+          63.5900264,
+          47.0890105
         ],
         [
-          135.13362826,
-          33.53534479,
-          138.17282533,
-          35.75089521
+          135.2055231,
+          33.5515966,
+          138.0953959,
+          35.7354584
         ],
         [
-          101.93844223,
-          11.94560442,
-          106.37030883,
-          14.06740558
+          102.0208449,
+          11.9586038,
+          106.3215996,
+          14.0556331
         ],
         [
-          10.69941816,
-          57.35328549,
-          15.98482535,
-          59.83119443
+          10.9809643,
+          57.4228267,
+          15.8602295,
+          59.7931386
         ],
         [
-          15.04798484,
-          46.34951509,
-          19.16156268,
-          48.51911491
+          15.1177824,
+          46.374918,
+          19.0682304,
+          48.510316
         ]
       ]
     },
@@ -246,19 +377,82 @@
   ],
   "summaries": {
     "cities": [
-      "Biwa Lake",
-      "V\u00e4nern Lake",
-      "Tonl\u00e9 Sap Lake",
       "Balaton Lake",
+      "Vänern Lake",
+      "Tonlé Sap Lake",
+      "Biwa Lake",
       "Aral Lake"
     ],
     "countries": [
       "HU",
       "KZ",
-      "UZ",
+      "KH",
       "SW",
-      "JP",
-      "KH"
+      "UZ",
+      "JP"
     ]
+  },
+  "assets": {
+    "lakes-climate": {
+      "href": "https://eodashboard.org/story/?id=lakes-climate",
+      "type": "text/markdown",
+      "title": "Climate Change Impacts on Inland Water Bodies",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/lakes-climate.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "lakes-human-activity": {
+      "href": "https://eodashboard.org/story/?id=lakes-human-activity",
+      "type": "text/markdown",
+      "title": "Changing Lakes Due to Human Activity",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/lakes-human-activity.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "lakes-intro": {
+      "href": "https://eodashboard.org/story/?id=lakes-intro",
+      "type": "text/markdown",
+      "title": "Troubled Waters: The State of the World's Lakes",
+      "description": "Rendered page of the story",
+      "alternate": {
+        "raw": {
+          "href": "https://raw.githubusercontent.com/ESA-eodashboards/eodashboard-narratives/main/lakes-intro.md",
+          "description": "Raw markdown content of the story",
+          "alternate:name": "raw story markdown"
+        }
+      },
+      "alternate:name": "rendered story page",
+      "roles": [
+        "metadata",
+        "story"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/NLK_lakes/thumbnail.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }

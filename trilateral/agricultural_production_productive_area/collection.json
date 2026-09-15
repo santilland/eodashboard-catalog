@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "agricultural_production_productive_area",
   "stac_version": "1.1.0",
-  "description": "## Agricultural production - Greenhouse removal activity\n\nThis indicator compares the total observed active fields in the cultivated areas in the 2020 season to the same months in 2019. It aims to show the impact of the lack of seasonal workers during the Covid-19 pandemic.\nThe indicator is based on optical data at suitable resolution to observe the respective greenhouse removal activity on the fields. It is provided for two types of harvests: white asparagus in Germany and red fruits in Spain. Both of these are labour intensive activities relying on seasonal workers.  \n\n- For the white asparagus harvest activity, the indicator is produced for the German federal state of Brandenburg (29.500 sqkm), based on Copernicus Sentinel-2 data.\n\n- For the red berries harvesting activity, the indicator is produced for the province of Huelva in Spain, that is responsible for 97.5% of the national red berries production. The indicator is based on optical data from the Pl\u00e9iades constellation.\n\n\n",
+  "description": "## Agricultural production - Greenhouse removal activity\n\nThis indicator compares the total observed active fields in the cultivated areas in the 2020 season to the same months in 2019. It aims to show the impact of the lack of seasonal workers during the Covid-19 pandemic.\nThe indicator is based on optical data at suitable resolution to observe the respective greenhouse removal activity on the fields. It is provided for two types of harvests: white asparagus in Germany and red fruits in Spain. Both of these are labour intensive activities relying on seasonal workers.  \n\n- For the white asparagus harvest activity, the indicator is produced for the German federal state of Brandenburg (29.500 sqkm), based on Copernicus Sentinel-2 data.\n\n- For the red berries harvesting activity, the indicator is produced for the province of Huelva in Spain, that is responsible for 97.5% of the national red berries production. The indicator is based on optical data from the Pléiades constellation.\n\n\n",
   "links": [
     {
       "rel": "root",
@@ -22,6 +22,10 @@
       "themes": [
         "agriculture"
       ],
+      "providers": [
+        "Université catholique de Louvain",
+        "Copernicus"
+      ],
       "cities": [
         "Brandenburg",
         "Huelva (Lagunas de las Madres)"
@@ -30,7 +34,9 @@
         "DE",
         "ES"
       ],
-      "yAxis": "Total area [ha]",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.jpg"
+      ],
       "tags": [
         "Copernicus",
         "Open data"
@@ -50,8 +56,56 @@
       "rel": "service",
       "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_E10a1_tri?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
       "type": "application/json",
-      "method": "GET",
-      "id": "E10a1_tri"
+      "id": "process_geodb",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2025",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2025",
+      "attribution": "{ EOxCloudless 2025: <a xmlns:dct=\"http://purl.org/dc/terms/\" href=\"https://s2maps.eu\" target=\"_blank\" property=\"dct:title\">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://eox.at\" target=\"_blank\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2025) }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "OSM",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
     },
     {
       "rel": "parent",
@@ -61,6 +115,7 @@
     }
   ],
   "subtitle": "Agricultural production in Europe",
+  "thumbnail": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.jpg",
   "themes": [
     "agriculture"
   ],
@@ -79,22 +134,16 @@
     "Sentinel-2"
   ],
   "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
-  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/refs/heads/main/collections/E10a1_agricultural_production_productive_area/chart.json",
   "title": "Agricultural production - productive area",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -6.85888,
-          37.17316,
-          13.10063,
-          52.14141
-        ],
-        [
-          -6.85888,
-          37.17316,
-          13.10063,
-          52.14141
+          -7.0488800000000005,
+          36.98316,
+          13.29063,
+          52.331410000000005
         ]
       ]
     },
@@ -110,7 +159,7 @@
   "license": "other",
   "providers": [
     {
-      "name": "Universit\u00e9 catholique de Louvain",
+      "name": "Université catholique de Louvain",
       "url": "https://uclouvain.be/en/index.html"
     },
     {
@@ -132,12 +181,24 @@
       "MSI"
     ],
     "cities": [
-      "Brandenburg",
-      "Huelva (Lagunas de las Madres)"
+      "Huelva (Lagunas de las Madres)",
+      "Brandenburg"
     ],
     "countries": [
       "DE",
       "ES"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.jpg"
     ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/eurodatacube/eodash-assets/main/collections/E10a1_agricultural_production_productive_area/E10a1_agricultural_production_productive_area.jpg",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
   }
 }
